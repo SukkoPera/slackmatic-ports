@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+NAME=libgnomecanvas
+BRIEF='Modified version of libgnomecanvas supported by Ardour'
+PROJECT=http://ardour.org/current_dependencies.html
+RELEASE=2.30.3
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://ardour.org/files/deps/$NAME-$RELEASE.tar.gz
+)

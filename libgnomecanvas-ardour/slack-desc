@@ -1,0 +1,11 @@
+libgnomecanvas: libgnomecanvas (Modified version of libgnomecanvas supported by Ardour)
+libgnomecanvas:
+libgnomecanvas: This is a slackmatic port build of libgnomecanvas:
+libgnomecanvas: Modified version of libgnomecanvas supported by Ardour 
+libgnomecanvas:
+libgnomecanvas: For more information about the package, see the project website at:
+libgnomecanvas: http://ardour.org/current_dependencies.html
+libgnomecanvas:
+libgnomecanvas:
+libgnomecanvas: This slackmatic port was developed by:
+libgnomecanvas: slackware@sukkology.net
