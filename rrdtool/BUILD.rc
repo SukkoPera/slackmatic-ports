@@ -1,7 +1,7 @@
 . ../sukkolib.rc
 
 # WARNING: Before installing this package, run:
-Ã# ln -sf /usr/lib/perl5 /usr/lib/perl
+# ln -sf /usr/lib/perl5 /usr/lib/perl
 
 BRIEF='High performance data logging and graphing system for time series data'
 PROJECT=http://oss.oetiker.ch/rrdtool/
