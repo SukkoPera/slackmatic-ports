@@ -1,0 +1,42 @@
+. ../sukkolib.rc
+
+BRIEF='A lightweight C library for RDF syntax'
+PROJECT=http://drobilla.net/software/serd/
+RELEASE=0.18.2
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://download.drobilla.net/$NAME-$RELEASE.tar.bz2
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	PACKAGING
+)
+
+fn configure {
+        # Fix for 64 bits (Is this always needed?)
+        arch=`{arch}
+        if (~ $arch 'x86_64') {
+                trace 'Using lib64'
+		_libdir=/usr/lib64
+        } else {
+		_libdir=/usr/lib
+	}
+
+	./waf configure \
+		--prefix'='/usr \
+		--libdir'='$_libdir \
+		--mandir'='/usr/man
+}
+
+fn compile {
+	./waf build \
+		-j $DEFAULT_MAKEJOBS
+}
+
+fn inst {
+	./waf install \
+		--destdir'='$PKG
+}
