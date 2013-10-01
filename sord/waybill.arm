@@ -1,0 +1,9 @@
+drwxr-xr-x|0755|root/root|usr|
+drwxr-xr-x|0755|root/root|usr/doc|
+drwxr-xr-x|0755|root/root|usr/doc/sord-0.12.0|
+-rw-r--r--|0644|root/root|usr/doc/sord-0.12.0/AUTHORS|
+-rw-r--r--|0644|root/root|usr/doc/sord-0.12.0/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/sord-0.12.0/COPYING|
+-rw-r--r--|0644|root/root|usr/doc/sord-0.12.0/INSTALL|
+-rw-r--r--|0644|root/root|usr/doc/sord-0.12.0/NEWS|
+-rw-r--r--|0644|root/root|usr/doc/sord-0.12.0/README|

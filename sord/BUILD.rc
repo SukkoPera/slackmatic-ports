@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+BRIEF='A lightweight C library for storing RDF data in memory'
+PROJECT=http://drobilla.net/software/sord/
+RELEASE=0.12.0
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDSYSTEM=waf
+
+SOURCE=(
+	http://download.drobilla.net/$NAME-$RELEASE.tar.bz2
+)
