@@ -1,18 +1,33 @@
 #!/bin/rc
 
+# CFLAGS are set in /etc/slackmatic/slackmat.conf!
+
+# Guess library directory (shouldn't this be automatic?)
+switch (`{arch}) {
+	case *64
+		LIBDIR=/usr/lib64
+	case *
+		LIBDIR=/usr/lib
+}
+
 DEFAULT_MAKEJOBS=3
 DEFAULT_DOCS=(ABOUT-NLS AUTHORS ChangeLog COPYING INSTALL NEWS README TODO)
-# These are defined in /etc/slackmatic/slackmat.conf!!!
-#DEFAULT_CFLAGS='-pipe -fomit-frame-pointer -funit-at-a-time'
-DEFAULT_CONFOPTS=(
+DEFAULT_CONFOPTS_AUTOTOOLS=(
 	--prefix'='/usr
+	--libdir'='$LIBDIR
 	--sysconfdir'='/etc
 	--localstatedir'='/var
 	--mandir'='/usr/man
 	--disable-dependency-tracking
 )
+# How to specify libdir here?
 DEFAULT_CONFOPTS_CMAKE=(
 	-D CMAKE_INSTALL_PREFIX'='/usr
+)
+DEFAULT_CONFOPTS_WAF=(
+	--prefix'='/usr
+	--libdir'='$LIBDIR
+	--mandir'='/usr/man
 )
 MAXPATCHLEVEL=5
 
@@ -22,6 +37,14 @@ SOURCEFORGE_MIRRORS=(
 	http://puzzle.dl.sourceforge.net/sourceforge
 	http://kent.dl.sourceforge.net/sourceforge
 )
+# This can be set to:
+# - autotools
+# - cmake
+# - scons
+# - waf
+# - python
+# Any other values will trigger the autotools system.
+BUILDSYSTEM=''
 
 # TODO
 # + Build from CVS
@@ -31,84 +54,11 @@ SOURCEFORGE_MIRRORS=(
 # - Build packages with several progs (You know what I mean)
 # - Include patches in package?
 # ~ Sourceforge srcs
-# - Handle conf files
-
-fn std_configure {
-	if (~ $CONFOPTS'X' 'X') {
-		CONFOPTS=$DEFAULT_CONFOPTS
-	}
-
-	./configure $CONFOPTS || exit 100
-}
 
 
-fn std_compile {
-	if (~ $MAKEJOBS'X' 'X') {
-		MAKEJOBS=$DEFAULT_MAKEJOBS
-	}
-
-	trace 'Using '$MAKEJOBS' parallel job(s) for make'
-
-	# Handle CMake out-of-tree builds
-        if (!~ $CMAKE_PKG_BUILD_DIR'X' 'X') {
-		trace 'CDing to CMake build directory: '$CMAKE_PKG_BUILD_DIR
-                cd $CMAKE_PKG_BUILD_DIR
-        }
-	
-	make -j $MAKEJOBS || exit 101
-
-	#  CMake again
-        if (!~ $CMAKE_PKG_BUILD_DIR'X' 'X') {
-                cd ..
-        }
-}
-
-
-fn std_inst {
-	# Handle CMake out-of-tree builds
-        if (!~ $CMAKE_PKG_BUILD_DIR'X' 'X') {
-		trace 'CDing to CMake build directory: '$CMAKE_PKG_BUILD_DIR
-                cd $CMAKE_PKG_BUILD_DIR
-        }
-
-	make install DESTDIR'='$PKG || exit 102
-
-	#  CMake again
-        if (!~ $CMAKE_PKG_BUILD_DIR'X' 'X') {
-                cd ..
-        }
-}
-
-
-# Returns the filesize of a filename
-# Helper function
-fn filesize {
-	filename=$1
-	#filesize=`{ls -l $filename | awk '{print $5}'}
-	filesize=`{stat -c %s $filename}
-	
-	echo $filesize
-}
-
-
-fn std_docinst {
-	if (~ $DOCS'X' 'X') {
-		DOCS=$DEFAULT_DOCS
-	}
-
-	# This needs testing
-	#for (f in `{eval echo $DOCS}) {
-	for (f in $DOCS) {
-#		f=`{eval echo $f}
-		if (test -f $f && test `{filesize $f} -gt 0) {
-# 			trace 'Installing doc: '$f' in: '$DOC
-			install -m 0644 $f $DOC
-		} else {
-			trace 'Skipping doc: '$f
-		}
-	}
-}
-
+###############################################################################
+# GENERAL PURPOSE STUFF
+###############################################################################
 
 fn std_patch {
 	for (pf in $PATCHES) {
@@ -137,13 +87,36 @@ fn std_patch {
 			exit 5
 		}
 	}
+	
+	#~ trace 'Patching done'
 }
 
+fn std_docinst {
+	if (~ $DOCS'X' 'X') {
+		DOCS=$DEFAULT_DOCS
+	}
+
+	# This needs testing
+	#for (f in `{eval echo $DOCS}) {
+	for (f in $DOCS) {
+#		f=`{eval echo $f}
+		if (test -f $f && test `{filesize $f} -gt 0) {
+# 			trace 'Installing doc: '$f' in: '$DOC
+			install -m 0644 $f $DOC
+		} else {
+			trace 'Skipping doc: '$f
+		}
+	}
+}
+
+fn docinst {
+	trace 'Standard docinst function called'
+	std_docinst
+}
 
 fn rcs_source {
 	cp -r $CWD/$RCSSOURCE $SRC/$NAME-$RELEASE
 }
-
 
 fn setup {
 	if (!~ $RCSSOURCE'X' 'X') {
@@ -158,52 +131,126 @@ fn setup {
 	std_patch
 }
 
+# Returns the filesize of a filename
+# Helper function
+fn filesize {
+	filename=$1
+	#filesize=`{ls -l $filename | awk '{print $5}'}
+	filesize=`{stat -c %s $filename}
+	
+	echo $filesize
+}
+
+
+###############################################################################
+# STANDARD WRAPPERS
+###############################################################################
+
+fn std_configure {
+	if (~ $CONFOPTS'X' 'X') {
+		CONFOPTS=$DEFAULT_CONFOPTS
+	}
+	
+	switch ($BUILDSYSTEM) {
+		case cmake
+			std_configure_cmake
+		case scons
+			# Nothing to do
+		case waf
+			std_configure_waf
+		case python
+			# Nothing to do
+		case *
+			std_configure_autotools
+	}
+}
+
+fn configure {
+	trace 'Standard configure function called'
+	std_configure
+}
+
+fn std_compile {
+	if (~ $MAKEJOBS'X' 'X') {
+		MAKEJOBS=$DEFAULT_MAKEJOBS
+	}
+	trace 'Using '$MAKEJOBS' parallel job(s) for compiling, if possible'
+
+	switch ($BUILDSYSTEM) {
+		case cmake
+			std_compile_cmake
+		case scons
+			std_compile_scons
+		case waf
+			std_compile_waf
+		case python
+			std_compile_python
+		case *
+			std_compile_autotools
+	}
+}
+
+fn compile {
+	trace 'Standard compile function called'
+	std_compile
+}
+
+fn std_inst {
+	switch ($BUILDSYSTEM) {
+		case cmake
+			std_inst_cmake
+		case scons
+			std_inst_scons
+		case waf
+			std_inst_waf
+		case python
+			std_inst_python
+		case *
+			std_inst_autotools
+	}
+}
+
+fn inst {
+	trace 'Standard inst function called'
+	std_inst
+}
 
 fn std_build {
 	setup
-
-	if (whatis -f configure >/dev/null >[2=1]) {
-		configure
-	} else {
-		trace 'Standard configure function called'
-		std_configure
-	}
-	
-	if (whatis -f compile >/dev/null >[2=1]) {
-		compile
-	} else {
-		trace 'Standard compile function called'
-		std_compile
-	}
-	
-	if (whatis -f inst >/dev/null >[2=1]) {
-		inst
-	} else {
-		trace 'Standard inst function called'
-		std_inst
-	}
-	
-	if (whatis -f docinst >/dev/null >[2=1]) {
-		docinst
-	} else {
-		trace 'Standard docinst function called'
-		std_docinst
-	}
+	configure
+	compile
+	inst
+	docinst
 }
 
-
 fn build {
-	trace 'Standard build function called'
+	trace 'Standard build function for build system '$BUILDSYSTEM' called'
 	std_build
 }
 
-### CMAKE STUFF ###
+
+###############################################################################
+# AUTOTOOLS STUFF
+###############################################################################
+
+fn std_configure_autotools {
+	./configure $CONFOPTS || exit 100
+}
+
+fn std_compile_autotools {
+	make -j $MAKEJOBS || exit 101
+}
+
+fn std_inst_autotools {
+	make install DESTDIR'='$PKG || exit 102
+}
+
+
+###############################################################################
+# CMAKE STUFF
+###############################################################################
 
 fn std_configure_cmake {
-	if (~ $CONFOPTS'X' 'X') {
-		CONFOPTS=$DEFAULT_CONFOPTS_CMAKE
-	}
-
 	CMAKE_PKG_BUILD_DIR=BUILD.$pid
 	mkdir $CMAKE_PKG_BUILD_DIR || exit $status
 	cd $CMAKE_PKG_BUILD_DIR || exit $status
@@ -213,40 +260,40 @@ fn std_configure_cmake {
 	cd ..
 }
 
-fn std_build_cmake {
-	setup
+fn std_compile_cmake {
+	# Handle out-of-tree builds
+	if (!~ $CMAKE_PKG_BUILD_DIR'X' 'X') {
+		trace 'CDing to CMake build directory: '$CMAKE_PKG_BUILD_DIR
+		cd $CMAKE_PKG_BUILD_DIR
+	}
+	
+	make -j $MAKEJOBS || exit 101
 
-	if (whatis -f configure >/dev/null >[2=1]) {
-		configure
-	} else {
-		trace 'Standard CMAKE configure function called'
-		std_configure_cmake
+	# Back to the source tree
+	if (!~ $CMAKE_PKG_BUILD_DIR'X' 'X') {
+		cd ..
 	}
-	
-	if (whatis -f compile >/dev/null >[2=1]) {
-		compile
-	} else {
-		trace 'Standard compile function called'
-		std_compile
+}
+
+fn std_inst_cmake {
+	# Handle out-of-tree builds
+	if (!~ $CMAKE_PKG_BUILD_DIR'X' 'X') {
+		trace 'CDing to CMake build directory: '$CMAKE_PKG_BUILD_DIR
+		cd $CMAKE_PKG_BUILD_DIR
 	}
-	
-	if (whatis -f inst >/dev/null >[2=1]) {
-		inst
-	} else {
-		trace 'Standard inst function called'
-		std_inst
-	}
-	
-	if (whatis -f docinst >/dev/null >[2=1]) {
-		docinst
-	} else {
-		trace 'Standard docinst function called'
-		std_docinst
+
+	make install DESTDIR'='$PKG || exit 102
+
+	# Back to the source tree
+	if (!~ $CMAKE_PKG_BUILD_DIR'X' 'X') {
+		cd ..
 	}
 }
 
 
-### PYTHON STUFF ###
+###############################################################################
+# PYTHON STUFF
+###############################################################################
 
 # Python packages compile and install automagically. We only need to install docs.
 
@@ -254,58 +301,51 @@ fn std_compile_python {
 	python setup.py build || exit 101
 }
 
-
 fn std_inst_python {
 	python setup.py install --root $PKG || exit 102
 }
 
 
-fn std_build_python {
-	trace 'Standard Python build function called'
-
-	setup
-	std_compile_python
-	std_inst_python
-
-	if (whatis -f docinst >/dev/null >[2=1]) {
-		docinst
-	} else {
-		trace 'Standard docinst function called'
-		std_docinst
-	}
-}
-
-### SCONS STUFF ###
+###############################################################################
+# SCONS STUFF
+###############################################################################
 
 # WARNING: SCons does not work with ccache, so make sure to turn it off as in:
 # CC=/usr/bin/gcc CXX=/usr/bin/g++ slackmat-build
 
 fn std_compile_scons {
-	scons
+	scons || exit 101
 }
-
 
 fn std_inst_scons {
 	scons install DESTDIR'='$PKG || exit 102
 }
 
 
-fn std_build_scons {
-	trace 'Standard SCons build function called'
+###############################################################################
+# WAF STUFF
+###############################################################################
 
-	setup
-	std_compile_scons
-	std_inst_scons
+# Note: It seems that WAF builds work properly only  when run as root,
+# otherwise they will hang randomly with:
+# semop(1): encountered an error: Identifier removed
+#
+# Thus, use sudo slackmat-build -R
 
-	if (whatis -f docinst >/dev/null >[2=1]) {
-		docinst
-	} else {
-		trace 'Standard docinst function called'
-		std_docinst
-	}
+fn std_configure_waf {
+	./waf configure $CONFOPTS || exit 100
 }
 
-#######################
+fn std_compile_waf {
+	./waf build -j $MAKEJOBS || exit 101
+}
+
+fn std_inst_waf {
+	./waf install --destdir'='$PKG || exit 102
+}
+
+
+###############################################################################
 
 # Set up things needed before calling 'build'
 # Never call this function explicitly, please
@@ -324,16 +364,26 @@ fn prepare {
 	#SLCKVER=`{cat /etc/slackware-version | cut -f2 -d ' ' | sed 's:\.0$::'}
 	# The following is needed from 13.0 on, because trailing .0's have been added...
 	SLCKVER=`{cat /etc/slackware-version | cut -f2 -d ' ' | sed -r 's:([0-9]+\.[0-9]+).+:\1:'}
+
+	# Set CONFOPTS so that ports can expand them
+	switch ($BUILDSYSTEM) {
+		case cmake
+			DEFAULT_CONFOPTS=$DEFAULT_CONFOPTS_CMAKE
+		case scons
+			# Nothing to do
+		case waf
+			DEFAULT_CONFOPTS=$DEFAULT_CONFOPTS_WAF
+		case python
+			# Nothing to do
+		case *
+			DEFAULT_CONFOPTS=$DEFAULT_CONFOPTS_AUTOTOOLS
+	}
 }
 
 
 ### END OF FUNCTIONS ###
 
-# Fail if this script is called directly
-if (~ $TRACE_FILE'X' 'X') {
-	echo 'This script is not meant to be called directly, but only from a BUILD.rc'
-	exit 99
-} else {
-	# Otherwise, set things up
+# Only proceed if this script is called from a BUILD.rc
+if (!~ $TRACE_FILE'X' 'X') {
 	prepare
 }
