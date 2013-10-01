@@ -1,0 +1,17 @@
+-rw-r--r--|0644|root/root|etc|
+drwxr-xr-x|0755|root/root|usr|
+drwxr-xr-x|0755|root/root|usr/bin|
+-rwxr-xr-x|0755|root/root|usr/bin/rar|
+-rwxr-xr-x|0755|root/root|usr/bin/rar_static|
+-rwxr-xr-x|0755|root/root|usr/bin/unrar|
+drwxr-xr-x|0755|root/root|usr/doc|
+drwxr-xr-x|0755|root/root|usr/doc/rar64-3.9.0|
+-rw-r--r--|0644|root/root|usr/doc/rar64-3.9.0/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/rar64-3.9.0/license.txt|
+-rw-r--r--|0644|root/root|usr/doc/rar64-3.9.0/order.htm|
+-rw-r--r--|0644|root/root|usr/doc/rar64-3.9.0/rar.txt|
+-rw-r--r--|0644|root/root|usr/doc/rar64-3.9.0/readme.txt|
+-rw-r--r--|0644|root/root|usr/doc/rar64-3.9.0/technote.txt|
+-rw-r--r--|0644|root/root|usr/doc/rar64-3.9.0/whatsnew.txt|
+drwxr-xr-x|0755|root/root|usr/lib|
+-rwxr-xr-x|0755|root/root|usr/lib/default.sfx|

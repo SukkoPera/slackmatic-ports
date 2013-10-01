@@ -1,0 +1,15 @@
+drwxr-xr-x|0755|root/root|usr|
+drwxr-xr-x|0755|root/root|usr/doc|
+drwxr-xr-x|0755|root/root|usr/doc/libgmail-0.1.10|
+-rw-r--r--|0644|root/root|usr/doc/libgmail-0.1.10/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/libgmail-0.1.10/CHANGELOG|
+-rw-r--r--|0644|root/root|usr/doc/libgmail-0.1.10/COPYING|
+-rw-r--r--|0644|root/root|usr/doc/libgmail-0.1.10/README|
+drwxr-xr-x|0755|root/root|usr/lib|
+drwxr-xr-x|0755|root/root|usr/lib/python2.5|
+drwxr-xr-x|0755|root/root|usr/lib/python2.5/site-packages|
+-rw-r--r--|0644|root/root|usr/lib/python2.5/site-packages/lgconstants.py|
+-rw-r--r--|0644|root/root|usr/lib/python2.5/site-packages/lgconstants.pyc|
+-rw-r--r--|0644|root/root|usr/lib/python2.5/site-packages/libgmail-0.1.10-py2.5.egg-info|
+-rw-r--r--|0644|root/root|usr/lib/python2.5/site-packages/libgmail.py|
+-rw-r--r--|0644|root/root|usr/lib/python2.5/site-packages/libgmail.pyc|

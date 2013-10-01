@@ -1,0 +1,30 @@
+. ../sukkolib.rc
+
+BRIEF='Utility for managing and monitoring, processes, files, directories and filesystems on a UNIX system'
+PROJECT=http://mmonit.com/monit/
+RELEASE=5.1.1
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+DOCS=(
+	$DEFAULT_DOCS
+	CHANGES.txt
+	LICENSE
+	PLATFORMS
+	README.DEVELOPER
+	README.SSL
+	doc/monit.html
+	doc/presentation.odp
+)
+
+SOURCE=(
+	http://mmonit.com/monit/dist/$NAME-$RELEASE.tar.gz
+)
+
+fn inst {
+	std_inst
+
+	# Install init script
+	mkdir -p $PKG/etc/rc.d
+	cp $CWD/rc.monit $PKG/etc/rc.d
+}

@@ -1,0 +1,27 @@
+. ../sukkolib.rc
+
+BRIEF='A top-like interface to your netfilter connection-tracking table'
+PROJECT=http://www.phildev.net/iptstate/
+RELEASE=2.2.2
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+DOCS=(
+	$DEFAULT_DOCS
+	README
+	Changelog
+	BUGS
+	CONTRIB
+	WISHLIST
+)
+
+SOURCE=(
+	$SF/$NAME/$NAME-$RELEASE.tar.bz2
+)
+
+fn configure {
+}
+
+fn inst {
+	make PREFIX'='$PKG/usr install || exit $state
+}

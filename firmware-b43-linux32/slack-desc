@@ -1,0 +1,11 @@
+firmware-b43-linux32: firmware-b43-linux32 (Firmware for Broadcom b43 Wireless Driver on Linux >= 3.2)
+firmware-b43-linux32:
+firmware-b43-linux32: This is a slackmatic port build of firmware-b43-linux32:
+firmware-b43-linux32: Firmware for Broadcom b43 Wireless Driver on Linux >= 3.2 
+firmware-b43-linux32:
+firmware-b43-linux32: For more information about the package, see the project website at:
+firmware-b43-linux32: http://linuxwireless.org/en/users/Drivers/b43
+firmware-b43-linux32:
+firmware-b43-linux32:
+firmware-b43-linux32: This slackmatic port was developed by:
+firmware-b43-linux32: slackware@sukkology.net

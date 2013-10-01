@@ -1,0 +1,17 @@
+. ../sukkolib.rc
+
+BRIEF='An implementation of the Open Sound Control protocol for POSIX systems'
+PROJECT=http://liblo.sourceforge.net
+RELEASE=0.26
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	$SF/$NAME/$NAME-$RELEASE.tar.gz
+)
+
+fn docinst {
+	std_docinst
+	cp -a doc/man $PKG/usr
+	cp -a doc/html $DOC
+}

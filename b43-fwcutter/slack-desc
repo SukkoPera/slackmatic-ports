@@ -1,0 +1,11 @@
+b43-fwcutter: b43-fwcutter (Broadcom b43 Driver Firmware Extractor)
+b43-fwcutter:
+b43-fwcutter: This is a slackmatic port build of b43-fwcutter:
+b43-fwcutter: Broadcom b43 Driver Firmware Extractor 
+b43-fwcutter:
+b43-fwcutter: For more information about the package, see the project website at:
+b43-fwcutter: http://bues.ch/b43/fwcutter/
+b43-fwcutter:
+b43-fwcutter:
+b43-fwcutter: This slackmatic port was developed by:
+b43-fwcutter: slackware@sukkology.net

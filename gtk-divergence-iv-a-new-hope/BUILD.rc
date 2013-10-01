@@ -1,0 +1,32 @@
+. ../sukkolib.rc
+
+BRIEF='GTK2 Theme - Divergence IV - A New Hope'
+PROJECT=http://jurialmunkey.deviantart.com/#/d316eqx
+RELEASE=20101127
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://fc02.deviantart.net/fs70/f/2010/330/7/4/divergence_iv_____a_new_hope___by_jurialmunkey-d316eqx.zip
+)
+
+fn build {
+	unzip $SRC/*.zip -d $SRC/$NAME-$RELEASE
+	setup
+
+	mkdir -p $PKG/usr/share/themes
+	tar zxvf A-New-Hope.tar.gz -C $PKG/usr/share/themes
+	themedir=$PKG/usr/share/themes/A-New-Hope
+	test -d $themedir || exit $status
+
+	# Get the configurator out of the theme directory
+	mkdir $PKG/usr/bin
+	#mv $themedir/customise.py $PKG/usr/bin/customise-a-new-hope.py
+	rm $themedir/customise.py
+	cp $CWD/customise-a-new-hope.py $PKG/usr/bin
+	mkdir -p $PKG/usr/share/gtk-2.0/a-new-hope-customiser
+	mv $themedir/*.png $PKG/usr/share/gtk-2.0/a-new-hope-customiser/
+	mv $themedir/*.ui $PKG/usr/share/gtk-2.0/a-new-hope-customiser/
+
+	std_docinst
+}

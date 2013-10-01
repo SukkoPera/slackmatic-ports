@@ -1,0 +1,11 @@
+lame: lame (A high quality MPEG Audio Layer III (MP3) encoder licensed under the LGPL)
+lame:
+lame: This is a slackmatic port build of lame:
+lame: A high quality MPEG Audio Layer III (MP3) encoder licensed under the LGPL 
+lame:
+lame: For more information about the package, see the project website at:
+lame: http://lame.sourceforge.net/
+lame:
+lame:
+lame: This slackmatic port was developed by:
+lame: slackware@sukkology.net

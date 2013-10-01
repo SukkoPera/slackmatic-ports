@@ -1,0 +1,24 @@
+. ../sukkolib.rc
+
+BRIEF='A complete rewrite of the NASM assembler'
+PROJECT=http://www.tortall.net/projects/yasm/
+RELEASE=1.0.0
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://www.tortall.net/projects/yasm/releases/$NAME-$RELEASE.tar.gz
+)
+
+# It seems Python bindings are not supported on our Python :(
+CONFOPTS=(
+	$DEFAULT_CONFOPTS
+	--enable-python
+#	--enable-python-bindings
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	BSD.txt
+)
+

@@ -1,0 +1,11 @@
+gpac-extra-libs: gpac-extra-libs (Third-party libraries for GPAC)
+gpac-extra-libs:
+gpac-extra-libs: This is a slackmatic port build of gpac-extra-libs:
+gpac-extra-libs: Third-party libraries for GPAC 
+gpac-extra-libs:
+gpac-extra-libs: For more information about the package, see the project website at:
+gpac-extra-libs: http://gpac.sourceforge.net
+gpac-extra-libs:
+gpac-extra-libs:
+gpac-extra-libs: This slackmatic port was developed by:
+gpac-extra-libs: slackware@sukkology.net

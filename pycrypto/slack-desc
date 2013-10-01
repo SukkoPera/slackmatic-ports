@@ -1,0 +1,11 @@
+pycrypto: pycrypto (The Python Cryptography Toolkit)
+pycrypto:
+pycrypto: This is a slackmatic port build of pycrypto:
+pycrypto: The Python Cryptography Toolkit 
+pycrypto:
+pycrypto: For more information about the package, see the project website at:
+pycrypto: http://www.dlitz.net/software/pycrypto/
+pycrypto:
+pycrypto:
+pycrypto: This slackmatic port was developed by:
+pycrypto: slackware@sukkology.net

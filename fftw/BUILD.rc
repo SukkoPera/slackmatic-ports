@@ -1,0 +1,50 @@
+. ../sukkolib.rc
+
+# NOTE: This package will contain both single-precision and double-precision
+# versions of the library, as required by Ardour
+
+BRIEF='A C subroutine library for computing the discrete Fourier transform (DFT)'
+PROJECT=http://www.fftw.org
+RELEASE=3.2.2
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://www.fftw.org/$NAME-$RELEASE.tar.gz
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	CONVENTIONS
+	COPYRIGHT
+	README.Cell
+)
+
+# This is the single precision version
+CONFOPTS_SINGLE=(
+	$DEFAULT_CONFOPTS
+	--enable-float
+)
+
+# This is the double precision version
+CONFOPTS_DOUBLE=(
+	$DEFAULT_CONFOPTS
+	--disable-float
+)
+
+fn build {
+	setup
+
+	CONFOPTS=$CONFOPTS_SINGLE
+	std_configure
+	std_compile
+	std_inst
+	make clean
+
+	CONFOPTS=$CONFOPTS_DOUBLE
+	std_configure
+	std_compile
+	std_inst
+
+	std_docinst
+}

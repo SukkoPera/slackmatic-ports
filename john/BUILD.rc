@@ -1,0 +1,45 @@
+. ../sukkolib.rc
+
+BRIEF='John the Ripper is a fast password cracker'
+PROJECT=http://www.openwall.com/john/
+RELEASE=1.7.4
+BUILD=2suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://www.openwall.com/john/g/$NAME-$RELEASE.tar.bz2
+)
+
+# john-1.7.4-jumbo-5.diff does not compile :(
+PATCHES=(
+	john-1.7.4-jumbo-1.diff
+	johntheripper-1.7.3.1-params.h.patch
+)
+
+fn build {
+	setup
+
+	# Compile
+	CFLAGS='$CFLAGS -DJOHN_SYSTEMWIDE -DJOHN_SYSTEMWIDE_HOME="/etc/john" -DJOHN_SYSTEMWIDE_EXEC="/usr/libexec/john"'
+#	make -C src OPT_NORMAL'='"" generic || exit 101
+	make -C src generic || exit 101
+
+	# Install
+	mkdir -p $PKG/usr/sbin
+	cp run/john $PKG/usr/sbin
+	cp run/mailer $PKG/usr/sbin/john-mailer
+	ln -s john $PKG/usr/sbin/unafs
+	ln -s john $PKG/usr/sbin/unique
+	ln -s john $PKG/usr/sbin/unshadow
+	mkdir -p $PKG/etc/john
+	cp run/john.conf run/*.chr run/password.lst $PKG/etc/john
+
+	# jumbo-patch additions
+	ln -s john $PKG/usr/sbin/undrop
+	cp run/calc_stat run/genmkvpwd run/mkvcalcproba $PKG/usr/sbin/
+	cp run/genincstats.rb run/stats run/netscreen.py run/sap_prepare.pl $PKG/etc/john
+
+	# Install docs
+	std_docinst
+	cp doc/* $DOC
+}

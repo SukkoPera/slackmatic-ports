@@ -1,0 +1,29 @@
+. ../sukkolib.rc
+
+BRIEF='A Python DB-API 2.0 interface for the SQLite embedded relational database engine'
+PROJECT=http://oss.itsystementwicklung.de/trac/pysqlite/
+RELEASE=2.5.1
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://oss.itsystementwicklung.de/download/pysqlite/2.5/$RELEASE/$NAME-$RELEASE.tar.gz
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	LICENSE
+)
+
+fn docinst {
+	std_docinst
+
+	# Fix doc (Why does it get installed here?!)
+	mv $DOC/pysqlite2-doc/* $DOC
+	rm -rf $DOC/pysqlite2-doc
+}
+
+fn build {
+        std_build_python
+}
+

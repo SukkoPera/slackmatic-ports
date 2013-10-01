@@ -1,0 +1,44 @@
+. ../sukkolib.rc
+
+BRIEF='httptunnel creates a bidirectional virtual data connection tunnelled in HTTP requests.'
+PROJECT=http://mop.lisp.se/software/httptunnel.html
+RELEASE=3.3
+BUILD=2suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://www.nocrew.org/software/httptunnel/$NAME-$RELEASE.tar.gz
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	DISCLAIMER
+	FAQ
+	HACKING
+)
+
+CONFOPTS_DEBUG=(
+	$DEFAULT_CONFOPTS
+	--enable-debug
+)
+
+fn build {
+	setup
+	std_configure
+	std_compile
+	std_inst
+
+	# Debug version
+	CONFOPTS=$CONFOPTS_DEBUG
+	make distclean || exit $status
+	std_configure
+	std_compile
+	cp hts $PKG/usr/bin/hts-debug || exit $status
+	cp htc $PKG/usr/bin/htc-debug || exit $status
+
+	mkdir -p $PKG/etc/rc.d || exit $status
+	cp $CWD/rc.httptunnel $PKG/etc/rc.d || exit $status
+	chmod 755 $PKG/etc/rc.d/*
+
+	std_docinst
+}

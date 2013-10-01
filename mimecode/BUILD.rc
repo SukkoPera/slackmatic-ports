@@ -1,0 +1,33 @@
+. ../sukkolib.rc
+
+BRIEF='Ravel and unravel pack and unpack mime-encoded messages'
+PROJECT=http://www.pell.portland.or.us/~orc/Code/mimecode/
+RELEASE=1.2.3
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+DOCS=(
+	$DEFAULT_DOCS
+	COPYRIGHT
+	VERSION
+)
+
+CONFOPTS=(
+	--prefix'='/usr
+	--confdir'='/etc
+	--mandir'='/usr/man
+)
+
+PATCHES=(
+	man_install.diff
+)
+
+SOURCE=(
+	http://www.pell.portland.or.us/~orc/Code/$NAME/$NAME-$RELEASE.tar.gz
+)
+
+fn configure {
+	DESTDIR=$PKG/
+	mkdir -p $PKG/usr/man/man1
+	./configure.sh $CONFOPTS
+}

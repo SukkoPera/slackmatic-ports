@@ -1,0 +1,11 @@
+x11vnc: x11vnc (A VNC server for real X displays)
+x11vnc:
+x11vnc: This is a slackmatic port build of x11vnc:
+x11vnc: A VNC server for real X displays 
+x11vnc:
+x11vnc: For more information about the package, see the project website at:
+x11vnc: http://www.karlrunge.com/x11vnc/
+x11vnc:
+x11vnc:
+x11vnc: This slackmatic port was developed by:
+x11vnc: slackware@sukkology.net

@@ -1,0 +1,50 @@
+#!/bin/sh
+
+# Startup script for httptunnel on Slackware
+# By SukkoPera <software@sukkology.net>
+#
+# WARNING: This script is a quick hack, feel free to improve it!
+
+FORWARD_ADDRESS="localhost:22"
+LISTEN_PORT="8888"
+USER="nobody"		# Must be root if LISTEN_PORT < 1024!
+
+
+### DO NOT TOUCH ANYTHING UNDER THIS POINT ###
+
+PIDFILE="/var/run/httptunnel.pid"
+
+case $1 in
+	'start')
+		if [ -f "$PIDFILE" ]
+		then
+			pid=$(cat "$PIDFILE")
+			echo "httptunnel seems to be already running with PID $pid."
+			echo "If this is incorrect, remove $PIDFILE."
+			exit 20
+		fi
+		echo "Starting httptunnel..."
+		> "$PIDFILE"
+		chown "$USER" "$PIDFILE"
+		su "$USER" -c "/usr/bin/hts -F $FORWARD_ADDRESS $LISTEN_PORT --pid-file "$PIDFILE""
+		;;
+	'stop')
+		if [ ! -f "$PIDFILE" ]
+		then
+			echo "httptunnel not running"
+			exit 30
+		else
+			pid=$(cat "$PIDFILE")
+			echo "Stopping httptunnel (pid $pid)..."
+			kill $pid
+			rm "$PIDFILE"
+		fi
+		;;
+	*)
+		echo "usage: $0 {start|stop}"
+		exit 10
+		;;
+esac
+
+exit 0
+

@@ -1,0 +1,23 @@
+. ../sukkolib.rc
+
+BRIEF='A Fast, Easy, and Free BitTorrent Client'
+PROJECT=http://www.transmissionbt.com
+RELEASE=2.22
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://mirrors.m0k.org/transmission/files/$NAME-$RELEASE.tar.bz2
+)
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS
+	--enable-gtk
+	--enable-libnotify
+	--enable-libappindicator
+	--enable-libcanberra
+	--enable-gconf2
+	--enable-nls 
+	--enable-cli
+	--enable-daemon
+)

@@ -1,0 +1,21 @@
+. ../sukkolib.rc
+
+BRIEF='Video player plugin for Konqueror and basic MPlayer/Xine/ffmpeg/ffserver/VDR frontend for KDE'
+PROJECT=http://kmplayer.kde.org
+RELEASE=0.11.1b
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+DOCS=(
+	$DEFAULT_DOCS
+	COPYING.DOC
+	COPYING.LIB
+)
+
+SOURCE=(
+	$PROJECT/pkgs/$NAME-$RELEASE.tar.bz2
+)
+
+fn configure {
+        cmake -DCMAKE_INSTALL_PREFIX'='/usr -DCMAKE_BUILD_TYPE'='release
+}

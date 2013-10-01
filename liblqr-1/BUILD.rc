@@ -1,0 +1,16 @@
+. ../sukkolib.rc
+
+BRIEF='Resizing pictures non uniformly while preserving their features, i.e. avoiding distortion of the important parts.'
+PROJECT=http://liblqr.wikidot.com
+RELEASE=0.4.1
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://liblqr.wikidot.com/local--files/en:download-page/$NAME-$RELEASE.tar.bz2
+)
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS
+	--enable-install-man
+)

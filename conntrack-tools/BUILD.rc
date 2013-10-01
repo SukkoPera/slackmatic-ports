@@ -1,0 +1,23 @@
+. ../sukkolib.rc
+
+BRIEF='Connection tracking userspace tools'
+PROJECT=http://conntrack-tools.netfilter.org
+RELEASE=0.9.13
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://www.netfilter.org/projects/conntrack-tools/files/$NAME-$RELEASE.tar.bz2
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	doc/manual/conntrack-tools.html
+)
+
+fn inst {
+	std_inst
+
+	mkdir -p $PKG/etc/conntrackd
+	cp doc/stats/conntrackd.conf $PKG/etc/conntrackd
+}

@@ -1,0 +1,75 @@
+. ../sukkolib.rc
+
+BRIEF='Sarg - Squid Analysis Report Generator is a tool that allow you to view "where" your users are going to on the Internet.'
+PROJECT=http://sarg.sourceforge.net/sarg.php
+RELEASE=2.2.5
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	$SF/$NAME/$NAME-$RELEASE.tar.gz
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	BETA-TESTERS
+	CONTRIBUTORS
+	DONATIONS
+	htaccess
+)
+
+CONFOPTS=(
+	--enable-bindir'='/usr/bin
+	--enable-sysconfdir'='/etc/sarg/
+	--enable-mandir'='/usr/man/man1
+)
+
+fn configure {
+	# Thanks, Gentoo folks
+	echo 'Running sed to substitute paths (Thanks, Gentoo folks!)'...
+	sed \
+		-e 's:/usr/local/squid/var/logs/access.log:/var/log/squid/access.log:' \
+		-e 's:/usr/local/squidGuard/\(squidGuard.conf\):/etc/squidguard/\1:' \
+		-i sarg.conf || exit
+
+	sed \
+		-e 's:"/usr/local/squid/var/logs/access.log":"/var/log/squid/access.log":' \
+		-e 's:"/usr/local/sarg/passwd":"/etc/sarg/passwd":' \
+			-i log.c || exit #43132
+
+	sed	-e 's:/usr/local/sarg/passwd:/etc/sarg/passwd:' \
+		-i htaccess || exit
+
+	sed -e 's:/usr/local/squid/logs/access.log:/var/log/squid/access.log:' \
+		-i splitlog.c convlog.c || exit
+
+	sed -e 's:/usr/local/\(sarg/sarg.conf\):/etc/\1:' \
+		-e 's:/usr/local/squid/etc/passwd:/etc/squid/passwd:' \
+		-i user_limit_block || exit
+
+	sed -e 's:/usr/local/squid/etc/block.txt:/etc/squid/block.txt:' \
+		-i sarg-php/sarg-block-it.php || exit
+
+	sed -e 's:/usr/local/\(sarg/sarg.conf\):/etc/\1:' \
+		-e 's:/usr/local/squidGuard/\(squidGuard.conf\):/etc/squidguard/\1:' \
+		-e 's:/usr/local/squid/logs/access.log:/var/log/squid/access.log:' \
+			-i sarg.1 sarg-php/sarg-squidguard-block.php || exit
+
+	sed -i -e 's:sarg_tmp:sarg:' email.c || exit #64743
+
+	autoreconf -sfi
+	std_configure
+}
+
+fn inst {
+	mkdir -p $PKG/etc/sarg $PKG/usr/sbin || exit
+	make \
+		BINDIR'='$PKG/usr/sbin \
+		MANDIR'='$PKG/usr/share/man/man1 \
+		SYSCONFDIR'='$PKG/etc/sarg \
+		HTMLDIR'='$PKG/var/www/htdocs \
+		install || exit
+
+	# Some cleanup
+	rm $PKG/etc/sarg/languages/.new
+}

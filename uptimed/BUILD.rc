@@ -1,0 +1,41 @@
+. ../sukkolib.rc
+
+BRIEF='Logs your best uptimes'
+PROJECT=http://podgorny.cz/moin/Uptimed
+RELEASE=0.3.17
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://podgorny.cz/uptimed/releases/$NAME-$RELEASE.tar.bz2
+)
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS
+	--disable-static
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	INSTALL.cgi
+	INSTALL.upgrade
+)
+
+fn configure {
+	# For some reason, we have to do this
+	autoreconf -sfi
+
+	std_configure
+}
+
+fn inst {
+	std_inst
+	mv $PKG/etc/uptimed.conf-dist $PKG/etc/uptimed.conf
+	sed -i 's:\(PIDFILE=\).*:\1/var/run/uptimed.pid:' $PKG/etc/uptimed.conf
+
+	mkdir -p $PKG/etc/rc.d
+	cp $CWD/rc.uptimed $PKG/etc/rc.d
+
+	# BootId file will be written here, so this must exist
+	mkdir -p $PKG/var/spool/uptimed
+}

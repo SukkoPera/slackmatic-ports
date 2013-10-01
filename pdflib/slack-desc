@@ -1,0 +1,11 @@
+pdflib: pdflib (A Library to create PDF files)
+pdflib:
+pdflib: This is a slackmatic port build of pdflib:
+pdflib: A Library to create PDF files 
+pdflib:
+pdflib: For more information about the package, see the project website at:
+pdflib: http://www.pdflib.com
+pdflib:
+pdflib:
+pdflib: This slackmatic port was developed by:
+pdflib: slackware@sukkology.net

@@ -1,0 +1,27 @@
+. ../sukkolib.rc
+
+BRIEF='A free software library that implements the rsync remote-delta algorithm'
+PROJECT=http://librsync.sourceforge.net
+#RELEASE=20090331
+RELEASE=0.9.7
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+#RCSSOURCE=$NAME
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS
+	--enable-shared
+)
+
+SOURCE=(
+	$SF/$NAME/$NAME-$RELEASE.tar.gz
+)
+
+PATCHES=(
+#	4gigbug.patch
+)
+
+#fn configure {
+#	./autogen.sh
+#	std_configure
+#}

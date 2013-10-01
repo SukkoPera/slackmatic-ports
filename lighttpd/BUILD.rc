@@ -1,0 +1,35 @@
+. ../sukkolib.rc
+
+BRIEF='lighttpd (pron. lighty) is a very fast and efficient webserver'
+PROJECT=http://www.lighttpd.net
+RELEASE=1.4.25
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://download.lighttpd.net/lighttpd/releases-1.4.x/$NAME-$RELEASE.tar.bz2
+)
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS
+	--with-openssl
+	--with-attr
+	--with-pcre
+)
+
+fn inst {
+	std_inst
+
+	mkdir -p $PKG/etc/lighttpd
+	cp doc/lighttpd.conf $PKG/etc/lighttpd
+
+	mkdir -p $PKG/etc/logrotate.d
+	cp $CWD/lighttpd.logrotate $PKG/etc/logrotate.d
+
+	mkdir -p $PKG/etc/rc.d
+	cp $CWD/rc.lighttpd $PKG/etc/rc.d
+
+	mkdir -p $PKG/var/lib/lighttpd
+	mkdir -p $PKG/var/run/lighttpd
+	mkdir -p $PKG/var/cache/lighttpd/compress
+}

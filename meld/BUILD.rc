@@ -1,0 +1,23 @@
+. ../sukkolib.rc
+
+BRIEF='A visual diff and merge tool'
+PROJECT=http://meld.sourceforge.net
+RELEASE=1.6.1
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://ftp.gnome.org/pub/GNOME/sources/meld/1.6/$NAME-$RELEASE.tar.xz
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	MAINTAINERS
+)
+
+fn build {
+	setup
+
+	make install prefix'='/usr DESTDIR'='$PKG
+	std_docinst
+}

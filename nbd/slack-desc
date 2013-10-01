@@ -1,0 +1,11 @@
+nbd: nbd (Tools for the Linux Kernel's network block device, allowing you to use remote block devices over a TCP/IP network.)
+nbd:
+nbd: This is a slackmatic port build of nbd:
+nbd: Tools for the Linux Kernel's network block device, allowing you to use remote block devices over a TCP/IP network. 
+nbd:
+nbd: For more information about the package, see the project website at:
+nbd: http://nbd.sourceforge.net
+nbd:
+nbd:
+nbd: This slackmatic port was developed by:
+nbd: slackware@sukkology.net

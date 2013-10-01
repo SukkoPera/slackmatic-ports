@@ -1,0 +1,11 @@
+wxsvg: wxsvg (C++ library to create, manipulate and render SVG files)
+wxsvg:
+wxsvg: This is a slackmatic port build of wxsvg:
+wxsvg: C++ library to create, manipulate and render SVG files 
+wxsvg:
+wxsvg: For more information about the package, see the project website at:
+wxsvg: http://www.wxsvg.org
+wxsvg:
+wxsvg:
+wxsvg: This slackmatic port was developed by:
+wxsvg: slackware@sukkology.net

@@ -1,0 +1,11 @@
+librsync: librsync (A free software library that implements the rsync remote-delta algorithm)
+librsync:
+librsync: This is a slackmatic port build of librsync:
+librsync: A free software library that implements the rsync remote-delta algorithm 
+librsync:
+librsync: For more information about the package, see the project website at:
+librsync: http://librsync.sourceforge.net
+librsync:
+librsync:
+librsync: This slackmatic port was developed by:
+librsync: slackware@sukkology.net

@@ -1,0 +1,24 @@
+. ../sukkolib.rc
+
+BRIEF='Stateful programmatic web browsing in Python, after Andy Lester''s Perl module WWW::Mechanize'
+PROJECT=http://wwwsearch.sourceforge.net/mechanize/
+RELEASE=0.1.9
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+DOCS=(
+	ChangeLog.txt
+	COPYING.txt
+	doc.html
+	GeneralFAQ.html
+	README.html
+	README.txt
+)
+
+SOURCE=(
+	http://wwwsearch.sourceforge.net/mechanize/src/$NAME-$RELEASE.tar.gz
+)
+
+fn build {
+	std_build_python
+}

@@ -1,0 +1,16 @@
+drwxr-xr-x|0755|root/root|etc|
+drwxr-xr-x|0755|root/root|etc/rc.d|
+-rwxr-xr-x|0755|root/root|etc/rc.d/rc.sshguard|
+-rw-r--r--|0644|root/root|etc/sshguard-whitelist|
+drwxr-xr-x|0755|root/root|usr|
+drwxr-xr-x|0755|root/root|usr/doc|
+drwxr-xr-x|0755|root/root|usr/doc/sshguard-1.5|
+-rw-r--r--|0644|root/root|usr/doc/sshguard-1.5/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/sshguard-1.5/Changes|
+-rw-r--r--|0644|root/root|usr/doc/sshguard-1.5/README|
+-rw-r--r--|0644|root/root|usr/doc/sshguard-1.5/whitelistfile.example|
+drwxr-xr-x|0755|root/root|usr/man|
+drwxr-xr-x|0755|root/root|usr/man/man8|
+-rw-r--r--|0644|root/root|usr/man/man8/sshguard.8.gz|
+drwxr-xr-x|0755|root/root|usr/sbin|
+-rwxr-xr-x|0755|root/root|usr/sbin/sshguard|

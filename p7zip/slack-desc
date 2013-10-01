@@ -1,0 +1,11 @@
+p7zip: p7zip (A file archiver with highest compression ratio)
+p7zip:
+p7zip: This is a slackmatic port build of p7zip:
+p7zip: A file archiver with highest compression ratio 
+p7zip:
+p7zip: For more information about the package, see the project website at:
+p7zip: http://p7zip.sourceforge.net
+p7zip:
+p7zip:
+p7zip: This slackmatic port was developed by:
+p7zip: slackware@sukkology.net

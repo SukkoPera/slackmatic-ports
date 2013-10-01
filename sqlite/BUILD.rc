@@ -1,0 +1,19 @@
+. ../sukkolib.rc
+
+BRIEF='A software library that implements a self-contained, serverless, zero-configuration, transactional SQL database engine'
+PROJECT=http://www.sqlite.org
+RELEASE=3.6.10
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://www.sqlite.org/$NAME-$RELEASE.tar.gz
+)
+
+fn inst {
+	std_inst
+
+	# We need to install manpages manually
+	mkdir -p $PKG/usr/man/man1
+	cp sqlite3.1 $PKG/usr/man/man1
+}

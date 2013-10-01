@@ -1,0 +1,17 @@
+. ../sukkolib.rc
+
+BRIEF='An API to create and modify mp4 files as defined by ISO-IEC:14496-1:2001 MPEG-4 Systems'
+PROJECT=http://code.google.com/p/mp4v2/
+RELEASE=2.0.0
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=mp4v2-$RELEASE
+
+SOURCE=(
+	http://mp4v2.googlecode.com/files/mp4v2-$RELEASE.tar.bz2
+)
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS
+	--disable-gch
+)

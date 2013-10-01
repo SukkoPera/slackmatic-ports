@@ -1,0 +1,23 @@
+. ../sukkolib.rc
+
+BRIEF='A free codec for free speech'
+PROJECT=http://www.speex.org
+RELEASE=1.2rc1
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://downloads.xiph.org/releases/$NAME/$NAME-$RELEASE.tar.gz
+)
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS
+	--enable-sse
+	--with-fft'='gpl-fftw3
+)
+
+fn docinst {
+	std_docinst
+	mv $PKG/usr/share/doc/$NAME/* $DOC
+	rm -rf $PKG/usr/share/doc
+}	

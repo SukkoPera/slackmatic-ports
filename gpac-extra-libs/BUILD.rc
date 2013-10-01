@@ -1,0 +1,13 @@
+. ../sukkolib.rc
+
+BRIEF='Third-party libraries for GPAC'
+PROJECT=http://gpac.sourceforge.net
+RELEASE=0.4.5
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+TNAME=gpac_extra_libs
+BUILDDIR=$TNAME
+
+SOURCE=(
+	$SF/gpac/$TNAME-$RELEASE.tar.gz
+)

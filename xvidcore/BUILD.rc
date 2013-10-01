@@ -1,0 +1,33 @@
+. ../sukkolib.rc
+
+BRIEF='Xvid video codec'
+PROJECT=http://www.xvid.org
+RELEASE=1.2.2
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=$NAME
+
+SOURCE=(
+	http://downloads.xvid.org/downloads/$NAME-$RELEASE.tar.bz2
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	ChangeLog-1.0
+)
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS
+	--disable-static
+	--enable-shared
+)
+
+fn configure {
+	cd build/generic
+	std_configure
+}
+
+fn docinst {
+	cd ../..
+	std_docinst
+}

@@ -1,0 +1,12 @@
+#!/bin/rc
+
+	for (f in work/src/pommed-1.34/gpomme/po/*.mo) {
+		l=`{echo $f | sed 's:.*/\(.*\).mo:\1:'}
+		echo $l
+		if (test -f $f) {
+			echo 'Installing doc: '$f' in: '$DOC
+			#install -m 0644 $f $DOC
+		} else {
+			echo 'Skipping doc: '$f
+		}
+	}

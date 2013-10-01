@@ -1,0 +1,11 @@
+pysnmp: pysnmp (SNMP v1/v2c/v3 engine written in Python)
+pysnmp:
+pysnmp: This is a slackmatic port build of pysnmp:
+pysnmp: SNMP v1/v2c/v3 engine written in Python 
+pysnmp:
+pysnmp: For more information about the package, see the project website at:
+pysnmp: http://
+pysnmp:
+pysnmp:
+pysnmp: This slackmatic port was developed by:
+pysnmp: slackware@sukkology.net

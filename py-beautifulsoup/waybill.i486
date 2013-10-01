@@ -1,0 +1,14 @@
+drwxr-xr-x|0755|root/root|usr|
+drwxr-xr-x|0755|root/root|usr/doc|
+drwxr-xr-x|0755|root/root|usr/doc/py-beautifulsoup-3.1.0.1|
+-rw-r--r--|0644|root/root|usr/doc/py-beautifulsoup-3.1.0.1/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/py-beautifulsoup-3.1.0.1/CHANGELOG|
+-rw-r--r--|0644|root/root|usr/doc/py-beautifulsoup-3.1.0.1/README|
+drwxr-xr-x|0755|root/root|usr/lib|
+drwxr-xr-x|0755|root/root|usr/lib/python2.5|
+drwxr-xr-x|0755|root/root|usr/lib/python2.5/site-packages|
+-rw-r--r--|0644|root/root|usr/lib/python2.5/site-packages/BeautifulSoup-3.1.0.1-py2.5.egg-info|
+-rw-r--r--|0644|root/root|usr/lib/python2.5/site-packages/BeautifulSoupTests.py|
+-rw-r--r--|0644|root/root|usr/lib/python2.5/site-packages/BeautifulSoupTests.pyc|
+-rw-r--r--|0644|root/root|usr/lib/python2.5/site-packages/BeautifulSoup.py|
+-rw-r--r--|0644|root/root|usr/lib/python2.5/site-packages/BeautifulSoup.pyc|

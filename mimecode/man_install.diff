@@ -1,0 +1,10 @@
+--- Makefile.in	2009-06-11 07:38:11.000000000 +0200
++++ Makefile.in.new	2009-08-25 09:39:21.000000000 +0200
+@@ -41,6 +41,6 @@
+ @MKUUE@	ln -fs ravel $(DESTDIR)$(BINDIR)/uuencode
+ 
+ install.man: install_manpages $(MANPAGES)
+-	./install_manpages $(MANDIR) $(DESTDIR)$(MANPAGES)
++	./install_manpages $(DESTDIR)/$(MANDIR) $(MANPAGES)
+ 
+ $(OBJS): config.h mime_encoding.h

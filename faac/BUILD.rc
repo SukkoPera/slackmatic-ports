@@ -1,0 +1,28 @@
+. ../sukkolib.rc
+
+BRIEF='An Advanced Audio Coder (MPEG2-AAC, MPEG4-AAC)'
+PROJECT=http://sourceforge.net/projects/faac/
+RELEASE=1.28
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	$SF/$NAME/$NAME-$RELEASE.tar.gz
+)
+
+PATCHES=(
+	faac-1.28-external-libmp4v2.patch
+	faac-1.28-libmp4v2_r479_compat.patch
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	docs/faac.html
+	docs/libfaac.html
+	docs/libfaac.pdf
+)
+
+fn configure {
+	autoreconf -sfi
+	std_configure
+}

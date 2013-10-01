@@ -1,0 +1,52 @@
+. ../sukkolib.rc
+
+# NOTE: The homepage for this library is http://www.packetfactory.net/libnet/
+# but it seems down at the moment :(
+
+BRIEF='A library to provide an API for commonly used low-level network functions (mainly packet injection)'
+PROJECT=http://libnet.sourceforge.net
+RELEASE=1.1.2.1
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=$NAME
+
+SOURCE=(
+	ftp://ftp.uni-frankfurt.de/pub/Mirrors2/gentoo.org/distfiles/$NAME-$RELEASE.tar.gz
+)
+
+PATCHES=(
+	libnet-1.1.2.1-autotools.patch
+	libnet-1.1.2.1-cq_end_loop.patch
+	libnet-1.1.2.1-fix-chksum.patch
+)
+
+DOCS=(
+	VERSION
+	doc/BUGS
+	doc/CHANGELOG
+	doc/CONTRIB
+	doc/COPYING
+	doc/DESIGN_NOTES
+	doc/MIGRATION
+	doc/PACKET_BUILDING
+	doc/PORTED
+	doc/RAWSOCKET_NON_SEQUITUR
+	doc/TODO
+)
+
+fn configure {
+	autoreconf -sfi
+	std_configure
+}
+
+fn docinst {
+	std_docinst
+	
+	mkdir -p $PKG/usr/man
+	cp -a doc/man/man3 $PKG/usr/man
+
+	cp -a doc/html $DOC
+
+	mkdir -p $DOC/sample
+	cp sample/*.[ch] $DOC/sample
+}

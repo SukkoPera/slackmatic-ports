@@ -1,0 +1,46 @@
+. ../sukkolib.rc
+
+BRIEF='Poptop - The PPTP Server for Linux'
+PROJECT=http://poptop.sourceforge.net/
+RELEASE=1.3.4
+BUILD=2suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	$SF/$NAME/$NAME-$RELEASE.tar.gz
+)
+
+PATCHES=(
+	pptpd-1.3.4-gentoo.patch
+	pptpd-1.3.4-more-reodering-fixes.patch
+)
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS
+	--with-libwrap
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	README.*
+)
+
+fn configure {
+	# Patch pppd version (adapted from Gentoo, thanks)
+	PPPD_VER='2.4.4'
+	sed -i -e 's:\(#define[ \t]*VERSION[ \t]*\)".*":\1"'$PPPD_VER'":' 'plugins/patchlevel.h'
+
+	# Fix a stupid bug in the Makefile which makes the program install in /
+	sed -i '686 d' Makefile.in
+	std_configure
+}
+
+fn inst {
+	std_inst
+
+	mkdir $PKG/etc
+	cp samples/pptpd.conf $PKG/etc/pptpd.conf.new
+
+	mkdir $PKG/etc/ppp
+	cp samples/options.pptpd $PKG/etc/ppp
+}

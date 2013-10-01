@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+BRIEF='An encrypted filesystem in user-space'
+PROJECT=http://www.arg0.net/encfs
+RELEASE=1.5
+TRELEASE=1.5-2
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://encfs.googlecode.com/files/$NAME-$TRELEASE.tgz
+)

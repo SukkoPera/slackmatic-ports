@@ -1,0 +1,11 @@
+squid: squid (A fully-featured HTTP/1.0 proxy which is almost (but not quite - we're getting there!) HTTP/1.1 compliant)
+squid:
+squid: This is a slackmatic port build of squid:
+squid: A fully-featured HTTP/1.0 proxy which is almost (but not quite - we're getting there!) HTTP/1.1 compliant 
+squid:
+squid: For more information about the package, see the project website at:
+squid: http://www.squid-cache.org
+squid:
+squid:
+squid: This slackmatic port was developed by:
+squid: slackware@sukkology.net

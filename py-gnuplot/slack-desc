@@ -1,0 +1,11 @@
+py-gnuplot: py-gnuplot (A Python package that interfaces to gnuplot)
+py-gnuplot:
+py-gnuplot: This is a slackmatic port build of py-gnuplot:
+py-gnuplot: A Python package that interfaces to gnuplot 
+py-gnuplot:
+py-gnuplot: For more information about the package, see the project website at:
+py-gnuplot: http://gnuplot-py.sourceforge.net
+py-gnuplot:
+py-gnuplot:
+py-gnuplot: This slackmatic port was developed by:
+py-gnuplot: slackware@sukkology.net

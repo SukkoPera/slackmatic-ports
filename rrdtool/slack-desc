@@ -1,0 +1,11 @@
+rrdtool: rrdtool (High performance data logging and graphing system for time series data)
+rrdtool:
+rrdtool: This is a slackmatic port build of rrdtool:
+rrdtool: High performance data logging and graphing system for time series data 
+rrdtool:
+rrdtool: For more information about the package, see the project website at:
+rrdtool: http://oss.oetiker.ch/rrdtool/
+rrdtool:
+rrdtool:
+rrdtool: This slackmatic port was developed by:
+rrdtool: slackware@sukkology.net

@@ -1,0 +1,11 @@
+libnfnetlink: libnfnetlink (The low-level library for netfilter related kernel/userspace communication)
+libnfnetlink:
+libnfnetlink: This is a slackmatic port build of libnfnetlink:
+libnfnetlink: The low-level library for netfilter related kernel/userspace communication 
+libnfnetlink:
+libnfnetlink: For more information about the package, see the project website at:
+libnfnetlink: http://www.netfilter.org/projects/libnfnetlink/index.html
+libnfnetlink:
+libnfnetlink:
+libnfnetlink: This slackmatic port was developed by:
+libnfnetlink: slackware@sukkology.net

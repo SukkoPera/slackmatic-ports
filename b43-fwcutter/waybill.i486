@@ -1,0 +1,11 @@
+drwxr-xr-x|0755|root/root|usr|
+drwxr-xr-x|0755|root/root|usr/bin|
+-rwxr-xr-x|0755|root/root|usr/bin/b43-fwcutter|
+drwxr-xr-x|0755|root/root|usr/doc|
+drwxr-xr-x|0755|root/root|usr/doc/b43-fwcutter-017|
+-rw-r--r--|0644|root/root|usr/doc/b43-fwcutter-017/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/b43-fwcutter-017/COPYING|
+-rw-r--r--|0644|root/root|usr/doc/b43-fwcutter-017/README|
+drwxr-xr-x|0755|root/root|usr/man|
+drwxr-xr-x|0755|root/root|usr/man/man1|
+-rw-r--r--|0644|root/root|usr/man/man1/b43-fwcutter.1.gz|

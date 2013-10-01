@@ -1,0 +1,35 @@
+. ../sukkolib.rc
+
+BRIEF='Support for the Epson EPL-5x00L/6x00L printer family'
+PROJECT=http://sourceforge.net/projects/epsonepl/
+RELEASE=0.4.1
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	$SF/epsonepl/$NAME-$RELEASE.tgz
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	README.ijs
+	README.foomatic
+	README.FlowControl
+	LIMITATIONS
+	FAQ
+)
+
+fn inst {
+	mkdir -p $PKG/usr/bin
+	make install prefix'='$PKG/usr
+	cp ijs-config ps2epl* $PKG/usr/bin
+
+	# PPD file(s)
+	ppddest=$PKG/usr/share/cups/model/EpsonEPL
+	mkdir -p $ppddest
+	cp $CWD/*.ppd $ppddest
+
+	# These give errors: Missing Product in /usr/share/cups/model/...
+	#cp cups/*.gz $ppddest
+        gzip $ppddest/*.ppd
+}

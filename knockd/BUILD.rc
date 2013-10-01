@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+BRIEF='A port-knocking server'
+PROJECT=http://www.zeroflux.org/projects/knock
+RELEASE=0.5
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=knock-$RELEASE
+
+SOURCE=(
+	http://www.zeroflux.org/proj/knock/files/knock-$RELEASE.tar.gz
+)

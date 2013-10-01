@@ -1,0 +1,15 @@
+. ../sukkolib.rc
+
+BRIEF='Simple GTK+ guitar tuner'
+PROJECT=http://bertozlabs.awardspace.biz
+RELEASE=0.1.2
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=$NAME
+
+# Needed to compile properly
+CFLAGS=-I/usr/include/gdk-pixbuf-2.0
+
+SOURCE=(
+	http://bertozlabs.awardspace.biz/Projects/guitar-tuner/files/$NAME-$RELEASE.tar.bz2
+)

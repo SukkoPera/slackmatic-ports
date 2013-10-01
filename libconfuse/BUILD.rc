@@ -1,0 +1,18 @@
+. ../sukkolib.rc
+
+BRIEF='A configuration file parser library'
+PROJECT=http://www.nongnu.org/confuse/
+RELEASE=2.7
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+TNAME=confuse
+BUILDDIR=$TNAME-$RELEASE
+
+SOURCE=(
+	http://savannah.nongnu.org/download/confuse/$TNAME-$RELEASE.tar.gz
+)
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS
+	--enable-shared
+)

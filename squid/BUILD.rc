@@ -1,0 +1,68 @@
+. ../sukkolib.rc
+
+BRIEF='A fully-featured HTTP/1.0 proxy which is almost (but not quite - we''re getting there!) HTTP/1.1 compliant'
+PROJECT=http://www.squid-cache.org
+RELEASE=3.0.STABLE17
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+PATCHES=(
+	fixvarpaths.patch
+)
+
+CONFOPTS=(
+	--prefix'='/usr
+	--libexecdir'='/usr/libexec/squid
+	--sysconfdir'='/etc/squid
+	--datadir'='/usr/share/squid
+	--localstatedir'='/var
+	--mandir'='/usr/man
+	--disable-dependency-tracking
+	--enable-removal-policies'='lru,heap
+	--enable-storeio'='aufs,ufs,diskd,null
+# coss not supported in 3.0
+	--enable-icmp
+	--enable-delay-pools
+	--enable-useragent-log
+	--enable-kill-parent-hack
+	--enable-snmp
+	--enable-arp-acl
+	--enable-ssl
+	--enable-linux-netfilter
+	--enable-basic-auth-helpers'='NCSA,multi-domain-NTLM,MSNT,SMB,getpwnam
+	--enable-external-acl-helpers'='ip_user,unix_group
+	--enable-cache-digests
+	--with-large-files
+	--with-filedescriptors'='8192
+	--with-default-user'='nobody
+)
+
+
+SOURCE=(
+	http://www.squid-cache.org/Versions/v3/3.0/$NAME-$RELEASE.tar.gz
+)
+
+fn configure {
+	autoreconf -sfi
+	std_configure
+}
+
+fn inst {
+	std_inst
+
+	# Some cleanups
+	rm -f $PKG/usr/bin/Run*
+	rm -rf $PKG/var
+	mkdir -p $PKG/var/cache/squid
+	mkdir -p $PKG/var/log/squid
+	chgrp -R nogroup $PKG/var/log/squid $PKG/var/cache/squid
+	chmod -R g+w $PKG/var/log/squid $PKG/var/cache/squid
+
+	# Startup script
+	mkdir -p $PKG/etc/rc.d
+	cp $CWD/rc.squid $PKG/etc/rc.d
+
+	# logrotate stuff
+	mkdir -p $PKG/etc/logrotate.d
+	cat $CWD/squid.logrotate > $PKG/etc/logrotate.d/squid
+}

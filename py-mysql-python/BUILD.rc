@@ -1,0 +1,24 @@
+. ../sukkolib.rc
+
+BRIEF='MySQL support for Python (alternative to pysqlite)'
+PROJECT=http://sourceforge.net/projects/mysql-python
+RELEASE=1.2.2
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=MySQL-python-$RELEASE
+
+DOCS=(
+	$DEFAULT_DOCS
+	GPL
+	HISTORY
+	doc/FAQ.txt
+	doc/MySQLdb.txt
+)
+
+SOURCE=(
+	$SF/mysql-python/MySQL-python-$RELEASE.tar.gz
+)
+
+fn build {
+	std_build_python
+}

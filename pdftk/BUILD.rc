@@ -1,0 +1,28 @@
+. ../sukkolib.rc
+
+BRIEF='A simple tool for doing everyday things with PDF documents'
+PROJECT=http://www.pdfhacks.com/pdftk/
+RELEASE=1.41
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+NUMJOBS=1
+
+DOCS=(
+	pdftk.1.html
+	pdftk.1.notes
+	pdftk.1.txt
+)
+
+SOURCE=(
+	http://www.pdfhacks.com/pdftk/$NAME-$RELEASE.tar.bz2
+)
+
+fn build {
+	setup
+	cd pdftk
+	make -f Makefile.Generic -j $NUMJOBS
+	mkdir -p $PKG/usr/bin
+	cp pdftk $PKG/usr/bin
+	cd ..
+	std_docinst
+}

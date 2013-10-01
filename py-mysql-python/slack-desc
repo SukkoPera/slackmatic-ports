@@ -1,0 +1,11 @@
+py-mysql-python: py-mysql-python (MySQL support for Python (alternative to pysqlite))
+py-mysql-python:
+py-mysql-python: This is a slackmatic port build of py-mysql-python:
+py-mysql-python: MySQL support for Python (alternative to pysqlite) 
+py-mysql-python:
+py-mysql-python: For more information about the package, see the project website at:
+py-mysql-python: http://sourceforge.net/projects/mysql-python
+py-mysql-python:
+py-mysql-python:
+py-mysql-python: This slackmatic port was developed by:
+py-mysql-python: slackware@sukkology.net

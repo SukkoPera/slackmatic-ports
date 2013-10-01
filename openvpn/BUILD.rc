@@ -1,0 +1,37 @@
+. ../sukkolib.rc
+
+BRIEF='A full-featured open source SSL VPN solution'
+PROJECT=http://www.openvpn.org
+RELEASE=2.1_rc19
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+CONFOPTS=(
+	$DEFAULT_CONFOPTS
+	--enable-lzo
+	--enable-pthread
+	--enable-password-save
+	--disable-iproute2
+)
+
+SOURCE=(
+	http://www.openvpn.org/release/$NAME-$RELEASE.tar.gz
+)
+
+fn inst {
+	std_inst
+
+	# Install a sample config file
+	confdir=$PKG/etc/openvpn
+	mkdir -p $confdir
+	cp sample-config-files/server.conf $confdir/server.conf.sample
+	cp sample-config-files/client.conf $confdir/client.conf.sample
+}
+
+fn docinst {
+	rm -rf $PKG/usr/share/doc
+	std_docinst
+
+	cp -a sample-config-files $DOC
+	cp -a sample-scripts $DOC
+	cp -a contrib $DOC
+}

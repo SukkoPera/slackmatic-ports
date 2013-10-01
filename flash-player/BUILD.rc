@@ -1,0 +1,28 @@
+. ../sukkolib.rc
+
+BRIEF='Adobe Flash Player'
+PROJECT=http://get.adobe.com/it/flashplayer/
+RELEASE=11
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	# WARNING: You will have to download this manually!
+	'http://x/install_flash_player_'$RELEASE'_linux.i386.tar.gz'
+)
+
+fn build {
+	# Grr, the file unpacks in the current directory
+	mkdir $SRC/$NAME-$RELEASE
+	mv -i $SRC/* $SRC/$NAME-$RELEASE
+	
+	setup
+
+	cp -a usr $PKG
+
+	mkdir -p $PKG/usr/lib/mozilla/plugins/
+	cp *.so $PKG/usr/lib/mozilla/plugins/
+	
+	# Docs
+	cp *.txt $DOC
+}

@@ -1,0 +1,21 @@
+. ../sukkolib.rc
+
+BRIEF='ASN.1 types and codecs (BER, CER, DER) implementation in Python programming language'
+PROJECT=http://pyasn1.sourceforge.net
+RELEASE=0.0.8a
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+DOCS=(
+	$DEFAULT_DOCS
+	CHANGES
+	LICENSE
+	THANKS
+)
+
+SOURCE=(
+	$SF/$NAME/$NAME-$RELEASE.tar.gz
+)
+
+fn build {
+	std_build_python
+}

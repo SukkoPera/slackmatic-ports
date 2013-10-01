@@ -1,0 +1,11 @@
+monit: monit (Utility for managing and monitoring, processes, files, directories and filesystems on a UNIX system)
+monit:
+monit: This is a slackmatic port build of monit:
+monit: Utility for managing and monitoring, processes, files, directories and filesystems on a UNIX system 
+monit:
+monit: For more information about the package, see the project website at:
+monit: http://mmonit.com/monit/
+monit:
+monit:
+monit: This slackmatic port was developed by:
+monit: slackware@sukkology.net

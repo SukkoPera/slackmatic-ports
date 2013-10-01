@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+BRIEF='A library of programming functions for real time computer vision'
+PROJECT=http://opencv.willowgarage.com
+RELEASE=1.1pre1
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=$NAME-1.1.0
+
+SOURCE=(
+	$SF/opencvlibrary/opencv-linux/$RELEASE/$NAME-$RELEASE.tar.gz
+)

@@ -1,0 +1,11 @@
+libconfuse: libconfuse (A configuration file parser library)
+libconfuse:
+libconfuse: This is a slackmatic port build of libconfuse:
+libconfuse: A configuration file parser library 
+libconfuse:
+libconfuse: For more information about the package, see the project website at:
+libconfuse: http://www.nongnu.org/confuse/
+libconfuse:
+libconfuse:
+libconfuse: This slackmatic port was developed by:
+libconfuse: slackware@sukkology.net

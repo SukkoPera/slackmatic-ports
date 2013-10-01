@@ -1,0 +1,24 @@
+. ../sukkolib.rc
+
+BRIEF='Command line MPEG audio/video/system file toolbox'
+PROJECT=http://mpgtx.sourceforge.net
+RELEASE=1.3.1
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	$SF/$NAME/$NAME-$RELEASE.tar.gz
+)
+
+CONFOPTS=(
+	--prefix'='/usr
+)
+
+PATCHES=(
+	mpgtx-1.3.1-configure.patch
+	mpgtx-1.3.1-dont-ignore-cxx-flags.patch
+)
+
+fn inst {
+	make install INSTALLDIR'='$PKG/usr/bin manprefix'='$PKG/usr
+}

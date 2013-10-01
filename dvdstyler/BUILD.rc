@@ -1,0 +1,21 @@
+. ../sukkolib.rc
+
+BRIEF='A cross-platform free DVD authoring application'
+PROJECT=http://www.dvdstyler.org
+RELEASE=1.8.0.2
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+TNAME=DVDStyler
+BUILDDIR=$TNAME-$RELEASE
+
+SOURCE=(
+	$SF/$NAME/$TNAME-$RELEASE.tar.bz2
+)
+
+fn docinst {
+	mv $PKG/usr/share/doc/$NAME/* $DOC
+	rm -rf $PKG/usr/share/doc
+
+	# Make sure we overwrite, if necessary
+	std_docinst
+}

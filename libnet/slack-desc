@@ -1,0 +1,11 @@
+libnet: libnet (A generic networking API that provides access to several protocols)
+libnet:
+libnet: This is a slackmatic port build of libnet:
+libnet: A generic networking API that provides access to several protocols 
+libnet:
+libnet: For more information about the package, see the project website at:
+libnet: http://libnet.sourceforge.net
+libnet:
+libnet:
+libnet: This slackmatic port was developed by:
+libnet: slackware@sukkology.net

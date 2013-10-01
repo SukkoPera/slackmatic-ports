@@ -1,0 +1,11 @@
+hfsprogs: hfsprogs (mkfs and fsck for HFS and HFS+ file systems)
+hfsprogs:
+hfsprogs: This is a slackmatic port build of hfsprogs:
+hfsprogs: mkfs and fsck for HFS and HFS+ file systems 
+hfsprogs:
+hfsprogs: For more information about the package, see the project website at:
+hfsprogs: http://launchpad.net/ubuntu/+source/hfsprogs
+hfsprogs:
+hfsprogs:
+hfsprogs: This slackmatic port was developed by:
+hfsprogs: slackware@sukkology.net

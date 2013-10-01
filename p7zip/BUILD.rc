@@ -1,0 +1,29 @@
+. ../sukkolib.rc
+
+BRIEF='A file archiver with highest compression ratio'
+PROJECT=http://p7zip.sourceforge.net
+RELEASE=9.04
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=$NAME'_'$RELEASE
+
+SOURCE=(
+	$SF'/'$NAME'/'$NAME'_'$RELEASE'_src_all.tar.bz2'
+)
+
+fn configure {
+	cp makefile.linux_gcc_2.95_no_need_for_libstdc Makefile
+
+	# Patch for installation
+	sed -i 's:^\(DEST_HOME=\).*:\1'$PKG'/usr:' install.sh
+}
+
+fn inst {
+	sh install.sh
+}
+
+fn docinst {
+	std_docinst
+	mv $PKG/usr/share/doc/p7zip/DOCS/* $DOC
+	rm -rf $PKG/usr/share
+}

@@ -1,0 +1,11 @@
+yasm: yasm (A complete rewrite of the NASM assembler)
+yasm:
+yasm: This is a slackmatic port build of yasm:
+yasm: A complete rewrite of the NASM assembler 
+yasm:
+yasm: For more information about the package, see the project website at:
+yasm: http://www.tortall.net/projects/yasm/
+yasm:
+yasm:
+yasm: This slackmatic port was developed by:
+yasm: slackware@sukkology.net

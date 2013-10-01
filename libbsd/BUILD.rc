@@ -1,0 +1,28 @@
+. ../sukkolib.rc
+
+BRIEF='Useful functions commonly found on BSD systems'
+PROJECT=http://libbsd.freedesktop.org/wiki/
+RELEASE=0.2.0
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://libbsd.freedesktop.org/releases/$NAME-$RELEASE.tar.gz
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	Versions
+)
+
+fn configure {
+}
+
+fn inst {
+	std_inst
+
+	# Fix man
+	mv $PKG/usr/share/man $PKG/usr/man || exit $status
+	rm -rf $PKG/usr/share || exit $status
+	mv $PKG/usr/man/man3/md5.3bsd $PKG/usr/man/man3/md5-bsd.3 || exit $status
+}

@@ -1,0 +1,17 @@
+. ../sukkolib.rc
+
+BRIEF='A compression algorithm for audio, suitable for transmitting music with high quality'
+PROJECT=http://www.celt-codec.org
+RELEASE=0.7.1
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://downloads.xiph.org/releases/$NAME/$NAME-$RELEASE.tar.gz
+)
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS
+	--enable-assertions
+	--enable-new-plc
+)

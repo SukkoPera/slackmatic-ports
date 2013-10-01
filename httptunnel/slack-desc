@@ -1,0 +1,11 @@
+httptunnel: httptunnel (httptunnel creates a bidirectional virtual data connection tunnelled in HTTP requests.)
+httptunnel:
+httptunnel: This is a slackmatic port build of httptunnel:
+httptunnel: httptunnel creates a bidirectional virtual data connection tunnelled in HTTP requests. 
+httptunnel:
+httptunnel: For more information about the package, see the project website at:
+httptunnel: http://mop.lisp.se/software/httptunnel.html
+httptunnel:
+httptunnel:
+httptunnel: This slackmatic port was developed by:
+httptunnel: slackware@sukkology.net

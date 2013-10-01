@@ -1,0 +1,18 @@
+. ../sukkolib.rc
+
+BRIEF='A GStreamer based RTSP server'
+PROJECT=http://people.freedesktop.org/~wtay
+RELEASE=0.10.5
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://people.freedesktop.org/~wtay/$NAME-$RELEASE.tar.bz2
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	COPYING.LIB
+	RELEASE
+	REQUIREMENTS
+)

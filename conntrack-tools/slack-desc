@@ -1,0 +1,11 @@
+conntrack-tools: conntrack-tools (Connection tracking userspace tools)
+conntrack-tools:
+conntrack-tools: This is a slackmatic port build of conntrack-tools:
+conntrack-tools: Connection tracking userspace tools 
+conntrack-tools:
+conntrack-tools: For more information about the package, see the project website at:
+conntrack-tools: http://conntrack-tools.netfilter.org
+conntrack-tools:
+conntrack-tools:
+conntrack-tools: This slackmatic port was developed by:
+conntrack-tools: slackware@sukkology.net

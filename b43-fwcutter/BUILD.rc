@@ -1,0 +1,18 @@
+. ../sukkolib.rc
+
+BRIEF='Broadcom b43 Driver Firmware Extractor'
+PROJECT=http://bues.ch/b43/fwcutter/
+RELEASE=017
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://bues.ch/b43/fwcutter/$NAME-$RELEASE.tar.bz2
+)
+
+fn configure () {
+}
+
+fn inst () {
+	make install PREFIX'='$PKG/usr || exit 102
+}

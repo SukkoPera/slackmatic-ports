@@ -1,0 +1,11 @@
+libnetfilter_conntrack: libnetfilter_conntrack (A userspace library providing a programming interface (API) to the in-kernel connection tracking state table)
+libnetfilter_conntrack:
+libnetfilter_conntrack: This is a slackmatic port build of libnetfilter_conntrack:
+libnetfilter_conntrack: A userspace library providing a programming interface (API) to the in-kernel connection tracking state table 
+libnetfilter_conntrack:
+libnetfilter_conntrack: For more information about the package, see the project website at:
+libnetfilter_conntrack: http://www.netfilter.org/projects/libnetfilter_conntrack/index.html
+libnetfilter_conntrack:
+libnetfilter_conntrack:
+libnetfilter_conntrack: This slackmatic port was developed by:
+libnetfilter_conntrack: slackware@sukkology.net

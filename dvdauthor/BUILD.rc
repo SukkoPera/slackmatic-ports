@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+BRIEF='A set of low-level tools to help you author a DVD'
+PROJECT=http://dvdauthor.sourceforge.net
+RELEASE=0.6.18
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=$NAME
+
+SOURCE=(
+	$SF/$NAME/$NAME-$RELEASE.tar.gz
+)

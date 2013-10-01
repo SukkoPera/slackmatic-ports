@@ -1,0 +1,29 @@
+. ../sukkolib.rc
+
+BRIEF='A forensic tool to find hidden processes and TCP/UDP ports by rootkits/LKMs or by another hidden technique'
+PROJECT=http://www.security-projects.com/?Unhide
+RELEASE=20100201
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://www.security-projects.com/$NAME-$RELEASE.tgz
+)
+
+fn build {
+	setup
+
+	gcc -Wall --static unhide.c -o unhide-posix
+	gcc -Wall --static unhide-tcp.c -o unhide-tcp
+	gcc -Wall --static -pthread unhide-linux26.c -o unhide-linux26
+
+	# Install
+	mkdir -p $PKG/usr/sbin
+	cp unhide-posix unhide-tcp unhide-linux26 $PKG/usr/sbin
+	ln -s unhide-linux26 $PKG/usr/sbin/unhide
+
+	mkdir -p $PKG/usr/man/man8
+	cp man/* $PKG/usr/man/man8
+
+	cp COPYING *.txt $DOC
+}

@@ -1,0 +1,11 @@
+libbsd: libbsd (Useful functions commonly found on BSD systems)
+libbsd:
+libbsd: This is a slackmatic port build of libbsd:
+libbsd: Useful functions commonly found on BSD systems 
+libbsd:
+libbsd: For more information about the package, see the project website at:
+libbsd: http://libbsd.freedesktop.org/wiki/
+libbsd:
+libbsd:
+libbsd: This slackmatic port was developed by:
+libbsd: slackware@sukkology.net

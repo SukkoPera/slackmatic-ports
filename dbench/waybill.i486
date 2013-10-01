@@ -1,0 +1,17 @@
+drwxr-xr-x|0755|root/root|usr|
+drwxr-xr-x|0755|root/root|usr/bin|
+-rwxr-xr-x|0755|root/root|usr/bin/dbench|
+-rwxr-xr-x|0755|root/root|usr/bin/tbench|
+-rwxr-xr-x|0755|root/root|usr/bin/tbench_srv|
+drwxr-xr-x|0755|root/root|usr/doc|
+drwxr-xr-x|0755|root/root|usr/doc/dbench-4.0|
+-rw-r--r--|0644|root/root|usr/doc/dbench-4.0/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/dbench-4.0/COPYING|
+-rw-r--r--|0644|root/root|usr/doc/dbench-4.0/INSTALL|
+-rw-r--r--|0644|root/root|usr/doc/dbench-4.0/README|
+drwxr-xr-x|0755|root/root|usr/man|
+-rw-r--r--|0644|root/root|usr/man/dbench.1.gz|
+lrwxrwxrwx|0777|root/root|usr/man/tbench.1|->|dbench.1|
+lrwxrwxrwx|0777|root/root|usr/man/tbench_srv.1|->|dbench.1|
+drwxr-xr-x|0755|root/root|usr/share|
+-rwxr-xr-x|0755|root/root|usr/share/client.txt|

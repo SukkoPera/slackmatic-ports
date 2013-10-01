@@ -1,0 +1,11 @@
+liblrdf: liblrdf (A lightweight RDF library with special support for LADSPA plugins)
+liblrdf:
+liblrdf: This is a slackmatic port build of liblrdf:
+liblrdf: A lightweight RDF library with special support for LADSPA plugins 
+liblrdf:
+liblrdf: For more information about the package, see the project website at:
+liblrdf: http://sourceforge.net/projects/lrdf/
+liblrdf:
+liblrdf:
+liblrdf: This slackmatic port was developed by:
+liblrdf: slackware@sukkology.net

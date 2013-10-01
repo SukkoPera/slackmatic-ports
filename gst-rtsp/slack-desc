@@ -1,0 +1,11 @@
+gst-rtsp: gst-rtsp (A GStreamer based RTSP server)
+gst-rtsp:
+gst-rtsp: This is a slackmatic port build of gst-rtsp:
+gst-rtsp: A GStreamer based RTSP server 
+gst-rtsp:
+gst-rtsp: For more information about the package, see the project website at:
+gst-rtsp: http://people.freedesktop.org/~wtay
+gst-rtsp:
+gst-rtsp:
+gst-rtsp: This slackmatic port was developed by:
+gst-rtsp: slackware@sukkology.net

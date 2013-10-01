@@ -1,0 +1,11 @@
+gtk-murrine: gtk-murrine (Gtk+ engine, written in C language, using cairo vectorial graphics library)
+gtk-murrine:
+gtk-murrine: This is a slackmatic port build of gtk-murrine:
+gtk-murrine: Gtk+ engine, written in C language, using cairo vectorial graphics library 
+gtk-murrine:
+gtk-murrine: For more information about the package, see the project website at:
+gtk-murrine: http://www.cimitan.com/murrine/engine
+gtk-murrine:
+gtk-murrine:
+gtk-murrine: This slackmatic port was developed by:
+gtk-murrine: slackware@sukkology.net

@@ -1,0 +1,13 @@
+. ../sukkolib.rc
+
+BRIEF='A Library to create PDF files'
+PROJECT=http://www.pdflib.com
+RELEASE=7.0.3
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+TNAME=PDFlib-Lite
+BUILDDIR=$TNAME-$RELEASE
+
+SOURCE=(
+	http://www.pdflib.com/binaries/PDFlib/703/$TNAME-$RELEASE.tar.gz
+)

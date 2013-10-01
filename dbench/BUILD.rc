@@ -1,0 +1,21 @@
+. ../sukkolib.rc
+
+BRIEF='A filesystem benchmark that generates load patterns similar to those of the commercial Netbench'
+PROJECT=http://samba.org/ftp/tridge/dbench/
+RELEASE=4.0
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://samba.org/ftp/tridge/dbench/$NAME-$RELEASE.tar.gz
+)
+
+fn configure {
+	# Patch for install in DESTDIR
+	sed -i 's:^bindir=:bindir=\$(DESTDIR)/:' Makefile.in
+	sed -i 's:^mandir=:mandir=\$(DESTDIR)/:' Makefile.in
+	sed -i 's:^datadir=:datadir=\$(DESTDIR)/:' Makefile.in
+	./autogen.sh
+
+	std_configure
+}

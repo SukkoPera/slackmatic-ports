@@ -1,0 +1,11 @@
+libkdcraw: libkdcraw (A C++ interface around the dcraw binary program used to decode RAW picture files)
+libkdcraw:
+libkdcraw: This is a slackmatic port build of libkdcraw:
+libkdcraw: A C++ interface around the dcraw binary program used to decode RAW picture files 
+libkdcraw:
+libkdcraw: For more information about the package, see the project website at:
+libkdcraw: http://www.kipi-plugins.org
+libkdcraw:
+libkdcraw:
+libkdcraw: This slackmatic port was developed by:
+libkdcraw: slackware@sukkology.net

@@ -1,0 +1,38 @@
+. ../sukkolib.rc
+
+BRIEF='Defend from brute force attacks'
+PROJECT=http://www.sshguard.net
+RELEASE=1.5
+BUILD=3suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	$SF/$NAME/$NAME-$RELEASE.tar.bz2
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	Changes
+	examples/whitelistfile.example
+)
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS
+	--with-firewall'='iptables
+)
+
+fn inst {
+	std_inst
+
+	# Create the blacklist directory
+	mkdir -p $PKG/var/db/sshguard
+
+	# Install default whitelist
+	mkdir $PKG/etc
+	cp $CWD/sshguard-whitelist $PKG/etc
+
+	# Install init script
+	mkdir $PKG/etc/rc.d
+	cp $CWD/rc.sshguard $PKG/etc/rc.d
+}
+

@@ -1,0 +1,23 @@
+. ../sukkolib.rc
+
+BRIEF='A DVD navigation library, which provides an interface to the advanced features of DVDs, like menus and navigation.'
+PROJECT=http://www.mplayerhq.hu
+RELEASE=4.1.3
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+MAKEJOBS=1
+
+# WARNING: libdvdread >= 4.1.3 is required
+
+SOURCE=(
+	http://www7.mplayerhq.hu/MPlayer/releases/dvdnav/$NAME-$RELEASE.tar.bz2
+)
+
+fn configure {
+	./configure2 $DEFAULT_CONFOPTS --enable-shared --disable-opts --extra-cflags'='$CFLAGS --extra-ldflags'='$LDFLAGS
+}
+
+fn compile {
+	make version.h || exit 1
+	std_compile
+}

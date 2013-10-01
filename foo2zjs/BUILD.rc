@@ -1,0 +1,38 @@
+. ../sukkolib.rc
+
+BRIEF='A linux printer driver for ZjStream protocol'
+PROJECT=http://foo2hp.rkkda.com
+RELEASE=20130110
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=$NAME
+MAKEJOBS=1
+
+SOURCE=(
+	http://foo2zjs.rkkda.com/$NAME.tar.gz
+)
+
+fn configure () {
+}
+
+fn compile () {
+	std_compile
+
+	./getweb 2600n
+}
+
+fn inst () {
+	sed -i '/^MANDIR/ s:/share::' Makefile || exit 110
+	sed -i '/^MANDIR/ s:/share::' icc2ps/Makefile || exit 111
+	sed -i '/^DOCDIR/ s:/share/doc/'$NAME':/doc/'$NAME'-'$RELEASE':' Makefile || exit 112
+	#sed -i '/^PPD/ s:/share/.*:/share/cups/model:' Makefile || exit 113
+
+	# These dirs must exists, or make install won't install the relevant files
+	mkdir -p $PKG/usr/lib/cups/filter || exit 120
+	mkdir -p $PKG/usr/share/foomatic/db/source || exit 121
+	mkdir -p $PKG/usr/share/cups/model/foo2zjs || exit 122
+	mkdir -p $PKG/usr/share/applications || exit 123
+	mkdir -p $PKG/usr/share/pixmaps || exit 124
+
+	std_inst
+}

@@ -1,0 +1,21 @@
+. ../sukkolib.rc
+
+BRIEF='A lightweight GTK+ based image viewer'
+PROJECT=http://geeqie.sourceforge.net
+RELEASE=1.1
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+CONFOPTS=(
+        $DEFAULT_CONFOPTS
+        --with-readmedir'='/usr/doc/$NAME-$RELEASE
+)
+
+SOURCE=(
+	$SF/$NAME/$NAME-$RELEASE.tar.gz
+)
+
+PATCHES=(
+	geeqie-1.0-fix_fullscreen.patch
+	geeqie-1.1-fix_comment_update.patch
+)

@@ -1,0 +1,11 @@
+fftw: fftw (A C subroutine library for computing the discrete Fourier transform (DFT))
+fftw:
+fftw: This is a slackmatic port build of fftw:
+fftw: A C subroutine library for computing the discrete Fourier transform (DFT) 
+fftw:
+fftw: For more information about the package, see the project website at:
+fftw: http://www.fftw.org
+fftw:
+fftw:
+fftw: This slackmatic port was developed by:
+fftw: slackware@sukkology.net

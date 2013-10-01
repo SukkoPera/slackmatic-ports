@@ -1,0 +1,11 @@
+pyexiv2: pyexiv2 (A Python binding to exiv2 for manipulation of EXIF, IPTC and XMP image metadata.)
+pyexiv2:
+pyexiv2: This is a slackmatic port build of pyexiv2:
+pyexiv2: A Python binding to exiv2 for manipulation of EXIF, IPTC and XMP image metadata. 
+pyexiv2:
+pyexiv2: For more information about the package, see the project website at:
+pyexiv2: http://tilloy.net/dev/pyexiv2/
+pyexiv2:
+pyexiv2:
+pyexiv2: This slackmatic port was developed by:
+pyexiv2: slackware@sukkology.net

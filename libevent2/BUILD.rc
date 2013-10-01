@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+BRIEF='A mechanism to execute a callback function when a specific event occurs'
+PROJECT=http://monkey.org/~provos/libevent/
+RELEASE=2.0.10
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=libevent-$RELEASE-stable
+
+SOURCE=(
+	http://monkey.org/~provos/libevent-$RELEASE-stable.tar.gz
+)

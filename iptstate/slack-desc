@@ -1,0 +1,11 @@
+iptstate: iptstate (A top-like interface to your netfilter connection-tracking table)
+iptstate:
+iptstate: This is a slackmatic port build of iptstate:
+iptstate: A top-like interface to your netfilter connection-tracking table 
+iptstate:
+iptstate: For more information about the package, see the project website at:
+iptstate: http://www.phildev.net/iptstate/
+iptstate:
+iptstate:
+iptstate: This slackmatic port was developed by:
+iptstate: slackware@sukkology.net

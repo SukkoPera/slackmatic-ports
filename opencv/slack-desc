@@ -1,0 +1,11 @@
+opencv: opencv (A library of programming functions for real time computer vision)
+opencv:
+opencv: This is a slackmatic port build of opencv:
+opencv: A library of programming functions for real time computer vision 
+opencv:
+opencv: For more information about the package, see the project website at:
+opencv: http://opencv.willowgarage.com
+opencv:
+opencv:
+opencv: This slackmatic port was developed by:
+opencv: slackware@sukkology.net

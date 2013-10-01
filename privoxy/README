@@ -1,0 +1,5 @@
+NOTE: This package needs a group and a user to be created, so please run the
+following commands after the package has been installed:
+
+$ groupadd -g 77 privoxy
+$ useradd -d /etc/privoxy -g privoxy -s /bin/false -u 77 privoxy

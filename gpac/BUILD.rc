@@ -1,0 +1,19 @@
+. ../sukkolib.rc
+
+BRIEF='An Open Source multimedia framework for research and academic purposes'
+PROJECT=http://gpac.sourceforge.net
+RELEASE=0.4.5
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=$NAME
+MAKEJOBS=1
+
+SOURCE=(
+	$SF/$NAME/$NAME-$RELEASE.tar.gz
+)
+
+fn configure {
+	chmod 755 configure
+	std_configure
+}
+

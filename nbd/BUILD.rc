@@ -1,0 +1,28 @@
+. ../sukkolib.rc
+
+BRIEF='Tools for the Linux Kernel''s network block device, allowing you to use remote block devices over a TCP/IP network.'
+PROJECT=http://nbd.sourceforge.net
+RELEASE=2.9.13
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	$SF/$NAME/$NAME-$RELEASE.tar.gz
+)
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS
+	--enable-lfs
+	--enable-syslog
+)
+
+# We also compile and install gznbd
+fn compile {
+	std_compile
+	make -C gznbd || exit $status
+}
+
+fn inst {
+	std_inst
+	cp gznbd/gznbd $PKG/usr/bin
+}

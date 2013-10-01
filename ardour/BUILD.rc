@@ -1,0 +1,42 @@
+. ../sukkolib.rc
+
+# NOTE: This package needs parts of GNOME. I used GSB 2.26 for the matter.
+
+BRIEF='Digital Audio Workstation'
+PROJECT=http://ardour.org
+RELEASE=2.8.7
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	# WARNING: You will have to download this manually!
+	# http://releases.ardour.org/$NAME-$RELEASE.tar.bz2
+	http://x/$NAME-$RELEASE.tar.bz2
+)
+
+fn build {
+	setup
+
+	# Compile and install in a single pass
+	# Note that the "env" is mandatory, otherwise the dirty environment
+	# willmake the build system misbehave (I am unsure if this is due to
+	# scons or to the way ardour uses it).
+	env - \
+		PATH'='$PATH \
+		HOME'='$HOME \
+	/usr/bin/scons install \
+		CFLAGS'='$CFLAGS \
+		DESTDIR'='$PKG \
+		PREFIX'='/usr \
+		SYSLIBS'='1 \
+		|| exit $status
+
+	# Desktop icon and entry
+	mkdir -p $PKG/usr/share/pixmaps
+	cp icons/icon/ardour_icon_mac.png $PKG/usr/share/pixmaps/ardour2.png
+	mkdir -p $PKG/usr/share/applications
+	cp gtk2_ardour/ardour2.desktop.in $PKG/usr/share/applications/ardour2.desktop
+
+	# Docs
+	std_docinst
+}

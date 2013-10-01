@@ -1,0 +1,11 @@
+libsndfile: libsndfile (A C library for reading and writing files containing sampled sound)
+libsndfile:
+libsndfile: This is a slackmatic port build of libsndfile:
+libsndfile: A C library for reading and writing files containing sampled sound 
+libsndfile:
+libsndfile: For more information about the package, see the project website at:
+libsndfile: http://www.mega-nerd.com/libsndfile/
+libsndfile:
+libsndfile:
+libsndfile: This slackmatic port was developed by:
+libsndfile: slackware@sukkology.net

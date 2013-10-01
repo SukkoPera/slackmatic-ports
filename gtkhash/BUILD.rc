@@ -1,0 +1,19 @@
+. ../sukkolib.rc
+
+BRIEF='GTK+ utility for computing message digests or checksums'
+PROJECT=http://gtkhash.sourceforge.net
+RELEASE=`{date +%Y%m%d}
+#RELEASE=0.6.0
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=$NAME-master
+
+SOURCE=(
+	https://github.com/tristanheaven/gtkhash/archive/master.zip
+#	$SF/$NAME/$NAME-$RELEASE.tar.gz
+)
+
+fn configure () {
+	./autogen.sh
+	std_configure
+}

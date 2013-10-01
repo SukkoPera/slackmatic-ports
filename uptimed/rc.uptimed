@@ -1,0 +1,39 @@
+#!/bin/sh
+
+# Start/stop/restart uptimed
+
+# Start uptimed:
+uptimed_start() {
+	if [ -x /usr/sbin/uptimed ]; then
+	echo "Starting uptimed:  /usr/sbin/uptimed"
+		/usr/sbin/uptimed -b	# Create timestamp
+		sleep 2
+		/usr/sbin/uptimed
+	fi
+}
+
+# Stop uptimed:
+uptimed_stop() {
+	killall uptimed
+}
+
+# Restart uptimed:
+uptimed_restart() {
+  uptimed_stop
+  sleep 1
+  uptimed_start
+}
+
+case "$1" in
+'start')
+  uptimed_start
+  ;;
+'stop')
+  uptimed_stop
+  ;;
+'restart')
+  uptimed_restart
+  ;;
+*)
+  echo "usage rc.uptimed: start|stop|restart"
+esac

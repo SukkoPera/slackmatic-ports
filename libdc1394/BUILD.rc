@@ -1,0 +1,18 @@
+. ../sukkolib.rc
+
+BRIEF='A library that provides a high-level programming interface for application developers who wish to control IEEE 1394 based cameras'
+PROJECT=http://sourceforge.net/projects/libdc1394/
+RELEASE=2.1.2
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	$SF/$NAME/$NAME-$RELEASE.tar.gz
+)
+
+fn configure {
+	std_configure
+
+	# Bah...
+	sed -i 's/inline//g' examples/dc1394_vloopback.c || exit $status
+}

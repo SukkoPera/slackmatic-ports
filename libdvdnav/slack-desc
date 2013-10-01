@@ -1,0 +1,11 @@
+libdvdnav: libdvdnav (A DVD navigation library, which provides an interface to the advanced features of DVDs, like menus and navigation.)
+libdvdnav:
+libdvdnav: This is a slackmatic port build of libdvdnav:
+libdvdnav: A DVD navigation library, which provides an interface to the advanced features of DVDs, like menus and navigation. 
+libdvdnav:
+libdvdnav: For more information about the package, see the project website at:
+libdvdnav: http://packages.ubuntu.com/intrepid/libdvdnav4
+libdvdnav:
+libdvdnav:
+libdvdnav: This slackmatic port was developed by:
+libdvdnav: slackware@sukkology.net

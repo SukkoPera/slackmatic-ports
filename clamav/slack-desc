@@ -1,0 +1,11 @@
+clamav: clamav (A GPL anti-virus toolkit for UNIX, designed especially for e-mail scanning on mail gateways)
+clamav:
+clamav: This is a slackmatic port build of clamav:
+clamav: A GPL anti-virus toolkit for UNIX, designed especially for e-mail scanning on mail gateways 
+clamav:
+clamav: For more information about the package, see the project website at:
+clamav: http://www.clamav.net
+clamav:
+clamav:
+clamav: This slackmatic port was developed by:
+clamav: slackware@sukkology.net

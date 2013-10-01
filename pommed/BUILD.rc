@@ -1,0 +1,51 @@
+. ../sukkolib.rc
+
+# NOTE: It seems this package needs a dynamic library of libpci, contained in
+#       pciutils. So the Slackware package must be recompiled with SHARED=yes
+#       and the following command must be run:
+#       ln -s /usr/lib/libpci.so.* /usr/lib/libpci.so
+
+BRIEF='Handles the hotkeys found on Apple computers'
+PROJECT=http://www.technologeek.org/projects/pommed/index.html
+RELEASE=1.34
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	https://alioth.debian.org/frs/download.php/3327/$NAME-$RELEASE.tar.gz
+)
+
+fn build {
+	setup
+
+	make pommed
+	make gpomme
+
+	# Manual installation, sigh...
+	# pommed
+	mkdir -p $PKG/usr/sbin
+	cp pommed/pommed $PKG/usr/sbin
+	mkdir -p $PKG/usr/share/pommed
+	cp pommed/data/* $PKG/usr/share/pommed
+	mkdir -p $PKG/etc
+	cp pommed.conf.* $PKG/etc
+	mkdir -p $PKG/etc/dbus-1/system.d
+	cp dbus-policy.conf $PKG/etc/dbus-1/system.d/pommed.conf
+	mkdir -p $PKG/etc/rc.d
+	cp pommed.init $PKG/etc/rc.d/rc.pommed
+
+	# gpomme
+	mkdir -p $PKG/usr/bin
+	cp gpomme/gpomme $PKG/usr/bin
+	mkdir -p $PKG/usr/share/gpomme
+	cp -a gpomme/themes $PKG/usr/share/gpomme
+	mkdir -p $PKG/usr/share/applications
+	cp -a gpomme/gpomme*.desktop $PKG/usr/share/applications
+	for (mo in gpomme/po/*.mo) {
+		lang=`{echo $mo | sed 's:.*/\(.*\).mo:\1:'}
+		mkdir -p $PKG/usr/share/locale/$lang/LC_MESSAGES
+		cp $mo $PKG/usr/share/locale/$lang/LC_MESSAGES/gpomme.mo
+	}
+	
+	std_docinst
+}

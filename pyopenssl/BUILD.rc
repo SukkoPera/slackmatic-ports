@@ -1,0 +1,16 @@
+. ../sukkolib.rc
+
+BRIEF='Python wrapper around a small subset of the OpenSSL library'
+PROJECT=http://pyopenssl.sourceforge.net
+RELEASE=0.9
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=pyOpenSSL-$RELEASE
+
+SOURCE=(
+	$SF/$NAME/pyOpenSSL-$RELEASE.tar.gz
+)
+
+fn build {
+	std_build_python
+}

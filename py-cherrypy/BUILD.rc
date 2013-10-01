@@ -1,0 +1,20 @@
+. ../sukkolib.rc
+
+BRIEF='A pythonic, object-oriented HTTP framework'
+PROJECT=http://www.cherrypy.org
+RELEASE=3.0.3
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=CherryPy-$RELEASE
+
+DOCS=(
+	README.txt
+)
+
+SOURCE=(
+	http://download.cherrypy.org/cherrypy/$RELEASE/CherryPy-$RELEASE.tar.gz
+)
+
+fn build {
+	std_build_python
+}

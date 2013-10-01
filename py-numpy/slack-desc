@@ -1,0 +1,11 @@
+py-numpy: py-numpy (The fundamental package needed for scientific computing with Python)
+py-numpy:
+py-numpy: This is a slackmatic port build of py-numpy:
+py-numpy: The fundamental package needed for scientific computing with Python 
+py-numpy:
+py-numpy: For more information about the package, see the project website at:
+py-numpy: http://numpy.scipy.org
+py-numpy:
+py-numpy:
+py-numpy: This slackmatic port was developed by:
+py-numpy: slackware@sukkology.net

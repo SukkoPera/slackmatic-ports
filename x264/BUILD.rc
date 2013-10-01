@@ -1,0 +1,36 @@
+. ../sukkolib.rc
+
+BRIEF='A free library for encoding H264/AVC video streams'
+PROJECT=http://www.videolan.org/developers/x264.html
+RELEASE=20100424
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=$NAME'-snapshot-'$RELEASE'-2245'
+
+SOURCE=(
+	'ftp://ftp.videolan.org/pub/videolan/x264/snapshots/'$NAME'-snapshot-'$RELEASE'-2245.tar.bz2'
+)
+
+CONFOPTS=(
+	--prefix'='/usr
+	--enable-shared
+	--enable-visualize
+	--enable-pic
+#	--disable-asm
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	doc/ratecontrol.txt
+	doc/regression_test.txt
+	doc/standards.txt
+	doc/threads.txt
+	doc/vui.txt
+)
+
+fn configure {
+	std_configure
+
+	# Little patch
+	sed -i '26 i #include <stdint.h>' common/display-x11.c || exit $status
+}

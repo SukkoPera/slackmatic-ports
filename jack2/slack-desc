@@ -1,0 +1,11 @@
+jack: jack (A system for handling real-time, low latency audio (and MIDI))
+jack:
+jack: This is a slackmatic port build of jack:
+jack: A system for handling real-time, low latency audio (and MIDI) 
+jack:
+jack: For more information about the package, see the project website at:
+jack: http://jackaudio.org
+jack:
+jack:
+jack: This slackmatic port was developed by:
+jack: slackware@sukkology.net

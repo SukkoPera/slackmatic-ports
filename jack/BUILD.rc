@@ -1,0 +1,21 @@
+. ../sukkolib.rc
+
+BRIEF='A system for handling real-time, low latency audio (and MIDI)'
+PROJECT=http://jackaudio.org
+RELEASE=0.118.0
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+TNAME=jack-audio-connection-kit
+BUILDDIR=$TNAME-$RELEASE
+
+SOURCE=(
+	http://jackaudio.org/downloads/$TNAME-$RELEASE.tar.gz
+)
+
+fn docinst {
+	std_docinst
+
+	# It seems this will still be installed here even if we use --docdir
+	mv $PKG/usr/share/jack-audio-connection-kit/reference/html $DOC
+	rm -rf $PKG/usr/share
+}

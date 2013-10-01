@@ -1,0 +1,11 @@
+dbench: dbench (A filesystem benchmark that generates load patterns similar to those of the commercial Netbench)
+dbench:
+dbench: This is a slackmatic port build of dbench:
+dbench: A filesystem benchmark that generates load patterns similar to those of the commercial Netbench 
+dbench:
+dbench: For more information about the package, see the project website at:
+dbench: http://samba.org/ftp/tridge/dbench/
+dbench:
+dbench:
+dbench: This slackmatic port was developed by:
+dbench: slackware@sukkology.net

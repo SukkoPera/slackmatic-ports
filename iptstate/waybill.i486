@@ -1,0 +1,15 @@
+drwxr-xr-x|0755|root/root|usr|
+drwxr-xr-x|0755|root/root|usr/doc|
+drwxr-xr-x|0755|root/root|usr/doc/iptstate-2.2.2|
+-rw-r--r--|0644|root/root|usr/doc/iptstate-2.2.2/BUGS|
+-rw-r--r--|0644|root/root|usr/doc/iptstate-2.2.2/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/iptstate-2.2.2/CONTRIB|
+-rw-r--r--|0644|root/root|usr/doc/iptstate-2.2.2/Changelog|
+-rw-r--r--|0644|root/root|usr/doc/iptstate-2.2.2/README|
+-rw-r--r--|0644|root/root|usr/doc/iptstate-2.2.2/WISHLIST|
+drwxr-xr-x|0755|root/root|usr/sbin|
+-rwxr-xr-x|0755|root/root|usr/sbin/iptstate|
+drwxr-xr-x|0755|root/root|usr/share|
+drwxr-xr-x|0755|root/root|usr/share/man|
+drwxr-xr-x|0755|root/root|usr/share/man/man8|
+-r--r--r--|0444|root/root|usr/share/man/man8/iptstate.8.gz|

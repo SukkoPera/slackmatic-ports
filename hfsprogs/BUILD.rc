@@ -1,0 +1,45 @@
+. ../sukkolib.rc
+
+BRIEF='mkfs and fsck for HFS and HFS+ file systems'
+PROJECT=http://launchpad.net/ubuntu/+source/hfsprogs
+RELEASE=332.25
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=diskdev_cmds-$RELEASE
+
+SOURCE=(
+	http://www.opensource.apple.com/darwinsource/tarballs/apsl/diskdev_cmds-$RELEASE.tar.gz
+)
+
+PATCHES=(
+	patches/00-create_makefiles.patch
+	patches/10-linux_specific_code.patch
+	patches/20-apple_specific_files.patch
+	patches/25-64-bit-fix.patch
+	patches/30-formatting_strings.patch
+	patches/40-printf_types.patch
+	patches/50-typo-new_fs-manpage.diff
+	patches/60-hfs-wrapper-boot-in-usr-share.diff
+	patches/70-diskdev_cmds_system_check-332.14.patch
+	patches/80-fix_manpages.patch
+	patches/90-rename_dprintf.patch
+	patches/91-remove-nils.patch
+	patches/92-fix-types.patch
+)
+
+fn build {
+	setup
+
+	pwd=`{pwd}
+	make -f Makefile.lnx CFLAGS'='$CFLAGS' -DDEBUG_BUILD=0 -D_FILE_OFFSET_BITS=64 -DLINUX=1 -DBSD=1 -I'$pwd'/include' || exit $status
+
+	# Install
+	mkdir -p $PKG/usr/share/hfsprogs $PKG/sbin $PKG/usr/man/man8
+	install -m 644 newfs_hfs.tproj/hfsbootdata.img $PKG/usr/share/hfsprogs/hfsbootdata
+	install -m 755 newfs_hfs.tproj/newfs_hfs   $PKG/sbin/mkfs.hfsplus
+	install -m 755 fsck_hfs.tproj/fsck_hfs     $PKG/sbin/fsck.hfsplus
+	install -m 644 newfs_hfs.tproj/newfs_hfs.8 $PKG/usr/man/man8/mkfs.hfsplus.8
+	install -m 644 fsck_hfs.tproj/fsck_hfs.8   $PKG/usr/man/man8/fsck.hfsplus.8
+
+	std_docinst
+}

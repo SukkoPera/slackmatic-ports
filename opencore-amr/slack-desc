@@ -1,0 +1,11 @@
+opencore-amr: opencore-amr (OpenCORE Framework implementation of Adaptive Multi Rate Narrowband and Wideband speech codec)
+opencore-amr:
+opencore-amr: This is a slackmatic port build of opencore-amr:
+opencore-amr: OpenCORE Framework implementation of Adaptive Multi Rate Narrowband and Wideband speech codec 
+opencore-amr:
+opencore-amr: For more information about the package, see the project website at:
+opencore-amr: http://sourceforge.net/projects/opencore-amr/
+opencore-amr:
+opencore-amr:
+opencore-amr: This slackmatic port was developed by:
+opencore-amr: slackware@sukkology.net

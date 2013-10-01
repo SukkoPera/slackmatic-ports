@@ -1,0 +1,12 @@
+To make this package work, you'll need to create a user and a group:
+
+# groupadd -g 92 munin
+# useradd -g munin -s /bin/false -u 92 -d /etc/munin -c munin munin
+
+Then add to the munin user's crontab:
+*/5 * * * * /usr/bin/munin-cron
+
+To configure the plugins for the node, run:
+# munin-node-configure --shell | sh -x
+
+Remember that munin-node must be running, so add it to /etc/rc.d/rc.local!

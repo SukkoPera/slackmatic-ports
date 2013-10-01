@@ -1,0 +1,11 @@
+libdc1394: libdc1394 (A library that provides a high-level programming interface for application developers who wish to control IEEE 1394 based cameras)
+libdc1394:
+libdc1394: This is a slackmatic port build of libdc1394:
+libdc1394: A library that provides a high-level programming interface for application developers who wish to control IEEE 1394 based cameras 
+libdc1394:
+libdc1394: For more information about the package, see the project website at:
+libdc1394: http://sourceforge.net/projects/libdc1394/
+libdc1394:
+libdc1394:
+libdc1394: This slackmatic port was developed by:
+libdc1394: slackware@sukkology.net

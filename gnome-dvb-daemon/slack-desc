@@ -1,0 +1,11 @@
+gnome-dvb-daemon: gnome-dvb-daemon (A daemon based on GStreamer to setup your DVB devices)
+gnome-dvb-daemon:
+gnome-dvb-daemon: This is a slackmatic port build of gnome-dvb-daemon:
+gnome-dvb-daemon: A daemon based on GStreamer to setup your DVB devices 
+gnome-dvb-daemon:
+gnome-dvb-daemon: For more information about the package, see the project website at:
+gnome-dvb-daemon: http://live.gnome.org/DVBDaemon
+gnome-dvb-daemon:
+gnome-dvb-daemon:
+gnome-dvb-daemon: This slackmatic port was developed by:
+gnome-dvb-daemon: slackware@sukkology.net

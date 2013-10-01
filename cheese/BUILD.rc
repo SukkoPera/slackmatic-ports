@@ -1,0 +1,21 @@
+. ../sukkolib.rc
+
+BRIEF='Use your webcam to take photos and videos, apply fancy special effects and share the fun with others'
+PROJECT=http://projects.gnome.org/cheese/
+RELEASE=2.32.0
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://ftp.gnome.org/pub/GNOME/sources/cheese/2.32/$NAME-$RELEASE.tar.gz
+)
+
+fn configure {
+	# OK, I have no idea if this is sane to do or not, but it seems it 
+	# gets the compiling done, and the program not to crash
+	# See http://osdir.com/ml/cheese-list/2010-10/msg00005.html, but I
+	# have no intention of recompiling GStreamer with debugging enabled.
+	sed -i '/_cat .* NULL/d' libcheese/*.c
+
+	std_configure
+}

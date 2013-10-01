@@ -1,0 +1,87 @@
+. ../sukkolib.rc
+
+NAME=squid
+BRIEF='A fully-featured HTTP/1.0 proxy which is almost (but not quite - we''re getting there!) HTTP/1.1 compliant'
+PROJECT=http://www.squid-cache.org
+RELEASE=3.1.0.12
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+PATCHES=(
+#	fixvarpaths.patch
+	squid-3-capability.patch
+	squid-3.1.0.9_beta-gentoo.patch
+	squid-3.1.0.9_beta-invconv.patch
+)
+
+CONFOPTS=(
+	--prefix'='/usr
+	--libexecdir'='/usr/libexec/squid
+	--sysconfdir'='/etc/squid
+	--datadir'='/usr/share/squid
+	--localstatedir'='/var
+	--mandir'='/usr/man
+	--with-logdir'='/var/log/squid
+	--disable-dependency-tracking
+	--enable-removal-policies'='lru,heap
+	--enable-storeio'='aufs,ufs,diskd
+# coss not supported in 3.0. null seems unsupported in 3.1
+	--enable-icmp
+	--enable-delay-pools
+	--enable-useragent-log
+	--enable-referer-log
+	--enable-kill-parent-hack
+	--enable-snmp
+	--enable-arp-acl
+	--enable-ssl
+	--enable-linux-netfilter
+	--enable-auth'='basic,digest,ntlm
+	--enable-digest-auth-helpers'='password
+	--enable-basic-auth-helpers'='NCSA,multi-domain-NTLM,MSNT,SMB,getpwnam,LDAP,SASL,YP,DB
+	--enable-external-acl-helpers'='ip_user,session,unix_group,ldap_group,wbinfo_group
+	--enable-ntlm-auth-helpers'='smb_lm,fakeauth
+	--enable-cache-digests
+	--with-large-files
+	--with-filedescriptors'='8192
+	--with-default-user'='nobody
+	--enable-linux-netfilter
+)
+
+
+SOURCE=(
+	http://www.squid-cache.org/Versions/v3/3.1/$NAME-$RELEASE.tar.bz2
+)
+
+fn configure {
+#	autoreconf -sfi
+	./bootstrap.sh || exit 1
+	std_configure
+}
+
+fn inst {
+	std_inst
+
+	# Why do we need this?! Sigh...
+        for (l in `{find $PKG/usr/share/squid/errors -maxdepth 1 -type l}) {
+                r=`{readlink $l}
+                s=`{basename $r}
+		rm -f $l
+                ln -sf $s $l
+        }
+
+	# Some cleanups
+	rm -f $PKG/usr/bin/Run*
+	rm -rf $PKG/var
+	mkdir -p $PKG/var/cache/squid
+	mkdir -p $PKG/var/log/squid
+	chgrp -R nogroup $PKG/var/log/squid $PKG/var/cache/squid
+	chmod -R g+w $PKG/var/log/squid $PKG/var/cache/squid
+
+	# Startup script
+	mkdir -p $PKG/etc/rc.d
+	cp $CWD/rc.squid $PKG/etc/rc.d
+
+	# logrotate stuff
+	mkdir -p $PKG/etc/logrotate.d
+	cat $CWD/squid.logrotate > $PKG/etc/logrotate.d/squid
+}

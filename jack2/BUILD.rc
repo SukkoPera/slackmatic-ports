@@ -1,0 +1,35 @@
+. ../sukkolib.rc
+
+BRIEF='A system for handling real-time, low latency audio (and MIDI)'
+PROJECT=http://jackaudio.org
+RELEASE=1.9.5
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+TNAME=jack
+BUILDDIR=$TNAME-$RELEASE
+
+SOURCE=(
+	http://www.grame.fr/~letz/$TNAME-$RELEASE.tar.bz2
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	README_NETJACK2
+)
+
+fn configure {
+	./waf configure \
+		--prefix'='/usr \
+		--dbus \
+		--enable-pkg-config-dbus-service-dir
+}
+
+fn compile {
+	./waf build
+#		-j $DEFAULT_MAKEJOBS
+}
+
+fn inst {
+	./waf install \
+		--destdir'='$PKG
+}

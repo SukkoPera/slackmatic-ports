@@ -1,0 +1,41 @@
+. ../sukkolib.rc
+
+BRIEF='The Linux Audio Developer''s Simple Plugin API'
+PROJECT=http://www.ladspa.org
+RELEASE=1.13
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+TNAME=ladspa_sdk
+BUILDDIR=$TNAME
+
+SOURCE=(
+	'http://www.ladspa.org/download/'$TNAME'_'$RELEASE'.tgz'
+)
+
+PATCHES=(
+	ladspa-sdk-1.13-asneeded.patch
+	ladspa-sdk-1.13-properbuild.patch
+)
+
+fn configure {
+	cd src
+}
+
+fn inst {
+	make install \
+		DESTDIR'='$PKG
+		INSTALL_PLUGINS_DIR'='/usr/lib/ladspa
+
+	mkdir -p $PKG/etc/profile.d
+	cp $CWD/profile-ladspa.sh $PKG/etc/profile.d/ladspa.sh
+	cp $CWD/profile-ladspa.csh $PKG/etc/profile.d/ladspa.csh
+	chmod 755 $PKG/etc/profile.d/*
+}
+
+fn docinst {
+	cd ../doc
+	std_docinst
+
+	mkdir $DOC/html
+	cp *.html $DOC/html
+}

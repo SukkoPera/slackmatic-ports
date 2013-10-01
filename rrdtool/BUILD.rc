@@ -1,0 +1,24 @@
+. ../sukkolib.rc
+
+# WARNING: Before installing this package, run:
+Ã# ln -sf /usr/lib/perl5 /usr/lib/perl
+
+BRIEF='High performance data logging and graphing system for time series data'
+PROJECT=http://oss.oetiker.ch/rrdtool/
+RELEASE=1.4.3
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://oss.oetiker.ch/rrdtool/pub/$NAME-$RELEASE.tar.gz
+)
+
+fn docinst {
+	std_docinst
+
+	# Fix some stuff
+	mv $PKG/usr/share/man* $PKG/usr/man
+	mv $PKG/usr/share/doc/$NAME-$RELEASE/* $DOC
+	mv $PKG/usr/share/$NAME/examples $DOC
+	rm -rf $PKG/usr/share
+}

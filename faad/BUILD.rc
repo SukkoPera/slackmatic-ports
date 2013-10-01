@@ -1,0 +1,26 @@
+. ../sukkolib.rc
+
+BRIEF='An open source MPEG-4 and MPEG-2 AAC decoder'
+PROJECT=http://www.audiocoding.com/faad2.html
+RELEASE=2.7
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=faad2-$RELEASE
+
+SOURCE=(
+	http://downloads.sourceforge.net/faac/$NAME'2-'$RELEASE.tar.bz2
+)
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS
+	--disable-static
+	--enable-shared
+	--with-mpeg4-ip
+)
+
+fn docinst {
+	std_docinst
+
+	mv $PKG/usr/man/manm $PKG/usr/man/man1
+	mv $PKG/usr/man/man1/faad.man $PKG/usr/man/man1/faad.man.1
+}

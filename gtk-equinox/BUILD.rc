@@ -1,0 +1,39 @@
+. ../sukkolib.rc
+
+BRIEF='Equinox GTK Engine'
+PROJECT='http://gnome-look.org/content/show.php/Equinox+GTK+Engine?content=121881'
+RELEASE=1.30
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+TNAME=equinox
+BUILDDIR=$TNAME-$RELEASE
+
+SOURCE=(
+	http://gnome-look.org/CONTENT/content-files/121881-$TNAME-$RELEASE.tar.bz2
+)
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS
+	--enable-animation
+)
+
+fn build {
+	cd $SRC
+
+	tar zvxf equinox-gtk-engine.tar.gz
+	std_build
+}
+
+fn inst {
+	std_inst
+
+	# Install themes
+	mkdir -p $PKG/usr/share/themes
+	tar zxvf $SRC/equinox-themes.tar.gz -C $PKG/usr/share/themes
+
+	# This should fix the issue with the text of selected menu items in
+	# Firefox and Thunderbird, but it must be copied in both
+	# ~/.mozilla/firefox/xxxxxxxx.default/chrome/ and 
+	# ~/.thunderbird/xxxxxxxx.default/chrome/, so we just leave it in $DOC
+	mv $PKG/usr/share/themes/userChrome.css $DOC
+}

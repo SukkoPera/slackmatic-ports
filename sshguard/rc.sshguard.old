@@ -1,0 +1,27 @@
+#!/bin/sh
+
+FIFO="/var/log/sshguard.fifo"
+OPTS=""		# Add options here
+
+case $1 in
+	'start')
+		if [ -x /usr/sbin/sshguard ]
+		then
+			echo "Starting SSHGuard..."
+			/usr/sbin/sshguard -l "$FIFO" $OPTS >& /dev/null &
+		fi
+		;;
+	'stop')
+		pid=$(ps -ef | grep -v "$(basename $0)" | grep -w sshguard | grep -v grep | awk '{print $2}')
+		if [ -z "$pid" ]
+		then
+			echo "sshguard not running"
+		else
+			echo "Killing pid $pid"
+			kill $pid
+		fi
+		;;
+	*)
+		echo "usage: $0 {start|stop}"
+		;;
+esac

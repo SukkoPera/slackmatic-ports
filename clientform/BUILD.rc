@@ -1,0 +1,26 @@
+. ../sukkolib.rc
+
+BRIEF='A Python module for handling HTML forms on the client side'
+PROJECT=http://wwwsearch.sourceforge.net/ClientForm/
+RELEASE=0.2.9
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=ClientForm-$RELEASE
+
+DOCS=(
+	ChangeLog.txt
+	COPYING.txt
+	COPYRIGHT.txt
+	INSTALL.txt
+	README.txt
+	GeneralFAQ.html
+	README.html
+)
+
+SOURCE=(
+	http://wwwsearch.sourceforge.net/ClientForm/src/ClientForm-$RELEASE.tar.gz
+)
+
+fn build {
+	std_build_python
+}

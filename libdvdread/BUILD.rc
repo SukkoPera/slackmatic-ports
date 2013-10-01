@@ -1,0 +1,20 @@
+. ../sukkolib.rc
+
+BRIEF='Library for DVD navigation tools'
+PROJECT=http://www.mplayerhq.hu
+RELEASE=4.1.3
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://www7.mplayerhq.hu/MPlayer/releases/dvdnav/$NAME-$RELEASE.tar.bz2
+)
+
+fn configure {
+	./configure2 $DEFAULT_CONFOPTS --enable-shared --disable-opts --extra-cflags'='$CFLAGS --extra-ldflags'='$LDFLAGS
+}
+
+fn compile {
+	make version.h || exit 1
+	std_compile
+}

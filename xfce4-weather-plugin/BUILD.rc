@@ -1,0 +1,17 @@
+. ../sukkolib.rc
+
+BRIEF='A weather plugin for the Xfce desktop environment'
+PROJECT=http://git.xfce.org/panel-plugins/xfce4-weather-plugin/
+RELEASE=0.8.2
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=$NAME-$NAME-$RELEASE
+
+SOURCE=(
+	http://git.xfce.org/panel-plugins/xfce4-weather-plugin/snapshot/$NAME-$NAME-$RELEASE.tar.bz2
+)
+
+fn configure () {
+	./autogen.sh || exit 110
+	std_configure
+}

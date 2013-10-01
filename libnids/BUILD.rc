@@ -1,0 +1,40 @@
+. ../sukkolib.rc
+
+BRIEF='An implementation of an E-component of Network Intrusion Detection System'
+PROJECT=http://libnids.sourceforge.net
+RELEASE=1.23
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	$SF/$NAME/$NAME-$RELEASE.tar.gz
+)
+
+PATCHES=(
+	libnids-1.20-chksum.c-ebx.patch
+	libnids-1.23-elif.patch
+)
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS
+	--enable-shared
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	CHANGES
+	CREDITS
+	MISC
+	doc/API.html
+	doc/API.txt
+	doc/LINUX
+	doc/NEW_LIBPCAP
+	doc/PATCH
+	doc/PERFORMANCE
+	doc/TESTS
+	doc/bugtraq_post
+)
+
+fn inst {
+	make install_prefix'='$PKG install
+}

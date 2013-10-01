@@ -1,0 +1,29 @@
+. ../sukkolib.rc
+
+BRIEF='Correct images based on intimate knowledge of lens characteristics and calibration data'
+PROJECT=http://lensfun.berlios.de
+RELEASE=0.2.5
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://download2.berlios.de/lensfun/$NAME-$RELEASE.tar.bz2
+)
+
+CONFOPTS=(
+	--prefix'='/usr
+	--sysconfdir'='/etc
+	# See Gentoo bug #314643
+	--vectorization'='
+)
+
+fn compile {
+	make dep
+	make all
+}
+
+fn docinst {
+	std_docinst
+	mv $PKG/usr/share/doc/lensfun-*/* $DOC
+	rm -rf $PKG/usr/share/doc
+}

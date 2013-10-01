@@ -1,0 +1,15 @@
+. ../sukkolib.rc
+
+BRIEF='The Python Cryptography Toolkit'
+PROJECT=http://www.dlitz.net/software/pycrypto/
+RELEASE=2.0.1
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://www.amk.ca/files/python/crypto/$NAME-$RELEASE.tar.gz
+)
+
+fn build {
+	std_build_python
+}

@@ -1,0 +1,11 @@
+liblqr-1: liblqr-1 (Resizing pictures non uniformly while preserving their features, i.e. avoiding distortion of the important parts.)
+liblqr-1:
+liblqr-1: This is a slackmatic port build of liblqr-1:
+liblqr-1: Resizing pictures non uniformly while preserving their features, i.e. avoiding distortion of the important parts. 
+liblqr-1:
+liblqr-1: For more information about the package, see the project website at:
+liblqr-1: http://liblqr.wikidot.com
+liblqr-1:
+liblqr-1:
+liblqr-1: This slackmatic port was developed by:
+liblqr-1: slackware@sukkology.net

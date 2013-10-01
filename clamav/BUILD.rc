@@ -1,0 +1,18 @@
+. ../sukkolib.rc
+
+BRIEF='A GPL anti-virus toolkit for UNIX, designed especially for e-mail scanning on mail gateways'
+PROJECT=http://www.clamav.net
+RELEASE=0.95.2
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS
+        --with-dbdir'='/var/lib/clamav
+        --disable-clamav
+        --disable-static
+)
+
+SOURCE=(
+	$SF/$NAME/$NAME-$RELEASE.tar.gz
+)

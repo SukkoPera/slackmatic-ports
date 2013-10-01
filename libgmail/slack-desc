@@ -1,0 +1,11 @@
+libgmail: libgmail (Python binding for Google's Gmail service)
+libgmail:
+libgmail: This is a slackmatic port build of libgmail:
+libgmail: Python binding for Google's Gmail service 
+libgmail:
+libgmail: For more information about the package, see the project website at:
+libgmail: http://libgmail.sourceforge.net
+libgmail:
+libgmail:
+libgmail: This slackmatic port was developed by:
+libgmail: slackware@sukkology.net

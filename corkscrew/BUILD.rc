@@ -1,0 +1,11 @@
+. ../sukkolib.rc
+
+BRIEF='A tool for tunneling SSH through HTTP proxies'
+PROJECT=http://www.agroman.net/corkscrew/
+RELEASE=2.0
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://www.agroman.net/corkscrew/$NAME-$RELEASE.tar.gz
+)

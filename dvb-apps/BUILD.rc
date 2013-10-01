@@ -1,0 +1,20 @@
+. ../sukkolib.rc
+
+BRIEF='Linux DVB API applications and utilities'
+PROJECT=http://linuxtv.org/hg/dvb-apps
+RELEASE=20100625
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=dvb-apps-44e968d22ee6
+
+SOURCE=(
+	http://linuxtv.org/hg/dvb-apps/archive/tip.tar.bz2
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	COPYING.LGPL
+)
+
+fn configure {
+}

@@ -1,0 +1,26 @@
+. ../sukkolib.rc
+
+BRIEF='IPv6 Router Advertisement Daemon'
+PROJECT=http://www.litech.org/radvd/
+RELEASE=1.6
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://www.litech.org/radvd/dist/$NAME-$RELEASE.tar.gz
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	CHANGES
+	COPYRIGHT
+	INTRO.html
+	VERSION
+)
+
+fn inst {
+	std_inst
+
+	mkdir $PKG/etc
+	cp radvd.conf.example $PKG/etc
+}

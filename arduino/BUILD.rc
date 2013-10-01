@@ -1,0 +1,24 @@
+. ../sukkolib.rc
+
+BRIEF='Open-Source Electronics Prototyping Platform'
+PROJECT=http://arduino.cc
+RELEASE=1.0.3
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+OPT_NOSTRIP=1
+
+SOURCE=(
+	http://arduino.googlecode.com/files/$NAME-$RELEASE-linux32.tgz
+)
+
+fn build () {
+	setup
+
+	mkdir $PKG/opt
+	cp -a $SRC/$NAME-$RELEASE $PKG/opt || exit 201
+
+	mkdir -p $PKG/usr/bin
+	ln -s /opt/$NAME-$RELEASE/arduino $PKG/usr/bin
+
+	ln -s /opt/$NAME-$RELEASE/reference $DOC
+}

@@ -1,0 +1,11 @@
+openvpn: openvpn (A full-featured open source SSL VPN solution)
+openvpn:
+openvpn: This is a slackmatic port build of openvpn:
+openvpn: A full-featured open source SSL VPN solution 
+openvpn:
+openvpn: For more information about the package, see the project website at:
+openvpn: http://www.openvpn.org
+openvpn:
+openvpn:
+openvpn: This slackmatic port was developed by:
+openvpn: slackware@sukkology.net

@@ -1,0 +1,11 @@
+ladspa-sdk: ladspa-sdk (The Linux Audio Developer's Simple Plugin API)
+ladspa-sdk:
+ladspa-sdk: This is a slackmatic port build of ladspa-sdk:
+ladspa-sdk: The Linux Audio Developer's Simple Plugin API 
+ladspa-sdk:
+ladspa-sdk: For more information about the package, see the project website at:
+ladspa-sdk: http://www.ladspa.org
+ladspa-sdk:
+ladspa-sdk:
+ladspa-sdk: This slackmatic port was developed by:
+ladspa-sdk: slackware@sukkology.net

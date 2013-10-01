@@ -1,0 +1,17 @@
+. ../sukkolib.rc
+
+BRIEF='A lot of plugin stuff for Geany editor'
+PROJECT=http://plugins.geany.org
+RELEASE=1.22
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+CONFOPTS=(
+        $DEFAULT_CONFOPTS
+        --docdir'='/usr/doc/$NAME-$RELEASE
+	--enable-geanygdb
+)
+
+SOURCE=(
+	http://plugins.geany.org/geany-plugins/$NAME-$RELEASE.tar.bz2
+)

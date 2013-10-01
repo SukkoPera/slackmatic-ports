@@ -1,0 +1,44 @@
+. ../sukkolib.rc
+
+BRIEF='An open-source JPEG 2000 library'
+PROJECT=http://code.google.com/p/openjpeg/
+RELEASE=1.3
+TRELEASE=1_3
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=OpenJPEG_v$TRELEASE
+
+SOURCE=(
+	http://openjpeg.googlecode.com/files/$NAME'_v'$TRELEASE.tar.gz
+)
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS_CMAKE
+	-D BUILD_SHARED_LIBS'='ON
+	-D BUILD_DOCUMENTATION'='ON
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	license.txt
+	README.linux
+)
+
+fn build {
+	std_build_cmake
+}
+
+fn inst {
+	std_inst
+
+	# Bah...
+	mkdir -p $PKG/usr/include
+	mv $PKG/$NAME/*.h $PKG/usr/include
+	rm -rf $PKG/$NAME
+}
+
+fn docinst {
+	std_docinst
+
+	cp -a html $DOC
+}

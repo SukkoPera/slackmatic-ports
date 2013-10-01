@@ -1,0 +1,30 @@
+. ../sukkolib.rc
+
+BRIEF='A free (GPL''d) text editor based on the POSIX standard'
+PROJECT=http://ne.dsi.unimi.it
+RELEASE=2.5
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+NUMJOBS=1
+
+SOURCE=(
+	http://ne.dsi.unimi.it/$NAME-$RELEASE.tar.gz
+)
+
+fn build {
+	setup
+
+	# Patch makefiles and compile
+	CFLAGS=$DEFAULT_CFLAGS
+	sed -i 's:\(make NE_GLOBAL_DIR=\)\$(PREFIX)\(.*\)$:\1/usr\2:g' makefile || exit
+	sed -i s/-O3/$CFLAGS/g src/makefile || exit
+	make install PREFIX'='$PKG/usr
+
+	# Install and fix docs
+	std_docinst
+	mv -f $PKG/usr/share/doc/ne/* $DOC
+	rmdir $PKG/usr/share/doc/ne
+	rmdir $PKG/usr/share/doc
+	mv $PKG/usr/share/info $PKG/usr
+	mv $PKG/usr/share/man $PKG/usr
+}

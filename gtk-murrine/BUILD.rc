@@ -1,0 +1,19 @@
+. ../sukkolib.rc
+
+BRIEF='Gtk+ engine, written in C language, using cairo vectorial graphics library'
+PROJECT=http://www.cimitan.com/murrine/engine
+RELEASE=0.98.0
+TRELEASE=0.98
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+TNAME=murrine
+BUILDDIR=$TNAME-$RELEASE
+
+SOURCE=(
+	http://ftp.acc.umu.se/pub/GNOME/sources/murrine/$TRELEASE/$TNAME-$RELEASE.tar.bz2
+)
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS
+	--enable-animation
+)

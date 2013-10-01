@@ -1,0 +1,20 @@
+. ../sukkolib.rc
+
+BRIEF='A web interface for browsing and restoring from rdiff-backup repositories'
+PROJECT=http://www.rdiffweb.org
+RELEASE=0.6.3
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=rdiffWeb-$RELEASE
+
+SOURCE=(
+	http://www.rdiffweb.org/releases/rdiffWeb-$RELEASE.tar.gz
+)
+
+fn build {
+	std_build_python
+
+	# Slackwarize the init script
+	mv $PKG/etc/init.d/rdiff-web $PKG/etc/init.d/rc.rdiffweb
+	mv $PKG/etc/init.d $PKG/etc/rc.d
+}

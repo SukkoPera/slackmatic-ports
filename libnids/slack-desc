@@ -1,0 +1,11 @@
+libnids: libnids (An implementation of an E-component of Network Intrusion Detection System)
+libnids:
+libnids: This is a slackmatic port build of libnids:
+libnids: An implementation of an E-component of Network Intrusion Detection System 
+libnids:
+libnids: For more information about the package, see the project website at:
+libnids: http://libnids.sourceforge.net
+libnids:
+libnids:
+libnids: This slackmatic port was developed by:
+libnids: slackware@sukkology.net

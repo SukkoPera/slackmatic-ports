@@ -1,0 +1,52 @@
+. ../sukkolib.rc
+
+BRIEF='A URL redirector used to use blacklists with the proxysoftware Squid'
+PROJECT=http://www.squidguard.org
+RELEASE=1.4
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=squidGuard-$RELEASE
+
+DOCS=(
+	$DEFAULT_DOCS
+	ANNOUNCE
+	CONFIGURATION
+	FAQ
+	GPL
+	ISSUES.txt
+	README.LDAP
+)
+
+PATCHES=(
+	squidguard-1.4-gentoo.patch
+	squidguard-1.4-vsnprintf.patch
+)
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS
+	--with-squiduser'='nobody
+	--with-sg-config'='/etc/squidguard/squidGuard.conf
+	--with-sg-logdir'='/var/log/squid
+#	--with-sg-dbhome'='/usr/share/squidguard
+)
+
+SOURCE=(
+	http://www.squidguard.org/Downloads/squidGuard-$RELEASE.tar.gz
+)
+
+fn inst {
+	make install INSTDIR'='$PKG
+
+	mkdir -p $PKG/etc/squidguard/sample
+	cp $CWD/squidGuard.conf.blocksites $PKG/etc/squidguard/sample
+	mkdir -p $PKG/etc/squidguard/sample/db
+	cp $CWD/blockedsites $PKG/etc/squidguard/sample/db
+
+	mkdir -p $PKG/var/log/squidGuard
+	chown nobody: $PKG/var/log/squidGuard
+}
+
+fn docinst {
+	std_docinst
+	cp -a doc $DOC/html
+}

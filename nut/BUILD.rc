@@ -1,0 +1,89 @@
+. ../sukkolib.rc
+
+BRIEF='Network-UPS Tools'
+PROJECT=http://www.networkupstools.org
+RELEASE=2.4.3
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+# Official mirrors are currently broken
+SOURCE=(
+	http://www.sfr-fresh.com/unix/misc/$NAME-$RELEASE.tar.gz
+)
+
+CONFOPTS=(
+        --prefix'='/usr
+        --sysconfdir'='/etc/nut
+        --localstatedir'='/var
+        --mandir'='/usr/man
+	--with-drvpath'='/lib/nut
+	--with-logfacility'='LOG_DAEMON
+	--with-statepath'='/var/lib/nut
+	--datarootdir'='/usr/share/nut
+	--datadir'='/usr/share/nut
+	--with-dev
+	--with-cgi
+	--with-cgipath'='/usr/share/nut/cgi-bin
+	--with-htmlpath'='/usr/share/nut/html
+        --disable-dependency-tracking
+
+)
+
+#--with-user=nut
+#--with-group=nut
+
+DOCS=(
+	$DEFAULT_DOCS
+	UPGRADING
+	docs/FAQ
+	docs/acpi.txt
+	docs/big-servers.txt
+	docs/chroot.txt
+	docs/commands.txt
+	docs/config-files.txt
+	docs/configure.txt
+	docs/contact-closure.txt
+	docs/data-room.txt
+	docs/design.txt
+	docs/developers.txt
+	docs/hid-subdrivers.txt
+	docs/ideas.txt
+	docs/macros.txt
+	docs/megatec.txt
+	docs/new-drivers.txt
+	docs/new-names.txt
+	docs/nut-hal.txt
+	docs/osd-notify.txt
+	docs/pager.txt
+	docs/powersaving.txt
+	docs/protocol.txt
+	docs/shutdown.txt
+	docs/snmp.txt
+	docs/sock-protocol.txt
+	docs/ssl.txt
+	docs/upssched.txt
+)
+
+fn inst {
+	std_inst
+
+	mkdir -p $PKG/usr/sbin
+	# This needs to exist for the scripts
+	ln -s /lib/nut/upsdrvctl $PKG/usr/sbin/upsdrvctl
+
+	# NUT is very picky on permissions
+	mkdir -p $PKG/var/lib/nut 
+	chown nobody: $PKG/var/lib/nut
+	chmod 700 $PKG/var/lib/nut
+
+	chown nobody: $PKG/etc/nut/*
+	chmod 600 $PKG/etc/nut/*
+
+	# Install bash_completion data
+	mkdir -p $PKG/etc/bash_completion.d
+	cp scripts/misc/nut.bash_completion $PKG/etc/bash_completion.d
+
+	# Startup script
+	mkdir -p $PKG/etc/rc.d
+	cp $CWD/rc.nut $PKG/etc/rc.d
+}

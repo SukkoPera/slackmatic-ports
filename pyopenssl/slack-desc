@@ -1,0 +1,11 @@
+pyopenssl: pyopenssl (Python wrapper around a small subset of the OpenSSL library)
+pyopenssl:
+pyopenssl: This is a slackmatic port build of pyopenssl:
+pyopenssl: Python wrapper around a small subset of the OpenSSL library 
+pyopenssl:
+pyopenssl: For more information about the package, see the project website at:
+pyopenssl: http://pyopenssl.sourceforge.net
+pyopenssl:
+pyopenssl:
+pyopenssl: This slackmatic port was developed by:
+pyopenssl: slackware@sukkology.net

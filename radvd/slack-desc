@@ -1,0 +1,11 @@
+radvd: radvd (IPv6 Router Advertisement Daemon)
+radvd:
+radvd: This is a slackmatic port build of radvd:
+radvd: IPv6 Router Advertisement Daemon 
+radvd:
+radvd: For more information about the package, see the project website at:
+radvd: http://www.litech.org/radvd/
+radvd:
+radvd:
+radvd: This slackmatic port was developed by:
+radvd: slackware@sukkology.net

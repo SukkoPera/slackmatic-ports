@@ -1,0 +1,42 @@
+. ../sukkolib.rc
+
+BRIEF='Game data for OpenArena'
+PROJECT=http://openarena.ws
+RELEASE=0.8.1
+TRELEASE=081
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=openarena-$RELEASE
+
+# Local package data. WARNING: This is shared with the OA engine package!
+_BASEDIR=/usr/share/games/openarena
+
+SOURCE=(
+	http://download.tuxfamily.org/openarena/rel/$TRELEASE/oa$TRELEASE.zip
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	CHANGES
+	CREDITS
+	LINUXNOTES
+	WENEED
+)
+fn build {
+	# These commands are needed unless slackmatic is patched to support
+	# automatic unpacking of .zip files
+#	cd $SRC
+#	unzip oa$TRELEASE.zip
+#	mv $BUILDDIR $NAME-$RELEASE
+#	cd $NAME-$RELEASE
+	setup
+
+	# Install
+	mkdir -p $PKG/$_BASEDIR
+	cp -a baseoa missionpack $PKG/$_BASEDIR
+	find $PKG/$_BASEDIR -type d -exec chmod 755 '{}' ';'
+	find $PKG/$_BASEDIR -type f -exec chmod 644 '{}' ';'
+
+        # Install docs
+        std_docinst
+}

@@ -1,0 +1,54 @@
+. ../sukkolib.rc
+
+BRIEF='A graphical multiplatform catalog program'
+PROJECT=http://cdcat.sourceforge.net
+RELEASE=1.01b
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=CdCat-$RELEASE
+
+SOURCE=(
+	$SF/$NAME/$NAME-$RELEASE.tar.bz2
+)
+
+PATCHES=(
+	cdcat-gcc4.diff
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	Authors
+	README_IMPORT
+	README_IMPORT.DE
+	README_IMPORT.HU
+	TODO
+	TRANSLATORS_README
+	VERSION
+)
+
+fn configure {
+	cd src
+
+	sed -i -e 's~/usr/local~/usr~g' cdcat.pro || die "sed broke"
+	qmake cdcat.pro
+}
+
+fn inst {
+	make install INSTALL_ROOT'='$PKG
+
+	# Remove files, not dirs
+	rm $PKG/usr/share/cdcat/* >[2=]
+
+	# Icon and desktop file
+	mkdir -p $PKG/usr/share/pixmaps
+	cp ../cdcat.png $PKG/usr/share/pixmaps
+
+	mkdir -p $PKG/usr/share/applications
+	cp ../KDE/cdcat.desktop $PKG/usr/share/applications
+	sed -i 's:\(^Icon=\)\(.*\):\1cdcat:g' $PKG/usr/share/applications/cdcat.desktop
+}
+
+fn docinst {
+	cd ..
+	std_docinst
+}

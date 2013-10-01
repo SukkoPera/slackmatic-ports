@@ -1,0 +1,45 @@
+. ../sukkolib.rc
+
+BRIEF='Set of scripts able to manage POSIX accounts for SAMBA, stored in a LDAP directory'
+PROJECT=http://www.iallanis.info
+RELEASE=0.9.5
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://www.iallanis.info/smbldap-tools/$NAME-$RELEASE.tgz
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	doc/slapd.conf
+	doc/smb.conf
+	doc/smbldap-tools.html
+	doc/smbldap-tools.pdf
+)
+
+fn build {
+	setup
+
+	# Install binaries
+	BINDIR=$PKG/usr/sbin
+	mkdir -p $BINDIR
+	for (i in smbldap-*) {
+		if (test -x $i) {
+			cp -v $i $BINDIR
+		}
+	}
+	cp -v smbldap_tools.pm $BINDIR
+
+	# Install configuration
+	CONFDIR=$PKG/etc/smbldap-tools
+	mkdir -p $CONFDIR
+	for (i in *.conf) {
+		cp -v $i $CONFDIR/$i.new
+	}
+	chmod 644 $CONFDIR/smbldap.conf
+	chmod 600 $CONFDIR/smbldap_bind.conf
+
+
+	std_docinst
+}

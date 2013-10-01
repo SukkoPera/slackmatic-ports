@@ -1,0 +1,25 @@
+. ../sukkolib.rc
+
+BRIEF='Manage your photographs like a professional with the power of open source'
+PROJECT=http://www.digikam.org
+RELEASE=1.0.0-beta4
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	$SF/$NAME/$NAME-$RELEASE.tar.bz2
+)
+
+PATCHES=(
+)
+
+MY_DOCS=(
+	$DEFAULT_DOCS
+	HACKING
+	RELEASE.rev
+)
+
+fn configure {
+#	cmake -DCMAKE_INSTALL_PREFIX'='`{kde-config --prefix}
+	cmake -DCMAKE_INSTALL_PREFIX'='/usr
+}

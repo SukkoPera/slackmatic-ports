@@ -1,0 +1,14 @@
+drwxr-xr-x|0755|root/root|usr|
+drwxr-xr-x|0755|root/root|usr/doc|
+drwxr-xr-x|0755|root/root|usr/doc/xvidcore-1.2.2|
+-rw-r--r--|0644|root/root|usr/doc/xvidcore-1.2.2/AUTHORS|
+-rw-r--r--|0644|root/root|usr/doc/xvidcore-1.2.2/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/xvidcore-1.2.2/ChangeLog|
+-rw-r--r--|0644|root/root|usr/doc/xvidcore-1.2.2/ChangeLog-1.0|
+-rw-r--r--|0644|root/root|usr/doc/xvidcore-1.2.2/README|
+-rw-r--r--|0644|root/root|usr/doc/xvidcore-1.2.2/TODO|
+drwxr-xr-x|0755|root/root|usr/include|
+-rw-r--r--|0644|root/root|usr/include/xvid.h|
+drwxr-xr-x|0755|root/root|usr/lib|
+-rw-r--r--|0644|root/root|usr/lib/libxvidcore.a|
+-rw-r--r--|0644|root/root|usr/lib/libxvidcore.so.4.2|

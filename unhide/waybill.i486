@@ -1,0 +1,16 @@
+drwxr-xr-x|0755|root/root|usr|
+drwxr-xr-x|0755|root/root|usr/doc|
+drwxr-xr-x|0755|root/root|usr/doc/unhide-20100201|
+-rw-r--r--|0644|root/root|usr/doc/unhide-20100201/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/unhide-20100201/COPYING|
+-rw-r--r--|0644|root/root|usr/doc/unhide-20100201/LEEME.txt|
+-rw-r--r--|0644|root/root|usr/doc/unhide-20100201/README.txt|
+drwxr-xr-x|0755|root/root|usr/man|
+drwxr-xr-x|0755|root/root|usr/man/man8|
+-rw-r--r--|0644|root/root|usr/man/man8/unhide.8.gz|
+-rw-r--r--|0644|root/root|usr/man/man8/unhide-tcp.8.gz|
+drwxr-xr-x|0755|root/root|usr/sbin|
+lrwxrwxrwx|0777|root/root|usr/sbin/unhide|->|unhide-linux26|
+-rwxr-xr-x|0755|root/root|usr/sbin/unhide-linux26|
+-rwxr-xr-x|0755|root/root|usr/sbin/unhide-posix|
+-rwxr-xr-x|0755|root/root|usr/sbin/unhide-tcp|

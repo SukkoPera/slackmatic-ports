@@ -1,0 +1,20 @@
+. ../sukkolib.rc
+
+BRIEF='Fluid Soundfont'
+PROJECT=http://musescore.org
+RELEASE=3.1
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://prereleases.musescore.org/soundfont/$NAME'_'$RELEASE.tar.gz
+)
+
+fn build {
+	setup
+
+	mkdir -p $PKG/usr/share/sounds/sf2
+	cp *.sf2 $PKG/usr/share/sounds/sf2
+
+	std_docinst
+}

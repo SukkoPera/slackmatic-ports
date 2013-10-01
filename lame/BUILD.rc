@@ -1,0 +1,33 @@
+. ../sukkolib.rc
+
+BRIEF='A high quality MPEG Audio Layer III (MP3) encoder licensed under the LGPL'
+PROJECT=http://lame.sourceforge.net/
+RELEASE=3.99
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	$SF/$NAME/$NAME-$RELEASE.tar.gz
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	API
+	DEFINES
+	HACKING
+	STYLEGUIDE
+	USAGE
+)
+
+fn docinst {
+	std_docinst
+
+	mv $PKG/usr/share/doc/lame/html $DOC
+	rm -rf $PKG/usr/share
+
+	# Multiple-files script, might come handy
+	cp misc/mlame $PKG/usr/bin
+
+	# Remove libtool stuff
+	find $PKG -name '*.la' -exec rm -f '{}' +
+}

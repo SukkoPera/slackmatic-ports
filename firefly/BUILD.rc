@@ -1,0 +1,31 @@
+. ../sukkolib.rc
+
+BRIEF='The best server software to serve digital music to the Roku Soundbridge and iTunes'
+PROJECT=http://fireflymediaserver.org/
+RELEASE=0.2.4.2
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=mt-daapd-$RELEASE
+CONFOPTS=(
+	$DEFAULT_CONFOPTS
+	--enable-oggvorbis
+	--enable-mdns
+)
+
+SOURCE=(
+	$SF/mt-daapd/mt-daapd-$RELEASE.tar.gz
+)
+
+fn inst {
+	std_inst
+
+	mkdir -p $PKG/etc/rc.d
+	cp contrib/mt-daapd.conf $PKG/etc/mt-daapd.conf.new
+	cp contrib/mt-daapd.playlist $PKG/etc/mt-daapd.playlist.new
+	cp contrib/mt-daapd $PKG/etc/rc.d/rc.mt-daapd.new
+	sed -i '/^.*subsys.*$/ d' $PKG/etc/rc.d/rc.mt-daapd.new
+
+	# This is needed for the DB
+	mkdir -p $PKG/var/cache/mt-daapd
+	touch $PKG/var/cache/mt-daapd/.keep
+}

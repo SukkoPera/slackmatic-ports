@@ -1,0 +1,29 @@
+. ../sukkolib.rc
+
+BRIEF='A GTK+ based diagram creation program'
+PROJECT=http://live.gnome.org/Dia
+RELEASE=0.97
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+DOCS=(
+	$DEFAULT_DOCS
+        KNOWN_BUGS
+        MAINTAINERS
+        RELEASE-PROCESS
+        THANKS
+)
+
+SOURCE=(
+	http://ftp.gnome.org/pub/gnome/sources/dia/$RELEASE/$NAME-$RELEASE.tar.bz2
+)
+
+fn docinst {
+	std_docinst
+
+	mv $PKG/usr/share/man/* $PKG/usr/man
+	rm -rf $PKG/usr/share/man
+
+	# I hope nobody needs this :)
+	rm -rf $PKG/usr/share/doc
+}

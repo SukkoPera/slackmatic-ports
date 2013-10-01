@@ -1,0 +1,38 @@
+. ../sukkolib.rc
+
+BRIEF='RAR archiver'
+PROJECT=http://www.rarlab.com
+RELEASE=3.8.0
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=rar
+
+SOURCE=(
+	'http://www.rarlab.com/rar/'$NAME'linux'-$RELEASE.tar.gz
+)
+
+DOCS=(
+	license.txt
+	rar.txt
+	readme.txt
+	technote.txt
+	whatsnew.txt
+	order.htm
+	file_id.diz
+)
+
+fn build {
+	setup
+
+	# Patch for installation
+	cat Makefile | \
+		sed '6 i DESTDIR='$PKG | \
+		sed 's:^PREFIX=.*:PREFIX=$(DESTDIR)/usr:' | \
+		sed 's:/etc:$(DESTDIR)/etc:' \
+		> Makefile.pkg
+
+	make -f Makefile.pkg install PREFIX'='$PKG/usr
+	cp rar_static $PKG/usr/bin
+
+	std_docinst
+}

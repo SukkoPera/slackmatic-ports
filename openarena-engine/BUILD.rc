@@ -1,0 +1,61 @@
+. ../sukkolib.rc
+
+BRIEF='Open-source replacement for Quake 3 Arena'
+PROJECT=http://openarena.ws
+RELEASE=0.8.1
+TRELEASE=081
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+# Package-specific data
+_BLDDIR=BUILD
+_BASEDIR=/usr/share/games/openarena
+
+SOURCE=(
+	http://openarena.ws/svn/source/$TRELEASE/$NAME-$RELEASE-1.tar.bz2
+)
+
+CONFOPTS=(
+	DEFAULT_BASEDIR'='$_BASEDIR
+	BR'='$_BLDDIR
+	USE_INTERNAL_SPEEX'='1
+	USE_VOIP'='1
+	USE_OPENAL'='0
+	USE_MUMBLE'='0
+	BUILD_SERVER'='1
+	BUILD_CLIENT_SMP'='1
+	USE_LOCAL_HEADERS'='0
+# For verbose build
+#	V'='1
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	BUGS
+	NOTTODO
+)
+
+fn build {
+	cd $SRC/$NAME-$RELEASE || exit $status
+
+	# Compile
+	# The definition of the 'ARCH' variable conflicts with the makefile
+	# so remove it temporarily
+	_ARCH=$ARCH
+	ARCH=()
+	make \
+		-j $MAKEJOBS \
+		$CONFOPTS \
+		|| exit $status
+	ARCH=$_ARCH
+	# Install
+	mkdir -p $PKG/usr/bin
+	cp -a $_BLDDIR/openarena-smp.* $PKG/usr/bin
+	cp -a $_BLDDIR/oa_ded.* $PKG/usr/bin
+
+	mkdir -p $PKG/$_BASEDIR
+#	cp -a $_BLDDIR/baseoa $_BLDDIR/missionpack $PKG/$_BASEDIR
+
+	# Install docs
+	std_docinst
+}

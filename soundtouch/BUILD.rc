@@ -1,0 +1,29 @@
+. ../sukkolib.rc
+
+# It seems 1.5.0 doesn't compile (on 12.2)
+
+BRIEF='An open-source audio processing library for changing the Tempo, Pitch and Playback Rates of audio streams or files'
+PROJECT=http://www.surina.net/soundtouch/
+RELEASE=1.4.0
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=$NAME
+
+SOURCE=(
+	http://www.surina.net/soundtouch/$NAME-$RELEASE.tar.gz
+)
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS
+	--enable-shared
+	--disable-integer-samples
+)
+
+fn inst {
+	make install \
+		DESTDIR'='$PKG \
+		pkgdocdir'='/usr/doc/$NAME-$RELEASE
+
+	# Upstream changed pkgconfig filename
+	ln -s $NAME-1.4.pc $PKG/usr/lib/pkgconfig/$NAME-1.0.pc
+}

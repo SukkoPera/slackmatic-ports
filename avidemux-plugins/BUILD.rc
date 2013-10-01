@@ -1,0 +1,46 @@
+. ../sukkolib.rc
+
+# NOTE: This package has been separated from avidemux to make the building
+#       process easier. Anyway it should always be installed/uninstalled/
+#       upgraded with the main avidemux package.
+
+BRIEF='Avidemux plugins'
+PROJECT=http://fixounet.free.fr/avidemux/
+RELEASE=2.5.2
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=$NAME'_'$RELEASE
+TNAME=avidemux
+BUILDDIR=$TNAME'_'$RELEASE
+
+SOURCE=(
+	$SF/$TNAME/$TNAME'_'$RELEASE.tar.gz
+)
+
+CONFOPTS=(
+        $DEFAULT_CONFOPTS_CMAKE
+	-D AVIDEMUX_INSTALL_PREFIX'='/usr
+)
+
+fn build {
+	setup
+
+	# First we configure the root
+#	std_configure_cmake
+
+	# Plugins
+	cd plugins
+	# We have to do this here so that the proper value of $SRC is used, FIXME!
+	CONFOPTS=(
+	        $DEFAULT_CONFOPTS_CMAKE
+		-D AVIDEMUX_INSTALL_PREFIX'='/usr
+		-D AVIDEMUX_SOURCE_DIR'='$SRC/$NAME-$RELEASE/
+		-D AVIDEMUX_CORECONFIG_DIR'='$SRC/$NAME-$RELEASE/BUILD.$pid/config/
+	)
+	std_configure_cmake
+	std_compile
+	std_inst
+
+	cd ..
+	std_docinst	
+}

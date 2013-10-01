@@ -1,0 +1,32 @@
+. ../sukkolib.rc
+
+BRIEF='Azureus - now called Vuze - bittorrent client'
+PROJECT=http://azureus.sourceforge.net
+RELEASE=3.1.0.0
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	$SF'/azureus/Vuze_'$RELEASE'_linux.tar.bz2'
+)
+
+fn build {
+	cd $SRC
+	mkdir $PKG/opt
+	cp -a $NAME $PKG/opt/$NAME-$RELEASE
+
+	# Alias
+	mkdir -p $PKG/usr/bin
+	cp $CWD/vuze $PKG/usr/bin
+	ln -s vuze $PKG/usr/bin/azureus
+
+	# Icon and desktop file
+	mkdir -p $PKG/usr/share/applications
+	cp $CWD/$NAME.desktop $PKG/usr/share/applications
+	mkdir -p $PKG/usr/share/pixmaps
+	ln -s /opt/$NAME-$RELEASE/Azureus.png $PKG/usr/share/pixmaps/vuze.png
+
+	# Doc
+	cp $SRC/$NAME/*.txt $DOC
+}
+

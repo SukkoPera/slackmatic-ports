@@ -1,0 +1,22 @@
+. ../sukkolib.rc
+
+BRIEF='Library for manipulating ID3v1 and ID3v2 tags'
+PROJECT=http://id3lib.sourceforge.net
+RELEASE=3.8.3
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	$SF/$NAME/$NAME-$RELEASE.tar.gz
+)
+
+PATCHES=(
+	id3lib-3.8.3-autoconf259.patch
+	id3lib-3.8.3-doxyinput.patch
+	#id3lib-3.8.3-gcc-4.3.patch
+	id3lib-3.8.3_gcc4.diff
+	id3lib-3.8.3-missing_nullpointer_check.patch
+	id3lib-3.8.3-security.patch
+	id3lib-3.8.3-test_io.patch
+	id3lib-3.8.3-unicode16.patch
+)

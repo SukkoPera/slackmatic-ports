@@ -1,0 +1,29 @@
+. ../sukkolib.rc
+
+BRIEF='A free C++ class library of cryptographic schemes.'
+PROJECT=http:///www.cryptopp.com
+RELEASE=5.5.2
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	$SF/cryptopp/cryptopp552.zip
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	License.txt
+	Readme.txt
+)
+
+fn build {
+	cd $SRC
+	unzip -a cryptopp552.zip -d $NAME-$RELEASE
+	cd $NAME-$RELEASE
+
+	make -j3
+
+	make install PREFIX'='$PKG/usr
+
+	std_docinst
+}

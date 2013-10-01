@@ -1,0 +1,270 @@
+drwxr-xr-x|0755|root/root|usr|
+drwxr-xr-x|0755|root/root|usr/doc|
+drwxr-xr-x|0755|root/root|usr/doc/gtk-equinox-1.30|
+-rw-r--r--|0644|root/root|usr/doc/gtk-equinox-1.30/AUTHORS|
+-rw-r--r--|0644|root/root|usr/doc/gtk-equinox-1.30/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/gtk-equinox-1.30/COPYING|
+-rw-r--r--|0644|root/root|usr/doc/gtk-equinox-1.30/ChangeLog|
+-rw-r--r--|0644|root/root|usr/doc/gtk-equinox-1.30/INSTALL|
+-rw-r--r--|0644|root/root|usr/doc/gtk-equinox-1.30/NEWS|
+-rw-r--r--|0644|root/root|usr/doc/gtk-equinox-1.30/README|
+-rw-r--r--|0644|root/root|usr/doc/gtk-equinox-1.30/userChrome.css|
+drwxr-xr-x|0755|root/root|usr/lib|
+drwxr-xr-x|0755|root/root|usr/lib/gtk-2.0|
+drwxr-xr-x|0755|root/root|usr/lib/gtk-2.0/2.10.0|
+drwxr-xr-x|0755|root/root|usr/lib/gtk-2.0/2.10.0/engines|
+-rwxr-xr-x|0755|root/root|usr/lib/gtk-2.0/2.10.0/engines/libequinox.la|
+-rwxr-xr-x|0755|root/root|usr/lib/gtk-2.0/2.10.0/engines/libequinox.so|
+drwxr-xr-x|0755|root/root|usr/share|
+drwxr-xr-x|0755|root/root|usr/share/themes|
+drwxr-xr-x|0755|localuser/sukko|usr/share/themes/Equinox|
+drwxr-xr-x|0755|localuser/sukko|usr/share/themes/Equinox Classic|
+drwxr-xr-x|0755|localuser/sukko|usr/share/themes/Equinox Classic Glass|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Classic Glass/ChangeLog|
+drwxr-xr-x|0755|localuser/sukko|usr/share/themes/Equinox Classic Glass/metacity-1|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Classic Glass/metacity-1/button_close.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Classic Glass/metacity-1/button_max.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Classic Glass/metacity-1/button_menu.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Classic Glass/metacity-1/button_min.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Classic Glass/metacity-1/dialog_close.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Classic Glass/metacity-1/dialog_max.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Classic Glass/metacity-1/dialog_min.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Classic Glass/metacity-1/metacity-theme-1.xml|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Classic/ChangeLog|
+drwxr-xr-x|0755|localuser/sukko|usr/share/themes/Equinox Classic/metacity-1|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Classic/metacity-1/button_close.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Classic/metacity-1/button_max.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Classic/metacity-1/button_menu.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Classic/metacity-1/button_min.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Classic/metacity-1/dialog_close.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Classic/metacity-1/dialog_max.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Classic/metacity-1/dialog_min.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Classic/metacity-1/metacity-theme-1.xml|
+drwxr-xr-x|0755|localuser/sukko|usr/share/themes/Equinox Evolution|
+drwxr-xr-x|0755|localuser/sukko|usr/share/themes/Equinox Evolution Light|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Evolution Light/ChangeLog|
+drwxr-xr-x|0755|localuser/sukko|usr/share/themes/Equinox Evolution Light/gtk-2.0|
+drwxr-xr-x|0755|localuser/sukko|usr/share/themes/Equinox Evolution Light/gtk-2.0/apps|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Evolution Light/gtk-2.0/apps/gnome-system-monitor.rc|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Evolution Light/gtk-2.0/apps/gnome-terminal.rc|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Evolution Light/gtk-2.0/apps/nautilus.rc|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Evolution Light/gtk-2.0/gtkrc|
+drwxr-xr-x|0755|localuser/sukko|usr/share/themes/Equinox Evolution Light/gtk-2.0/images|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Evolution Light/gtk-2.0/images/arrow.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Evolution Light/gtk-2.0/images/blank.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Evolution Light/gtk-2.0/images/handle-nautilus.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Evolution Light/gtk-2.0/images/panel_bg.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Evolution Light/index.theme|
+drwxr-xr-x|0755|localuser/sukko|usr/share/themes/Equinox Evolution Rounded|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Evolution Rounded/ChangeLog|
+drwxr-xr-x|0755|localuser/sukko|usr/share/themes/Equinox Evolution Rounded/metacity-1|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Evolution Rounded/metacity-1/button_inactive.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Evolution Rounded/metacity-1/button_normal.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Evolution Rounded/metacity-1/button_prelight.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Evolution Rounded/metacity-1/button_pressed.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Evolution Rounded/metacity-1/close_inactive.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Evolution Rounded/metacity-1/close.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Evolution Rounded/metacity-1/max_inactive.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Evolution Rounded/metacity-1/max.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Evolution Rounded/metacity-1/menu_inactive.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Evolution Rounded/metacity-1/menu.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Evolution Rounded/metacity-1/metacity-theme-1.xml|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Evolution Rounded/metacity-1/min_inactive.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Evolution Rounded/metacity-1/min.png|
+drwxr-xr-x|0755|localuser/sukko|usr/share/themes/Equinox Evolution Squared|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Evolution Squared/ChangeLog|
+drwxr-xr-x|0755|localuser/sukko|usr/share/themes/Equinox Evolution Squared/metacity-1|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Evolution Squared/metacity-1/button2_inactive.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Evolution Squared/metacity-1/button2_normal.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Evolution Squared/metacity-1/button2_prelight.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Evolution Squared/metacity-1/button2_pressed.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Evolution Squared/metacity-1/button_inactive.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Evolution Squared/metacity-1/button_normal.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Evolution Squared/metacity-1/button_prelight.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Evolution Squared/metacity-1/button_pressed.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Evolution Squared/metacity-1/close_inactive.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Evolution Squared/metacity-1/close.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Evolution Squared/metacity-1/max_inactive.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Evolution Squared/metacity-1/max.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Evolution Squared/metacity-1/menu_inactive.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Evolution Squared/metacity-1/menu.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Evolution Squared/metacity-1/metacity-theme-1.xml|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Evolution Squared/metacity-1/min_inactive.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Evolution Squared/metacity-1/min.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Evolution/ChangeLog|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Evolution.crx|
+drwxr-xr-x|0755|localuser/sukko|usr/share/themes/Equinox Evolution/gtk-2.0|
+drwxr-xr-x|0755|localuser/sukko|usr/share/themes/Equinox Evolution/gtk-2.0/apps|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Evolution/gtk-2.0/apps/gnome-system-monitor.rc|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Evolution/gtk-2.0/apps/gnome-terminal.rc|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Evolution/gtk-2.0/apps/nautilus.rc|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Evolution/gtk-2.0/gtkrc|
+drwxr-xr-x|0755|localuser/sukko|usr/share/themes/Equinox Evolution/gtk-2.0/images|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Evolution/gtk-2.0/images/arrow.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Evolution/gtk-2.0/images/blank.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Evolution/gtk-2.0/images/handle-nautilus.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Evolution/gtk-2.0/images/panel_bg.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Evolution/index.theme|
+drwxr-xr-x|0755|localuser/sukko|usr/share/themes/Equinox Glass|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Glass/ChangeLog|
+drwxr-xr-x|0755|localuser/sukko|usr/share/themes/Equinox Glass/gtk-2.0|
+drwxr-xr-x|0755|localuser/sukko|usr/share/themes/Equinox Glass/gtk-2.0/apps|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Glass/gtk-2.0/apps/gnome-system-monitor.rc|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Glass/gtk-2.0/apps/gnome-terminal.rc|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Glass/gtk-2.0/apps/nautilus.rc|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Glass/gtk-2.0/gtkrc|
+drwxr-xr-x|0755|localuser/sukko|usr/share/themes/Equinox Glass/gtk-2.0/images|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Glass/gtk-2.0/images/arrow.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Glass/gtk-2.0/images/blank.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Glass/gtk-2.0/images/handle-nautilus.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Glass/gtk-2.0/images/panel_bg.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Glass/index.theme|
+drwxr-xr-x|0755|localuser/sukko|usr/share/themes/Equinox Glass/metacity-1|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Glass/metacity-1/active_close_on.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Glass/metacity-1/active_close.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Glass/metacity-1/active_close_pressed.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Glass/metacity-1/active_max_on.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Glass/metacity-1/active_max.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Glass/metacity-1/active_max_pressed.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Glass/metacity-1/active_menu_on.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Glass/metacity-1/active_menu.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Glass/metacity-1/active_menu_pressed.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Glass/metacity-1/active_min_on.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Glass/metacity-1/active_min.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Glass/metacity-1/active_min_pressed.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Glass/metacity-1/dialog_active_close_on.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Glass/metacity-1/dialog_active_close.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Glass/metacity-1/dialog_active_close_pressed.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Glass/metacity-1/dialog_active_max_on.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Glass/metacity-1/dialog_active_max.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Glass/metacity-1/dialog_active_max_pressed.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Glass/metacity-1/dialog_active_min_on.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Glass/metacity-1/dialog_active_min.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Glass/metacity-1/dialog_active_min_pressed.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Glass/metacity-1/dialog_inactive_close_on.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Glass/metacity-1/dialog_inactive_close.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Glass/metacity-1/dialog_inactive_close_pressed.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Glass/metacity-1/dialog_inactive_max_on.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Glass/metacity-1/dialog_inactive_max.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Glass/metacity-1/dialog_inactive_max_pressed.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Glass/metacity-1/dialog_inactive_min_on.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Glass/metacity-1/dialog_inactive_min.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Glass/metacity-1/dialog_inactive_min_pressed.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Glass/metacity-1/inactive_close_on.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Glass/metacity-1/inactive_close.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Glass/metacity-1/inactive_close_pressed.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Glass/metacity-1/inactive_max_on.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Glass/metacity-1/inactive_max.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Glass/metacity-1/inactive_max_pressed.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Glass/metacity-1/inactive_menu_on.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Glass/metacity-1/inactive_menu.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Glass/metacity-1/inactive_menu_pressed.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Glass/metacity-1/inactive_min_on.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Glass/metacity-1/inactive_min.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Glass/metacity-1/inactive_min_pressed.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Glass/metacity-1/metacity-theme-1.xml|
+drwxr-xr-x|0755|localuser/sukko|usr/share/themes/Equinox Light|
+drwxr-xr-x|0755|localuser/sukko|usr/share/themes/Equinox Light Glass|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Light Glass/ChangeLog|
+drwxr-xr-x|0755|localuser/sukko|usr/share/themes/Equinox Light Glass/metacity-1|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Light Glass/metacity-1/button_close.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Light Glass/metacity-1/button_max.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Light Glass/metacity-1/button_menu.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Light Glass/metacity-1/button_min.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Light Glass/metacity-1/dialog_close.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Light Glass/metacity-1/dialog_max.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Light Glass/metacity-1/dialog_min.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Light Glass/metacity-1/metacity-theme-1.xml|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Light/ChangeLog|
+drwxr-xr-x|0755|localuser/sukko|usr/share/themes/Equinox Light/gtk-2.0|
+drwxr-xr-x|0755|localuser/sukko|usr/share/themes/Equinox Light/gtk-2.0/apps|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Light/gtk-2.0/apps/gnome-system-monitor.rc|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Light/gtk-2.0/apps/gnome-terminal.rc|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Light/gtk-2.0/apps/nautilus.rc|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Light/gtk-2.0/gtkrc|
+drwxr-xr-x|0755|localuser/sukko|usr/share/themes/Equinox Light/gtk-2.0/images|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Light/gtk-2.0/images/arrow.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Light/gtk-2.0/images/blank.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Light/gtk-2.0/images/handle-nautilus.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Light/gtk-2.0/images/panel_bg.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Light/index.theme|
+drwxr-xr-x|0755|localuser/sukko|usr/share/themes/Equinox Light/metacity-1|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Light/metacity-1/button_close.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Light/metacity-1/button_max.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Light/metacity-1/button_menu.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Light/metacity-1/button_min.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Light/metacity-1/dialog_close.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Light/metacity-1/dialog_max.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Light/metacity-1/dialog_min.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Light/metacity-1/metacity-theme-1.xml|
+drwxr-xr-x|0755|localuser/sukko|usr/share/themes/Equinox Wide|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Wide/ChangeLog|
+drwxr-xr-x|0755|localuser/sukko|usr/share/themes/Equinox Wide/gtk-2.0|
+drwxr-xr-x|0755|localuser/sukko|usr/share/themes/Equinox Wide/gtk-2.0/apps|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Wide/gtk-2.0/apps/gnome-system-monitor.rc|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Wide/gtk-2.0/apps/gnome-terminal.rc|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Wide/gtk-2.0/apps/nautilus.rc|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Wide/gtk-2.0/gtkrc|
+drwxr-xr-x|0755|localuser/sukko|usr/share/themes/Equinox Wide/gtk-2.0/images|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Wide/gtk-2.0/images/arrow.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Wide/gtk-2.0/images/blank.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Wide/gtk-2.0/images/handle-nautilus.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Wide/gtk-2.0/images/panel_bg.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox Wide/index.theme|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox/ChangeLog|
+drwxr-xr-x|0755|localuser/sukko|usr/share/themes/Equinox/gtk-2.0|
+drwxr-xr-x|0755|localuser/sukko|usr/share/themes/Equinox/gtk-2.0/apps|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox/gtk-2.0/apps/gnome-system-monitor.rc|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox/gtk-2.0/apps/gnome-terminal.rc|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox/gtk-2.0/apps/nautilus.rc|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox/gtk-2.0/gtkrc|
+drwxr-xr-x|0755|localuser/sukko|usr/share/themes/Equinox/gtk-2.0/images|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox/gtk-2.0/images/arrow.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox/gtk-2.0/images/blank.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox/gtk-2.0/images/handle-nautilus.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox/gtk-2.0/images/panel_bg.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox/index.theme|
+drwxr-xr-x|0755|localuser/sukko|usr/share/themes/Equinox/metacity-1|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox/metacity-1/active_close_on.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox/metacity-1/active_close.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox/metacity-1/active_close_pressed.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox/metacity-1/active_max_on.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox/metacity-1/active_max.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox/metacity-1/active_max_pressed.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox/metacity-1/active_menu_on.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox/metacity-1/active_menu.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox/metacity-1/active_menu_pressed.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox/metacity-1/active_min_on.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox/metacity-1/active_min.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox/metacity-1/active_min_pressed.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox/metacity-1/dialog_active_close_on.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox/metacity-1/dialog_active_close.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox/metacity-1/dialog_active_close_pressed.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox/metacity-1/dialog_active_max_on.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox/metacity-1/dialog_active_max.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox/metacity-1/dialog_active_max_pressed.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox/metacity-1/dialog_active_min_on.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox/metacity-1/dialog_active_min.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox/metacity-1/dialog_active_min_pressed.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox/metacity-1/dialog_inactive_close_on.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox/metacity-1/dialog_inactive_close.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox/metacity-1/dialog_inactive_close_pressed.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox/metacity-1/dialog_inactive_max_on.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox/metacity-1/dialog_inactive_max.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox/metacity-1/dialog_inactive_max_pressed.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox/metacity-1/dialog_inactive_min_on.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox/metacity-1/dialog_inactive_min.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox/metacity-1/dialog_inactive_min_pressed.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox/metacity-1/inactive_close_on.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox/metacity-1/inactive_close.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox/metacity-1/inactive_close_pressed.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox/metacity-1/inactive_max_on.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox/metacity-1/inactive_max.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox/metacity-1/inactive_max_pressed.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox/metacity-1/inactive_menu_on.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox/metacity-1/inactive_menu.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox/metacity-1/inactive_menu_pressed.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox/metacity-1/inactive_min_on.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox/metacity-1/inactive_min.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox/metacity-1/inactive_min_pressed.png|
+-rw-r--r--|0644|localuser/sukko|usr/share/themes/Equinox/metacity-1/metacity-theme-1.xml|

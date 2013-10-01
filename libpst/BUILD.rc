@@ -1,0 +1,18 @@
+. ../sukkolib.rc
+
+BRIEF='Manipulate PST (MS Outlook Personal Folders) files'
+PROJECT=http://www.five-ten-sg.com/libpst/
+RELEASE=0.6.45
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://www.five-ten-sg.com/libpst/packages/$NAME-$RELEASE.tar.gz
+)
+
+fn docinst {
+	std_docinst
+
+	mv $PKG/usr/share/doc/$NAME-*/* $DOC
+	rm -rf $PKG/usr/share
+}

@@ -1,0 +1,23 @@
+. ../sukkolib.rc
+
+BRIEF='A lightweight desktop independent archive manager'
+PROJECT=http://xarchiver.sourceforge.net
+RELEASE=0.5.2
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	$SF/$NAME/$NAME-$RELEASE.tar.bz2
+)
+
+PATCHES=(
+	xarchiver-0.5.2-add_xz_support.patch
+	xarchiver-0.5.2-drag-n-drop_escaped_path.patch
+	xarchiver-0.5.2-stack-smash.patch
+)
+
+fn docinst {
+	std_docinst
+	mv $PKG/usr/share/doc/$NAME/* $DOC
+	rm -rf $PKG/usr/share/doc
+}

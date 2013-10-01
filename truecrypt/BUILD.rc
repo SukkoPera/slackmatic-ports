@@ -1,0 +1,44 @@
+. ../sukkolib.rc
+
+BRIEF='Free Open-Source Disk Encryption Software'
+PROJECT=http://www.truecrypt.org
+RELEASE=7.1a
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+# To download the software, the license must be accepted explicitly, so no
+# sources can be set :(
+# Please download manually from http://www.truecrypt.org/downloads2.php and
+# ln -sf as $NAME-$RELEASE.tar.gz
+SOURCE=(
+#	'http://xxx/TrueCrypt '$RELEASE' Source.tar.gz'
+	$NAME-$RELEASE.tar.gz
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	Readme.txt
+	'Release/Setup Files/TrueCrypt User Guide.pdf'
+)
+
+fn build {
+	cd $SRC
+	mv $NAME-$RELEASE-source $NAME-$RELEASE
+	setup
+
+	std_build
+}
+
+# A bit of a hack ;)
+fn configure {
+	# See http://macles.blogspot.com/2008/07/installing-truecrypt-on-acer-aspire-one.html
+	cp $CWD/files/* .
+}
+
+fn inst {
+	mkdir $PKG/usr/bin
+	cp Main/truecrypt $PKG/usr/bin
+
+	#insinto "/$(get_libdir)/rcscripts/addons"
+	#newins "${FILESDIR}/${PN}-stop.sh" "${PN}-stop.sh"
+}

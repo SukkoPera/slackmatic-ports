@@ -1,0 +1,26 @@
+. ../sukkolib.rc
+
+BRIEF='A Python package that interfaces to gnuplot'
+PROJECT=http://gnuplot-py.sourceforge.net
+RELEASE=1.8
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=gnuplot-py-$RELEASE
+DOCS=(
+	$DEFAULT_DOCS
+	ANNOUNCE.txt
+	CREDITS.txt
+	FAQ.txt
+	LICENSE.txt
+	NEWS.txt
+	README.txt
+	TODO.txt
+)
+
+SOURCE=(
+	$SF/gnuplot-py/gnuplot-py-$RELEASE.tar.gz
+)
+
+fn build {
+	std_build_python
+}

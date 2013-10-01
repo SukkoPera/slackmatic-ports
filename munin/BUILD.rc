@@ -1,0 +1,16 @@
+. ../sukkolib.rc
+
+BRIEF='Networked resource monitoring tool that can help analyze resource trends and problems'
+PROJECT=http://munin-monitoring.org
+RELEASE=1.4.5
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+MAKEJOBS=1
+
+SOURCE=(
+	$SF/$NAME//$NAME-$RELEASE.tar.gz
+)
+
+fn configure {
+	cp $CWD/Makefile.config . || exit $status
+}

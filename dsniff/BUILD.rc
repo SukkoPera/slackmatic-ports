@@ -1,0 +1,64 @@
+. ../sukkolib.rc
+
+BRIEF='A collection of tools for network auditing and penetration testing'
+PROJECT=http://monkey.org/~dugsong/dsniff/
+RELEASE=2.4b1
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=$NAME-2.4
+
+SOURCE=(
+#	http://monkey.org/~dugsong/$NAME/$NAME-$RELEASE.tar.gz
+# Beta release:
+	http://monkey.org/~dugsong/$NAME/beta/$NAME-$RELEASE.tar.gz
+)
+
+PATCHES=(
+	debian_patches/01_time.h.dpatch
+	debian_patches/02_mailsnarf_corrupt.dpatch
+	debian_patches/03_pcap_read_dump.dpatch
+	debian_patches/04_multiple_intf.dpatch
+	debian_patches/05_amd64_fix.dpatch
+	debian_patches/06_urlsnarf_zeropad.dpatch
+	debian_patches/07_libnet_1.1.dpatch
+	debian_patches/08_checksum.dpatch
+	debian_patches/08_openssl-0.9.8.dpatch
+	debian_patches/09_sshcrypto.dpatch
+	debian_patches/09_sysconf_clocks.dpatch
+	debian_patches/10_urlsnarf_escape.dpatch
+	debian_patches/11_string_header.dpatch
+	debian_patches/12_arpa_inet_header.dpatch
+	debian_patches/13_pop_with_version.dpatch
+	debian_patches/14_obsolete_time.dpatch
+	debian_patches/15_checksum_libnids.dpatch
+	debian_patches/20_debian_dirs.dpatch
+	2.3-makefile.patch
+	dsniff-httppostfix.patch
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	CHANGES
+)
+
+fn configure {
+	# Another Gentoo patch
+	sed -i 's:-DDSNIFF_LIBDIR=\\\"$(libdir)/\\\"::' Makefile.in || die "sed makefile"
+
+	autoreconf -sfi
+
+	std_configure
+}
+
+fn inst {
+	make install_prefix'='$PKG install
+
+#	mkdir -p $PKG/etc/dsniff
+#	cp $PKG/usr/share/dsniff/dnsspoof.hosts $PKG/etc/dsniff
+#	cp $PKG/usr/share/dsniff/dsniff.magic $PKG/etc/dsniff
+#	cp $PKG/usr/share/dsniff/dsniff.services $PKG/etc/dsniff
+
+#	mkdir $PKG/etc
+#	mv $PKG/usr/share/dsniff $PKG/etc
+#	rm -rf $PKG/usr/share
+}

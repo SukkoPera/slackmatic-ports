@@ -1,0 +1,15 @@
+drwxr-xr-x|0755|root/root|usr|
+drwxr-xr-x|0755|root/root|usr/bin|
+-rwxr-xr-x|0755|root/root|usr/bin/oa_ded.i386|
+-rwxr-xr-x|0755|root/root|usr/bin/openarena-smp.i386|
+drwxr-xr-x|0755|root/root|usr/doc|
+drwxr-xr-x|0755|root/root|usr/doc/openarena-engine-0.8.1|
+-rw-r--r--|0644|root/root|usr/doc/openarena-engine-0.8.1/BUGS|
+-rw-r--r--|0644|root/root|usr/doc/openarena-engine-0.8.1/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/openarena-engine-0.8.1/ChangeLog|
+-rw-r--r--|0644|root/root|usr/doc/openarena-engine-0.8.1/NOTTODO|
+-rw-r--r--|0644|root/root|usr/doc/openarena-engine-0.8.1/README|
+-rw-r--r--|0644|root/root|usr/doc/openarena-engine-0.8.1/TODO|
+drwxr-xr-x|0755|root/root|usr/share|
+drwxr-xr-x|0755|root/root|usr/share/games|
+drwxr-xr-x|0755|root/root|usr/share/games/openarena|

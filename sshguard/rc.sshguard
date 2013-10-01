@@ -1,0 +1,33 @@
+#!/bin/sh
+
+LOGFILES="/var/log/secure /var/log/syslog /var/log/proftpd.log /var/log/messages"
+OPTS="-i /var/run/sshguard.pid -w /etc/sshguard-whitelist -b 200:/var/db/sshguard/blacklist.db"
+
+
+case $1 in
+	'start')
+		if [ -x /usr/sbin/sshguard ]
+		then
+			# Add logfiles to be monitored to list passed to daemon (Thanks Ubuntu!)
+			LOGS=0
+			for logfile in $LOGFILES; do [ -r "$logfile" ] && DAEMON_ARGS="$DAEMON_ARGS -l $logfile" && LOGS=$((LOGS+1)); done
+			[ $LOGS = 0 ] && echo "No valid logs to scan by sshguard, exiting" && exit 0
+
+			echo "Starting SSHGuard..."
+			/usr/sbin/sshguard $DAEMON_ARGS $OPTS >& /dev/null &
+		fi
+		;;
+	'stop')
+		pid=$(cat /var/run/sshguard.pid 2> /dev/null)
+		if [ -z "$pid" ]
+		then
+			echo "sshguard not running"
+		else
+			echo "Killing pid $pid"
+			kill $pid
+		fi
+		;;
+	*)
+		echo "usage: $0 {start|stop}"
+		;;
+esac

@@ -1,0 +1,32 @@
+. ../sukkolib.rc
+
+BRIEF='rdiff-backup backs up one directory to another, possibly over a network'
+PROJECT=http://www.nongnu.org/rdiff-backup/
+RELEASE=1.2.8
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+DOCS=(
+	$DEFAULT_DOCS
+	CHANGELOG
+	FAQ.html
+	examples.html
+)
+
+SVAH=http://savannah.nongnu.org/download
+SOURCE=(
+	$SVAH/$NAME/$NAME-$RELEASE.tar.gz
+)
+
+fn build {
+	std_build_python
+
+	rm -rf $PKG/usr/share/doc
+}
+
+fn docinst {
+	std_docinst
+
+	mv $PKG/usr/share/man $PKG/usr/man
+	rm -rf $PKG/usr/share
+}
+

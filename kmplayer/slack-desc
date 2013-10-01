@@ -1,0 +1,11 @@
+kmplayer: kmplayer (Video player plugin for Konqueror and basic MPlayer/Xine/ffmpeg/ffserver/VDR frontend for KDE)
+kmplayer:
+kmplayer: This is a slackmatic port build of kmplayer:
+kmplayer: Video player plugin for Konqueror and basic MPlayer/Xine/ffmpeg/ffserver/VDR frontend for KDE 
+kmplayer:
+kmplayer: For more information about the package, see the project website at:
+kmplayer: http://kmplayer.kde.org
+kmplayer:
+kmplayer:
+kmplayer: This slackmatic port was developed by:
+kmplayer: slackware@sukkology.net

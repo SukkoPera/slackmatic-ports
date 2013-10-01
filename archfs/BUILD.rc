@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+BRIEF='Filesystem in userspace for rdiff-backup repositories'
+PROJECT=http://code.google.com/p/archfs/
+RELEASE=0.5.4
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+        http://archfs.googlecode.com/files/$NAME-$RELEASE.tar.gz
+)
+

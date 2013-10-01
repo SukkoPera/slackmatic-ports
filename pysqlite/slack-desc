@@ -1,0 +1,11 @@
+pysqlite: pysqlite (A Python DB-API 2.0 interface for the SQLite embedded relational database engine)
+pysqlite:
+pysqlite: This is a slackmatic port build of pysqlite:
+pysqlite: A Python DB-API 2.0 interface for the SQLite embedded relational database engine 
+pysqlite:
+pysqlite: For more information about the package, see the project website at:
+pysqlite: http://oss.itsystementwicklung.de/trac/pysqlite/
+pysqlite:
+pysqlite:
+pysqlite: This slackmatic port was developed by:
+pysqlite: slackware@sukkology.net

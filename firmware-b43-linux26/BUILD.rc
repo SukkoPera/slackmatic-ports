@@ -1,0 +1,24 @@
+. ../sukkolib.rc
+
+BRIEF='Firmware for Broadcom b43 Wireless Driver on Linux <= 3.2'
+PROJECT=http://linuxwireless.org/en/users/Drivers/b43
+RELEASE=2.6
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=broadcom-wl-5.10.56.27.3
+
+SOURCE=(
+	http://mirror2.openwrt.org/sources/broadcom-wl-5.10.56.27.3_mipsel.tar.bz2
+)
+
+fn build {
+        setup
+
+	# Use b43-fwcutter
+	which b43-fwcutter > /dev/null || exit 109
+	mkdir -p $PKG/lib/firmware
+	b43-fwcutter -w $PKG/lib/firmware driver/wl_apsta/wl_prebuilt.o
+
+	# Docs
+	std_docinst
+}

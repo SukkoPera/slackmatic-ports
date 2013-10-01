@@ -1,0 +1,63 @@
+. ../sukkolib.rc
+
+# NOTE: This package needs a group and a user to be created, for instance:
+# $ groupadd -g 77 privoxy
+# $ useradd -d /etc/privoxy -g privoxy -s /bin/false -u 77 privoxy
+
+# If you use a different group/user name, please update the following lines,
+# the README and the doinst.sh script:
+PUSER=privoxy
+PGROUP=privoxy
+
+
+BRIEF='A non-caching web proxy with advanced filtering capabilities for enhancing privacy'
+PROJECT=http://www.privoxy.org
+RELEASE=3.0.12
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=$NAME-$RELEASE-stable
+
+PATCHES=(
+	privoxy-3.0.12-slackware.patch
+)
+
+CONFOPTS=(
+	--prefix'='/usr
+	--localstatedir'='/var
+	--mandir'='/usr/man
+	--docdir'='/usr/doc/$NAME-$RELEASE
+        --sysconfdir'='/etc/privoxy
+	--with-user'='$PUSER
+        --with-group'='$PGROUP
+	--enable-graceful-termination
+)
+
+SOURCE=(
+	$SF/ijbswa/$NAME-$RELEASE-stable-src.tar.gz
+)
+
+
+fn configure {
+	autoreconf -sfi
+	std_configure
+}
+
+fn inst {
+	mkdir -p $PKG/etc/rc.d
+	std_inst
+	rm -rf $PKG/var/run
+	chown -R privoxy: $PKG/var/log/privoxy
+	mv $PKG/var/log/privoxy/logfile $PKG/var/log/privoxy/privoxy.log
+
+	# logrotate config
+	mkdir -p $PKG/etc/logrotate.d
+	cp $CWD/privoxy.logrotate $PKG/etc/logrotate.d/privoxy
+}
+
+fn docinst {
+	std_docinst
+
+	# Well, the option in configure does not seem to work...
+	mv $PKG/usr/share/doc/privoxy/* $DOC
+	rm -rf $PKG/usr/share
+}

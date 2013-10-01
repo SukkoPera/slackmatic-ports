@@ -1,0 +1,11 @@
+liblo: liblo (An implementation of the Open Sound Control protocol for POSIX systems)
+liblo:
+liblo: This is a slackmatic port build of liblo:
+liblo: An implementation of the Open Sound Control protocol for POSIX systems 
+liblo:
+liblo: For more information about the package, see the project website at:
+liblo: http://liblo.sourceforge.net
+liblo:
+liblo:
+liblo: This slackmatic port was developed by:
+liblo: slackware@sukkology.net

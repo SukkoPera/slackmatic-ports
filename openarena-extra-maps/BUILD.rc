@@ -1,0 +1,39 @@
+. ../sukkolib.rc
+
+BRIEF='100 quality maps for Quake 3/OpenArena'
+PROJECT=http://openarena.wikia.com/wiki/Quality_maps
+RELEASE=0.8.1
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+# Local package data. WARNING: This is shared with the OA engine package!
+_BASEDIR=/usr/share/games/openarena
+
+# Unfortunately it seems the source zip is only available via torrent
+SOURCE=(
+	http://.../map_pack.zip
+)
+
+fn build {
+	cd $SRC
+
+        # Install
+        mkdir -p $PKG/$_BASEDIR/baseoa
+
+	for (i in 1 2 3 4 5) {
+		cp -a 'PACK#0'$i/*.pk3 $PKG/$_BASEDIR/baseoa
+	        cp -a 'PACK#0'$i/readme_0$i $DOC
+		if (test $i -eq 1) {
+		        cp -a 'PACK#0'$i/screenshot_0$i $DOC/screenshots_0$i
+		} else {
+		        cp -a 'PACK#0'$i/screenshots_0$i $DOC
+		}
+	}
+
+        find $PKG/$_BASEDIR -type d -exec chmod 755 '{}' ';'
+        find $PKG/$_BASEDIR -type f -exec chmod 644 '{}' ';'
+
+	# Docs
+	cp mappacks-list $DOC/mappacks-list.txt
+	cp 'PACK#01/map_pack.txt' $DOC	# These are all the same, so one is enough
+}

@@ -1,0 +1,11 @@
+davfs2: davfs2 (A Linux file system driver that allows you to mount a WebDAV server as a local file system.)
+davfs2:
+davfs2: This is a slackmatic port build of davfs2:
+davfs2: A Linux file system driver that allows you to mount a WebDAV server as a local file system. 
+davfs2:
+davfs2: For more information about the package, see the project website at:
+davfs2: http://dav.sourceforge.net
+davfs2:
+davfs2:
+davfs2: This slackmatic port was developed by:
+davfs2: slackware@sukkology.net

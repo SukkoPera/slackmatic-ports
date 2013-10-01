@@ -1,0 +1,11 @@
+celt: celt (A compression algorithm for audio, suitable for transmitting music with high quality)
+celt:
+celt: This is a slackmatic port build of celt:
+celt: A compression algorithm for audio, suitable for transmitting music with high quality 
+celt:
+celt: For more information about the package, see the project website at:
+celt: http://www.celt-codec.org
+celt:
+celt:
+celt: This slackmatic port was developed by:
+celt: slackware@sukkology.net

@@ -1,0 +1,20 @@
+. ../sukkolib.rc
+
+BRIEF='Python binding for Google''s Gmail service'
+PROJECT=http://libgmail.sourceforge.net
+RELEASE=0.1.10
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+DOCS=(
+	$DEFAULT_DOCS
+	CHANGELOG
+)
+
+SOURCE=(
+	$SF/$NAME/$NAME-$RELEASE.tar.gz
+)
+
+fn build {
+	std_build_python
+}

@@ -1,0 +1,16 @@
+. ../sukkolib.rc
+
+BRIEF='A text editor using the GTK2 toolkit'
+PROJECT=http://www.geany.org
+RELEASE=1.22
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS
+	--docdir'='/usr/doc/$NAME-$RELEASE
+)
+
+SOURCE=(
+	http://download.geany.org/$NAME-$RELEASE.tar.bz2
+)

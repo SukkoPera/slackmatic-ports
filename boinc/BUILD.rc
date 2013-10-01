@@ -1,0 +1,35 @@
+. ../sukkolib.rc
+
+BRIEF='The Berkeley Open Infrastructure for Network Computing'
+PROJECT=http://boinc.berkeley.edu
+RELEASE=6.10.18
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://dev.gentooexperimental.org/~scarabeus/$NAME-$RELEASE.tar.bz2
+)
+
+
+# --disable-manager must be used if X is not available
+CONFOPTS=(
+	$DEFAULT_CONFOPTS
+	--enable-unicode
+	--with-ssl
+	--disable-server
+	--disable-manager
+)
+
+fn configure {
+	autoreconf -sfi
+	std_configure
+}
+
+fn inst {
+	std_inst
+	mkdir $PKG/var/lib/boinc
+
+	mkdir -p $PKG/etc/rc.d
+	cp $CWD/rc.boinc $PKG/etc/rc.d
+	rm -rf $PKG/etc/init.d $PKG/etc/default
+}

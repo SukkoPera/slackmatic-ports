@@ -1,0 +1,11 @@
+rdiff-backup: rdiff-backup (rdiff-backup backs up one directory to another, possibly over a network)
+rdiff-backup:
+rdiff-backup: This is a slackmatic port build of rdiff-backup:
+rdiff-backup: rdiff-backup backs up one directory to another, possibly over a network 
+rdiff-backup:
+rdiff-backup: For more information about the package, see the project website at:
+rdiff-backup: http://www.nongnu.org/rdiff-backup/
+rdiff-backup:
+rdiff-backup:
+rdiff-backup: This slackmatic port was developed by:
+rdiff-backup: slackware@sukkology.net

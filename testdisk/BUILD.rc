@@ -1,0 +1,32 @@
+. ../sukkolib.rc
+
+BRIEF='File data recovery software'
+PROJECT=http://www.cgsecurity.org/wiki/PhotoRec
+RELEASE=6.13
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://www.cgsecurity.org/$NAME-$RELEASE.tar.bz2
+)
+
+CONFOPTS=(
+        $DEFAULT_CONFOPTS
+	--docdir'='/usr/doc/$NAME-$RELEASE
+	--enable-sudo
+)
+
+fn configure {
+        # Probably not the proper patch, but it seems to work, thanks
+	# http://www.murga-linux.com/puppy/viewtopic.php?search_id=776855001&t=77288
+	sed -i '405 i #define NTFS_MBSTOUCS_HAVE_TWO_ARGUMENTS 1' src/ntfs_dir.c || die "sed makefile"
+
+        std_configure
+}
+
+fn docinst {
+	rmdir $PKG/usr/share/doc/$NAME-$RELEASE/html
+	mv $PKG/usr/share/doc/$NAME-$RELEASE $PKG/usr/doc
+	rm -rf $PKG/usr/share
+	std_docinst
+}

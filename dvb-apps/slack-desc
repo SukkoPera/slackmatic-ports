@@ -1,0 +1,11 @@
+dvb-apps: dvb-apps (Linux DVB API applications and utilities)
+dvb-apps:
+dvb-apps: This is a slackmatic port build of dvb-apps:
+dvb-apps: Linux DVB API applications and utilities 
+dvb-apps:
+dvb-apps: For more information about the package, see the project website at:
+dvb-apps: http://linuxtv.org/hg/dvb-apps
+dvb-apps:
+dvb-apps:
+dvb-apps: This slackmatic port was developed by:
+dvb-apps: slackware@sukkology.net

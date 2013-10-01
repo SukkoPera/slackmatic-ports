@@ -1,0 +1,11 @@
+smbldap-tools: smbldap-tools (Set of scripts able to manage POSIX accounts for SAMBA, stored in a LDAP directory)
+smbldap-tools:
+smbldap-tools: This is a slackmatic port build of smbldap-tools:
+smbldap-tools: Set of scripts able to manage POSIX accounts for SAMBA, stored in a LDAP directory 
+smbldap-tools:
+smbldap-tools: For more information about the package, see the project website at:
+smbldap-tools: http://www.iallanis.info
+smbldap-tools:
+smbldap-tools:
+smbldap-tools: This slackmatic port was developed by:
+smbldap-tools: slackware@sukkology.net

@@ -1,0 +1,27 @@
+. ../sukkolib.rc
+
+BRIEF='A tool designed for the extraction of annotations from audio signals'
+PROJECT=http://aubio.org
+RELEASE=0.3.2
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://aubio.org/pub/$NAME-$RELEASE.tar.gz
+)
+
+fn configure {
+	# Avoid conflict with internal variable $DOC
+	_DOC=$DOC
+	DOC=()
+
+	std_configure
+}
+
+fn docinst {
+	DOC=$_DOC
+	_DOC=()
+
+	std_docinst
+}
+

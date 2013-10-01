@@ -1,0 +1,12 @@
+drwxr-xr-x|0755|root/root|usr|
+drwxr-xr-x|0755|root/root|usr/bin|
+-rwxr-xr-x|0755|root/root|usr/bin/archfs|
+drwxr-xr-x|0755|root/root|usr/doc|
+drwxr-xr-x|0755|root/root|usr/doc/archfs-0.5.4|
+-rw-r--r--|0644|root/root|usr/doc/archfs-0.5.4/AUTHORS|
+-rw-r--r--|0644|root/root|usr/doc/archfs-0.5.4/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/archfs-0.5.4/COPYING|
+-rw-r--r--|0644|root/root|usr/doc/archfs-0.5.4/ChangeLog|
+-rw-r--r--|0644|root/root|usr/doc/archfs-0.5.4/INSTALL|
+-rw-r--r--|0644|root/root|usr/doc/archfs-0.5.4/NEWS|
+-rw-r--r--|0644|root/root|usr/doc/archfs-0.5.4/README|

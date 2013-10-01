@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Vuze
+GenericName=Java BitTorrent client (formerly known as Azureus)
+Exec=vuze
+Terminal=false
+Icon=/usr/share/pixmaps/vuze.png
+Type=Application
+Categories=Application;Network;
+Comment=Java BitTorrent client (formerly known as Azureus)

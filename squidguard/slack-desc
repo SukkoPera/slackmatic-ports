@@ -1,0 +1,11 @@
+squidguard: squidguard (A URL redirector used to use blacklists with the proxysoftware Squid)
+squidguard:
+squidguard: This is a slackmatic port build of squidguard:
+squidguard: A URL redirector used to use blacklists with the proxysoftware Squid 
+squidguard:
+squidguard: For more information about the package, see the project website at:
+squidguard: http://www.squidguard.org
+squidguard:
+squidguard:
+squidguard: This slackmatic port was developed by:
+squidguard: slackware@sukkology.net

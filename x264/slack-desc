@@ -1,0 +1,11 @@
+x264: x264 (A free library for encoding H264/AVC video streams)
+x264:
+x264: This is a slackmatic port build of x264:
+x264: A free library for encoding H264/AVC video streams 
+x264:
+x264: For more information about the package, see the project website at:
+x264: http://www.videolan.org/developers/x264.html
+x264:
+x264:
+x264: This slackmatic port was developed by:
+x264: slackware@sukkology.net

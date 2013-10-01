@@ -1,0 +1,15 @@
+drwxr-xr-x|0755|root/root|usr|
+drwxr-xr-x|0755|root/root|usr/bin|
+-rwxr-xr-x|0755|root/root|usr/bin/ravel|
+-rwxr-xr-x|0755|root/root|usr/bin/unravel|
+drwxr-xr-x|0755|root/root|usr/doc|
+drwxr-xr-x|0755|root/root|usr/doc/mimecode-1.2.3|
+-rw-r--r--|0644|root/root|usr/doc/mimecode-1.2.3/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/mimecode-1.2.3/COPYRIGHT|
+-rw-r--r--|0644|root/root|usr/doc/mimecode-1.2.3/INSTALL|
+-rw-r--r--|0644|root/root|usr/doc/mimecode-1.2.3/README|
+-rw-r--r--|0644|root/root|usr/doc/mimecode-1.2.3/VERSION|
+drwxr-xr-x|0755|root/root|usr/man|
+drwxr-xr-x|0755|root/root|usr/man/man1|
+-r--r--r--|0444|root/root|usr/man/man1/ravel.1.gz|
+-r--r--r--|0444|root/root|usr/man/man1/unravel.1.gz|

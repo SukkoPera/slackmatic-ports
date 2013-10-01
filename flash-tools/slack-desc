@@ -1,0 +1,11 @@
+flash-tools: flash-tools (Flash and acquire data logs from Motorola P2k handsets)
+flash-tools:
+flash-tools: This is a slackmatic port build of flash-tools:
+flash-tools: Flash and acquire data logs from Motorola P2k handsets 
+flash-tools:
+flash-tools: For more information about the package, see the project website at:
+flash-tools: http://flash-tools.jerryweb.org/
+flash-tools:
+flash-tools:
+flash-tools: This slackmatic port was developed by:
+flash-tools: slackware@sukkology.net

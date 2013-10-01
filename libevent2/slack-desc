@@ -1,0 +1,11 @@
+libevent2: libevent2 (A mechanism to execute a callback function when a specific event occurs)
+libevent2:
+libevent2: This is a slackmatic port build of libevent2:
+libevent2: A mechanism to execute a callback function when a specific event occurs 
+libevent2:
+libevent2: For more information about the package, see the project website at:
+libevent2: http://monkey.org/~provos/libevent/
+libevent2:
+libevent2:
+libevent2: This slackmatic port was developed by:
+libevent2: slackware@sukkology.net

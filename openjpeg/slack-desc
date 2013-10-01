@@ -1,0 +1,11 @@
+openjpeg: openjpeg (An open-source JPEG 2000 library)
+openjpeg:
+openjpeg: This is a slackmatic port build of openjpeg:
+openjpeg: An open-source JPEG 2000 library 
+openjpeg:
+openjpeg: For more information about the package, see the project website at:
+openjpeg: http://code.google.com/p/openjpeg/
+openjpeg:
+openjpeg:
+openjpeg: This slackmatic port was developed by:
+openjpeg: slackware@sukkology.net

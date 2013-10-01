@@ -1,0 +1,11 @@
+unhide: unhide (A forensic tool to find hidden processes and TCP/UDP ports by rootkits/LKMs or by another hidden technique)
+unhide:
+unhide: This is a slackmatic port build of unhide:
+unhide: A forensic tool to find hidden processes and TCP/UDP ports by rootkits/LKMs or by another hidden technique 
+unhide:
+unhide: For more information about the package, see the project website at:
+unhide: http://www.security-projects.com/?Unhide
+unhide:
+unhide:
+unhide: This slackmatic port was developed by:
+unhide: slackware@sukkology.net

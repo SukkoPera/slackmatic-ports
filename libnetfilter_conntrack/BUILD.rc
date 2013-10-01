@@ -1,0 +1,11 @@
+. ../sukkolib.rc
+
+BRIEF='A userspace library providing a programming interface (API) to the in-kernel connection tracking state table'
+PROJECT=http://www.netfilter.org/projects/libnetfilter_conntrack/index.html
+RELEASE=0.0.100
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://www.netfilter.org/projects/libnetfilter_conntrack/files/$NAME-$RELEASE.tar.bz2
+)

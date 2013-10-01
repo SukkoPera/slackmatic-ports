@@ -1,0 +1,22 @@
+. ../sukkolib.rc
+
+BRIEF='A Python binding to exiv2 for manipulation of EXIF, IPTC and XMP image metadata.'
+PROJECT=http://tilloy.net/dev/pyexiv2/
+RELEASE=0.1.3
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+DOCS=(
+	$DEFAULT_DOCS
+	todo
+	doc/pyexiv2.html
+)
+
+SOURCE=(
+#	http://launchpad.net/pyexiv2/0.2.x/0.2.2/+download/$NAME-$RELEASE.tar.bz2
+	http://launchpad.net/pyexiv2/0.1.x/$RELEASE/+download/$NAME-$RELEASE.tar.bz2
+)
+
+fn build {
+	std_build_scons
+}

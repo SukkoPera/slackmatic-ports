@@ -1,0 +1,8 @@
+drwxr-xr-x|0755|root/root|usr|
+drwxr-xr-x|0755|root/root|usr/bin|
+-rwxr-xr-x|0755|root/root|usr/bin/truecrypt|
+drwxr-xr-x|0755|root/root|usr/doc|
+drwxr-xr-x|0755|root/root|usr/doc/truecrypt-7.1a|
+-rw-r--r--|0644|root/root|usr/doc/truecrypt-7.1a/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/truecrypt-7.1a/Readme.txt|
+-rw-r--r--|0644|root/root|usr/doc/truecrypt-7.1a/TrueCrypt User Guide.pdf|
