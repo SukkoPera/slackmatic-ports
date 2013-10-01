@@ -2,7 +2,7 @@
 
 BRIEF='An implementation of the Open Sound Control protocol for POSIX systems'
 PROJECT=http://liblo.sourceforge.net
-RELEASE=0.26
+RELEASE=0.27
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
