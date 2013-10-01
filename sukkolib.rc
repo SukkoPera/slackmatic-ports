@@ -44,7 +44,7 @@ SOURCEFORGE_MIRRORS=(
 # - waf
 # - python
 # Any other values will trigger the autotools system.
-BUILDSYSTEM=''
+BUILDSYSTEM='autotools'
 
 # TODO
 # + Build from CVS
