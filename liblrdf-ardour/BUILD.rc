@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+NAME=liblrdf
+BRIEF='Modified version of lrdf supported by Ardour'
+PROJECT=http://sourceforge.net/projects/lrdf/
+RELEASE=0.5.0
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://ardour.org/files/deps/$NAME-$RELEASE.tar.gz
+)
