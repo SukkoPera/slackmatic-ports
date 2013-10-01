@@ -1,0 +1,11 @@
+libsigc++: libsigc++ (A typesafe callback system for standard C++)
+libsigc++:
+libsigc++: This is a slackmatic port build of libsigc++:
+libsigc++: A typesafe callback system for standard C++ 
+libsigc++:
+libsigc++: For more information about the package, see the project website at:
+libsigc++: http://ardour.org/current_dependencies.html
+libsigc++:
+libsigc++:
+libsigc++: This slackmatic port was developed by:
+libsigc++: slackware@sukkology.net

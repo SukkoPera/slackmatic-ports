@@ -1,0 +1,19 @@
+. ../sukkolib.rc
+
+NAME=libsigc++
+BRIEF='A typesafe callback system for standard C++'
+PROJECT=http://ardour.org/current_dependencies.html
+RELEASE=2.2.10
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://ardour.org/files/deps/$NAME-$RELEASE.tar.bz2
+)
+
+fn docinst {
+	std_docinst
+	
+	mv $PKG/usr/share/doc/libsigc++-2.0/* $DOC
+	rm -rf $PKG/usr/share/doc
+}
