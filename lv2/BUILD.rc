@@ -1,0 +1,17 @@
+. ../sukkolib.rc
+
+BRIEF='A portable plugin standard for audio systems'
+PROJECT=http://lv2plug.in
+RELEASE=1.6.0
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDSYSTEM=waf
+
+SOURCE=(
+	http://lv2plug.in/spec/$NAME-$RELEASE.tar.bz2
+)
+
+#DOCS=(
+#	$DEFAULT_DOCS
+#	README_NETJACK2
+#)
