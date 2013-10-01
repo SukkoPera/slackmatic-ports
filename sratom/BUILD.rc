@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+BRIEF='A library for serialising LV2 atoms to/from RDF, particularly the Turtle syntax'
+PROJECT=http://drobilla.net/software/sratom/
+RELEASE=0.4.2
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDSYSTEM=waf
+
+SOURCE=(
+	http://download.drobilla.net/$NAME-$RELEASE.tar.bz2
+)

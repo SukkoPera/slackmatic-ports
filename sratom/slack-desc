@@ -1,0 +1,11 @@
+sratom: sratom (A library for serialising LV2 atoms to/from RDF, particularly the Turtle syntax)
+sratom:
+sratom: This is a slackmatic port build of sratom:
+sratom: A library for serialising LV2 atoms to/from RDF, particularly the Turtle syntax 
+sratom:
+sratom: For more information about the package, see the project website at:
+sratom: http://drobilla.net/software/sratom/
+sratom:
+sratom:
+sratom: This slackmatic port was developed by:
+sratom: slackware@sukkology.net
