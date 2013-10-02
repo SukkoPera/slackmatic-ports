@@ -1,0 +1,23 @@
+. ../sukkolib.rc
+
+BRIEF='C++ version of the Cairo 2D graphics library'
+PROJECT=http://cairographics.org/
+RELEASE=1.8.6
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://cairographics.org/releases/$NAME-$RELEASE.tar.gz
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	MAINTAINERS
+)
+
+fn docinst {
+        std_docinst
+
+        mv $PKG/usr/share/doc $PKG/usr/share/gnomedoc
+}
+

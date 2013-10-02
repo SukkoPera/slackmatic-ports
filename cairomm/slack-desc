@@ -1,0 +1,11 @@
+cairomm: cairomm (C++ version of the Cairo 2D graphics library)
+cairomm:
+cairomm: This is a slackmatic port build of cairomm:
+cairomm: C++ version of the Cairo 2D graphics library 
+cairomm:
+cairomm: For more information about the package, see the project website at:
+cairomm: http://cairographics.org/
+cairomm:
+cairomm:
+cairomm: This slackmatic port was developed by:
+cairomm: slackware@sukkology.net
