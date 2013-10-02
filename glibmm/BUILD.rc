@@ -1,0 +1,26 @@
+. ../sukkolib.rc
+
+BRIEF='Official C++ interface for the popular library glib (part of GTK+)'
+PROJECT=http://www.gtkmm.org
+#RELEASE=2.32.1
+RELEASE=2.24.2
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://ftp.gnome.org/pub/GNOME/sources/glibmm/2.24/$NAME-$RELEASE.tar.bz2
+)
+
+fn patches {
+	std_patches
+
+	# don't waste time building tests
+	sed 's/^\(SUBDIRS =.*\)tests\(.*\)$/\1\2/' -i Makefile.am Makefile.in || die "sed 1 failed"
+	sed 's/^\(SUBDIRS =.*\)demos\(.*\)$/\1\2/' -i Makefile.am Makefile.in || die "sed 2 failed"
+}
+
+fn docinst {
+	std_docinst
+
+	mv $PKG/usr/share/doc $PKG/usr/share/gnomedoc
+}
