@@ -1,0 +1,11 @@
+qjackctl: qjackctl (A simple Qt application to control the JACK sound server daemon)
+qjackctl:
+qjackctl: This is a slackmatic port build of qjackctl:
+qjackctl: A simple Qt application to control the JACK sound server daemon 
+qjackctl:
+qjackctl: For more information about the package, see the project website at:
+qjackctl: http://qjackctl.sourceforge.net
+qjackctl:
+qjackctl:
+qjackctl: This slackmatic port was developed by:
+qjackctl: slackware@sukkology.net
