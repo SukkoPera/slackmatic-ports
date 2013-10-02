@@ -1,0 +1,11 @@
+py-ordereddict: py-ordereddict (A drop-in substitute for Py2.7's new collections.OrderedDict that works in Python 2.4-2.6)
+py-ordereddict:
+py-ordereddict: This is a slackmatic port build of py-ordereddict:
+py-ordereddict: A drop-in substitute for Py2.7's new collections.OrderedDict that works in Python 2.4-2.6 
+py-ordereddict:
+py-ordereddict: For more information about the package, see the project website at:
+py-ordereddict: https://pypi.python.org/pypi/ordereddict
+py-ordereddict:
+py-ordereddict:
+py-ordereddict: This slackmatic port was developed by:
+py-ordereddict: slackware@sukkology.net

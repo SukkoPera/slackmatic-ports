@@ -1,0 +1,11 @@
+drwxr-xr-x|0755|root/root|usr|
+drwxr-xr-x|0755|root/root|usr/doc|
+drwxr-xr-x|0755|root/root|usr/doc/py-ordereddict-1.1|
+-rw-r--r--|0644|root/root|usr/doc/py-ordereddict-1.1/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/py-ordereddict-1.1/LICENSE|
+drwxr-xr-x|0755|root/root|usr/lib64|
+drwxr-xr-x|0755|root/root|usr/lib64/python2.6|
+drwxr-xr-x|0755|root/root|usr/lib64/python2.6/site-packages|
+-rw-r--r--|0644|root/root|usr/lib64/python2.6/site-packages/ordereddict-1.1-py2.6.egg-info|
+-rw-r--r--|0644|root/root|usr/lib64/python2.6/site-packages/ordereddict.py|
+-rw-r--r--|0644|root/root|usr/lib64/python2.6/site-packages/ordereddict.pyc|
