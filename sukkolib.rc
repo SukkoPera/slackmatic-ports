@@ -24,6 +24,9 @@ DEFAULT_CONFOPTS_AUTOTOOLS=(
 DEFAULT_CONFOPTS_CMAKE=(
 	-D CMAKE_INSTALL_PREFIX'='/usr
 )
+DEFAULT_CONFOPTS_SCONS=(
+	PREFIX'='/usr
+)
 DEFAULT_CONFOPTS_WAF=(
 	--prefix'='/usr
 	--libdir'='$LIBDIR
@@ -37,14 +40,16 @@ SOURCEFORGE_MIRRORS=(
 	http://puzzle.dl.sourceforge.net/sourceforge
 	http://kent.dl.sourceforge.net/sourceforge
 )
-# This can be set to:
+# This can be set (in ports) to:
 # - autotools
 # - cmake
 # - scons
 # - waf
 # - python
-# Any other values will trigger the autotools system.
-BUILDSYSTEM='autotools'
+# Any other values will trigger autodetection of the build system in use
+# Leave set to '' here
+BUILDSYSTEM=''
+
 
 # TODO
 # + Build from CVS
@@ -60,7 +65,7 @@ BUILDSYSTEM='autotools'
 # GENERAL PURPOSE STUFF
 ###############################################################################
 
-fn std_patch {
+fn std_patches {
 	for (pf in $PATCHES) {
 		# WARNING: Changed this on 08/05/2008, might break earlier stuff
 		pf=$CWD/$pf
@@ -91,6 +96,11 @@ fn std_patch {
 	#~ trace 'Patching done'
 }
 
+fn patches {
+	trace 'Standard patches function called'
+	std_patches
+}
+
 fn std_docinst {
 	if (~ $DOCS'X' 'X') {
 		DOCS=$DEFAULT_DOCS
@@ -98,13 +108,13 @@ fn std_docinst {
 
 	# This needs testing
 	#for (f in `{eval echo $DOCS}) {
-	for (f in $DOCS) {
+	for (_f in $DOCS) {
 #		f=`{eval echo $f}
-		if (test -f $f && test `{filesize $f} -gt 0) {
-# 			trace 'Installing doc: '$f' in: '$DOC
-			install -m 0644 $f $DOC
-		} else {
-			trace 'Skipping doc: '$f
+		if (test -f $_f && test `{filesize $_f} -gt 0) {
+# 			trace 'Installing doc: '$_f' in: '$DOC
+			install -m 0644 $_f $DOC
+		#~ } else {
+			#~ trace 'Skipping doc: '$_f
 		}
 	}
 }
@@ -128,7 +138,44 @@ fn setup {
 	}
 	
 	cd $SRC/$NAME-$RELEASE || exit $status
-	std_patch
+	patches
+
+	# Autodetect build system
+	if (~ $BUILDSYSTEM'X' 'autodetect') {
+		if (test -f CMakeLists.txt) {
+			trace 'Autodetected cmake build system'
+			BUILDSYSTEM='cmake'
+		} else if (test -f configure && test -f Makefile.in) {
+			trace 'Autodetected autotools build system'
+			BUILDSYSTEM='autotools'
+		} else if (test -f SConstruct) {
+			trace 'Autodetected scons build system'
+			BUILDSYSTEM='scons'
+		} else if (test -f setup.py) {
+			trace 'Autodetected python build system'
+			BUILDSYSTEM='python'
+		} else if (test -f waf) {
+			trace 'Autodetected waf build system'
+			BUILDSYSTEM='waf'
+		} else {
+			error 'Cannot auto-detect build system'
+			exit 88
+		}
+	}
+
+	# Set CONFOPTS
+	switch ($BUILDSYSTEM) {
+		case cmake
+			DEFAULT_CONFOPTS=$DEFAULT_CONFOPTS_CMAKE
+		case scons
+			DEFAULT_CONFOPTS=$DEFAULT_CONFOPTS_SCONS
+		case waf
+			DEFAULT_CONFOPTS=$DEFAULT_CONFOPTS_WAF
+		case python
+			# Nothing to do
+		case *
+			DEFAULT_CONFOPTS=$DEFAULT_CONFOPTS_AUTOTOOLS
+	}
 }
 
 # Returns the filesize of a filename
@@ -224,7 +271,14 @@ fn std_build {
 }
 
 fn build {
-	trace 'Standard build function for build system '$BUILDSYSTEM' called'
+	trace 'Standard build function called'
+
+	# Say whether we want autodetection or not. We do it this way
+	# since it must not be performed if a port overrides build().
+	if (~ $BUILDSYSTEM'X' 'X') {
+		BUILDSYSTEM='autodetect'
+	}
+
 	std_build
 }
 
@@ -314,7 +368,7 @@ fn std_inst_python {
 # CC=/usr/bin/gcc CXX=/usr/bin/g++ slackmat-build
 
 fn std_compile_scons {
-	scons || exit 101
+	scons $CONFOPTS || exit 101
 }
 
 fn std_inst_scons {
