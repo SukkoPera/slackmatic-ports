@@ -1,0 +1,11 @@
+pangomm: pangomm (C++ version of a library for laying out and rendering of text)
+pangomm:
+pangomm: This is a slackmatic port build of pangomm:
+pangomm: C++ version of a library for laying out and rendering of text 
+pangomm:
+pangomm: For more information about the package, see the project website at:
+pangomm: http://www.pango.org/
+pangomm:
+pangomm:
+pangomm: This slackmatic port was developed by:
+pangomm: slackware@sukkology.net
