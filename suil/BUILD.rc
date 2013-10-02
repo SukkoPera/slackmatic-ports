@@ -1,0 +1,18 @@
+BUILDSYSTEM=waf
+
+. ../sukkolib.rc
+
+BRIEF='A lightweight C library for loading and wrapping LV2 plugin UIs'
+PROJECT=http://drobilla.net/software/suil/
+RELEASE=0.6.16
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://download.drobilla.net/$NAME-$RELEASE.tar.bz2
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	PACKAGING
+)

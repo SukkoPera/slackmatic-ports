@@ -1,0 +1,11 @@
+suil: suil (A lightweight C library for loading and wrapping LV2 plugin UIs)
+suil:
+suil: This is a slackmatic port build of suil:
+suil: A lightweight C library for loading and wrapping LV2 plugin UIs 
+suil:
+suil: For more information about the package, see the project website at:
+suil: http://drobilla.net/software/suil/
+suil:
+suil:
+suil: This slackmatic port was developed by:
+suil: slackware@sukkology.net
