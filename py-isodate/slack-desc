@@ -1,0 +1,11 @@
+py-isodate: py-isodate (An ISO 8601 date/time/duration parser and formatter)
+py-isodate:
+py-isodate: This is a slackmatic port build of py-isodate:
+py-isodate: An ISO 8601 date/time/duration parser and formatter 
+py-isodate:
+py-isodate: For more information about the package, see the project website at:
+py-isodate: https://pypi.python.org/pypi/isodate
+py-isodate:
+py-isodate:
+py-isodate: This slackmatic port was developed by:
+py-isodate: slackware@sukkology.net
