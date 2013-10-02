@@ -6,8 +6,9 @@ RELEASE=1.6.1
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
+MAJORV=`{echo $RELEASE | sed 's:\.[0-9]$::'}
 SOURCE=(
-	http://ftp.gnome.org/pub/GNOME/sources/meld/1.6/$NAME-$RELEASE.tar.xz
+	http://ftp.gnome.org/pub/GNOME/sources/meld/$MAJORV/$NAME-$RELEASE.tar.xz
 )
 
 DOCS=(
