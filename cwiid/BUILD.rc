@@ -1,0 +1,49 @@
+. ../sukkolib.rc
+
+BRIEF='Linux tools written for interfacing with the Nintendo Wiimote'
+PROJECT=http://abstrakraft.org/cwiid
+RELEASE=20131003
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=$NAME-master
+
+SOURCE=(
+	# This must be downloaded manually from the github page at https://github.com/abstrakraft/cwiid
+	http://x/$NAME-$RELEASE.zip
+)
+
+PATCHES=(
+	cwiid-20110107-underlinking.patch
+)
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS_AUTOTOOLS
+	--without-ldconfig
+)
+
+fn patches {
+	std_patches
+
+	# Fix broken build system
+	sed -i 's:--disable-ldconfig:--without-ldconfig:g' configure.ac || exit 200
+	sed -i 's:enable_ldconfig:with_ldconfig:g' configure.ac || exit 201
+
+	autoreconf -sfi
+}
+
+fn inst {
+	std_inst
+
+	# Make it possible to use cwiid device as user
+	# Thanks Gentoo guys
+	mkdir -p $PKG/lib/udev/rules.d
+	cp $CWD/60-cwiid.rules $PKG/lib/udev/rules.d
+}
+
+fn docinst {
+	std_docinst
+
+	# Fix docs
+	mv -i $PKG/usr/share/doc/cwiid/* $DOC
+	rm -rf $PKG/usr/share
+}
