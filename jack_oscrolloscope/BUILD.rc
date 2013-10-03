@@ -1,0 +1,23 @@
+. ../sukkolib.rc
+
+BRIEF='A simple waveform viewer for JACK'
+PROJECT=http://das.nasophon.de/jack_oscrolloscope/
+RELEASE=0.7
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://das.nasophon.de/download/$NAME-$RELEASE.tar.gz
+)
+
+fn patches {
+	std_patches
+
+	# Avoid linking error
+	sed -i 's:^\(LIBS.*\):\1 -lm:' Makefile || exit 100
+}
+
+fn inst {
+	mkdir -p $PKG/usr/bin
+	make install PREFIX'='$PKG/usr
+}
