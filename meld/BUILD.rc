@@ -2,7 +2,7 @@
 
 BRIEF='A visual diff and merge tool'
 PROJECT=http://meld.sourceforge.net
-RELEASE=1.6.1
+RELEASE=1.8.1
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
@@ -19,6 +19,17 @@ DOCS=(
 fn build {
 	setup
 
+	# don't install anything to /usr/share/doc/meld
+	#~ sed -e 's:$(docdir)/meld:$(docdir)/'$NAME':' -i INSTALL || exit 200
+
+	# don't run scrollkeeper (with the wrong path),
+	sed -e '/scrollkeeper-update/s/\t/&#/' -i help/*/Makefile || exit 201
+	sed -e '/scrollkeeper-preinstall/s/\t/&#/' -i help/*/Makefile || exit 201
+
 	make install prefix'='/usr DESTDIR'='$PKG
 	std_docinst
+
+	#~ rm -rf $PKG/usr/share/gnome/
+	rm -rf $PKG/usr/share/doc/
+	rm -rf $PKG/usr/share/pixmaps/
 }
