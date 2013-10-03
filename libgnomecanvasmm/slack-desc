@@ -1,0 +1,11 @@
+libgnomecanvasmm: libgnomecanvasmm (Official C++ interface for the popular libgnomecanvas library)
+libgnomecanvasmm:
+libgnomecanvasmm: This is a slackmatic port build of libgnomecanvasmm:
+libgnomecanvasmm: Official C++ interface for the popular libgnomecanvas library 
+libgnomecanvasmm:
+libgnomecanvasmm: For more information about the package, see the project website at:
+libgnomecanvasmm: http://
+libgnomecanvasmm:
+libgnomecanvasmm:
+libgnomecanvasmm: This slackmatic port was developed by:
+libgnomecanvasmm: slackware@sukkology.net

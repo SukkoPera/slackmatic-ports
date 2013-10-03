@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+BRIEF='Official C++ interface for the popular libgnomecanvas library'
+PROJECT=http://
+RELEASE=2.26.0
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+MAJORV=`{echo $RELEASE | sed 's:\.[0-9]$::'}
+SOURCE=(
+	http://ftp.acc.umu.se/pub/GNOME/sources/libgnomecanvasmm/$MAJORV/$NAME-$RELEASE.tar.gz
+)
