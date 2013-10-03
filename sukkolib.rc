@@ -136,12 +136,12 @@ fn setup {
 	if (!~ $BUILDDIR'X' 'X') {
 		mv $SRC/$BUILDDIR $SRC/$NAME-$RELEASE || exit $status
 	}
-	
+
 	cd $SRC/$NAME-$RELEASE || exit $status
 	patches
 
 	# Autodetect build system
-	if (~ $BUILDSYSTEM'X' 'autodetect') {
+	if (~ $BUILDSYSTEM 'autodetect') {
 		if (test -f CMakeLists.txt) {
 			trace 'Autodetected cmake build system'
 			BUILDSYSTEM='cmake'
