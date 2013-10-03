@@ -1,0 +1,11 @@
+gtkmm: gtkmm (Official C++ interface for the popular GUI library GTK+)
+gtkmm:
+gtkmm: This is a slackmatic port build of gtkmm:
+gtkmm: Official C++ interface for the popular GUI library GTK+ 
+gtkmm:
+gtkmm: For more information about the package, see the project website at:
+gtkmm: http://www.gtkmm.org
+gtkmm:
+gtkmm:
+gtkmm: This slackmatic port was developed by:
+gtkmm: slackware@sukkology.net

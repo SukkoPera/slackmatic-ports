@@ -1,12 +1,11 @@
 . ../sukkolib.rc
 
-# NOTE: This package needs parts of GNOME. I used GSB 2.26 for the matter.
-
 BRIEF='Digital Audio Workstation'
 PROJECT=http://ardour.org
-RELEASE=2.8.7
-BUILD=1suk_$SLCKVER
+RELEASE=3.4
+BUILD=2suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
+BUILDDIR=Ardour3-$RELEASE
 
 SOURCE=(
 	# WARNING: You will have to download this manually!
@@ -14,29 +13,38 @@ SOURCE=(
 	http://x/$NAME-$RELEASE.tar.bz2
 )
 
-fn build {
-	setup
+DOCS=(
+	$DEFAULT_DOCS
+	3.3-notes
+	3.3-notes.html
+	3.4-notes
+	TRANSLATORS
+)
 
-	# Compile and install in a single pass
-	# Note that the "env" is mandatory, otherwise the dirty environment
-	# willmake the build system misbehave (I am unsure if this is due to
-	# scons or to the way ardour uses it).
-	env - \
-		PATH'='$PATH \
-		HOME'='$HOME \
-	/usr/bin/scons install \
-		CFLAGS'='$CFLAGS \
-		DESTDIR'='$PKG \
-		PREFIX'='/usr \
-		SYSLIBS'='1 \
-		|| exit $status
+CONFOPTS=(
+	$DEFAULT_CONFOPTS_WAF
+	--configdir'='/etc
+	--no-phone-home
+	--freedesktop
+	--optimize
+)
+
+fn inst {
+	std_inst
+
+	# Man pages
+	mkdir -p $PKG/usr/man/man1
+	cp ardour.1 $PKG/usr/man/man1
+	mkdir -p $PKG/usr/man/es/man1
+	cp ardour.1.es $PKG/usr/man/es/man1/ardour.1
+	mkdir -p $PKG/usr/man/fr/man1
+	cp ardour.1.fr $PKG/usr/man/fr/man1/ardour.1
+	mkdir -p $PKG/usr/man/ru/man1
+	cp ardour.1.ru $PKG/usr/man/ru/man1/ardour.1
 
 	# Desktop icon and entry
 	mkdir -p $PKG/usr/share/pixmaps
-	cp icons/icon/ardour_icon_mac.png $PKG/usr/share/pixmaps/ardour2.png
+	cp icons/icon/ardour_icon_mac.png $PKG/usr/share/pixmaps/ardour3.png
 	mkdir -p $PKG/usr/share/applications
-	cp gtk2_ardour/ardour2.desktop.in $PKG/usr/share/applications/ardour2.desktop
-
-	# Docs
-	std_docinst
+	cp gtk2_ardour/ardour3.desktop.in $PKG/usr/share/applications/ardour3.desktop
 }

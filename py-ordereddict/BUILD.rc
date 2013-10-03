@@ -1,0 +1,17 @@
+. ../sukkolib.rc
+
+BRIEF='A drop-in substitute for Py2.7''s new collections.OrderedDict that works in Python 2.4-2.6'
+PROJECT=https://pypi.python.org/pypi/ordereddict
+RELEASE=1.1
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=ordereddict-$RELEASE
+
+SOURCE=(
+	https://pypi.python.org/packages/source/o/ordereddict/$BUILDDIR.tar.gz
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	LICENSE
+)

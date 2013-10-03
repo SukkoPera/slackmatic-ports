@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+BRIEF='An ISO 8601 date/time/duration parser and formatter'
+PROJECT=https://pypi.python.org/pypi/isodate
+RELEASE=0.4.9
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=isodate-$RELEASE
+
+SOURCE=(
+	https://pypi.python.org/packages/source/i/isodate/isodate-$RELEASE.tar.gz
+)

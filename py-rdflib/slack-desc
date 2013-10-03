@@ -1,0 +1,11 @@
+py-rdflib: py-rdflib (A Python library for working with RDF)
+py-rdflib:
+py-rdflib: This is a slackmatic port build of py-rdflib:
+py-rdflib: A Python library for working with RDF 
+py-rdflib:
+py-rdflib: For more information about the package, see the project website at:
+py-rdflib: https://github.com/RDFLib/rdflib
+py-rdflib:
+py-rdflib:
+py-rdflib: This slackmatic port was developed by:
+py-rdflib: slackware@sukkology.net

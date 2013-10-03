@@ -2,7 +2,7 @@
 
 BRIEF='Secret Rabbit Code (aka libsamplerate) is a Sample Rate Converter for audio'
 PROJECT=http://www.mega-nerd.com/SRC/
-RELEASE=0.1.7
+RELEASE=0.1.8
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
@@ -14,6 +14,8 @@ fn docinst {
 	std_docinst
 
 	# Manually install HTML docs
-	mkdir $DOC/html
-	cp doc/*.html doc/*.css doc/*.png $DOC/html
+	#mkdir $DOC/html
+	#cp doc/*.html doc/*.css doc/*.png $DOC/html
+	mv $PKG/usr/share/doc/libsamplerate0-dev/html/ $DOC
+	rm -rf $PKG/usr/share
 }
