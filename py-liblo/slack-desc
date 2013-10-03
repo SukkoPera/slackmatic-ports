@@ -1,0 +1,11 @@
+py-liblo: py-liblo (Python wrapper for the liblo OSC library)
+py-liblo:
+py-liblo: This is a slackmatic port build of py-liblo:
+py-liblo: Python wrapper for the liblo OSC library 
+py-liblo:
+py-liblo: For more information about the package, see the project website at:
+py-liblo: http://das.nasophon.de/pyliblo/
+py-liblo:
+py-liblo:
+py-liblo: This slackmatic port was developed by:
+py-liblo: slackware@sukkology.net
