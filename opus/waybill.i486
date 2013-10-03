@@ -121,6 +121,7 @@ drwxr-xr-x|0755|root/root|usr/doc/opus-1.0.3/html/search|
 -rw-r--r--|0644|root/root|usr/doc/opus-1.0.3/html/tab_s.png|
 drwxr-xr-x|0755|root/root|usr/include|
 drwxr-xr-x|0755|root/root|usr/include/opus|
+-rw-r--r--|0644|root/root|usr/include/opus/opus_custom.h|
 -rw-r--r--|0644|root/root|usr/include/opus/opus_defines.h|
 -rw-r--r--|0644|root/root|usr/include/opus/opus.h|
 -rw-r--r--|0644|root/root|usr/include/opus/opus_multistream.h|
