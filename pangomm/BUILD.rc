@@ -1,0 +1,24 @@
+. ../sukkolib.rc
+
+BRIEF='C++ version of a library for laying out and rendering of text'
+PROJECT=http://www.pango.org/
+RELEASE=2.34.0
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+MAJORV=`{echo $RELEASE | sed 's:\.[0-9]$::'}
+SOURCE=(
+	http://ftp.acc.umu.se/pub/gnome/sources/pangomm/$MAJORV/$NAME-$RELEASE.tar.xz
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	COPYING.tools
+)
+
+fn docinst {
+        std_docinst
+
+        mv $PKG/usr/share/doc $PKG/usr/share/gnomedoc
+}
+

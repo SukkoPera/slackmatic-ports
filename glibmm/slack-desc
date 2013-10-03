@@ -1,0 +1,11 @@
+glibmm: glibmm (Official C++ interface for the popular library glib (part of GTK+))
+glibmm:
+glibmm: This is a slackmatic port build of glibmm:
+glibmm: Official C++ interface for the popular library glib (part of GTK+) 
+glibmm:
+glibmm: For more information about the package, see the project website at:
+glibmm: http://www.gtkmm.org
+glibmm:
+glibmm:
+glibmm: This slackmatic port was developed by:
+glibmm: slackware@sukkology.net

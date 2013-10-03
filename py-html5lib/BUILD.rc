@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+BRIEF='Standards-compliant library for parsing and serializing HTML documents and fragments in Python'
+PROJECT=https://github.com/html5lib/html5lib-python
+RELEASE=0.99
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=html5lib-$RELEASE
+
+SOURCE=(
+	https://pypi.python.org/packages/source/h/html5lib/$BUILDDIR.tar.gz
+)

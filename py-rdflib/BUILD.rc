@@ -1,0 +1,21 @@
+. ../sukkolib.rc
+
+BRIEF='A Python library for working with RDF'
+PROJECT=https://github.com/RDFLib/rdflib
+RELEASE=3.2.3
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=rdflib-$RELEASE
+
+SOURCE=(
+	https://pypi.python.org/packages/source/r/rdflib/$BUILDDIR.tar.gz
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	CHANGELOG
+	CONTRIBUTORS
+	DEVELOPERS
+	LICENSE
+	README
+)

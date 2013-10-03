@@ -1,0 +1,11 @@
+py-html5lib: py-html5lib (Standards-compliant library for parsing and serializing HTML documents and fragments in Python)
+py-html5lib:
+py-html5lib: This is a slackmatic port build of py-html5lib:
+py-html5lib: Standards-compliant library for parsing and serializing HTML documents and fragments in Python 
+py-html5lib:
+py-html5lib: For more information about the package, see the project website at:
+py-html5lib: https://github.com/html5lib/html5lib-python
+py-html5lib:
+py-html5lib:
+py-html5lib: This slackmatic port was developed by:
+py-html5lib: slackware@sukkology.net

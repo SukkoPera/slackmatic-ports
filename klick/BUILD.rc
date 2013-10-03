@@ -1,0 +1,16 @@
+. ../sukkolib.rc
+
+BRIEF='An advanced command-line based metronome for JACK'
+PROJECT=http://das.nasophon.de/klick/
+RELEASE=0.12.2
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://das.nasophon.de/download/$NAME-$RELEASE.tar.gz
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	doc/manual.html
+)

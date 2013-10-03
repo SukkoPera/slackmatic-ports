@@ -1,0 +1,11 @@
+lilv: lilv (A C library to make the use of LV2 plugins as simple as possible)
+lilv:
+lilv: This is a slackmatic port build of lilv:
+lilv: A C library to make the use of LV2 plugins as simple as possible 
+lilv:
+lilv: For more information about the package, see the project website at:
+lilv: http://drobilla.net/software/lilv/
+lilv:
+lilv:
+lilv: This slackmatic port was developed by:
+lilv: slackware@sukkology.net
