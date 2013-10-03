@@ -13,7 +13,8 @@ SOURCE=(
 #	$SF/$NAME/$NAME-$RELEASE.tar.gz
 )
 
-fn configure () {
+fn patches () {
+	std_patches
+
 	./autogen.sh
-	std_configure
 }
