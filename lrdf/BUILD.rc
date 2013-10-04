@@ -1,0 +1,22 @@
+. ../sukkolib.rc
+
+BRIEF='A lightweight RDF library for accessing plugin metadata in the LADSPA plugin system'
+PROJECT=https://github.com/swh/LRDF
+RELEASE=20131004
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=LRDF-master
+
+SOURCE=(
+	MYFETCH:$NAME-$RELEASE.zip
+)
+
+fn myfetch () {
+	wget https://github.com/swh/LRDF/archive/master.zip -O $NAME-$RELEASE.zip
+}
+
+fn patches () {
+	# Remove libtool dangling symlinks, so that autoreconf can do its job
+	find -L $SRC -type l -ls -delete
+	autoreconf -sfi
+}
