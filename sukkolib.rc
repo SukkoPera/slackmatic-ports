@@ -46,6 +46,7 @@ SOURCEFORGE_MIRRORS=(
 # - scons
 # - waf
 # - python
+# - makeonly
 # Any other values will trigger autodetection of the build system in use
 # Leave set to '' here
 BUILDSYSTEM=''
@@ -157,6 +158,9 @@ fn setup {
 		} else if (test -f waf) {
 			trace 'Autodetected waf build system'
 			BUILDSYSTEM='waf'
+		} else if (test -f Makefile || test -f makefile) {
+			trace 'Autodetected makeonly build system'
+			BUILDSYSTEM='makeonly'
 		} else {
 			error 'Cannot auto-detect build system'
 			exit 88
@@ -207,6 +211,8 @@ fn std_configure {
 			std_configure_waf
 		case python
 			# Nothing to do
+		case makeonly
+			# Nothing to do
 		case *
 			std_configure_autotools
 	}
@@ -232,6 +238,7 @@ fn std_compile {
 			std_compile_waf
 		case python
 			std_compile_python
+		# This includes makeonly
 		case *
 			std_compile_autotools
 	}
