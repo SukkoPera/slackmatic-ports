@@ -26,6 +26,8 @@ DEFAULT_CONFOPTS_CMAKE=(
 )
 DEFAULT_CONFOPTS_SCONS=(
 	PREFIX'='/usr
+	CFLAGS'='$CFLAGS \
+	DESTDIR'='$PKG
 )
 DEFAULT_CONFOPTS_WAF=(
 	--prefix'='/usr
@@ -149,7 +151,7 @@ fn setup {
 		} else if (test -f configure && test -f Makefile.in) {
 			trace 'Autodetected autotools build system'
 			BUILDSYSTEM='autotools'
-		} else if (test -f SConstruct) {
+		} else if (test -f SConstruct || test -f Sconstruct) {
 			trace 'Autodetected scons build system'
 			BUILDSYSTEM='scons'
 		} else if (test -f setup.py) {
@@ -374,11 +376,21 @@ fn std_inst_python {
 # WARNING: SCons does not work with ccache, so make sure to turn it off as in:
 # CC=/usr/bin/gcc CXX=/usr/bin/g++ slackmat-build
 
+# Note that the "env" is mandatory, otherwise the dirty environment
+# will make the build system misbehave (I am unsure if this is due to
+# scons or to the way packages uses it).
+
 fn std_compile_scons {
+	env - \
+		PATH'='$PATH \
+		HOME'='$HOME \
 	scons $CONFOPTS || exit 101
 }
 
 fn std_inst_scons {
+	env - \
+		PATH'='$PATH \
+		HOME'='$HOME \
 	scons install DESTDIR'='$PKG || exit 102
 }
 
