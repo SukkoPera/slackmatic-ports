@@ -1,0 +1,11 @@
+lrdf: lrdf (A lightweight RDF library for accessing plugin metadata in the LADSPA plugin system)
+lrdf:
+lrdf: This is a slackmatic port build of lrdf:
+lrdf: A lightweight RDF library for accessing plugin metadata in the LADSPA plugin system 
+lrdf:
+lrdf: For more information about the package, see the project website at:
+lrdf: https://github.com/swh/LRDF
+lrdf:
+lrdf:
+lrdf: This slackmatic port was developed by:
+lrdf: slackware@sukkology.net
