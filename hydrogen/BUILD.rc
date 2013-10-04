@@ -1,0 +1,33 @@
+. ../sukkolib.rc
+
+BRIEF='An advanced drum machine'
+PROJECT=http://www.hydrogen-music.org
+#RELEASE=0.9.6-beta3
+RELEASE=0.9.5
+#RELEASE=20131004
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+#BUILDDIR=$NAME-master
+
+# Note that this might download with the wrong name, be ready to rename it
+SOURCE=(
+	MYFETCH:$NAME-$RELEASE.tar.gz
+)
+
+#CONFOPTS=(
+#	$DEFAULT_CONFOPTS_CMAKE
+#	-DWANT_LRDF'='ON
+#	-DWANT_PULSEAUDIO'='OFF
+#)
+
+DOCS=(
+	$DEFAULT_DOCS
+	DEVELOPERS
+	INSTALL.txt
+	README.txt
+)
+
+fn myfetch {
+	wget https://github.com/hydrogen-music/$NAME/archive/$RELEASE.tar.gz -O $NAME-$RELEASE.tar.gz
+	#wget https://github.com/hydrogen-music/hydrogen/archive/master.zip -O $NAME-$RELEASE.zip
+}
