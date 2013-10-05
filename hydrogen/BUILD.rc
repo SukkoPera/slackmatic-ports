@@ -2,23 +2,29 @@
 
 BRIEF='An advanced drum machine'
 PROJECT=http://www.hydrogen-music.org
-#RELEASE=0.9.6-beta3
 RELEASE=0.9.5
-#RELEASE=20131004
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
-#BUILDDIR=$NAME-master
 
-# Note that this might download with the wrong name, be ready to rename it
 SOURCE=(
 	MYFETCH:$NAME-$RELEASE.tar.gz
 )
 
-#CONFOPTS=(
-#	$DEFAULT_CONFOPTS_CMAKE
-#	-DWANT_LRDF'='ON
-#	-DWANT_PULSEAUDIO'='OFF
-#)
+PATCHES=(
+	hydrogen-0.9.5-use_lrdf_pkgconfig.patch
+	hydrogen-0.9.5-gcc47.patch
+	hydrogen-0.9.5-jack1995.patch
+)
+
+# The -I/usr/include/raptor2 gets lost in middle of build
+# despite -use_lrdf_pkgconfig.patch
+CFLAGS_LRDF=`{pkg-config --cflags lrdf}
+CONFOPTS=(
+	prefix'='/usr
+	DESTDIR'='$PKG
+	'optflags='$^CFLAGS_LRDF
+	libarchive'='1
+)
 
 DOCS=(
 	$DEFAULT_DOCS
@@ -29,5 +35,15 @@ DOCS=(
 
 fn myfetch {
 	wget https://github.com/hydrogen-music/$NAME/archive/$RELEASE.tar.gz -O $NAME-$RELEASE.tar.gz
-	#wget https://github.com/hydrogen-music/hydrogen/archive/master.zip -O $NAME-$RELEASE.zip
+}
+
+fn inst {
+	# Install manually, sigh...
+	mkdir $PKG/usr/bin
+	cp hydrogen $PKG/usr/bin
+	mkdir -p $PKG/usr/share/hydrogen
+	cp -a data $PKG/usr/share/hydrogen/
+	ln -s /usr/share/hydrogen/data/doc $DOC/html
+	
+	insticon hydrogen.desktop data/img/gray/h2-icon.svg
 }
