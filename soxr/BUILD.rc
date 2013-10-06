@@ -1,0 +1,23 @@
+. ../sukkolib.rc
+
+BRIEF='High quality, one-dimensional sample-rate conversion library'
+PROJECT=http://soxr.sourceforge.net
+RELEASE=0.1.1
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=$NAME-$RELEASE-Source
+
+SOURCE=(
+	$SF/$NAME/$NAME-$RELEASE-Source.tar.xz
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	COPYING.LGPL
+)
+
+# $DOC is not defined yet
+CONFOPTS=(
+	$DEFAULT_CONFOPTS_CMAKE
+	-D DOC_INSTALL_DIR'='$PKG/usr/doc/$NAME-$RELEASE
+)
