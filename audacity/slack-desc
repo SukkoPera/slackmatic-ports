@@ -1,10 +1,10 @@
-audacity: audacity (Audacity is a free audio editor)
+audacity: audacity (A free audio editor)
 audacity:
 audacity: This is a slackmatic port build of audacity:
-audacity: Audacity is a free audio editor 
+audacity: A free audio editor 
 audacity:
 audacity: For more information about the package, see the project website at:
-audacity: http://
+audacity: http://audacity.sourceforge.net
 audacity:
 audacity:
 audacity: This slackmatic port was developed by:
