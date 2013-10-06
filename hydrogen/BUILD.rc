@@ -2,28 +2,23 @@
 
 BRIEF='An advanced drum machine'
 PROJECT=http://www.hydrogen-music.org
-RELEASE=0.9.5
+RELEASE=0.9.6beta3
+TRELEASE=0.9.6-beta3
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
+BUILDDIR=$NAME-$TRELEASE
 
 SOURCE=(
-	MYFETCH:$NAME-$RELEASE.tar.gz
+	MYFETCH:$NAME-$TRELEASE.tar.gz
+)
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS_CMAKE
+	-DWANT_LRDF'='ON
 )
 
 PATCHES=(
-	hydrogen-0.9.5-use_lrdf_pkgconfig.patch
-	hydrogen-0.9.5-gcc47.patch
-	hydrogen-0.9.5-jack1995.patch
-)
-
-# The -I/usr/include/raptor2 gets lost in middle of build
-# despite -use_lrdf_pkgconfig.patch
-CFLAGS_LRDF=`{pkg-config --cflags lrdf}
-CONFOPTS=(
-	prefix'='/usr
-	DESTDIR'='$PKG
-	'optflags='$^CFLAGS_LRDF
-	libarchive'='1
+	hydrogen-0.9.6-use_lrdf_pkgconfig.patch
 )
 
 DOCS=(
@@ -34,16 +29,13 @@ DOCS=(
 )
 
 fn myfetch {
-	wget https://github.com/hydrogen-music/$NAME/archive/$RELEASE.tar.gz -O $NAME-$RELEASE.tar.gz
+	wget https://github.com/hydrogen-music/$NAME/archive/$TRELEASE.tar.gz -O $NAME-$TRELEASE.tar.gz
 }
 
 fn inst {
-	# Install manually, sigh...
-	mkdir $PKG/usr/bin
-	cp hydrogen $PKG/usr/bin
-	mkdir -p $PKG/usr/share/hydrogen
-	cp -a data $PKG/usr/share/hydrogen/
-	ln -s /usr/share/hydrogen/data/doc $DOC/html
+	std_inst
 	
-	insticon hydrogen.desktop data/img/gray/h2-icon.svg
+	# Install icon
+	mkdir -p $PKG/usr/share/pixmaps
+	cp data/img/gray/h2-icon.svg $PKG/usr/share/pixmaps
 }
