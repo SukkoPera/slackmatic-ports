@@ -1,0 +1,26 @@
+. ../sukkolib.rc
+
+BRIEF='Cross-platform GUI library'
+PROJECT=http://www.wxwidgets.org
+RELEASE=2.8.12
+BUILD=1suk
+PACKAGER=slackware@sukkology.net
+BUILDDIR=wxGTK-$RELEASE
+
+SOURCE=(
+	$SF/wxwindows/wxGTK-$RELEASE.tar.bz2
+)
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS
+	--enable-no_deps
+	--enable-compat24
+	--with-sdl 
+	--with-opengl
+	--enable-unicode
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	*.txt
+)
