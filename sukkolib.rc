@@ -127,6 +127,21 @@ fn docinst {
 	std_docinst
 }
 
+fn insticon {
+	desktopfile=$1
+	iconfile=$2
+	
+	if (!test -f $PKG/usr/share/applications) {
+		mkdir -p $PKG/usr/share/applications
+	}
+	cp $desktopfile $PKG/usr/share/applications || exit 110
+	
+	if (!test -f $PKG/usr/share/pixmaps) {
+		mkdir -p $PKG/usr/share/pixmaps
+	}
+	cp $iconfile $PKG/usr/share/pixmaps || exit 111
+}
+
 fn rcs_source {
 	cp -r $CWD/$RCSSOURCE $SRC/$NAME-$RELEASE
 }
