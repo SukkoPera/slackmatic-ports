@@ -7,6 +7,7 @@ BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 TNAME=ladspa_sdk
 BUILDDIR=$TNAME
+BUILDSYSTEM=makeonly
 
 SOURCE=(
 	'http://www.ladspa.org/download/'$TNAME'_'$RELEASE'.tgz'
