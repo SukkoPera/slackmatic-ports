@@ -2,11 +2,11 @@
 
 BRIEF='A D-Bus service that provides location information'
 PROJECT=http://www.freedesktop.org/wiki/Software/GeoClue/
-RELEASE=1.99.3
+RELEASE=0.12.99
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
 MAJORV=`{echo $RELEASE | sed 's:\.[0-9]$::'}
 SOURCE=(
-	http://www.freedesktop.org/software/geoclue/releases/$MAJORV/$NAME-$RELEASE.tar.xz
+	http://people.freedesktop.org/~hadess/$NAME-$RELEASE.tar.gz
 )
