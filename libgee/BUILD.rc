@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+BRIEF='An utility library providing GObject-based interfaces and classes'
+PROJECT=http://wiki.gnome.org/Libgee
+RELEASE=0.11.4
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+MAJORV=`{echo $RELEASE | sed 's:\.[0-9]$::'}
+SOURCE=(
+	http://download.gnome.org/sources/libgee/$MAJORV/$NAME-$RELEASE.tar.xz
+)
