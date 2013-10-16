@@ -1,0 +1,11 @@
+json-glib: json-glib (A library providing (de)serialization support for the JSON format)
+json-glib:
+json-glib: This is a slackmatic port build of json-glib:
+json-glib: A library providing (de)serialization support for the JSON format 
+json-glib:
+json-glib: For more information about the package, see the project website at:
+json-glib: http://wiki.gnome.org/JsonGlib
+json-glib:
+json-glib:
+json-glib: This slackmatic port was developed by:
+json-glib: slackware@sukkology.net
