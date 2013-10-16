@@ -1,0 +1,14 @@
+. ../sukkolib.rc
+
+BRIEF='A library providing (de)serialization support for the JSON format'
+PROJECT=http://wiki.gnome.org/JsonGlib
+RELEASE=0.14.2
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+TNAME=json-glib
+BUILDDIR=$TNAME-$RELEASE
+
+MAJORV=`{echo $RELEASE | sed 's:\.[0-9]$::'}
+SOURCE=(
+	http://download.gnome.org/sources/json-glib/$MAJORV/$TNAME-$RELEASE.tar.xz
+)
