@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+BRIEF='A modern programming for GNOME developers'
+PROJECT=http://wiki.gnome.org/Vala/
+RELEASE=0.22.0
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+MAJORV=`{echo $RELEASE | sed 's:\.[0-9]$::'}
+SOURCE=(
+	http://download.gnome.org/sources/vala/$MAJORV/$NAME-$RELEASE.tar.xz
+)
