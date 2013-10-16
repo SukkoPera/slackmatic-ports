@@ -1,0 +1,11 @@
+libraw: libraw (A library for reading RAW files obtained from digital cameras)
+libraw:
+libraw: This is a slackmatic port build of libraw:
+libraw: A library for reading RAW files obtained from digital cameras 
+libraw:
+libraw: For more information about the package, see the project website at:
+libraw: http://www.libraw.org
+libraw:
+libraw:
+libraw: This slackmatic port was developed by:
+libraw: slackware@sukkology.net

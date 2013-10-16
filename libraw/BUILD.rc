@@ -1,0 +1,20 @@
+. ../sukkolib.rc
+
+BRIEF='A library for reading RAW files obtained from digital cameras'
+PROJECT=http://www.libraw.org
+RELEASE=0.15.4
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+TNAME=LibRaw
+BUILDDIR=$TNAME-$RELEASE
+
+SOURCE=(
+	http://www.libraw.org/data/$TNAME-$RELEASE.tar.gz
+)
+
+fn docinst {
+	std_docinst
+	
+	mv $PKG/usr/share/doc/libraw/* $DOC
+	rm -rf $PKG/usr/share
+}
