@@ -1,0 +1,11 @@
+libgexiv2: libgexiv2 (A GObject-based wrapper around the Exiv2 library)
+libgexiv2:
+libgexiv2: This is a slackmatic port build of libgexiv2:
+libgexiv2: A GObject-based wrapper around the Exiv2 library 
+libgexiv2:
+libgexiv2: For more information about the package, see the project website at:
+libgexiv2: http://redmine.yorba.org/projects/gexiv2/wiki
+libgexiv2:
+libgexiv2:
+libgexiv2: This slackmatic port was developed by:
+libgexiv2: slackware@sukkology.net
