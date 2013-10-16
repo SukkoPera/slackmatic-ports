@@ -1,0 +1,11 @@
+geoclue: geoclue (A D-Bus service that provides location information)
+geoclue:
+geoclue: This is a slackmatic port build of geoclue:
+geoclue: A D-Bus service that provides location information 
+geoclue:
+geoclue: For more information about the package, see the project website at:
+geoclue: http://www.freedesktop.org/wiki/Software/GeoClue/
+geoclue:
+geoclue:
+geoclue: This slackmatic port was developed by:
+geoclue: slackware@sukkology.net
