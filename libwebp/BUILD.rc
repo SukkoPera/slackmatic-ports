@@ -1,0 +1,11 @@
+. ../sukkolib.rc
+
+BRIEF='An image format that does lossy compression of digital photos'
+PROJECT=http://code.google.com/p/webp/
+RELEASE=0.3.1
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	https://webp.googlecode.com/files/$NAME-$RELEASE.tar.gz
+)
