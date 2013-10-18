@@ -1,0 +1,12 @@
+drwxr-xr-x|0755|root/root|usr|
+drwxr-xr-x|0755|root/root|usr/bin|
+-rwxr-xr-x|0755|root/root|usr/bin/sqlitebrowser|
+drwxr-xr-x|0755|root/root|usr/doc|
+drwxr-xr-x|0755|root/root|usr/doc/sqlitebrowser-2.0.0b1|
+-rw-r--r--|0644|root/root|usr/doc/sqlitebrowser-2.0.0b1/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/sqlitebrowser-2.0.0b1/LICENSING|
+drwxr-xr-x|0755|root/root|usr/share|
+drwxr-xr-x|0755|root/root|usr/share/applications|
+-rw-r--r--|0644|root/root|usr/share/applications/sqlitebrowser.desktop|
+drwxr-xr-x|0755|root/root|usr/share/pixmaps|
+-rw-r--r--|0644|root/root|usr/share/pixmaps/sqlitebrowser.png|

@@ -1,0 +1,11 @@
+sqlitebrowser: sqlitebrowser (A light GUI editor for SQLite databases)
+sqlitebrowser:
+sqlitebrowser: This is a slackmatic port build of sqlitebrowser:
+sqlitebrowser: A light GUI editor for SQLite databases 
+sqlitebrowser:
+sqlitebrowser: For more information about the package, see the project website at:
+sqlitebrowser: http://sqlitebrowser.sourceforge.net/
+sqlitebrowser:
+sqlitebrowser:
+sqlitebrowser: This slackmatic port was developed by:
+sqlitebrowser: slackware@sukkology.net

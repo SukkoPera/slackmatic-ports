@@ -1,0 +1,41 @@
+. ../sukkolib.rc
+
+BRIEF='A light GUI editor for SQLite databases'
+PROJECT=http://sqlitebrowser.sourceforge.net/
+RELEASE=2.0.0b1
+TRELEASE=200_b1
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=trunk/$NAME
+BUILDSYSTEM=makeonly
+
+SOURCE=(
+	$SF/$NAME/$NAME/2.0%20beta1/$NAME'_'$TRELEASE'_'src.tar.gz
+)
+
+PATCHES=(
+	sqlitebrowser-2.0_beta1-qt-4.7.0.patch
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	sqlitebrowser/LICENSING
+)
+
+fn patches {
+	std_patches
+	sed -i '/^unix/ a LIBS += -ldl' sqlitebrowser/sqlitebrowser.pro || exit 80
+}
+
+fn compile {
+	qmake
+	std_compile
+}
+
+fn inst {
+	mkdir -p $PKG/usr/bin
+	cp sqlitebrowser/sqlitebrowser $PKG/usr/bin
+	
+	ln -s 128.png sqlitebrowser/images/sqlitebrowser.png
+	insticon $CWD/sqlitebrowser.desktop sqlitebrowser/images/sqlitebrowser.png
+}
