@@ -2,11 +2,15 @@
 
 BRIEF='A modern programming for GNOME developers'
 PROJECT=http://wiki.gnome.org/Vala/
-RELEASE=0.22.0
+RELEASE=0.20.1
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
 MAJORV=`{echo $RELEASE | sed 's:\.[0-9]$::'}
 SOURCE=(
 	http://download.gnome.org/sources/vala/$MAJORV/$NAME-$RELEASE.tar.xz
+)
+
+PATCHES=(
+	vala-dont-add-dirty-to-valac-version.patch
 )
