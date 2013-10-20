@@ -1,0 +1,21 @@
+. ../sukkolib.rc
+
+BRIEF='GNOME platform port of the WebKit rendering engine'
+PROJECT=http://webkitgtk.org
+RELEASE=2.2.1
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDSYSTEM=autotools
+MAKEJOBS=1
+
+SOURCE=(
+	http://webkitgtk.org/releases/$NAME-$RELEASE.tar.xz
+)
+
+CONFOPTS=(
+        --prefix'='/usr
+        --libdir'='$LIBDIR
+        --sysconfdir'='/etc
+        --localstatedir'='/var
+        --mandir'='/usr/man
+)
