@@ -1,10 +1,8 @@
 . ../sukkolib.rc
 
-# It seems 1.5.0 doesn't compile (on 12.2)
-
 BRIEF='An open-source audio processing library for changing the Tempo, Pitch and Playback Rates of audio streams or files'
 PROJECT=http://www.surina.net/soundtouch/
-RELEASE=1.4.0
+RELEASE=1.7.1
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDDIR=$NAME
@@ -18,6 +16,11 @@ CONFOPTS=(
 	--enable-shared
 	--disable-integer-samples
 )
+
+fn patches {
+	std_patches
+	./bootstrap
+}
 
 fn inst {
 	make install \
