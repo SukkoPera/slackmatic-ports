@@ -5,6 +5,12 @@ PROJECT=http://www.truecrypt.org
 RELEASE=7.1a
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
+BUILDDIR=$NAME-$RELEASE-source
+
+# Set this to 1 to build without a GUI. You will still need the wxWidgets
+# sources though. Please untar them in $WXGTK_SRCDIR manually.
+NOGUI=1
+WXGTK_SRCDIR=/usr/local/src/wxgtk
 
 # To download the software, the license must be accepted explicitly, so no
 # sources can be set :(
@@ -22,9 +28,15 @@ DOCS=(
 )
 
 fn build {
-	cd $SRC
-	mv $NAME-$RELEASE-source $NAME-$RELEASE
-	setup
+	# Check for availability of wxGTK sources if NOGUI is requested
+	if (!~ $NOGUI'X' 'X' && ! test -f $WXGTK_SRCDIR/wx-config.in) {
+		error 'NOGUI requested but wxGTK sources not found in '$WXGTK_SRCDIR
+		exit 9
+	}
+
+#	cd $SRC
+#	mv $NAME-$RELEASE-source $NAME-$RELEASE
+#	setup
 
 	std_build
 }
@@ -33,6 +45,18 @@ fn build {
 fn configure {
 	# See http://macles.blogspot.com/2008/07/installing-truecrypt-on-acer-aspire-one.html
 	cp $CWD/files/* .
+}
+
+fn compile {
+	if (!~ $NOGUI'X' 'X') {
+		# Compiling without a GUI, see
+		# http://www.raspberrypi.org/phpBB3/viewtopic.php?f=41&t=6225
+		trace 'Building without GUI'
+		make NOGUI'='1 WX_ROOT'='$WXGTK_SRCDIR wxbuild
+		make NOGUI'='1 WXSTATIC'='1 
+	} else {
+		std_compile
+	}
 }
 
 fn inst {
