@@ -1,8 +1,8 @@
 . ../sukkolib.rc
 
 BRIEF='TwoLAME is an optimised MPEG Audio Layer 2 (MP2) encoder based on tooLAME by Mike Cheng'
-PROJECT=http://
-RELEASE=0.3.12
+PROJECT=http://www.twolame.org
+RELEASE=0.3.13
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
