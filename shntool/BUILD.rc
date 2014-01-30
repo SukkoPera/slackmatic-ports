@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+NAME=shntool
+BRIEF='Multi-purpose WAVE data processing and reporting utility'
+PROJECT=http://etree.org/shnutils/shntool/
+RELEASE=3.0.10
+BUILD=1suk
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://etree.org/shnutils/shntool/dist/src/$NAME-$RELEASE.tar.gz
+)
