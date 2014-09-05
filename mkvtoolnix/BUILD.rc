@@ -1,0 +1,40 @@
+. ../sukkolib.rc
+
+BRIEF='A set of tools to create, alter and inspect Matroska files'
+PROJECT=https://www.bunkus.org/videotools/mkvtoolnix/
+RELEASE=7.1.0
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDSYSTEM=drake	# Unsupported, implement manually
+
+SOURCE=(
+	https://www.bunkus.org/videotools/mkvtoolnix/sources/$NAME-$RELEASE.tar.xz
+)
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS
+	--docdir'='/usr/doc/$NAME-$RELEASE
+	--enable-gui
+	--enable-wxwidgets
+#	--enable-qt
+)
+
+fn configure {
+	./autogen.sh
+
+	std_configure
+}
+
+fn compile {
+	if (~ $MAKEJOBS'X' 'X') {
+		MAKEJOBS=$DEFAULT_MAKEJOBS
+	}
+	trace 'Using '$MAKEJOBS' parallel job(s) for compiling, if possible'
+
+	./drake -j $MAKEJOBS || exit 101
+}
+
+fn inst {
+	./drake DESTDIR'='$PKG install || exit 102
+}
+
