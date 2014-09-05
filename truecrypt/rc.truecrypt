@@ -1,0 +1,15 @@
+#!/bin/sh
+
+case $1 in
+	'stop')
+		# Try to remove any dm-crypt mappings
+		if [ -x /usr/bin/truecrypt ]; then
+			echo "Unmounting truecrypt volumes"
+			! /usr/bin/truecrypt -l > /dev/null 2>&1 || /usr/bin/truecrypt -d
+		fi
+		;;
+	*)
+		echo "usage: $0 {stop}"
+		;;
+esac
+

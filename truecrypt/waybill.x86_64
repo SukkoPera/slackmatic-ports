@@ -1,0 +1,17 @@
+drwxr-xr-x|0755|root/root|etc|
+drwxr-xr-x|0755|root/root|etc/rc.d|
+-rw-r--r--|0644|root/root|etc/rc.d/rc.truecrypt|
+drwxr-xr-x|0755|root/root|usr|
+drwxr-xr-x|0755|root/root|usr/bin|
+-rwxr-xr-x|0755|root/root|usr/bin/truecrypt|
+drwxr-xr-x|0755|root/root|usr/doc|
+drwxr-xr-x|0755|root/root|usr/doc/truecrypt-7.2|
+-rw-r--r--|0644|root/root|usr/doc/truecrypt-7.2/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/truecrypt-7.2/License.html|
+-rw-r--r--|0644|root/root|usr/doc/truecrypt-7.2/License.txt|
+-rw-r--r--|0644|root/root|usr/doc/truecrypt-7.2/Readme.txt|
+drwxr-xr-x|0755|root/root|usr/share|
+drwxr-xr-x|0755|root/root|usr/share/applications|
+-rw-r--r--|0644|root/root|usr/share/applications/truecrypt.desktop|
+drwxr-xr-x|0755|root/root|usr/share/pixmaps|
+-rw-r--r--|0644|root/root|usr/share/pixmaps/truecrypt.xpm|

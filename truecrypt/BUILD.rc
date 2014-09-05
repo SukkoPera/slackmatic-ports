@@ -1,30 +1,31 @@
 . ../sukkolib.rc
 
+###############################################################################
+# WARNING: Using TrueCrypt is not secure (see help for more information)
+###############################################################################
+
 BRIEF='Free Open-Source Disk Encryption Software'
 PROJECT=http://www.truecrypt.org
-RELEASE=7.1a
+RELEASE=7.2
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDDIR=$NAME-$RELEASE-source
+TNAME=TrueCrypt
 
-# Set this to 1 to build without a GUI. You will still need the wxWidgets
+# Set this to anythin to build without a GUI. You will still need the wxWidgets
 # sources though. Please untar them in $WXGTK_SRCDIR manually.
-NOGUI=1
+#NOGUI=0
 WXGTK_SRCDIR=/usr/local/src/wxgtk
 
-# To download the software, the license must be accepted explicitly, so no
-# sources can be set :(
-# Please download manually from http://www.truecrypt.org/downloads2.php and
-# ln -sf as $NAME-$RELEASE.tar.gz
 SOURCE=(
-#	'http://xxx/TrueCrypt '$RELEASE' Source.tar.gz'
-	$NAME-$RELEASE.tar.gz
+	$SF/$NAME/Other/$TNAME-$RELEASE-source-unix.tar.gz
 )
 
 DOCS=(
 	$DEFAULT_DOCS
 	Readme.txt
-	'Release/Setup Files/TrueCrypt User Guide.pdf'
+	License.txt
+	License.html
 )
 
 fn build {
@@ -33,10 +34,6 @@ fn build {
 		error 'NOGUI requested but wxGTK sources not found in '$WXGTK_SRCDIR
 		exit 9
 	}
-
-#	cd $SRC
-#	mv $NAME-$RELEASE-source $NAME-$RELEASE
-#	setup
 
 	std_build
 }
@@ -63,6 +60,10 @@ fn inst {
 	mkdir $PKG/usr/bin
 	cp Main/truecrypt $PKG/usr/bin
 
-	#insinto "/$(get_libdir)/rcscripts/addons"
-	#newins "${FILESDIR}/${PN}-stop.sh" "${PN}-stop.sh"
+	ln -s Resources/Icons/TrueCrypt-48x48.xpm truecrypt.xpm
+	insticon $CWD/truecrypt.desktop truecrypt.xpm
+
+	mkdir -p $PKG/etc/rc.d
+	cp $CWD/rc.truecrypt $PKG/etc/rc.d
 }
+
