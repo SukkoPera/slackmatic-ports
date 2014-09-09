@@ -2,7 +2,7 @@
 
 BRIEF='A simple Qt application to control the JACK sound server daemon'
 PROJECT=http://qjackctl.sourceforge.net
-RELEASE=0.3.10
+RELEASE=0.3.11
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
