@@ -2,7 +2,7 @@
 
 BRIEF='A free audio editor'
 PROJECT=http://audacity.sourceforge.net
-RELEASE=2.0.4
+RELEASE=2.0.5
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDDIR=$NAME-src-$RELEASE
