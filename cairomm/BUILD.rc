@@ -2,7 +2,7 @@
 
 BRIEF='C++ version of the Cairo 2D graphics library'
 PROJECT=http://cairographics.org/
-RELEASE=1.10.0
+RELEASE=1.11.2
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
