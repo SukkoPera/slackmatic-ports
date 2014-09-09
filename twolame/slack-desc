@@ -4,7 +4,7 @@ twolame: This is a slackmatic port build of twolame:
 twolame: TwoLAME is an optimised MPEG Audio Layer 2 (MP2) encoder based on tooLAME by Mike Cheng 
 twolame:
 twolame: For more information about the package, see the project website at:
-twolame: http://
+twolame: http://www.twolame.org
 twolame:
 twolame:
 twolame: This slackmatic port was developed by:
