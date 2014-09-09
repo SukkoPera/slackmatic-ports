@@ -4,14 +4,16 @@ BUILDSYSTEM=waf
 
 BRIEF='A system for handling real-time, low latency audio (and MIDI)'
 PROJECT=http://jackaudio.org
-RELEASE=1.9.9.5
-BUILD=2suk_$SLCKVER
+RELEASE=1.9.10
+BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 TNAME=jack
 BUILDDIR=$TNAME-$RELEASE
 
 SOURCE=(
-	http://jackaudio.org/downloads/$TNAME-$RELEASE.tar.bz2
+	#http://jackaudio.org/downloads/$TNAME-$RELEASE.tar.bz2
+	# Why Dropbox?! :(
+	https://dl.dropboxusercontent.com/u/28869550/$TNAME-$RELEASE.tar.bz2
 )
 
 DOCS=(
