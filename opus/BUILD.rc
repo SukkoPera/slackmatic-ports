@@ -2,8 +2,8 @@
 
 BRIEF='A totally open, royalty-free, highly versatile audio codec'
 PROJECT=http://opus-codec.org
-RELEASE=1.0.3
-BUILD=2suk_$SLCKVER
+RELEASE=1.1
+BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
 SOURCE=(
