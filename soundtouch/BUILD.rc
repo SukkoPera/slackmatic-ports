@@ -2,7 +2,7 @@
 
 BRIEF='An open-source audio processing library for changing the Tempo, Pitch and Playback Rates of audio streams or files'
 PROJECT=http://www.surina.net/soundtouch/
-RELEASE=1.7.1
+RELEASE=1.8.0
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDDIR=$NAME
@@ -26,7 +26,4 @@ fn inst {
 	make install \
 		DESTDIR'='$PKG \
 		pkgdocdir'='/usr/doc/$NAME-$RELEASE
-
-	# Upstream changed pkgconfig filename
-	ln -s $NAME-1.4.pc $PKG/usr/lib/pkgconfig/$NAME-1.0.pc
 }
