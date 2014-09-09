@@ -1,0 +1,11 @@
+gtksourceview: gtksourceview (A text widget that improves GtkTextView by implementing syntax highlighting)
+gtksourceview:
+gtksourceview: This is a slackmatic port build of gtksourceview:
+gtksourceview: A text widget that improves GtkTextView by implementing syntax highlighting 
+gtksourceview:
+gtksourceview: For more information about the package, see the project website at:
+gtksourceview: https://developer.gnome.org/gtksourceview/
+gtksourceview:
+gtksourceview:
+gtksourceview: This slackmatic port was developed by:
+gtksourceview: slackware@sukkology.net

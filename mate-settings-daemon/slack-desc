@@ -1,0 +1,11 @@
+mate-settings-daemon: mate-settings-daemon (MATE Desktop Environment)
+mate-settings-daemon:
+mate-settings-daemon: This is a slackmatic port build of mate-settings-daemon:
+mate-settings-daemon: MATE Desktop Environment 
+mate-settings-daemon:
+mate-settings-daemon: For more information about the package, see the project website at:
+mate-settings-daemon: http://mate-desktop.org
+mate-settings-daemon:
+mate-settings-daemon:
+mate-settings-daemon: This slackmatic port was developed by:
+mate-settings-daemon: slackware@sukkology.net

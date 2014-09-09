@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+BRIEF='MATE Desktop Environment'
+PROJECT=http://mate-desktop.org
+RELEASE=1.9.0
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+MAJORV=`{echo $RELEASE | sed 's:\.[0-9]$::'}
+SOURCE=(
+	http://pub.mate-desktop.org/releases/$MAJORV/$NAME-$RELEASE.tar.xz
+)

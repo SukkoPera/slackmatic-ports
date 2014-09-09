@@ -1,0 +1,11 @@
+mate-notification-daemon: mate-notification-daemon (MATE Desktop Environment)
+mate-notification-daemon:
+mate-notification-daemon: This is a slackmatic port build of mate-notification-daemon:
+mate-notification-daemon: MATE Desktop Environment 
+mate-notification-daemon:
+mate-notification-daemon: For more information about the package, see the project website at:
+mate-notification-daemon: http://mate-desktop.org
+mate-notification-daemon:
+mate-notification-daemon:
+mate-notification-daemon: This slackmatic port was developed by:
+mate-notification-daemon: slackware@sukkology.net

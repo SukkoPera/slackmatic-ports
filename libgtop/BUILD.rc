@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+BRIEF='A library to get system specific data such as CPU and Memory Usage'
+PROJECT=https://developer.gnome.org/libgtop/
+RELEASE=2.30.0
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+MAJORV=`{echo $RELEASE | sed 's:\.[0-9]$::'}
+SOURCE=(
+	http://ftp.gnome.org/pub/gnome/sources/libgtop/$MAJORV/$NAME-$RELEASE.tar.xz
+)

@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+BRIEF='A modular system for processing documentation into useful formats, such as HTML, XML, and LaTeX'
+PROJECT=https://pypi.python.org/pypi/docutils
+RELEASE=0.12
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=docutils-$RELEASE
+
+SOURCE=(
+	https://pypi.python.org/packages/source/d/docutils/docutils-$RELEASE.tar.gz
+)

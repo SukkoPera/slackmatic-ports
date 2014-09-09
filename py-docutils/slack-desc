@@ -1,0 +1,11 @@
+py-docutils: py-docutils (A modular system for processing documentation into useful formats, such as HTML, XML, and LaTeX)
+py-docutils:
+py-docutils: This is a slackmatic port build of py-docutils:
+py-docutils: A modular system for processing documentation into useful formats, such as HTML, XML, and LaTeX 
+py-docutils:
+py-docutils: For more information about the package, see the project website at:
+py-docutils: https://pypi.python.org/pypi/docutils
+py-docutils:
+py-docutils:
+py-docutils: This slackmatic port was developed by:
+py-docutils: slackware@sukkology.net

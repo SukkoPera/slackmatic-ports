@@ -1,0 +1,11 @@
+libgtop: libgtop (A library to get system specific data such as CPU and Memory Usage)
+libgtop:
+libgtop: This is a slackmatic port build of libgtop:
+libgtop: A library to get system specific data such as CPU and Memory Usage 
+libgtop:
+libgtop: For more information about the package, see the project website at:
+libgtop: https://developer.gnome.org/libgtop/
+libgtop:
+libgtop:
+libgtop: This slackmatic port was developed by:
+libgtop: slackware@sukkology.net

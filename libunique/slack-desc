@@ -1,0 +1,11 @@
+libunique: libunique (A library for writing single instance applications)
+libunique:
+libunique: This is a slackmatic port build of libunique:
+libunique: A library for writing single instance applications 
+libunique:
+libunique: For more information about the package, see the project website at:
+libunique: https://wiki.gnome.org/Attic/LibUnique
+libunique:
+libunique:
+libunique: This slackmatic port was developed by:
+libunique: slackware@sukkology.net
