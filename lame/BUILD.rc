@@ -2,7 +2,7 @@
 
 BRIEF='A high quality MPEG Audio Layer III (MP3) encoder licensed under the LGPL'
 PROJECT=http://lame.sourceforge.net/
-RELEASE=3.99
+RELEASE=3.99.5
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
