@@ -1,0 +1,11 @@
+libpeas: libpeas (A gobject-based plugins engine)
+libpeas:
+libpeas: This is a slackmatic port build of libpeas:
+libpeas: A gobject-based plugins engine 
+libpeas:
+libpeas: For more information about the package, see the project website at:
+libpeas: https://developer.gnome.org/libpeas/
+libpeas:
+libpeas:
+libpeas: This slackmatic port was developed by:
+libpeas: slackware@sukkology.net

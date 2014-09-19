@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+BRIEF='A web feed reader/news aggregator'
+PROJECT=http://lzone.de/liferea/
+RELEASE=1.11.1
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	https://github.com/lwindolf/liferea/releases/download/v$RELEASE/$NAME-$RELEASE.tar.bz2
+)
+
