@@ -1,0 +1,14 @@
+. ../sukkolib.rc
+
+BRIEF='KeePassX saves many different information e.g. user names, passwords, urls, attachments and comments in one single database'
+PROJECT=http://www.keepassx.org
+RELEASE=2.0alpha6
+TRELEASE=2.0-alpha6
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=$NAME-$TRELEASE
+
+SOURCE=(
+	http://www.keepassx.org/dev/attachments/download/69/$NAME-$TRELEASE.tar.gz
+)
+
