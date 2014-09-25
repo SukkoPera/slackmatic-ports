@@ -2,12 +2,12 @@
 
 BRIEF='A Fast, Easy, and Free BitTorrent Client'
 PROJECT=http://www.transmissionbt.com
-RELEASE=2.22
+RELEASE=2.84
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
 SOURCE=(
-	http://mirrors.m0k.org/transmission/files/$NAME-$RELEASE.tar.bz2
+	http://mirrors.m0k.org/transmission/files/$NAME-$RELEASE.tar.xz
 )
 
 CONFOPTS=(
