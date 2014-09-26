@@ -2,7 +2,7 @@
 
 BRIEF='A modern programming for GNOME developers'
 PROJECT=http://wiki.gnome.org/Vala/
-RELEASE=0.20.1
+RELEASE=0.26.0
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
