@@ -1,0 +1,28 @@
+. ../sukkolib.rc
+
+BRIEF='A photo organizer for the GNOME desktop'
+PROJECT=http://www.yorba.org/projects/shotwell/
+RELEASE=0.20.0
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDSYSTEM=autotools
+
+MAJORV=`{echo $RELEASE | sed 's:\.[0-9]$::'}
+SOURCE=(
+#	http://yorba.org/download/shotwell/stable/$NAME-$RELEASE.tar.xz
+	https://download.gnome.org/sources/shotwell/$MAJORV/$NAME-$RELEASE.tar.xz
+)
+
+CONFOPTS=(
+	--prefix'='/usr
+	--libdir'='`{basename $LIBDIR}
+	--disable-schemas-compile
+	--disable-desktop-update
+	--disable-icon-update
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	MAINTAINERS
+	THANKS
+)
