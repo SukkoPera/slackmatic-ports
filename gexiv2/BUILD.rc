@@ -1,15 +1,15 @@
 . ../sukkolib.rc
 
 BRIEF='A GObject-based wrapper around the Exiv2 library'
-PROJECT=http://redmine.yorba.org/projects/gexiv2/wiki
-RELEASE=0.6.1
+PROJECT=https://wiki.gnome.org/action/show/Projects/gexiv2
+RELEASE=0.7.0
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDSYSTEM=autotools		# Force this, since there is no Makefile.in
 
 MAJORV=`{echo $RELEASE | sed 's:\.[0-9]$::'}
 SOURCE=(
-	http://yorba.org/download/gexiv2/$MAJORV/$NAME'_'$RELEASE.tar.xz
+	http://ftp.acc.umu.se/pub/gnome/sources/$NAME/$MAJORV/$NAME-$RELEASE.tar.xz
 )
 
 CONFOPTS=(
@@ -22,3 +22,7 @@ DOCS=(
 	MAINTAINERS
 	THANKS
 )
+
+fn inst {
+	make install DESTDIR'='$PKG LIB'='`{basename $LIBDIR} || exit 102
+}
