@@ -2,7 +2,7 @@
 
 BRIEF='A library for reading RAW files obtained from digital cameras'
 PROJECT=http://www.libraw.org
-RELEASE=0.15.4
+RELEASE=0.16.0
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 TNAME=LibRaw
@@ -11,6 +11,13 @@ BUILDDIR=$TNAME-$RELEASE
 SOURCE=(
 	http://www.libraw.org/data/$TNAME-$RELEASE.tar.gz
 )
+
+# $DOC is not defined yet
+CONFOPTS=(
+	$DEFAULT_CONFOPTS_CMAKE
+	-D LIB_SUFFIX'='64
+)
+
 
 fn docinst {
 	std_docinst
