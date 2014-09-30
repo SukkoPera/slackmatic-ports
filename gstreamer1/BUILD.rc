@@ -1,0 +1,23 @@
+. ../sukkolib.rc
+
+BRIEF='A library for constructing graphs of media-handling components'
+PROJECT=http://gstreamer.freedesktop.org/
+RELEASE=1.4.3
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+TNAME=gstreamer
+BUILDDIR=$TNAME-$RELEASE
+
+SOURCE=(
+	http://gstreamer.freedesktop.org/src/$TNAME/$TNAME-$RELEASE.tar.xz
+)
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS
+	--enable-gtk-doc
+	--enable-introspection
+	--disable-tests
+	--disable-fatal-warnings
+#	--with-package-name="\"Dropline Gnome GStreamer ${VERSION}"\" \
+#	--with-package-origin="\"http://www.droplinegnome.org"\"
+)

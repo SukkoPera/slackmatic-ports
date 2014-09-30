@@ -1,0 +1,11 @@
+gst-plugins-base1: gst-plugins-base1 (A library for constructing graphs of media-handling components)
+gst-plugins-base1:
+gst-plugins-base1: This is a slackmatic port build of gst-plugins-base1:
+gst-plugins-base1: A library for constructing graphs of media-handling components 
+gst-plugins-base1:
+gst-plugins-base1: For more information about the package, see the project website at:
+gst-plugins-base1: http://gstreamer.freedesktop.org/
+gst-plugins-base1:
+gst-plugins-base1:
+gst-plugins-base1: This slackmatic port was developed by:
+gst-plugins-base1: slackware@sukkology.net

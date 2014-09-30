@@ -1,0 +1,11 @@
+gst-plugins-ugly1: gst-plugins-ugly1 (A library for constructing graphs of media-handling components)
+gst-plugins-ugly1:
+gst-plugins-ugly1: This is a slackmatic port build of gst-plugins-ugly1:
+gst-plugins-ugly1: A library for constructing graphs of media-handling components 
+gst-plugins-ugly1:
+gst-plugins-ugly1: For more information about the package, see the project website at:
+gst-plugins-ugly1: http://gstreamer.freedesktop.org/
+gst-plugins-ugly1:
+gst-plugins-ugly1:
+gst-plugins-ugly1: This slackmatic port was developed by:
+gst-plugins-ugly1: slackware@sukkology.net

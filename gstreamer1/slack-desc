@@ -1,0 +1,11 @@
+gstreamer1: gstreamer1 (A library for constructing graphs of media-handling components)
+gstreamer1:
+gstreamer1: This is a slackmatic port build of gstreamer1:
+gstreamer1: A library for constructing graphs of media-handling components 
+gstreamer1:
+gstreamer1: For more information about the package, see the project website at:
+gstreamer1: http://gstreamer.freedesktop.org/
+gstreamer1:
+gstreamer1:
+gstreamer1: This slackmatic port was developed by:
+gstreamer1: slackware@sukkology.net

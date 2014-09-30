@@ -1,0 +1,11 @@
+gst-plugins-good1: gst-plugins-good1 (A library for constructing graphs of media-handling components)
+gst-plugins-good1:
+gst-plugins-good1: This is a slackmatic port build of gst-plugins-good1:
+gst-plugins-good1: A library for constructing graphs of media-handling components 
+gst-plugins-good1:
+gst-plugins-good1: For more information about the package, see the project website at:
+gst-plugins-good1: http://gstreamer.freedesktop.org/
+gst-plugins-good1:
+gst-plugins-good1:
+gst-plugins-good1: This slackmatic port was developed by:
+gst-plugins-good1: slackware@sukkology.net

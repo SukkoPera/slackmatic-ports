@@ -1,0 +1,11 @@
+gst-plugins-bad1: gst-plugins-bad1 (A library for constructing graphs of media-handling components)
+gst-plugins-bad1:
+gst-plugins-bad1: This is a slackmatic port build of gst-plugins-bad1:
+gst-plugins-bad1: A library for constructing graphs of media-handling components 
+gst-plugins-bad1:
+gst-plugins-bad1: For more information about the package, see the project website at:
+gst-plugins-bad1: http://gstreamer.freedesktop.org/
+gst-plugins-bad1:
+gst-plugins-bad1:
+gst-plugins-bad1: This slackmatic port was developed by:
+gst-plugins-bad1: slackware@sukkology.net
