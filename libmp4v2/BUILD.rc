@@ -6,6 +6,7 @@ RELEASE=2.0.0
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDDIR=mp4v2-$RELEASE
+BUILDSYSTEM=autotools
 
 SOURCE=(
 	http://mp4v2.googlecode.com/files/mp4v2-$RELEASE.tar.bz2
