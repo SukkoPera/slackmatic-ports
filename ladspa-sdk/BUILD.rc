@@ -24,8 +24,8 @@ fn configure {
 
 fn inst {
 	make install \
-		DESTDIR'='$PKG
-		INSTALL_PLUGINS_DIR'='/usr/lib/ladspa
+		DESTDIR'='$PKG \
+		INSTALL_PLUGINS_DIR'='$LIBDIR/ladspa
 
 	mkdir -p $PKG/etc/profile.d
 	cp $CWD/profile-ladspa.sh $PKG/etc/profile.d/ladspa.sh
