@@ -1,0 +1,11 @@
+hda-verb: hda-verb (Tool to send commands (verbs) to HD-Audio codecs)
+hda-verb:
+hda-verb: This is a slackmatic port build of hda-verb:
+hda-verb: Tool to send commands (verbs) to HD-Audio codecs 
+hda-verb:
+hda-verb: For more information about the package, see the project website at:
+hda-verb: https://aur.archlinux.org/packages/hda-verb/
+hda-verb:
+hda-verb:
+hda-verb: This slackmatic port was developed by:
+hda-verb: slackware@sukkology.net

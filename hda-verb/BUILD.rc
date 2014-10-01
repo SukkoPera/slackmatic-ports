@@ -1,0 +1,17 @@
+. ../sukkolib.rc
+
+BRIEF='Tool to send commands (verbs) to HD-Audio codecs'
+PROJECT=https://aur.archlinux.org/packages/hda-verb/
+RELEASE=0.4
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	ftp://ftp.suse.com/pub/people/tiwai/misc/$NAME-$RELEASE.tar.gz
+)
+
+fn inst {
+	mkdir -p $PKG/usr/bin
+
+	cp hda-verb $PKG/usr/bin || exit 102
+}

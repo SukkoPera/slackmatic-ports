@@ -1,0 +1,9 @@
+drwxr-xr-x|0755|root/root|usr|
+drwxr-xr-x|0755|root/root|usr/bin|
+-rwxr-xr-x|0755|root/root|usr/bin/hda-verb|
+drwxr-xr-x|0755|root/root|usr/doc|
+drwxr-xr-x|0755|root/root|usr/doc/hda-verb-0.4|
+-rw-r--r--|0644|root/root|usr/doc/hda-verb-0.4/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/hda-verb-0.4/COPYING|
+-rw-r--r--|0644|root/root|usr/doc/hda-verb-0.4/ChangeLog|
+-rw-r--r--|0644|root/root|usr/doc/hda-verb-0.4/README|
