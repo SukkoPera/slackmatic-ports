@@ -1,0 +1,11 @@
+. ../sukkolib.rc
+
+BRIEF='An implementation of XMP'
+PROJECT=http://libopenraw.freedesktop.org/wiki/Exempi/
+RELEASE=2.2.2
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://libopenraw.freedesktop.org/download/$NAME-$RELEASE.tar.bz2
+)
