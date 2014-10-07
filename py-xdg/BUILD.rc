@@ -1,0 +1,13 @@
+. ../sukkolib.rc
+
+BRIEF='A python library to access freedesktop.org standards'
+PROJECT=http://freedesktop.org/wiki/Software/pyxdg/
+RELEASE=0.25
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+TNAME=pyxdg
+BUILDDIR=$TNAME-$RELEASE
+
+SOURCE=(
+	http://people.freedesktop.org/~takluyver/$TNAME-$RELEASE.tar.gz
+)

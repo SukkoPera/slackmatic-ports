@@ -1,0 +1,11 @@
+py-xdg: py-xdg (A python library to access freedesktop.org standards)
+py-xdg:
+py-xdg: This is a slackmatic port build of py-xdg:
+py-xdg: A python library to access freedesktop.org standards 
+py-xdg:
+py-xdg: For more information about the package, see the project website at:
+py-xdg: http://freedesktop.org/wiki/Software/pyxdg/
+py-xdg:
+py-xdg:
+py-xdg: This slackmatic port was developed by:
+py-xdg: slackware@sukkology.net
