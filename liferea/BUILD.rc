@@ -2,7 +2,7 @@
 
 BRIEF='A web feed reader/news aggregator'
 PROJECT=http://lzone.de/liferea/
-RELEASE=1.11.1
+RELEASE=1.10.11
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
