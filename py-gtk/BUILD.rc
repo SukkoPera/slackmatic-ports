@@ -1,0 +1,14 @@
+. ../sukkolib.rc
+
+BRIEF='GTK+ for Python'
+PROJECT=http://pygtk.org/
+RELEASE=2.24.0
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+TNAME=pygtk
+BUILDDIR=$TNAME-$RELEASE
+
+MAJORV=`{echo $RELEASE | sed -r 's:\.[0-9]+$::'}
+SOURCE=(
+	http://ftp.gnome.org/pub/GNOME/sources/pygtk/$MAJORV/$TNAME-$RELEASE.tar.bz2
+)

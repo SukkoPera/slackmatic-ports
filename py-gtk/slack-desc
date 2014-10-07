@@ -1,0 +1,11 @@
+py-gtk: py-gtk (GTK+ for Python)
+py-gtk:
+py-gtk: This is a slackmatic port build of py-gtk:
+py-gtk: GTK+ for Python 
+py-gtk:
+py-gtk: For more information about the package, see the project website at:
+py-gtk: http://pygtk.org/
+py-gtk:
+py-gtk:
+py-gtk: This slackmatic port was developed by:
+py-gtk: slackware@sukkology.net
