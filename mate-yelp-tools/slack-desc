@@ -1,0 +1,11 @@
+mate-yelp-tools: mate-yelp-tools (Yelp's command-line utilities)
+mate-yelp-tools:
+mate-yelp-tools: This is a slackmatic port build of mate-yelp-tools:
+mate-yelp-tools: Yelp's command-line utilities 
+mate-yelp-tools:
+mate-yelp-tools: For more information about the package, see the project website at:
+mate-yelp-tools: https://wiki.gnome.org/Apps/Yelp/
+mate-yelp-tools:
+mate-yelp-tools:
+mate-yelp-tools: This slackmatic port was developed by:
+mate-yelp-tools: slackware@sukkology.net

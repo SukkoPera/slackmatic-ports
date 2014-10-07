@@ -1,0 +1,14 @@
+. ../sukkolib.rc
+
+BRIEF='Yelp''s command-line utilities'
+PROJECT=https://wiki.gnome.org/Apps/Yelp/
+RELEASE=3.14.0
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+TNAME=yelp-tools
+BUILDDIR=$TNAME-$RELEASE
+
+MAJORV=`{echo $RELEASE | sed 's:\.[0-9]$::'}
+SOURCE=(
+	http://ftp.gnome.org/pub/gnome/sources/$NAME/$MAJORV/$TNAME-$RELEASE.tar.xz
+)

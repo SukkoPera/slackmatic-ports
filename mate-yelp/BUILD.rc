@@ -1,0 +1,14 @@
+. ../sukkolib.rc
+
+BRIEF='The help viewer in Gnome/MATE'
+PROJECT=https://wiki.gnome.org/Apps/Yelp/
+RELEASE=3.9.91
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+TNAME=yelp
+BUILDDIR=$TNAME-$RELEASE
+
+MAJORV=`{echo $RELEASE | sed -r 's:\.[0-9]+$::'}
+SOURCE=(
+	http://ftp.gnome.org/pub/gnome/sources/$TNAME/$MAJORV/$TNAME-$RELEASE.tar.xz
+)
