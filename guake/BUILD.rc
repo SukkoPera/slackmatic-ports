@@ -1,0 +1,34 @@
+. ../sukkolib.rc
+
+BRIEF='Drop-down terminal for GNOME'
+PROJECT=https://github.com/Guake/guake
+RELEASE=0.5.0
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDSYSTEM=autotools
+
+SOURCE=(
+	https://github.com/Guake/guake/archive/$RELEASE.tar.gz
+)
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS
+	--disable-schemas-install
+)
+
+PATCHES=(
+	# Avoid crash at startup. See https://github.com/Guake/guake/issues/260
+	disable-fixed-font.patch
+)
+
+fn configure {
+	# Patch out something that doesn't look very useful
+	#sed -i -e 's:AS_AC_EXPAND:#AS_AC_EXPAND:' configure.ac || exit 101
+	sed -i '1i ACLOCAL_AMFLAGS = -I m4' Makefile.am || exit 101
+
+	# Convert GNOME to MATE
+	sed -i 's:gnome-autogen.sh:mate-autogen:' autogen.sh || exit 101
+
+	NOCONFIGURE=1 ./autogen.sh
+	std_configure
+}

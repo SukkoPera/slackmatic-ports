@@ -1,0 +1,11 @@
+--- data/guake.schemas	2014-09-04 23:31:12.000000000 +0200
++++ data/guake.schemas2	2014-10-07 19:50:11.839087803 +0200
+@@ -299,7 +299,7 @@
+             <applyto>/apps/guake/general/use_default_font</applyto>
+             <owner>guake</owner>
+             <type>bool</type>
+-            <default>true</default>
++            <default>false</default>
+             <locale name="C">
+                 <short>Use default font</short>
+                 <long>If true, Guake will use the GNOME monospace
