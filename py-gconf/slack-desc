@@ -1,0 +1,11 @@
+py-gconf: py-gconf (GConf bindings for Python)
+py-gconf:
+py-gconf: This is a slackmatic port build of py-gconf:
+py-gconf: GConf bindings for Python 
+py-gconf:
+py-gconf: For more information about the package, see the project website at:
+py-gconf: http://www.gnome.org/
+py-gconf:
+py-gconf:
+py-gconf: This slackmatic port was developed by:
+py-gconf: slackware@sukkology.net
