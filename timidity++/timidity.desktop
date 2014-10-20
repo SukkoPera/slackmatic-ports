@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=TiMidity++
+GenericName=Software Midi Synthesizer
+GenericName[it]=Sintetizzatore Midi Software
+Comment=TiMidity++ can play MIDI files by converting them into PCM waveform data
+Comment[it]=TiMidity++ puÃ² suonare file midi convertendoli in dati audio PCM.
+Exec=timidity -ig
+Terminal=false
+Type=Application
+Icon=/usr/share/pixmaps/timidity.xpm
+Categories=AudioVideo;
+Encoding=UTF-8

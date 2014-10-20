@@ -1,0 +1,52 @@
+. ../sukkolib.rc
+
+BRIEF='A software MIDI synthesizer'
+PROJECT=http://timidity.sourceforge.net
+RELEASE=2.13.2
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+TNAME=TiMidity++
+BUILDDIR=$TNAME-$RELEASE
+
+SOURCE=(
+	$SF/$NAME/files/$TNAME/$TNAME-$RELEASE/$TNAME-$RELEASE.tar.bz2
+)
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS
+	--enable-dynamic
+	--enable-ncurses
+	--enable-tcltk
+	--enable-xskin
+	--enable-gtk
+	--enable-server
+	--enable-alsaseq
+#	--enable-audio'='alsa,jack,ao,vorbis,flac,speex
+	--enable-audio'='alsa,jack,ao,vorbis,speex
+)
+
+PATCHES=(
+	timidity++-2.14.0-tcltk86.patch
+)
+
+fn inst {
+	std_inst
+
+	# Shortcut for GTK+ interface
+	ln -s timidity $PKG/usr/bin/gtkmidi
+
+	# Shortcut for Tcl/Tk interface
+	ln -s timidity $PKG/usr/bin/tkmidity
+
+	mkdir $PKG/etc/ || exit 103
+	cp $CWD/timidity.cfg $PKG/etc || exit 103
+
+	mkdir $PKG/etc/rc.d || exit 103
+	cp $CWD/rc.timidity $PKG/etc/rc.d || exit 103
+
+	mkdir -p $PKG/usr/share/timidity || exit 103
+	ln -s /etc/timidity.cfg $PKG/usr/share/timidity/timidity.cfg || exit 103
+
+	insticon $CWD/timidity.desktop interface/pixmaps/timidity.xpm
+}
+
