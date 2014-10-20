@@ -1,0 +1,10 @@
+drwxr-xr-x|0755|root/root|usr|
+drwxr-xr-x|0755|root/root|usr/doc|
+drwxr-xr-x|0755|root/root|usr/doc/fluid-soundfont-20141020|
+-rw-r--r--|0644|root/root|usr/doc/fluid-soundfont-20141020/BUILD.rc|
+-rwxr--r--|0744|root/root|usr/doc/fluid-soundfont-20141020/Changelog.txt|
+-rwxr-xr-x|0755|root/root|usr/doc/fluid-soundfont-20141020/Fluid R3- Readme.doc|
+drwxr-xr-x|0755|root/root|usr/share|
+drwxr-xr-x|0755|root/root|usr/share/sounds|
+drwxr-xr-x|0755|root/root|usr/share/sounds/sf2|
+-rwxr-xr-x|0755|root/root|usr/share/sounds/sf2/FluidR3_GM2-2.sf2|

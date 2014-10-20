@@ -2,19 +2,24 @@
 
 BRIEF='Fluid Soundfont'
 PROJECT=http://musescore.org
-RELEASE=3.1
+RELEASE=20141020
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
 SOURCE=(
-	http://prereleases.musescore.org/soundfont/$NAME'_'$RELEASE.tar.gz
+#	http://prereleases.musescore.org/soundfont/$NAME'_'$RELEASE.tar.gz
+	http://www.musescore.org/download/$NAME.tar.gz
 )
 
 fn build {
+	mkdir $SRC/$NAME-$RELEASE
+	mv $SRC/* $SRC/$NAME-$RELEASE
+
 	setup
 
 	mkdir -p $PKG/usr/share/sounds/sf2
-	cp *.sf2 $PKG/usr/share/sounds/sf2
+	cp 'FluidR3 GM2-2.SF2' $PKG/usr/share/sounds/sf2/FluidR3_GM2-2.sf2
 
 	std_docinst
+	cp *.txt *.doc $DOC
 }
