@@ -1,0 +1,11 @@
+libisoburn: libisoburn (A frontend for libburn and libisofs which enables creation and expansion of ISO-9660 filesystems on all CD/DVD/BD media)
+libisoburn:
+libisoburn: This is a slackmatic port build of libisoburn:
+libisoburn: A frontend for libburn and libisofs which enables creation and expansion of ISO-9660 filesystems on all CD/DVD/BD media 
+libisoburn:
+libisoburn: For more information about the package, see the project website at:
+libisoburn: http://libburnia-project.org/wiki/Libisoburn
+libisoburn:
+libisoburn:
+libisoburn: This slackmatic port was developed by:
+libisoburn: slackware@sukkology.net
