@@ -1,0 +1,11 @@
+gtksourceview3: gtksourceview3 (A text widget that improves GtkTextView by implementing syntax highlighting)
+gtksourceview3:
+gtksourceview3: This is a slackmatic port build of gtksourceview3:
+gtksourceview3: A text widget that improves GtkTextView by implementing syntax highlighting 
+gtksourceview3:
+gtksourceview3: For more information about the package, see the project website at:
+gtksourceview3: https://developer.gnome.org/gtksourceview/
+gtksourceview3:
+gtksourceview3:
+gtksourceview3: This slackmatic port was developed by:
+gtksourceview3: slackware@sukkology.net

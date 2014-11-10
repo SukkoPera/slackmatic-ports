@@ -1,0 +1,19 @@
+. ../sukkolib.rc
+
+BRIEF='A text widget that improves GtkTextView by implementing syntax highlighting'
+PROJECT=https://developer.gnome.org/gtksourceview/
+RELEASE=3.8.2
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+TNAME=gtksourceview
+BUILDDIR=$TNAME-$RELEASE
+
+MAJORV=`{echo $RELEASE | sed 's:\.[0-9]$::'}
+SOURCE=(
+	http://ftp.acc.umu.se/pub/gnome/sources/gtksourceview/$MAJORV/$TNAME-$RELEASE.tar.xz
+)
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS
+	--enable-glade-catalog
+)
