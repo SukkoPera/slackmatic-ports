@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+BRIEF='GNOME Integrated Development Environment'
+PROJECT=http://anjuta.org/
+RELEASE=3.10.2
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+MAJORV=`{echo $RELEASE | sed 's:\.[0-9]$::'}
+SOURCE=(
+	http://ftp.gnome.org/mirror/gnome.org/sources/$NAME/$MAJORV/$NAME-$RELEASE.tar.xz
+)
