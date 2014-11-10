@@ -1,0 +1,38 @@
+. ../sukkolib.rc
+
+BRIEF='Open-Source Electronics Prototyping Platform'
+PROJECT=http://arduino.cc
+RELEASE=1.5.8
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+OPT_NOSTRIP=1
+TNAME=arduino
+BUILDDIR=$TNAME-$RELEASE
+
+# Guess arch
+switch (`{arch}) {
+        case *64
+                SUFFIX=linux64
+        case *
+                SUFFIX=linux32
+}
+
+
+SOURCE=(
+	'http://arduino.cc/download.php?f=/'$TNAME-$RELEASE-$SUFFIX.tgz
+)
+
+fn build () {
+	setup
+
+	mkdir $PKG/opt
+	cp -a $SRC/$NAME-$RELEASE $PKG/opt/$TNAME-$RELEASE || exit 201
+
+	mkdir -p $PKG/usr/bin
+	ln -s /opt/$TNAME-$RELEASE/arduino $PKG/usr/bin/arduino-1.5
+
+	ln -s /opt/$TNAME-$RELEASE/reference $DOC
+
+	ln -s reference/img/logo.png arduino-1.5.png
+	insticon $CWD/arduino-1.5.desktop arduino-1.5.png
+}
