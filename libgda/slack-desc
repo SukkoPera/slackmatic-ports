@@ -1,0 +1,11 @@
+libgda: libgda (An architecture to provide universal access to many different kinds and types of data sources)
+libgda:
+libgda: This is a slackmatic port build of libgda:
+libgda: An architecture to provide universal access to many different kinds and types of data sources 
+libgda:
+libgda: For more information about the package, see the project website at:
+libgda: https://developer.gnome.org/libgda/
+libgda:
+libgda:
+libgda: This slackmatic port was developed by:
+libgda: slackware@sukkology.net
