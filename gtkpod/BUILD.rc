@@ -1,0 +1,13 @@
+. ../sukkolib.rc
+
+BRIEF='A graphical user interface for the Apple iPod'
+PROJECT=http://www.gtkpod.org
+RELEASE=2.1.4
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDSYSTEM=autotools
+
+SOURCE=(
+	$SF/$NAME/$NAME-$RELEASE.tar.gz
+)
+
