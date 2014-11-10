@@ -1,0 +1,11 @@
+libisofs: libisofs (A library to create an ISO-9660 filesystem with extensions like RockRidge or Joliet)
+libisofs:
+libisofs: This is a slackmatic port build of libisofs:
+libisofs: A library to create an ISO-9660 filesystem with extensions like RockRidge or Joliet 
+libisofs:
+libisofs: For more information about the package, see the project website at:
+libisofs: http://libburnia-project.org/wiki/Libburn
+libisofs:
+libisofs:
+libisofs: This slackmatic port was developed by:
+libisofs: slackware@sukkology.net
