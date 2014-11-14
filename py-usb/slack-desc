@@ -1,0 +1,11 @@
+py-usb: py-usb (PyUSB provides USB access on the Python language)
+py-usb:
+py-usb: This is a slackmatic port build of py-usb:
+py-usb: PyUSB provides USB access on the Python language 
+py-usb:
+py-usb: For more information about the package, see the project website at:
+py-usb: http://walac.github.io/pyusb/
+py-usb:
+py-usb:
+py-usb: This slackmatic port was developed by:
+py-usb: slackware@sukkology.net

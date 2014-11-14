@@ -1,0 +1,21 @@
+. ../sukkolib.rc
+
+BRIEF='PyUSB provides USB access on the Python language'
+PROJECT=http://walac.github.io/pyusb/
+RELEASE=1.0.0b2
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+TNAME=pyusb
+BUILDDIR=$TNAME-$RELEASE
+
+SOURCE=(
+	$SF/$TNAME/$TNAME-$RELEASE.tar.gz
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	ACKNOWLEDGEMENTS
+	LICENSE
+	README.rst
+	ReleaseNotes.rst
+)
