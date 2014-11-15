@@ -2,7 +2,7 @@
 
 BRIEF='MATE Desktop Environment'
 PROJECT=http://mate-desktop.org
-RELEASE=1.8.1
+RELEASE=1.9.0
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDDIR=atril-$RELEASE
@@ -11,3 +11,10 @@ MAJORV=`{echo $RELEASE | sed 's:\.[0-9]$::'}
 SOURCE=(
 	http://pub.mate-desktop.org/releases/$MAJORV/atril-$RELEASE.tar.xz
 )
+
+# Need webkitgtk 2.3.5, 2.7.x won't work
+LANG=C
+WEBKIT_CFLAGS=`{pkg-config --cflags webkitgtk-3.0}
+WEBKIT_CFLAGS=$^WEBKIT_CFLAGS
+WEBKIT_LIBS=`{pkg-config --libs webkitgtk-3.0}
+WEBKIT_LIBS=$^WEBKIT_LIBS
