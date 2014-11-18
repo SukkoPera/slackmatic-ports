@@ -37,6 +37,8 @@ drwxr-xr-x|0755|root/root|usr/lib64|
 lrwxrwxrwx|0777|root/root|usr/lib64/libyelp.so|->|libyelp.so.0.0.0|
 lrwxrwxrwx|0777|root/root|usr/lib64/libyelp.so.0|->|libyelp.so.0.0.0|
 -rwxr-xr-x|0755|root/root|usr/lib64/libyelp.so.0.0.0|
+drwxr-xr-x|0755|root/root|usr/libexec|
+-rwxr-xr-x|0755|root/root|usr/libexec/yelp-groff|
 drwxr-xr-x|0755|root/root|usr/share|
 drwxr-xr-x|0755|root/root|usr/share/applications|
 -rw-r--r--|0644|root/root|usr/share/applications/yelp.desktop|
