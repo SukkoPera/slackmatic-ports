@@ -1,0 +1,23 @@
+. ../sukkolib.rc
+
+BRIEF='A Free, Fast, and Small Automatic Formatter'
+PROJECT=http://astyle.sourceforge.net/
+RELEASE=2.05
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=$NAME
+
+SOURCE=(
+	$SF/$NAME/$NAME/astyle%202.05/$NAME'_'$RELEASE'_linux.tar.gz'
+)
+
+fn build {
+	setup
+
+	cd build/gcc
+	sed -ri '/^SYSCONF_PATH=/ s:=.+:=$(prefix)/doc/'$NAME-$RELEASE':' Makefile || exit 101 
+	std_compile
+
+	make install prefix'='$PKG/usr
+}
+

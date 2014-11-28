@@ -1,0 +1,13 @@
+drwxr-xr-x|0755|root/root|usr|
+drwxr-xr-x|0755|root/root|usr/bin|
+-rwxr-xr-x|0755|root/root|usr/bin/astyle|
+drwxr-xr-x|0755|root/root|usr/doc|
+drwxr-xr-x|0755|root/root|usr/doc/astyle-2.05|
+-rw-r--r--|0644|root/root|usr/doc/astyle-2.05/BUILD.rc|
+drwxr-xr-x|0755|root/root|usr/doc/astyle-2.05/html|
+-rw-r--r--|0644|root/root|usr/doc/astyle-2.05/html/astyle.html|
+-rw-r--r--|0644|root/root|usr/doc/astyle-2.05/html/install.html|
+-rw-r--r--|0644|root/root|usr/doc/astyle-2.05/html/license.html|
+-rw-r--r--|0644|root/root|usr/doc/astyle-2.05/html/news.html|
+-rw-r--r--|0644|root/root|usr/doc/astyle-2.05/html/notes.html|
+-rw-r--r--|0644|root/root|usr/doc/astyle-2.05/html/styles.css|
