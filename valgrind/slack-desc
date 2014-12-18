@@ -1,0 +1,11 @@
+valgrind: valgrind (An instrumentation framework for building dynamic analysis tools)
+valgrind:
+valgrind: This is a slackmatic port build of valgrind:
+valgrind: An instrumentation framework for building dynamic analysis tools 
+valgrind:
+valgrind: For more information about the package, see the project website at:
+valgrind: http://valgrind.org
+valgrind:
+valgrind:
+valgrind: This slackmatic port was developed by:
+valgrind: slackware@sukkology.net
