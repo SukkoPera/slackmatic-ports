@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+BRIEF='A VNC viewer widget for GTK'
+PROJECT=https://wiki.gnome.org/Projects/gtk-vnc
+RELEASE=0.5.3
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+# This was actually generated from git on 2014-12-28
+SOURCE=(
+	http://x/$NAME-$RELEASE.tar.xz
+)
