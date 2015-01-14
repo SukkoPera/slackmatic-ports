@@ -1,0 +1,11 @@
+cppcheck: cppcheck (Static source code analysis tool for C and C++ code)
+cppcheck:
+cppcheck: This is a slackmatic port build of cppcheck:
+cppcheck: Static source code analysis tool for C and C++ code 
+cppcheck:
+cppcheck: For more information about the package, see the project website at:
+cppcheck: http://cppcheck.sourceforge.net
+cppcheck:
+cppcheck:
+cppcheck: This slackmatic port was developed by:
+cppcheck: slackware@sukkology.net
