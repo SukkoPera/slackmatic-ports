@@ -1,0 +1,11 @@
+libmusicbrainz: libmusicbrainz (A library to add MusicBrainz lookup capabilities to applications)
+libmusicbrainz:
+libmusicbrainz: This is a slackmatic port build of libmusicbrainz:
+libmusicbrainz: A library to add MusicBrainz lookup capabilities to applications 
+libmusicbrainz:
+libmusicbrainz: For more information about the package, see the project website at:
+libmusicbrainz: http://musicbrainz.org/doc/libmusicbrainz
+libmusicbrainz:
+libmusicbrainz:
+libmusicbrainz: This slackmatic port was developed by:
+libmusicbrainz: slackware@sukkology.net
