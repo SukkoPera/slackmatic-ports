@@ -2,12 +2,12 @@
 
 BRIEF='MATE Desktop Environment'
 PROJECT=http://mate-desktop.org
-RELEASE=1.9.0
+RELEASE=1.9.2
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDDIR=atril-$RELEASE
 
-MAJORV=`{echo $RELEASE | sed 's:\.[0-9]$::'}
+MAJORV=`{echo $RELEASE | sed -r 's:\.[0-9]+$::'}
 SOURCE=(
 	http://pub.mate-desktop.org/releases/$MAJORV/atril-$RELEASE.tar.xz
 )
