@@ -3,9 +3,11 @@
 NAME=squid
 BRIEF='A fully-featured HTTP/1.0 proxy which is almost (but not quite - we''re getting there!) HTTP/1.1 compliant'
 PROJECT=http://www.squid-cache.org
-RELEASE=3.1.23-20130721-r10487
+RELEASE=3.1.23_20130721_r10487
+TRELEASE=3.1.23-20130721-r10487
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
+BUILDDIR=$NAME-$TRELEASE
 
 CONFOPTS=(
 	--prefix'='/usr
@@ -42,7 +44,7 @@ CONFOPTS=(
 
 
 SOURCE=(
-	http://www.squid-cache.org/Versions/v3/3.1/$NAME-$RELEASE.tar.bz2
+	http://www.squid-cache.org/Versions/v3/3.1/$NAME-$TRELEASE.tar.bz2
 )
 
 fn inst {
