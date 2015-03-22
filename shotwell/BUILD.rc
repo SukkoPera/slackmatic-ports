@@ -2,7 +2,7 @@
 
 BRIEF='A photo organizer for the GNOME desktop'
 PROJECT=http://www.yorba.org/projects/shotwell/
-RELEASE=0.20.0
+RELEASE=0.20.2
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDSYSTEM=autotools
