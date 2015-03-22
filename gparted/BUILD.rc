@@ -1,0 +1,18 @@
+. ../sukkolib.rc
+
+BRIEF='A partition editor to graphically manage disk partitions'
+PROJECT=http://
+RELEASE=0.21.0
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	$SF/$NAME/$NAME-$RELEASE.tar.bz2
+)
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS
+	--enable-online-resize
+	--disable-scrollkeeper
+	--enable-libparted-dmraid
+)

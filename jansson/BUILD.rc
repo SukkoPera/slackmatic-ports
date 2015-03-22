@@ -1,0 +1,26 @@
+. ../sukkolib.rc
+
+BRIEF='A C library for encoding, decoding and manipulating JSON data'
+PROJECT=http://www.digip.org/jansson/
+RELEASE=2.7
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://www.digip.org/jansson/releases/$NAME-$RELEASE.tar.bz2
+)
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS_CMAKE
+	-DJANSSON_INSTALL_LIB_DIR'='/usr/lib64
+	-DJANSSON_INSTALL_CMAKE_DIR'='/usr/lib64/cmake/$NAME
+	-DJANSSON_BUILD_SHARED_LIBS'='ON
+	-DJANSSON_BUILD_DOCS'='OFF
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	LICENSE
+	CHANGES
+	README.rst
+)

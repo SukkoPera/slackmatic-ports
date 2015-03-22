@@ -18,4 +18,12 @@ SOURCE=(
 PATCHES=(
 	geeqie-1.0-fix_fullscreen.patch
 	geeqie-1.1-fix_comment_update.patch
+	geeqie-1.0-automake-1.11.patch
 )
+
+fn configure {
+	# Install plugins somewhere other than /lib, in particular on 64-bit systems
+	sed -i s:/lib/:/libexec/:g configure.in || exit 106
+	autoreconf -sfi
+	std_configure
+}

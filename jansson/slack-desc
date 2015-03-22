@@ -1,0 +1,11 @@
+jansson: jansson (A C library for encoding, decoding and manipulating JSON data)
+jansson:
+jansson: This is a slackmatic port build of jansson:
+jansson: A C library for encoding, decoding and manipulating JSON data 
+jansson:
+jansson: For more information about the package, see the project website at:
+jansson: http://www.digip.org/jansson/
+jansson:
+jansson:
+jansson: This slackmatic port was developed by:
+jansson: slackware@sukkology.net

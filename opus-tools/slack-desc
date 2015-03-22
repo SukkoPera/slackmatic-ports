@@ -1,0 +1,11 @@
+opus-tools: opus-tools (Command-line utilities to encode, inspect and decode Opus files)
+opus-tools:
+opus-tools: This is a slackmatic port build of opus-tools:
+opus-tools: Command-line utilities to encode, inspect and decode Opus files 
+opus-tools:
+opus-tools: For more information about the package, see the project website at:
+opus-tools: http://www.opus-codec.org
+opus-tools:
+opus-tools:
+opus-tools: This slackmatic port was developed by:
+opus-tools: slackware@sukkology.net

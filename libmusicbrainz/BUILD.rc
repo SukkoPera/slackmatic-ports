@@ -1,0 +1,28 @@
+. ../sukkolib.rc
+
+BRIEF='A library to add MusicBrainz lookup capabilities to applications'
+PROJECT=http://musicbrainz.org/doc/libmusicbrainz
+RELEASE=5.1.0
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	https://github.com/metabrainz/libmusicbrainz/releases/download/release-$RELEASE/$NAME-$RELEASE.tar.gz
+)
+
+switch (`{arch}) {
+        case *64
+		CONFOPTS=(
+			$DEFAULT_CONFOPTS_CMAKE
+			-DLIB_SUFFIX'='64
+		)
+}
+
+
+DOCS=(
+	$DEFAULT_DOCS
+	COPYING.txt
+	INSTALL.txt
+	NEWS.txt
+	README.md
+)

@@ -1,0 +1,11 @@
+gtk-vnc: gtk-vnc (A VNC viewer widget for GTK)
+gtk-vnc:
+gtk-vnc: This is a slackmatic port build of gtk-vnc:
+gtk-vnc: A VNC viewer widget for GTK 
+gtk-vnc:
+gtk-vnc: For more information about the package, see the project website at:
+gtk-vnc: https://wiki.gnome.org/Projects/gtk-vnc
+gtk-vnc:
+gtk-vnc:
+gtk-vnc: This slackmatic port was developed by:
+gtk-vnc: slackware@sukkology.net

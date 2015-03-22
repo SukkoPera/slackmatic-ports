@@ -3,16 +3,11 @@
 NAME=squid
 BRIEF='A fully-featured HTTP/1.0 proxy which is almost (but not quite - we''re getting there!) HTTP/1.1 compliant'
 PROJECT=http://www.squid-cache.org
-RELEASE=3.1.0.12
+RELEASE=3.1.23_20130721_r10487
+TRELEASE=3.1.23-20130721-r10487
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
-
-PATCHES=(
-#	fixvarpaths.patch
-	squid-3-capability.patch
-	squid-3.1.0.9_beta-gentoo.patch
-	squid-3.1.0.9_beta-invconv.patch
-)
+BUILDDIR=$NAME-$TRELEASE
 
 CONFOPTS=(
 	--prefix'='/usr
@@ -49,14 +44,8 @@ CONFOPTS=(
 
 
 SOURCE=(
-	http://www.squid-cache.org/Versions/v3/3.1/$NAME-$RELEASE.tar.bz2
+	http://www.squid-cache.org/Versions/v3/3.1/$NAME-$TRELEASE.tar.bz2
 )
-
-fn configure {
-#	autoreconf -sfi
-	./bootstrap.sh || exit 1
-	std_configure
-}
 
 fn inst {
 	std_inst
@@ -76,6 +65,9 @@ fn inst {
 	mkdir -p $PKG/var/log/squid
 	chgrp -R nogroup $PKG/var/log/squid $PKG/var/cache/squid
 	chmod -R g+w $PKG/var/log/squid $PKG/var/cache/squid
+
+	# Fix config
+	sed -i s:/var/cache:/var/cache/squid:g $PKG/etc/squid/*
 
 	# Startup script
 	mkdir -p $PKG/etc/rc.d
