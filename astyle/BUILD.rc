@@ -2,7 +2,7 @@
 
 BRIEF='A Free, Fast, and Small Automatic Formatter'
 PROJECT=http://astyle.sourceforge.net/
-RELEASE=2.05
+RELEASE=2.05.1
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDDIR=$NAME
