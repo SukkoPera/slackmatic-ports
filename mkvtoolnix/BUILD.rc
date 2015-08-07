@@ -2,7 +2,7 @@
 
 BRIEF='A set of tools to create, alter and inspect Matroska files'
 PROJECT=https://www.bunkus.org/videotools/mkvtoolnix/
-RELEASE=7.2.0
+RELEASE=8.2.0
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDSYSTEM=drake	# Unsupported, implement manually
@@ -16,7 +16,7 @@ CONFOPTS=(
 	--docdir'='/usr/doc/$NAME-$RELEASE
 	--enable-gui
 	--enable-wxwidgets
-#	--enable-qt
+	--disable-qt
 )
 
 fn configure {
