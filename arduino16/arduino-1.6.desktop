@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Arduino 1.6
+Comment=Arduino 1.6
+Exec=arduino-1.6
+Icon=arduino-1.6
+Categories=Development;IDE;
+Version=1.6
+Type=Application
+Terminal=false
+StartupNotify=true
