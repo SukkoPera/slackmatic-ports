@@ -1,0 +1,11 @@
+zenity: zenity (A tool to display GTK dialog boxes in shell scripts)
+zenity:
+zenity: This is a slackmatic port build of zenity:
+zenity: A tool to display GTK dialog boxes in shell scripts 
+zenity:
+zenity: For more information about the package, see the project website at:
+zenity: https://wiki.gnome.org/Projects/Zenity
+zenity:
+zenity:
+zenity: This slackmatic port was developed by:
+zenity: slackware@sukkology.net

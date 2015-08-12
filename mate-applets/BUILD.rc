@@ -2,7 +2,7 @@
 
 BRIEF='MATE Desktop Environment'
 PROJECT=http://mate-desktop.org
-RELEASE=1.9.1
+RELEASE=1.10.3
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
@@ -10,3 +10,14 @@ MAJORV=`{echo $RELEASE | sed -r 's:\.[0-9]+$::'}
 SOURCE=(
 	http://pub.mate-desktop.org/releases/$MAJORV/$NAME-$RELEASE.tar.xz
 )
+
+# indicator-stickynotes requires Python 3
+CONFOPTS=(
+	$DEFAULT_CONFOPTS
+	--disable-stickynotes
+)
+
+fn patches {
+	# We want to use gucharmap from GTK+3 while compiling for GTK+2
+	sed -i 's:GUCHARMAP_API_VERSION=2$:GUCHARMAP_API_VERSION=2.90:' configure || exit $status
+}
