@@ -1,0 +1,11 @@
+. ../sukkolib.rc
+
+BRIEF='A command-line programmer for Atmel USB microcontrollers'
+PROJECT=https://dfu-programmer.github.io/
+RELEASE=0.7.0
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	$SF/$NAME/$NAME-$RELEASE.tar.gz
+)

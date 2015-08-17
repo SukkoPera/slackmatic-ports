@@ -1,0 +1,11 @@
+dfu-programmer: dfu-programmer (A command-line programmer for Atmel USB microcontrollers)
+dfu-programmer:
+dfu-programmer: This is a slackmatic port build of dfu-programmer:
+dfu-programmer: A command-line programmer for Atmel USB microcontrollers 
+dfu-programmer:
+dfu-programmer: For more information about the package, see the project website at:
+dfu-programmer: https://dfu-programmer.github.io/
+dfu-programmer:
+dfu-programmer:
+dfu-programmer: This slackmatic port was developed by:
+dfu-programmer: slackware@sukkology.net
