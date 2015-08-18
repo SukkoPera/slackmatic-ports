@@ -1,0 +1,11 @@
+jstest-gtk: jstest-gtk (A Gtk+ based joystick test application)
+jstest-gtk:
+jstest-gtk: This is a slackmatic port build of jstest-gtk:
+jstest-gtk: A Gtk+ based joystick test application 
+jstest-gtk:
+jstest-gtk: For more information about the package, see the project website at:
+jstest-gtk: https://github.com/Grumbel/jstest-gtk/
+jstest-gtk:
+jstest-gtk:
+jstest-gtk: This slackmatic port was developed by:
+jstest-gtk: slackware@sukkology.net

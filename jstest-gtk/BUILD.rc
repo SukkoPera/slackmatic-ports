@@ -1,0 +1,29 @@
+. ../sukkolib.rc
+
+BRIEF='A Gtk+ based joystick test application'
+PROJECT=https://github.com/Grumbel/jstest-gtk/
+RELEASE=20150818
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=jstest-gtk-master
+
+# Please download ZIP and rename manually from github
+SOURCE=(
+	http://x/$NAME-$RELEASE.zip
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	README.md
+)
+
+fn inst () {
+	mkdir -p $PKG/usr/bin
+	cp jstest-gtk $PKG/usr/bin
+
+	mkdir -p $PKG/usr/share/jstest-gtk
+	cp data/*.png $PKG/usr/share/jstest-gtk
+
+	mkdir -p $PKG/usr/man/man1
+	cp data/jstest-gtk.1 $PKG/usr/man/man1
+}
