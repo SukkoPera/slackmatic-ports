@@ -39,7 +39,6 @@ MAXPATCHLEVEL=5
 SOURCEFORGE_MIRRORS=(
 	http://garr.dl.sourceforge.net/sourceforge
 	http://heanet.dl.sourceforge.net/sourceforge
-	http://puzzle.dl.sourceforge.net/sourceforge
 	http://kent.dl.sourceforge.net/sourceforge
 )
 # This can be set (in ports) to:
