@@ -1,0 +1,11 @@
+keybinder: keybinder (A library for registering global key bindings, for gtk-based applications)
+keybinder:
+keybinder: This is a slackmatic port build of keybinder:
+keybinder: A library for registering global key bindings, for gtk-based applications 
+keybinder:
+keybinder: For more information about the package, see the project website at:
+keybinder: https://github.com/engla/keybinder
+keybinder:
+keybinder:
+keybinder: This slackmatic port was developed by:
+keybinder: slackware@sukkology.net

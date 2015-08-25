@@ -1,0 +1,24 @@
+. ../sukkolib.rc
+
+BRIEF='A library for registering global key bindings, for gtk-based applications'
+PROJECT=https://github.com/engla/keybinder
+RELEASE=0.3.0
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDSYSTEM=autotools
+
+SOURCE=(
+	https://github.com/engla/keybinder/archive/v$RELEASE.tar.gz
+)
+
+fn configure {
+	# Disable some things that don't seem to work
+	sed -i '/^docs/d' configure.ac || exit 11
+	sed -i 's/docs$//' Makefile.am || exit 11
+
+	# ./autogen.sh requires GNOME stuff, so avoid it
+	touch ChangeLog		# ...
+	autoreconf -sfi
+
+	std_configure
+}
