@@ -2,7 +2,7 @@
 
 BRIEF='GNOME Integrated Development Environment'
 PROJECT=http://anjuta.org/
-RELEASE=3.10.2
+RELEASE=3.13.1
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
@@ -10,3 +10,13 @@ MAJORV=`{echo $RELEASE | sed 's:\.[0-9]$::'}
 SOURCE=(
 	http://ftp.gnome.org/mirror/gnome.org/sources/$NAME/$MAJORV/$NAME-$RELEASE.tar.xz
 )
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS
+	--enable-glade-catalog
+	--disable-schemas-compile
+)
+
+# Run this (as root) if the linker complains about libpng:
+# ln -s /usr/lib64/libpng14.so.14 /usr/lib64/libpng14.so
+
