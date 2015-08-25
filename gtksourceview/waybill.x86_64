@@ -6,6 +6,7 @@ drwxr-xr-x|0755|root/root|usr/doc/gtksourceview-2.10.5|
 -rw-r--r--|0644|root/root|usr/doc/gtksourceview-2.10.5/COPYING|
 -rw-r--r--|0644|root/root|usr/doc/gtksourceview-2.10.5/ChangeLog|
 -rw-r--r--|0644|root/root|usr/doc/gtksourceview-2.10.5/INSTALL|
+-rw-r--r--|0644|root/root|usr/doc/gtksourceview-2.10.5/MAINTAINERS|
 -rw-r--r--|0644|root/root|usr/doc/gtksourceview-2.10.5/NEWS|
 -rw-r--r--|0644|root/root|usr/doc/gtksourceview-2.10.5/README|
 drwxr-xr-x|0755|root/root|usr/include|
