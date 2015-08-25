@@ -2,17 +2,26 @@
 
 BRIEF='GNOME platform port of the WebKit rendering engine'
 PROJECT=http://webkitgtk.org
-RELEASE=2.7.1
+RELEASE=2.3.5
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
-#BUILDSYSTEM=autotools
-#MAKEJOBS=1
+BUILDSYSTEM=autotools
+MAKEJOBS=1
 
 SOURCE=(
 	http://webkitgtk.org/releases/$NAME-$RELEASE.tar.xz
 )
 
+
+PATCHES=(
+	newer_glib.patch
+)
+
 CONFOPTS=(
-	-DCMAKE_INSTALL_PREFIX'='/usr
-	-DPORT'='GTK
+        --prefix'='/usr
+        --libdir'='$LIBDIR
+        --sysconfdir'='/etc
+        --localstatedir'='/var
+        --mandir'='/usr/man
+#	--with-gtk'='2.0
 )
