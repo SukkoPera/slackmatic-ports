@@ -1,0 +1,11 @@
+py-gtksourceview: py-gtksourceview (Python bindings for gtksourceview)
+py-gtksourceview:
+py-gtksourceview: This is a slackmatic port build of py-gtksourceview:
+py-gtksourceview: Python bindings for gtksourceview 
+py-gtksourceview:
+py-gtksourceview: For more information about the package, see the project website at:
+py-gtksourceview: https://developer.gnome.org/gtksourceview/
+py-gtksourceview:
+py-gtksourceview:
+py-gtksourceview: This slackmatic port was developed by:
+py-gtksourceview: slackware@sukkology.net

@@ -1,0 +1,14 @@
+. ../sukkolib.rc
+
+BRIEF='Python bindings for gtksourceview'
+PROJECT=https://sourceforge.net/projects/pygtksourceview/
+RELEASE=2.10.1
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+TNAME=pygtksourceview
+BUILDDIR=$TNAME-$RELEASE
+
+MAJORV=`{echo $RELEASE | sed 's:\.[0-9]$::'}
+SOURCE=(
+	http://ftp.gnome.org/pub/gnome/sources/pygtksourceview/$MAJORV/$TNAME-$RELEASE.tar.bz2
+)
