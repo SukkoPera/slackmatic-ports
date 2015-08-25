@@ -2,7 +2,7 @@
 
 BRIEF='A docking system and several utilities useful to GNOME development tools'
 PROJECT=https://developer.gnome.org/gdl/
-RELEASE=3.14.0
+RELEASE=3.16.0
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
