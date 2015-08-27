@@ -2,7 +2,7 @@
 
 BRIEF='An improved, cross-platform substitute for the classic Make'
 PROJECT=http://www.scons.org
-RELEASE=2.3.0
+RELEASE=2.3.6
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
