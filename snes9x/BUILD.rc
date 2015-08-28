@@ -1,0 +1,23 @@
+. ../sukkolib.rc
+
+BRIEF='A portable, freeware Super Nintendo Entertainment System (SNES) emulator'
+PROJECT=http://www.snes9x.com
+RELEASE=1.53
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=$NAME-$RELEASE-src
+BUILDSYSTEM=autotools
+
+SOURCE=(
+	http://www.s9x-w32.de/dl/$NAME-$RELEASE-src.tar.bz2
+)
+
+fn configure {
+	cd gtk
+	std_configure
+}
+
+fn docinst {
+	cd ../docs
+	cp * $DOC
+}
