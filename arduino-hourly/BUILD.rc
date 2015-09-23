@@ -1,0 +1,38 @@
+. ../sukkolib.rc
+
+BRIEF='Open-Source Electronics Prototyping Platform'
+PROJECT=http://arduino.cc
+RELEASE=`{date +%Y%m%d}
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+OPT_NOSTRIP=1
+TNAME=arduino
+BUILDDIR=$TNAME-nightly
+
+# Guess arch
+switch (`{arch}) {
+        case *64
+                SUFFIX=linux64
+        case *
+                SUFFIX=linux32
+}
+
+
+SOURCE=(
+	'http://arduino.cc/download.php?f=/'$TNAME-nightly-$SUFFIX.tar.xz
+)
+
+fn build () {
+	setup
+
+	mkdir $PKG/opt
+	cp -a $SRC/$NAME-$RELEASE $PKG/opt/$TNAME-$RELEASE || exit 201
+
+	mkdir -p $PKG/usr/bin
+	ln -s /opt/$TNAME-$RELEASE/arduino $PKG/usr/bin/arduino-hourly
+
+	ln -s /opt/$TNAME-$RELEASE/reference $DOC
+
+	ln -s lib/arduino.png arduino-hourly.png
+	insticon $CWD/arduino-hourly.desktop arduino-hourly.png
+}

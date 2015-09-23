@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Arduino (Hourly Build)
+Comment=Arduino Hourly Build
+Exec=arduino-hourly
+Icon=arduino-hourly
+Categories=Development;IDE;
+Version=1.6
+Type=Application
+Terminal=false
+StartupNotify=true
