@@ -12,6 +12,11 @@ SOURCE=(
 	http://www.s9x-w32.de/dl/$NAME-$RELEASE-src.tar.bz2
 )
 
+fn patches {
+	sed -i -e '75i#define OF(x) x' unzip/unzip.h unzip/zip.h || exit $status
+	sed -i -e '22i#define OF(x) x' unzip/ioapi.h || exit $status
+}
+
 fn configure {
 	cd gtk
 	std_configure
