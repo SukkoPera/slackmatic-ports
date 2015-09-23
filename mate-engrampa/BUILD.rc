@@ -11,3 +11,10 @@ MAJORV=`{echo $RELEASE | sed -r 's:\.[0-9]+$::'}
 SOURCE=(
 	http://pub.mate-desktop.org/releases/$MAJORV/engrampa-$RELEASE.tar.xz
 )
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS
+	--disable-schemas-compile
+#	--with-gtk'='3.0
+	--enable-magic
+)

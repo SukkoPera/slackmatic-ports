@@ -14,6 +14,8 @@ SOURCE=(
 # indicator-stickynotes requires Python 3
 CONFOPTS=(
 	$DEFAULT_CONFOPTS
+	--disable-schemas-compile
+#	--with-gtk'='3.0
 	--disable-stickynotes
 )
 

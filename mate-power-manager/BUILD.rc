@@ -2,7 +2,7 @@
 
 BRIEF='MATE Desktop Environment'
 PROJECT=http://mate-desktop.org
-RELEASE=1.10.1
+RELEASE=1.10.2
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
@@ -13,4 +13,10 @@ SOURCE=(
 
 PATCHES=(
 	idle-restore-kbd-brightness.patch
+)
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS
+	--disable-schemas-compile
+#	--with-gtk'='3.0
 )

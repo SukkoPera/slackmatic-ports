@@ -16,6 +16,7 @@ drwxr-xr-x|0755|root/root|usr/doc/mate-session-manager-1.10.2|
 -rw-r--r--|0644|root/root|usr/doc/mate-session-manager-1.10.2/COPYING|
 -rw-r--r--|0644|root/root|usr/doc/mate-session-manager-1.10.2/ChangeLog|
 -rw-r--r--|0644|root/root|usr/doc/mate-session-manager-1.10.2/INSTALL|
+-rw-r--r--|0644|root/root|usr/doc/mate-session-manager-1.10.2/MAINTAINERS|
 -rw-r--r--|0644|root/root|usr/doc/mate-session-manager-1.10.2/NEWS|
 -rw-r--r--|0644|root/root|usr/doc/mate-session-manager-1.10.2/README|
 drwxr-xr-x|0755|root/root|usr/man|
@@ -35,6 +36,10 @@ drwxr-xr-x|0755|root/root|usr/share/apps|
 drwxr-xr-x|0755|root/root|usr/share/apps/kdm|
 drwxr-xr-x|0755|root/root|usr/share/apps/kdm/sessions|
 lrwxrwxrwx|0777|root/root|usr/share/apps/kdm/sessions/mate.desktop|->|/usr/share/xsessions/mate.desktop|
+drwxr-xr-x|0755|root/root|usr/share/doc|
+drwxr-xr-x|0755|root/root|usr/share/doc/mate-session-manager|
+drwxr-xr-x|0755|root/root|usr/share/doc/mate-session-manager/dbus|
+-rw-r--r--|0644|root/root|usr/share/doc/mate-session-manager/dbus/mate-session.html|
 drwxr-xr-x|0755|root/root|usr/share/glib-2.0|
 drwxr-xr-x|0755|root/root|usr/share/glib-2.0/schemas|
 -rw-r--r--|0644|root/root|usr/share/glib-2.0/schemas/org.mate.session.gschema.xml|

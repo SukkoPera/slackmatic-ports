@@ -10,3 +10,8 @@ MAJORV=`{echo $RELEASE | sed 's:\.[0-9]$::'}
 SOURCE=(
 	http://pub.mate-desktop.org/releases/$MAJORV/$NAME-$RELEASE.tar.xz
 )
+
+#CONFOPTS=(
+#	$DEFAULT_CONFOPTS
+#	--with-gtk'='3.0
+#)

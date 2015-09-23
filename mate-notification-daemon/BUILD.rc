@@ -11,7 +11,13 @@ SOURCE=(
 	http://pub.mate-desktop.org/releases/$MAJORV/$NAME-$RELEASE.tar.xz
 )
 
-fn patches () {
-	# For some reason these makes compilation fail, so remove altogheter
-	sed -i '/g_assert_nonnull/d' src/daemon/daemon.c || exit $status
-}
+#fn patches () {
+#	# For some reason these makes compilation fail, so remove altogheter
+#	sed -i '/g_assert_nonnull/d' src/daemon/daemon.c || exit $status
+#}
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS
+	--disable-schemas-compile
+#	--with-gtk'='3.0
+)

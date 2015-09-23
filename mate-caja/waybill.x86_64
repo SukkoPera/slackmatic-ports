@@ -11,6 +11,7 @@ drwxr-xr-x|0755|root/root|usr/doc/mate-caja-1.10.3|
 -rw-r--r--|0644|root/root|usr/doc/mate-caja-1.10.3/COPYING|
 -rw-r--r--|0644|root/root|usr/doc/mate-caja-1.10.3/ChangeLog|
 -rw-r--r--|0644|root/root|usr/doc/mate-caja-1.10.3/INSTALL|
+-rw-r--r--|0644|root/root|usr/doc/mate-caja-1.10.3/MAINTAINERS|
 -rw-r--r--|0644|root/root|usr/doc/mate-caja-1.10.3/NEWS|
 -rw-r--r--|0644|root/root|usr/doc/mate-caja-1.10.3/README|
 -rw-r--r--|0644|root/root|usr/doc/mate-caja-1.10.3/TODO|

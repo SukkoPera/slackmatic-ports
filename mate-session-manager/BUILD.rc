@@ -13,6 +13,8 @@ SOURCE=(
 
 CONFOPTS=(
 	$DEFAULT_CONFOPTS
+	--disable-schemas-compile
+#	--with-gtk'='3.0
 	--enable-upower
 )
 
