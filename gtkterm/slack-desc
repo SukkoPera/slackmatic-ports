@@ -1,0 +1,11 @@
+gtkterm: gtkterm (A simple GTK+ terminal used to communicate with a serial port)
+gtkterm:
+gtkterm: This is a slackmatic port build of gtkterm:
+gtkterm: A simple GTK+ terminal used to communicate with a serial port 
+gtkterm:
+gtkterm: For more information about the package, see the project website at:
+gtkterm: https://fedorahosted.org/gtkterm/
+gtkterm:
+gtkterm:
+gtkterm: This slackmatic port was developed by:
+gtkterm: slackware@sukkology.net

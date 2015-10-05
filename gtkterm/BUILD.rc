@@ -1,0 +1,18 @@
+. ../sukkolib.rc
+
+BRIEF='A simple GTK+ terminal used to communicate with a serial port'
+PROJECT=https://fedorahosted.org/gtkterm/
+RELEASE=0.99.7_rc1
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+TRELEASE=`{echo $RELEASE | sed s/_/-/g}
+BUILDDIR=$NAME-$TRELEASE
+
+SOURCE=(
+	https://fedorahosted.org/released/$NAME/$NAME-$TRELEASE.tar.gz
+)
+
+fn inst () {
+	std_inst
+	insticon $CWD/gtkterm.desktop
+}
