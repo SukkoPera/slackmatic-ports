@@ -20,7 +20,3 @@ DOCS=(
 SOURCE=(
 	$SF/gnuplot-py/gnuplot-py-$RELEASE.tar.gz
 )
-
-fn build {
-	std_build_python
-}
