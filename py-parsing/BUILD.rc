@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+BRIEF='Python parsing module'
+PROJECT=https://pypi.python.org/pypi/pyparsing/
+RELEASE=2.0.6
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=pyparsing-$RELEASE
+
+SOURCE=(
+	https://pypi.python.org/packages/source/p/pyparsing/pyparsing-$RELEASE.tar.gz
+)
