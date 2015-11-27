@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+BRIEF='A Python web framework and asynchronous networking library'
+PROJECT=https://pypi.python.org/pypi/tornado
+RELEASE=4.3
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=tornado-$RELEASE
+
+SOURCE=(
+	https://pypi.python.org/packages/source/t/tornado/tornado-$RELEASE.tar.gz
+)
