@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+BRIEF='Extensions to the standard Python datetime module'
+PROJECT=https://pypi.python.org/pypi/python-dateutil/
+RELEASE=2.4.2
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=python-dateutil-$RELEASE
+
+SOURCE=(
+	https://pypi.python.org/packages/source/p/python-dateutil/python-dateutil-$RELEASE.tar.gz
+)
