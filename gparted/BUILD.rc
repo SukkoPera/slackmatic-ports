@@ -1,8 +1,8 @@
 . ../sukkolib.rc
 
 BRIEF='A partition editor to graphically manage disk partitions'
-PROJECT=http://
-RELEASE=0.21.0
+PROJECT=http://gparted.org
+RELEASE=0.24.0
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
