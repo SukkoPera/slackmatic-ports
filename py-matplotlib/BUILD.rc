@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+BRIEF='Python plotting package'
+PROJECT=http://matplotlib.org/
+RELEASE=1.5.0
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=matplotlib-$RELEASE
+
+SOURCE=(
+	https://pypi.python.org/packages/source/m/matplotlib/matplotlib-$RELEASE.tar.gz
+)

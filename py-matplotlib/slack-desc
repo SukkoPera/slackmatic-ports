@@ -1,0 +1,11 @@
+py-matplotlib: py-matplotlib (Python plotting package)
+py-matplotlib:
+py-matplotlib: This is a slackmatic port build of py-matplotlib:
+py-matplotlib: Python plotting package 
+py-matplotlib:
+py-matplotlib: For more information about the package, see the project website at:
+py-matplotlib: http://matplotlib.org/
+py-matplotlib:
+py-matplotlib:
+py-matplotlib: This slackmatic port was developed by:
+py-matplotlib: slackware@sukkology.net
