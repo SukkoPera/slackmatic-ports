@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+BRIEF='A Python module to handle audio metadata'
+PROJECT=https://mutagen.readthedocs.org/
+RELEASE=1.31
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=mutagen-$RELEASE
+
+SOURCE=(
+	https://bitbucket.org/lazka/mutagen/downloads/mutagen-$RELEASE.tar.gz
+)
