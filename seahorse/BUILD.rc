@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+BRIEF='A GNOME application for managing encryption keys and passwords in the GnomeKeyring'
+PROJECT=https://wiki.gnome.org/Apps/Seahorse
+RELEASE=3.18.0
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+MAJORV=`{echo $RELEASE | sed -r 's:\.[0-9]+$::'}
+SOURCE=(
+	https://download.gnome.org/sources/seahorse/$MAJORV/$NAME-$RELEASE.tar.xz
+)
