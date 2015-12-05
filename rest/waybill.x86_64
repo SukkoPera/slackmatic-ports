@@ -1,11 +1,11 @@
 drwxr-xr-x|0755|root/root|usr|
 drwxr-xr-x|0755|root/root|usr/doc|
-drwxr-xr-x|0755|root/root|usr/doc/rest-0.7.92|
--rw-r--r--|0644|root/root|usr/doc/rest-0.7.92/AUTHORS|
--rw-r--r--|0644|root/root|usr/doc/rest-0.7.92/BUILD.rc|
--rw-r--r--|0644|root/root|usr/doc/rest-0.7.92/COPYING|
--rw-r--r--|0644|root/root|usr/doc/rest-0.7.92/INSTALL|
--rw-r--r--|0644|root/root|usr/doc/rest-0.7.92/README|
+drwxr-xr-x|0755|root/root|usr/doc/rest-0.7.93|
+-rw-r--r--|0644|root/root|usr/doc/rest-0.7.93/AUTHORS|
+-rw-r--r--|0644|root/root|usr/doc/rest-0.7.93/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/rest-0.7.93/COPYING|
+-rw-r--r--|0644|root/root|usr/doc/rest-0.7.93/INSTALL|
+-rw-r--r--|0644|root/root|usr/doc/rest-0.7.93/README|
 drwxr-xr-x|0755|root/root|usr/include|
 drwxr-xr-x|0755|root/root|usr/include/rest-0.7|
 drwxr-xr-x|0755|root/root|usr/include/rest-0.7/rest|
