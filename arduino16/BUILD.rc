@@ -19,8 +19,12 @@ switch (`{arch}) {
 
 
 SOURCE=(
-	'http://arduino.cc/download.php?f=/'$TNAME-$RELEASE-$SUFFIX.tar.xz
+	MYFETCH:$TNAME-$RELEASE-$SUFFIX.tar.xz
 )
+
+fn myfetch () {
+	wget 'http://arduino.cc/download.php?f=/'$TNAME-$RELEASE-$SUFFIX.tar.xz -O $TNAME-$RELEASE-$SUFFIX.tar.xz
+}
 
 fn build () {
 	setup
