@@ -17,11 +17,7 @@ drwxr-xr-x|0755|root/root|usr/lib64|
 lrwxrwxrwx|0777|root/root|usr/lib64/libpng12.so|->|libpng12.so.0.55.0|
 lrwxrwxrwx|0777|root/root|usr/lib64/libpng12.so.0|->|libpng12.so.0.55.0|
 -rwxr-xr-x|0755|root/root|usr/lib64/libpng12.so.0.55.0|
-lrwxrwxrwx|0777|root/root|usr/lib64/libpng.a|->|libpng12.a|
-lrwxrwxrwx|0777|root/root|usr/lib64/libpng.la|->|libpng12.la|
-lrwxrwxrwx|0777|root/root|usr/lib64/libpng.so|->|libpng12.so|
 lrwxrwxrwx|0777|root/root|usr/lib64/libpng.so.3|->|libpng.so.3.55.0|
 -rwxr-xr-x|0755|root/root|usr/lib64/libpng.so.3.55.0|
 drwxr-xr-x|0755|root/root|usr/lib64/pkgconfig|
 -rw-r--r--|0644|root/root|usr/lib64/pkgconfig/libpng12.pc|
-lrwxrwxrwx|0777|root/root|usr/lib64/pkgconfig/libpng.pc|->|libpng12.pc|
