@@ -1,13 +1,13 @@
 drwxr-xr-x|0755|root/root|usr|
 drwxr-xr-x|0755|root/root|usr/doc|
-drwxr-xr-x|0755|root/root|usr/doc/mate-icon-theme-1.10.1|
--rw-r--r--|0644|root/root|usr/doc/mate-icon-theme-1.10.1/AUTHORS|
--rw-r--r--|0644|root/root|usr/doc/mate-icon-theme-1.10.1/BUILD.rc|
--rw-r--r--|0644|root/root|usr/doc/mate-icon-theme-1.10.1/COPYING|
--rw-r--r--|0644|root/root|usr/doc/mate-icon-theme-1.10.1/ChangeLog|
--rw-r--r--|0644|root/root|usr/doc/mate-icon-theme-1.10.1/NEWS|
--rw-r--r--|0644|root/root|usr/doc/mate-icon-theme-1.10.1/README|
--rw-r--r--|0644|root/root|usr/doc/mate-icon-theme-1.10.1/TODO|
+drwxr-xr-x|0755|root/root|usr/doc/mate-icon-theme-1.12.0|
+-rw-r--r--|0644|root/root|usr/doc/mate-icon-theme-1.12.0/AUTHORS|
+-rw-r--r--|0644|root/root|usr/doc/mate-icon-theme-1.12.0/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/mate-icon-theme-1.12.0/COPYING|
+-rw-r--r--|0644|root/root|usr/doc/mate-icon-theme-1.12.0/ChangeLog|
+-rw-r--r--|0644|root/root|usr/doc/mate-icon-theme-1.12.0/NEWS|
+-rw-r--r--|0644|root/root|usr/doc/mate-icon-theme-1.12.0/README|
+-rw-r--r--|0644|root/root|usr/doc/mate-icon-theme-1.12.0/TODO|
 drwxr-xr-x|0755|root/root|usr/share|
 drwxr-xr-x|0755|root/root|usr/share/icons|
 drwxr-xr-x|0755|root/root|usr/share/icons/mate|
@@ -7770,5 +7770,3 @@ drwxr-xr-x|0755|root/root|usr/share/locale/zh_HK|
 drwxr-xr-x|0755|root/root|usr/share/locale/zh_HK/LC_MESSAGES|
 drwxr-xr-x|0755|root/root|usr/share/locale/zh_TW|
 drwxr-xr-x|0755|root/root|usr/share/locale/zh_TW/LC_MESSAGES|
-drwxr-xr-x|0755|root/root|usr/share/pkgconfig|
--rw-r--r--|0644|root/root|usr/share/pkgconfig/mate-icon-theme.pc|
