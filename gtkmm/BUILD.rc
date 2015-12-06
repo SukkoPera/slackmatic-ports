@@ -17,6 +17,12 @@ DOCS=(
 	PORTING
 )
 
+PATCHES=(
+	gtkmm-2.24.4-papersize.patch
+	gtkmm-2.24.4-missing-includes.patch
+	gtkmm-2.24.4-newer-glibmm.patch
+)
+
 fn docinst {
 	std_docinst
 
