@@ -1,0 +1,11 @@
+py-tz: py-tz (World timezone definitions, modern and historical)
+py-tz:
+py-tz: This is a slackmatic port build of py-tz:
+py-tz: World timezone definitions, modern and historical 
+py-tz:
+py-tz: For more information about the package, see the project website at:
+py-tz: https://pypi.python.org/pypi/pytz
+py-tz:
+py-tz:
+py-tz: This slackmatic port was developed by:
+py-tz: slackware@sukkology.net

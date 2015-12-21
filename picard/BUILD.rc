@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+BRIEF='A cross-platform music tagger'
+PROJECT=https://picard.musicbrainz.org
+RELEASE=1.3.2
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=$NAME-release-$RELEASE
+
+SOURCE=(
+	http://ftp.musicbrainz.org/pub/musicbrainz/picard/$NAME-$RELEASE.tar.gz
+)

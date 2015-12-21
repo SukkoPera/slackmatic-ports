@@ -1,0 +1,11 @@
+py-mutagen: py-mutagen (A Python module to handle audio metadata)
+py-mutagen:
+py-mutagen: This is a slackmatic port build of py-mutagen:
+py-mutagen: A Python module to handle audio metadata 
+py-mutagen:
+py-mutagen: For more information about the package, see the project website at:
+py-mutagen: https://mutagen.readthedocs.org/
+py-mutagen:
+py-mutagen:
+py-mutagen: This slackmatic port was developed by:
+py-mutagen: slackware@sukkology.net

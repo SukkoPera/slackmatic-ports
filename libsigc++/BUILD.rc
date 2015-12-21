@@ -2,8 +2,8 @@
 
 NAME=libsigc++
 BRIEF='A typesafe callback system for standard C++'
-PROJECT=http://ardour.org/current_dependencies.html
-RELEASE=2.3.2
+PROJECT=http://libsigc.sourceforge.net
+RELEASE=2.4.1
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 

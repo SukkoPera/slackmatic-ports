@@ -1,0 +1,11 @@
+py-parsing: py-parsing (Python parsing module)
+py-parsing:
+py-parsing: This is a slackmatic port build of py-parsing:
+py-parsing: Python parsing module 
+py-parsing:
+py-parsing: For more information about the package, see the project website at:
+py-parsing: https://pypi.python.org/pypi/pyparsing/
+py-parsing:
+py-parsing:
+py-parsing: This slackmatic port was developed by:
+py-parsing: slackware@sukkology.net

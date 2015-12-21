@@ -1,0 +1,24 @@
+. ../sukkolib.rc
+
+BRIEF='A library for extracting fingerprints from any audio source'
+PROJECT=https://acoustid.org/chromaprint
+RELEASE=1.1
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	https://bitbucket.org/acoustid/chromaprint/downloads/$NAME-$RELEASE.tar.gz
+)
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS_CMAKE
+	-DLIB_SUFFIX'='64
+	-DCMAKE_BUILD_TYPE'='Release
+	-DBUILD_EXAMPLES'='ON
+
+	# Use FFmpeg
+	-DWITH_AVFFT'='ON
+
+	# If you prefer fftw3...
+#	-DWITH_FFTW3'='ON
+)

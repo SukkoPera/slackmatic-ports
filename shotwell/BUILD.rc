@@ -2,14 +2,13 @@
 
 BRIEF='A photo organizer for the GNOME desktop'
 PROJECT=http://www.yorba.org/projects/shotwell/
-RELEASE=0.20.2
+RELEASE=0.22.0
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDSYSTEM=autotools
 
 MAJORV=`{echo $RELEASE | sed 's:\.[0-9]$::'}
 SOURCE=(
-#	http://yorba.org/download/shotwell/stable/$NAME-$RELEASE.tar.xz
 	https://download.gnome.org/sources/shotwell/$MAJORV/$NAME-$RELEASE.tar.xz
 )
 

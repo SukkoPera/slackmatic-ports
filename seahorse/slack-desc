@@ -1,0 +1,11 @@
+seahorse: seahorse (A GNOME application for managing encryption keys and passwords in the GnomeKeyring)
+seahorse:
+seahorse: This is a slackmatic port build of seahorse:
+seahorse: A GNOME application for managing encryption keys and passwords in the GnomeKeyring 
+seahorse:
+seahorse: For more information about the package, see the project website at:
+seahorse: https://wiki.gnome.org/Apps/Seahorse
+seahorse:
+seahorse:
+seahorse: This slackmatic port was developed by:
+seahorse: slackware@sukkology.net

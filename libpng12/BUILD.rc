@@ -1,0 +1,27 @@
+. ../sukkolib.rc
+
+BRIEF='Official PNG reference library (1.2 branch)'
+PROJECT=http://www.libpng.org/pub/png/libpng.html
+RELEASE=1.2.55
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=libpng-$RELEASE
+#OPT_NOSTRIP=1
+BUILDSYSTEM=autotools
+
+SOURCE=(
+	ftp://ftp.simplesystems.org/pub/libpng/png/src/libpng12/libpng-$RELEASE.tar.xz
+)
+
+fn inst {
+	std_inst
+
+	# Don't conflict with Slackware's own newer libpng package
+	rm -rf $PKG/usr/include/*.h
+	rm -rf $PKG/usr/man
+	rm $PKG/usr/bin/libpng-config
+	rm $PKG/usr/lib64/pkgconfig/libpng.pc
+	rm $PKG/usr/lib64/libpng.a
+	rm $PKG/usr/lib64/libpng.la
+	rm $PKG/usr/lib64/libpng.so
+}

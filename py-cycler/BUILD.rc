@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+BRIEF='Composable style cycles'
+PROJECT=https://pypi.python.org/pypi/Cycler
+RELEASE=0.9.0
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=cycler-$RELEASE
+
+SOURCE=(
+	https://pypi.python.org/packages/source/C/Cycler/cycler-$RELEASE.tar.gz
+)
