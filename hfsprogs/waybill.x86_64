@@ -1,0 +1,14 @@
+drwxr-xr-x|0755|root/root|sbin|
+-rwxr-xr-x|0755|root/root|sbin/fsck.hfsplus|
+-rwxr-xr-x|0755|root/root|sbin/mkfs.hfsplus|
+drwxr-xr-x|0755|root/root|usr|
+drwxr-xr-x|0755|root/root|usr/doc|
+drwxr-xr-x|0755|root/root|usr/doc/hfsprogs-332.25|
+-rw-r--r--|0644|root/root|usr/doc/hfsprogs-332.25/BUILD.rc|
+drwxr-xr-x|0755|root/root|usr/man|
+drwxr-xr-x|0755|root/root|usr/man/man8|
+-rw-r--r--|0644|root/root|usr/man/man8/fsck.hfsplus.8.gz|
+-rw-r--r--|0644|root/root|usr/man/man8/mkfs.hfsplus.8.gz|
+drwxr-xr-x|0755|root/root|usr/share|
+drwxr-xr-x|0755|root/root|usr/share/hfsprogs|
+-rw-r--r--|0644|root/root|usr/share/hfsprogs/hfsbootdata|
