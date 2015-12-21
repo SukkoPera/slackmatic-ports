@@ -3,17 +3,17 @@
 BRIEF='Lightweight PDF document viewer'
 PROJECT=http://trac.emma-soft.com/epdfview/
 RELEASE=0.1.8
-BUILD=1suk_$SLCKVER
+BUILD=2suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
 SOURCE=(
 	http://trac.emma-soft.com/epdfview/chrome/site/releases/$NAME-$RELEASE.tar.gz
 )
 
-fn configure () {
-	# Patch glib error
-	sed -i 's:/gmacros::' src/gtk/StockIcons.h || exit 110
-
-	std_configure
-}
+PATCHES=(
+	# The patch does three things: fixes compiling with glib-2.32 or greater,
+	# corrects red appearing as blue with recent versions of poppler, and
+	# allows the application to compile when cups-1.7.5 is installed
+	epdfview-0.1.8-fixes-1.patch
+)
 
