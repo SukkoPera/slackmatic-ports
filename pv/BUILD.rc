@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+BRIEF='A tool for monitoring the progress of data through a pipeline'
+PROJECT=http://www.ivarch.com/programs/pv.shtml
+RELEASE=1.6.0
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDSYSTEM=autotools
+
+SOURCE=(
+	http://www.ivarch.com/programs/sources/$NAME-$RELEASE.tar.bz2
+)
