@@ -1,0 +1,11 @@
+gst-python0: gst-python0 (GStreamer python overrides for the gobject-introspection-based pygst bindings)
+gst-python0:
+gst-python0: This is a slackmatic port build of gst-python0:
+gst-python0: GStreamer python overrides for the gobject-introspection-based pygst bindings 
+gst-python0:
+gst-python0: For more information about the package, see the project website at:
+gst-python0: http://gstreamer.freedesktop.org/
+gst-python0:
+gst-python0:
+gst-python0: This slackmatic port was developed by:
+gst-python0: slackware@sukkology.net

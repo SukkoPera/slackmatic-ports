@@ -1,0 +1,19 @@
+. ../sukkolib.rc
+
+BRIEF='Music Player for GTK+'
+PROJECT=http://www.exaile.org
+RELEASE=3.4.5
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	https://github.com/exaile/exaile/releases/download/$RELEASE/$NAME-$RELEASE.tar.gz
+)
+
+fn compile {
+	PREFIX=/usr
+	LIBINSTALLDIR=/`{basename $LIBDIR}
+	
+	std_compile
+}
+

@@ -1,0 +1,11 @@
+. ../sukkolib.rc
+
+BRIEF='Shows you the "mood" of a music track'
+PROJECT=https://userbase.kde.org/Amarok/Manual/Various/Moodbar/en
+RELEASE=0.1.2
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://pkgs.fedoraproject.org/repo/pkgs/moodbar/moodbar-$RELEASE.tar.gz/28c8eb65e83b30f71b84be4fab949360/$NAME-$RELEASE.tar.gz
+)
