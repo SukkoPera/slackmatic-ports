@@ -1,0 +1,11 @@
+sbc: sbc (An audio codec to connect bluetooth high quality audio devices like headphones or loudspeakers)
+sbc:
+sbc: This is a slackmatic port build of sbc:
+sbc: An audio codec to connect bluetooth high quality audio devices like headphones or loudspeakers 
+sbc:
+sbc: For more information about the package, see the project website at:
+sbc: https://git.kernel.org/?p=bluetooth/sbc.git
+sbc:
+sbc:
+sbc: This slackmatic port was developed by:
+sbc: slackware@sukkology.net

@@ -1,0 +1,11 @@
+. ../sukkolib.rc
+
+BRIEF='An audio codec to connect bluetooth high quality audio devices like headphones or loudspeakers'
+PROJECT='https://git.kernel.org/?p=bluetooth/sbc.git'
+RELEASE=1.3
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://www.kernel.org/pub/linux/bluetooth/$NAME-$RELEASE.tar.gz
+)
