@@ -1,0 +1,18 @@
+. ../sukkolib.rc
+
+BRIEF='A JSON implementation in C'
+PROJECT=https://github.com/json-c/json-c/wiki
+RELEASE=0.12
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	https://s3.amazonaws.com/json-c_releases/releases/$NAME-$RELEASE.tar.gz
+)
+
+fn configure {
+	sed -i -e 's:-Werror::' Makefile.am.inc || exit $status
+	autoreconf -sfi
+
+	std_configure
+}
