@@ -1,0 +1,11 @@
+pulseaudio: pulseaudio (A sound system for POSIX OSes)
+pulseaudio:
+pulseaudio: This is a slackmatic port build of pulseaudio:
+pulseaudio: A sound system for POSIX OSes 
+pulseaudio:
+pulseaudio: For more information about the package, see the project website at:
+pulseaudio: http://www.freedesktop.org/wiki/Software/PulseAudio/
+pulseaudio:
+pulseaudio:
+pulseaudio: This slackmatic port was developed by:
+pulseaudio: slackware@sukkology.net
