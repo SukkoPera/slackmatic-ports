@@ -1,0 +1,11 @@
+alsa-plugins: alsa-plugins (Misc plug-ins for the Advanced Linux Sound Architecture (ALSA))
+alsa-plugins:
+alsa-plugins: This is a slackmatic port build of alsa-plugins:
+alsa-plugins: Misc plug-ins for the Advanced Linux Sound Architecture (ALSA) 
+alsa-plugins:
+alsa-plugins: For more information about the package, see the project website at:
+alsa-plugins: http://www.alsa-project.org
+alsa-plugins:
+alsa-plugins:
+alsa-plugins: This slackmatic port was developed by:
+alsa-plugins: slackware@sukkology.net
