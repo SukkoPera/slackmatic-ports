@@ -2,12 +2,13 @@
 
 BRIEF='CUE and TOC file parsers and utilities'
 PROJECT=http://developer.berlios.de/projects/cuetools/
-RELEASE=1.3.1
+RELEASE=1.4.1
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
+BUILDSYSTEM=autotools
 
 SOURCE=(
-	http://prdownload.berlios.de/cuetools/$NAME-$RELEASE.tar.gz
+	https://github.com/svend/cuetools/archive/$RELEASE.tar.gz
 )
 
 DOCS=(
@@ -17,11 +18,7 @@ DOCS=(
 	extras/index.txt
 )
 
-fn inst {
-	std_inst
-
-	# Add the cuetag.sh script
-	cp extras/cuetag.sh $PKG/usr/bin/cuetag
-	sed -i 's:--remove-vc-all:--remove-all-tags:g' $PKG/usr/bin/cuetag
-	sed -i 's:--import-vc-from:--import-tags-from:g' $PKG/usr/bin/cuetag
+fn configure {
+	autoreconf -sfi
+	std_configure
 }
