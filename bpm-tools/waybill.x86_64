@@ -1,0 +1,15 @@
+drwxr-xr-x|0755|root/root|usr|
+drwxr-xr-x|0755|root/root|usr/bin|
+-rwxr-xr-x|0755|root/root|usr/bin/bpm|
+-rwxr-xr-x|0755|root/root|usr/bin/bpm-graph|
+-rwxr-xr-x|0755|root/root|usr/bin/bpm-tag|
+drwxr-xr-x|0755|root/root|usr/doc|
+drwxr-xr-x|0755|root/root|usr/doc/bpm-tools-0.3|
+-rw-r--r--|0644|root/root|usr/doc/bpm-tools-0.3/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/bpm-tools-0.3/COPYING|
+-rw-r--r--|0644|root/root|usr/doc/bpm-tools-0.3/README|
+drwxr-xr-x|0755|root/root|usr/man|
+drwxr-xr-x|0755|root/root|usr/man/man1|
+-rwxr-xr-x|0755|root/root|usr/man/man1/bpm.1.gz|
+-rwxr-xr-x|0755|root/root|usr/man/man1/bpm-graph.1.gz|
+-rwxr-xr-x|0755|root/root|usr/man/man1/bpm-tag.1.gz|

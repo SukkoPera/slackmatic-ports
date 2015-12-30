@@ -1,0 +1,15 @@
+. ../sukkolib.rc
+
+BRIEF='Tempo analysis'
+PROJECT=http://www.pogo.org.uk/~mark/bpm-tools/
+RELEASE=0.3
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://www.pogo.org.uk/~mark/bpm-tools/releases/$NAME-$RELEASE.tar.gz
+)
+
+fn inst {
+	make install DESTDIR'='$PKG/usr MANDIR'='/man BINDIR'='/bin
+}
