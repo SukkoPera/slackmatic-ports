@@ -1,0 +1,12 @@
+drwxr-xr-x|0755|root/root|usr|
+drwxr-xr-x|0755|root/root|usr/doc|
+drwxr-xr-x|0755|root/root|usr/doc/libreplaygain-r475|
+-rw-r--r--|0644|root/root|usr/doc/libreplaygain-r475/BUILD.rc|
+drwxr-xr-x|0755|root/root|usr/include|
+drwxr-xr-x|0755|root/root|usr/include/replaygain|
+-rwxr-xr-x|0755|root/root|usr/include/replaygain/gain_analysis.h|
+drwxr-xr-x|0755|root/root|usr/lib64|
+-rw-r--r--|0644|root/root|usr/lib64/libreplaygain.a|
+lrwxrwxrwx|0777|root/root|usr/lib64/libreplaygain.so|->|libreplaygain.so.1|
+lrwxrwxrwx|0777|root/root|usr/lib64/libreplaygain.so.1|->|libreplaygain.so.1.0.0|
+-rwxr-xr-x|0755|root/root|usr/lib64/libreplaygain.so.1.0.0|

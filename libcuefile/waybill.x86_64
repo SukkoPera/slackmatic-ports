@@ -1,0 +1,17 @@
+drwxr-xr-x|0755|root/root|usr|
+drwxr-xr-x|0755|root/root|usr/doc|
+drwxr-xr-x|0755|root/root|usr/doc/libcuefile-r475|
+-rw-r--r--|0644|root/root|usr/doc/libcuefile-r475/AUTHORS|
+-rw-r--r--|0644|root/root|usr/doc/libcuefile-r475/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/libcuefile-r475/COPYING|
+-rw-r--r--|0644|root/root|usr/doc/libcuefile-r475/README|
+drwxr-xr-x|0755|root/root|usr/include|
+drwxr-xr-x|0755|root/root|usr/include/cuetools|
+-rwxr-xr-x|0755|root/root|usr/include/cuetools/cd.h|
+-rwxr-xr-x|0755|root/root|usr/include/cuetools/cdtext.h|
+-rwxr-xr-x|0755|root/root|usr/include/cuetools/cuefile.h|
+drwxr-xr-x|0755|root/root|usr/lib64|
+-rw-r--r--|0644|root/root|usr/lib64/libcuefile.a|
+lrwxrwxrwx|0777|root/root|usr/lib64/libcuefile.so|->|libcuefile.so.0|
+lrwxrwxrwx|0777|root/root|usr/lib64/libcuefile.so.0|->|libcuefile.so.0.0.0|
+-rwxr-xr-x|0755|root/root|usr/lib64/libcuefile.so.0.0.0|

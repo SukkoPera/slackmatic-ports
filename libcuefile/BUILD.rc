@@ -1,0 +1,34 @@
+. ../sukkolib.rc
+
+BRIEF='ReplayGain library'
+PROJECT=https://www.musepack.net
+RELEASE=r475
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=$NAME'_'$RELEASE
+
+SOURCE=(
+	http://files.musepack.net/source/$NAME'_'$RELEASE.tar.gz
+)
+
+
+# Guess library path suffix
+switch (`{arch}) {
+        case *64
+                suffix=64
+        case *
+                suffix=''
+}
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS_CMAKE
+	-D LIB_SUFFIX'='$suffix
+)
+
+fn inst {
+	std_inst
+
+	mkdir -p $PKG/usr/include
+	cp -a include/cuetools $PKG/usr/include || exit $status
+}
+
