@@ -9,7 +9,9 @@ TNAME=mac
 TRELEASE=3.99-u4-b5-s7
 BUILDDIR=$TNAME-$TRELEASE
 
-# Patched to allow I/O from/to stdin/stdout
+# Enable patches to allow I/O from/to stdin/stdout
+CXXFLAGS='-DSHNTOOL'
+
 SOURCE=(
 	http://www.etree.org/shnutils/shntool/support/formats/ape/unix/$TRELEASE/$TNAME-$TRELEASE.tar.gz
 )
