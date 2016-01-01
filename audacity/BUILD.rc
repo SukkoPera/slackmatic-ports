@@ -1,14 +1,14 @@
 . ../sukkolib.rc
 
 BRIEF='A free audio editor'
-PROJECT=http://audacity.sourceforge.net
-RELEASE=2.0.5
+PROJECT=http://audacityteam.org
+RELEASE=2.1.1
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
-BUILDDIR=$NAME-src-$RELEASE
+BUILDDIR=$NAME-minsrc-$RELEASE
 
 SOURCE=(
-	http://audacity.googlecode.com/files/$NAME-minsrc-$RELEASE.tar.xz
+	http://www.fosshub.com/Audacity.html/$NAME-minsrc-$RELEASE.tar.xz
 )
 
 # Autodetection of libraries seems working great, so let's rely on it!
