@@ -1,0 +1,16 @@
+drwxr-xr-x|0755|root/root|usr|
+drwxr-xr-x|0755|root/root|usr/bin|
+-rwxr-xr-x|0755|root/root|usr/bin/shorten|
+drwxr-xr-x|0755|root/root|usr/doc|
+drwxr-xr-x|0755|root/root|usr/doc/shorten-3.6.1|
+-rw-r--r--|0644|root/root|usr/doc/shorten-3.6.1/AUTHORS|
+-rw-r--r--|0644|root/root|usr/doc/shorten-3.6.1/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/shorten-3.6.1/COPYING|
+-rw-r--r--|0644|root/root|usr/doc/shorten-3.6.1/ChangeLog|
+-rw-r--r--|0644|root/root|usr/doc/shorten-3.6.1/INSTALL|
+-rw-r--r--|0644|root/root|usr/doc/shorten-3.6.1/NEWS|
+-rw-r--r--|0644|root/root|usr/doc/shorten-3.6.1/README|
+-rw-r--r--|0644|root/root|usr/doc/shorten-3.6.1/tr156.pdf|
+drwxr-xr-x|0755|root/root|usr/man|
+drwxr-xr-x|0755|root/root|usr/man/man1|
+-rw-r--r--|0644|root/root|usr/man/man1/shorten.1.gz|
