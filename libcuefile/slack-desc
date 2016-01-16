@@ -1,0 +1,11 @@
+libcuefile: libcuefile (ReplayGain library)
+libcuefile:
+libcuefile: This is a slackmatic port build of libcuefile:
+libcuefile: ReplayGain library 
+libcuefile:
+libcuefile: For more information about the package, see the project website at:
+libcuefile: https://www.musepack.net
+libcuefile:
+libcuefile:
+libcuefile: This slackmatic port was developed by:
+libcuefile: slackware@sukkology.net

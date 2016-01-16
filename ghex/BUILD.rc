@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+BRIEF='A simple binary editor'
+PROJECT=http://directory.fsf.org/wiki/Ghex
+RELEASE=3.18.0
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+MAJORV=`{echo $RELEASE | sed -r 's:\.[0-9]+$::'}
+SOURCE=(
+	http://ftp.gnome.org/pub/GNOME/sources/$NAME/$MAJORV/$NAME-$RELEASE.tar.xz
+)

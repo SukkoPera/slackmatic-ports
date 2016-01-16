@@ -1,0 +1,26 @@
+. ../sukkolib.rc
+
+BRIEF='An audio compression format with a strong emphasis on high quality, not lossless, but designed for transparency'
+PROJECT=https://www.musepack.net
+RELEASE=r475
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=$NAME'_src_'$RELEASE
+
+SOURCE=(
+	http://files.musepack.net/source/$NAME'_src_'$RELEASE.tar.gz
+)
+
+DOCS=(
+	$DEFAULTDOCS
+	libmpcdec/AUTHORS
+	libmpcdec/README
+	libmpcdec/COPYING
+	libmpcdec/ChangeLog
+)
+
+fn inst {
+	std_inst
+
+	rm -rf $PKG/usr/include/mpc/.svn
+}

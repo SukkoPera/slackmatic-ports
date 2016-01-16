@@ -1,0 +1,17 @@
+. ../sukkolib.rc
+
+BRIEF='Monkey''s Audio Codec'
+PROJECT=http://supermmx.org/linux/mac/
+RELEASE=3.99_u4_b5_s7
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+TNAME=mac
+TRELEASE=3.99-u4-b5-s7
+BUILDDIR=$TNAME-$TRELEASE
+
+# Enable patches to allow I/O from/to stdin/stdout
+CXXFLAGS='-DSHNTOOL'
+
+SOURCE=(
+	http://www.etree.org/shnutils/shntool/support/formats/ape/unix/$TRELEASE/$TNAME-$TRELEASE.tar.gz
+)
