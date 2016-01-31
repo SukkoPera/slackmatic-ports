@@ -1,0 +1,11 @@
+networkmanager-openvpn: networkmanager-openvpn (OpenVPN plugin for NetworkManager)
+networkmanager-openvpn:
+networkmanager-openvpn: This is a slackmatic port build of networkmanager-openvpn:
+networkmanager-openvpn: OpenVPN plugin for NetworkManager 
+networkmanager-openvpn:
+networkmanager-openvpn: For more information about the package, see the project website at:
+networkmanager-openvpn: https://wiki.gnome.org/Projects/NetworkManager
+networkmanager-openvpn:
+networkmanager-openvpn:
+networkmanager-openvpn: This slackmatic port was developed by:
+networkmanager-openvpn: slackware@sukkology.net

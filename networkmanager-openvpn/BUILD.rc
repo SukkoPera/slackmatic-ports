@@ -1,0 +1,14 @@
+. ../sukkolib.rc
+
+BRIEF='OpenVPN plugin for NetworkManager'
+PROJECT=https://wiki.gnome.org/Projects/NetworkManager
+RELEASE=1.0.8
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+TMPNAME=NetworkManager-openvpn
+BUILDDIR=$TMPNAME-$RELEASE
+
+MAJORV=`{echo $RELEASE | sed -r 's:\.[0-9]+$::'}
+SOURCE=(
+	https://download.gnome.org/sources/$TMPNAME/$MAJORV/$TMPNAME-$RELEASE.tar.xz
+)
