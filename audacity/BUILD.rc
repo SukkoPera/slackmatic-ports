@@ -2,7 +2,7 @@
 
 BRIEF='A free audio editor'
 PROJECT=http://audacityteam.org
-RELEASE=2.1.1
+RELEASE=2.1.2
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDDIR=$NAME-minsrc-$RELEASE
@@ -12,6 +12,10 @@ SOURCE=(
 )
 
 # Autodetection of libraries seems working great, so let's rely on it!
+CONFOPTS=(
+	$DEFAULT_CONFOPTS
+	--with-wx-version'='3.0
+)
 
 fn docinst {
 	std_docinst
