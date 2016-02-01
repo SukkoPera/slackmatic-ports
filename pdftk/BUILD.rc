@@ -2,10 +2,11 @@
 
 BRIEF='A simple tool for doing everyday things with PDF documents'
 PROJECT=http://www.pdfhacks.com/pdftk/
-RELEASE=1.41
+RELEASE=2.02
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 NUMJOBS=1
+BUILDDIR=$NAME-$RELEASE-dist
 
 DOCS=(
 	pdftk.1.html
@@ -14,13 +15,13 @@ DOCS=(
 )
 
 SOURCE=(
-	http://www.pdfhacks.com/pdftk/$NAME-$RELEASE.tar.bz2
+	https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/$NAME-$RELEASE-src.zip
 )
 
 fn build {
 	setup
 	cd pdftk
-	make -f Makefile.Generic -j $NUMJOBS
+	make -f Makefile.Slackware-13.1 -j $NUMJOBS
 	mkdir -p $PKG/usr/bin
 	cp pdftk $PKG/usr/bin
 	cd ..
