@@ -2,7 +2,7 @@
 
 BRIEF='A linux printer driver for ZjStream protocol'
 PROJECT=http://foo2hp.rkkda.com
-RELEASE=20150810
+RELEASE=20160206
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDDIR=$NAME
