@@ -2,7 +2,7 @@
 
 BRIEF='A library for constructing graphs of media-handling components'
 PROJECT=http://gstreamer.freedesktop.org/
-RELEASE=1.6.1
+RELEASE=1.6.3
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 TNAME=gst-plugins-ugly

@@ -12,7 +12,6 @@ SOURCE=(
 
 CONFOPTS=(
 	$DEFAULT_CONFOPTS_CMAKE
-	-DLIB_SUFFIX'='64
 	-DCMAKE_BUILD_TYPE'='Release
 	-DBUILD_EXAMPLES'='ON
 
@@ -22,3 +21,10 @@ CONFOPTS=(
 	# If you prefer fftw3...
 #	-DWITH_FFTW3'='ON
 )
+
+# Guess library directory (shouldn't this be automatic?)
+switch (`{arch}) {
+        case *64
+                CONFOPTS=($CONFOPTS -DLIB_SUFFIX'='64)
+}
+
