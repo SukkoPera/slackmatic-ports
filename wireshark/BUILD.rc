@@ -1,0 +1,11 @@
+. ../sukkolib.rc
+
+BRIEF='The world''s foremost network protocol analyzer'
+PROJECT=https://www.wireshark.org
+RELEASE=2.0.2
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	https://1.eu.dl.wireshark.org/src/$NAME-$RELEASE.tar.bz2
+)
