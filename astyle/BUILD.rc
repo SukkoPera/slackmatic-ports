@@ -18,6 +18,11 @@ fn build {
 	sed -ri '/^SYSCONF_PATH=/ s:=.+:=$(prefix)/doc/'$NAME-$RELEASE':' Makefile || exit 101 
 	std_compile
 
+	make shared
 	make install prefix'='$PKG/usr
-}
 
+
+	mkdir -p $PKG/$LIBDIR
+	cp bin/libastyle-*.so $PKG/$LIBDIR/libastyle-2.05.so || exit 102
+	ln -sf libastyle-2.05.so $PKG/$LIBDIR/libastyle.so || exit 103
+}
