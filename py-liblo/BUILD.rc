@@ -2,7 +2,7 @@
 
 BRIEF='Python wrapper for the liblo OSC library'
 PROJECT=http://das.nasophon.de/pyliblo/
-RELEASE=0.9.1
+RELEASE=0.10.0
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDDIR=pyliblo-$RELEASE

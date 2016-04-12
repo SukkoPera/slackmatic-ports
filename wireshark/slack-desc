@@ -1,0 +1,11 @@
+wireshark: wireshark (The world's foremost network protocol analyzer)
+wireshark:
+wireshark: This is a slackmatic port build of wireshark:
+wireshark: The world's foremost network protocol analyzer 
+wireshark:
+wireshark: For more information about the package, see the project website at:
+wireshark: https://www.wireshark.org
+wireshark:
+wireshark:
+wireshark: This slackmatic port was developed by:
+wireshark: slackware@sukkology.net
