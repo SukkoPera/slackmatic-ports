@@ -1,0 +1,11 @@
+py-six: py-six (Python 2 and 3 compatibility utilities)
+py-six:
+py-six: This is a slackmatic port build of py-six:
+py-six: Python 2 and 3 compatibility utilities 
+py-six:
+py-six: For more information about the package, see the project website at:
+py-six: https://pypi.python.org/pypi/six
+py-six:
+py-six:
+py-six: This slackmatic port was developed by:
+py-six: slackware@sukkology.net

@@ -1,0 +1,15 @@
+drwxr-xr-x|0755|root/root|usr|
+drwxr-xr-x|0755|root/root|usr/doc|
+drwxr-xr-x|0755|root/root|usr/doc/py-six-1.10.0|
+-rw-r--r--|0644|root/root|usr/doc/py-six-1.10.0/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/py-six-1.10.0/README|
+drwxr-xr-x|0755|root/root|usr/lib|
+drwxr-xr-x|0755|root/root|usr/lib/python2.7|
+drwxr-xr-x|0755|root/root|usr/lib/python2.7/site-packages|
+drwxr-xr-x|0755|root/root|usr/lib/python2.7/site-packages/six-1.10.0-py2.7.egg-info|
+-rw-r--r--|0644|root/root|usr/lib/python2.7/site-packages/six-1.10.0-py2.7.egg-info/PKG-INFO|
+-rw-r--r--|0644|root/root|usr/lib/python2.7/site-packages/six-1.10.0-py2.7.egg-info/SOURCES.txt|
+-rw-r--r--|0644|root/root|usr/lib/python2.7/site-packages/six-1.10.0-py2.7.egg-info/dependency_links.txt|
+-rw-r--r--|0644|root/root|usr/lib/python2.7/site-packages/six-1.10.0-py2.7.egg-info/top_level.txt|
+-rw-r--r--|0644|root/root|usr/lib/python2.7/site-packages/six.py|
+-rw-r--r--|0644|root/root|usr/lib/python2.7/site-packages/six.pyc|

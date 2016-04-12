@@ -1,0 +1,13 @@
+. ../sukkolib.rc
+
+BRIEF='Python 2 and 3 compatibility utilities'
+PROJECT=https://pypi.python.org/pypi/six
+RELEASE=1.10.0
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+TNAME=six
+BUILDDIR=$TNAME-$RELEASE
+
+SOURCE=(
+	https://pypi.python.org/packages/source/s/six/$TNAME-$RELEASE.tar.gz
+)
