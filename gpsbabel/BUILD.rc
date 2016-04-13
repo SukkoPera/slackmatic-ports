@@ -1,0 +1,22 @@
+. ../sukkolib.rc
+
+BRIEF='Move data between popular GPS systems'
+PROJECT=http://www.gpsbabel.org
+RELEASE=1.5.3
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+TRELEASE=`{echo $RELEASE | sed 's/\./_/g'}
+BUILDDIR=$NAME-$NAME'_'$TRELEASE
+
+SOURCE=(
+	https://github.com/gpsbabel/gpsbabel/archive/$NAME'_'$TRELEASE.tar.gz
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	README.contrib
+	README.igc
+	README.mapconverter
+	README.md
+	README.xmapwpt
+)
