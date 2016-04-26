@@ -1,0 +1,11 @@
+libfilezilla: libfilezilla (A small and modern C++ library to build high-performing, platform-independent programs)
+libfilezilla:
+libfilezilla: This is a slackmatic port build of libfilezilla:
+libfilezilla: A small and modern C++ library to build high-performing, platform-independent programs 
+libfilezilla:
+libfilezilla: For more information about the package, see the project website at:
+libfilezilla: https://lib.filezilla-project.org
+libfilezilla:
+libfilezilla:
+libfilezilla: This slackmatic port was developed by:
+libfilezilla: slackware@sukkology.net

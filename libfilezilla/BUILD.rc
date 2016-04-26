@@ -1,0 +1,22 @@
+. ../sukkolib.rc
+
+BRIEF='A small and modern C++ library to build high-performing, platform-independent programs'
+PROJECT=https://lib.filezilla-project.org
+RELEASE=0.5.0
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	$SF/$NAME/$NAME-$RELEASE.tar.bz2
+)
+
+fn configure {
+	mkdir BUILD
+	cd BUILD
+	../configure $DEFAULT_CONFOPTS
+}
+
+fn docinst {
+	cd ..
+	std_docinst
+}
