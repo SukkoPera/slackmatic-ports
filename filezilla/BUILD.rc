@@ -2,8 +2,8 @@
 
 BRIEF='The free FTP solution'
 PROJECT=http://filezilla-project.org
-RELEASE=3.9.0.5
-BUILD=2suk_$SLCKVER
+RELEASE=3.17.0
+BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
 SOURCE=(
@@ -12,7 +12,8 @@ SOURCE=(
 
 CONFOPTS=(
 	$DEFAULT_CONFOPTS
-	--with-tinyxml'='builtin
+	--with-pugixml'='builtin
+	--disable-manualupdatecheck
 	--with-wx-config'='/usr/bin/wx-config-3
 )
 
