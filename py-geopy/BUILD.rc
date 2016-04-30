@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+BRIEF='Geocoding library for Python'
+PROJECT=https://github.com/geopy/geopy
+RELEASE=1.11.0
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=geopy-$RELEASE
+
+SOURCE=(
+	https://github.com/geopy/geopy/archive/$RELEASE.tar.gz
+)

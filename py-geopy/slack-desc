@@ -1,0 +1,11 @@
+py-geopy: py-geopy (Geocoding library for Python)
+py-geopy:
+py-geopy: This is a slackmatic port build of py-geopy:
+py-geopy: Geocoding library for Python 
+py-geopy:
+py-geopy: For more information about the package, see the project website at:
+py-geopy: https://github.com/geopy/geopy
+py-geopy:
+py-geopy:
+py-geopy: This slackmatic port was developed by:
+py-geopy: slackware@sukkology.net
