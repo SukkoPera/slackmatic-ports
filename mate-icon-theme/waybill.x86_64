@@ -1,13 +1,13 @@
 drwxr-xr-x|0755|root/root|usr|
 drwxr-xr-x|0755|root/root|usr/doc|
-drwxr-xr-x|0755|root/root|usr/doc/mate-icon-theme-1.12.0|
--rw-r--r--|0644|root/root|usr/doc/mate-icon-theme-1.12.0/AUTHORS|
--rw-r--r--|0644|root/root|usr/doc/mate-icon-theme-1.12.0/BUILD.rc|
--rw-r--r--|0644|root/root|usr/doc/mate-icon-theme-1.12.0/COPYING|
--rw-r--r--|0644|root/root|usr/doc/mate-icon-theme-1.12.0/ChangeLog|
--rw-r--r--|0644|root/root|usr/doc/mate-icon-theme-1.12.0/NEWS|
--rw-r--r--|0644|root/root|usr/doc/mate-icon-theme-1.12.0/README|
--rw-r--r--|0644|root/root|usr/doc/mate-icon-theme-1.12.0/TODO|
+drwxr-xr-x|0755|root/root|usr/doc/mate-icon-theme-1.14.0|
+-rw-r--r--|0644|root/root|usr/doc/mate-icon-theme-1.14.0/AUTHORS|
+-rw-r--r--|0644|root/root|usr/doc/mate-icon-theme-1.14.0/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/mate-icon-theme-1.14.0/COPYING|
+-rw-r--r--|0644|root/root|usr/doc/mate-icon-theme-1.14.0/ChangeLog|
+-rw-r--r--|0644|root/root|usr/doc/mate-icon-theme-1.14.0/NEWS|
+-rw-r--r--|0644|root/root|usr/doc/mate-icon-theme-1.14.0/README|
+-rw-r--r--|0644|root/root|usr/doc/mate-icon-theme-1.14.0/TODO|
 drwxr-xr-x|0755|root/root|usr/share|
 drwxr-xr-x|0755|root/root|usr/share/icons|
 drwxr-xr-x|0755|root/root|usr/share/icons/mate|
@@ -452,6 +452,7 @@ lrwxrwxrwx|0777|root/root|usr/share/icons/mate/16x16/apps/redhat-filemanager.png
 lrwxrwxrwx|0777|root/root|usr/share/icons/mate/16x16/apps/screensaver.png|->|preferences-desktop-screensaver.png|
 lrwxrwxrwx|0777|root/root|usr/share/icons/mate/16x16/apps/style.png|->|preferences-desktop-theme.png|
 lrwxrwxrwx|0777|root/root|usr/share/icons/mate/16x16/apps/susehelpcenter.png|->|help-browser.png|
+-rw-r--r--|0644|root/root|usr/share/icons/mate/16x16/apps/system-config-keyboard.png|
 lrwxrwxrwx|0777|root/root|usr/share/icons/mate/16x16/apps/system-config-users.png|->|system-users.png|
 -rw-r--r--|0644|root/root|usr/share/icons/mate/16x16/apps/system-file-manager.png|
 -rw-r--r--|0644|root/root|usr/share/icons/mate/16x16/apps/system-software-install.png|
@@ -1609,6 +1610,7 @@ lrwxrwxrwx|0777|root/root|usr/share/icons/mate/22x22/apps/redhat-filemanager.png
 lrwxrwxrwx|0777|root/root|usr/share/icons/mate/22x22/apps/screensaver.png|->|preferences-desktop-screensaver.png|
 lrwxrwxrwx|0777|root/root|usr/share/icons/mate/22x22/apps/style.png|->|preferences-desktop-theme.png|
 lrwxrwxrwx|0777|root/root|usr/share/icons/mate/22x22/apps/susehelpcenter.png|->|help-browser.png|
+-rw-r--r--|0644|root/root|usr/share/icons/mate/22x22/apps/system-config-keyboard.png|
 lrwxrwxrwx|0777|root/root|usr/share/icons/mate/22x22/apps/system-config-users.png|->|system-users.png|
 -rw-r--r--|0644|root/root|usr/share/icons/mate/22x22/apps/system-file-manager.png|
 -rw-r--r--|0644|root/root|usr/share/icons/mate/22x22/apps/system-software-install.png|
@@ -2759,6 +2761,7 @@ lrwxrwxrwx|0777|root/root|usr/share/icons/mate/24x24/apps/redhat-filemanager.png
 lrwxrwxrwx|0777|root/root|usr/share/icons/mate/24x24/apps/screensaver.png|->|preferences-desktop-screensaver.png|
 lrwxrwxrwx|0777|root/root|usr/share/icons/mate/24x24/apps/style.png|->|preferences-desktop-theme.png|
 lrwxrwxrwx|0777|root/root|usr/share/icons/mate/24x24/apps/susehelpcenter.png|->|help-browser.png|
+-rw-r--r--|0644|root/root|usr/share/icons/mate/24x24/apps/system-config-keyboard.png|
 lrwxrwxrwx|0777|root/root|usr/share/icons/mate/24x24/apps/system-config-users.png|->|system-users.png|
 -rw-r--r--|0644|root/root|usr/share/icons/mate/24x24/apps/system-file-manager.png|
 -rw-r--r--|0644|root/root|usr/share/icons/mate/24x24/apps/system-software-install.png|
@@ -4617,6 +4620,7 @@ lrwxrwxrwx|0777|root/root|usr/share/icons/mate/32x32/apps/redhat-filemanager.png
 lrwxrwxrwx|0777|root/root|usr/share/icons/mate/32x32/apps/screensaver.png|->|preferences-desktop-screensaver.png|
 lrwxrwxrwx|0777|root/root|usr/share/icons/mate/32x32/apps/style.png|->|preferences-desktop-theme.png|
 lrwxrwxrwx|0777|root/root|usr/share/icons/mate/32x32/apps/susehelpcenter.png|->|help-browser.png|
+-rw-r--r--|0644|root/root|usr/share/icons/mate/32x32/apps/system-config-keyboard.png|
 lrwxrwxrwx|0777|root/root|usr/share/icons/mate/32x32/apps/system-config-users.png|->|system-users.png|
 -rw-r--r--|0644|root/root|usr/share/icons/mate/32x32/apps/system-file-manager.png|
 -rw-r--r--|0644|root/root|usr/share/icons/mate/32x32/apps/system-software-install.png|
@@ -5765,6 +5769,7 @@ lrwxrwxrwx|0777|root/root|usr/share/icons/mate/48x48/apps/redhat-filemanager.png
 lrwxrwxrwx|0777|root/root|usr/share/icons/mate/48x48/apps/screensaver.png|->|preferences-desktop-screensaver.png|
 lrwxrwxrwx|0777|root/root|usr/share/icons/mate/48x48/apps/style.png|->|preferences-desktop-theme.png|
 lrwxrwxrwx|0777|root/root|usr/share/icons/mate/48x48/apps/susehelpcenter.png|->|help-browser.png|
+-rw-r--r--|0644|root/root|usr/share/icons/mate/48x48/apps/system-config-keyboard.png|
 lrwxrwxrwx|0777|root/root|usr/share/icons/mate/48x48/apps/system-config-users.png|->|system-users.png|
 -rw-r--r--|0644|root/root|usr/share/icons/mate/48x48/apps/system-file-manager.png|
 -rw-r--r--|0644|root/root|usr/share/icons/mate/48x48/apps/system-software-install.png|
@@ -7627,8 +7632,12 @@ drwxr-xr-x|0755|root/root|usr/share/locale/en@shaw/LC_MESSAGES|
 drwxr-xr-x|0755|root/root|usr/share/locale/eo|
 drwxr-xr-x|0755|root/root|usr/share/locale/eo/LC_MESSAGES|
 drwxr-xr-x|0755|root/root|usr/share/locale/es|
+drwxr-xr-x|0755|root/root|usr/share/locale/es_AR|
+drwxr-xr-x|0755|root/root|usr/share/locale/es_AR/LC_MESSAGES|
 drwxr-xr-x|0755|root/root|usr/share/locale/es_CL|
 drwxr-xr-x|0755|root/root|usr/share/locale/es_CL/LC_MESSAGES|
+drwxr-xr-x|0755|root/root|usr/share/locale/es_CO|
+drwxr-xr-x|0755|root/root|usr/share/locale/es_CO/LC_MESSAGES|
 drwxr-xr-x|0755|root/root|usr/share/locale/es/LC_MESSAGES|
 drwxr-xr-x|0755|root/root|usr/share/locale/es_MX|
 drwxr-xr-x|0755|root/root|usr/share/locale/es_MX/LC_MESSAGES|
@@ -7641,7 +7650,11 @@ drwxr-xr-x|0755|root/root|usr/share/locale/fa/LC_MESSAGES|
 drwxr-xr-x|0755|root/root|usr/share/locale/fi|
 drwxr-xr-x|0755|root/root|usr/share/locale/fi/LC_MESSAGES|
 drwxr-xr-x|0755|root/root|usr/share/locale/fr|
+drwxr-xr-x|0755|root/root|usr/share/locale/fr_CA|
+drwxr-xr-x|0755|root/root|usr/share/locale/fr_CA/LC_MESSAGES|
 drwxr-xr-x|0755|root/root|usr/share/locale/fr/LC_MESSAGES|
+drwxr-xr-x|0755|root/root|usr/share/locale/frp|
+drwxr-xr-x|0755|root/root|usr/share/locale/frp/LC_MESSAGES|
 drwxr-xr-x|0755|root/root|usr/share/locale/fur|
 drwxr-xr-x|0755|root/root|usr/share/locale/fur/LC_MESSAGES|
 drwxr-xr-x|0755|root/root|usr/share/locale/fy|
@@ -7660,6 +7673,8 @@ drwxr-xr-x|0755|root/root|usr/share/locale/hr|
 drwxr-xr-x|0755|root/root|usr/share/locale/hr/LC_MESSAGES|
 drwxr-xr-x|0755|root/root|usr/share/locale/hu|
 drwxr-xr-x|0755|root/root|usr/share/locale/hu/LC_MESSAGES|
+drwxr-xr-x|0755|root/root|usr/share/locale/hy|
+drwxr-xr-x|0755|root/root|usr/share/locale/hy/LC_MESSAGES|
 drwxr-xr-x|0755|root/root|usr/share/locale/id|
 drwxr-xr-x|0755|root/root|usr/share/locale/id/LC_MESSAGES|
 drwxr-xr-x|0755|root/root|usr/share/locale/is|
@@ -7668,6 +7683,8 @@ drwxr-xr-x|0755|root/root|usr/share/locale/it|
 drwxr-xr-x|0755|root/root|usr/share/locale/it/LC_MESSAGES|
 drwxr-xr-x|0755|root/root|usr/share/locale/ja|
 drwxr-xr-x|0755|root/root|usr/share/locale/ja/LC_MESSAGES|
+drwxr-xr-x|0755|root/root|usr/share/locale/jv|
+drwxr-xr-x|0755|root/root|usr/share/locale/jv/LC_MESSAGES|
 drwxr-xr-x|0755|root/root|usr/share/locale/ka|
 drwxr-xr-x|0755|root/root|usr/share/locale/ka/LC_MESSAGES|
 drwxr-xr-x|0755|root/root|usr/share/locale/kk|
@@ -7728,6 +7745,8 @@ drwxr-xr-x|0755|root/root|usr/share/locale/ru|
 drwxr-xr-x|0755|root/root|usr/share/locale/ru/LC_MESSAGES|
 drwxr-xr-x|0755|root/root|usr/share/locale/rw|
 drwxr-xr-x|0755|root/root|usr/share/locale/rw/LC_MESSAGES|
+drwxr-xr-x|0755|root/root|usr/share/locale/sc|
+drwxr-xr-x|0755|root/root|usr/share/locale/sc/LC_MESSAGES|
 drwxr-xr-x|0755|root/root|usr/share/locale/si|
 drwxr-xr-x|0755|root/root|usr/share/locale/si/LC_MESSAGES|
 drwxr-xr-x|0755|root/root|usr/share/locale/sk|
