@@ -1,0 +1,10 @@
+drwxr-xr-x|0755|root/root|usr|
+drwxr-xr-x|0755|root/root|usr/bin|
+-rwxr-xr-x|0755|root/root|usr/bin/polygen|
+drwxr-xr-x|0755|root/root|usr/doc|
+drwxr-xr-x|0755|root/root|usr/doc/polygen-1.0.6|
+-rw-r--r--|0644|root/root|usr/doc/polygen-1.0.6/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/polygen-1.0.6/Changes|
+-rw-r--r--|0644|root/root|usr/doc/polygen-1.0.6/Credits|
+-rw-r--r--|0644|root/root|usr/doc/polygen-1.0.6/License|
+-rw-r--r--|0644|root/root|usr/doc/polygen-1.0.6/README|

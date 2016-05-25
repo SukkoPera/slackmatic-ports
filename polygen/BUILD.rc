@@ -1,0 +1,30 @@
+. ../sukkolib.rc
+
+BRIEF='Programma che genera frasi casuali secondo una definizione grammaticale'
+PROJECT=http://www.polygen.org/
+RELEASE=1.0.6
+RELDATE=20040628
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://www.polygen.org/dist/$NAME-$RELEASE-$RELDATE-src.zip
+)
+
+DOCS=(
+	Changes
+	Credits
+	License
+	README
+)
+
+fn build {
+	cd $SRC/$NAME-$RELEASE || exit $status
+
+	cd src && make -j $NUMJOBS || exit $status
+	mkdir -p $PKG/usr/bin || exit $status
+	cp polygen $PKG/usr/bin
+	cd ..
+
+	std_docinst
+}
