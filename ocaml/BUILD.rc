@@ -1,0 +1,21 @@
+. ../sukkolib.rc
+
+BRIEF='An industrial strength programming language'
+PROJECT=https://ocaml.org/
+RELEASE=4.03.0
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDSYSTEM=autotools
+
+MAJORV=`{echo $RELEASE | sed -r 's:\.[0-9]+$::'}
+SOURCE=(
+	http://caml.inria.fr/pub/distrib/$NAME-$MAJORV/$NAME-$RELEASE.tar.gz
+)
+
+CONFOPTS=(
+	-prefix /usr
+)
+
+fn compile {
+	make world.opt
+}
