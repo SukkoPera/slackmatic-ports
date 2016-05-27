@@ -1,0 +1,16 @@
+. ../sukkolib.rc
+
+BRIEF='Tom''s Audio Processing plugins for audio engineering'
+PROJECT=http://tap-plugins.sourceforge.net
+RELEASE=0.7.3
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://downloads.sourceforge.net/project/tap-plugins/tap-plugins/$RELEASE/$NAME-$RELEASE.tar.gz
+)
+
+fn inst {
+	make install INSTALL_PLUGINS_DIR'='$PKG/$LIBDIR/ladspa
+}
+
