@@ -2,22 +2,23 @@
 
 BRIEF='Digital Audio Workstation'
 PROJECT=http://ardour.org
-RELEASE=3.4
-BUILD=2suk_$SLCKVER
+RELEASE=4.7.0
+BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
-BUILDDIR=Ardour3-$RELEASE
+TNAME=Ardour
+BUILDDIR=$TNAME-$RELEASE
+
+# Need C++11
+CXXFLAGS=$CXXFLAGS '-std=c++11'
 
 SOURCE=(
 	# WARNING: You will have to download this manually!
 	# http://releases.ardour.org/$NAME-$RELEASE.tar.bz2
-	http://x/$NAME-$RELEASE.tar.bz2
+	http://x/$TNAME-$RELEASE.tar.bz2
 )
 
 DOCS=(
 	$DEFAULT_DOCS
-	3.3-notes
-	3.3-notes.html
-	3.4-notes
 	TRANSLATORS
 )
 
@@ -27,6 +28,8 @@ CONFOPTS=(
 	--no-phone-home
 	--freedesktop
 	--optimize
+	--with-backends'='alsa,jack
+	--cxx11
 )
 
 fn inst {
@@ -44,7 +47,7 @@ fn inst {
 
 	# Desktop icon and entry
 	mkdir -p $PKG/usr/share/pixmaps
-	cp icons/icon/ardour_icon_mac.png $PKG/usr/share/pixmaps/ardour3.png
+	cp icons/icon/ardour_icon_mac.png $PKG/usr/share/pixmaps/ardour4.png
 	mkdir -p $PKG/usr/share/applications
-	cp gtk2_ardour/ardour3.desktop.in $PKG/usr/share/applications/ardour3.desktop
+	cp build/gtk2_ardour/ardour4.desktop $PKG/usr/share/applications/ardour4.desktop
 }
