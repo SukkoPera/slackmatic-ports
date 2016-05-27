@@ -1,0 +1,20 @@
+. ../sukkolib.rc
+
+BRIEF='An easy system to develop plugins for'
+PROJECT=http://www.vamp-plugins.org
+RELEASE=2.6
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	https://code.soundsoftware.ac.uk/attachments/download/1520/$NAME-$RELEASE.tar.gz
+)
+
+fn patches {
+	# Fix libdir
+	sed -i -e 's:/usr/lib/vamp:'$LIBDIR'/vamp:' src/vamp-hostsdk/PluginHostAdapter.cpp || exit $status
+}
+
+fn inst {
+	make DESTDIR'='$PKG INSTALL_SDK_LIBS'='$LIBDIR INSTALL_PKGCONFIG'='$LIBDIR/pkgconfig INSTALL_PLUGINS'='$LIBDIR/vamp install	
+}
