@@ -1,0 +1,11 @@
+swh-plugins: swh-plugins (Steve Harris's LADSPA plugins)
+swh-plugins:
+swh-plugins: This is a slackmatic port build of swh-plugins:
+swh-plugins: Steve Harris's LADSPA plugins 
+swh-plugins:
+swh-plugins: For more information about the package, see the project website at:
+swh-plugins: https://github.com/swh/lv2
+swh-plugins:
+swh-plugins:
+swh-plugins: This slackmatic port was developed by:
+swh-plugins: slackware@sukkology.net

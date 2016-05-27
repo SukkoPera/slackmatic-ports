@@ -1,0 +1,16 @@
+. ../sukkolib.rc
+
+BRIEF='Steve Harris''s LADSPA plugins'
+PROJECT=https://github.com/swh/lv2
+RELEASE=1.0.16
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=lv2-$RELEASE
+
+SOURCE=(
+	https://github.com/swh/lv2/archive/v$RELEASE.tar.gz
+)
+
+fn inst {
+	make install-system INSTALL_DIR'='$PKG/$LIBDIR/lv2
+}
