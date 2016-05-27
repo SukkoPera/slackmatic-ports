@@ -4,12 +4,12 @@ BUILDSYSTEM=waf
 
 BRIEF='A C library to make the use of LV2 plugins as simple as possible'
 PROJECT=http://drobilla.net/software/lilv/
-RELEASE=0.16.0
+RELEASE=0.22.0
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
 CONFOPTS=(
-	$DEFAULT_CONFOPTS
+	$DEFAULT_CONFOPTS_WAF
 	--bindings
 )
 
