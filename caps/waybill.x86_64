@@ -1,0 +1,13 @@
+drwxr-xr-x|0755|root/root|usr|
+drwxr-xr-x|0755|root/root|usr/doc|
+drwxr-xr-x|0755|root/root|usr/doc/caps-0.9.24|
+-rw-r--r--|0644|root/root|usr/doc/caps-0.9.24/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/caps-0.9.24/COPYING|
+-rw-r--r--|0644|root/root|usr/doc/caps-0.9.24/README|
+drwxr-xr-x|0755|root/root|usr/lib64|
+drwxr-xr-x|0755|root/root|usr/lib64/ladspa|
+-rw-r--r--|0644|root/root|usr/lib64/ladspa/caps.so|
+drwxr-xr-x|0755|root/root|usr/share|
+drwxr-xr-x|0755|root/root|usr/share/ladspa|
+drwxr-xr-x|0755|root/root|usr/share/ladspa/rdf|
+-rw-r--r--|0644|root/root|usr/share/ladspa/rdf/caps.rdf|

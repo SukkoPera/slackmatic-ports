@@ -1,0 +1,24 @@
+. ../sukkolib.rc
+
+BRIEF='A collection of audio plugins for guitars'
+PROJECT=http://quitte.de/dsp/caps.html
+RELEASE=0.9.24
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+MAKEJOBS=1
+
+SOURCE=(
+	http://quitte.de/dsp/$NAME'_'$RELEASE.tar.bz2
+)
+
+fn compile {
+	# $ARCH interferes with the build
+	_ARCH=$ARCH
+	ARCH=''
+	std_compile
+	ARCH=$_ARCH
+}
+
+fn inst {
+	make install DESTDIR'='$PKG DEST'='$LIBDIR/ladspa
+}
