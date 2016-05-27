@@ -1,0 +1,396 @@
+drwxr-xr-x|0755|root/root|usr|
+drwxr-xr-x|0755|root/root|usr/bin|
+-rwxr-xr-x|0755|root/root|usr/bin/calfjackhost|
+drwxr-xr-x|0755|root/root|usr/doc|
+drwxr-xr-x|0755|root/root|usr/doc/calf-0.0.60pre5|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/AUTHORS|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/COPYING|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/ChangeLog|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/INSTALL|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/README|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/TODO|
+drwxr-xr-x|0755|root/root|usr/doc/calf-0.0.60pre5/html|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/About.html|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/Analyzer.html|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/Bass Enhancer.html|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/Calf.html|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/Compensation Delay Line.html|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/Compressor.html|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/Controls.html|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/Crusher.html|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/Deesser.html|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/Emphasis.html|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/Envelope Filter.html|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/Equalizer 12 Band.html|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/Equalizer 30 Band.html|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/Equalizer 5 Band.html|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/Equalizer 8 Band.html|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/Exciter.html|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/Filterclavier.html|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/Filter.html|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/Flanger.html|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/Fluidsynth.html|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/Gate.html|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/Haas Stereo Enhancer.html|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/Limiter.html|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/Mono Compressor.html|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/Mono Input.html|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/Monosynth.html|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/Multi Chorus.html|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/Multiband Compressor.html|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/Multiband Gate.html|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/Multiband Limiter.html|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/Organ.html|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/Phaser.html|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/Pulsator.html|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/Reverb.html|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/Ring Modulator.html|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/Rotary Speaker.html|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/Saturator.html|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/Sidechain Compressor.html|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/Sidechain Gate.html|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/Sidechain Limiter.html|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/Stereo Tools.html|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/Tape Simulator.html|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/Transient Designer.html|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/Vintage Delay.html|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/Vocoder.html|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/Wavetable.html|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/X-Over 2 Band.html|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/X-Over 3 Band.html|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/X-Over 4 Band.html|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/_blank.html|
+drwxr-xr-x|0755|root/root|usr/doc/calf-0.0.60pre5/html/images|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/About.png|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/Calf - Analyzer - Spectralizer.jpg|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/Calf - Analyzer - Stereo Difference.jpg|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/Calf - Analyzer - Stereo Image.jpg|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/Calf - Analyzer.jpg|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/Calf - Bass Enhancer.jpg|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/Calf - Compensation Delay Line.jpg|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/Calf - Compressor.jpg|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/Calf - Controls.jpg|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/Calf - Crusher.jpg|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/Calf - Deesser.jpg|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/Calf - Emphasis.jpg|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/Calf - Envelope Filter.jpg|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/Calf - Equalizer 12 Band.jpg|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/Calf - Equalizer 30 Band.jpg|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/Calf - Equalizer 5 Band.jpg|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/Calf - Equalizer 8 Band.jpg|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/Calf - Exciter.jpg|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/Calf - Filterclavier.jpg|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/Calf - Filter.jpg|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/Calf - Flanger.jpg|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/Calf - Fluidsynth.jpg|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/Calf - Gate.jpg|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/Calf - Haas Stereo Enhancer.jpg|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/Calf - Limiter.jpg|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/Calf - Mono Compressor.jpg|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/Calf - Mono Input.jpg|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/Calf - Monosynth - Audio Path.jpg|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/Calf - Monosynth - Modulation Matrix.jpg|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/Calf - Monosynth - Modulation.jpg|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/Calf - Multi Chorus.jpg|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/Calf - Multiband Compressor.jpg|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/Calf - Multiband Gate.jpg|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/Calf - Multiband Limiter.jpg|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/Calf - Organ - Sound Processor.jpg|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/Calf - Organ - Tone Generator.jpg|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/Calf - Phaser.jpg|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/Calf - Pulsator.jpg|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/Calf - Reverb.jpg|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/Calf - Reverse Delay.jpg|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/Calf - Ring Modulator.jpg|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/Calf - Rotary Speaker.jpg|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/Calf - Saturator.jpg|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/Calf - Sidechain Compressor.jpg|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/Calf - Sidechain Gate.jpg|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/Calf - Sidechain Limiter.jpg|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/Calf - Stereo Tools.jpg|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/Calf - Tape Simulator.jpg|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/Calf - Transient Designer.jpg|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/Calf - Vintage Delay.jpg|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/Calf - Vocoder.jpg|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/Calf - Wavetable.jpg|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/Calf - X-Over 2 Band.jpg|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/Calf - X-Over 3 Band.jpg|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/Calf - X-Over 4 Band.jpg|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/Calf JACK Host.jpg|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/Calf Studio Gear.jpg|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/Calf.jpg|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/Index.png|
+drwxr-xr-x|0755|root/root|usr/doc/calf-0.0.60pre5/html/images/icons|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/icons/delay.png|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/icons/distortion.png|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/icons/dynamics.png|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/icons/filters.png|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/icons/index.png|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/icons/modulation.png|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/icons/synthesizer.png|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/icons/tools.png|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/marrow.png|
+drwxr-xr-x|0755|root/root|usr/doc/calf-0.0.60pre5/html/images/prettyPhoto|
+drwxr-xr-x|0755|root/root|usr/doc/calf-0.0.60pre5/html/images/prettyPhoto/dark_rounded|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/prettyPhoto/dark_rounded/btnNext.png|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/prettyPhoto/dark_rounded/btnPrevious.png|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/prettyPhoto/dark_rounded/contentPattern.png|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/prettyPhoto/dark_rounded/default_thumbnail.gif|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/prettyPhoto/dark_rounded/loader.gif|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/prettyPhoto/dark_rounded/sprite.png|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/style_logo.png|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/images/style_p.png|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/index.html|
+drwxr-xr-x|0755|root/root|usr/doc/calf-0.0.60pre5/html/scripts|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/scripts/jquery.js|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/scripts/jquery.prettyPhoto.js|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/scripts/manual.js|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/scripts/prettyPhoto.css|
+-rw-r--r--|0644|root/root|usr/doc/calf-0.0.60pre5/html/scripts/style.css|
+drwxr-xr-x|0755|root/root|usr/lib64|
+drwxr-xr-x|0755|root/root|usr/lib64/calf|
+-rw-r--r--|0644|root/root|usr/lib64/calf/calf.a|
+-rwxr-xr-x|0755|root/root|usr/lib64/calf/calf.la|
+-rwxr-xr-x|0755|root/root|usr/lib64/calf/calf.so|
+drwxr-xr-x|0755|root/root|usr/lib64/lv2|
+drwxr-xr-x|0755|root/root|usr/lib64/lv2/calf.lv2|
+-rw-r--r--|0644|root/root|usr/lib64/lv2/calf.lv2/Analyzer.ttl|
+-rw-r--r--|0644|root/root|usr/lib64/lv2/calf.lv2/BassEnhancer.ttl|
+-rw-r--r--|0644|root/root|usr/lib64/lv2/calf.lv2/CompensationDelay.ttl|
+-rw-r--r--|0644|root/root|usr/lib64/lv2/calf.lv2/Compressor.ttl|
+-rw-r--r--|0644|root/root|usr/lib64/lv2/calf.lv2/Crusher.ttl|
+-rw-r--r--|0644|root/root|usr/lib64/lv2/calf.lv2/Deesser.ttl|
+-rw-r--r--|0644|root/root|usr/lib64/lv2/calf.lv2/Emphasis.ttl|
+-rw-r--r--|0644|root/root|usr/lib64/lv2/calf.lv2/EnvelopeFilter.ttl|
+-rw-r--r--|0644|root/root|usr/lib64/lv2/calf.lv2/Equalizer12Band.ttl|
+-rw-r--r--|0644|root/root|usr/lib64/lv2/calf.lv2/Equalizer30Band.ttl|
+-rw-r--r--|0644|root/root|usr/lib64/lv2/calf.lv2/Equalizer5Band.ttl|
+-rw-r--r--|0644|root/root|usr/lib64/lv2/calf.lv2/Equalizer8Band.ttl|
+-rw-r--r--|0644|root/root|usr/lib64/lv2/calf.lv2/Exciter.ttl|
+-rw-r--r--|0644|root/root|usr/lib64/lv2/calf.lv2/Filterclavier.ttl|
+-rw-r--r--|0644|root/root|usr/lib64/lv2/calf.lv2/Filter.ttl|
+-rw-r--r--|0644|root/root|usr/lib64/lv2/calf.lv2/Flanger.ttl|
+-rw-r--r--|0644|root/root|usr/lib64/lv2/calf.lv2/Fluidsynth.ttl|
+-rw-r--r--|0644|root/root|usr/lib64/lv2/calf.lv2/Gate.ttl|
+-rw-r--r--|0644|root/root|usr/lib64/lv2/calf.lv2/HaasEnhancer.ttl|
+-rw-r--r--|0644|root/root|usr/lib64/lv2/calf.lv2/Limiter.ttl|
+-rw-r--r--|0644|root/root|usr/lib64/lv2/calf.lv2/MonoCompressor.ttl|
+-rw-r--r--|0644|root/root|usr/lib64/lv2/calf.lv2/MonoInput.ttl|
+-rw-r--r--|0644|root/root|usr/lib64/lv2/calf.lv2/Monosynth.ttl|
+-rw-r--r--|0644|root/root|usr/lib64/lv2/calf.lv2/MultiChorus.ttl|
+-rw-r--r--|0644|root/root|usr/lib64/lv2/calf.lv2/MultibandCompressor.ttl|
+-rw-r--r--|0644|root/root|usr/lib64/lv2/calf.lv2/MultibandGate.ttl|
+-rw-r--r--|0644|root/root|usr/lib64/lv2/calf.lv2/MultibandLimiter.ttl|
+-rw-r--r--|0644|root/root|usr/lib64/lv2/calf.lv2/Organ.ttl|
+-rw-r--r--|0644|root/root|usr/lib64/lv2/calf.lv2/Phaser.ttl|
+-rw-r--r--|0644|root/root|usr/lib64/lv2/calf.lv2/Pulsator.ttl|
+-rw-r--r--|0644|root/root|usr/lib64/lv2/calf.lv2/Reverb.ttl|
+-rw-r--r--|0644|root/root|usr/lib64/lv2/calf.lv2/ReverseDelay.ttl|
+-rw-r--r--|0644|root/root|usr/lib64/lv2/calf.lv2/RingModulator.ttl|
+-rw-r--r--|0644|root/root|usr/lib64/lv2/calf.lv2/RotarySpeaker.ttl|
+-rw-r--r--|0644|root/root|usr/lib64/lv2/calf.lv2/Saturator.ttl|
+-rw-r--r--|0644|root/root|usr/lib64/lv2/calf.lv2/SidechainCompressor.ttl|
+-rw-r--r--|0644|root/root|usr/lib64/lv2/calf.lv2/SidechainGate.ttl|
+-rw-r--r--|0644|root/root|usr/lib64/lv2/calf.lv2/SidechainLimiter.ttl|
+-rw-r--r--|0644|root/root|usr/lib64/lv2/calf.lv2/StereoTools.ttl|
+-rw-r--r--|0644|root/root|usr/lib64/lv2/calf.lv2/TapeSimulator.ttl|
+-rw-r--r--|0644|root/root|usr/lib64/lv2/calf.lv2/TransientDesigner.ttl|
+-rw-r--r--|0644|root/root|usr/lib64/lv2/calf.lv2/VintageDelay.ttl|
+-rw-r--r--|0644|root/root|usr/lib64/lv2/calf.lv2/Vocoder.ttl|
+-rw-r--r--|0644|root/root|usr/lib64/lv2/calf.lv2/Wavetable.ttl|
+-rw-r--r--|0644|root/root|usr/lib64/lv2/calf.lv2/XOver2Band.ttl|
+-rw-r--r--|0644|root/root|usr/lib64/lv2/calf.lv2/XOver3Band.ttl|
+-rw-r--r--|0644|root/root|usr/lib64/lv2/calf.lv2/XOver4Band.ttl|
+-rwxr-xr-x|0755|root/root|usr/lib64/lv2/calf.lv2/calflv2gui.so|
+lrwxrwxrwx|0777|root/root|usr/lib64/lv2/calf.lv2/calf.so|->|/usr/lib64/calf/calf.so|
+-rw-r--r--|0644|root/root|usr/lib64/lv2/calf.lv2/manifest.ttl|
+-rw-r--r--|0644|root/root|usr/lib64/lv2/calf.lv2/presets-Filter.ttl|
+-rw-r--r--|0644|root/root|usr/lib64/lv2/calf.lv2/presets-Flanger.ttl|
+-rw-r--r--|0644|root/root|usr/lib64/lv2/calf.lv2/presets-MonoCompressor.ttl|
+-rw-r--r--|0644|root/root|usr/lib64/lv2/calf.lv2/presets-Monosynth.ttl|
+-rw-r--r--|0644|root/root|usr/lib64/lv2/calf.lv2/presets-Organ.ttl|
+-rw-r--r--|0644|root/root|usr/lib64/lv2/calf.lv2/presets-Reverb.ttl|
+-rw-r--r--|0644|root/root|usr/lib64/lv2/calf.lv2/presets-Wavetable.ttl|
+drwxr-xr-x|0755|root/root|usr/man|
+drwxr-xr-x|0755|root/root|usr/man/man1|
+-rw-r--r--|0644|root/root|usr/man/man1/calfjackhost.1.gz|
+drwxr-xr-x|0755|root/root|usr/man/man7|
+-rw-r--r--|0644|root/root|usr/man/man7/calf.7.gz|
+drwxr-xr-x|0755|root/root|usr/share|
+drwxr-xr-x|0755|root/root|usr/share/applications|
+-rw-r--r--|0644|root/root|usr/share/applications/calf.desktop|
+drwxr-xr-x|0755|root/root|usr/share/calf|
+-rw-r--r--|0644|root/root|usr/share/calf/background_black.png|
+-rw-r--r--|0644|root/root|usr/share/calf/background_dark.png|
+-rw-r--r--|0644|root/root|usr/share/calf/background_light.png|
+-rw-r--r--|0644|root/root|usr/share/calf/calf-gui.xml|
+-rw-r--r--|0644|root/root|usr/share/calf/calf.rc|
+-rw-r--r--|0644|root/root|usr/share/calf/combo_arrow.png|
+-rw-r--r--|0644|root/root|usr/share/calf/gui-analyzer.xml|
+-rw-r--r--|0644|root/root|usr/share/calf/gui-bassenhancer.xml|
+-rw-r--r--|0644|root/root|usr/share/calf/gui-compdelay.xml|
+-rw-r--r--|0644|root/root|usr/share/calf/gui-compressor.xml|
+-rw-r--r--|0644|root/root|usr/share/calf/gui-crusher.xml|
+-rw-r--r--|0644|root/root|usr/share/calf/gui-deesser.xml|
+-rw-r--r--|0644|root/root|usr/share/calf/gui-emphasis.xml|
+-rw-r--r--|0644|root/root|usr/share/calf/gui-envelopefilter.xml|
+-rw-r--r--|0644|root/root|usr/share/calf/gui-eq12.xml|
+-rw-r--r--|0644|root/root|usr/share/calf/gui-eq30.xml|
+-rw-r--r--|0644|root/root|usr/share/calf/gui-eq5.xml|
+-rw-r--r--|0644|root/root|usr/share/calf/gui-eq8.xml|
+-rw-r--r--|0644|root/root|usr/share/calf/gui-exciter.xml|
+-rw-r--r--|0644|root/root|usr/share/calf/gui-filterclavier.xml|
+-rw-r--r--|0644|root/root|usr/share/calf/gui-filter.xml|
+-rw-r--r--|0644|root/root|usr/share/calf/gui-flanger.xml|
+-rw-r--r--|0644|root/root|usr/share/calf/gui-fluidsynth.xml|
+-rw-r--r--|0644|root/root|usr/share/calf/gui-gate.xml|
+-rw-r--r--|0644|root/root|usr/share/calf/gui-haasenhancer.xml|
+-rw-r--r--|0644|root/root|usr/share/calf/gui-limiter.xml|
+-rw-r--r--|0644|root/root|usr/share/calf/gui-monocompressor.xml|
+-rw-r--r--|0644|root/root|usr/share/calf/gui-monosynth.xml|
+-rw-r--r--|0644|root/root|usr/share/calf/gui-mono.xml|
+-rw-r--r--|0644|root/root|usr/share/calf/gui-multibandcompressor.xml|
+-rw-r--r--|0644|root/root|usr/share/calf/gui-multibandgate.xml|
+-rw-r--r--|0644|root/root|usr/share/calf/gui-multibandlimiter.xml|
+-rw-r--r--|0644|root/root|usr/share/calf/gui-multichorus.xml|
+-rw-r--r--|0644|root/root|usr/share/calf/gui-organ.xml|
+-rw-r--r--|0644|root/root|usr/share/calf/gui-phaser.xml|
+-rw-r--r--|0644|root/root|usr/share/calf/gui-pulsator.xml|
+-rw-r--r--|0644|root/root|usr/share/calf/gui-reverb.xml|
+-rw-r--r--|0644|root/root|usr/share/calf/gui-reversedelay.xml|
+-rw-r--r--|0644|root/root|usr/share/calf/gui-ringmodulator.xml|
+-rw-r--r--|0644|root/root|usr/share/calf/gui-rotaryspeaker.xml|
+-rw-r--r--|0644|root/root|usr/share/calf/gui-saturator.xml|
+-rw-r--r--|0644|root/root|usr/share/calf/gui-sidechaincompressor.xml|
+-rw-r--r--|0644|root/root|usr/share/calf/gui-sidechaingate.xml|
+-rw-r--r--|0644|root/root|usr/share/calf/gui-sidechainlimiter.xml|
+-rw-r--r--|0644|root/root|usr/share/calf/gui-stereo.xml|
+-rw-r--r--|0644|root/root|usr/share/calf/gui-tapesimulator.xml|
+-rw-r--r--|0644|root/root|usr/share/calf/gui-transientdesigner.xml|
+-rw-r--r--|0644|root/root|usr/share/calf/gui-vintagedelay.xml|
+-rw-r--r--|0644|root/root|usr/share/calf/gui-vocoder.xml|
+-rw-r--r--|0644|root/root|usr/share/calf/gui-wavetable.xml|
+-rw-r--r--|0644|root/root|usr/share/calf/gui-xover2.xml|
+-rw-r--r--|0644|root/root|usr/share/calf/gui-xover3.xml|
+-rw-r--r--|0644|root/root|usr/share/calf/gui-xover4.xml|
+drwxr-xr-x|0755|root/root|usr/share/calf/icons|
+drwxr-xr-x|0755|root/root|usr/share/calf/icons/LV2|
+-rw-r--r--|0644|root/root|usr/share/calf/icons/LV2/Allpass.svg|
+-rw-r--r--|0644|root/root|usr/share/calf/icons/LV2/Amplifier.svg|
+-rw-r--r--|0644|root/root|usr/share/calf/icons/LV2/Analyser.svg|
+-rw-r--r--|0644|root/root|usr/share/calf/icons/LV2/Bandpass.svg|
+-rw-r--r--|0644|root/root|usr/share/calf/icons/LV2/Chorus.svg|
+-rw-r--r--|0644|root/root|usr/share/calf/icons/LV2/Comb.svg|
+-rw-r--r--|0644|root/root|usr/share/calf/icons/LV2/Compressor.svg|
+-rw-r--r--|0644|root/root|usr/share/calf/icons/LV2/Constant.svg|
+-rw-r--r--|0644|root/root|usr/share/calf/icons/LV2/Converter.svg|
+-rw-r--r--|0644|root/root|usr/share/calf/icons/LV2/Delay.svg|
+-rw-r--r--|0644|root/root|usr/share/calf/icons/LV2/Distortion.svg|
+-rw-r--r--|0644|root/root|usr/share/calf/icons/LV2/Dynamics.svg|
+-rw-r--r--|0644|root/root|usr/share/calf/icons/LV2/EQ.svg|
+-rw-r--r--|0644|root/root|usr/share/calf/icons/LV2/Envelope.svg|
+-rw-r--r--|0644|root/root|usr/share/calf/icons/LV2/Expander.svg|
+-rw-r--r--|0644|root/root|usr/share/calf/icons/LV2/Filter.svg|
+-rw-r--r--|0644|root/root|usr/share/calf/icons/LV2/Flanger.svg|
+-rw-r--r--|0644|root/root|usr/share/calf/icons/LV2/Function.svg|
+-rw-r--r--|0644|root/root|usr/share/calf/icons/LV2/Gate.svg|
+-rw-r--r--|0644|root/root|usr/share/calf/icons/LV2/Generator.svg|
+-rw-r--r--|0644|root/root|usr/share/calf/icons/LV2/Highpass.svg|
+-rw-r--r--|0644|root/root|usr/share/calf/icons/LV2/Instrument.svg|
+-rw-r--r--|0644|root/root|usr/share/calf/icons/LV2/Limiter.svg|
+-rw-r--r--|0644|root/root|usr/share/calf/icons/LV2/Mixer.svg|
+-rw-r--r--|0644|root/root|usr/share/calf/icons/LV2/Modulator.svg|
+-rw-r--r--|0644|root/root|usr/share/calf/icons/LV2/MultiEQ.svg|
+-rw-r--r--|0644|root/root|usr/share/calf/icons/LV2/Oscillator.svg|
+-rw-r--r--|0644|root/root|usr/share/calf/icons/LV2/ParaEQ.svg|
+-rw-r--r--|0644|root/root|usr/share/calf/icons/LV2/Phaser.svg|
+-rw-r--r--|0644|root/root|usr/share/calf/icons/LV2/Pitch.svg|
+-rw-r--r--|0644|root/root|usr/share/calf/icons/LV2/Reverb.svg|
+-rw-r--r--|0644|root/root|usr/share/calf/icons/LV2/Simulator.svg|
+-rw-r--r--|0644|root/root|usr/share/calf/icons/LV2/Spatial.svg|
+-rw-r--r--|0644|root/root|usr/share/calf/icons/LV2/Spectral.svg|
+-rw-r--r--|0644|root/root|usr/share/calf/icons/LV2/Utility.svg|
+-rw-r--r--|0644|root/root|usr/share/calf/icons/LV2/Waveshaper.svg|
+-rw-r--r--|0644|root/root|usr/share/calf/knob1.png|
+-rw-r--r--|0644|root/root|usr/share/calf/knob2.png|
+-rw-r--r--|0644|root/root|usr/share/calf/knob3.png|
+-rw-r--r--|0644|root/root|usr/share/calf/knob4.png|
+-rw-r--r--|0644|root/root|usr/share/calf/knob5.png|
+-rw-r--r--|0644|root/root|usr/share/calf/light_bottom.png|
+-rw-r--r--|0644|root/root|usr/share/calf/light_top.png|
+-rw-r--r--|0644|root/root|usr/share/calf/logo_button.png|
+-rw-r--r--|0644|root/root|usr/share/calf/presets.xml|
+-rw-r--r--|0644|root/root|usr/share/calf/screw1.png|
+-rw-r--r--|0644|root/root|usr/share/calf/screw2.png|
+-rw-r--r--|0644|root/root|usr/share/calf/screw_black.png|
+-rw-r--r--|0644|root/root|usr/share/calf/screw_silver.png|
+-rw-r--r--|0644|root/root|usr/share/calf/side_d_e.png|
+-rw-r--r--|0644|root/root|usr/share/calf/side_d_ne.png|
+-rw-r--r--|0644|root/root|usr/share/calf/side_d_nw.png|
+-rw-r--r--|0644|root/root|usr/share/calf/side_d_se.png|
+-rw-r--r--|0644|root/root|usr/share/calf/side_d_sw.png|
+-rw-r--r--|0644|root/root|usr/share/calf/side_d_w.png|
+-rw-r--r--|0644|root/root|usr/share/calf/side_e_logo.png|
+-rw-r--r--|0644|root/root|usr/share/calf/side_e.png|
+-rw-r--r--|0644|root/root|usr/share/calf/side_ne.png|
+-rw-r--r--|0644|root/root|usr/share/calf/side_nw.png|
+-rw-r--r--|0644|root/root|usr/share/calf/side_se.png|
+-rw-r--r--|0644|root/root|usr/share/calf/side_sw.png|
+-rw-r--r--|0644|root/root|usr/share/calf/side_w.png|
+-rw-r--r--|0644|root/root|usr/share/calf/slider1-horiz.png|
+-rw-r--r--|0644|root/root|usr/share/calf/slider1-horiz-prelight.png|
+-rw-r--r--|0644|root/root|usr/share/calf/slider1-vert.png|
+-rw-r--r--|0644|root/root|usr/share/calf/slider1-vert-prelight.png|
+-rw-r--r--|0644|root/root|usr/share/calf/slider2-horiz.png|
+-rw-r--r--|0644|root/root|usr/share/calf/slider2-horiz-prelight.png|
+-rw-r--r--|0644|root/root|usr/share/calf/slider2-vert.png|
+-rw-r--r--|0644|root/root|usr/share/calf/slider2-vert-prelight.png|
+-rw-r--r--|0644|root/root|usr/share/calf/tap_active.png|
+-rw-r--r--|0644|root/root|usr/share/calf/tap_inactive.png|
+-rw-r--r--|0644|root/root|usr/share/calf/tap_prelight.png|
+-rw-r--r--|0644|root/root|usr/share/calf/toggle0_silver.png|
+-rw-r--r--|0644|root/root|usr/share/calf/toggle1_silver.png|
+-rw-r--r--|0644|root/root|usr/share/calf/toggle2_silver.png|
+-rw-r--r--|0644|root/root|usr/share/calf/tubeH1.png|
+-rw-r--r--|0644|root/root|usr/share/calf/tubeH2.png|
+-rw-r--r--|0644|root/root|usr/share/calf/tubeV1.png|
+-rw-r--r--|0644|root/root|usr/share/calf/tubeV2.png|
+drwxr-xr-x|0755|root/root|usr/share/icons|
+drwxr-xr-x|0755|root/root|usr/share/icons/hicolor|
+drwxr-xr-x|0755|root/root|usr/share/icons/hicolor/128x128|
+drwxr-xr-x|0755|root/root|usr/share/icons/hicolor/128x128/apps|
+-rw-r--r--|0644|root/root|usr/share/icons/hicolor/128x128/apps/calf_plugin.png|
+-rw-r--r--|0644|root/root|usr/share/icons/hicolor/128x128/apps/calf.png|
+drwxr-xr-x|0755|root/root|usr/share/icons/hicolor/16x16|
+drwxr-xr-x|0755|root/root|usr/share/icons/hicolor/16x16/apps|
+-rw-r--r--|0644|root/root|usr/share/icons/hicolor/16x16/apps/calf_plugin.png|
+-rw-r--r--|0644|root/root|usr/share/icons/hicolor/16x16/apps/calf.png|
+drwxr-xr-x|0755|root/root|usr/share/icons/hicolor/22x22|
+drwxr-xr-x|0755|root/root|usr/share/icons/hicolor/22x22/apps|
+-rw-r--r--|0644|root/root|usr/share/icons/hicolor/22x22/apps/calf_plugin.png|
+-rw-r--r--|0644|root/root|usr/share/icons/hicolor/22x22/apps/calf.png|
+drwxr-xr-x|0755|root/root|usr/share/icons/hicolor/24x24|
+drwxr-xr-x|0755|root/root|usr/share/icons/hicolor/24x24/apps|
+-rw-r--r--|0644|root/root|usr/share/icons/hicolor/24x24/apps/calf_plugin.png|
+-rw-r--r--|0644|root/root|usr/share/icons/hicolor/24x24/apps/calf.png|
+drwxr-xr-x|0755|root/root|usr/share/icons/hicolor/256x256|
+drwxr-xr-x|0755|root/root|usr/share/icons/hicolor/256x256/apps|
+-rw-r--r--|0644|root/root|usr/share/icons/hicolor/256x256/apps/calf_plugin.png|
+-rw-r--r--|0644|root/root|usr/share/icons/hicolor/256x256/apps/calf.png|
+drwxr-xr-x|0755|root/root|usr/share/icons/hicolor/32x32|
+drwxr-xr-x|0755|root/root|usr/share/icons/hicolor/32x32/apps|
+-rw-r--r--|0644|root/root|usr/share/icons/hicolor/32x32/apps/calf_plugin.png|
+-rw-r--r--|0644|root/root|usr/share/icons/hicolor/32x32/apps/calf.png|
+drwxr-xr-x|0755|root/root|usr/share/icons/hicolor/48x48|
+drwxr-xr-x|0755|root/root|usr/share/icons/hicolor/48x48/apps|
+-rw-r--r--|0644|root/root|usr/share/icons/hicolor/48x48/apps/calf_plugin.png|
+-rw-r--r--|0644|root/root|usr/share/icons/hicolor/48x48/apps/calf.png|
+drwxr-xr-x|0755|root/root|usr/share/icons/hicolor/64x64|
+drwxr-xr-x|0755|root/root|usr/share/icons/hicolor/64x64/apps|
+-rw-r--r--|0644|root/root|usr/share/icons/hicolor/64x64/apps/calf_plugin.png|
+-rw-r--r--|0644|root/root|usr/share/icons/hicolor/64x64/apps/calf.png|
+drwxr-xr-x|0755|root/root|usr/share/icons/hicolor/scalable|
+drwxr-xr-x|0755|root/root|usr/share/icons/hicolor/scalable/apps|
+-rw-r--r--|0644|root/root|usr/share/icons/hicolor/scalable/apps/calf_plugin.svg|
+-rw-r--r--|0644|root/root|usr/share/icons/hicolor/scalable/apps/calf.svg|

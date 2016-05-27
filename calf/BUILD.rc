@@ -1,0 +1,25 @@
+. ../sukkolib.rc
+
+BRIEF='LV2 Plugins'
+PROJECT=http://calf-studio-gear.org
+RELEASE=0.0.60pre5
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://calf-studio-gear.org/files/$NAME-$RELEASE.tar.gz
+)
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS
+	--enable-experimental
+	--enable-sse
+	--with-lv2-dir'='$LIBDIR/lv2
+)
+
+fn docinst {
+	std_docinst
+
+	mv $PKG/usr/share/doc/calf $DOC/html
+	rmdir $PKG/usr/share/doc
+}
