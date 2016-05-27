@@ -4,7 +4,7 @@ BUILDSYSTEM=waf
 
 BRIEF='A lightweight C library for loading and wrapping LV2 plugin UIs'
 PROJECT=http://drobilla.net/software/suil/
-RELEASE=0.6.16
+RELEASE=0.8.2
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
