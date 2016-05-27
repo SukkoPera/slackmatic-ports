@@ -2,10 +2,17 @@
 
 BRIEF='A real-time software synthesizer based on the SoundFont 2 specifications'
 PROJECT=http://sourceforge.net/apps/trac/fluidsynth/
-RELEASE=1.1.1
+RELEASE=1.1.6
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
+BUILDSYSTEM=autotools
 
 SOURCE=(
 	$SF/$NAME/$NAME-$RELEASE.tar.gz
+)
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS
+	--disable-oss-support
+	--enable-ladspa
 )
