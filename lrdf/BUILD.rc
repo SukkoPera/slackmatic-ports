@@ -2,7 +2,7 @@
 
 BRIEF='A lightweight RDF library for accessing plugin metadata in the LADSPA plugin system'
 PROJECT=https://github.com/swh/LRDF
-RELEASE=20131004
+RELEASE=20150527
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDDIR=LRDF-master
