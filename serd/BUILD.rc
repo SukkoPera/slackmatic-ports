@@ -2,7 +2,7 @@
 
 BRIEF='A lightweight C library for RDF syntax'
 PROJECT=http://drobilla.net/software/serd/
-RELEASE=0.18.2
+RELEASE=0.22.0
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDSYSTEM=waf
