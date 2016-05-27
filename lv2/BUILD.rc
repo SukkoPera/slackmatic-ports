@@ -2,13 +2,18 @@
 
 BRIEF='A portable plugin standard for audio systems'
 PROJECT=http://lv2plug.in
-RELEASE=1.8.0
+RELEASE=1.12.0
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDSYSTEM=waf
 
 SOURCE=(
 	http://lv2plug.in/spec/$NAME-$RELEASE.tar.bz2
+)
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS_WAF
+	--lv2dir'='$LIBDIR/lv2 
 )
 
 #DOCS=(
