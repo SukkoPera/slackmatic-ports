@@ -2,12 +2,12 @@
 
 BRIEF='A tool designed for the extraction of annotations from audio signals'
 PROJECT=http://aubio.org
-RELEASE=0.3.2
+RELEASE=0.4.2
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
 SOURCE=(
-	http://aubio.org/pub/$NAME-$RELEASE.tar.gz
+	http://aubio.org/pub/$NAME-$RELEASE.tar.bz2
 )
 
 fn configure {
@@ -25,5 +25,9 @@ fn docinst {
 	_DOC=()
 
 	std_docinst
+	mv $PKG/usr/share/doc/libaubio-doc/html/ $PKG/usr/doc
+	rmdir $PKG/usr/share/doc/libaubio-doc
+	rmdir $PKG/usr/share/doc	
+	rmdir $PKG/usr/share
 }
 
