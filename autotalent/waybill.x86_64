@@ -1,0 +1,9 @@
+drwxr-xr-x|0755|root/root|usr|
+drwxr-xr-x|0755|root/root|usr/doc|
+drwxr-xr-x|0755|root/root|usr/doc/autotalent-0.2|
+-rw-r--r--|0644|root/root|usr/doc/autotalent-0.2/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/autotalent-0.2/COPYING|
+-rw-r--r--|0644|root/root|usr/doc/autotalent-0.2/README|
+drwxr-xr-x|0755|root/root|usr/lib64|
+drwxr-xr-x|0755|root/root|usr/lib64/ladspa|
+-rwxr-xr-x|0755|root/root|usr/lib64/ladspa/autotalent.so|

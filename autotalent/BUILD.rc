@@ -1,0 +1,15 @@
+. ../sukkolib.rc
+
+BRIEF='A real-time pitch correction LADSPA plugin'
+PROJECT=http://tombaran.info/autotalent.html
+RELEASE=0.2
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://tombaran.info/$NAME-$RELEASE.tar.gz
+)
+
+fn inst {
+	make install INSTALL_PLUGINS_DIR'='$PKG/$LIBDIR/ladspa
+}
