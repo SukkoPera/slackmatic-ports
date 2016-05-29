@@ -2,23 +2,14 @@
 
 BRIEF='An advanced drum machine'
 PROJECT=http://www.hydrogen-music.org
-RELEASE=0.9.6beta3
-TRELEASE=0.9.6-beta3
+RELEASE=0.9.7beta2
+TRELEASE=0.9.7-beta2
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDDIR=$NAME-$TRELEASE
 
 SOURCE=(
-	MYFETCH:$NAME-$TRELEASE.tar.gz
-)
-
-CONFOPTS=(
-	$DEFAULT_CONFOPTS_CMAKE
-	-DWANT_LRDF'='ON
-)
-
-PATCHES=(
-	hydrogen-0.9.6-use_lrdf_pkgconfig.patch
+	https://github.com/hydrogen-music/hydrogen/archive/$TRELEASE.tar.gz
 )
 
 DOCS=(
@@ -27,10 +18,6 @@ DOCS=(
 	INSTALL.txt
 	README.txt
 )
-
-fn myfetch {
-	wget https://github.com/hydrogen-music/$NAME/archive/$TRELEASE.tar.gz -O $NAME-$TRELEASE.tar.gz
-}
 
 fn inst {
 	std_inst
