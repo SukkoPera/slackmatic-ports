@@ -1,0 +1,14 @@
+drwxr-xr-x|0755|root/root|usr|
+drwxr-xr-x|0755|root/root|usr/bin|
+-rwxr-xr-x|0755|root/root|usr/bin/fdupes|
+drwxr-xr-x|0755|root/root|usr/doc|
+drwxr-xr-x|0755|root/root|usr/doc/fdupes-20160529|
+-rw-r--r--|0644|root/root|usr/doc/fdupes-20160529/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/fdupes-20160529/CHANGES|
+-rw-r--r--|0644|root/root|usr/doc/fdupes-20160529/CONTRIBUTORS|
+-rw-r--r--|0644|root/root|usr/doc/fdupes-20160529/INSTALL|
+-rw-r--r--|0644|root/root|usr/doc/fdupes-20160529/README|
+-rw-r--r--|0644|root/root|usr/doc/fdupes-20160529/TODO|
+drwxr-xr-x|0755|root/root|usr/man|
+drwxr-xr-x|0755|root/root|usr/man/man1|
+-rw-r--r--|0644|root/root|usr/man/man1/fdupes.1.gz|

@@ -1,0 +1,22 @@
+. ../sukkolib.rc
+
+BRIEF='A program for identifying or deleting duplicate files'
+PROJECT=https://github.com/adrianlopezroche/fdupes
+RELEASE=20160529
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=$NAME-master
+
+SOURCE=(
+	https://github.com/adrianlopezroche/fdupes/archive/master.zip
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	CHANGES
+	CONTRIBUTORS
+)
+
+fn inst {
+	make install DESTDIR'='$PKG PREFIX'='/usr MAN_BASE_DIR'='/usr/man
+}
