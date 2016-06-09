@@ -10,7 +10,9 @@ switch (`{arch}) {
 		LIBDIR=/usr/lib
 }
 
-DEFAULT_MAKEJOBS=3
+# Some more jobs than CPUs seems a good default
+NCPU=`{cat /proc/cpuinfo  | grep '^processor' | wc -l}
+DEFAULT_MAKEJOBS=`{expr $NCPU '*' 4 / 3}
 DEFAULT_DOCS=(ABOUT-NLS AUTHORS ChangeLog COPYING INSTALL MAINTAINERS NEWS README TODO)
 DEFAULT_CONFOPTS_AUTOTOOLS=(
 	--prefix'='/usr
@@ -22,7 +24,6 @@ DEFAULT_CONFOPTS_AUTOTOOLS=(
 )
 # How to specify libdir here?
 DEFAULT_CONFOPTS_CMAKE=(
-	-D CMAKE_INSTALL_PREFIX'='/usr
 )
 DEFAULT_CONFOPTS_SCONS=(
 	PREFIX'='/usr
@@ -313,6 +314,7 @@ fn build {
 ###############################################################################
 
 fn std_configure_autotools {
+	trace 'Running ./configure' $CONFOPTS
 	./configure $CONFOPTS || exit 100
 }
 
