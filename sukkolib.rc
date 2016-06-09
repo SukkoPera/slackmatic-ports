@@ -20,6 +20,7 @@ DEFAULT_CONFOPTS_AUTOTOOLS=(
 	--sysconfdir'='/etc
 	--localstatedir'='/var
 	--mandir'='/usr/man
+	--infodir'='/usr/info
 	--disable-dependency-tracking
 )
 # How to specify libdir here?
