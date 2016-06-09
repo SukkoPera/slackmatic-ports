@@ -1,0 +1,28 @@
+. ../sukkolib.rc
+
+BRIEF='Applicative protocol multiplexer'
+PROJECT=http://www.rutschle.net/tech/sslh.shtml
+RELEASE=1.18
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=$NAME-v$RELEASE
+MAKEJOBS=1
+
+SOURCE=(
+	http://www.rutschle.net/tech/sslh/$NAME-v$RELEASE.tar.gz
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	README.md
+)
+
+fn inst {
+	make install DESTDIR'='$PKG MANDIR'='/usr/man/man8
+
+	mkdir -p $PKG/etc/rc.d
+        sed -e 's+^PREFIX=+PREFIX=/usr+' scripts/etc.init.d.sslh > $PKG/etc/rc.d/rc.sslh
+	chmod 644 $PKG/etc/rc.d/rc.sslh
+
+	cp basic.cfg $PKG/etc/sslh.cfg
+}

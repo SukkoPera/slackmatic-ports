@@ -1,0 +1,17 @@
+drwxr-xr-x|0755|root/root|etc|
+drwxr-xr-x|0755|root/root|etc/rc.d|
+-rw-r--r--|0644|root/root|etc/rc.d/rc.sslh|
+-rw-r--r--|0644|root/root|etc/sslh.cfg|
+drwxr-xr-x|0755|root/root|usr|
+drwxr-xr-x|0755|root/root|usr/doc|
+drwxr-xr-x|0755|root/root|usr/doc/sslh-1.18|
+-rw-r--r--|0644|root/root|usr/doc/sslh-1.18/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/sslh-1.18/COPYING|
+-rw-r--r--|0644|root/root|usr/doc/sslh-1.18/ChangeLog|
+-rw-r--r--|0644|root/root|usr/doc/sslh-1.18/README.md|
+-rw-r--r--|0644|root/root|usr/doc/sslh-1.18/TODO|
+drwxr-xr-x|0755|root/root|usr/man|
+drwxr-xr-x|0755|root/root|usr/man/man8|
+-rw-r--r--|0644|root/root|usr/man/man8/sslh.8.gz|
+drwxr-xr-x|0755|root/root|usr/sbin|
+-rwxr-xr-x|0755|root/root|usr/sbin/sslh|
