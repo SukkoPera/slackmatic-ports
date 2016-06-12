@@ -2,11 +2,11 @@
 
 BRIEF='A VNC viewer widget for GTK'
 PROJECT=https://wiki.gnome.org/Projects/gtk-vnc
-RELEASE=0.5.3
+RELEASE=0.5.4
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
-# This was actually generated from git on 2014-12-28
+MAJORV=`{echo $RELEASE | sed 's:\.[0-9]$::'}
 SOURCE=(
-	http://x/$NAME-$RELEASE.tar.xz
+	https://download.gnome.org/sources/gtk-vnc/$MAJORV/$NAME-$RELEASE.tar.xz
 )
