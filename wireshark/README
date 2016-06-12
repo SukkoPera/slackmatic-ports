@@ -1,0 +1,10 @@
+To restrict usage of Wireshark to a group of users, run the following commands:
+
+# setcap 'CAP_NET_RAW+eip CAP_NET_ADMIN+eip' /usr/bin/dumpcap
+# groupadd wireshark
+# chgrp wireshark /usr/bin/dumpcap
+# chmod o-rx /usr/bin/dumpcap
+
+Now add the user you want to be able to run Wireshark to the wireshark group
+
+(setcap can be found in the libcap package)
