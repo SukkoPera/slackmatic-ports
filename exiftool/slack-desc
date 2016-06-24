@@ -1,0 +1,11 @@
+exiftool: exiftool (A platform-independent Perl library plus a command-line application for reading, writing and editing image meta information)
+exiftool:
+exiftool: This is a slackmatic port build of exiftool:
+exiftool: A platform-independent Perl library plus a command-line application for reading, writing and editing image meta information 
+exiftool:
+exiftool: For more information about the package, see the project website at:
+exiftool: http://www.sno.phy.queensu.ca/~phil/exiftool/
+exiftool:
+exiftool:
+exiftool: This slackmatic port was developed by:
+exiftool: slackware@sukkology.net
