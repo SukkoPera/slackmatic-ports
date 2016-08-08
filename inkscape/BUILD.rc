@@ -1,0 +1,19 @@
+. ../sukkolib.rc
+
+BRIEF='A professional vector graphics editor'
+PROJECT=https://inkscape.org
+RELEASE=0.91
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	https://inkscape.org/en/gallery/item/3860/$NAME-$RELEASE.tar.bz2
+)
+
+# Why do we have to set this manually???
+CXXFLAGS='-Wall -O2 -std=c++11'
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS
+	--enable-dbusapi
+)
