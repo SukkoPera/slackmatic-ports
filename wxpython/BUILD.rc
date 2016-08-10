@@ -1,0 +1,19 @@
+. ../sukkolib.rc
+
+BRIEF='A blending of the wxWidgets C++ class library with the Python programming language'
+PROJECT=https://wxpython.org/
+RELEASE=3.0.2.0
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+TNAME=wxPython
+BUILDDIR=$TNAME-src-$RELEASE
+BUILDSYSTEM=python
+
+SOURCE=(
+	http://downloads.sourceforge.net/project/$NAME/$TNAME/$RELEASE/$TNAME-src-$RELEASE.tar.bz2
+)
+
+fn configure {
+	cd wxPython
+	std_configure
+}
