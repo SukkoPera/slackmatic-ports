@@ -1,0 +1,13 @@
+. ../sukkolib.rc
+
+BRIEF='An elegant and simple HTTP library for Python'
+PROJECT=http://requests.readthedocs.io/en/master/
+RELEASE=2.11.1
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+TNAME=requests
+BUILDDIR=$TNAME-$RELEASE
+
+SOURCE=(
+	https://github.com/kennethreitz/$TNAME/archive/v$RELEASE.tar.gz
+)

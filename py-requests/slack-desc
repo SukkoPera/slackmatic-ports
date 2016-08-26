@@ -1,0 +1,11 @@
+py-requests: py-requests (An elegant and simple HTTP library for Python)
+py-requests:
+py-requests: This is a slackmatic port build of py-requests:
+py-requests: An elegant and simple HTTP library for Python 
+py-requests:
+py-requests: For more information about the package, see the project website at:
+py-requests: http://requests.readthedocs.io/en/master/
+py-requests:
+py-requests:
+py-requests: This slackmatic port was developed by:
+py-requests: slackware@sukkology.net
