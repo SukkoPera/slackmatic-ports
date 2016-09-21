@@ -1,0 +1,11 @@
+libftdi: libftdi (Open source library to talk to FTDI chips)
+libftdi:
+libftdi: This is a slackmatic port build of libftdi:
+libftdi: Open source library to talk to FTDI chips 
+libftdi:
+libftdi: For more information about the package, see the project website at:
+libftdi: https://www.intra2net.com/en/developer/libftdi/
+libftdi:
+libftdi:
+libftdi: This slackmatic port was developed by:
+libftdi: slackware@sukkology.net
