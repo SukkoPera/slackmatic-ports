@@ -2,7 +2,7 @@
 
 BRIEF='The world''s foremost network protocol analyzer'
 PROJECT=https://www.wireshark.org
-RELEASE=2.0.2
+RELEASE=2.2.1
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
