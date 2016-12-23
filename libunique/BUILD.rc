@@ -24,9 +24,9 @@ PATCHES=(
 	libunique-1.1.6-G_CONST_RETURN.patch
 )
 
-fn conf {
-	sed -e "s/-D.*_DISABLE_DEPRECATED//" -i unique/Makefile.am unique/Makefile.in || exit $status
+fn configure {
+	sed -e 's/-D.*_DISABLE_DEPRECATED//' -i unique/Makefile.am unique/Makefile.in || exit $status
 	
 	autoreconf -sfi
-	std_conf
+	std_configure
 }
