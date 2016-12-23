@@ -2,7 +2,7 @@
 
 BRIEF='An implementation of XMP'
 PROJECT=http://libopenraw.freedesktop.org/wiki/Exempi/
-RELEASE=2.2.2
+RELEASE=2.3.0
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
