@@ -1,0 +1,17 @@
+. ../sukkolib.rc
+
+BRIEF='Slackware Backgrounds/Wallpapers'
+PROJECT=http://slackware.sukkology.net
+RELEASE=20161224
+BUILD=1suk
+ARCH=noarch
+PACKAGER=slackware@sukkology.net
+
+#SOURCE=(
+#	$NAME-$RELEASE.tar.gz
+#)
+
+fn build {
+	mkdir -p $PKG/usr/share/backgrounds/slackware
+	cp $CWD/*slackware*g $PKG/usr/share/backgrounds/slackware
+}
