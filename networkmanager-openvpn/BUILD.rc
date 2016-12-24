@@ -2,7 +2,7 @@
 
 BRIEF='OpenVPN plugin for NetworkManager'
 PROJECT=https://wiki.gnome.org/Projects/NetworkManager
-RELEASE=1.0.8
+RELEASE=1.2.6
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 TMPNAME=NetworkManager-openvpn
