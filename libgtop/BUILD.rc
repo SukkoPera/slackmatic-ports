@@ -2,7 +2,7 @@
 
 BRIEF='A library to get system specific data such as CPU and Memory Usage'
 PROJECT=https://developer.gnome.org/libgtop/
-RELEASE=2.31.4
+RELEASE=2.34.1
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
