@@ -19,7 +19,13 @@ CONFOPTS=(
 	--disable-stickynotes
 )
 
+PATCHES=(
+	mate-applets-1.14.1-revert-upstream-cpupower-4.7-fix.patch
+)
+
 fn patches {
+	std_patches
+
 	# We want to use gucharmap from GTK+3 while compiling for GTK+2
 	sed -i 's:GUCHARMAP_API_VERSION=2$:GUCHARMAP_API_VERSION=2.90:' configure || exit $status
 }
