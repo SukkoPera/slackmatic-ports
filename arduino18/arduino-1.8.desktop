@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Arduino 1.8
+Comment=Arduino 1.8
+Exec=arduino-1.8
+Icon=arduino-1.8
+Categories=Development;IDE;
+Version=1.8
+Type=Application
+Terminal=false
+StartupNotify=true
