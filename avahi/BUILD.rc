@@ -1,0 +1,66 @@
+# You will need to have an "avahi" user and group on the target system
+# prior to building the avahi package.  See README.install in this directory
+# for more information and for setup notes.
+#
+# Many thanks to David Somero <dsomero@hotmail.com>
+
+
+. ../sukkolib.rc
+
+BRIEF='an implementation of Zeroconf'
+PROJECT=http://avahi.org/
+RELEASE=0.6.32
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://github.com/lathiat/avahi/releases/download/v$RELEASE/$NAME-$RELEASE.tar.gz
+)
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS
+	--docdir'='/usr/doc/$NAME-$RELEASE
+	--disable-static
+	--disable-monodoc
+	--disable-autoipd
+	--enable-python-dbus
+	--enable-pygtk
+	--enable-glib
+	--enable-dbus
+	--enable-python
+	--enable-gtk
+	--disable-qt3
+	--disable-qt4
+	--disable-mono
+	--enable-core-docs
+	--enable-compat-howl
+	--enable-compat-libdns_sd
+	--with-dbus-sys'='/etc/dbus-1/system.d
+	--with-avahi-user'='avahi
+	--with-avahi-group'='avahi
+	--with-avahi-priv-access-group'='root
+	--with-distro'='slackware
+	--program-prefix'='
+	--program-suffix'='
+)
+
+PATCHES=(
+	fixup_avahi-dnsconfd.action.patch
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	$CWD/README.install
+)
+
+fn build {
+	if (!grep -q '^avahi:' /etc/passwd || !grep -q '^avahi:' /etc/group) {
+		echo 'You must have an avahi user and group to run this script.'
+		echo 'Something like this (run as root) should suffice for most systems:'
+		echo '  # groupadd -g 214 avahi'
+		echo '  # useradd -u 214 -g 214 -c "Avahi" -d /dev/null -s /bin/false avahi'
+		exit 1
+	}
+
+	std_build
+}
