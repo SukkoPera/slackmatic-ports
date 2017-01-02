@@ -1,0 +1,11 @@
+libdaemon: libdaemon (A lightweight C library that eases the writing of UNIX daemons)
+libdaemon:
+libdaemon: This is a slackmatic port build of libdaemon:
+libdaemon: A lightweight C library that eases the writing of UNIX daemons 
+libdaemon:
+libdaemon: For more information about the package, see the project website at:
+libdaemon: http://0pointer.de/lennart/projects/libdaemon/
+libdaemon:
+libdaemon:
+libdaemon: This slackmatic port was developed by:
+libdaemon: slackware@sukkology.net

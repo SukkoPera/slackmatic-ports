@@ -1,0 +1,16 @@
+. ../sukkolib.rc
+
+BRIEF='A lightweight C library that eases the writing of UNIX daemons'
+PROJECT=http://0pointer.de/lennart/projects/libdaemon/
+RELEASE=0.14
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://0pointer.de/lennart/projects/libdaemon/$NAME-$RELEASE.tar.gz
+)
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS
+	--docdir'='/usr/doc/$NAME-$RELEASE
+)
