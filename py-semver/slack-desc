@@ -1,0 +1,11 @@
+py-semver: py-semver (Python package to work with Semantic Versioning)
+py-semver:
+py-semver: This is a slackmatic port build of py-semver:
+py-semver: Python package to work with Semantic Versioning 
+py-semver:
+py-semver: For more information about the package, see the project website at:
+py-semver: https://github.com/k-bx/python-semver
+py-semver:
+py-semver:
+py-semver: This slackmatic port was developed by:
+py-semver: slackware@sukkology.net

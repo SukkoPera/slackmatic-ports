@@ -1,0 +1,20 @@
+. ../sukkolib.rc
+
+BRIEF='Python package to work with Semantic Versioning'
+PROJECT=https://github.com/k-bx/python-semver
+RELEASE=2.7.3
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=python-semver-$RELEASE
+
+SOURCE=(
+	https://github.com/k-bx/python-semver/archive/$RELEASE.tar.gz
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	CHANGELOG
+	CONTRIBUTORS
+	LICENSE.txt
+	README.rst
+)
