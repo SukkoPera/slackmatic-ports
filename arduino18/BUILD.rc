@@ -2,7 +2,7 @@
 
 BRIEF='Open-Source Electronics Prototyping Platform'
 PROJECT=http://arduino.cc
-RELEASE=1.8.0
+RELEASE=1.8.1
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 OPT_NOSTRIP=1
