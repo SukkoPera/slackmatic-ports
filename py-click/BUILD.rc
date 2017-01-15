@@ -1,0 +1,19 @@
+. ../sukkolib.rc
+
+BRIEF='A Python package for creating beautiful command line interfaces'
+PROJECT=http://click.pocoo.org/5/
+RELEASE=5.1
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=click-$RELEASE
+
+SOURCE=(
+	https://github.com/pallets/click/archive/$RELEASE.tar.gz
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	CHANGES
+	CONTRIBUTING.rst
+	LICENSE
+)

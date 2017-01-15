@@ -1,0 +1,21 @@
+. ../sukkolib.rc
+
+BRIEF='Platform-independent file locking module'
+PROJECT=http://git.openstack.org/cgit/openstack/pylockfile
+RELEASE=0.12.2
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+TNAME=lockfile
+BUILDDIR=$TNAME-$RELEASE
+
+SOURCE=(
+	https://pypi.python.org/packages/17/47/72cb04a58a35ec495f96984dddb48232b551aafb95bde614605b754fe6f7/$TNAME-$RELEASE.tar.gz
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	ACKS
+	LICENSE
+	README.rst
+	RELEASE-NOTES
+)

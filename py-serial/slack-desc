@@ -1,0 +1,11 @@
+py-serial: py-serial (Python serial port access library)
+py-serial:
+py-serial: This is a slackmatic port build of py-serial:
+py-serial: Python serial port access library 
+py-serial:
+py-serial: For more information about the package, see the project website at:
+py-serial: https://github.com/pyserial/pyserial
+py-serial:
+py-serial:
+py-serial: This slackmatic port was developed by:
+py-serial: slackware@sukkology.net

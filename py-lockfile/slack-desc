@@ -1,0 +1,11 @@
+py-lockfile: py-lockfile (Platform-independent file locking module)
+py-lockfile:
+py-lockfile: This is a slackmatic port build of py-lockfile:
+py-lockfile: Platform-independent file locking module 
+py-lockfile:
+py-lockfile: For more information about the package, see the project website at:
+py-lockfile: http://git.openstack.org/cgit/openstack/pylockfile
+py-lockfile:
+py-lockfile:
+py-lockfile: This slackmatic port was developed by:
+py-lockfile: slackware@sukkology.net

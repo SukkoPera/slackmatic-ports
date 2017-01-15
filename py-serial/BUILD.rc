@@ -1,0 +1,14 @@
+. ../sukkolib.rc
+
+BRIEF='Python serial port access library'
+PROJECT=https://github.com/pyserial/pyserial
+RELEASE=3.2.1
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+TNAME=pyserial
+BUILDDIR=$TNAME-$RELEASE
+
+SOURCE=(
+	https://github.com/pyserial/pyserial/archive/v$RELEASE.tar.gz
+)
+

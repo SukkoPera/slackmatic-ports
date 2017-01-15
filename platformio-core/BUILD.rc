@@ -1,0 +1,27 @@
+. ../sukkolib.rc
+
+BRIEF='An open source ecosystem for IoT development'
+PROJECT=http://platformio.org
+RELEASE=3.2.1
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	https://github.com/platformio/platformio-core/archive/v$RELEASE.tar.gz
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	CONTRIBUTING.md
+	HISTORY.rst
+	LICENSE
+	README.rst 
+)
+
+fn inst {
+	std_inst
+
+	# udev rules
+	mkdir -p $PKG/lib/udev/rules.d
+	cp scripts/*.rules $PKG/lib/udev/rules.d
+}
