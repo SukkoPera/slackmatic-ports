@@ -1,0 +1,51 @@
+=== modified file 'bzrlib/lazy_regex.py'
+--- bzrlib/lazy_regex.py	2011-12-19 13:23:58 +0000
++++ bzrlib/lazy_regex.py	2017-01-15 20:36:48 +0000
+@@ -131,3 +131,13 @@
+     raise AssertionError(
+         "re.compile has already been overridden as lazy_compile, but this would" \
+         " cause infinite recursion")
++
++
++# re.finditer get confused if it receives a LazyRegex
++if getattr(re, 'finditer', None is not None):
++    def finditer_public(pattern, string, flags=0):
++        if isinstance(pattern, LazyRegex):
++            return pattern.finditer(string)
++        else:
++            return _real_re_compile(pattern, flags).finditer(string)
++re.finditer = finditer_public
+
+=== modified file 'bzrlib/tests/test_http.py'
+--- bzrlib/tests/test_http.py	2017-01-15 16:30:55 +0000
++++ bzrlib/tests/test_http.py	2017-01-15 20:38:48 +0000
+@@ -1,4 +1,4 @@
+-# Copyright (C) 2005-2012, 2015, 2016 Canonical Ltd
++# Copyright (C) 2005-2012, 2015, 2016, 2017 Canonical Ltd
+ #
+ # This program is free software; you can redistribute it and/or modify
+ # it under the terms of the GNU General Public License as published by
+
+=== modified file 'bzrlib/transport/http/_pycurl.py'
+--- bzrlib/transport/http/_pycurl.py	2017-01-15 16:30:55 +0000
++++ bzrlib/transport/http/_pycurl.py	2017-01-15 20:38:48 +0000
+@@ -1,4 +1,4 @@
+-# Copyright (C) 2006-2010 Canonical Ltd
++# Copyright (C) 2006-2011, 2017 Canonical Ltd
+ #
+ # This program is free software; you can redistribute it and/or modify
+ # it under the terms of the GNU General Public License as published by
+
+=== modified file 'doc/en/release-notes/bzr-2.7.txt'
+--- doc/en/release-notes/bzr-2.7.txt	2017-01-15 18:54:42 +0000
++++ doc/en/release-notes/bzr-2.7.txt	2017-01-15 20:38:48 +0000
+@@ -30,6 +30,9 @@
+ Bug Fixes
+ *********
+ 
++* Complete monkey-patching of re.finditer or LazyRegexps leak.
++  (Vincent Ladeuil, #1644003)
++
+ * 'acceptable_keys' from 'bazaar.conf' is now properly handled.
+   (Vincent Ladeuil, #1249732)
+

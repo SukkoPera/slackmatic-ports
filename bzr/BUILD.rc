@@ -1,0 +1,16 @@
+. ../sukkolib.rc
+
+BRIEF='The Bazaar version control system'
+PROJECT=http://bazaar.canonical.com/
+RELEASE=2.7.0
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+MAJORV=`{echo $RELEASE | sed 's:\.[0-9]$::'}
+SOURCE=(
+	https://launchpad.net/bzr/$MAJORV/$RELEASE/+download/$NAME-$RELEASE.tar.gz
+)
+
+PATCHES=(
+	lazy_regex.patch
+)
