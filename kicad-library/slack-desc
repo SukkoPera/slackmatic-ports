@@ -1,0 +1,11 @@
+kicad-library: kicad-library (The schematic and 3D libraries supported by KiCad team)
+kicad-library:
+kicad-library: This is a slackmatic port build of kicad-library:
+kicad-library: The schematic and 3D libraries supported by KiCad team 
+kicad-library:
+kicad-library: For more information about the package, see the project website at:
+kicad-library: https://github.com/KiCad/kicad-library
+kicad-library:
+kicad-library:
+kicad-library: This slackmatic port was developed by:
+kicad-library: slackware@sukkology.net
