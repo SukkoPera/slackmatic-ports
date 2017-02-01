@@ -1,0 +1,11 @@
+kicad-footprints: kicad-footprints (Component footprints for KiCad)
+kicad-footprints:
+kicad-footprints: This is a slackmatic port build of kicad-footprints:
+kicad-footprints: Component footprints for KiCad 
+kicad-footprints:
+kicad-footprints: For more information about the package, see the project website at:
+kicad-footprints: https://github.com/KiCad/kicad-library
+kicad-footprints:
+kicad-footprints:
+kicad-footprints: This slackmatic port was developed by:
+kicad-footprints: slackware@sukkology.net

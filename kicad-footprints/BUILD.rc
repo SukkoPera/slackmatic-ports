@@ -1,0 +1,27 @@
+. ../sukkolib.rc
+
+BRIEF='Component footprints for KiCad'
+PROJECT=https://github.com/KiCad/kicad-library
+RELEASE=4.0.5
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+OPT_NOSTRIP=1
+
+SOURCE=(
+	http://downloads.kicad-pcb.org/libraries/$NAME-$RELEASE.tar.gz
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	README.txt
+)
+
+fn build {
+	setup
+
+	mkdir -p $PKG/usr/share/kicad/modules
+
+	cp -a *.pretty $PKG/usr/share/kicad/modules || exit $status
+
+	std_docinst
+}
