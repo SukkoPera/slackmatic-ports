@@ -2,7 +2,7 @@
 
 BRIEF='A library for extracting fingerprints from any audio source'
 PROJECT=https://acoustid.org/chromaprint
-RELEASE=1.3.2
+RELEASE=1.4.2
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
@@ -13,13 +13,10 @@ SOURCE=(
 CONFOPTS=(
 	$DEFAULT_CONFOPTS_CMAKE
 	-DCMAKE_BUILD_TYPE'='Release
-	-DBUILD_EXAMPLES'='ON
+	-DBUILD_TOOLS'='ON
 
 	# Use FFmpeg
-	-DWITH_AVFFT'='ON
-
-	# If you prefer fftw3...
-#	-DWITH_FFTW3'='ON
+	-DFFT_LIB'='fftw3
 )
 
 # Guess library directory (shouldn't this be automatic?)
