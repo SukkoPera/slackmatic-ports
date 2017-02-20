@@ -1,0 +1,11 @@
+gdal: gdal (Geospatial Data Abstraction Library)
+gdal:
+gdal: This is a slackmatic port build of gdal:
+gdal: Geospatial Data Abstraction Library 
+gdal:
+gdal: For more information about the package, see the project website at:
+gdal: http://www.gdal.org/
+gdal:
+gdal:
+gdal: This slackmatic port was developed by:
+gdal: slackware@sukkology.net

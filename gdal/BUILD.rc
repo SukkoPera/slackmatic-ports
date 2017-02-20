@@ -1,0 +1,34 @@
+. ../sukkolib.rc
+
+BRIEF='Geospatial Data Abstraction Library'
+PROJECT=http://www.gdal.org/
+RELEASE=2.1.3
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDSYSTEM=autotools
+
+SOURCE=(
+	http://download.osgeo.org/gdal/$RELEASE/$NAME-$RELEASE.tar.xz
+)
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS
+	--with-lzma'='yes
+	--with-poppler'='yes
+	--with-opencl'='yes
+	--with-perl'='yes
+	--with-python'='yes
+	--with-php'='no
+)
+
+# PHP bindings fail compile :(
+
+DOCS=(
+	$DEFAULT_DOCS
+	COMMITERS
+	HOWTO-RELEASE
+	LICENSE.TXT
+	MIGRATION_GUIDE.TXT
+	PROVENANCE.TXT
+	VERSION
+)
