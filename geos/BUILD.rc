@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+BRIEF='Geometry Engine, Open Source'
+PROJECT=https://trac.osgeo.org/geos/
+RELEASE=3.6.1
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDSYSTEM=autotools
+
+SOURCE=(
+	http://download.osgeo.org/geos/$NAME-$RELEASE.tar.bz2
+)
