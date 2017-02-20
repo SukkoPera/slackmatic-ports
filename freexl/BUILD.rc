@@ -1,0 +1,11 @@
+. ../sukkolib.rc
+
+BRIEF='A library to extract valid data from within an Excel spreadsheet'
+PROJECT=https://www.gaia-gis.it/fossil/freexl/index
+RELEASE=1.0.2
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://www.gaia-gis.it/gaia-sins/$NAME-$RELEASE.tar.gz
+)
