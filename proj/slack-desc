@@ -1,0 +1,11 @@
+proj: proj (Convert longitude and latitude coordinates into cartesian coordinates)
+proj:
+proj: This is a slackmatic port build of proj:
+proj: Convert longitude and latitude coordinates into cartesian coordinates 
+proj:
+proj: For more information about the package, see the project website at:
+proj: http://proj4.org
+proj:
+proj:
+proj: This slackmatic port was developed by:
+proj: slackware@sukkology.net
