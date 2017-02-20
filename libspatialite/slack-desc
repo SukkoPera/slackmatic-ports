@@ -1,0 +1,11 @@
+libspatialite: libspatialite (Extend SQLite to support fully fledged Spatial SQL capabilities)
+libspatialite:
+libspatialite: This is a slackmatic port build of libspatialite:
+libspatialite: Extend SQLite to support fully fledged Spatial SQL capabilities 
+libspatialite:
+libspatialite: For more information about the package, see the project website at:
+libspatialite: https://www.gaia-gis.it/fossil/libspatialite/index
+libspatialite:
+libspatialite:
+libspatialite: This slackmatic port was developed by:
+libspatialite: slackware@sukkology.net
