@@ -1,0 +1,45 @@
+. ../sukkolib.rc
+
+BRIEF='Qt Widgets for Technical Applications'
+PROJECT=http://qwt.sourceforge.net/
+RELEASE=6.1.3
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDSYSTEM=makeonly
+
+SOURCE=(
+	$SF/$NAME/$RELEASE/$NAME-$RELEASE.tar.bz2
+)
+
+PATCHES=(
+	qwt-6.1.1-pc-destdir.patch
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	CHANGES-6.1
+)
+
+fn configure {
+#	sed -i 's:^QWT_INSTALL_PREFIX.*:QWT_INSTALL_PREFIX = /usr:' qwtconfig.pri || exit $status
+	sed -i -r 's:^\s+QWT_INSTALL_PREFIX.*local.*:QWT_INSTALL_PREFIX = /usr:' qwtconfig.pri || exit $status
+#	echo 'QWT_INSTALL_LIBS = ' $LIBDIR >> qwtconfig.pri
+#	echo 'QWT_INSTALL_HEADERS = /usr/lib64/qt/include/Qt' >> qwtconfig.pri
+	echo 'QWT_INSTALL_DOCS = '/usr/doc/$NAME-$RELEASE >> qwtconfig.pri
+	echo 'QWT_INSTALL_PLUGINS = '/usr/lib64/qt/plugins/designer >> qwtconfig.pri
+	echo 'QWT_INSTALL_FEATURES = '/usr/lib64/qt/mkspecs/features >> qwtconfig.pri
+
+	echo 'QWT_CONFIG += QwtPlot QwtWidgets QwtPkgConfig' >> qwtconfig.pri
+	echo 'QWT_CONFIG += QwtDesigner' >> qwtconfig.pri
+	echo 'QWT_CONFIG += QwtMathML' >> qwtconfig.pri
+	echo 'QWT_CONFIG += QwtOpenGL' >> qwtconfig.pri
+	echo 'QWT_CONFIG += QwtSvg' >> qwtconfig.pri
+	
+	qmake
+}
+
+fn inst {
+	make install INSTALL_ROOT'='$PKG
+
+	mv $DOC/man/ $PKG/usr || exit $status
+}
