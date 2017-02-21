@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+BRIEF='An extensible framework fox robust spatial indexing methods'
+PROJECT=https://libspatialindex.github.io
+RELEASE=1.8.5
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=$NAME-src-$RELEASE
+
+SOURCE=(
+	http://download.osgeo.org/libspatialindex/$NAME-src-$RELEASE.tar.bz2
+)
