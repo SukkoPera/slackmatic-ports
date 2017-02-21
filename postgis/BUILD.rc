@@ -1,0 +1,45 @@
+. ../sukkolib.rc
+
+BRIEF='A spatial database extender for PostgreSQL'
+PROJECT=http://www.postgis.net
+RELEASE=2.3.2
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDSYSTEM=autotools
+
+SOURCE=(
+	http://download.osgeo.org/postgis/source/$NAME-$RELEASE.tar.gz
+)
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS
+	--with-gui
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	CONTRIBUTING.md
+	CREDITS
+	LICENSE.TXT
+	MIGRATION
+	README.md
+	README.postgis
+	STYLE
+	authors.git
+	authors.svn
+)
+
+fn configure {
+	# Avoid conflict with internal variable $DOC
+	_DOCS=$DOCS
+	DOCS=()
+
+	std_configure
+}
+
+fn docinst {
+	DOCS=$_DOCS
+	_DOCS=()
+
+	std_docinst
+}

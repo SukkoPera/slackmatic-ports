@@ -1,0 +1,11 @@
+postgis: postgis (A spatial database extender for PostgreSQL)
+postgis:
+postgis: This is a slackmatic port build of postgis:
+postgis: A spatial database extender for PostgreSQL 
+postgis:
+postgis: For more information about the package, see the project website at:
+postgis: http://www.postgis.net
+postgis:
+postgis:
+postgis: This slackmatic port was developed by:
+postgis: slackware@sukkology.net
