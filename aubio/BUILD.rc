@@ -25,7 +25,7 @@ fn docinst {
 	_DOC=()
 
 	std_docinst
-	mv $PKG/usr/share/doc/libaubio-doc/html/ $PKG/usr/doc
+	mv $PKG/usr/share/doc/libaubio-doc/html/ $DOC
 	rmdir $PKG/usr/share/doc/libaubio-doc
 	rmdir $PKG/usr/share/doc	
 	rmdir $PKG/usr/share
