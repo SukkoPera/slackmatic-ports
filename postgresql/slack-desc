@@ -1,0 +1,11 @@
+postgresql: postgresql (A powerful, open source object-relational database system)
+postgresql:
+postgresql: This is a slackmatic port build of postgresql:
+postgresql: A powerful, open source object-relational database system 
+postgresql:
+postgresql: For more information about the package, see the project website at:
+postgresql: https://www.postgresql.org
+postgresql:
+postgresql:
+postgresql: This slackmatic port was developed by:
+postgresql: slackware@sukkology.net

@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+BRIEF='A powerful, open source object-relational database system'
+PROJECT=https://www.postgresql.org
+RELEASE=9.6.2
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDSYSTEM=autotools
+
+SOURCE=(
+	https://ftp.postgresql.org/pub/source/v$RELEASE/$NAME-$RELEASE.tar.bz2
+)
