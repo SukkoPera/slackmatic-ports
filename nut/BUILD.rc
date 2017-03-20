@@ -2,7 +2,7 @@
 
 BRIEF='Network-UPS Tools'
 PROJECT=http://www.networkupstools.org
-RELEASE=2.4.3
+RELEASE=2.7.4
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
