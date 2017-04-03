@@ -3,13 +3,13 @@ drwxr-xr-x|0755|root/root|usr/bin|
 -rwxr-xr-x|0755|root/root|usr/bin/mate-terminal|
 -rwxr-xr-x|0755|root/root|usr/bin/mate-terminal.wrapper|
 drwxr-xr-x|0755|root/root|usr/doc|
-drwxr-xr-x|0755|root/root|usr/doc/mate-terminal-1.14.1|
--rw-r--r--|0644|root/root|usr/doc/mate-terminal-1.14.1/AUTHORS|
--rw-r--r--|0644|root/root|usr/doc/mate-terminal-1.14.1/BUILD.rc|
--rw-r--r--|0644|root/root|usr/doc/mate-terminal-1.14.1/COPYING|
--rw-r--r--|0644|root/root|usr/doc/mate-terminal-1.14.1/ChangeLog|
--rw-r--r--|0644|root/root|usr/doc/mate-terminal-1.14.1/NEWS|
--rw-r--r--|0644|root/root|usr/doc/mate-terminal-1.14.1/README|
+drwxr-xr-x|0755|root/root|usr/doc/mate-terminal-1.18.0|
+-rw-r--r--|0644|root/root|usr/doc/mate-terminal-1.18.0/AUTHORS|
+-rw-r--r--|0644|root/root|usr/doc/mate-terminal-1.18.0/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/mate-terminal-1.18.0/COPYING|
+-rw-r--r--|0644|root/root|usr/doc/mate-terminal-1.18.0/ChangeLog|
+-rw-r--r--|0644|root/root|usr/doc/mate-terminal-1.18.0/NEWS|
+-rw-r--r--|0644|root/root|usr/doc/mate-terminal-1.18.0/README|
 drwxr-xr-x|0755|root/root|usr/man|
 drwxr-xr-x|0755|root/root|usr/man/man1|
 -rw-r--r--|0644|root/root|usr/man/man1/mate-terminal.1.gz|
@@ -46,6 +46,8 @@ drwxr-xr-x|0755|root/root|usr/share/help/cs/mate-terminal/figures|
 drwxr-xr-x|0755|root/root|usr/share/help/da|
 drwxr-xr-x|0755|root/root|usr/share/help/da/mate-terminal|
 drwxr-xr-x|0755|root/root|usr/share/help/da/mate-terminal/figures|
+lrwxrwxrwx|0777|root/root|usr/share/help/da/mate-terminal/figures/mate-terminal-default.png|->|/usr/share/help/C/mate-terminal/figures/mate-terminal-default.png|
+lrwxrwxrwx|0777|root/root|usr/share/help/da/mate-terminal/figures/mate-terminal-tabbed.png|->|/usr/share/help/C/mate-terminal/figures/mate-terminal-tabbed.png|
 -rw-r--r--|0644|root/root|usr/share/help/da/mate-terminal/index.docbook|
 -rw-r--r--|0644|root/root|usr/share/help/da/mate-terminal/legal.xml|
 drwxr-xr-x|0755|root/root|usr/share/help/de|
@@ -65,6 +67,8 @@ drwxr-xr-x|0755|root/root|usr/share/help/el/mate-terminal/figures|
 drwxr-xr-x|0755|root/root|usr/share/help/en_GB|
 drwxr-xr-x|0755|root/root|usr/share/help/en_GB/mate-terminal|
 drwxr-xr-x|0755|root/root|usr/share/help/en_GB/mate-terminal/figures|
+lrwxrwxrwx|0777|root/root|usr/share/help/en_GB/mate-terminal/figures/mate-terminal-default.png|->|/usr/share/help/C/mate-terminal/figures/mate-terminal-default.png|
+lrwxrwxrwx|0777|root/root|usr/share/help/en_GB/mate-terminal/figures/mate-terminal-tabbed.png|->|/usr/share/help/C/mate-terminal/figures/mate-terminal-tabbed.png|
 -rw-r--r--|0644|root/root|usr/share/help/en_GB/mate-terminal/index.docbook|
 -rw-r--r--|0644|root/root|usr/share/help/en_GB/mate-terminal/legal.xml|
 drwxr-xr-x|0755|root/root|usr/share/help/es|
@@ -98,6 +102,8 @@ drwxr-xr-x|0755|root/root|usr/share/help/ko/mate-terminal/figures|
 drwxr-xr-x|0755|root/root|usr/share/help/oc|
 drwxr-xr-x|0755|root/root|usr/share/help/oc/mate-terminal|
 drwxr-xr-x|0755|root/root|usr/share/help/oc/mate-terminal/figures|
+lrwxrwxrwx|0777|root/root|usr/share/help/oc/mate-terminal/figures/mate-terminal-default.png|->|/usr/share/help/C/mate-terminal/figures/mate-terminal-default.png|
+lrwxrwxrwx|0777|root/root|usr/share/help/oc/mate-terminal/figures/mate-terminal-tabbed.png|->|/usr/share/help/C/mate-terminal/figures/mate-terminal-tabbed.png|
 -rw-r--r--|0644|root/root|usr/share/help/oc/mate-terminal/index.docbook|
 -rw-r--r--|0644|root/root|usr/share/help/oc/mate-terminal/legal.xml|
 drwxr-xr-x|0755|root/root|usr/share/help/pt_BR|
@@ -110,6 +116,8 @@ drwxr-xr-x|0755|root/root|usr/share/help/pt_BR/mate-terminal/figures|
 drwxr-xr-x|0755|root/root|usr/share/help/ru|
 drwxr-xr-x|0755|root/root|usr/share/help/ru/mate-terminal|
 drwxr-xr-x|0755|root/root|usr/share/help/ru/mate-terminal/figures|
+lrwxrwxrwx|0777|root/root|usr/share/help/ru/mate-terminal/figures/mate-terminal-default.png|->|/usr/share/help/C/mate-terminal/figures/mate-terminal-default.png|
+lrwxrwxrwx|0777|root/root|usr/share/help/ru/mate-terminal/figures/mate-terminal-tabbed.png|->|/usr/share/help/C/mate-terminal/figures/mate-terminal-tabbed.png|
 -rw-r--r--|0644|root/root|usr/share/help/ru/mate-terminal/index.docbook|
 -rw-r--r--|0644|root/root|usr/share/help/ru/mate-terminal/legal.xml|
 drwxr-xr-x|0755|root/root|usr/share/help/sv|
@@ -129,6 +137,8 @@ drwxr-xr-x|0755|root/root|usr/share/help/uk/mate-terminal/figures|
 drwxr-xr-x|0755|root/root|usr/share/help/zh_CN|
 drwxr-xr-x|0755|root/root|usr/share/help/zh_CN/mate-terminal|
 drwxr-xr-x|0755|root/root|usr/share/help/zh_CN/mate-terminal/figures|
+lrwxrwxrwx|0777|root/root|usr/share/help/zh_CN/mate-terminal/figures/mate-terminal-default.png|->|/usr/share/help/C/mate-terminal/figures/mate-terminal-default.png|
+lrwxrwxrwx|0777|root/root|usr/share/help/zh_CN/mate-terminal/figures/mate-terminal-tabbed.png|->|/usr/share/help/C/mate-terminal/figures/mate-terminal-tabbed.png|
 -rw-r--r--|0644|root/root|usr/share/help/zh_CN/mate-terminal/index.docbook|
 -rw-r--r--|0644|root/root|usr/share/help/zh_CN/mate-terminal/legal.xml|
 drwxr-xr-x|0755|root/root|usr/share/locale|
@@ -286,6 +296,9 @@ drwxr-xr-x|0755|root/root|usr/share/locale/ko|
 drwxr-xr-x|0755|root/root|usr/share/locale/ko/LC_MESSAGES|
 -rw-r--r--|0644|root/root|usr/share/locale/ko/LC_MESSAGES/mate-terminal.mo|
 drwxr-xr-x|0755|root/root|usr/share/locale/ku|
+drwxr-xr-x|0755|root/root|usr/share/locale/ku_IQ|
+drwxr-xr-x|0755|root/root|usr/share/locale/ku_IQ/LC_MESSAGES|
+-rw-r--r--|0644|root/root|usr/share/locale/ku_IQ/LC_MESSAGES/mate-terminal.mo|
 drwxr-xr-x|0755|root/root|usr/share/locale/ku/LC_MESSAGES|
 -rw-r--r--|0644|root/root|usr/share/locale/ku/LC_MESSAGES/mate-terminal.mo|
 drwxr-xr-x|0755|root/root|usr/share/locale/ky|

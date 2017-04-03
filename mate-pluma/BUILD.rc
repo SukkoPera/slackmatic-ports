@@ -2,7 +2,7 @@
 
 BRIEF='MATE Desktop Environment'
 PROJECT=http://mate-desktop.org
-RELEASE=1.14.1
+RELEASE=1.18.0
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDDIR=pluma-$RELEASE
@@ -15,6 +15,4 @@ SOURCE=(
 CONFOPTS=(
 	$DEFAULT_CONFOPTS
 	--disable-schemas-compile
-#	--with-gtk'='3.0
-	--enable-python
 )

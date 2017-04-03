@@ -1,12 +1,12 @@
 drwxr-xr-x|0755|root/root|usr|
 drwxr-xr-x|0755|root/root|usr/doc|
-drwxr-xr-x|0755|root/root|usr/doc/mate-icon-theme-faenza-1.14.0|
--rw-r--r--|0644|root/root|usr/doc/mate-icon-theme-faenza-1.14.0/AUTHORS|
--rw-r--r--|0644|root/root|usr/doc/mate-icon-theme-faenza-1.14.0/BUILD.rc|
--rw-r--r--|0644|root/root|usr/doc/mate-icon-theme-faenza-1.14.0/COPYING|
--rw-r--r--|0644|root/root|usr/doc/mate-icon-theme-faenza-1.14.0/ChangeLog|
--rw-r--r--|0644|root/root|usr/doc/mate-icon-theme-faenza-1.14.0/NEWS|
--rw-r--r--|0644|root/root|usr/doc/mate-icon-theme-faenza-1.14.0/README|
+drwxr-xr-x|0755|root/root|usr/doc/mate-icon-theme-faenza-1.18.0|
+-rw-r--r--|0644|root/root|usr/doc/mate-icon-theme-faenza-1.18.0/AUTHORS|
+-rw-r--r--|0644|root/root|usr/doc/mate-icon-theme-faenza-1.18.0/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/mate-icon-theme-faenza-1.18.0/COPYING|
+-rw-r--r--|0644|root/root|usr/doc/mate-icon-theme-faenza-1.18.0/ChangeLog|
+-rw-r--r--|0644|root/root|usr/doc/mate-icon-theme-faenza-1.18.0/NEWS|
+-rw-r--r--|0644|root/root|usr/doc/mate-icon-theme-faenza-1.18.0/README|
 drwxr-xr-x|0755|root/root|usr/share|
 drwxr-xr-x|0755|root/root|usr/share/icons|
 drwxr-xr-x|0755|root/root|usr/share/icons/matefaenza|
@@ -1506,6 +1506,7 @@ lrwxrwxrwx|0777|root/root|usr/share/icons/matefaenza/apps/16/qtconfig-qt4.png|->
 -rwxr-xr-x|0755|root/root|usr/share/icons/matefaenza/apps/16/software-properties.png|
 -rwxr-xr-x|0755|root/root|usr/share/icons/matefaenza/apps/16/soundconverter.png|
 -rw-r--r--|0644|root/root|usr/share/icons/matefaenza/apps/16/sound-juicer.png|
+lrwxrwxrwx|0777|root/root|usr/share/icons/matefaenza/apps/16/spotify-client.png|->|spotify.png|
 -rwxr-xr-x|0755|root/root|usr/share/icons/matefaenza/apps/16/spotify.png|
 -rw-r--r--|0644|root/root|usr/share/icons/matefaenza/apps/16/stellarium.png|
 -rwxr-xr-x|0755|root/root|usr/share/icons/matefaenza/apps/16/stock_keyring.png|
@@ -1904,6 +1905,7 @@ lrwxrwxrwx|0777|root/root|usr/share/icons/matefaenza/apps/22/qtconfig-qt4.png|->
 -rwxr-xr-x|0755|root/root|usr/share/icons/matefaenza/apps/22/software-properties.png|
 -rwxr-xr-x|0755|root/root|usr/share/icons/matefaenza/apps/22/soundconverter.png|
 -rw-r--r--|0644|root/root|usr/share/icons/matefaenza/apps/22/sound-juicer.png|
+lrwxrwxrwx|0777|root/root|usr/share/icons/matefaenza/apps/22/spotify-client.png|->|spotify.png|
 -rwxr-xr-x|0755|root/root|usr/share/icons/matefaenza/apps/22/spotify.png|
 -rw-r--r--|0644|root/root|usr/share/icons/matefaenza/apps/22/stellarium.png|
 -rwxr-xr-x|0755|root/root|usr/share/icons/matefaenza/apps/22/stock_keyring.png|
@@ -2302,6 +2304,7 @@ lrwxrwxrwx|0777|root/root|usr/share/icons/matefaenza/apps/24/qtconfig-qt4.png|->
 -rwxr-xr-x|0755|root/root|usr/share/icons/matefaenza/apps/24/software-properties.png|
 -rwxr-xr-x|0755|root/root|usr/share/icons/matefaenza/apps/24/soundconverter.png|
 -rw-r--r--|0644|root/root|usr/share/icons/matefaenza/apps/24/sound-juicer.png|
+lrwxrwxrwx|0777|root/root|usr/share/icons/matefaenza/apps/24/spotify-client.png|->|spotify.png|
 -rwxr-xr-x|0755|root/root|usr/share/icons/matefaenza/apps/24/spotify.png|
 -rw-r--r--|0644|root/root|usr/share/icons/matefaenza/apps/24/stellarium.png|
 -rwxr-xr-x|0755|root/root|usr/share/icons/matefaenza/apps/24/stock_keyring.png|
@@ -2733,6 +2736,7 @@ lrwxrwxrwx|0777|root/root|usr/share/icons/matefaenza/apps/32/sauerbraten.xpm|->|
 -rwxr-xr-x|0755|root/root|usr/share/icons/matefaenza/apps/32/software-properties.png|
 -rwxr-xr-x|0755|root/root|usr/share/icons/matefaenza/apps/32/soundconverter.png|
 -rw-r--r--|0644|root/root|usr/share/icons/matefaenza/apps/32/sound-juicer.png|
+lrwxrwxrwx|0777|root/root|usr/share/icons/matefaenza/apps/32/spotify-client.png|->|spotify.png|
 -rwxr-xr-x|0755|root/root|usr/share/icons/matefaenza/apps/32/spotify.png|
 -rw-r--r--|0644|root/root|usr/share/icons/matefaenza/apps/32/stellarium.png|
 -rwxr-xr-x|0755|root/root|usr/share/icons/matefaenza/apps/32/stock_keyring.png|
@@ -3171,6 +3175,7 @@ lrwxrwxrwx|0777|root/root|usr/share/icons/matefaenza/apps/48/sauerbraten.xpm|->|
 -rwxr-xr-x|0755|root/root|usr/share/icons/matefaenza/apps/48/software-properties.png|
 -rwxr-xr-x|0755|root/root|usr/share/icons/matefaenza/apps/48/soundconverter.png|
 -rw-r--r--|0644|root/root|usr/share/icons/matefaenza/apps/48/sound-juicer.png|
+lrwxrwxrwx|0777|root/root|usr/share/icons/matefaenza/apps/48/spotify-client.png|->|spotify.png|
 -rwxr-xr-x|0755|root/root|usr/share/icons/matefaenza/apps/48/spotify.png|
 -rw-r--r--|0644|root/root|usr/share/icons/matefaenza/apps/48/stellarium.png|
 -rwxr-xr-x|0755|root/root|usr/share/icons/matefaenza/apps/48/stock_keyring.png|
@@ -3544,6 +3549,7 @@ lrwxrwxrwx|0777|root/root|usr/share/icons/matefaenza/apps/64/sauerbraten.xpm|->|
 -rwxr-xr-x|0755|root/root|usr/share/icons/matefaenza/apps/64/software-properties.png|
 -rwxr-xr-x|0755|root/root|usr/share/icons/matefaenza/apps/64/soundconverter.png|
 -rw-r--r--|0644|root/root|usr/share/icons/matefaenza/apps/64/sound-juicer.png|
+lrwxrwxrwx|0777|root/root|usr/share/icons/matefaenza/apps/64/spotify-client.png|->|spotify.png|
 -rwxr-xr-x|0755|root/root|usr/share/icons/matefaenza/apps/64/spotify.png|
 -rw-r--r--|0644|root/root|usr/share/icons/matefaenza/apps/64/stellarium.png|
 -rwxr-xr-x|0755|root/root|usr/share/icons/matefaenza/apps/64/stock_keyring.png|
@@ -3858,6 +3864,7 @@ lrwxrwxrwx|0777|root/root|usr/share/icons/matefaenza/apps/96/qtconfig-qt4.png|->
 -rwxr-xr-x|0755|root/root|usr/share/icons/matefaenza/apps/96/software-properties.png|
 -rwxr-xr-x|0755|root/root|usr/share/icons/matefaenza/apps/96/soundconverter.png|
 -rw-r--r--|0644|root/root|usr/share/icons/matefaenza/apps/96/sound-juicer.png|
+lrwxrwxrwx|0777|root/root|usr/share/icons/matefaenza/apps/96/spotify-client.png|->|spotify.png|
 -rwxr-xr-x|0755|root/root|usr/share/icons/matefaenza/apps/96/spotify.png|
 -rw-r--r--|0644|root/root|usr/share/icons/matefaenza/apps/96/stellarium.png|
 -rwxr-xr-x|0755|root/root|usr/share/icons/matefaenza/apps/96/stock_keyring.png|
@@ -4250,6 +4257,7 @@ lrwxrwxrwx|0777|root/root|usr/share/icons/matefaenza/apps/scalable/qtconfig-qt4.
 -rwxr-xr-x|0755|root/root|usr/share/icons/matefaenza/apps/scalable/software-properties.svg|
 -rwxr-xr-x|0755|root/root|usr/share/icons/matefaenza/apps/scalable/soundconverter.svg|
 -rw-r--r--|0644|root/root|usr/share/icons/matefaenza/apps/scalable/sound-juicer.svg|
+lrwxrwxrwx|0777|root/root|usr/share/icons/matefaenza/apps/scalable/spotify-client.svg|->|spotify.svg|
 -rwxr-xr-x|0755|root/root|usr/share/icons/matefaenza/apps/scalable/spotify.svg|
 -rw-r--r--|0644|root/root|usr/share/icons/matefaenza/apps/scalable/stellarium.svg|
 -rwxr-xr-x|0755|root/root|usr/share/icons/matefaenza/apps/scalable/stock_keyring.svg|
