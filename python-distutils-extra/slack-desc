@@ -1,0 +1,11 @@
+python-distutils-extra: python-distutils-extra (Easily integrate gettext support and themed icons into Python distutils)
+python-distutils-extra:
+python-distutils-extra: This is a slackmatic port build of python-distutils-extra:
+python-distutils-extra: Easily integrate gettext support and themed icons into Python distutils 
+python-distutils-extra:
+python-distutils-extra: For more information about the package, see the project website at:
+python-distutils-extra: https://launchpad.net/python-distutils-extra
+python-distutils-extra:
+python-distutils-extra:
+python-distutils-extra: This slackmatic port was developed by:
+python-distutils-extra: slackware@sukkology.net
