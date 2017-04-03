@@ -9,3 +9,8 @@ PACKAGER=slackware@sukkology.net
 SOURCE=(
 	http://galculator.mnim.org/downloads/$NAME-$RELEASE.tar.bz2
 )
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS
+	--enable-gtk3
+)
