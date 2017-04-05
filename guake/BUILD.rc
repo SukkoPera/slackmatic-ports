@@ -2,7 +2,7 @@
 
 BRIEF='Drop-down terminal for GNOME'
 PROJECT=https://github.com/Guake/guake
-RELEASE=0.8.3
+RELEASE=0.8.8
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDSYSTEM=autotools
