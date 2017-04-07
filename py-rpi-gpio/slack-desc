@@ -1,0 +1,11 @@
+py-rpi-gpio: py-rpi-gpio (A Python module to control the GPIO on a Raspberry Pi)
+py-rpi-gpio:
+py-rpi-gpio: This is a slackmatic port build of py-rpi-gpio:
+py-rpi-gpio: A Python module to control the GPIO on a Raspberry Pi 
+py-rpi-gpio:
+py-rpi-gpio: For more information about the package, see the project website at:
+py-rpi-gpio: https://sourceforge.net/projects/raspberry-gpio-python/
+py-rpi-gpio:
+py-rpi-gpio:
+py-rpi-gpio: This slackmatic port was developed by:
+py-rpi-gpio: slackware@sukkology.net

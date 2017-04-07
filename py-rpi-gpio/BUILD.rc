@@ -1,0 +1,21 @@
+. ../sukkolib.rc
+
+BRIEF='A Python module to control the GPIO on a Raspberry Pi'
+PROJECT=https://sourceforge.net/projects/raspberry-gpio-python/
+RELEASE=0.6.3
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+TNAME=RPi.GPIO
+BUILDDIR=$TNAME-$RELEASE
+
+SOURCE=(
+	https://sourceforge.net/projects/raspberry-gpio-python/files/$TNAME-$RELEASE.tar.gz
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	CHANGELOG.txt
+	INSTALL.txt
+	LICENCE.txt
+	README.txt
+)
