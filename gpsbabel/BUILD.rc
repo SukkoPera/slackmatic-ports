@@ -2,7 +2,7 @@
 
 BRIEF='Move data between popular GPS systems'
 PROJECT=http://www.gpsbabel.org
-RELEASE=1.5.3
+RELEASE=1.5.4
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 TRELEASE=`{echo $RELEASE | sed 's/\./_/g'}
@@ -10,6 +10,10 @@ BUILDDIR=$NAME-$NAME'_'$TRELEASE
 
 SOURCE=(
 	https://github.com/gpsbabel/gpsbabel/archive/$NAME'_'$TRELEASE.tar.gz
+)
+
+PATCHES=(
+	gpsbabel-1.5.4-qt4.patch
 )
 
 DOCS=(

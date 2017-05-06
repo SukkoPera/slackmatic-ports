@@ -1,0 +1,49 @@
+diff -ur gpsbabel-gpsbabel_1_5_4/Makefile.in gpsbabel-1.5.4.good/Makefile.in
+--- gpsbabel-gpsbabel_1_5_4/Makefile.in	2017-01-02 06:05:19.000000000 +0100
++++ gpsbabel-1.5.4.good/Makefile.in	2017-05-07 01:01:18.866018415 +0200
+@@ -81,7 +81,7 @@
+ 	vpl.o teletype.o jogmap.o bushnell.o bushnell_trl.o wintec_tes.o \
+ 	subrip.o garmin_xt.o garmin_fit.o lowranceusr4.o \
+ 	mtk_locus.o googledir.o mapbar_track.o f90g_track.o mapfactor.o energympro.o \
+-	mynav.o ggv_bin.o globalsat_sport.o geojson.o
++	mynav.o ggv_bin.o globalsat_sport.o
+ 
+ FMTS=@FMTS@
+ 
+diff -ur gpsbabel-gpsbabel_1_5_4/main.cc gpsbabel-1.5.4.good/main.cc
+--- gpsbabel-gpsbabel_1_5_4/main.cc	2017-01-02 06:05:19.000000000 +0100
++++ gpsbabel-1.5.4.good/main.cc	2017-05-07 01:01:43.611019904 +0200
+@@ -252,7 +252,7 @@
+ 
+   (void) new gpsbabel::UsAsciiCodec(); /* make sure a US-ASCII codec is available */
+ 
+-#if (QT_VERSION < QT_VERSION_CHECK(5, 2, 0))
++#if (QT_VERSION < QT_VERSION_CHECK(4, 8, 0))
+   #error This version of Qt is not supported.
+ #endif
+ 
+diff -ur gpsbabel-gpsbabel_1_5_4/vecs.cc gpsbabel-1.5.4.good/vecs.cc
+--- gpsbabel-gpsbabel_1_5_4/vecs.cc	2017-01-02 06:05:19.000000000 +0100
++++ gpsbabel-1.5.4.good/vecs.cc	2017-05-07 01:01:58.482020799 +0200
+@@ -54,7 +54,6 @@
+ extern ff_vecs_t gdb_vecs;
+ extern ff_vecs_t geoniche_vecs;
+ extern ff_vecs_t geo_vecs;
+-extern ff_vecs_t geojson_vecs;
+ extern ff_vecs_t globalsat_sport_vecs;
+ extern ff_vecs_t glogbook_vecs;
+ extern ff_vecs_t google_dir_vecs;
+@@ -1079,13 +1078,6 @@
+     NULL,
+   },
+   {
+-    &geojson_vecs,
+-    "geojson",
+-    "GeoJson",
+-    "json",
+-    NULL,
+-  },
+-  {
+     &ggv_bin_vecs,
+     "ggv_bin",
+     "Geogrid-Viewer binary overlay file (.ovl)",
