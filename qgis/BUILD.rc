@@ -2,7 +2,7 @@
 
 BRIEF='A Free and Open Source Geographic Information System'
 PROJECT=https://www.qgis.org
-RELEASE=2.18.3
+RELEASE=2.18.7
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
