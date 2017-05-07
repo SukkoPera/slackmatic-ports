@@ -23,6 +23,11 @@ CONFOPTS=(
 
 # PHP bindings fail compile :(
 
+PATCHES=(
+	gdal-2.0.2-jasper.patch
+	gdal-2.0.2-jasper2.patch
+)
+
 DOCS=(
 	$DEFAULT_DOCS
 	COMMITERS
