@@ -1,13 +1,13 @@
 drwxr-xr-x|0755|root/root|usr|
 drwxr-xr-x|0755|root/root|usr/doc|
-drwxr-xr-x|0755|root/root|usr/doc/mate-themes-3.22.8|
--rw-r--r--|0644|root/root|usr/doc/mate-themes-3.22.8/AUTHORS|
--rw-r--r--|0644|root/root|usr/doc/mate-themes-3.22.8/BUILD.rc|
--rw-r--r--|0644|root/root|usr/doc/mate-themes-3.22.8/COPYING|
--rw-r--r--|0644|root/root|usr/doc/mate-themes-3.22.8/ChangeLog|
--rw-r--r--|0644|root/root|usr/doc/mate-themes-3.22.8/INSTALL|
--rw-r--r--|0644|root/root|usr/doc/mate-themes-3.22.8/NEWS|
--rw-r--r--|0644|root/root|usr/doc/mate-themes-3.22.8/README|
+drwxr-xr-x|0755|root/root|usr/doc/mate-themes-3.22.12|
+-rw-r--r--|0644|root/root|usr/doc/mate-themes-3.22.12/AUTHORS|
+-rw-r--r--|0644|root/root|usr/doc/mate-themes-3.22.12/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/mate-themes-3.22.12/COPYING|
+-rw-r--r--|0644|root/root|usr/doc/mate-themes-3.22.12/ChangeLog|
+-rw-r--r--|0644|root/root|usr/doc/mate-themes-3.22.12/INSTALL|
+-rw-r--r--|0644|root/root|usr/doc/mate-themes-3.22.12/NEWS|
+-rw-r--r--|0644|root/root|usr/doc/mate-themes-3.22.12/README|
 drwxr-xr-x|0755|root/root|usr/share|
 drwxr-xr-x|0755|root/root|usr/share/icons|
 drwxr-xr-x|0755|root/root|usr/share/icons/ContrastHigh|
@@ -3395,6 +3395,7 @@ drwxr-xr-x|0755|root/root|usr/share/icons/mate/cursors|
 -rw-r--r--|0644|root/root|usr/share/icons/mate/cursors/bottom_tee|
 -rw-r--r--|0644|root/root|usr/share/icons/mate/cursors/c7088f0f3e6c8088236ef8e1e3e70000|
 -rw-r--r--|0644|root/root|usr/share/icons/mate/cursors/circle|
+-rw-r--r--|0644|root/root|usr/share/icons/mate/cursors/color-picker|
 -rw-r--r--|0644|root/root|usr/share/icons/mate/cursors/copy|
 -rw-r--r--|0644|root/root|usr/share/icons/mate/cursors/cross|
 -rw-r--r--|0644|root/root|usr/share/icons/mate/cursors/crossed_circle|
@@ -5159,6 +5160,7 @@ drwxr-xr-x|0755|root/root|usr/share/themes/TraditionalGreen/gtk-3.0/img|
 -rw-r--r--|0644|root/root|usr/share/themes/TraditionalGreen/gtk-3.0/img/menuitem-radio-hover.png|
 -rw-r--r--|0644|root/root|usr/share/themes/TraditionalGreen/gtk-3.0/img/menuitem-radio-insensitive.png|
 -rw-r--r--|0644|root/root|usr/share/themes/TraditionalGreen/gtk-3.0/img/menuitem-radio.png|
+-rw-r--r--|0644|root/root|usr/share/themes/TraditionalGreen/gtk-3.0/img/panel-grid.svg|
 -rw-r--r--|0644|root/root|usr/share/themes/TraditionalGreen/gtk-3.0/img/pane-separator-grip-horz.png|
 -rw-r--r--|0644|root/root|usr/share/themes/TraditionalGreen/gtk-3.0/img/pane-separator-grip-vert.png|
 -rw-r--r--|0644|root/root|usr/share/themes/TraditionalGreen/gtk-3.0/img/radio-checked-hover.png|
@@ -5228,6 +5230,7 @@ drwxr-xr-x|0755|root/root|usr/share/themes/TraditionalOk/gtk-3.0/img|
 -rw-r--r--|0644|root/root|usr/share/themes/TraditionalOk/gtk-3.0/img/menuitem-radio-hover.png|
 -rw-r--r--|0644|root/root|usr/share/themes/TraditionalOk/gtk-3.0/img/menuitem-radio-insensitive.png|
 -rw-r--r--|0644|root/root|usr/share/themes/TraditionalOk/gtk-3.0/img/menuitem-radio.png|
+-rw-r--r--|0644|root/root|usr/share/themes/TraditionalOk/gtk-3.0/img/panel-grid.svg|
 -rw-r--r--|0644|root/root|usr/share/themes/TraditionalOk/gtk-3.0/img/pane-separator-grip-horz.png|
 -rw-r--r--|0644|root/root|usr/share/themes/TraditionalOk/gtk-3.0/img/pane-separator-grip-vert.png|
 -rw-r--r--|0644|root/root|usr/share/themes/TraditionalOk/gtk-3.0/img/radio-checked-hover.png|
