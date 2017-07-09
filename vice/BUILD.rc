@@ -1,0 +1,19 @@
+. ../sukkolib.rc
+
+BRIEF='The Versatile Commodore Emulator'
+PROJECT=http://vice-emu.sourceforge.net/
+RELEASE=3.1
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	https://downloads.sourceforge.net/project/vice-emu/releases/$NAME-$RELEASE.tar.gz
+)
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS
+	--without-oss
+	--with-sdlsound
+	--enable-sdlui
+	--enable-vte
+)
