@@ -2,7 +2,7 @@
 
 BRIEF='A set of tools to create, alter and inspect Matroska files'
 PROJECT=https://www.bunkus.org/videotools/mkvtoolnix/
-RELEASE=8.2.0
+RELEASE=13.0.0
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDSYSTEM=drake	# Unsupported, implement manually
@@ -14,9 +14,6 @@ SOURCE=(
 CONFOPTS=(
 	$DEFAULT_CONFOPTS
 	--docdir'='/usr/doc/$NAME-$RELEASE
-	--enable-gui
-	--enable-wxwidgets
-	--disable-qt
 )
 
 fn configure {
@@ -31,10 +28,10 @@ fn compile {
 	}
 	trace 'Using '$MAKEJOBS' parallel job(s) for compiling, if possible'
 
-	./drake -j $MAKEJOBS || exit 101
+	rake -j $MAKEJOBS || exit 101
 }
 
 fn inst {
-	./drake DESTDIR'='$PKG install || exit 102
+	rake DESTDIR'='$PKG install || exit 102
 }
 
