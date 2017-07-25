@@ -1,0 +1,17 @@
+. ../sukkolib.rc
+
+BRIEF='The most efficient usenet downloader'
+PROJECT=https://nzbget.net/
+RELEASE=19.1
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	https://github.com/nzbget/nzbget/releases/download/v$RELEASE/$NAME-$RELEASE-src.tar.gz
+)
+
+fn docinst {
+	std_docinst
+
+	rm -rf $PKG/usr/share/doc
+}
