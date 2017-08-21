@@ -2,9 +2,10 @@
 
 BRIEF='An image format that does lossy compression of digital photos'
 PROJECT=https://developers.google.com/speed/webp/
-RELEASE=0.4.1
+RELEASE=0.6.0
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
+BUILDSYSTEM=autotools
 
 SOURCE=(
 	http://downloads.webmproject.org/releases/webp/$NAME-$RELEASE.tar.gz
@@ -16,3 +17,4 @@ CONFOPTS=(
 	--enable-libwebpdemux
 	--enable-libwebpdecoder
 )
+
