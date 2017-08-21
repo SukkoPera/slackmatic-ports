@@ -2,7 +2,7 @@
 
 BRIEF='File data recovery software'
 PROJECT=http://www.cgsecurity.org/wiki/PhotoRec
-RELEASE=6.13
+RELEASE=7.0
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
