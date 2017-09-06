@@ -2,7 +2,7 @@
 
 BRIEF='A library for registering global key bindings, for gtk-based applications'
 PROJECT=https://github.com/engla/keybinder
-RELEASE=0.3.0
+RELEASE=0.3.1
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDSYSTEM=autotools

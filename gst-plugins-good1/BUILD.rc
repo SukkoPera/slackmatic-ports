@@ -2,7 +2,7 @@
 
 BRIEF='A library for constructing graphs of media-handling components'
 PROJECT=http://gstreamer.freedesktop.org/
-RELEASE=1.6.1
+RELEASE=1.6.2
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 TNAME=gst-plugins-good
@@ -15,6 +15,4 @@ SOURCE=(
 CONFOPTS=(
 	$DEFAULT_CONFOPTS
 	--enable-introspection'='yes
-#	--with-package-name="\"Dropline Gnome GStreamer Base Plugins ${VERSION}"\"
-#	--with-package-origin="\"http://www.droplinegnome.org"\"
 )

@@ -8,7 +8,7 @@ drwxr-xr-x|0755|root/root|usr/bin|
 -rwxr-xr-x|0755|root/root|usr/bin/jack_control|
 -rwxr-xr-x|0755|root/root|usr/bin/jack_cpu|
 -rwxr-xr-x|0755|root/root|usr/bin/jack_cpu_load|
--rwxr-xr-x|0755|root/root|usr/bin/jackd|
+-rwxr-xr-x|0755|root/root|usr/bin/jackdbus|
 lrwxrwxrwx|0777|root/root|usr/bin/jack_disconnect|->|jack_connect|
 -rwxr-xr-x|0755|root/root|usr/bin/jack_evmon|
 -rwxr-xr-x|0755|root/root|usr/bin/jack_freewheel|
@@ -112,3 +112,7 @@ drwxr-xr-x|0755|root/root|usr/man/man1|
 -rw-r--r--|0644|root/root|usr/man/man1/jack_transport.1.gz|
 -rw-r--r--|0644|root/root|usr/man/man1/jack_unload.1.gz|
 -rw-r--r--|0644|root/root|usr/man/man1/jack_wait.1.gz|
+drwxr-xr-x|0755|root/root|usr/share|
+drwxr-xr-x|0755|root/root|usr/share/dbus-1|
+drwxr-xr-x|0755|root/root|usr/share/dbus-1/services|
+-rw-r--r--|0644|root/root|usr/share/dbus-1/services/org.jackaudio.service|

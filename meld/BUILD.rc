@@ -2,7 +2,7 @@
 
 BRIEF='A visual diff and merge tool'
 PROJECT=http://meld.sourceforge.net
-RELEASE=1.8.6
+RELEASE=3.16.4
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
@@ -16,7 +16,7 @@ DOCS=(
 	MAINTAINERS
 )
 
-fn build {
+fn buildZ {
 	setup
 
 	# don't install anything to /usr/share/doc/meld

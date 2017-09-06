@@ -9,7 +9,7 @@ BUILDDIR=jstest-gtk-master
 
 # Please download ZIP and rename manually from github
 SOURCE=(
-	http://x/$NAME-$RELEASE.zip
+	https://github.com/Grumbel/jstest-gtk/archive/master.zip
 )
 
 DOCS=(

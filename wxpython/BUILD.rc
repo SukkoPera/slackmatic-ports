@@ -3,7 +3,7 @@
 BRIEF='A blending of the wxWidgets C++ class library with the Python programming language'
 PROJECT=https://wxpython.org/
 RELEASE=3.0.2.0
-BUILD=1suk_$SLCKVER
+BUILD=2suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 TNAME=wxPython
 BUILDDIR=$TNAME-src-$RELEASE

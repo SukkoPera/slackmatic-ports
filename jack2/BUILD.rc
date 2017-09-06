@@ -5,7 +5,7 @@ BUILDSYSTEM=waf
 BRIEF='A system for handling real-time, low latency audio (and MIDI)'
 PROJECT=http://jackaudio.org
 RELEASE=1.9.10
-BUILD=1suk_$SLCKVER
+BUILD=2suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 TNAME=jack
 BUILDDIR=$TNAME-$RELEASE
@@ -29,7 +29,8 @@ CONFOPTS=(
 	--prefix'='/usr
 	--libdir'='$LIBDIR
 	--mandir'='/usr/man/man1
-	--classic
+	--dbus
+	--enable-pkg-config-dbus-service-dir
 	--alsa
 )
 
