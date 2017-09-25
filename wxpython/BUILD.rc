@@ -3,7 +3,7 @@
 BRIEF='A blending of the wxWidgets C++ class library with the Python programming language'
 PROJECT=https://wxpython.org/
 RELEASE=3.0.2.0
-BUILD=2suk_$SLCKVER
+BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 TNAME=wxPython
 BUILDDIR=$TNAME-src-$RELEASE
@@ -16,4 +16,12 @@ SOURCE=(
 fn configure {
 	cd wxPython
 	std_configure
+}
+
+fn compile {
+	python setup.py build WX_CONFIG'='/usr/bin/wx-config-3 || exit 101
+}
+
+fn inst {
+	python setup.py install WX_CONFIG'='/usr/bin/wx-config-3 --root $PKG || exit 102
 }
