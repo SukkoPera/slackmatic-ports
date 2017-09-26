@@ -2,7 +2,7 @@
 
 BRIEF='The schematic and 3D libraries supported by KiCad team'
 PROJECT=https://github.com/KiCad/kicad-library
-RELEASE=4.0.6
+RELEASE=4.0.7
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
