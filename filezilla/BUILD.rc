@@ -2,7 +2,7 @@
 
 BRIEF='The free FTP solution'
 PROJECT=http://filezilla-project.org
-RELEASE=3.17.0
+RELEASE=3.28.0
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
