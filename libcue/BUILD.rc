@@ -7,6 +7,5 @@ BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
 SOURCE=(
-	#$SF/$NAME-$RELEASE.tar.bz2
-	http://pkgs.fedoraproject.org/lookaside/pkgs/libcue/libcue-1.4.0.tar.bz2/5f5045f00e6ac92d9a057fe5b0982c69/$NAME-$RELEASE.tar.bz2
+	https://github.com/lipnitsk/libcue/releases/download/v$RELEASE/$NAME-$RELEASE.tar.bz2
 )
