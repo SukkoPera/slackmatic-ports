@@ -2,22 +2,23 @@
 
 BRIEF='A HTML/XML parser designed for quick turnaround projects like screen-scraping'
 PROJECT=http://www.crummy.com/software/BeautifulSoup/
-RELEASE=3.1.0.1
+RELEASE=4.6.0
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
-BUILDDIR=BeautifulSoup-$RELEASE
+BUILDDIR=beautifulsoup4-$RELEASE
 DOCS=(
 	$DEFAULT_DOCS
 	CHANGELOG
 )
 
+MAJORV=`{echo $RELEASE | sed 's:\.[0-9]$::'}
 SOURCE=(
-	http://www.crummy.com/software/BeautifulSoup/download/BeautifulSoup-$RELEASE.tar.gz
+	http://www.crummy.com/software/BeautifulSoup/bs4/download/$MAJORV/beautifulsoup4-$RELEASE.tar.gz
 )
 
-fn build {
-        std_build_python
+#fn build {
+ #       std_build_python
 
 	# These binaries should not do into the package
-	rm -rf $PKG/usr/bin
-}
+#	rm -rf $PKG/usr/bin
+#}
