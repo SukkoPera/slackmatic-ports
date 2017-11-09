@@ -1,0 +1,53 @@
+. ../sukkolib.rc
+
+# Many thanks to the Gentoo folks!
+
+BRIEF='A tracker library with support for IT, XM, S3M and MOD files'
+PROJECT=http://dumb.sourceforge.net
+RELEASE=0.9.3
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=dumb-$RELEASE
+
+SOURCE=(
+	https://launchpad.net/ubuntu/+archive/primary/+files/$NAME'_'$RELEASE.orig.tar.gz
+)
+
+PATCHES=(
+	dumb-0.9.3-PIC-as-needed.patch
+	dumb-0.9.3_CVE-2006-3668.patch
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	readme.txt
+	release.txt
+	docs/deprec.txt
+	docs/dumb.txt
+	docs/faq.txt
+	docs/fnptr.txt
+	docs/howto.txt
+	docs/modplug.txt
+	docs/ptr.txt
+)
+
+fn configure {
+	cp $CWD/config.txt make
+
+	sed -i '/= -s/d' Makefile || exit 111
+	cp -f Makefile Makefile.rdy
+
+	echo A
+}
+
+fn inst {
+	mkdir -p $PKG/$LIBDIR
+	cp lib/unix/libdumb.so $PKG/$LIBDIR
+
+	mkdir -p $PKG/usr/include
+	cp include/dumb.h $PKG/usr/include
+
+	mkdir -p $PKG/usr/bin
+	cp examples/dumbout examples/dumb2wav $PKG/usr/bin
+}
+

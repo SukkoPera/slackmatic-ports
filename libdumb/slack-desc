@@ -1,0 +1,11 @@
+libdumb: libdumb (A tracker library with support for IT, XM, S3M and MOD files)
+libdumb:
+libdumb: This is a slackmatic port build of libdumb:
+libdumb: A tracker library with support for IT, XM, S3M and MOD files 
+libdumb:
+libdumb: For more information about the package, see the project website at:
+libdumb: https://launchpad.net/ubuntu/+source/libdumb/
+libdumb:
+libdumb:
+libdumb: This slackmatic port was developed by:
+libdumb: slackware@sukkology.net
