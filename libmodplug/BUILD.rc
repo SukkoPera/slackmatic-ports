@@ -1,0 +1,15 @@
+. ../sukkolib.rc
+
+BRIEF='The BEST mod-like music player out there'
+PROJECT=http://modplug-xmms.sourceforge.net/
+RELEASE=0.8.9.0
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	$SF/modplug-xmms/$NAME-$RELEASE.tar.gz
+)
+
+PATCHES=(
+	libmodplug-0.8.4-timidity-patches.patch
+)
