@@ -1,0 +1,30 @@
+. ../sukkolib.rc
+
+BRIEF='FAT filesystems explore, extract, repair, and forensic tool'
+PROJECT=https://github.com/Gregwar/fatcat
+RELEASE=1.0.6
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	https://github.com/Gregwar/fatcat/archive/$RELEASE.tar.gz
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	README.md
+	LICENSE
+)
+
+fn inst {
+	std_inst
+
+	mkdir -p $PKG/usr/man/man1
+	cp man/fatcat.1 $PKG/usr/man/man1
+}
+
+fn docinst {
+	std_docinst
+
+	cp -a docs $DOC/tutorials
+}
