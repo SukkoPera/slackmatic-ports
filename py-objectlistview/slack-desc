@@ -1,0 +1,11 @@
+py-objectlistview: py-objectlistview (A wrapper around the wx.ListCtrl that makes the list control easier to use)
+py-objectlistview:
+py-objectlistview: This is a slackmatic port build of py-objectlistview:
+py-objectlistview: A wrapper around the wx.ListCtrl that makes the list control easier to use 
+py-objectlistview:
+py-objectlistview: For more information about the package, see the project website at:
+py-objectlistview: http://objectlistview.sourceforge.net/python/
+py-objectlistview:
+py-objectlistview:
+py-objectlistview: This slackmatic port was developed by:
+py-objectlistview: slackware@sukkology.net
