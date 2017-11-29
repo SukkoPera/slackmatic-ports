@@ -1,0 +1,11 @@
+py-udev: py-udev (Python bindings to libudev)
+py-udev:
+py-udev: This is a slackmatic port build of py-udev:
+py-udev: Python bindings to libudev 
+py-udev:
+py-udev: For more information about the package, see the project website at:
+py-udev: https://github.com/pyudev/pyudev
+py-udev:
+py-udev:
+py-udev: This slackmatic port was developed by:
+py-udev: slackware@sukkology.net

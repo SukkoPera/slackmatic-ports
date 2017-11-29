@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+BRIEF='Python bindings to libudev'
+PROJECT=https://github.com/pyudev/pyudev
+RELEASE=0.21.0
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=pyudev-$RELEASE
+
+SOURCE=(
+	https://github.com/pyudev/pyudev/archive/v$RELEASE.tar.gz
+)
