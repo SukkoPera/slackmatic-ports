@@ -2,7 +2,7 @@
 
 BRIEF='A text widget that improves GtkTextView by implementing syntax highlighting'
 PROJECT=https://developer.gnome.org/gtksourceview/
-RELEASE=3.14.4
+RELEASE=3.22.2
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 TNAME=gtksourceview
