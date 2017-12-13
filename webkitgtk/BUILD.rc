@@ -2,19 +2,18 @@
 
 BRIEF='GNOME platform port of the WebKit rendering engine'
 PROJECT=http://webkitgtk.org
-RELEASE=2.3.5
-BUILD=2suk_$SLCKVER
+RELEASE=2.4.11
+BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDSYSTEM=autotools
 MAKEJOBS=1
 
 SOURCE=(
-	http://webkitgtk.org/releases/$NAME-$'RELEASE'a.tar.xz
+	http://webkitgtk.org/releases/$NAME-$RELEASE.tar.xz
 )
 
-
 PATCHES=(
-	newer_glib.patch
+	icu-60.patch
 )
 
 CONFOPTS=(
@@ -24,12 +23,5 @@ CONFOPTS=(
         --localstatedir'='/var
         --mandir'='/usr/man
 	--enable-gamepad
-#	--with-gtk'='2.0
 )
 
-fn patches () {
-	std_patches
-
-	# This check fails for GCC > 5.x
-	sed -i 's/ && __GNUC_MINOR__ >= 7//' configure || exit $status
-}

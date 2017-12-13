@@ -1,0 +1,40 @@
+--- Source/WebKit2/Shared/API/c/WKString.cpp	2017-12-12 22:16:20.650312833 +0100
++++ Source/WebKit2/Shared/API/c/WKString.cpp.patch	2017-12-12 22:16:13.361312485 +0100
+@@ -55,7 +55,7 @@
+ size_t WKStringGetCharacters(WKStringRef stringRef, WKChar* buffer, size_t bufferLength)
+ {
+     COMPILE_ASSERT(sizeof(WKChar) == sizeof(UChar), WKStringGetCharacters_sizeof_WKChar_matches_UChar);
+-    return (toImpl(stringRef)->getCharacters(static_cast<UChar*>(buffer), bufferLength));
++    return (toImpl(stringRef)->getCharacters((UChar*)(buffer), bufferLength));
+ }
+ 
+ size_t WKStringGetMaximumUTF8CStringSize(WKStringRef stringRef)
+--- Source/JavaScriptCore/API/JSStringRef.cpp	2017-12-12 22:17:37.114316479 +0100
++++ Source/JavaScriptCore/API/JSStringRef.cpp.patch	2017-12-12 22:17:18.744315603 +0100
+@@ -37,7 +37,7 @@
+ JSStringRef JSStringCreateWithCharacters(const JSChar* chars, size_t numChars)
+ {
+     initializeThreading();
+-    return OpaqueJSString::create(chars, numChars).leakRef();
++    return OpaqueJSString::create((const UChar*) chars, numChars).leakRef();
+ }
+ 
+ JSStringRef JSStringCreateWithUTF8CString(const char* string)
+@@ -62,7 +62,7 @@
+ JSStringRef JSStringCreateWithCharactersNoCopy(const JSChar* chars, size_t numChars)
+ {
+     initializeThreading();
+-    return OpaqueJSString::create(StringImpl::createWithoutCopying(chars, numChars)).leakRef();
++    return OpaqueJSString::create(StringImpl::createWithoutCopying((const UChar*) chars, numChars)).leakRef();
+ }
+ 
+ JSStringRef JSStringRetain(JSStringRef string)
+@@ -83,7 +83,7 @@
+ 
+ const JSChar* JSStringGetCharactersPtr(JSStringRef string)
+ {
+-    return string->characters();
++    return (const JSChar*) string->characters();
+ }
+ 
+ size_t JSStringGetMaximumUTF8CStringSize(JSStringRef string)
