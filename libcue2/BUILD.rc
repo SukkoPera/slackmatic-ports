@@ -1,0 +1,13 @@
+. ../sukkolib.rc
+
+BRIEF='Parse a so called cue sheet'
+PROJECT=http://libcue.sourceforge.net
+RELEASE=2.2.0
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+TNAME=libcue
+BUILDDIR=$TNAME-$RELEASE
+
+SOURCE=(
+	https://github.com/lipnitsk/libcue/archive/v$RELEASE.tar.gz
+)

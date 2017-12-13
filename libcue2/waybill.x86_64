@@ -1,0 +1,14 @@
+drwxr-xr-x|0755|root/root|usr|
+drwxr-xr-x|0755|root/root|usr/doc|
+drwxr-xr-x|0755|root/root|usr/doc/libcue2-2.2.0|
+-rw-r--r--|0644|root/root|usr/doc/libcue2-2.2.0/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/libcue2-2.2.0/ChangeLog|
+drwxr-xr-x|0755|root/root|usr/include|
+drwxr-xr-x|0755|root/root|usr/include/libcue|
+-rw-r--r--|0644|root/root|usr/include/libcue.h|
+drwxr-xr-x|0755|root/root|usr/lib64|
+lrwxrwxrwx|0777|root/root|usr/lib64/libcue.so|->|libcue.so.2|
+lrwxrwxrwx|0777|root/root|usr/lib64/libcue.so.2|->|libcue.so.2.2.0|
+-rwxr-xr-x|0755|root/root|usr/lib64/libcue.so.2.2.0|
+drwxr-xr-x|0755|root/root|usr/lib64/pkgconfig|
+-rw-r--r--|0644|root/root|usr/lib64/pkgconfig/libcue.pc|
