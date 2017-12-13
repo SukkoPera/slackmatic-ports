@@ -1,0 +1,14 @@
+. ../sukkolib.rc
+
+BRIEF='A User Interface Designer'
+PROJECT=https://glade.gnome.org
+RELEASE=3.20.2
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+TNAME=glade
+BUILDDIR=$TNAME-$RELEASE
+
+MAJORV=`{echo $RELEASE | sed 's:\.[0-9]$::'}
+SOURCE=(
+	http://ftp.acc.umu.se/pub/gnome/sources/glade/$MAJORV/$TNAME-$RELEASE.tar.xz
+)
