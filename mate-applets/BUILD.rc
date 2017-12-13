@@ -2,13 +2,17 @@
 
 BRIEF='MATE Desktop Environment'
 PROJECT=http://mate-desktop.org
-RELEASE=1.18.1
+RELEASE=1.18.2
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
 MAJORV=`{echo $RELEASE | sed -r 's:\.[0-9]+$::'}
 SOURCE=(
 	http://pub.mate-desktop.org/releases/$MAJORV/$NAME-$RELEASE.tar.xz
+)
+
+PATCHES=(
+	mate-applets-1.16.0-cpupower-4.7.patch
 )
 
 # indicator-stickynotes requires Python 3
