@@ -1,0 +1,36 @@
+. ../sukkolib.rc
+
+BRIEF='Simple DirectMedia Layer 2'
+PROJECT=http://https://www.libsdl.org
+RELEASE=2.0.7
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+TNAME=SDL
+BUILDDIR=$TNAME'2-'$RELEASE
+
+SOURCE=(
+	https://www.libsdl.org/release/$TNAME'2'-$RELEASE.tar.gz
+)
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS_CMAKE
+	-DLIB_SUFFIX'='$LIB_SUFFIX
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	BUGS.txt
+	CREDITS.txt
+	README.txt
+	README-SDL.txt
+	TODO.txt
+	WhatsNew.txt
+)
+
+fn inst {
+	std_inst
+
+	# CMake files get installed in a bad libdir, sigh...
+	mv $PKG/usr/lib/cmake $PKG/usr/lib64
+	rm -rf $PKG/usr/lib
+}
