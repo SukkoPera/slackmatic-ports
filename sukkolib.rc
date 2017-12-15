@@ -5,10 +5,9 @@
 # Guess library directory (shouldn't this be automatic?)
 switch (`{arch}) {
 	case *64
-		LIBDIR=/usr/lib64
-	case *
-		LIBDIR=/usr/lib
+		LIB_SUFFIX=64
 }
+LIBDIR='/usr/lib'$LIB_SUFFIX
 
 # Some more jobs than CPUs seems a good default
 NCPU=`{cat /proc/cpuinfo  | grep '^processor' | wc -l}
