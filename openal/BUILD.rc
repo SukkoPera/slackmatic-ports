@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+BRIEF='A software implementation of the OpenAL 3D audio API'
+PROJECT=http://kcat.strangesoft.net/openal.html
+RELEASE=1.18.2
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=$NAME-soft-$RELEASE
+
+SOURCE=(
+	http://kcat.strangesoft.net/openal-releases/$NAME-soft-$RELEASE.tar.bz2
+)
