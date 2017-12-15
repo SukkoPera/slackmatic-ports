@@ -1,0 +1,16 @@
+. ../sukkolib.rc
+
+BRIEF='Accurate Amiga Emulator'
+PROJECT=https://fs-uae.net/
+RELEASE=2.8.3
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	https://fs-uae.net/stable/$RELEASE/$NAME-$RELEASE.tar.gz
+)
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS
+	--without-libmpeg2
+)
