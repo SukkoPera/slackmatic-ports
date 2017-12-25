@@ -1,0 +1,16 @@
+. ../sukkolib.rc
+
+BRIEF='A tool for decompressing Amiga DMS files'
+PROJECT=http://zakalwe.fi/~shd/foss/xdms/
+RELEASE=1.3.2
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://zakalwe.fi/~shd/foss/xdms/$NAME-$RELEASE.tar.bz2
+)
+
+fn configure {
+	./configure --prefix'='/usr --package-prefix'='$PKG
+	sed -i s:/usr/share:/usr:g Makefile || exit $status
+}
