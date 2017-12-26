@@ -1,0 +1,11 @@
+adflib: adflib (A free, portable and open implementation of the Amiga filesystem)
+adflib:
+adflib: This is a slackmatic port build of adflib:
+adflib: A free, portable and open implementation of the Amiga filesystem 
+adflib:
+adflib: For more information about the package, see the project website at:
+adflib: https://github.com/lclevy/ADFlib
+adflib:
+adflib:
+adflib: This slackmatic port was developed by:
+adflib: slackware@sukkology.net

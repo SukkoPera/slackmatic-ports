@@ -1,0 +1,24 @@
+. ../sukkolib.rc
+
+BRIEF='A free, portable and open implementation of the Amiga filesystem'
+PROJECT=https://github.com/lclevy/ADFlib
+RELEASE=0.7.12
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=ADFlib-$RELEASE
+BUILDSYSTEM=autotools
+
+SOURCE=(
+	https://github.com/lclevy/ADFlib/archive/$RELEASE.tar.gz
+)
+
+fn configure {
+	./autogen.sh
+	std_configure
+}
+
+fn inst {
+	std_inst
+	mv $PKG/usr/share/doc/adflib/ $DOC/html
+	rm -rf $PKG/usr/share
+}
