@@ -6,12 +6,11 @@ drwxr-xr-x|0755|root/root|usr/bin|
 -rwxr-xr-x|0755|root/root|usr/bin/mkvpropedit|
 -rwxr-xr-x|0755|root/root|usr/bin/mkvtoolnix-gui|
 drwxr-xr-x|0755|root/root|usr/doc|
-drwxr-xr-x|0755|root/root|usr/doc/mkvtoolnix-13.0.0|
--rw-r--r--|0644|root/root|usr/doc/mkvtoolnix-13.0.0/AUTHORS|
--rw-r--r--|0644|root/root|usr/doc/mkvtoolnix-13.0.0/BUILD.rc|
--rw-r--r--|0644|root/root|usr/doc/mkvtoolnix-13.0.0/COPYING|
--rw-r--r--|0644|root/root|usr/doc/mkvtoolnix-13.0.0/ChangeLog|
--rw-r--r--|0644|root/root|usr/doc/mkvtoolnix-13.0.0/INSTALL|
+drwxr-xr-x|0755|root/root|usr/doc/mkvtoolnix-19.0.0|
+-rw-r--r--|0644|root/root|usr/doc/mkvtoolnix-19.0.0/AUTHORS|
+-rw-r--r--|0644|root/root|usr/doc/mkvtoolnix-19.0.0/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/mkvtoolnix-19.0.0/COPYING|
+-rw-r--r--|0644|root/root|usr/doc/mkvtoolnix-19.0.0/INSTALL|
 drwxr-xr-x|0755|root/root|usr/man|
 drwxr-xr-x|0755|root/root|usr/man/man1|
 -rw-r--r--|0644|root/root|usr/man/man1/mkvextract.1.gz|
@@ -124,6 +123,9 @@ drwxr-xr-x|0755|root/root|usr/share/locale/pt_BR/LC_MESSAGES|
 -rw-r--r--|0644|root/root|usr/share/locale/pt_BR/LC_MESSAGES/mkvtoolnix.mo|
 drwxr-xr-x|0755|root/root|usr/share/locale/pt/LC_MESSAGES|
 -rw-r--r--|0644|root/root|usr/share/locale/pt/LC_MESSAGES/mkvtoolnix.mo|
+drwxr-xr-x|0755|root/root|usr/share/locale/ro|
+drwxr-xr-x|0755|root/root|usr/share/locale/ro/LC_MESSAGES|
+-rw-r--r--|0644|root/root|usr/share/locale/ro/LC_MESSAGES/mkvtoolnix.mo|
 drwxr-xr-x|0755|root/root|usr/share/locale/ru|
 drwxr-xr-x|0755|root/root|usr/share/locale/ru/LC_MESSAGES|
 -rw-r--r--|0644|root/root|usr/share/locale/ru/LC_MESSAGES/mkvtoolnix.mo|
