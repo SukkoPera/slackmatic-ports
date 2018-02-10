@@ -19,5 +19,5 @@ PATCHES=(
 CONFOPTS=(
 	$DEFAULT_CONFOPTS
 	--disable-schemas-compile
-	--disable-stickynotes
+	--enable-stickynotes
 )

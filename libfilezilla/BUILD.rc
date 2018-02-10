@@ -2,12 +2,12 @@
 
 BRIEF='A small and modern C++ library to build high-performing, platform-independent programs'
 PROJECT=https://lib.filezilla-project.org
-RELEASE=0.11.0
+RELEASE=0.11.2
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
 SOURCE=(
-	$SF/$NAME/$NAME-$RELEASE.tar.bz2
+	http://download.filezilla-project.org/libfilezilla/$NAME-$RELEASE.tar.bz2
 )
 
 fn configure {

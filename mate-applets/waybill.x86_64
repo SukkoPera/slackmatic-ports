@@ -67,6 +67,7 @@ drwxr-xr-x|0755|root/root|usr/libexec|
 -rwxr-xr-x|0755|root/root|usr/libexec/mate-multiload-applet|
 -rwxr-xr-x|0755|root/root|usr/libexec/mate-netspeed-applet|
 -rwxr-xr-x|0755|root/root|usr/libexec/mateweather-applet|
+-rwxr-xr-x|0755|root/root|usr/libexec/stickynotes-applet|
 -rwxr-xr-x|0755|root/root|usr/libexec/timer-applet|
 -rwxr-xr-x|0755|root/root|usr/libexec/trashapplet|
 drwxr-xr-x|0755|root/root|usr/man|
@@ -92,6 +93,7 @@ drwxr-xr-x|0755|root/root|usr/share/dbus-1/services|
 -rw-r--r--|0644|root/root|usr/share/dbus-1/services/org.mate.panel.applet.MateWeatherAppletFactory.service|
 -rw-r--r--|0644|root/root|usr/share/dbus-1/services/org.mate.panel.applet.MultiLoadAppletFactory.service|
 -rw-r--r--|0644|root/root|usr/share/dbus-1/services/org.mate.panel.applet.NetspeedAppletFactory.service|
+-rw-r--r--|0644|root/root|usr/share/dbus-1/services/org.mate.panel.applet.StickyNotesAppletFactory.service|
 -rw-r--r--|0644|root/root|usr/share/dbus-1/services/org.mate.panel.applet.TimerAppletFactory.service|
 -rw-r--r--|0644|root/root|usr/share/dbus-1/services/org.mate.panel.applet.TrashAppletFactory.service|
 drwxr-xr-x|0755|root/root|usr/share/dbus-1/system-services|
@@ -106,6 +108,7 @@ drwxr-xr-x|0755|root/root|usr/share/glib-2.0/schemas|
 -rw-r--r--|0644|root/root|usr/share/glib-2.0/schemas/org.mate.panel.applet.multiload.gschema.xml|
 -rw-r--r--|0644|root/root|usr/share/glib-2.0/schemas/org.mate.panel.applet.netspeed.gschema.xml|
 -rw-r--r--|0644|root/root|usr/share/glib-2.0/schemas/org.mate.panel.applet.timer.gschema.xml|
+-rw-r--r--|0644|root/root|usr/share/glib-2.0/schemas/org.mate.stickynotes.gschema.xml|
 drwxr-xr-x|0755|root/root|usr/share/help|
 drwxr-xr-x|0755|root/root|usr/share/help/C|
 drwxr-xr-x|0755|root/root|usr/share/help/C/mate-accessx-status|
@@ -2598,6 +2601,7 @@ drwxr-xr-x|0755|root/root|usr/share/mate-applets/builder|
 -rw-r--r--|0644|root/root|usr/share/mate-applets/builder/cpufreq-preferences.ui|
 -rw-r--r--|0644|root/root|usr/share/mate-applets/builder/financialchart.ui|
 -rw-r--r--|0644|root/root|usr/share/mate-applets/builder/prefs-dialog.ui|
+-rw-r--r--|0644|root/root|usr/share/mate-applets/builder/stickynotes.ui|
 -rw-r--r--|0644|root/root|usr/share/mate-applets/builder/trashapplet-empty-progress.ui|
 drwxr-xr-x|0755|root/root|usr/share/mate-applets/geyes|
 drwxr-xr-x|0755|root/root|usr/share/mate-applets/geyes/Bizarre|
@@ -2654,6 +2658,7 @@ drwxr-xr-x|0755|root/root|usr/share/mate-panel/applets|
 -rw-r--r--|0644|root/root|usr/share/mate-panel/applets/org.mate.applets.MateWeatherApplet.mate-panel-applet|
 -rw-r--r--|0644|root/root|usr/share/mate-panel/applets/org.mate.applets.MultiLoadApplet.mate-panel-applet|
 -rw-r--r--|0644|root/root|usr/share/mate-panel/applets/org.mate.applets.NetspeedApplet.mate-panel-applet|
+-rw-r--r--|0644|root/root|usr/share/mate-panel/applets/org.mate.applets.StickyNotesApplet.mate-panel-applet|
 -rw-r--r--|0644|root/root|usr/share/mate-panel/applets/org.mate.applets.TimerApplet.mate-panel-applet|
 -rw-r--r--|0644|root/root|usr/share/mate-panel/applets/org.mate.applets.TrashApplet.mate-panel-applet|
 drwxr-xr-x|0755|root/root|usr/share/mate/ui|
@@ -2666,6 +2671,7 @@ drwxr-xr-x|0755|root/root|usr/share/mate/ui|
 -rw-r--r--|0644|root/root|usr/share/mate/ui/mateweather-applet-menu.xml|
 -rw-r--r--|0644|root/root|usr/share/mate/ui/multiload-applet-menu.xml|
 -rw-r--r--|0644|root/root|usr/share/mate/ui/netspeed-menu.xml|
+-rw-r--r--|0644|root/root|usr/share/mate/ui/stickynotes-applet-menu.xml|
 -rw-r--r--|0644|root/root|usr/share/mate/ui/trashapplet-menu.xml|
 drwxr-xr-x|0755|root/root|usr/share/pixmaps|
 drwxr-xr-x|0755|root/root|usr/share/pixmaps/mate-accessx-status-applet|

@@ -2,7 +2,7 @@
 
 BRIEF='A set of tools to create, alter and inspect Matroska files'
 PROJECT=https://www.bunkus.org/videotools/mkvtoolnix/
-RELEASE=13.0.0
+RELEASE=19.0.0
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDSYSTEM=drake	# Unsupported, implement manually
