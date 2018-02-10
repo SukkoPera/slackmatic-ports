@@ -1,0 +1,17 @@
+. ../sukkolib.rc
+
+BRIEF='Open source program for controlling the MiniPRO TL866xx series of chip programmers'
+PROJECT=https://github.com/vdudouyt/minipro
+RELEASE=`{date +%Y%m%d}
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=minipro-master
+
+SOURCE=(
+	https://github.com/vdudouyt/minipro/archive/master.zip
+)
+
+fn inst {
+        make install PREFIX'='/usr DESTDIR'='$PKG || exit 102
+}
+
