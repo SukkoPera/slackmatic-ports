@@ -2,7 +2,7 @@
 
 BRIEF='A file archiver with highest compression ratio'
 PROJECT=http://p7zip.sourceforge.net
-RELEASE=9.38.1
+RELEASE=16.02
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDDIR=$NAME'_'$RELEASE
