@@ -4,16 +4,13 @@ BUILDSYSTEM=waf
 
 BRIEF='A system for handling real-time, low latency audio (and MIDI)'
 PROJECT=http://jackaudio.org
-RELEASE=1.9.10
-BUILD=2suk_$SLCKVER
+RELEASE=1.9.12
+BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 TNAME=jack
-BUILDDIR=$TNAME-$RELEASE
 
 SOURCE=(
-	#http://jackaudio.org/downloads/$TNAME-$RELEASE.tar.bz2
-	# Why Dropbox?! :(
-	https://dl.dropboxusercontent.com/u/28869550/$TNAME-$RELEASE.tar.bz2
+	https://github.com/jackaudio/jack2/releases/download/v$RELEASE/$NAME-$RELEASE.tar.gz
 )
 
 DOCS=(
@@ -24,7 +21,7 @@ DOCS=(
 
 # Replace --classic with --dbus for the DBUS version
 # Also add --enable-pkg-config-dbus-service-dir in case
-# --doxygen breaks the build!
+# Doxygen generation breaks the build!
 CONFOPTS=(
 	--prefix'='/usr
 	--libdir'='$LIBDIR
@@ -32,7 +29,5 @@ CONFOPTS=(
 	--dbus
 	--enable-pkg-config-dbus-service-dir
 	--alsa
+	--doxygen'='no
 )
-
-# Make readline found, sigh
-LDFLAGS="-ltermcap"

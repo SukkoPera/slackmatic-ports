@@ -31,6 +31,7 @@ lrwxrwxrwx|0777|root/root|usr/bin/jack_disconnect|->|jack_connect|
 -rwxr-xr-x|0755|root/root|usr/bin/jack_server_control|
 -rwxr-xr-x|0755|root/root|usr/bin/jack_session_notify|
 -rwxr-xr-x|0755|root/root|usr/bin/jack_showtime|
+-rwxr-xr-x|0755|root/root|usr/bin/jack_simdtests|
 -rwxr-xr-x|0755|root/root|usr/bin/jack_simple_client|
 -rwxr-xr-x|0755|root/root|usr/bin/jack_simple_session_client|
 -rwxr-xr-x|0755|root/root|usr/bin/jack_test|
@@ -40,12 +41,12 @@ lrwxrwxrwx|0777|root/root|usr/bin/jack_disconnect|->|jack_connect|
 -rwxr-xr-x|0755|root/root|usr/bin/jack_wait|
 -rwxr-xr-x|0755|root/root|usr/bin/jack_zombie|
 drwxr-xr-x|0755|root/root|usr/doc|
-drwxr-xr-x|0755|root/root|usr/doc/jack2-1.9.10|
--rw-r--r--|0644|root/root|usr/doc/jack2-1.9.10/BUILD.rc|
--rw-r--r--|0644|root/root|usr/doc/jack2-1.9.10/ChangeLog|
--rw-r--r--|0644|root/root|usr/doc/jack2-1.9.10/README|
--rw-r--r--|0644|root/root|usr/doc/jack2-1.9.10/README_NETJACK2|
--rw-r--r--|0644|root/root|usr/doc/jack2-1.9.10/TODO|
+drwxr-xr-x|0755|root/root|usr/doc/jack2-1.9.12|
+-rw-r--r--|0644|root/root|usr/doc/jack2-1.9.12/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/jack2-1.9.12/ChangeLog|
+-rw-r--r--|0644|root/root|usr/doc/jack2-1.9.12/README|
+-rw-r--r--|0644|root/root|usr/doc/jack2-1.9.12/README_NETJACK2|
+-rw-r--r--|0644|root/root|usr/doc/jack2-1.9.12/TODO|
 drwxr-xr-x|0755|root/root|usr/include|
 drwxr-xr-x|0755|root/root|usr/include/jack|
 -rw-r--r--|0644|root/root|usr/include/jack/control.h|
@@ -75,6 +76,7 @@ drwxr-xr-x|0755|root/root|usr/lib64/jack|
 -rwxr-xr-x|0755|root/root|usr/lib64/jack/jack_loopback.so|
 -rwxr-xr-x|0755|root/root|usr/lib64/jack/jack_netone.so|
 -rwxr-xr-x|0755|root/root|usr/lib64/jack/jack_net.so|
+-rwxr-xr-x|0755|root/root|usr/lib64/jack/jack_proxy.so|
 -rwxr-xr-x|0755|root/root|usr/lib64/jack/netadapter.so|
 -rwxr-xr-x|0755|root/root|usr/lib64/jack/netmanager.so|
 -rwxr-xr-x|0755|root/root|usr/lib64/jack/profiler.so|
