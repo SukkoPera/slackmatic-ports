@@ -1,0 +1,13 @@
+. ../sukkolib.rc
+
+BRIEF='A Python module for computing the Cyclic Redundancy Check (CRC)'
+PROJECT=https://pypi.python.org/pypi/crcmod
+RELEASE=1.7
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+TNAME=crcmod
+BUILDDIR=$TNAME-$RELEASE
+
+SOURCE=(
+	https://pypi.python.org/packages/6b/b0/e595ce2a2527e169c3bcd6c33d2473c1918e0b7f6826a043ca1245dd4e5b/$TNAME-$RELEASE.tar.gz
+)

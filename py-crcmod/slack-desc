@@ -1,0 +1,11 @@
+py-crcmod: py-crcmod (A Python module for computing the Cyclic Redundancy Check (CRC))
+py-crcmod:
+py-crcmod: This is a slackmatic port build of py-crcmod:
+py-crcmod: A Python module for computing the Cyclic Redundancy Check (CRC) 
+py-crcmod:
+py-crcmod: For more information about the package, see the project website at:
+py-crcmod: https://pypi.python.org/pypi/crcmod
+py-crcmod:
+py-crcmod:
+py-crcmod: This slackmatic port was developed by:
+py-crcmod: slackware@sukkology.net
