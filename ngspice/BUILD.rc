@@ -9,3 +9,8 @@ PACKAGER=slackware@sukkology.net
 SOURCE=(
 	$SF/ngspice/ng-spice-rework/$RELEASE/$NAME-$RELEASE.tar.gz
 )
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS
+	--with-ngshared
+)
