@@ -1,0 +1,20 @@
+. ../sukkolib.rc
+
+BRIEF='A C++ 3D modeling library'
+PROJECT=https://github.com/tpaviot/oce
+RELEASE=0.18.3
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+TNAME=OCE
+BUILDDIR=$NAME-$TNAME-$RELEASE
+
+SOURCE=(
+	https://github.com/tpaviot/oce/archive/$TNAME-$RELEASE.tar.gz
+)
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS_CMAKE
+	-DOCE_INSTALL_PREFIX'='/usr
+	-DBUILD_TESTING'='OFF
+	-DOCE_TESTING'='OFF
+)
