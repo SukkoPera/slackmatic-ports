@@ -2,7 +2,7 @@
 
 BRIEF='MATE Desktop Environment'
 PROJECT=http://mate-desktop.org
-RELEASE=1.20.0
+RELEASE=1.20.1
 BUILD=2suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
@@ -14,9 +14,4 @@ SOURCE=(
 CONFOPTS=(
 	$DEFAULT_CONFOPTS
 	--disable-schemas-compile
-)
-
-PATCHES=(
-	87a376956154563d72192f74608b46622aaa753a.diff
-	b1633846fb6242de40fe84e65db2ad2be1deea58.diff
 )
