@@ -1,0 +1,18 @@
+. ../sukkolib.rc
+
+BRIEF='Hyphen - hyphenation library to use converted TeX hyphenation patterns'
+PROJECT=https://github.com/hunspell/hyphen
+RELEASE=20180406
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=$NAME-master
+BUILDSYSTEM=autotools
+
+SOURCE=(
+	https://github.com/hunspell/hyphen/archive/master.zip
+)
+
+fn configure {
+	autoreconf -sfi
+	std_configure
+}
