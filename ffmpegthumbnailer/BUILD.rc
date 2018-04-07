@@ -2,19 +2,18 @@
 
 BRIEF='Lightweight video thumbnailer that can be used by file managers'
 PROJECT=https://code.google.com/p/ffmpegthumbnailer/
-RELEASE=2.0.9
+RELEASE=2.2.0
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
 # Need to download manually from homepage/Google Drive, from 2.0.9
 SOURCE=(
-	http://x/$NAME-$RELEASE.tar.gz
+	https://github.com/dirkvdb/ffmpegthumbnailer/releases/download/$RELEASE/$NAME-$RELEASE.tar.bz2
 )
 
 CONFOPTS=(
-	$DEFAULT_CONFOPTS
-	--enable-png
-	--enable-jpeg
-	--enable-gio
-	--enable-thumbnailer
+	$DEFAULT_CONFOPTS_CMAKE
+	-DCMAKE_BUILD_TYPE'='Release
+	-DENABLE_GIO'='ON
+	-DENABLE_THUMBNAILER'='ON
 )
