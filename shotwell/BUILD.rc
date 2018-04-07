@@ -2,7 +2,7 @@
 
 BRIEF='A photo organizer for the GNOME desktop'
 PROJECT=http://www.yorba.org/projects/shotwell/
-RELEASE=0.22.0
+RELEASE=0.27.4
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDSYSTEM=autotools
@@ -14,10 +14,8 @@ SOURCE=(
 
 CONFOPTS=(
 	--prefix'='/usr
-	--libdir'='`{basename $LIBDIR}
+	--libdir'='$LIBDIR
 	--disable-schemas-compile
-	--disable-desktop-update
-	--disable-icon-update
 )
 
 DOCS=(
