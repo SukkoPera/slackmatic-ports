@@ -1,0 +1,11 @@
+liboauth: liboauth (A POSIX-C implementation of the OAuth protocol)
+liboauth:
+liboauth: This is a slackmatic port build of liboauth:
+liboauth: A POSIX-C implementation of the OAuth protocol 
+liboauth:
+liboauth: For more information about the package, see the project website at:
+liboauth: https://sourceforge.net/projects/liboauth/
+liboauth:
+liboauth:
+liboauth: This slackmatic port was developed by:
+liboauth: slackware@sukkology.net
