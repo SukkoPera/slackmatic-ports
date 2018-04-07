@@ -1,0 +1,16 @@
+. ../sukkolib.rc
+
+BRIEF='A HTTP web service mocking library for GNOME'
+PROJECT=https://github.com/pwithnall/uhttpmock
+RELEASE=0.5.1
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDSYSTEM=autotools
+
+SOURCE=(
+	https://github.com/pwithnall/uhttpmock/archive/$RELEASE.tar.gz
+)
+
+fn configure {
+	./autogen.sh $DEFAULT_CONFOPTS
+}
