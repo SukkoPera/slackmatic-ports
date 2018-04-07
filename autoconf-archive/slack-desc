@@ -1,0 +1,11 @@
+autoconf-archive: autoconf-archive (A collection of more than 500 macros for GNU Autoconf)
+autoconf-archive:
+autoconf-archive: This is a slackmatic port build of autoconf-archive:
+autoconf-archive: A collection of more than 500 macros for GNU Autoconf 
+autoconf-archive:
+autoconf-archive: For more information about the package, see the project website at:
+autoconf-archive: https://savannah.gnu.org/projects/autoconf-archive/
+autoconf-archive:
+autoconf-archive:
+autoconf-archive: This slackmatic port was developed by:
+autoconf-archive: slackware@sukkology.net

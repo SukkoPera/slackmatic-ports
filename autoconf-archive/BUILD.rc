@@ -1,0 +1,22 @@
+. ../sukkolib.rc
+
+BRIEF='A collection of more than 500 macros for GNU Autoconf'
+PROJECT=https://savannah.gnu.org/projects/autoconf-archive/
+RELEASE=2018.03.13
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://mirror2.mirror.garr.it/mirrors/gnuftp/autoconf-archive/$NAME-$RELEASE.tar.xz
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	COPYING.EXCEPTION
+)
+
+fn docinst {
+	std_docinst
+
+	rm -rf $PKG/usr/share/autoconf-archive
+}
