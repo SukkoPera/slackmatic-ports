@@ -2,7 +2,7 @@
 
 BRIEF='A GObject-based wrapper around the Exiv2 library'
 PROJECT=https://wiki.gnome.org/action/show/Projects/gexiv2
-RELEASE=0.10.6
+RELEASE=0.10.8
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDSYSTEM=autotools		# Force this, since there is no Makefile.in
@@ -13,7 +13,7 @@ SOURCE=(
 )
 
 CONFOPTS=(
-	--prefix'='/usr
+	$DEFAULT_CONFOPTS
 	--enable-introspection
 )
 
@@ -22,7 +22,3 @@ DOCS=(
 	MAINTAINERS
 	THANKS
 )
-
-fn inst {
-	make install DESTDIR'='$PKG LIB'='`{basename $LIBDIR} || exit 102
-}
