@@ -2,26 +2,17 @@
 
 BRIEF='GNOME platform port of the WebKit rendering engine'
 PROJECT=http://webkitgtk.org
-RELEASE=2.4.11
+RELEASE=2.18.6
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
-BUILDSYSTEM=autotools
 MAKEJOBS=1
 
 SOURCE=(
 	http://webkitgtk.org/releases/$NAME-$RELEASE.tar.xz
 )
 
-PATCHES=(
-	icu-60.patch
-)
-
 CONFOPTS=(
-        --prefix'='/usr
-        --libdir'='$LIBDIR
-        --sysconfdir'='/etc
-        --localstatedir'='/var
-        --mandir'='/usr/man
-	--enable-gamepad
+	$DEFAULT_CONFOPTS_CMAKE
+	-DCMAKE_BUILD_TYPE'='Release
+	-DPORT'='GTK
 )
-
