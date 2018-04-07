@@ -1,0 +1,11 @@
+gnome-online-accounts: gnome-online-accounts (A way to configure core GNOME services and applications with a set of online accounts)
+gnome-online-accounts:
+gnome-online-accounts: This is a slackmatic port build of gnome-online-accounts:
+gnome-online-accounts: A way to configure core GNOME services and applications with a set of online accounts 
+gnome-online-accounts:
+gnome-online-accounts: For more information about the package, see the project website at:
+gnome-online-accounts: https://wiki.gnome.org/Projects/GnomeOnlineAccounts
+gnome-online-accounts:
+gnome-online-accounts:
+gnome-online-accounts: This slackmatic port was developed by:
+gnome-online-accounts: slackware@sukkology.net
