@@ -2,7 +2,7 @@
 
 BRIEF='A GObject-based wrapper around the Exiv2 library'
 PROJECT=https://wiki.gnome.org/action/show/Projects/gexiv2
-RELEASE=0.7.0
+RELEASE=0.10.6
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDSYSTEM=autotools		# Force this, since there is no Makefile.in
