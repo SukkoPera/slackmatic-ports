@@ -2,9 +2,10 @@
 
 BRIEF='Raptor RDF Parser Library'
 PROJECT=http://librdf.org/raptor/
-RELEASE=2.0.10
+RELEASE=2.0.15
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
+BUILDSYSTEM=autotools
 
 SOURCE=(
 	http://download.librdf.org/source/$NAME-$RELEASE.tar.gz
