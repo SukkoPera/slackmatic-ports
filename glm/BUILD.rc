@@ -2,7 +2,7 @@
 
 BRIEF='A C++ mathematics library for graphics programming'
 PROJECT=http://glm.g-truc.net
-RELEASE=0.9.7.6
+RELEASE=0.9.8.3
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
