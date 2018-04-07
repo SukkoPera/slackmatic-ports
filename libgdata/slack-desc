@@ -1,0 +1,11 @@
+libgdata: libgdata (A GLib-based library for accessing Google's services)
+libgdata:
+libgdata: This is a slackmatic port build of libgdata:
+libgdata: A GLib-based library for accessing Google's services 
+libgdata:
+libgdata: For more information about the package, see the project website at:
+libgdata: https://wiki.gnome.org/Projects/libgdata
+libgdata:
+libgdata:
+libgdata: This slackmatic port was developed by:
+libgdata: slackware@sukkology.net
