@@ -1,0 +1,45 @@
+. ../sukkolib.rc
+
+BRIEF='A library for clipping and offsetting lines and polygons'
+PROJECT=http://www.angusj.com/delphi/clipper.php
+RELEASE=6.4.2
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDSYSTEM=cmake
+
+SOURCE=(
+	$SF/polyclipping/$NAME'_'ver$RELEASE.zip
+)
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS_CMAKE
+	-DLIB_SUFFIX'='$LIB_SUFFIX
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	../README
+	../License.txt
+)
+
+fn build {
+	# AAAARGH, fix sources unpack!
+	cd $SRC || exit 1
+	mkdir $NAME-$RELEASE
+	cd $NAME-$RELEASE
+	mv ../* .
+
+	std_build
+}
+
+fn configure {
+	cd cpp
+	std_configure
+}
+
+fn inst {
+	std_inst
+
+	mv $PKG/usr/share/pkgconfig $PKG/$LIBDIR
+	rmdir $PKG/usr/share || exit $status
+}
