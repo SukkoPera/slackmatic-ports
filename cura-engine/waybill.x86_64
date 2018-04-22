@@ -1,0 +1,11 @@
+drwxr-xr-x|0755|root/root|usr|
+drwxr-xr-x|0755|root/root|usr/bin|
+-rwxr-xr-x|0755|root/root|usr/bin/CuraEngine|
+drwxr-xr-x|0755|root/root|usr/doc|
+drwxr-xr-x|0755|root/root|usr/doc/cura-engine-2.7.0|
+-rw-r--r--|0644|root/root|usr/doc/cura-engine-2.7.0/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/cura-engine-2.7.0/LICENSE|
+-rw-r--r--|0644|root/root|usr/doc/cura-engine-2.7.0/README.md|
+-rw-r--r--|0644|root/root|usr/doc/cura-engine-2.7.0/glossary.md|
+-rw-r--r--|0644|root/root|usr/doc/cura-engine-2.7.0/mainpage.md|
+-rw-r--r--|0644|root/root|usr/doc/cura-engine-2.7.0/overview.md|
