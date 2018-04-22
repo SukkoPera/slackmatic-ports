@@ -1,0 +1,11 @@
+libarcus: libarcus (Communication library between internal components for Ultimaker software)
+libarcus:
+libarcus: This is a slackmatic port build of libarcus:
+libarcus: Communication library between internal components for Ultimaker software 
+libarcus:
+libarcus: For more information about the package, see the project website at:
+libarcus: https://github.com/Ultimaker/libArcus
+libarcus:
+libarcus:
+libarcus: This slackmatic port was developed by:
+libarcus: slackware@sukkology.net
