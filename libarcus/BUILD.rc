@@ -1,0 +1,25 @@
+. ../sukkolib.rc
+
+BRIEF='Communication library between internal components for Ultimaker software'
+PROJECT=https://github.com/Ultimaker/libArcus
+RELEASE=2.7.0
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=libArcus-$RELEASE
+
+SOURCE=(
+	https://github.com/Ultimaker/libArcus/archive/$RELEASE.tar.gz
+)
+
+# Python bindings require Python 3
+CONFOPTS=(
+	$DEFAULT_CONFOPTS_CMAKE
+	-DBUILD_PYTHON'='OFF
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	LICENSE
+	README.md
+	TODO.md
+)

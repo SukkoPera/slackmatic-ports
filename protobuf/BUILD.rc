@@ -1,0 +1,26 @@
+. ../sukkolib.rc
+
+BRIEF='Google''s mechanism for serializing structured data'
+PROJECT=https://developers.google.com/protocol-buffers/
+RELEASE=3.5.1
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDSYSTEM=autotools
+
+SOURCE=(
+	https://github.com/google/protobuf/archive/v$RELEASE.tar.gz
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	CHANGES.txt
+	CONTRIBUTORS.txt
+	LICENSE
+	README.md
+	docs/third_party.md
+)
+
+fn configure {
+	./autogen.sh
+	std_configure
+}

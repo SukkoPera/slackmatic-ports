@@ -1,0 +1,11 @@
+protobuf: protobuf (Google's mechanism for serializing structured data)
+protobuf:
+protobuf: This is a slackmatic port build of protobuf:
+protobuf: Google's mechanism for serializing structured data 
+protobuf:
+protobuf: For more information about the package, see the project website at:
+protobuf: https://developers.google.com/protocol-buffers/
+protobuf:
+protobuf:
+protobuf: This slackmatic port was developed by:
+protobuf: slackware@sukkology.net

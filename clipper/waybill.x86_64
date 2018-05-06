@@ -1,0 +1,15 @@
+drwxr-xr-x|0755|root/root|usr|
+drwxr-xr-x|0755|root/root|usr/doc|
+drwxr-xr-x|0755|root/root|usr/doc/clipper-6.4.2|
+-rw-r--r--|0644|root/root|usr/doc/clipper-6.4.2/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/clipper-6.4.2/License.txt|
+-rw-r--r--|0644|root/root|usr/doc/clipper-6.4.2/README|
+drwxr-xr-x|0755|root/root|usr/include|
+drwxr-xr-x|0755|root/root|usr/include/polyclipping|
+-rw-r--r--|0644|root/root|usr/include/polyclipping/clipper.hpp|
+drwxr-xr-x|0755|root/root|usr/lib64|
+lrwxrwxrwx|0777|root/root|usr/lib64/libpolyclipping.so|->|libpolyclipping.so.22|
+lrwxrwxrwx|0777|root/root|usr/lib64/libpolyclipping.so.22|->|libpolyclipping.so.22.0.0|
+-rwxr-xr-x|0755|root/root|usr/lib64/libpolyclipping.so.22.0.0|
+drwxr-xr-x|0755|root/root|usr/lib64/pkgconfig|
+-rw-r--r--|0644|root/root|usr/lib64/pkgconfig/polyclipping.pc|
