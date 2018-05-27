@@ -28,6 +28,7 @@ CONFOPTS=(
 # Thanks a lot to the gentoo folks!
 PATCHES=(
 	kicad-4.0.4-boost-context.patch
+	kicad-cmake-checkcxxsymbolexists.patch
 )
 
 fn patches {
