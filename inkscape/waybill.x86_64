@@ -1,13 +1,13 @@
 drwxr-xr-x|0755|root/root|usr|
 drwxr-xr-x|0755|root/root|usr/doc|
-drwxr-xr-x|0755|root/root|usr/doc/inkscape-0.92.1|
--rw-r--r--|0644|root/root|usr/doc/inkscape-0.92.1/AUTHORS|
--rw-r--r--|0644|root/root|usr/doc/inkscape-0.92.1/BUILD.rc|
--rw-r--r--|0644|root/root|usr/doc/inkscape-0.92.1/COPYING|
--rw-r--r--|0644|root/root|usr/doc/inkscape-0.92.1/ChangeLog|
--rw-r--r--|0644|root/root|usr/doc/inkscape-0.92.1/INSTALL|
--rw-r--r--|0644|root/root|usr/doc/inkscape-0.92.1/NEWS|
--rw-r--r--|0644|root/root|usr/doc/inkscape-0.92.1/README|
+drwxr-xr-x|0755|root/root|usr/doc/inkscape-0.92.3|
+-rw-r--r--|0644|root/root|usr/doc/inkscape-0.92.3/AUTHORS|
+-rw-r--r--|0644|root/root|usr/doc/inkscape-0.92.3/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/inkscape-0.92.3/COPYING|
+-rw-r--r--|0644|root/root|usr/doc/inkscape-0.92.3/ChangeLog|
+-rw-r--r--|0644|root/root|usr/doc/inkscape-0.92.3/INSTALL|
+-rw-r--r--|0644|root/root|usr/doc/inkscape-0.92.3/NEWS|
+-rw-r--r--|0644|root/root|usr/doc/inkscape-0.92.3/README|
 drwxr-xr-x|0755|root/root|usr/local|
 drwxr-xr-x|0755|root/root|usr/local/bin|
 -rwxr-xr-x|0755|root/root|usr/local/bin/inkscape|
@@ -59,6 +59,7 @@ drwxr-xr-x|0755|root/root|usr/local/share/inkscape/attributes|
 drwxr-xr-x|0755|root/root|usr/local/share/inkscape/branding|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/branding/README|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/branding/inkscape-flat.svg|
+-rw-r--r--|0644|root/root|usr/local/share/inkscape/branding/inkscape.logo.svg|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/branding/inkscape.svg|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/branding/inkscape-text.svg|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/branding/sodipodi.svg|
@@ -601,7 +602,6 @@ drwxr-xr-x|0755|root/root|usr/local/share/inkscape/extensions/xaml2svg|
 drwxr-xr-x|0755|root/root|usr/local/share/inkscape/filters|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/filters/README|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/filters/filters.svg|
--rw-r--r--|0644|root/root|usr/local/share/inkscape/filters/filters.svg.h|
 drwxr-xr-x|0755|root/root|usr/local/share/inkscape/fonts|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/fonts/README|
 drwxr-xr-x|0755|root/root|usr/local/share/inkscape/gradients|
@@ -683,7 +683,6 @@ drwxr-xr-x|0755|root/root|usr/local/share/inkscape/palettes|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/palettes/Ubuntu.gpl|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/palettes/echo-palette.gpl|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/palettes/inkscape.gpl|
--rw-r--r--|0644|root/root|usr/local/share/inkscape/palettes/palettes.h|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/palettes/svg.gpl|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/palettes/webhex.gpl|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/palettes/websafe22.gpl|
@@ -691,7 +690,6 @@ drwxr-xr-x|0755|root/root|usr/local/share/inkscape/palettes|
 drwxr-xr-x|0755|root/root|usr/local/share/inkscape/patterns|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/patterns/README|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/patterns/patterns.svg|
--rw-r--r--|0644|root/root|usr/local/share/inkscape/patterns/patterns.svg.h|
 drwxr-xr-x|0755|root/root|usr/local/share/inkscape/screens|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/screens/README|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/screens/about.svg|
@@ -702,7 +700,6 @@ drwxr-xr-x|0755|root/root|usr/local/share/inkscape/symbols|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/symbols/LogicSymbols.svg|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/symbols/MapSymbolsNPS.svg|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/symbols/README|
--rw-r--r--|0644|root/root|usr/local/share/inkscape/symbols/symbols.h|
 drwxr-xr-x|0755|root/root|usr/local/share/inkscape/templates|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/templates/CD_label_120x120.svg|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/templates/LaTeX_Beamer.svg|
@@ -733,7 +730,6 @@ drwxr-xr-x|0755|root/root|usr/local/share/inkscape/templates|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/templates/default.svg|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/templates/default.zh_TW.svg|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/templates/no_layers.svg|
--rw-r--r--|0644|root/root|usr/local/share/inkscape/templates/templates.h|
 drwxr-xr-x|0755|root/root|usr/local/share/inkscape/tutorials|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/tutorials/README|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/tutorials/edge3d.svg|
@@ -750,8 +746,6 @@ drwxr-xr-x|0755|root/root|usr/local/share/inkscape/tutorials|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/tutorials/pixelart-dialog.ru.png|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/tutorials/pixelart-dialog.sk.png|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/tutorials/pixelart-dialog.zh_TW.png|
--rw-r--r--|0644|root/root|usr/local/share/inkscape/tutorials/potrace.be.png|
--rw-r--r--|0644|root/root|usr/local/share/inkscape/tutorials/potrace.ca.png|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/tutorials/potrace.de.png|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/tutorials/potrace.el.png|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/tutorials/potrace.en.png|
@@ -771,7 +765,6 @@ drwxr-xr-x|0755|root/root|usr/local/share/inkscape/tutorials|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/tutorials/potrace.sk.png|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/tutorials/potrace.sl.png|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/tutorials/potrace.vi.png|
--rw-r--r--|0644|root/root|usr/local/share/inkscape/tutorials/potrace.zh_CN.png|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/tutorials/potrace.zh_TW.png|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/tutorials/tutorial-advanced.be.svg|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/tutorials/tutorial-advanced.ca.svg|
@@ -782,6 +775,7 @@ drwxr-xr-x|0755|root/root|usr/local/share/inkscape/tutorials|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/tutorials/tutorial-advanced.eu.svg|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/tutorials/tutorial-advanced.fa.svg|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/tutorials/tutorial-advanced.fr.svg|
+-rw-r--r--|0644|root/root|usr/local/share/inkscape/tutorials/tutorial-advanced.gl.svg|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/tutorials/tutorial-advanced.hu.svg|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/tutorials/tutorial-advanced.id.svg|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/tutorials/tutorial-advanced.it.svg|
@@ -836,6 +830,7 @@ drwxr-xr-x|0755|root/root|usr/local/share/inkscape/tutorials|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/tutorials/tutorial-calligraphy.eu.svg|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/tutorials/tutorial-calligraphy.fa.svg|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/tutorials/tutorial-calligraphy.fr.svg|
+-rw-r--r--|0644|root/root|usr/local/share/inkscape/tutorials/tutorial-calligraphy.gl.svg|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/tutorials/tutorial-calligraphy.hu.svg|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/tutorials/tutorial-calligraphy.id.svg|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/tutorials/tutorial-calligraphy.ja.svg|
@@ -857,6 +852,7 @@ drwxr-xr-x|0755|root/root|usr/local/share/inkscape/tutorials|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/tutorials/tutorial-elements.eu.svg|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/tutorials/tutorial-elements.fa.svg|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/tutorials/tutorial-elements.fr.svg|
+-rw-r--r--|0644|root/root|usr/local/share/inkscape/tutorials/tutorial-elements.gl.svg|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/tutorials/tutorial-elements.hu.svg|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/tutorials/tutorial-elements.id.svg|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/tutorials/tutorial-elements.it.svg|
@@ -874,6 +870,7 @@ drwxr-xr-x|0755|root/root|usr/local/share/inkscape/tutorials|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/tutorials/tutorial-interpolate.de.svg|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/tutorials/tutorial-interpolate.el.svg|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/tutorials/tutorial-interpolate.fr.svg|
+-rw-r--r--|0644|root/root|usr/local/share/inkscape/tutorials/tutorial-interpolate.gl.svg|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/tutorials/tutorial-interpolate.hu.svg|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/tutorials/tutorial-interpolate.ja.svg|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/tutorials/tutorial-interpolate.nl.svg|
@@ -919,6 +916,7 @@ drwxr-xr-x|0755|root/root|usr/local/share/inkscape/tutorials|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/tutorials/tutorial-tips.eu.svg|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/tutorials/tutorial-tips.fa.svg|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/tutorials/tutorial-tips.fr.svg|
+-rw-r--r--|0644|root/root|usr/local/share/inkscape/tutorials/tutorial-tips.gl.svg|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/tutorials/tutorial-tips.hu.svg|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/tutorials/tutorial-tips.id.svg|
 -rw-r--r--|0644|root/root|usr/local/share/inkscape/tutorials/tutorial-tips.it.svg|

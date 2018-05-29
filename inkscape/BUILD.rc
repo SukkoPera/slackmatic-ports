@@ -2,12 +2,12 @@
 
 BRIEF='A professional vector graphics editor'
 PROJECT=https://inkscape.org
-RELEASE=0.92.1
+RELEASE=0.92.3
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
 SOURCE=(
-	https://inkscape.org/gallery/item/10682/$NAME-$RELEASE.tar.bz2
+	https://inkscape.org/en/gallery/item/12187/$NAME-$RELEASE.tar.bz2
 )
 
 # Why do we have to set this manually???
@@ -16,4 +16,9 @@ CXXFLAGS='-Wall -O2 -std=c++11'
 CONFOPTS=(
 	$DEFAULT_CONFOPTS
 	--enable-dbusapi
+)
+
+PATCHES=(
+	inkscape-0.92.3-poppler-0.64.patch
+	inkscape-0.92.3-poppler-0.65.patch
 )
