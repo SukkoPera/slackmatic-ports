@@ -1,0 +1,16 @@
+From: Santiago Vila
+Subject: Set manpage date to 2001-01, the upstream release date
+Bug-Debian: https://bugs.debian.org/820457
+X-Debian-version: 3.6-23
+
+--- a/doc/help2man
++++ b/doc/help2man
+@@ -166,7 +166,7 @@
+ 	or die "$this_program: can't get `--$_' info from $ARGV[0]\n"
+ } qw(help version);
+ 
+-my $date = strftime "%B %Y", localtime;
++my $date = "January 2001";
+ (my $program = $ARGV[0]) =~ s!.*/!!;
+ my $package = $program;
+ my $version;

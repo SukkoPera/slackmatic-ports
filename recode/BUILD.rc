@@ -1,0 +1,30 @@
+. ../sukkolib.rc
+
+BRIEF='Charset converter tool and library'
+PROJECT=https://github.com/pinard/Recode/
+RELEASE=3.6
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=Recode-$RELEASE
+
+SOURCE=(
+	https://github.com/pinard/Recode/archive/v$RELEASE.tar.gz
+)
+
+PATCHES=(
+#	patches/01-no-usr-share-info-dir-gz.patch
+	patches/02-src-libiconv-c-utf8.patch
+	patches/03-src-task-c-librecode.patch
+	patches/04-src-hash-h-php4-collision.patch
+	patches/05-src-request-c-pointer-recalculation.patch
+#	patches/06-libtool-update.patch
+#	patches/07-po-update.patch
+#	patches/08-all-linguas-update.patch
+#	patches/09-manpage-name-section.patch
+	patches/10-src-recodext-h-gcc-fix.patch
+	patches/11-src-names-c-memory-leak.patch
+	patches/12-src-names-c-format-string.patch
+	patches/13-mdate-sh-use-tz-utc.patch
+	patches/14-set-manpage-date-to-upstream-release-date.patch
+	patches/99-config-guess-config-sub.patch
+)

@@ -1,0 +1,17 @@
+From: Santiago Vila
+Subject: Change doc/mdate-sh to use TZ=UTC
+X-Debian-version: 3.6-22
+
+--- a/doc/mdate-sh
++++ b/doc/mdate-sh
+@@ -25,6 +25,10 @@
+ LC_TIME=C
+ export LC_TIME
+ 
++# Use UTC to get reproducible result
++TZ=UTC
++export TZ
++
+ # Get the extended ls output of the file or directory.
+ # On HPUX /bin/sh, "set" interprets "-rw-r--r--" as options, so the "x" below.
+ if ls -L /dev/null 1>/dev/null 2>&1; then
