@@ -2,7 +2,7 @@
 
 BRIEF='Yelp''s universal stylesheets'
 PROJECT=https://wiki.gnome.org/Apps/Yelp/
-RELEASE=3.14.0
+RELEASE=3.28.0
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 TNAME=yelp-xsl

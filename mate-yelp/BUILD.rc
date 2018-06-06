@@ -2,7 +2,7 @@
 
 BRIEF='The help viewer in Gnome/MATE'
 PROJECT=https://wiki.gnome.org/Apps/Yelp/
-RELEASE=3.9.91
+RELEASE=3.27.1
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 TNAME=yelp
@@ -12,14 +12,3 @@ MAJORV=`{echo $RELEASE | sed -r 's:\.[0-9]+$::'}
 SOURCE=(
 	http://ftp.gnome.org/pub/gnome/sources/$TNAME/$MAJORV/$TNAME-$RELEASE.tar.xz
 )
-
-PATCHES=(
-	yelp-3.0.3-man-compatibility.patch
-)
-
-fn patches {
-	std_patches
-
-	sed -i '/^GNOME/d' configure.ac || exit 7
-	autoreconf
-}
