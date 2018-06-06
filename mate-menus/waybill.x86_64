@@ -20,7 +20,6 @@ drwxr-xr-x|0755|root/root|usr/lib64|
 drwxr-xr-x|0755|root/root|usr/lib64/girepository-1.0|
 -rw-r--r--|0644|root/root|usr/lib64/girepository-1.0/MateMenu-2.0.typelib|
 -rw-r--r--|0644|root/root|usr/lib64/libmate-menu.a|
--rwxr-xr-x|0755|root/root|usr/lib64/libmate-menu.la|
 lrwxrwxrwx|0777|root/root|usr/lib64/libmate-menu.so|->|libmate-menu.so.2.4.9|
 lrwxrwxrwx|0777|root/root|usr/lib64/libmate-menu.so.2|->|libmate-menu.so.2.4.9|
 -rwxr-xr-x|0755|root/root|usr/lib64/libmate-menu.so.2.4.9|

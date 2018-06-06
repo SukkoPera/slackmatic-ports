@@ -21,12 +21,10 @@ drwxr-xr-x|0755|root/root|usr/lib64|
 drwxr-xr-x|0755|root/root|usr/lib64/girepository-1.0|
 -rw-r--r--|0644|root/root|usr/lib64/girepository-1.0/Matekbd-1.0.typelib|
 -rw-r--r--|0644|root/root|usr/lib64/libmatekbd.a|
--rwxr-xr-x|0755|root/root|usr/lib64/libmatekbd.la|
 lrwxrwxrwx|0777|root/root|usr/lib64/libmatekbd.so|->|libmatekbd.so.4.2.0|
 lrwxrwxrwx|0777|root/root|usr/lib64/libmatekbd.so.4|->|libmatekbd.so.4.2.0|
 -rwxr-xr-x|0755|root/root|usr/lib64/libmatekbd.so.4.2.0|
 -rw-r--r--|0644|root/root|usr/lib64/libmatekbdui.a|
--rwxr-xr-x|0755|root/root|usr/lib64/libmatekbdui.la|
 lrwxrwxrwx|0777|root/root|usr/lib64/libmatekbdui.so|->|libmatekbdui.so.4.2.0|
 lrwxrwxrwx|0777|root/root|usr/lib64/libmatekbdui.so.4|->|libmatekbdui.so.4.2.0|
 -rwxr-xr-x|0755|root/root|usr/lib64/libmatekbdui.so.4.2.0|

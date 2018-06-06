@@ -25,7 +25,6 @@ drwxr-xr-x|0755|root/root|usr/include/marco-1/marco-private|
 -rw-r--r--|0644|root/root|usr/include/marco-1/marco-private/util.h|
 drwxr-xr-x|0755|root/root|usr/lib64|
 -rw-r--r--|0644|root/root|usr/lib64/libmarco-private.a|
--rwxr-xr-x|0755|root/root|usr/lib64/libmarco-private.la|
 lrwxrwxrwx|0777|root/root|usr/lib64/libmarco-private.so|->|libmarco-private.so.1.0.0|
 lrwxrwxrwx|0777|root/root|usr/lib64/libmarco-private.so.1|->|libmarco-private.so.1.0.0|
 -rwxr-xr-x|0755|root/root|usr/lib64/libmarco-private.so.1.0.0|

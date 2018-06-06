@@ -52,12 +52,10 @@ drwxr-xr-x|0755|root/root|usr/include/mate-window-settings-2.0|
 -rw-r--r--|0644|root/root|usr/include/mate-window-settings-2.0/mate-wm-manager.h|
 drwxr-xr-x|0755|root/root|usr/lib64|
 -rw-r--r--|0644|root/root|usr/lib64/libmate-slab.a|
--rwxr-xr-x|0755|root/root|usr/lib64/libmate-slab.la|
 lrwxrwxrwx|0777|root/root|usr/lib64/libmate-slab.so|->|libmate-slab.so.0.0.0|
 lrwxrwxrwx|0777|root/root|usr/lib64/libmate-slab.so.0|->|libmate-slab.so.0.0.0|
 -rwxr-xr-x|0755|root/root|usr/lib64/libmate-slab.so.0.0.0|
 -rw-r--r--|0644|root/root|usr/lib64/libmate-window-settings.a|
--rwxr-xr-x|0755|root/root|usr/lib64/libmate-window-settings.la|
 lrwxrwxrwx|0777|root/root|usr/lib64/libmate-window-settings.so|->|libmate-window-settings.so.1.0.0|
 lrwxrwxrwx|0777|root/root|usr/lib64/libmate-window-settings.so.1|->|libmate-window-settings.so.1.0.0|
 -rwxr-xr-x|0755|root/root|usr/lib64/libmate-window-settings.so.1.0.0|

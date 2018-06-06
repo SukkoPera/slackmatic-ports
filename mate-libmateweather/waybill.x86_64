@@ -19,7 +19,6 @@ drwxr-xr-x|0755|root/root|usr/include/libmateweather|
 -rw-r--r--|0644|root/root|usr/include/libmateweather/timezone-menu.h|
 -rw-r--r--|0644|root/root|usr/include/libmateweather/weather.h|
 drwxr-xr-x|0755|root/root|usr/lib64|
--rwxr-xr-x|0755|root/root|usr/lib64/libmateweather.la|
 lrwxrwxrwx|0777|root/root|usr/lib64/libmateweather.so|->|libmateweather.so.1.6.9|
 lrwxrwxrwx|0777|root/root|usr/lib64/libmateweather.so.1|->|libmateweather.so.1.6.9|
 -rwxr-xr-x|0755|root/root|usr/lib64/libmateweather.so.1.6.9|

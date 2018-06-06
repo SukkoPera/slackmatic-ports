@@ -29,7 +29,6 @@ drwxr-xr-x|0755|root/root|usr/include/mate-mixer/libmatemixer|
 drwxr-xr-x|0755|root/root|usr/lib64|
 drwxr-xr-x|0755|root/root|usr/lib64/libmatemixer|
 -rw-r--r--|0644|root/root|usr/lib64/libmatemixer.a|
--rwxr-xr-x|0755|root/root|usr/lib64/libmatemixer.la|
 -rw-r--r--|0644|root/root|usr/lib64/libmatemixer/libmatemixer-alsa.a|
 -rwxr-xr-x|0755|root/root|usr/lib64/libmatemixer/libmatemixer-alsa.la|
 -rwxr-xr-x|0755|root/root|usr/lib64/libmatemixer/libmatemixer-alsa.so|

@@ -30,7 +30,6 @@ drwxr-xr-x|0755|root/root|usr/include/caja/libcaja-extension|
 drwxr-xr-x|0755|root/root|usr/lib64|
 drwxr-xr-x|0755|root/root|usr/lib64/girepository-1.0|
 -rw-r--r--|0644|root/root|usr/lib64/girepository-1.0/Caja-2.0.typelib|
--rwxr-xr-x|0755|root/root|usr/lib64/libcaja-extension.la|
 lrwxrwxrwx|0777|root/root|usr/lib64/libcaja-extension.so|->|libcaja-extension.so.1.4.0|
 lrwxrwxrwx|0777|root/root|usr/lib64/libcaja-extension.so.1|->|libcaja-extension.so.1.4.0|
 -rwxr-xr-x|0755|root/root|usr/lib64/libcaja-extension.so.1.4.0|
