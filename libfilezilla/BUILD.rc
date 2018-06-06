@@ -2,7 +2,7 @@
 
 BRIEF='A small and modern C++ library to build high-performing, platform-independent programs'
 PROJECT=https://lib.filezilla-project.org
-RELEASE=0.11.2
+RELEASE=0.12.2
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
