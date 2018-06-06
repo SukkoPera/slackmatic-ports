@@ -98,7 +98,6 @@ drwxr-xr-x|0755|root/root|usr/lib64/geany|
 -rwxr-xr-x|0755|root/root|usr/lib64/geany/saveactions.so|
 -rwxr-xr-x|0755|root/root|usr/lib64/geany/splitwindow.la|
 -rwxr-xr-x|0755|root/root|usr/lib64/geany/splitwindow.so|
--rwxr-xr-x|0755|root/root|usr/lib64/libgeany.la|
 lrwxrwxrwx|0777|root/root|usr/lib64/libgeany.so|->|libgeany.so.0.0.0|
 lrwxrwxrwx|0777|root/root|usr/lib64/libgeany.so.0|->|libgeany.so.0.0.0|
 -rwxr-xr-x|0755|root/root|usr/lib64/libgeany.so.0.0.0|

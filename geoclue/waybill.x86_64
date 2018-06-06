@@ -30,7 +30,6 @@ drwxr-xr-x|0755|root/root|usr/include/geoclue|
 -rw-r--r--|0644|root/root|usr/include/geoclue/geoclue-velocity.h|
 drwxr-xr-x|0755|root/root|usr/lib64|
 -rw-r--r--|0644|root/root|usr/lib64/libgeoclue.a|
--rwxr-xr-x|0755|root/root|usr/lib64/libgeoclue.la|
 lrwxrwxrwx|0777|root/root|usr/lib64/libgeoclue.so|->|libgeoclue.so.0.0.0|
 lrwxrwxrwx|0777|root/root|usr/lib64/libgeoclue.so.0|->|libgeoclue.so.0.0.0|
 -rwxr-xr-x|0755|root/root|usr/lib64/libgeoclue.so.0.0.0|

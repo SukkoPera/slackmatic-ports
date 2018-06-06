@@ -14,7 +14,6 @@ drwxr-xr-x|0755|root/root|usr/include/gee-0.8|
 drwxr-xr-x|0755|root/root|usr/lib64|
 drwxr-xr-x|0755|root/root|usr/lib64/girepository-1.0|
 -rw-r--r--|0644|root/root|usr/lib64/girepository-1.0/Gee-0.8.typelib|
--rwxr-xr-x|0755|root/root|usr/lib64/libgee-0.8.la|
 lrwxrwxrwx|0777|root/root|usr/lib64/libgee-0.8.so|->|libgee-0.8.so.2.5.1|
 lrwxrwxrwx|0777|root/root|usr/lib64/libgee-0.8.so.2|->|libgee-0.8.so.2.5.1|
 -rwxr-xr-x|0755|root/root|usr/lib64/libgee-0.8.so.2.5.1|

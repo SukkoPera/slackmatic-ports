@@ -2,7 +2,7 @@
 
 BRIEF='A simple binary editor'
 PROJECT=http://directory.fsf.org/wiki/Ghex
-RELEASE=3.18.0
+RELEASE=3.18.3
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 

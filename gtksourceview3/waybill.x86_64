@@ -68,9 +68,6 @@ drwxr-xr-x|0755|root/root|usr/lib64/pkgconfig|
 drwxr-xr-x|0755|root/root|usr/share|
 drwxr-xr-x|0755|root/root|usr/share/gir-1.0|
 -rw-r--r--|0644|root/root|usr/share/gir-1.0/GtkSource-3.0.gir|
-drwxr-xr-x|0755|root/root|usr/share/glade|
-drwxr-xr-x|0755|root/root|usr/share/glade/catalogs|
--rw-r--r--|0644|root/root|usr/share/glade/catalogs/gtksourceview.xml|
 drwxr-xr-x|0755|root/root|usr/share/gtk-doc|
 drwxr-xr-x|0755|root/root|usr/share/gtk-doc/html|
 drwxr-xr-x|0755|root/root|usr/share/gtk-doc/html/gtksourceview-3.0|

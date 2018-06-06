@@ -32,12 +32,10 @@ drwxr-xr-x|0755|root/root|usr/lib64/goa-1.0/web-extensions|
 -rwxr-xr-x|0755|root/root|usr/lib64/goa-1.0/web-extensions/libgoawebextension.la|
 -rwxr-xr-x|0755|root/root|usr/lib64/goa-1.0/web-extensions/libgoawebextension.so|
 -rw-r--r--|0644|root/root|usr/lib64/libgoa-1.0.a|
--rwxr-xr-x|0755|root/root|usr/lib64/libgoa-1.0.la|
 lrwxrwxrwx|0777|root/root|usr/lib64/libgoa-1.0.so|->|libgoa-1.0.so.0.0.0|
 lrwxrwxrwx|0777|root/root|usr/lib64/libgoa-1.0.so.0|->|libgoa-1.0.so.0.0.0|
 -rwxr-xr-x|0755|root/root|usr/lib64/libgoa-1.0.so.0.0.0|
 -rw-r--r--|0644|root/root|usr/lib64/libgoa-backend-1.0.a|
--rwxr-xr-x|0755|root/root|usr/lib64/libgoa-backend-1.0.la|
 lrwxrwxrwx|0777|root/root|usr/lib64/libgoa-backend-1.0.so|->|libgoa-backend-1.0.so.1.0.0|
 lrwxrwxrwx|0777|root/root|usr/lib64/libgoa-backend-1.0.so.1|->|libgoa-backend-1.0.so.1.0.0|
 -rwxr-xr-x|0755|root/root|usr/lib64/libgoa-backend-1.0.so.1.0.0|

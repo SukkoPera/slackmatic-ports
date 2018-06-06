@@ -13,7 +13,7 @@ SOURCE=(
 	http://ftp.acc.umu.se/pub/gnome/sources/gtksourceview/$MAJORV/$TNAME-$RELEASE.tar.xz
 )
 
-CONFOPTS=(
-	$DEFAULT_CONFOPTS
-	--enable-glade-catalog
-)
+#CONFOPTS=(
+#	$DEFAULT_CONFOPTS
+#	--enable-glade-catalog
+#)

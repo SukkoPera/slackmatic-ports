@@ -2,7 +2,7 @@
 
 BRIEF='An application to burn CD/DVD for the Gnome Desktop'
 PROJECT=https://wiki.gnome.org/Apps/Brasero
-RELEASE=3.12.1
+RELEASE=3.12.2
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 

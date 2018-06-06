@@ -18,7 +18,6 @@ drwxr-xr-x|0755|root/root|usr/lib64|
 drwxr-xr-x|0755|root/root|usr/lib64/girepository-1.0|
 -rw-r--r--|0644|root/root|usr/lib64/girepository-1.0/Uhm-0.0.typelib|
 -rw-r--r--|0644|root/root|usr/lib64/libuhttpmock-0.0.a|
--rwxr-xr-x|0755|root/root|usr/lib64/libuhttpmock-0.0.la|
 lrwxrwxrwx|0777|root/root|usr/lib64/libuhttpmock-0.0.so|->|libuhttpmock-0.0.so.0.2.1|
 lrwxrwxrwx|0777|root/root|usr/lib64/libuhttpmock-0.0.so.0|->|libuhttpmock-0.0.so.0.2.1|
 -rwxr-xr-x|0755|root/root|usr/lib64/libuhttpmock-0.0.so.0.2.1|

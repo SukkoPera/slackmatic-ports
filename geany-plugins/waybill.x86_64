@@ -313,7 +313,6 @@ drwxr-xr-x|0755|root/root|usr/lib64/geany/geanypy/geany|
 -rwxr-xr-x|0755|root/root|usr/lib64/geany/workbench.so|
 -rwxr-xr-x|0755|root/root|usr/lib64/geany/xmlsnippets.la|
 -rwxr-xr-x|0755|root/root|usr/lib64/geany/xmlsnippets.so|
--rwxr-xr-x|0755|root/root|usr/lib64/libgeanypluginutils.la|
 lrwxrwxrwx|0777|root/root|usr/lib64/libgeanypluginutils.so|->|libgeanypluginutils.so.0.0.0|
 lrwxrwxrwx|0777|root/root|usr/lib64/libgeanypluginutils.so.0|->|libgeanypluginutils.so.0.0.0|
 -rwxr-xr-x|0755|root/root|usr/lib64/libgeanypluginutils.so.0.0.0|

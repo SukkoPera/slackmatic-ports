@@ -2,7 +2,7 @@
 
 BRIEF='An architecture to provide universal access to many different kinds and types of data sources'
 PROJECT=https://developer.gnome.org/libgda/
-RELEASE=5.2.2
+RELEASE=5.2.4
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
@@ -10,3 +10,22 @@ MAJORV=`{echo $RELEASE | sed 's:\.[0-9]$::'}
 SOURCE=(
 	http://ftp.gnome.org/mirror/gnome.org/sources/$NAME/$MAJORV/$NAME-$RELEASE.tar.xz
 )
+
+PATCHES=(
+	libgda-5.2.4-vala-check.patch
+)
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS
+	--enable-vala
+	--enable-vala-extensions
+	--enable-system-sqlite
+	--enable-binreloc
+	--disable-crypto
+)
+
+fn patches {
+	std_patches
+	sh $CWD/fixencoding.sh
+	autoreconf -sfi
+}

@@ -2,7 +2,7 @@
 
 BRIEF='Window Navigator Construction Kit'
 PROJECT=https://developer.gnome.org/libwnck/stable/
-RELEASE=3.14.0
+RELEASE=3.14.1
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 TNAME=libwnck

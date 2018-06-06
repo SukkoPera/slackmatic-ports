@@ -9,7 +9,7 @@
 
 BRIEF='an implementation of Zeroconf'
 PROJECT=http://avahi.org/
-RELEASE=0.6.32
+RELEASE=0.7
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 

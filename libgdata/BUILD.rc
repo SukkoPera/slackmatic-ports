@@ -2,7 +2,7 @@
 
 BRIEF='A GLib-based library for accessing Google''s services'
 PROJECT=https://wiki.gnome.org/Projects/libgdata
-RELEASE=0.16.1
+RELEASE=0.17.9
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 

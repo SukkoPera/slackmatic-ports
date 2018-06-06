@@ -11,7 +11,6 @@ drwxr-xr-x|0755|root/root|usr/include|
 -rw-r--r--|0644|root/root|usr/include/oauth.h|
 drwxr-xr-x|0755|root/root|usr/lib64|
 -rw-r--r--|0644|root/root|usr/lib64/liboauth.a|
--rwxr-xr-x|0755|root/root|usr/lib64/liboauth.la|
 lrwxrwxrwx|0777|root/root|usr/lib64/liboauth.so|->|liboauth.so.0.8.7|
 lrwxrwxrwx|0777|root/root|usr/lib64/liboauth.so.0|->|liboauth.so.0.8.7|
 -rwxr-xr-x|0755|root/root|usr/lib64/liboauth.so.0.8.7|
