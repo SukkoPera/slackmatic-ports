@@ -1,0 +1,32 @@
+. ../sukkolib.rc
+
+# TODO: doinst.sh adding rc to /etc/shells
+
+BRIEF='Re-implementation of the Plan 9 shell'
+PROJECT=https://github.com/rakitzis/rc
+RELEASE=1.7.4
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDSYSTEM=autotools
+
+SOURCE=(
+	https://github.com/rakitzis/rc/archive/v$RELEASE.tar.gz
+)
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS
+	--with-history
+	--with-editline'='readline
+)
+
+fn configure {
+	autoreconf -sfi
+	std_configure
+}
+
+fn inst {
+	mkdir -p $PKG/bin $PKG/usr/man/man1
+
+	cp rc $PKG/bin || exit 101
+	cp rc.1 $PKG/usr/man/man1 || exit 101
+}

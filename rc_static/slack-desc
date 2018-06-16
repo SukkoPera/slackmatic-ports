@@ -1,0 +1,11 @@
+rc_static: rc_static (Re-implementation of the Plan 9 shell)
+rc_static:
+rc_static: This is a slackmatic port build of rc_static:
+rc_static: Re-implementation of the Plan 9 shell 
+rc_static:
+rc_static: For more information about the package, see the project website at:
+rc_static: https://github.com/rakitzis/rc
+rc_static:
+rc_static:
+rc_static: This slackmatic port was developed by:
+rc_static: slackware@sukkology.net
