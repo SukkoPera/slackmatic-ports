@@ -2,7 +2,7 @@
 
 BRIEF='A Fast, Easy, and Free BitTorrent Client'
 PROJECT=http://www.transmissionbt.com
-RELEASE=2.93
+RELEASE=2.94
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDSYSTEM=autotools
