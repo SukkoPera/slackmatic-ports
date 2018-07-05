@@ -2,7 +2,7 @@
 
 BRIEF='A library for reading RAW files obtained from digital cameras'
 PROJECT=http://www.libraw.org
-RELEASE=0.18.8
+RELEASE=0.18.13
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 TNAME=LibRaw
