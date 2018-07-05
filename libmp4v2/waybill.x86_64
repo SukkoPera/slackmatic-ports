@@ -33,7 +33,6 @@ drwxr-xr-x|0755|root/root|usr/include/mp4v2|
 -rw-r--r--|0644|root/root|usr/include/mp4v2/track_prop.h|
 drwxr-xr-x|0755|root/root|usr/lib64|
 -rw-r--r--|0644|root/root|usr/lib64/libmp4v2.a|
--rwxr-xr-x|0755|root/root|usr/lib64/libmp4v2.la|
 lrwxrwxrwx|0777|root/root|usr/lib64/libmp4v2.so|->|libmp4v2.so.2.0.0|
 lrwxrwxrwx|0777|root/root|usr/lib64/libmp4v2.so.2|->|libmp4v2.so.2.0.0|
 -rwxr-xr-x|0755|root/root|usr/lib64/libmp4v2.so.2.0.0|

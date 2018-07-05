@@ -12,6 +12,10 @@ SOURCE=(
 	http://mp4v2.googlecode.com/files/mp4v2-$RELEASE.tar.bz2
 )
 
+PATCHES=(
+	gcc7.patch
+)
+
 CONFOPTS=(
 	$DEFAULT_CONFOPTS
 	--disable-gch
