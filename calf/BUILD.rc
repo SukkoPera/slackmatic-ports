@@ -10,6 +10,10 @@ SOURCE=(
 	http://calf-studio-gear.org/files/$NAME-$RELEASE.tar.gz
 )
 
+PATCHES=(
+	calf-0.0.60-cpp14.patch
+)
+
 CONFOPTS=(
 	$DEFAULT_CONFOPTS
 	--enable-experimental
