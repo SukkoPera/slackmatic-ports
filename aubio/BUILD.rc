@@ -2,9 +2,10 @@
 
 BRIEF='A tool designed for the extraction of annotations from audio signals'
 PROJECT=http://aubio.org
-RELEASE=0.4.2
+RELEASE=0.4.6
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
+BUILDSYSTEM=waf
 
 SOURCE=(
 	http://aubio.org/pub/$NAME-$RELEASE.tar.bz2
@@ -18,6 +19,20 @@ fn configure {
 	# Avoid a link error
 	LDFLAGS='-lm'
 	std_configure
+}
+
+fn compile {
+	std_compile
+
+	# Also build the Python bindings
+        python setup.py build || exit 101
+}
+
+fn inst {
+	std_inst
+
+	# Also install the Python bindings
+        python setup.py install --root $PKG || exit 102
 }
 
 fn docinst {
