@@ -2,7 +2,7 @@
 
 BRIEF='Terminal emulator widget for GTK+'
 PROJECT=https://github.com/GNOME/vte
-RELEASE=0.40.3
+RELEASE=0.46.3
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 TNAME=vte
