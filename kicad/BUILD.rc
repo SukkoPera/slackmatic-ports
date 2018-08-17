@@ -2,16 +2,13 @@
 
 BRIEF='A Cross Platform and Open Source Electronics Design Automation Suite'
 PROJECT=http://kicad-pcb.org
-RELEASE=4.0.7
+RELEASE=5.0.0
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
-
-LIBCONTEXT_COMMIT=3d92a1a50f4749b5a92131a957c9615473be85b4
 
 MAJORV=`{echo $RELEASE | sed 's:\.[0-9]$::'}
 SOURCE=(
 	https://launchpad.net/kicad/$MAJORV/$RELEASE/+download/$NAME-$RELEASE.tar.xz
-	https://github.com/twlostow/libcontext/archive/$LIBCONTEXT_COMMIT.tar.gz
 )
 
 CONFOPTS=(
@@ -25,18 +22,8 @@ CONFOPTS=(
 	-DKICAD_DOCS'='/usr/doc/$NAME-$RELEASE
 )
 
-# Thanks a lot to the gentoo folks!
-PATCHES=(
-	kicad-4.0.4-boost-context.patch
-	kicad-cmake-checkcxxsymbolexists.patch
-)
-
 fn patches {
-	mkdir -p common/system || exit $status
-	mkdir -p include/system || exit $status
-	cp $SRC/libcontext-$LIBCONTEXT_COMMIT/libcontext.cpp common/system/libcontext.cpp || exit $status
-	cp $SRC/libcontext-$LIBCONTEXT_COMMIT/libcontext.h include/system/libcontext.h || exit $status
-
-	# This will complete the patch
 	std_patches
+
+	sed -i 's:boost/uuid/sha1.hpp:boost/uuid/detail/sha1.hpp:' 3d-viewer/3d_cache/3d_cache.cpp || exit $status
 }

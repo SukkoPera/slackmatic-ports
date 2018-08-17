@@ -1,0 +1,11 @@
+kicad-symbols: kicad-symbols (The schematic and 3D libraries supported by KiCad team)
+kicad-symbols:
+kicad-symbols: This is a slackmatic port build of kicad-symbols:
+kicad-symbols: The schematic and 3D libraries supported by KiCad team 
+kicad-symbols:
+kicad-symbols: For more information about the package, see the project website at:
+kicad-symbols: https://kicad.github.io/symbols/
+kicad-symbols:
+kicad-symbols:
+kicad-symbols: This slackmatic port was developed by:
+kicad-symbols: slackware@sukkology.net
