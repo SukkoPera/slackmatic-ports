@@ -1,0 +1,22 @@
+. ../sukkolib.rc
+
+BRIEF='A self-contained cryptographic library for Python'
+PROJECT=https://github.com/Legrandin/pycryptodome
+RELEASE=3.6.6
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=pycryptodome-$RELEASE
+
+SOURCE=(
+	https://github.com/Legrandin/pycryptodome/archive/v$RELEASE.tar.gz
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	AUTHORS.rst
+	Changelog.rst
+	FuturePlans.rst
+	INSTALL.rst
+	LICENSE.rst
+	README.rst
+)

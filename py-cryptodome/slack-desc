@@ -1,0 +1,11 @@
+py-cryptodome: py-cryptodome (A self-contained cryptographic library for Python)
+py-cryptodome:
+py-cryptodome: This is a slackmatic port build of py-cryptodome:
+py-cryptodome: A self-contained cryptographic library for Python 
+py-cryptodome:
+py-cryptodome: For more information about the package, see the project website at:
+py-cryptodome: https://github.com/Legrandin/pycryptodome
+py-cryptodome:
+py-cryptodome:
+py-cryptodome: This slackmatic port was developed by:
+py-cryptodome: slackware@sukkology.net
