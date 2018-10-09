@@ -2,13 +2,20 @@
 
 BRIEF='The free FTP solution'
 PROJECT=http://filezilla-project.org
-RELEASE=3.33.0
+RELEASE=3.37.4
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
+H=Mn5E_0CxfWhZ5j3q_G04Bw
+X=1539106233
 
 SOURCE=(
-	https://dl2.cdn.filezilla-project.org/client/'FileZilla_'$RELEASE'_src.tar.bz2'
+        MYFETCH:$NAME-$RELEASE.tar.bz2
 )
+
+fn myfetch () {
+        wget https://dl3.cdn.filezilla-project.org/client/'FileZilla_'$RELEASE'_src.tar.bz2?h='$H'&x='$X -O $NAME-$RELEASE.tar.bz2
+}
+
 
 CONFOPTS=(
 	$DEFAULT_CONFOPTS
