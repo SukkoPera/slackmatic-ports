@@ -1,0 +1,16 @@
+. ../sukkolib.rc
+
+BRIEF='Twitter for Python!'
+PROJECT=http://tweepy.org
+RELEASE=3.6.0
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=tweepy-$RELEASE
+
+SOURCE=(
+	https://github.com/tweepy/tweepy/archive/v$RELEASE.tar.gz
+)
+
+PATCHES=(
+	pip-9.patch
+)
