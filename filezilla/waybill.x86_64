@@ -4,14 +4,14 @@ drwxr-xr-x|0755|root/root|usr/bin|
 -rwxr-xr-x|0755|root/root|usr/bin/fzputtygen|
 -rwxr-xr-x|0755|root/root|usr/bin/fzsftp|
 drwxr-xr-x|0755|root/root|usr/doc|
-drwxr-xr-x|0755|root/root|usr/doc/filezilla-3.33.0|
--rw-r--r--|0644|root/root|usr/doc/filezilla-3.33.0/AUTHORS|
--rw-r--r--|0644|root/root|usr/doc/filezilla-3.33.0/BUILD.rc|
--rw-r--r--|0644|root/root|usr/doc/filezilla-3.33.0/COPYING|
--rw-r--r--|0644|root/root|usr/doc/filezilla-3.33.0/ChangeLog|
--rw-r--r--|0644|root/root|usr/doc/filezilla-3.33.0/INSTALL|
--rw-r--r--|0644|root/root|usr/doc/filezilla-3.33.0/NEWS|
--rw-r--r--|0644|root/root|usr/doc/filezilla-3.33.0/README|
+drwxr-xr-x|0755|root/root|usr/doc/filezilla-3.37.4|
+-rw-r--r--|0644|root/root|usr/doc/filezilla-3.37.4/AUTHORS|
+-rw-r--r--|0644|root/root|usr/doc/filezilla-3.37.4/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/filezilla-3.37.4/COPYING|
+-rw-r--r--|0644|root/root|usr/doc/filezilla-3.37.4/ChangeLog|
+-rw-r--r--|0644|root/root|usr/doc/filezilla-3.37.4/INSTALL|
+-rw-r--r--|0644|root/root|usr/doc/filezilla-3.37.4/NEWS|
+-rw-r--r--|0644|root/root|usr/doc/filezilla-3.37.4/README|
 drwxr-xr-x|0755|root/root|usr/man|
 drwxr-xr-x|0755|root/root|usr/man/man1|
 -rw-r--r--|0644|root/root|usr/man/man1/filezilla.1.gz|
@@ -30,10 +30,6 @@ drwxr-xr-x|0755|root/root|usr/share/filezilla/docs|
 drwxr-xr-x|0755|root/root|usr/share/filezilla/resources|
 drwxr-xr-x|0755|root/root|usr/share/filezilla/resources/16x16|
 -rw-r--r--|0644|root/root|usr/share/filezilla/resources/16x16/filezilla.png|
--rw-r--r--|0644|root/root|usr/share/filezilla/resources/16x16/sort_down_dark.png|
--rw-r--r--|0644|root/root|usr/share/filezilla/resources/16x16/sort_down_light.png|
--rw-r--r--|0644|root/root|usr/share/filezilla/resources/16x16/sort_up_dark.png|
--rw-r--r--|0644|root/root|usr/share/filezilla/resources/16x16/sort_up_light.png|
 -rw-r--r--|0644|root/root|usr/share/filezilla/resources/16x16/throbber.gif|
 -rw-r--r--|0644|root/root|usr/share/filezilla/resources/16x16/unknown.png|
 drwxr-xr-x|0755|root/root|usr/share/filezilla/resources/20x20|
@@ -224,6 +220,7 @@ drwxr-xr-x|0755|root/root|usr/share/filezilla/resources/default/480x480|
 -rw-r--r--|0644|root/root|usr/share/filezilla/resources/default/480x480/disconnect.png|
 -rw-r--r--|0644|root/root|usr/share/filezilla/resources/default/480x480/downloadadd.png|
 -rw-r--r--|0644|root/root|usr/share/filezilla/resources/default/480x480/download.png|
+-rw-r--r--|0644|root/root|usr/share/filezilla/resources/default/480x480/dropdown.png|
 -rw-r--r--|0644|root/root|usr/share/filezilla/resources/default/480x480/file.png|
 -rw-r--r--|0644|root/root|usr/share/filezilla/resources/default/480x480/filter.png|
 -rw-r--r--|0644|root/root|usr/share/filezilla/resources/default/480x480/find.png|
@@ -232,6 +229,7 @@ drwxr-xr-x|0755|root/root|usr/share/filezilla/resources/default/480x480|
 -rw-r--r--|0644|root/root|usr/share/filezilla/resources/default/480x480/folder.png|
 -rw-r--r--|0644|root/root|usr/share/filezilla/resources/default/480x480/folderup.png|
 -rw-r--r--|0644|root/root|usr/share/filezilla/resources/default/480x480/help.png|
+-rw-r--r--|0644|root/root|usr/share/filezilla/resources/default/480x480/leds.png|
 -rw-r--r--|0644|root/root|usr/share/filezilla/resources/default/480x480/localtreeview.png|
 -rw-r--r--|0644|root/root|usr/share/filezilla/resources/default/480x480/lock.png|
 -rw-r--r--|0644|root/root|usr/share/filezilla/resources/default/480x480/logview.png|
@@ -243,6 +241,10 @@ drwxr-xr-x|0755|root/root|usr/share/filezilla/resources/default/480x480|
 -rw-r--r--|0644|root/root|usr/share/filezilla/resources/default/480x480/server.png|
 -rw-r--r--|0644|root/root|usr/share/filezilla/resources/default/480x480/showhidden.png|
 -rw-r--r--|0644|root/root|usr/share/filezilla/resources/default/480x480/sitemanager.png|
+-rw-r--r--|0644|root/root|usr/share/filezilla/resources/default/480x480/sort_down_dark.png|
+-rw-r--r--|0644|root/root|usr/share/filezilla/resources/default/480x480/sort_down_light.png|
+-rw-r--r--|0644|root/root|usr/share/filezilla/resources/default/480x480/sort_up_dark.png|
+-rw-r--r--|0644|root/root|usr/share/filezilla/resources/default/480x480/sort_up_light.png|
 -rw-r--r--|0644|root/root|usr/share/filezilla/resources/default/480x480/speedlimits.png|
 -rw-r--r--|0644|root/root|usr/share/filezilla/resources/default/480x480/symlink.png|
 -rw-r--r--|0644|root/root|usr/share/filezilla/resources/default/480x480/synchronize.png|
@@ -251,7 +253,6 @@ drwxr-xr-x|0755|root/root|usr/share/filezilla/resources/default/480x480|
 -rw-r--r--|0644|root/root|usr/share/filezilla/resources/default/480x480/upload.png|
 -rw-r--r--|0644|root/root|usr/share/filezilla/resources/defaultfilters.xml|
 -rw-r--r--|0644|root/root|usr/share/filezilla/resources/default/theme.xml|
--rw-r--r--|0644|root/root|usr/share/filezilla/resources/dropdown.png|
 -rw-r--r--|0644|root/root|usr/share/filezilla/resources/finished.wav|
 drwxr-xr-x|0755|root/root|usr/share/filezilla/resources/flatzilla|
 drwxr-xr-x|0755|root/root|usr/share/filezilla/resources/flatzilla/16x16|
@@ -379,7 +380,6 @@ drwxr-xr-x|0755|root/root|usr/share/filezilla/resources/flatzilla/48x48|
 -rw-r--r--|0644|root/root|usr/share/filezilla/resources/flatzilla/48x48/uploadadd.png|
 -rw-r--r--|0644|root/root|usr/share/filezilla/resources/flatzilla/48x48/upload.png|
 -rw-r--r--|0644|root/root|usr/share/filezilla/resources/flatzilla/theme.xml|
--rw-r--r--|0644|root/root|usr/share/filezilla/resources/leds.png|
 drwxr-xr-x|0755|root/root|usr/share/filezilla/resources/lone|
 drwxr-xr-x|0755|root/root|usr/share/filezilla/resources/lone/16x16|
 -rw-r--r--|0644|root/root|usr/share/filezilla/resources/lone/16x16/ascii.png|
@@ -744,7 +744,6 @@ drwxr-xr-x|0755|root/root|usr/share/filezilla/resources/xrc|
 -rw-r--r--|0644|root/root|usr/share/filezilla/resources/xrc/certificate.xrc|
 -rw-r--r--|0644|root/root|usr/share/filezilla/resources/xrc/dialogs.xrc|
 -rw-r--r--|0644|root/root|usr/share/filezilla/resources/xrc/inputdialog.xrc|
--rw-r--r--|0644|root/root|usr/share/filezilla/resources/xrc/menus.xrc|
 -rw-r--r--|0644|root/root|usr/share/filezilla/resources/xrc/netconfwizard.xrc|
 -rw-r--r--|0644|root/root|usr/share/filezilla/resources/xrc/settings.xrc|
 -rw-r--r--|0644|root/root|usr/share/filezilla/resources/xrc/sitemanager.xrc|
