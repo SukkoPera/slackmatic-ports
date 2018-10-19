@@ -1,0 +1,16 @@
+--- setup.py.orig	2018-10-14 19:23:24.358351848 +0200
++++ setup.py	2018-10-14 19:23:43.677559719 +0200
+@@ -2,7 +2,12 @@
+ #from distutils.core import setup
+ import re, uuid
+ from setuptools import setup, find_packages
+-from pip.req import parse_requirements
++
++# https://stackoverflow.com/questions/25192794/no-module-named-pip-req
++try: # for pip >= 10
++	from pip._internal.req import parse_requirements
++except ImportError: # for pip <= 9.0.3
++	from pip.req import parse_requirements
+ 
+ VERSIONFILE = "tweepy/__init__.py"
+ ver_file = open(VERSIONFILE, "rt").read()
