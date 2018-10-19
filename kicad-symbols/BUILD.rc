@@ -2,7 +2,7 @@
 
 BRIEF='The schematic and 3D libraries supported by KiCad team'
 PROJECT=https://kicad.github.io/symbols/
-RELEASE=5.0.0
+RELEASE=5.0.1
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 

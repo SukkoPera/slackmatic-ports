@@ -1,7 +1,7 @@
 drwxr-xr-x|0755|root/root|usr|
 drwxr-xr-x|0755|root/root|usr/doc|
-drwxr-xr-x|0755|root/root|usr/doc/kicad-symbols-5.0.0|
--rw-r--r--|0644|root/root|usr/doc/kicad-symbols-5.0.0/BUILD.rc|
+drwxr-xr-x|0755|root/root|usr/doc/kicad-symbols-5.0.1|
+-rw-r--r--|0644|root/root|usr/doc/kicad-symbols-5.0.1/BUILD.rc|
 drwxr-xr-x|0755|root/root|usr/share|
 drwxr-xr-x|0755|root/root|usr/share/kicad|
 drwxr-xr-x|0755|root/root|usr/share/kicad/library|

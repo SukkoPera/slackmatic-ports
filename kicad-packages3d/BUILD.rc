@@ -2,7 +2,7 @@
 
 BRIEF='KiCad 3D model libraries for rendering and MCAD integration'
 PROJECT=https://github.com/KiCad/kicad-packages3D
-RELEASE=5.0.0
+RELEASE=5.0.1
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDDIR=kicad-packages3D-$RELEASE
