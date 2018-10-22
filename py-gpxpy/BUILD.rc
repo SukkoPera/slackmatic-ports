@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+BRIEF='A python GPX parser'
+PROJECT=https://github.com/tkrajina/gpxpy
+RELEASE=1.3.3
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=gpxpy-$RELEASE
+
+SOURCE=(
+	https://github.com/tkrajina/gpxpy/archive/v$RELEASE.tar.gz
+)

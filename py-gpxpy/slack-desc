@@ -1,0 +1,11 @@
+py-gpxpy: py-gpxpy (A python GPX parser)
+py-gpxpy:
+py-gpxpy: This is a slackmatic port build of py-gpxpy:
+py-gpxpy: A python GPX parser 
+py-gpxpy:
+py-gpxpy: For more information about the package, see the project website at:
+py-gpxpy: https://github.com/tkrajina/gpxpy
+py-gpxpy:
+py-gpxpy:
+py-gpxpy: This slackmatic port was developed by:
+py-gpxpy: slackware@sukkology.net
