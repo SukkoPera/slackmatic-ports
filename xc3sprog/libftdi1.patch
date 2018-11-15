@@ -1,0 +1,20 @@
+--- Findlibftdi.cmake.orig	2018-11-16 00:48:57.219586998 +0100
++++ Findlibftdi.cmake	2018-11-16 00:49:10.169587778 +0100
+@@ -17,7 +17,7 @@
+ 
+     if(NOT WIN32)
+         include(FindPkgConfig)
+-        pkg_check_modules(LIBFTDI_PKG libftdi)
++        pkg_check_modules(LIBFTDI_PKG libftdi1)
+     endif(NOT WIN32)
+ 
+     find_path(LIBFTDI_INCLUDE_DIR
+@@ -37,7 +37,7 @@
+ 
+     find_library(LIBFTDI_LIBRARIES
+         NAMES
+-            ftdi
++            ftdi1
+         HINTS
+             ${LIBFTDI_PKG_LIBRARY_DIRS}
+         PATHS
