@@ -2,11 +2,12 @@
 
 BRIEF='Open source library to talk to FTDI chips'
 PROJECT=https://www.intra2net.com/en/developer/libftdi/
-RELEASE=1.3
+RELEASE=1.4
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 TNAME=libftdi1
 BUILDDIR=$TNAME-$RELEASE
+MAKEJOBS=1
 
 SOURCE=(
 	https://www.intra2net.com/en/developer/libftdi/download/$TNAME-$RELEASE.tar.bz2
