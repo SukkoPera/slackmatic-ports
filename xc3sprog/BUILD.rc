@@ -1,0 +1,11 @@
+. ../sukkolib.rc
+
+BRIEF='A suite of utilities for programming Xilinx FPGAs, CPLDs, and EEPROMs'
+PROJECT=https://github.com/matrix-io/xc3sprog
+RELEASE=1.1.1
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	https://github.com/matrix-io/xc3sprog/archive/v$RELEASE.tar.gz
+)
