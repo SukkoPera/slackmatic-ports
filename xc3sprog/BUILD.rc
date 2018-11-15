@@ -9,3 +9,7 @@ PACKAGER=slackware@sukkology.net
 SOURCE=(
 	https://github.com/matrix-io/xc3sprog/archive/v$RELEASE.tar.gz
 )
+
+PATCHES=(
+	libftdi1.patch
+)
