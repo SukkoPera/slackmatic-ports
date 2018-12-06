@@ -1,0 +1,27 @@
+. ../sukkolib.rc
+
+BRIEF='LightDM is a cross-desktop display manager.'
+PROJECT=http://webkitgtk.org
+RELEASE=2.0.5
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+MAKEJOBS=4
+MAJOR=2.0
+OUR_CFLAGS="-Wno-declaration-after-statement \
+            -Wno-error=deprecated-declarations" 
+
+CFLAGS="$CFLAGS $OUR_CFLAGS"     
+HAVE_EXO_CSOURCE=yes     
+
+SOURCE=(
+https://launchpad.net/lightdm-gtk-greeter/$MAJOR/$RELEASE/+download/lightdm-gtk-greeter-$RELEASE.tar.gz
+)
+
+CONFOPTS=(
+    $DEFAULT_CONFOPTS
+   --with-libxklavier            
+   --enable-kill-on-sigterm      
+   --disable-libido              
+   --disable-libindicator        
+   --disable-static              
+)

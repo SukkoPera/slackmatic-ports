@@ -1,0 +1,11 @@
+lightdm:LightDM is a cross-desktop display manager.
+lightdm:	 A display manager is a daemon that:
+lightdm:
+lightdm:    Runs display servers (e.g. X) where necessary.
+lightdm:    Runs greeters to allow users to pick which user account
+lightdm.	 and session type to use.
+lightdm:    Allows greeters to perform authentication using PAM.
+lightdm:    Runs session processes once authentication is complete.
+lightdm:    Provides remote graphical login options.
+lightdm:
+lightdm:
