@@ -1,0 +1,37 @@
+. ../sukkolib.rc
+
+BRIEF='LightDM is a cross-desktop display manager.'
+PROJECT=http://webkitgtk.org
+RELEASE=1.28.0
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+MAKEJOBS=4
+
+SOURCE=(
+https://github.com/CanonicalLtd/lightdm/releases/download/$RELEASE/lightdm-$RELEASE.tar.xz
+)
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS
+   --prefix'='/usr                 
+   --libexecdir'='/usr/lib/lightdm 
+   --sbindir'='/usr/bin            
+   --sysconfdir'='/etc             
+   --with-libxklavier            
+   --enable-kill-on-sigterm      
+   --disable-libido              
+   --disable-libindicator        
+   --disable-static              
+   --docdir'='/usr/share/doc/lightdm-gtk-greeter-$RELEASE
+)
+
+fn build {
+echo $(pwd)
+cd $SRC/lightdm-$RELEASE
+./autogen.sh
+./configure $CONFOPTS
+make -j 5 
+make install -j5 DESTDIR'='"$PKG"
+sed -i '/pam_systemd.so/d' $PKG/etc/pam.d/lightdm*
+sed -i 's@^#session-wrapper=.*$@session-wrapper=/etc/X11/xinit/xinitrc@g;s/^#greeter-session.*$/greeter-session=lightdm-gtk-greeter/g' $PKG/etc/lightdm/lightdm.conf
+}
