@@ -1,0 +1,13 @@
+. ../sukkolib.rc
+
+BRIEF='A Verilog simulation and synthesis tool'
+PROJECT=http://iverilog.icarus.com
+RELEASE=10.2
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+TNAME=verilog
+BUILDDIR=$TNAME-$RELEASE
+
+SOURCE=(
+	ftp://icarus.com/pub/eda/verilog/v10/$TNAME-$RELEASE.tar.gz
+)

@@ -1,0 +1,11 @@
+iverilog: iverilog (A Verilog simulation and synthesis tool)
+iverilog:
+iverilog: This is a slackmatic port build of iverilog:
+iverilog: A Verilog simulation and synthesis tool 
+iverilog:
+iverilog: For more information about the package, see the project website at:
+iverilog: http://iverilog.icarus.com
+iverilog:
+iverilog:
+iverilog: This slackmatic port was developed by:
+iverilog: slackware@sukkology.net
