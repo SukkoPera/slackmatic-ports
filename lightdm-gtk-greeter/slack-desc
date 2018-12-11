@@ -1,0 +1,11 @@
+lightdm-gtk-greeter: lightdm-gtk-greeter (A cross-desktop display manager)
+lightdm-gtk-greeter:
+lightdm-gtk-greeter: This is a slackmatic port build of lightdm-gtk-greeter:
+lightdm-gtk-greeter: A cross-desktop display manager 
+lightdm-gtk-greeter:
+lightdm-gtk-greeter: For more information about the package, see the project website at:
+lightdm-gtk-greeter: http://webkitgtk.org
+lightdm-gtk-greeter:
+lightdm-gtk-greeter:
+lightdm-gtk-greeter: This slackmatic port was developed by:
+lightdm-gtk-greeter: slackware@sukkology.net
