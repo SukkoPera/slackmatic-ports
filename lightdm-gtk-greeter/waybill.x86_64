@@ -11,12 +11,10 @@ drwxr-xr-x|0755|root/root|usr/doc/lightdm-gtk-greeter-2.0.5|
 -rw-r--r--|0644|root/root|usr/doc/lightdm-gtk-greeter-2.0.5/ChangeLog|
 -rw-r--r--|0644|root/root|usr/doc/lightdm-gtk-greeter-2.0.5/NEWS|
 -rw-r--r--|0644|root/root|usr/doc/lightdm-gtk-greeter-2.0.5/README|
+-rw-r--r--|0644|root/root|usr/doc/lightdm-gtk-greeter-2.0.5/sample-lightdm-gtk-greeter.css|
 drwxr-xr-x|0755|root/root|usr/sbin|
 -rwxr-xr-x|0755|root/root|usr/sbin/lightdm-gtk-greeter|
 drwxr-xr-x|0755|root/root|usr/share|
-drwxr-xr-x|0755|root/root|usr/share/doc|
-drwxr-xr-x|0755|root/root|usr/share/doc/lightdm-gtk-greeter|
--rw-r--r--|0644|root/root|usr/share/doc/lightdm-gtk-greeter/sample-lightdm-gtk-greeter.css|
 drwxr-xr-x|0755|root/root|usr/share/icons|
 drwxr-xr-x|0755|root/root|usr/share/icons/hicolor|
 drwxr-xr-x|0755|root/root|usr/share/icons/hicolor/scalable|

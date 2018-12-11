@@ -24,6 +24,7 @@ drwxr-xr-x|0755|root/root|usr/bin|
 drwxr-xr-x|0755|root/root|usr/doc|
 drwxr-xr-x|0755|root/root|usr/doc/lightdm-1.28.0|
 -rw-r--r--|0644|root/root|usr/doc/lightdm-1.28.0/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/lightdm-1.28.0/NEWS|
 drwxr-xr-x|0755|root/root|usr/include|
 drwxr-xr-x|0755|root/root|usr/include/lightdm-gobject-1|
 drwxr-xr-x|0755|root/root|usr/include/lightdm-gobject-1/lightdm|
@@ -59,15 +60,12 @@ drwxr-xr-x|0755|root/root|usr/lib|
 drwxr-xr-x|0755|root/root|usr/lib64|
 drwxr-xr-x|0755|root/root|usr/lib64/girepository-1.0|
 -rw-r--r--|0644|root/root|usr/lib64/girepository-1.0/LightDM-1.typelib|
--rwxr-xr-x|0755|root/root|usr/lib64/liblightdm-gobject-1.la|
 lrwxrwxrwx|0777|root/root|usr/lib64/liblightdm-gobject-1.so|->|liblightdm-gobject-1.so.0.0.0|
 lrwxrwxrwx|0777|root/root|usr/lib64/liblightdm-gobject-1.so.0|->|liblightdm-gobject-1.so.0.0.0|
 -rwxr-xr-x|0755|root/root|usr/lib64/liblightdm-gobject-1.so.0.0.0|
--rwxr-xr-x|0755|root/root|usr/lib64/liblightdm-qt-3.la|
 lrwxrwxrwx|0777|root/root|usr/lib64/liblightdm-qt-3.so|->|liblightdm-qt-3.so.0.0.0|
 lrwxrwxrwx|0777|root/root|usr/lib64/liblightdm-qt-3.so.0|->|liblightdm-qt-3.so.0.0.0|
 -rwxr-xr-x|0755|root/root|usr/lib64/liblightdm-qt-3.so.0.0.0|
--rwxr-xr-x|0755|root/root|usr/lib64/liblightdm-qt5-3.la|
 lrwxrwxrwx|0777|root/root|usr/lib64/liblightdm-qt5-3.so|->|liblightdm-qt5-3.so.0.0.0|
 lrwxrwxrwx|0777|root/root|usr/lib64/liblightdm-qt5-3.so.0|->|liblightdm-qt5-3.so.0.0.0|
 -rwxr-xr-x|0755|root/root|usr/lib64/liblightdm-qt5-3.so.0.0.0|
