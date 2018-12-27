@@ -1,0 +1,19 @@
+. ../sukkolib.rc
+
+BRIEF='Clean single-source support for Python 3 and 2'
+PROJECT=https://python-future.org
+RELEASE=0.15.2
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=future-$RELEASE
+
+SOURCE=(
+	https://files.pythonhosted.org/packages/5a/f4/99abde815842bc6e97d5a7806ad51236630da14ca2f3b1fce94c0bb94d3d/future-$RELEASE.tar.gz
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	LICENSE.txt
+	README.rst
+	TESTING.txt
+)
