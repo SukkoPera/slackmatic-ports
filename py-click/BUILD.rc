@@ -2,7 +2,7 @@
 
 BRIEF='A Python package for creating beautiful command line interfaces'
 PROJECT=http://click.pocoo.org/5/
-RELEASE=5.1
+RELEASE=6.2
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDDIR=click-$RELEASE
