@@ -1,0 +1,18 @@
+. ../sukkolib.rc
+
+BRIEF='Backport of the concurrent.futures package to Python 2.6 and 2.7'
+PROJECT=https://github.com/agronholm/pythonfutures
+RELEASE=3.1.1
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=pythonfutures-$RELEASE
+
+SOURCE=(
+	https://github.com/agronholm/pythonfutures/archive/$RELEASE.tar.gz
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	CHANGES.rst
+	README.rst
+)

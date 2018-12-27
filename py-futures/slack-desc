@@ -1,0 +1,11 @@
+py-futures: py-futures (Backport of the concurrent.futures package to Python 2.6 and 2.7)
+py-futures:
+py-futures: This is a slackmatic port build of py-futures:
+py-futures: Backport of the concurrent.futures package to Python 2.6 and 2.7 
+py-futures:
+py-futures: For more information about the package, see the project website at:
+py-futures: https://github.com/agronholm/pythonfutures
+py-futures:
+py-futures:
+py-futures: This slackmatic port was developed by:
+py-futures: slackware@sukkology.net
