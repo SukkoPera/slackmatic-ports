@@ -1,0 +1,17 @@
+. ../sukkolib.rc
+
+BRIEF='Websocket client for python'
+PROJECT=https://github.com/websocket-client/websocket-client
+RELEASE=0.40.0
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=websocket-client-$RELEASE
+
+SOURCE=(
+	https://github.com/websocket-client/websocket-client/archive/v$RELEASE.tar.gz
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	README.rst
+)

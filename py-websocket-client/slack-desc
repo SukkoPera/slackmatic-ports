@@ -1,0 +1,11 @@
+py-websocket-client: py-websocket-client (Websocket client for python)
+py-websocket-client:
+py-websocket-client: This is a slackmatic port build of py-websocket-client:
+py-websocket-client: Websocket client for python 
+py-websocket-client:
+py-websocket-client: For more information about the package, see the project website at:
+py-websocket-client: https://github.com/websocket-client/websocket-client
+py-websocket-client:
+py-websocket-client:
+py-websocket-client: This slackmatic port was developed by:
+py-websocket-client: slackware@sukkology.net
