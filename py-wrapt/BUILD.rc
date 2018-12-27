@@ -1,0 +1,17 @@
+. ../sukkolib.rc
+
+BRIEF='A Python module for decorators, wrappers and monkey patching'
+PROJECT=https://github.com/GrahamDumpleton/wrapt
+RELEASE=1.10.11
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=wrapt-$RELEASE
+
+SOURCE=(
+	https://github.com/GrahamDumpleton/wrapt/archive/$RELEASE.tar.gz
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	README.rst
+)

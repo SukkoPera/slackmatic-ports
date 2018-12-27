@@ -1,0 +1,11 @@
+py-wrapt: py-wrapt (A Python module for decorators, wrappers and monkey patching)
+py-wrapt:
+py-wrapt: This is a slackmatic port build of py-wrapt:
+py-wrapt: A Python module for decorators, wrappers and monkey patching 
+py-wrapt:
+py-wrapt: For more information about the package, see the project website at:
+py-wrapt: https://github.com/GrahamDumpleton/wrapt
+py-wrapt:
+py-wrapt:
+py-wrapt: This slackmatic port was developed by:
+py-wrapt: slackware@sukkology.net
