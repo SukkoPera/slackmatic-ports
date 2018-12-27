@@ -1,0 +1,13 @@
+drwxr-xr-x|0755|root/root|usr|
+drwxr-xr-x|0755|root/root|usr/doc|
+drwxr-xr-x|0755|root/root|usr/doc/py-scandir-1.3|
+-rw-r--r--|0644|root/root|usr/doc/py-scandir-1.3/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/py-scandir-1.3/LICENSE.txt|
+-rw-r--r--|0644|root/root|usr/doc/py-scandir-1.3/README.rst|
+drwxr-xr-x|0755|root/root|usr/lib64|
+drwxr-xr-x|0755|root/root|usr/lib64/python2.7|
+drwxr-xr-x|0755|root/root|usr/lib64/python2.7/site-packages|
+-rw-r--r--|0644|root/root|usr/lib64/python2.7/site-packages/scandir-1.3-py2.7.egg-info|
+-rw-r--r--|0644|root/root|usr/lib64/python2.7/site-packages/scandir.py|
+-rw-r--r--|0644|root/root|usr/lib64/python2.7/site-packages/scandir.pyc|
+-rwxr-xr-x|0755|root/root|usr/lib64/python2.7/site-packages/_scandir.so|

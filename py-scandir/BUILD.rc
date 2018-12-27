@@ -1,0 +1,18 @@
+. ../sukkolib.rc
+
+BRIEF='Better directory iterator and faster os.walk() for Python'
+PROJECT=https://github.com/benhoyt/scandir
+RELEASE=1.3
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=scandir-$RELEASE
+
+SOURCE=(
+	https://github.com/benhoyt/scandir/archive/v$RELEASE.tar.gz
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	LICENSE.txt
+	README.rst
+)

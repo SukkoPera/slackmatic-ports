@@ -1,0 +1,11 @@
+py-scandir: py-scandir (Better directory iterator and faster os.walk() for Python)
+py-scandir:
+py-scandir: This is a slackmatic port build of py-scandir:
+py-scandir: Better directory iterator and faster os.walk() for Python 
+py-scandir:
+py-scandir: For more information about the package, see the project website at:
+py-scandir: https://github.com/benhoyt/scandir
+py-scandir:
+py-scandir:
+py-scandir: This slackmatic port was developed by:
+py-scandir: slackware@sukkology.net
