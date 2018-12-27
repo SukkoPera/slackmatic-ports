@@ -113,12 +113,14 @@ fn std_docinst {
 	# This needs testing
 	#for (f in `{eval echo $DOCS}) {
 	for (_f in $DOCS) {
-#		f=`{eval echo $f}
-		if (test -f $_f && test `{filesize $_f} -gt 0) {
-# 			trace 'Installing doc: '$_f' in: '$DOC
-			install -m 0644 $_f $DOC
-		#~ } else {
-			#~ trace 'Skipping doc: '$_f
+		for (_e in ('' .txt .doc .rst)) {
+			f=$_f$_e
+			if (test -f $f && test `{filesize $f} -gt 0) {
+# 				trace 'Installing doc: '$_f' in: '$DOC
+				install -m 0644 $f $DOC
+			#~ } else {
+				#~ trace 'Skipping doc: '$_f
+			}
 		}
 	}
 }
