@@ -1,0 +1,17 @@
+. ../sukkolib.rc
+
+BRIEF='A simple immutable mapping for python'
+PROJECT=https://github.com/slezica/python-frozendict
+RELEASE=20181228
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=python-frozendict-master
+
+SOURCE=(
+	https://github.com/slezica/python-frozendict/archive/master.zip
+)
+
+DOCS=(
+	LICENSE.txt
+	README.rst
+)

@@ -1,0 +1,11 @@
+py-frozendict: py-frozendict (A simple immutable mapping for python)
+py-frozendict:
+py-frozendict: This is a slackmatic port build of py-frozendict:
+py-frozendict: A simple immutable mapping for python 
+py-frozendict:
+py-frozendict: For more information about the package, see the project website at:
+py-frozendict: https://github.com/slezica/python-frozendict
+py-frozendict:
+py-frozendict:
+py-frozendict: This slackmatic port was developed by:
+py-frozendict: slackware@sukkology.net

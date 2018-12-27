@@ -1,0 +1,17 @@
+drwxr-xr-x|0755|root/root|usr|
+drwxr-xr-x|0755|root/root|usr/doc|
+drwxr-xr-x|0755|root/root|usr/doc/py-frozendict-20181228|
+-rw-r--r--|0644|root/root|usr/doc/py-frozendict-20181228/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/py-frozendict-20181228/LICENSE.txt|
+-rw-r--r--|0644|root/root|usr/doc/py-frozendict-20181228/README.rst|
+drwxr-xr-x|0755|root/root|usr/lib64|
+drwxr-xr-x|0755|root/root|usr/lib64/python2.7|
+drwxr-xr-x|0755|root/root|usr/lib64/python2.7/site-packages|
+drwxr-xr-x|0755|root/root|usr/lib64/python2.7/site-packages/frozendict|
+drwxr-xr-x|0755|root/root|usr/lib64/python2.7/site-packages/frozendict-1.2-py2.7.egg-info|
+-rw-r--r--|0644|root/root|usr/lib64/python2.7/site-packages/frozendict-1.2-py2.7.egg-info/PKG-INFO|
+-rw-r--r--|0644|root/root|usr/lib64/python2.7/site-packages/frozendict-1.2-py2.7.egg-info/SOURCES.txt|
+-rw-r--r--|0644|root/root|usr/lib64/python2.7/site-packages/frozendict-1.2-py2.7.egg-info/dependency_links.txt|
+-rw-r--r--|0644|root/root|usr/lib64/python2.7/site-packages/frozendict-1.2-py2.7.egg-info/top_level.txt|
+-rw-r--r--|0644|root/root|usr/lib64/python2.7/site-packages/frozendict/__init__.py|
+-rw-r--r--|0644|root/root|usr/lib64/python2.7/site-packages/frozendict/__init__.pyc|
