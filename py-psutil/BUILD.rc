@@ -1,0 +1,20 @@
+. ../sukkolib.rc
+
+BRIEF='Cross-platform lib for process and system monitoring in Python'
+PROJECT=https://github.com/giampaolo/psutil
+RELEASE=5.4.8
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=psutil-release-$RELEASE
+
+SOURCE=(
+	https://github.com/giampaolo/psutil/archive/release-$RELEASE.tar.gz
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	DEVGUIDE.rst
+	HISTORY.rst
+	IDEAS
+	INSTALL.rst
+)

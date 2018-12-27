@@ -1,0 +1,11 @@
+py-psutil: py-psutil (Cross-platform lib for process and system monitoring in Python)
+py-psutil:
+py-psutil: This is a slackmatic port build of py-psutil:
+py-psutil: Cross-platform lib for process and system monitoring in Python 
+py-psutil:
+py-psutil: For more information about the package, see the project website at:
+py-psutil: https://github.com/giampaolo/psutil
+py-psutil:
+py-psutil:
+py-psutil: This slackmatic port was developed by:
+py-psutil: slackware@sukkology.net
