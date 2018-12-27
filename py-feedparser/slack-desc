@@ -1,0 +1,11 @@
+py-feedparser: py-feedparser (Parse feeds in Python)
+py-feedparser:
+py-feedparser: This is a slackmatic port build of py-feedparser:
+py-feedparser: Parse feeds in Python 
+py-feedparser:
+py-feedparser: For more information about the package, see the project website at:
+py-feedparser: https://github.com/kurtmckee/feedparser
+py-feedparser:
+py-feedparser:
+py-feedparser: This slackmatic port was developed by:
+py-feedparser: slackware@sukkology.net

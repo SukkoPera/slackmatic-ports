@@ -1,0 +1,18 @@
+. ../sukkolib.rc
+
+BRIEF='Parse feeds in Python'
+PROJECT=https://github.com/kurtmckee/feedparser
+RELEASE=5.2.1
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=feedparser-$RELEASE
+
+SOURCE=(
+	https://github.com/kurtmckee/feedparser/archive/$RELEASE.tar.gz
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	CONTRIBUTORS.rst
+	README.rst
+)
