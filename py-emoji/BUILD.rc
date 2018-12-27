@@ -1,0 +1,19 @@
+. ../sukkolib.rc
+
+BRIEF='emoji terminal output for Python'
+PROJECT=https://github.com/carpedm20/emoji/
+RELEASE=20181228
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=emoji-master
+
+SOURCE=(
+	https://github.com/carpedm20/emoji/archive/master.zip
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	CHANGES.md
+	LICENSE.txt
+	README.rst
+)
