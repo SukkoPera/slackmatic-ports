@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+BRIEF='Python flexible slugify function'
+PROJECT=https://github.com/voronind/awesome-slugify
+RELEASE=1.6.5
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=awesome-slugify-$RELEASE
+
+SOURCE=(
+	https://files.pythonhosted.org/packages/34/39/79ef4e640c3651b40de7812f5fcd04698abf14de4f57a81e12b6c753d168/awesome-slugify-$RELEASE.tar.gz
+)
