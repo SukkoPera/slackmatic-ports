@@ -1,0 +1,17 @@
+. ../sukkolib.rc
+
+BRIEF='An implementation of time.monotonic() for Python'
+PROJECT=https://github.com/atdt/monotonic
+RELEASE=1.5
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=monotonic-$RELEASE
+
+SOURCE=(
+	https://github.com/atdt/monotonic/archive/$RELEASE.tar.gz
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	README.md
+)

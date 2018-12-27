@@ -1,0 +1,11 @@
+py-monotonic: py-monotonic (An implementation of time.monotonic() for Python)
+py-monotonic:
+py-monotonic: This is a slackmatic port build of py-monotonic:
+py-monotonic: An implementation of time.monotonic() for Python 
+py-monotonic:
+py-monotonic: For more information about the package, see the project website at:
+py-monotonic: https://github.com/atdt/monotonic
+py-monotonic:
+py-monotonic:
+py-monotonic: This slackmatic port was developed by:
+py-monotonic: slackware@sukkology.net
