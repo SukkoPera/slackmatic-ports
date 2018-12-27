@@ -1,0 +1,18 @@
+. ../sukkolib.rc
+
+BRIEF='Backport/clone of ChainMap for py26, py32, and pypy3'
+PROJECT=https://bitbucket.org/jeunice/chainmap
+RELEASE=1.0.2
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=chainmap-$RELEASE
+
+SOURCE=(
+	https://files.pythonhosted.org/packages/56/09/0f2f2e693bb102083b7e77fc2b7f97b9195dc4c90dcfa85038a2d128161b/chainmap-$RELEASE.tar.gz
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	CHANGES.yml
+	README.rst
+)

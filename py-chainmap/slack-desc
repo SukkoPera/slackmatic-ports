@@ -1,0 +1,11 @@
+py-chainmap: py-chainmap (Backport/clone of ChainMap for py26, py32, and pypy3)
+py-chainmap:
+py-chainmap: This is a slackmatic port build of py-chainmap:
+py-chainmap: Backport/clone of ChainMap for py26, py32, and pypy3 
+py-chainmap:
+py-chainmap: For more information about the package, see the project website at:
+py-chainmap: https://bitbucket.org/jeunice/chainmap
+py-chainmap:
+py-chainmap:
+py-chainmap: This slackmatic port was developed by:
+py-chainmap: slackware@sukkology.net
