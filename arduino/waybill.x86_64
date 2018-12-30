@@ -2249,6 +2249,6 @@ drwxr-xr-x|0755|root/root|usr/doc/arduino-1.0.6|
 lrwxrwxrwx|0777|root/root|usr/doc/arduino-1.0.6/reference|->|/opt/arduino-1.0.6/reference|
 drwxr-xr-x|0755|root/root|usr/share|
 drwxr-xr-x|0755|root/root|usr/share/applications|
--rwxrwxrwx|0777|root/root|usr/share/applications/arduino.desktop|
+-rw-r--r--|0644|root/root|usr/share/applications/arduino.desktop|
 drwxr-xr-x|0755|root/root|usr/share/pixmaps|
--rwxrwxrwx|0777|root/root|usr/share/pixmaps/arduino.png|
+-rw-r--r--|0644|root/root|usr/share/pixmaps/arduino.png|
