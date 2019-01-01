@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+BRIEF='A small but fast and easy to use stand-alone template engine written in pure python'
+PROJECT=http://jinja.pocoo.org/
+RELEASE=2.8.1
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=Jinja2-$RELEASE
+
+SOURCE=(
+	https://files.pythonhosted.org/packages/5f/bd/5815d4d925a2b8cbbb4b4960f018441b0c65f24ba29f3bdcfb3c8218a307/Jinja2-$RELEASE.tar.gz
+)

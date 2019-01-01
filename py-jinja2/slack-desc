@@ -1,0 +1,11 @@
+py-jinja2: py-jinja2 (A small but fast and easy to use stand-alone template engine written in pure python)
+py-jinja2:
+py-jinja2: This is a slackmatic port build of py-jinja2:
+py-jinja2: A small but fast and easy to use stand-alone template engine written in pure python 
+py-jinja2:
+py-jinja2: For more information about the package, see the project website at:
+py-jinja2: http://jinja.pocoo.org/
+py-jinja2:
+py-jinja2:
+py-jinja2: This slackmatic port was developed by:
+py-jinja2: slackware@sukkology.net
