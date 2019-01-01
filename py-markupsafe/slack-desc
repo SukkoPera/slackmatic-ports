@@ -1,0 +1,11 @@
+py-markupsafe: py-markupsafe (Safely add untrusted strings to HTML/XML markup)
+py-markupsafe:
+py-markupsafe: This is a slackmatic port build of py-markupsafe:
+py-markupsafe: Safely add untrusted strings to HTML/XML markup 
+py-markupsafe:
+py-markupsafe: For more information about the package, see the project website at:
+py-markupsafe: https://www.palletsprojects.com/p/markupsafe/
+py-markupsafe:
+py-markupsafe:
+py-markupsafe: This slackmatic port was developed by:
+py-markupsafe: slackware@sukkology.net

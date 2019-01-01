@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+BRIEF='Safely add untrusted strings to HTML/XML markup'
+PROJECT=https://www.palletsprojects.com/p/markupsafe/
+RELEASE=1.1.0
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=MarkupSafe-$RELEASE
+
+SOURCE=(
+	https://files.pythonhosted.org/packages/ac/7e/1b4c2e05809a4414ebce0892fe1e32c14ace86ca7d50c70f00979ca9b3a3/MarkupSafe-$RELEASE.tar.gz
+)
