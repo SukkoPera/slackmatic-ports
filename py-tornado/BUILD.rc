@@ -2,7 +2,7 @@
 
 BRIEF='A Python web framework and asynchronous networking library'
 PROJECT=https://pypi.python.org/pypi/tornado
-RELEASE=4.3
+RELEASE=4.5.3
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDDIR=tornado-$RELEASE
