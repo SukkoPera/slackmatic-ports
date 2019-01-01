@@ -1,0 +1,11 @@
+py-yaml: py-yaml (YAML parser and emitter for Python)
+py-yaml:
+py-yaml: This is a slackmatic port build of py-yaml:
+py-yaml: YAML parser and emitter for Python 
+py-yaml:
+py-yaml: For more information about the package, see the project website at:
+py-yaml: https://pypi.org/project/PyYAML/
+py-yaml:
+py-yaml:
+py-yaml: This slackmatic port was developed by:
+py-yaml: slackware@sukkology.net

@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+BRIEF='YAML parser and emitter for Python'
+PROJECT=https://pypi.org/project/PyYAML/
+RELEASE=3.10
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=PyYAML-$RELEASE
+
+SOURCE=(
+	https://files.pythonhosted.org/packages/00/17/3b822893a1789a025d3f676a381338516a8f65e686d915b0834ecc9b4979/PyYAML-$RELEASE.tar.gz
+)
