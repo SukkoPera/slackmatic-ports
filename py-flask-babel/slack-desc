@@ -1,0 +1,11 @@
+py-flask-babel: py-flask-babel (Adds i18n/l10n support to Flask applications)
+py-flask-babel:
+py-flask-babel: This is a slackmatic port build of py-flask-babel:
+py-flask-babel: Adds i18n/l10n support to Flask applications 
+py-flask-babel:
+py-flask-babel: For more information about the package, see the project website at:
+py-flask-babel: https://pypi.org/project/Flask-Babel/
+py-flask-babel:
+py-flask-babel:
+py-flask-babel: This slackmatic port was developed by:
+py-flask-babel: slackware@sukkology.net

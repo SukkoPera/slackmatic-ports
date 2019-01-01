@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+BRIEF='Adds i18n/l10n support to Flask applications'
+PROJECT=https://pypi.org/project/Flask-Babel/
+RELEASE=0.9
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=Flask-Babel-$RELEASE
+
+SOURCE=(
+	https://files.pythonhosted.org/packages/24/6b/dd9031c446e05600b740086274a9939799f26401b8b96e124ccf71e6a9b2/Flask-Babel-$RELEASE.tar.gz
+)
