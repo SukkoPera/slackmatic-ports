@@ -2,7 +2,7 @@
 
 BRIEF='Semantic version comparison for Python'
 PROJECT=https://github.com/rbarrois/python-semanticversion/
-RELEASE=2.6.0
+RELEASE=2.4.2
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDDIR=python-semanticversion-$RELEASE
