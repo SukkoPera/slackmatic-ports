@@ -2,7 +2,7 @@
 
 BRIEF='A powerful, fast and robust engine for processing 3D models into 3D printing instructions'
 PROJECT=https://github.com/Ultimaker/CuraEngine
-RELEASE=2.7.0
+RELEASE=3.6.0
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDDIR=CuraEngine-$RELEASE
@@ -13,9 +13,7 @@ SOURCE=(
 
 DOCS=(
 	$DEFAULT_DOCS
-	LICENSE
-	README.md
+	Changelog.md
 	docs/glossary.md
 	docs/mainpage.md
-	docs/overview.md
 )
