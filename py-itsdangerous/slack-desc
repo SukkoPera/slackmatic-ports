@@ -1,0 +1,11 @@
+py-itsdangerous: py-itsdangerous (Various helpers to pass data to untrusted environments and back)
+py-itsdangerous:
+py-itsdangerous: This is a slackmatic port build of py-itsdangerous:
+py-itsdangerous: Various helpers to pass data to untrusted environments and back 
+py-itsdangerous:
+py-itsdangerous: For more information about the package, see the project website at:
+py-itsdangerous: https://palletsprojects.com/p/itsdangerous/
+py-itsdangerous:
+py-itsdangerous:
+py-itsdangerous: This slackmatic port was developed by:
+py-itsdangerous: slackware@sukkology.net
