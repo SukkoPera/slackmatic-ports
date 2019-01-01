@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+BRIEF='A backport of recent additions to the 'collections.abc' Python module'
+PROJECT=https://github.com/cython/backports_abc
+RELEASE=0.5
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=backports_abc-$RELEASE
+
+SOURCE=(
+	https://files.pythonhosted.org/packages/68/3c/1317a9113c377d1e33711ca8de1e80afbaf4a3c950dd0edfaf61f9bfe6d8/backports_abc-$RELEASE.tar.gz
+)

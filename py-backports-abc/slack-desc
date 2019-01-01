@@ -1,0 +1,11 @@
+py-backports-abc: py-backports-abc (A backport of recent additions to the collections.abc Python module)
+py-backports-abc:
+py-backports-abc: This is a slackmatic port build of py-backports-abc:
+py-backports-abc: A backport of recent additions to the collections.abc Python module 
+py-backports-abc:
+py-backports-abc: For more information about the package, see the project website at:
+py-backports-abc: https://github.com/cython/backports_abc
+py-backports-abc:
+py-backports-abc:
+py-backports-abc: This slackmatic port was developed by:
+py-backports-abc: slackware@sukkology.net
