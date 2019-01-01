@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+BRIEF='The comprehensive WSGI web application library'
+PROJECT=https://pypi.org/project/Werkzeug/
+RELEASE=0.8.3
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=Werkzeug-$RELEASE
+
+SOURCE=(
+	https://files.pythonhosted.org/packages/a1/1c/02e6127ec997c08266b03d7fd340ba7675dafe0e28886a569664fd019e56/Werkzeug-$RELEASE.tar.gz
+)

@@ -1,0 +1,11 @@
+py-werkzeug: py-werkzeug (The comprehensive WSGI web application library)
+py-werkzeug:
+py-werkzeug: This is a slackmatic port build of py-werkzeug:
+py-werkzeug: The comprehensive WSGI web application library 
+py-werkzeug:
+py-werkzeug: For more information about the package, see the project website at:
+py-werkzeug: https://pypi.org/project/Werkzeug/
+py-werkzeug:
+py-werkzeug:
+py-werkzeug: This slackmatic port was developed by:
+py-werkzeug: slackware@sukkology.net
