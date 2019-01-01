@@ -1,0 +1,11 @@
+py-unidecode: py-unidecode (ASCII transliterations of Unicode text)
+py-unidecode:
+py-unidecode: This is a slackmatic port build of py-unidecode:
+py-unidecode: ASCII transliterations of Unicode text 
+py-unidecode:
+py-unidecode: For more information about the package, see the project website at:
+py-unidecode: https://pypi.org/project/Unidecode/
+py-unidecode:
+py-unidecode:
+py-unidecode: This slackmatic port was developed by:
+py-unidecode: slackware@sukkology.net
