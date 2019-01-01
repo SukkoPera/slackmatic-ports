@@ -2,13 +2,13 @@
 
 BRIEF='emoji terminal output for Python'
 PROJECT=https://github.com/carpedm20/emoji/
-RELEASE=20181228
+RELEASE=0.4.5
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
-BUILDDIR=emoji-master
+BUILDDIR=emoji-$RELEASE
 
 SOURCE=(
-	https://github.com/carpedm20/emoji/archive/master.zip
+	https://files.pythonhosted.org/packages/7e/0c/c3d24c913986271484fe85446a158ab7b5ff068daa5c2e0ba8793116eed6/emoji-$RELEASE.tar.gz
 )
 
 DOCS=(
