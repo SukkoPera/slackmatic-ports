@@ -2,7 +2,7 @@
 
 BRIEF='Communication library between internal components for Ultimaker software'
 PROJECT=https://github.com/Ultimaker/libArcus
-RELEASE=2.7.0
+RELEASE=3.6.0
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDDIR=libArcus-$RELEASE
