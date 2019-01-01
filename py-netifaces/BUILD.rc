@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+BRIEF='Portable network interface information'
+PROJECT=https://github.com/al45tair/netifaces
+RELEASE=0.10.7
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=netifaces-$RELEASE
+
+SOURCE=(
+	https://files.pythonhosted.org/packages/81/39/4e9a026265ba944ddf1fea176dbb29e0fe50c43717ba4fcf3646d099fe38/netifaces-$RELEASE.tar.gz
+)

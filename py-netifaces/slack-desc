@@ -1,0 +1,11 @@
+py-netifaces: py-netifaces (Portable network interface information)
+py-netifaces:
+py-netifaces: This is a slackmatic port build of py-netifaces:
+py-netifaces: Portable network interface information 
+py-netifaces:
+py-netifaces: For more information about the package, see the project website at:
+py-netifaces: https://github.com/al45tair/netifaces
+py-netifaces:
+py-netifaces:
+py-netifaces: This slackmatic port was developed by:
+py-netifaces: slackware@sukkology.net
