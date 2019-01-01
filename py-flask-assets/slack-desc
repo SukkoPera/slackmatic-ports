@@ -1,0 +1,11 @@
+py-flask-assets: py-flask-assets (Asset management for Flask, to compress and merge CSS and Javascript files)
+py-flask-assets:
+py-flask-assets: This is a slackmatic port build of py-flask-assets:
+py-flask-assets: Asset management for Flask, to compress and merge CSS and Javascript files 
+py-flask-assets:
+py-flask-assets: For more information about the package, see the project website at:
+py-flask-assets: https://pypi.org/project/Flask-Assets/
+py-flask-assets:
+py-flask-assets:
+py-flask-assets: This slackmatic port was developed by:
+py-flask-assets: slackware@sukkology.net
