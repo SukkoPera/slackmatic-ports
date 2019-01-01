@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+BRIEF='A microframework based on Werkzeug, Jinja2 and good intentions'
+PROJECT=http://github.com/mitsuhiko/flask/
+RELEASE=0.10.1
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=Flask-$RELEASE
+
+SOURCE=(
+	https://files.pythonhosted.org/packages/db/9c/149ba60c47d107f85fe52564133348458f093dd5e6b57a5b60ab9ac517bb/Flask-$RELEASE.tar.gz
+)

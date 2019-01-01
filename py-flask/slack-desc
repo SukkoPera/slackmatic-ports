@@ -1,0 +1,11 @@
+py-flask: py-flask (A microframework based on Werkzeug, Jinja2 and good intentions)
+py-flask:
+py-flask: This is a slackmatic port build of py-flask:
+py-flask: A microframework based on Werkzeug, Jinja2 and good intentions 
+py-flask:
+py-flask: For more information about the package, see the project website at:
+py-flask: http://github.com/mitsuhiko/flask/
+py-flask:
+py-flask:
+py-flask: This slackmatic port was developed by:
+py-flask: slackware@sukkology.net
