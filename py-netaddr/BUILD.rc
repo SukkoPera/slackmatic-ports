@@ -1,0 +1,19 @@
+. ../sukkolib.rc
+
+BRIEF='A network address manipulation library for Python'
+PROJECT=https://github.com/drkjam/netaddr/
+RELEASE=0.7.19
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=netaddr-$RELEASE
+
+SOURCE=(
+	https://files.pythonhosted.org/packages/0c/13/7cbb180b52201c07c796243eeff4c256b053656da5cfe3916c3f5b57b3a0/netaddr-$RELEASE.tar.gz
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	CHANGELOG
+	COPYRIGHT
+	REFERENCES
+)

@@ -1,0 +1,11 @@
+py-netaddr: py-netaddr (A network address manipulation library for Python)
+py-netaddr:
+py-netaddr: This is a slackmatic port build of py-netaddr:
+py-netaddr: A network address manipulation library for Python 
+py-netaddr:
+py-netaddr: For more information about the package, see the project website at:
+py-netaddr: https://github.com/drkjam/netaddr/
+py-netaddr:
+py-netaddr:
+py-netaddr: This slackmatic port was developed by:
+py-netaddr: slackware@sukkology.net
