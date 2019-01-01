@@ -1,0 +1,11 @@
+py-lru: py-lru (A least recently used (LRU) cache for Python)
+py-lru:
+py-lru: This is a slackmatic port build of py-lru:
+py-lru: A least recently used (LRU) cache for Python 
+py-lru:
+py-lru: For more information about the package, see the project website at:
+py-lru: https://github.com/jlhutch/pylru
+py-lru:
+py-lru:
+py-lru: This slackmatic port was developed by:
+py-lru: slackware@sukkology.net
