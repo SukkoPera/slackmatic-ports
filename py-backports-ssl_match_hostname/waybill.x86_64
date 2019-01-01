@@ -1,0 +1,14 @@
+drwxr-xr-x|0755|root/root|usr|
+drwxr-xr-x|0755|root/root|usr/doc|
+drwxr-xr-x|0755|root/root|usr/doc/py-backports-ssl_match_hostname-3.5.0.1|
+-rw-r--r--|0644|root/root|usr/doc/py-backports-ssl_match_hostname-3.5.0.1/BUILD.rc|
+drwxr-xr-x|0755|root/root|usr/lib64|
+drwxr-xr-x|0755|root/root|usr/lib64/python2.7|
+drwxr-xr-x|0755|root/root|usr/lib64/python2.7/site-packages|
+drwxr-xr-x|0755|root/root|usr/lib64/python2.7/site-packages/backports|
+-rw-r--r--|0644|root/root|usr/lib64/python2.7/site-packages/backports/__init__.py|
+-rw-r--r--|0644|root/root|usr/lib64/python2.7/site-packages/backports/__init__.pyc|
+drwxr-xr-x|0755|root/root|usr/lib64/python2.7/site-packages/backports/ssl_match_hostname|
+-rw-r--r--|0644|root/root|usr/lib64/python2.7/site-packages/backports.ssl_match_hostname-3.5.0.1-py2.7.egg-info|
+-rw-r--r--|0644|root/root|usr/lib64/python2.7/site-packages/backports/ssl_match_hostname/__init__.py|
+-rw-r--r--|0644|root/root|usr/lib64/python2.7/site-packages/backports/ssl_match_hostname/__init__.pyc|

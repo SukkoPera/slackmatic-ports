@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+BRIEF='The ssl.match_hostname() function from Python 3.5'
+PROJECT=https://pypi.org/project/backports.ssl_match_hostname/
+RELEASE=3.5.0.1
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=backports.ssl_match_hostname-$RELEASE
+
+SOURCE=(
+	https://files.pythonhosted.org/packages/76/21/2dc61178a2038a5cb35d14b61467c6ac632791ed05131dda72c20e7b9e23/backports.ssl_match_hostname-$RELEASE.tar.gz
+)

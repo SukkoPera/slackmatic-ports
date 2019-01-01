@@ -1,0 +1,11 @@
+py-backports-ssl_match_hostname: py-backports-ssl_match_hostname (The ssl.match_hostname() function from Python 3.5)
+py-backports-ssl_match_hostname:
+py-backports-ssl_match_hostname: This is a slackmatic port build of py-backports-ssl_match_hostname:
+py-backports-ssl_match_hostname: The ssl.match_hostname() function from Python 3.5 
+py-backports-ssl_match_hostname:
+py-backports-ssl_match_hostname: For more information about the package, see the project website at:
+py-backports-ssl_match_hostname: https://pypi.org/project/backports.ssl_match_hostname/
+py-backports-ssl_match_hostname:
+py-backports-ssl_match_hostname:
+py-backports-ssl_match_hostname: This slackmatic port was developed by:
+py-backports-ssl_match_hostname: slackware@sukkology.net
