@@ -1,0 +1,11 @@
+py-flask-login: py-flask-login (User session management for Flask)
+py-flask-login:
+py-flask-login: This is a slackmatic port build of py-flask-login:
+py-flask-login: User session management for Flask 
+py-flask-login:
+py-flask-login: For more information about the package, see the project website at:
+py-flask-login: https://pypi.org/project/Flask-Login/
+py-flask-login:
+py-flask-login:
+py-flask-login: This slackmatic port was developed by:
+py-flask-login: slackware@sukkology.net

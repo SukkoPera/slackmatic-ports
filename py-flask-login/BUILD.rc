@@ -1,0 +1,17 @@
+. ../sukkolib.rc
+
+BRIEF='User session management for Flask'
+PROJECT=https://pypi.org/project/Flask-Login/
+RELEASE=0.2.11
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=Flask-Login-$RELEASE
+
+SOURCE=(
+	https://files.pythonhosted.org/packages/42/3c/ead3f50b8a39b6dd3499ae6f0f5b13b955130c92a7479a287e2e07921faf/Flask-Login-$RELEASE.tar.gz
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	README.markdown
+)
