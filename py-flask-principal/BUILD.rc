@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+BRIEF='Identity management for flask'
+PROJECT=https://pypi.org/project/Flask-Principal/
+RELEASE=0.3.5
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=Flask-Principal-$RELEASE
+
+SOURCE=(
+	https://files.pythonhosted.org/packages/47/fa/932178a740e699a1072aa1e73dc99dee559b4500cd0ab3c0d98931589843/Flask-Principal-$RELEASE.tar.gz
+)
