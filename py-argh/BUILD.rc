@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+BRIEF='An unobtrusive argparse wrapper with natural syntax'
+PROJECT=http://github.com/neithere/argh/
+RELEASE=0.26.2
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net 
+BUILDDIR=argh-$RELEASE
+
+SOURCE=(
+	https://files.pythonhosted.org/packages/e3/75/1183b5d1663a66aebb2c184e0398724b624cecd4f4b679cb6e25de97ed15/argh-$RELEASE.tar.gz
+)
