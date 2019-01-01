@@ -1,0 +1,11 @@
+py-markdown: py-markdown (Python implementation of Markdown)
+py-markdown:
+py-markdown: This is a slackmatic port build of py-markdown:
+py-markdown: Python implementation of Markdown 
+py-markdown:
+py-markdown: For more information about the package, see the project website at:
+py-markdown: https://python-markdown.github.io
+py-markdown:
+py-markdown:
+py-markdown: This slackmatic port was developed by:
+py-markdown: slackware@sukkology.net
