@@ -2,11 +2,11 @@
 
 BRIEF='Asset management for Flask, to compress and merge CSS and Javascript files'
 PROJECT=https://pypi.org/project/Flask-Assets/
-RELEASE=0.12
+RELEASE=0.10
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDDIR=Flask-Assets-$RELEASE
 
 SOURCE=(
-	https://files.pythonhosted.org/packages/86/ff/6000451570745d7a90847f6528d96d6b24c800eaaf9f26cf398accd8cee5/Flask-Assets-$RELEASE.tar.gz
+	https://files.pythonhosted.org/packages/95/de/88eb544c93313031e7b85758a1443730b92e7b1d01ec7222ddfea5f382e7/Flask-Assets-$RELEASE.tar.gz
 )
