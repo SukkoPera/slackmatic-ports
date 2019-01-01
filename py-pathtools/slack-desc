@@ -1,0 +1,11 @@
+py-pathtools: py-pathtools (File system general utilities)
+py-pathtools:
+py-pathtools: This is a slackmatic port build of py-pathtools:
+py-pathtools: File system general utilities 
+py-pathtools:
+py-pathtools: For more information about the package, see the project website at:
+py-pathtools: http://github.com/gorakhargosh/pathtools
+py-pathtools:
+py-pathtools:
+py-pathtools: This slackmatic port was developed by:
+py-pathtools: slackware@sukkology.net

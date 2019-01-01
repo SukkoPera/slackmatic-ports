@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+BRIEF='File system general utilities'
+PROJECT=http://github.com/gorakhargosh/pathtools
+RELEASE=0.1.2
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=pathtools-$RELEASE
+
+SOURCE=(
+	https://files.pythonhosted.org/packages/e7/7f/470d6fcdf23f9f3518f6b0b76be9df16dcc8630ad409947f8be2eb0ed13a/pathtools-$RELEASE.tar.gz
+)
