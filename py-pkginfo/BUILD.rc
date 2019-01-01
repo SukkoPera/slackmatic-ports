@@ -1,0 +1,13 @@
+. ../sukkolib.rc
+
+BRIEF='Query metadatdata from sdists / bdists / installed packages'
+PROJECT=https://pypi.org/project/pkginfo/
+RELEASE=1.4.2
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+TNAME=pkginfo
+BUILDDIR=$TNAME-$RELEASE
+
+SOURCE=(
+	https://files.pythonhosted.org/packages/39/c9/111ececbeed8e69cd1b6bec79a32a0b0f6074038a4244e58e285ad278248/$TNAME-$RELEASE.tar.gz
+)

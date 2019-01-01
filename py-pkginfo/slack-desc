@@ -1,0 +1,11 @@
+py-pkginfo: py-pkginfo (Query metadatdata from sdists / bdists / installed packages)
+py-pkginfo:
+py-pkginfo: This is a slackmatic port build of py-pkginfo:
+py-pkginfo: Query metadatdata from sdists / bdists / installed packages 
+py-pkginfo:
+py-pkginfo: For more information about the package, see the project website at:
+py-pkginfo: https://pypi.org/project/pkginfo/
+py-pkginfo:
+py-pkginfo:
+py-pkginfo: This slackmatic port was developed by:
+py-pkginfo: slackware@sukkology.net
