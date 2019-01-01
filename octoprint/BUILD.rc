@@ -1,0 +1,20 @@
+. ../sukkolib.rc
+
+BRIEF='The snappy web interface for your 3D printer!'
+PROJECT=https://octoprint.org
+RELEASE=1.3.10
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=OctoPrint-$RELEASE
+
+SOURCE=(
+	https://github.com/foosel/OctoPrint/archive/$RELEASE.tar.gz
+)
+
+fn inst {
+	std_inst
+
+        # Install init script
+        mkdir -p $PKG/etc/rc.d
+        cp $CWD/rc.octoprint $PKG/etc/rc.d
+}

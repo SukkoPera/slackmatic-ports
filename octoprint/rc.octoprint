@@ -1,0 +1,66 @@
+#!/bin/bash
+
+# Slackware deamon startup script for Octoprint
+
+# Name of Service
+NAME="Octoprint Daemon"
+
+# Command to run
+CMD="/usr/bin/octoprint"
+
+# The name of the user that should run Octoprint.
+# It is RECOMENDED to run Octoprint as its own user,
+# by default, this is set to 'octoprint'.
+# For the sake of security you shouldn't set a password
+# on this user
+USERNAME="sukko"
+
+func_stop() {
+	$CMD daemon stop
+
+	if [ ! "$(ps aux | grep $PROCESSNAME | grep -v grep)" ]; then
+		echo "Done!"
+	else
+		#~ ps aux | grep $PROCESSNAME | grep -v grep
+		echo "Error!"
+	fi
+}
+
+func_start() {
+	$CMD daemon start
+	
+	if [ "$(ps aux | grep $PROCESSNAME | grep -v grep)" ]; then
+		echo "Done!"
+	else
+		echo "Error!"
+	fi
+}
+
+func_status() {
+	$CMD daemon status
+}
+
+
+case $1 in
+	"start")
+		func_start
+		;;
+
+	"stop")
+		func_stop
+		;;
+
+	"restart")
+		func_stop
+		sleep 2
+		func_start
+		;;
+
+	"status")
+		func_status
+		;;
+		
+	*)
+		echo "Usage; start|stop|restart|status"
+		;;
+esac
