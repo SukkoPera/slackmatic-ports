@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+BRIEF='Alternative regular expression module, to replace re'
+PROJECT=https://pypi.org/project/regex/
+RELEASE=2018.11.06
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=regex-$RELEASE
+
+SOURCE=(
+	https://files.pythonhosted.org/packages/3f/bc/3b678001f0a2bb48b38f68ee7b3f3d67c8abb0e4a439b4a2d14a4ae5fdab/regex-$RELEASE.tar.gz
+)

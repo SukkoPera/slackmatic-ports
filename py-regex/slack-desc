@@ -1,0 +1,11 @@
+py-regex: py-regex (Alternative regular expression module, to replace re)
+py-regex:
+py-regex: This is a slackmatic port build of py-regex:
+py-regex: Alternative regular expression module, to replace re 
+py-regex:
+py-regex: For more information about the package, see the project website at:
+py-regex: https://pypi.org/project/regex/
+py-regex:
+py-regex:
+py-regex: This slackmatic port was developed by:
+py-regex: slackware@sukkology.net
