@@ -1,0 +1,17 @@
+. ../sukkolib.rc
+
+BRIEF='Filesystem events monitoring'
+PROJECT=http://github.com/gorakhargosh/watchdog
+RELEASE=0.8.3
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=watchdog-$RELEASE
+
+SOURCE=(
+	https://files.pythonhosted.org/packages/54/7d/c7c0ad1e32b9f132075967fc353a244eb2b375a3d2f5b0ce612fd96e107e/watchdog-$RELEASE.tar.gz
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	changelog.rst
+)

@@ -1,0 +1,11 @@
+py-watchdog: py-watchdog (Filesystem events monitoring)
+py-watchdog:
+py-watchdog: This is a slackmatic port build of py-watchdog:
+py-watchdog: Filesystem events monitoring 
+py-watchdog:
+py-watchdog: For more information about the package, see the project website at:
+py-watchdog: http://github.com/gorakhargosh/watchdog
+py-watchdog:
+py-watchdog:
+py-watchdog: This slackmatic port was developed by:
+py-watchdog: slackware@sukkology.net
