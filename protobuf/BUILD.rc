@@ -2,7 +2,7 @@
 
 BRIEF='Google''s mechanism for serializing structured data'
 PROJECT=https://developers.google.com/protocol-buffers/
-RELEASE=3.5.1
+RELEASE=3.6.1
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDSYSTEM=autotools
