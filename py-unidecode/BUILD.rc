@@ -2,11 +2,11 @@
 
 BRIEF='ASCII transliterations of Unicode text'
 PROJECT=https://pypi.org/project/Unidecode/
-RELEASE=1.0.23
+RELEASE=0.04.21
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDDIR=Unidecode-$RELEASE
 
 SOURCE=(
-	https://files.pythonhosted.org/packages/9b/d8/c1b658ed7ff6e63a745eda483d7d917eb63a79c59fcb422469b85ff47e94/Unidecode-$RELEASE.tar.gz
+	https://files.pythonhosted.org/packages/0e/26/6a4295c494e381d56bba986893382b5dd5e82e2643fc72e4e49b6c99ce15/Unidecode-$RELEASE.tar.gz
 )
