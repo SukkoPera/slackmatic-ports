@@ -2,7 +2,7 @@
 
 BRIEF='Python serial port access library'
 PROJECT=https://github.com/pyserial/pyserial
-RELEASE=3.2.1
+RELEASE=3.4
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 TNAME=pyserial
