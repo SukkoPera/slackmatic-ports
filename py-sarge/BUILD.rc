@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+BRIEF='A wrapper for subprocess which provides command pipeline functionality'
+PROJECT=https://pypi.org/project/sarge/
+RELEASE=0.1.5.post0
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=sarge-$RELEASE
+
+SOURCE=(
+	https://files.pythonhosted.org/packages/c4/2b/deaaacf4af3f9c45c48be04a6a48fec60515fb34dafda9fe61ecd2c5e4cc/sarge-$RELEASE.tar.gz
+)

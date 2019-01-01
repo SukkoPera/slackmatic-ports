@@ -1,0 +1,11 @@
+py-sarge: py-sarge (A wrapper for subprocess which provides command pipeline functionality)
+py-sarge:
+py-sarge: This is a slackmatic port build of py-sarge:
+py-sarge: A wrapper for subprocess which provides command pipeline functionality 
+py-sarge:
+py-sarge: For more information about the package, see the project website at:
+py-sarge: https://pypi.org/project/sarge/
+py-sarge:
+py-sarge:
+py-sarge: This slackmatic port was developed by:
+py-sarge: slackware@sukkology.net
