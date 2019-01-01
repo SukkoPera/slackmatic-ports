@@ -2,18 +2,22 @@
 
 BRIEF='Music Player for GTK+'
 PROJECT=http://www.exaile.org
-RELEASE=3.4.5
+TRELEASE=4.0.0-rc3
+RELEASE=4.0.0_rc3
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
+BUILDDIR=$NAME-$TRELEASE
 
 SOURCE=(
-	https://github.com/exaile/exaile/releases/download/$RELEASE/$NAME-$RELEASE.tar.gz
+	https://github.com/exaile/exaile/archive/$TRELEASE.tar.gz
 )
 
 fn compile {
-	PREFIX=/usr
-	LIBINSTALLDIR=/`{basename $LIBDIR}
-	
+	PREFIX = /usr
+
+	sed -i -r 's:^PREFIX\s+=\s+(.+):PREFIX = /usr:' Makefile || exit $status
+#	sed -i -r 's:^PREFIX\s+=\s+(.+):PREFIX ?= \1:' plugins/Makefile || exit $status
+	sed -i -r 's:^LIBINSTALLDIR\s+=\s+(.+):LIBINSTALLDIR = /usr/lib64:' Makefile || exit $status
+
 	std_compile
 }
-
