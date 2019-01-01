@@ -1,0 +1,11 @@
+py-rsa: py-rsa (RSA implementation in Python)
+py-rsa:
+py-rsa: This is a slackmatic port build of py-rsa:
+py-rsa: RSA implementation in Python 
+py-rsa:
+py-rsa: For more information about the package, see the project website at:
+py-rsa: https://stuvel.eu/rsa
+py-rsa:
+py-rsa:
+py-rsa: This slackmatic port was developed by:
+py-rsa: slackware@sukkology.net

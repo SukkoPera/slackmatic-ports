@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+BRIEF='RSA implementation in Python'
+PROJECT=https://stuvel.eu/rsa
+RELEASE=3.2.3
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=rsa-$RELEASE
+
+SOURCE=(
+	https://files.pythonhosted.org/packages/0b/20/cd584a9d0b699362e949182b869570be4874c941d49257764df6c04a3a9d/rsa-$RELEASE.tar.gz
+)
