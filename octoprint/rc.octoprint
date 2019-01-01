@@ -13,23 +13,27 @@ CMD="/usr/bin/octoprint"
 # by default, this is set to 'octoprint'.
 # For the sake of security you shouldn't set a password
 # on this user
-USERNAME="sukko"
+# 
+# Add it with:
+# # groupadd -g 995 octoprint
+# # useradd -g octoprint -u 995 octoprint
+USERNAME="octoprint"
 
 func_stop() {
-	$CMD daemon stop
+	 su - $USERNAME -c "$CMD daemon stop"
 
-	if [ ! "$(ps aux | grep $PROCESSNAME | grep -v grep)" ]; then
+	if [ ! "$(ps aux | grep $CMD | grep -v grep)" ]; then
 		echo "Done!"
 	else
-		#~ ps aux | grep $PROCESSNAME | grep -v grep
+		#~ ps aux | grep $CMD | grep -v grep
 		echo "Error!"
 	fi
 }
 
 func_start() {
-	$CMD daemon start
+	 su - $USERNAME -c "$CMD daemon start"
 	
-	if [ "$(ps aux | grep $PROCESSNAME | grep -v grep)" ]; then
+	if [ "$(ps aux | grep $CMD | grep -v grep)" ]; then
 		echo "Done!"
 	else
 		echo "Error!"
@@ -37,7 +41,7 @@ func_start() {
 }
 
 func_status() {
-	$CMD daemon status
+	 su - $USERNAME -c "$CMD daemon status"
 }
 
 
