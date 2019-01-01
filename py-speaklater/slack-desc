@@ -1,0 +1,11 @@
+py-speaklater: py-speaklater (Implements a lazy string for python useful for use with gettext)
+py-speaklater:
+py-speaklater: This is a slackmatic port build of py-speaklater:
+py-speaklater: Implements a lazy string for python useful for use with gettext 
+py-speaklater:
+py-speaklater: For more information about the package, see the project website at:
+py-speaklater: https://pypi.org/project/speaklater/
+py-speaklater:
+py-speaklater:
+py-speaklater: This slackmatic port was developed by:
+py-speaklater: slackware@sukkology.net

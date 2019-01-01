@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+BRIEF='Implements a lazy string for python useful for use with gettext'
+PROJECT=https://pypi.org/project/speaklater/
+RELEASE=1.2
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=speaklater-$RELEASE
+
+SOURCE=(
+	https://files.pythonhosted.org/packages/cc/a1/bce179259dd0782547589fd85602d557a13e82ff4b8fb10eec40367f13bc/speaklater-$RELEASE.tar.gz
+)
