@@ -1,0 +1,11 @@
+py-blinker: py-blinker (Fast, simple object-to-object and broadcast signaling)
+py-blinker:
+py-blinker: This is a slackmatic port build of py-blinker:
+py-blinker: Fast, simple object-to-object and broadcast signaling 
+py-blinker:
+py-blinker: For more information about the package, see the project website at:
+py-blinker: http://pythonhosted.org/blinker/
+py-blinker:
+py-blinker:
+py-blinker: This slackmatic port was developed by:
+py-blinker: slackware@sukkology.net

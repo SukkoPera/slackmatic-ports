@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+BRIEF='Fast, simple object-to-object and broadcast signaling'
+PROJECT=http://pythonhosted.org/blinker/
+RELEASE=1.4
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=blinker-$RELEASE
+
+SOURCE=(
+	https://files.pythonhosted.org/packages/1b/51/e2a9f3b757eb802f61dc1f2b09c8c99f6eb01cf06416c0671253536517b6/blinker-$RELEASE.tar.gz
+)
