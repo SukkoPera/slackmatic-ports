@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+BRIEF='Internationalization utilities for Python'
+PROJECT=http://babel.pocoo.org
+RELEASE=2.6.0
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=Babel-$RELEASE
+
+SOURCE=(
+	https://files.pythonhosted.org/packages/be/cc/9c981b249a455fa0c76338966325fc70b7265521bad641bf2932f77712f4/Babel-$RELEASE.tar.gz
+)
