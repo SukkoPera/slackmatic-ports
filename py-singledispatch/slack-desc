@@ -1,0 +1,11 @@
+py-singledispatch: py-singledispatch (This library brings functools.singledispatch from Python 3.4 to Python 2.6-3.3)
+py-singledispatch:
+py-singledispatch: This is a slackmatic port build of py-singledispatch:
+py-singledispatch: This library brings functools.singledispatch from Python 3.4 to Python 2.6-3.3 
+py-singledispatch:
+py-singledispatch: For more information about the package, see the project website at:
+py-singledispatch: https://pypi.org/project/singledispatch/
+py-singledispatch:
+py-singledispatch:
+py-singledispatch: This slackmatic port was developed by:
+py-singledispatch: slackware@sukkology.net

@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+BRIEF='This library brings functools.singledispatch from Python 3.4 to Python 2.6-3.3'
+PROJECT=https://pypi.org/project/singledispatch/
+RELEASE=3.4.0.3
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=singledispatch-$RELEASE
+
+SOURCE=(
+	https://files.pythonhosted.org/packages/d9/e9/513ad8dc17210db12cb14f2d4d190d618fb87dd38814203ea71c87ba5b68/singledispatch-$RELEASE.tar.gz
+)
