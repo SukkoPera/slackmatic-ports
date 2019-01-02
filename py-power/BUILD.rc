@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+BRIEF='Cross-platform system power status information'
+PROJECT=https://pypi.org/project/power/
+RELEASE=1.4
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=power-$RELEASE
+
+SOURCE=(
+	https://files.pythonhosted.org/packages/6a/fc/a730a7c7a9a30b8e0774ca7e06c54181f61620250749ac3de47da138cfd4/power-$RELEASE.tar.gz
+)
