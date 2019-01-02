@@ -1,0 +1,11 @@
+py-opengl: py-opengl (The Python OpenGL Binding)
+py-opengl:
+py-opengl: This is a slackmatic port build of py-opengl:
+py-opengl: The Python OpenGL Binding 
+py-opengl:
+py-opengl: For more information about the package, see the project website at:
+py-opengl: http://pyopengl.sourceforge.net/
+py-opengl:
+py-opengl:
+py-opengl: This slackmatic port was developed by:
+py-opengl: slackware@sukkology.net
