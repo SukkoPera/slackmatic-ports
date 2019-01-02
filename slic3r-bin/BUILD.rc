@@ -20,4 +20,9 @@ fn build {
 	mkdir -p $PKG/usr/bin
 	sed s/@VERSION@/$RELEASE/ $CWD/slic3r > $PKG/usr/bin/slic3r
 	chmod 755 $PKG/usr/bin/slic3r
+
+	# Icon
+	sed s/@VERSION@/$RELEASE/ $CWD/slic3r-template.desktop > slic3r.desktop
+        ln -s var/Slic3r_128px.png slic3r.png
+        insticon slic3r.desktop slic3r.png
 }
