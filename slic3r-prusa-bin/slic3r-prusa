@@ -1,0 +1,3 @@
+#!/bin/sh
+
+cd /opt/slic3r-prusa-@VERSION@ && exec ./slic3r

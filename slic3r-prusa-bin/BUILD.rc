@@ -1,0 +1,28 @@
+. ../sukkolib.rc
+
+BRIEF='G-code generator for 3D printers (Binary version)'
+PROJECT=https://www.prusa3d.com/slic3r-prusa-edition/
+TRELEASE=1.42.0-alpha1
+RELTIMESTAMP=201812231738
+RELEASE=1.42.0alpha1
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=Slic3rPE-$TRELEASE+linux64-full-$RELTIMESTAMP
+
+SOURCE=(
+	https://github.com/prusa3d/Slic3r/releases/download/version_$TRELEASE/Slic3rPE-$TRELEASE+linux64-full-$RELTIMESTAMP.tar.bz2
+)
+
+fn build {
+	setup
+
+	mkdir -p $PKG/opt/slic3r-prusa-$RELEASE
+	cp -a * $PKG/opt/slic3r-prusa-$RELEASE
+	find $PKG/opt/slic3r-prusa-$RELEASE -type f -not -executable -exec chmod 644 '{}' ';'
+	find $PKG/opt/slic3r-prusa-$RELEASE -type f -executable -exec chmod 755 '{}' ';'
+	find $PKG/opt/slic3r-prusa-$RELEASE -type d -exec chmod 755 '{}' ';'
+
+	mkdir -p $PKG/usr/bin
+	sed s/@VERSION@/$RELEASE/ $CWD/slic3r-prusa > $PKG/usr/bin/slic3r-prusa
+	chmod 755 $PKG/usr/bin/slic3r-prusa
+}
