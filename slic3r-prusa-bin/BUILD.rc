@@ -16,13 +16,20 @@ SOURCE=(
 fn build {
 	setup
 
+	# Fix permissions
+	find . -type f -not -executable -exec chmod 644 '{}' ';'
+	find . -type f -executable -exec chmod 755 '{}' ';'
+	find . -type d -exec chmod 755 '{}' ';'
+
 	mkdir -p $PKG/opt/slic3r-prusa-$RELEASE
 	cp -a * $PKG/opt/slic3r-prusa-$RELEASE
-	find $PKG/opt/slic3r-prusa-$RELEASE -type f -not -executable -exec chmod 644 '{}' ';'
-	find $PKG/opt/slic3r-prusa-$RELEASE -type f -executable -exec chmod 755 '{}' ';'
-	find $PKG/opt/slic3r-prusa-$RELEASE -type d -exec chmod 755 '{}' ';'
 
 	mkdir -p $PKG/usr/bin
 	sed s/@VERSION@/$RELEASE/ $CWD/slic3r-prusa > $PKG/usr/bin/slic3r-prusa
 	chmod 755 $PKG/usr/bin/slic3r-prusa
+
+	# Icon
+	sed s/@VERSION@/$RELEASE/ $CWD/slic3r-prusa-template.desktop > slic3r-prusa.desktop
+	ln -s resources/icons/Slic3r.png slic3r-prusa.png
+	insticon slic3r-prusa.desktop slic3r-prusa.png
 }

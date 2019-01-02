@@ -225,3 +225,8 @@ drwxr-xr-x|0755|root/root|usr/bin|
 drwxr-xr-x|0755|root/root|usr/doc|
 drwxr-xr-x|0755|root/root|usr/doc/slic3r-prusa-bin-1.42.0alpha1|
 -rw-r--r--|0644|root/root|usr/doc/slic3r-prusa-bin-1.42.0alpha1/BUILD.rc|
+drwxr-xr-x|0755|root/root|usr/share|
+drwxr-xr-x|0755|root/root|usr/share/applications|
+-rw-r--r--|0644|root/root|usr/share/applications/slic3r-prusa.desktop|
+drwxr-xr-x|0755|root/root|usr/share/pixmaps|
+-rw-r--r--|0644|root/root|usr/share/pixmaps/slic3r-prusa.png|
