@@ -1,0 +1,31 @@
+. ../sukkolib.rc
+
+BRIEF='TBB lets you easily write parallel C++ programs that take full advantage of multicore performance'
+PROJECT=https://www.threadingbuildingblocks.org/
+RELEASE=2019_U3
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	https://github.com/01org/tbb/archive/$RELEASE.tar.gz
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	doc/Release_Notes.txt
+)
+
+fn inst {
+	# !?!?!?!?
+	mkdir -p $PKG/$LIBDIR
+	cp build/*/*.so $PKG/$LIBDIR
+
+	mkdir $PKG/$LIBDIR/pkgconfig
+	sed s/@LIBSUFFIX@/$LIB_SUFFIX/ $CWD/tbb.pc > $PKG/$LIBDIR/pkgconfig/tbb.pc
+	sed s/@LIBSUFFIX@/$LIB_SUFFIX/ $CWD/tbbmalloc.pc > $PKG/$LIBDIR/pkgconfig/tbbmalloc.pc
+	sed s/@LIBSUFFIX@/$LIB_SUFFIX/ $CWD/tbbmalloc_proxy.pc > $PKG/$LIBDIR/pkgconfig/tbbmalloc_proxy.pc
+
+	mkdir -p $PKG/usr/include
+	cp -a include/tbb $PKG/usr/include
+	cp -a include/serial $PKG/usr/include
+}

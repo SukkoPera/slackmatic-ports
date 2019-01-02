@@ -1,0 +1,11 @@
+prefix=/usr
+libdir=${prefix}/lib@LIBSUFFIX@
+includedir=${prefix}/include
+Name: tbb
+Description: 
+Version: 
+URL: 
+Cflags: -I${includedir}
+Libs: -L${libdir} -ltbbmalloc_proxy
+Libs.private: -lrt
+Requires: tbbmalloc

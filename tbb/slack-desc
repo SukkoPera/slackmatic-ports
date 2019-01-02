@@ -1,0 +1,11 @@
+tbb: tbb (TBB lets you easily write parallel C++ programs that take full advantage of multicore performance)
+tbb:
+tbb: This is a slackmatic port build of tbb:
+tbb: TBB lets you easily write parallel C++ programs that take full advantage of multicore performance 
+tbb:
+tbb: For more information about the package, see the project website at:
+tbb: https://www.threadingbuildingblocks.org/
+tbb:
+tbb:
+tbb: This slackmatic port was developed by:
+tbb: slackware@sukkology.net
