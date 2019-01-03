@@ -1,0 +1,11 @@
+nlopt: nlopt (A free/open-source library for nonlinear optimization)
+nlopt:
+nlopt: This is a slackmatic port build of nlopt:
+nlopt: A free/open-source library for nonlinear optimization 
+nlopt:
+nlopt: For more information about the package, see the project website at:
+nlopt: https://nlopt.readthedocs.io
+nlopt:
+nlopt:
+nlopt: This slackmatic port was developed by:
+nlopt: slackware@sukkology.net
