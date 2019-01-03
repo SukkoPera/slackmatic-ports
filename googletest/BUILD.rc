@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+BRIEF='Google''s C++ test framework'
+PROJECT=https://github.com/google/googletest
+RELEASE=1.8.1
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=$NAME-release-$RELEASE
+
+SOURCE=(
+	https://github.com/google/googletest/archive/release-$RELEASE.tar.gz
+)

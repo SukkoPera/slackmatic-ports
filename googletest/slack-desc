@@ -1,0 +1,11 @@
+googletest: googletest (Google's C++ test framework)
+googletest:
+googletest: This is a slackmatic port build of googletest:
+googletest: Google's C++ test framework 
+googletest:
+googletest: For more information about the package, see the project website at:
+googletest: https://github.com/google/googletest
+googletest:
+googletest:
+googletest: This slackmatic port was developed by:
+googletest: slackware@sukkology.net
