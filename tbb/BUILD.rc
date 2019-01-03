@@ -18,13 +18,17 @@ DOCS=(
 fn inst {
 	# !?!?!?!?
 	mkdir -p $PKG/$LIBDIR
-	cp build/*/*.so $PKG/$LIBDIR
+	cp build/*/*.so.* $PKG/$LIBDIR
+	ln -s libtbb.so.2 $PKG/$LIBDIR/libtbb.so
+	ln -s libtbbmalloc.so.2 $PKG/$LIBDIR/libtbbmalloc.so
+	ln -s libtbbmalloc_proxy.so.2 $PKG/$LIBDIR/libtbbmalloc_proxy.so
 
 	mkdir $PKG/$LIBDIR/pkgconfig
 	sed s/@LIBSUFFIX@/$LIB_SUFFIX/ $CWD/tbb.pc > $PKG/$LIBDIR/pkgconfig/tbb.pc
 	sed s/@LIBSUFFIX@/$LIB_SUFFIX/ $CWD/tbbmalloc.pc > $PKG/$LIBDIR/pkgconfig/tbbmalloc.pc
 	sed s/@LIBSUFFIX@/$LIB_SUFFIX/ $CWD/tbbmalloc_proxy.pc > $PKG/$LIBDIR/pkgconfig/tbbmalloc_proxy.pc
 
+	find include -name '*.html' -delete
 	mkdir -p $PKG/usr/include
 	cp -a include/tbb $PKG/usr/include
 	cp -a include/serial $PKG/usr/include
