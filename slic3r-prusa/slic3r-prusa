@@ -1,0 +1,3 @@
+#!/bin/sh
+
+exec /opt/slic3r-prusa-@VERSION@/bin/slic3r-gui $@

@@ -1,0 +1,11 @@
+slic3r-prusa: slic3r-prusa (G-code generator for 3D printers (Binary version))
+slic3r-prusa:
+slic3r-prusa: This is a slackmatic port build of slic3r-prusa:
+slic3r-prusa: G-code generator for 3D printers (Binary version) 
+slic3r-prusa:
+slic3r-prusa: For more information about the package, see the project website at:
+slic3r-prusa: https://www.prusa3d.com/slic3r-prusa-edition/
+slic3r-prusa:
+slic3r-prusa:
+slic3r-prusa: This slackmatic port was developed by:
+slic3r-prusa: slackware@sukkology.net
