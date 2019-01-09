@@ -4,15 +4,20 @@
 
 # Guess library directory (shouldn't this be automatic?)
 switch (`{arch}) {
+	case aarch64
+		# Not a multilib target
+		LIB_SUFFIX=''
 	case *64
 		LIB_SUFFIX=64
+	case *
+		LIB_SUFFIX=''
 }
 LIBDIR='/usr/lib'$LIB_SUFFIX
 
 # Some more jobs than CPUs seems a good default
 NCPU=`{cat /proc/cpuinfo  | grep '^processor' | wc -l}
 DEFAULT_MAKEJOBS=`{expr $NCPU '*' 4 / 3}
-DEFAULT_DOCS=(ABOUT-NLS AUTHORS ChangeLog COPYING INSTALL MAINTAINERS NEWS README TODO)
+DEFAULT_DOCS=(ABOUT-NLS AUTHORS CHANGES ChangeLog COPYING INSTALL LICENSE MAINTAINERS NEWS README TODO)
 DEFAULT_CONFOPTS_AUTOTOOLS=(
 	--prefix'='/usr
 	--libdir'='$LIBDIR
@@ -74,7 +79,7 @@ fn std_patches {
 		# WARNING: Changed this on 08/05/2008, might break earlier stuff
 		pf=$CWD/$pf
 		trace 'Applying patch: '$pf
-		
+
 		done=0
 		l=0
 		while (test $done -ne 1 -a $l -lt $MAXPATCHLEVEL) {
@@ -96,7 +101,7 @@ fn std_patches {
 			exit 5
 		}
 	}
-	
+
 	#~ trace 'Patching done'
 }
 
@@ -113,7 +118,7 @@ fn std_docinst {
 	# This needs testing
 	#for (f in `{eval echo $DOCS}) {
 	for (_f in $DOCS) {
-		for (_e in ('' .txt .doc .rst)) {
+		for (_e in ('' .txt .doc .rst .md)) {
 			f=$_f$_e
 			if (test -f $f && test `{filesize $f} -gt 0) {
 # 				trace 'Installing doc: '$_f' in: '$DOC
@@ -133,7 +138,7 @@ fn docinst {
 fn insticon {
 	desktopfile=$1
 	iconfile=$2
-	
+
 	if (!test -f $PKG/usr/share/applications) {
 		mkdir -p $PKG/usr/share/applications
 	}
@@ -210,7 +215,7 @@ fn filesize {
 	filename=$1
 	#filesize=`{ls -l $filename | awk '{print $5}'}
 	filesize=`{stat -c %s $filename}
-	
+
 	echo $filesize
 }
 
@@ -223,7 +228,7 @@ fn std_configure {
 	if (~ $CONFOPTS'X' 'X') {
 		CONFOPTS=$DEFAULT_CONFOPTS
 	}
-	
+
 	switch ($BUILDSYSTEM) {
 		case cmake
 			std_configure_cmake
@@ -350,7 +355,7 @@ fn std_compile_cmake {
 		trace 'CDing to CMake build directory: '$CMAKE_PKG_BUILD_DIR
 		cd $CMAKE_PKG_BUILD_DIR
 	}
-	
+
 	make -j $MAKEJOBS || exit 101
 
 	# Back to the source tree
@@ -443,10 +448,10 @@ fn std_inst_waf {
 
 # Set up things needed before calling 'build'
 # Never call this function explicitly, please
-fn prepare {	
+fn prepare {
 	# If NAME is not set explicitly, use the name of the current directory
 	if (~ $NAME'X' 'X') {
-		NAME=`{basename `{pwd}}	
+		NAME=`{basename `{pwd}}
 	}
 
 	# Choose a random SourceForge mirror
@@ -460,6 +465,7 @@ fn prepare {
 	SLCKVER=`{cat /etc/slackware-version | cut -f2 -d ' ' | sed -r 's:([0-9]+\.[0-9]+).+:\1:'}
 
 	# Set CONFOPTS so that ports can expand them
+	# FIXME: BUILDSYSTEM IS NOT SET YET HERE!!!
 	switch ($BUILDSYSTEM) {
 		case cmake
 			DEFAULT_CONFOPTS=$DEFAULT_CONFOPTS_CMAKE
