@@ -1,0 +1,11 @@
+py-urllib3: py-urllib3 (HTTP library with thread-safe connection pooling, file post, and more)
+py-urllib3:
+py-urllib3: This is a slackmatic port build of py-urllib3:
+py-urllib3: HTTP library with thread-safe connection pooling, file post, and more 
+py-urllib3:
+py-urllib3: For more information about the package, see the project website at:
+py-urllib3: https://urllib3.readthedocs.io
+py-urllib3:
+py-urllib3:
+py-urllib3: This slackmatic port was developed by:
+py-urllib3: slackware@sukkology.net
