@@ -1,0 +1,11 @@
+py-chardet: py-chardet (Universal encoding detector for Python 2 and 3)
+py-chardet:
+py-chardet: This is a slackmatic port build of py-chardet:
+py-chardet: Universal encoding detector for Python 2 and 3 
+py-chardet:
+py-chardet: For more information about the package, see the project website at:
+py-chardet: https://github.com/chardet/chardet
+py-chardet:
+py-chardet:
+py-chardet: This slackmatic port was developed by:
+py-chardet: slackware@sukkology.net
