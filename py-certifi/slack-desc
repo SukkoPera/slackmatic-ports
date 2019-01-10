@@ -1,0 +1,11 @@
+py-certifi: py-certifi (Python package for providing Mozilla's CA Bundle)
+py-certifi:
+py-certifi: This is a slackmatic port build of py-certifi:
+py-certifi: Python package for providing Mozilla's CA Bundle 
+py-certifi:
+py-certifi: For more information about the package, see the project website at:
+py-certifi: https://certifi.io/
+py-certifi:
+py-certifi:
+py-certifi: This slackmatic port was developed by:
+py-certifi: slackware@sukkology.net
