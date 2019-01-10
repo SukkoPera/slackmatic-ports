@@ -1,0 +1,11 @@
+py-idna: py-idna (Internationalized Domain Names in Python Applications)
+py-idna:
+py-idna: This is a slackmatic port build of py-idna:
+py-idna: Internationalized Domain Names in Python Applications 
+py-idna:
+py-idna: For more information about the package, see the project website at:
+py-idna: https://github.com/kjd/idna
+py-idna:
+py-idna:
+py-idna: This slackmatic port was developed by:
+py-idna: slackware@sukkology.net
