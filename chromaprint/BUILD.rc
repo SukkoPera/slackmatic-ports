@@ -2,12 +2,13 @@
 
 BRIEF='A library for extracting fingerprints from any audio source'
 PROJECT=https://acoustid.org/chromaprint
-RELEASE=1.4.2
+RELEASE=1.4.3
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
+BUILDDIR=$NAME-v$RELEASE
 
 SOURCE=(
-	https://bitbucket.org/acoustid/chromaprint/downloads/$NAME-$RELEASE.tar.gz
+	https://github.com/acoustid/chromaprint/releases/download/v$RELEASE/$NAME-$RELEASE.tar.gz
 )
 
 CONFOPTS=(
