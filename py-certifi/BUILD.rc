@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+BRIEF='Python package for providing Mozilla''s CA Bundle'
+PROJECT=https://certifi.io/
+RELEASE=2018.11.29
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=certifi-$RELEASE
+
+SOURCE=(
+	https://files.pythonhosted.org/packages/55/54/3ce77783acba5979ce16674fc98b1920d00b01d337cfaaf5db22543505ed/certifi-$RELEASE.tar.gz
+)

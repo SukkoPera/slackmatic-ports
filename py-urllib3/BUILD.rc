@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+BRIEF='HTTP library with thread-safe connection pooling, file post, and more'
+PROJECT=https://urllib3.readthedocs.io
+RELEASE=1.24.1
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=urllib3-$RELEASE
+
+SOURCE=(
+	https://files.pythonhosted.org/packages/b1/53/37d82ab391393565f2f831b8eedbffd57db5a718216f82f1a8b4d381a1c1/urllib3-$RELEASE.tar.gz
+)

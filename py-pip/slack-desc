@@ -1,0 +1,11 @@
+py-pip: py-pip (The PyPA recommended tool for installing Python packages)
+py-pip:
+py-pip: This is a slackmatic port build of py-pip:
+py-pip: The PyPA recommended tool for installing Python packages 
+py-pip:
+py-pip: For more information about the package, see the project website at:
+py-pip: https://pypi.org/project/pip/
+py-pip:
+py-pip:
+py-pip: This slackmatic port was developed by:
+py-pip: slackware@sukkology.net

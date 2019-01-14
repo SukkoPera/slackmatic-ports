@@ -1,0 +1,15 @@
+. ../sukkolib.rc
+
+BRIEF='The PyPA recommended tool for installing Python packages'
+PROJECT=https://pypi.org/project/pip/
+RELEASE=18.1
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=pip-$RELEASE
+
+SOURCE=(
+	https://files.pythonhosted.org/packages/45/ae/8a0ad77defb7cc903f09e551d88b443304a9bd6e6f124e75c0fbbf6de8f7/pip-$RELEASE.tar.gz
+)
+
+fn compile {
+}
