@@ -1,0 +1,14 @@
+drwxr-xr-x|0755|root/root|usr|
+drwxr-xr-x|0755|root/root|usr/doc|
+drwxr-xr-x|0755|root/root|usr/doc/nss-mdns-0.14.1|
+-rw-r--r--|0644|root/root|usr/doc/nss-mdns-0.14.1/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/nss-mdns-0.14.1/LICENSE|
+-rw-r--r--|0644|root/root|usr/doc/nss-mdns-0.14.1/NEWS.md|
+-rw-r--r--|0644|root/root|usr/doc/nss-mdns-0.14.1/README.md|
+drwxr-xr-x|0755|root/root|usr/lib64|
+-rwxr-xr-x|0755|root/root|usr/lib64/libnss_mdns4_minimal.so.2|
+-rwxr-xr-x|0755|root/root|usr/lib64/libnss_mdns4.so.2|
+-rwxr-xr-x|0755|root/root|usr/lib64/libnss_mdns6_minimal.so.2|
+-rwxr-xr-x|0755|root/root|usr/lib64/libnss_mdns6.so.2|
+-rwxr-xr-x|0755|root/root|usr/lib64/libnss_mdns_minimal.so.2|
+-rwxr-xr-x|0755|root/root|usr/lib64/libnss_mdns.so.2|

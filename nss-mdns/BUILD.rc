@@ -1,0 +1,11 @@
+. ../sukkolib.rc
+
+BRIEF='A plugin for Name Service Switch providing host name resolution via Zeroconf'
+PROJECT=http://0pointer.de/lennart/projects/nss-mdns/
+RELEASE=0.14.1
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	https://github.com/lathiat/nss-mdns/releases/download/v0.14.1/$NAME-$RELEASE.tar.gz
+)

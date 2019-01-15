@@ -1,0 +1,11 @@
+nss-mdns: nss-mdns (A plugin for Name Service Switch providing host name resolution via Zeroconf)
+nss-mdns:
+nss-mdns: This is a slackmatic port build of nss-mdns:
+nss-mdns: A plugin for Name Service Switch providing host name resolution via Zeroconf 
+nss-mdns:
+nss-mdns: For more information about the package, see the project website at:
+nss-mdns: http://0pointer.de/lennart/projects/nss-mdns/
+nss-mdns:
+nss-mdns:
+nss-mdns: This slackmatic port was developed by:
+nss-mdns: slackware@sukkology.net
