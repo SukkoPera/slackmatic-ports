@@ -9,3 +9,9 @@ PACKAGER=slackware@sukkology.net
 SOURCE=(
 	https://github.com/lathiat/nss-mdns/releases/download/v0.14.1/$NAME-$RELEASE.tar.gz
 )
+
+fn configure {
+	sed -i 's:${localstatedir}/run/avahi-daemon/socket:/run/avahi-daemon/socket:g' configure || exit $status
+
+	std_configure
+}
