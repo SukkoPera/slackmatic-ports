@@ -1,0 +1,11 @@
+fatsort: fatsort (A C utility that sorts FAT12, FAT16 and FAT32 partitions)
+fatsort:
+fatsort: This is a slackmatic port build of fatsort:
+fatsort: A C utility that sorts FAT12, FAT16 and FAT32 partitions 
+fatsort:
+fatsort: For more information about the package, see the project website at:
+fatsort: https://fatsort.sourceforge.io
+fatsort:
+fatsort:
+fatsort: This slackmatic port was developed by:
+fatsort: slackware@sukkology.net

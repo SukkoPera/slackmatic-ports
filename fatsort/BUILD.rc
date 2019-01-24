@@ -1,0 +1,16 @@
+. ../sukkolib.rc
+
+BRIEF='A C utility that sorts FAT12, FAT16 and FAT32 partitions'
+PROJECT=https://fatsort.sourceforge.io
+RELEASE=1.5.0.456
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	https://sourceforge.net/projects/fatsort/files/$NAME-$RELEASE.tar.xz
+)
+
+fn configure {
+	sed -i 's:^MANDIR=/usr/local/share/man:MANDIR=/usr/man:' Makefile || exit $status
+	sed -i 's:^SBINDIR=/usr/local/sbin:SBINDIR=/usr/sbin:' src/Makefile || exit $status
+}

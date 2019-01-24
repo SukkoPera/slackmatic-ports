@@ -1,0 +1,12 @@
+drwxr-xr-x|0755|root/root|usr|
+drwxr-xr-x|0755|root/root|usr/doc|
+drwxr-xr-x|0755|root/root|usr/doc/fatsort-1.5.0.456|
+-rw-r--r--|0644|root/root|usr/doc/fatsort-1.5.0.456/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/fatsort-1.5.0.456/CHANGES.md|
+-rw-r--r--|0644|root/root|usr/doc/fatsort-1.5.0.456/LICENSE.txt|
+-rw-r--r--|0644|root/root|usr/doc/fatsort-1.5.0.456/README|
+drwxr-xr-x|0755|root/root|usr/man|
+drwxr-xr-x|0755|root/root|usr/man/man1|
+-rwxr-xr-x|0755|root/root|usr/man/man1/fatsort.1.gz|
+drwxr-xr-x|0755|root/root|usr/sbin|
+-rwxr-xr-x|0755|root/root|usr/sbin/fatsort|
