@@ -1,27 +1,6 @@
-diff --git a/src/slic3r/GUI/Plater.cpp b/src/slic3r/GUI/Plater.cpp
-index 668c5559a..b888ca57c 100644
---- a/src/slic3r/GUI/Plater.cpp
-+++ b/src/slic3r/GUI/Plater.cpp
-@@ -1160,11 +1160,11 @@ Plater::priv::priv(Plater *q, MainFrame *main_frame)
-     panel_sizer = new wxBoxSizer(wxHORIZONTAL);
-     panel_sizer->Add(view3D, 1, wxEXPAND | wxALL, 0);
-     panel_sizer->Add(preview, 1, wxEXPAND | wxALL, 0);
--    hsizer->Add(panel_sizer, 1, wxEXPAND | wxALL, 0);
-+    hsizer->Add(panel_sizer, 3, wxEXPAND | wxALL, 0);
- #else
--    hsizer->Add(notebook, 1, wxEXPAND | wxTOP, 1);
-+    hsizer->Add(notebook, 3, wxEXPAND | wxTOP, 1);
- #endif // ENABLE_REMOVE_TABS_FROM_PLATER
--    hsizer->Add(sidebar, 0, wxEXPAND | wxLEFT | wxRIGHT, 0);
-+    hsizer->Add(sidebar, 1, wxEXPAND | wxLEFT | wxRIGHT, 0);
-     q->SetSizer(hsizer);
- 
- //#if ENABLE_REMOVE_TABS_FROM_PLATER
-diff --git a/src/slic3r/GUI/Tab.cpp b/src/slic3r/GUI/Tab.cpp
-index 41318a854..1a3132c56 100644
---- a/src/slic3r/GUI/Tab.cpp
-+++ b/src/slic3r/GUI/Tab.cpp
-@@ -189,7 +189,7 @@ void Tab::create_preset_tab()
+--- src/slic3r/GUI/Tab.cpp.orig	2019-01-25 19:26:35.968559633 +0100
++++ src/slic3r/GUI/Tab.cpp	2019-01-25 19:26:37.368559717 +0100
+@@ -198,7 +198,7 @@
  
  	//left vertical sizer
  	m_left_sizer = new wxBoxSizer(wxVERTICAL);
@@ -29,13 +8,26 @@ index 41318a854..1a3132c56 100644
 +	m_hsizer->Add(m_left_sizer, 1, wxEXPAND | wxLEFT | wxTOP | wxBOTTOM, 3);
  
  	// tree
- 	m_treectrl = new wxTreeCtrl(panel, wxID_ANY, wxDefaultPosition, wxSize(185, -1),
-@@ -272,7 +272,7 @@ Slic3r::GUI::PageShp Tab::add_options_page(const wxString& title, const std::str
+ 	m_treectrl = new wxTreeCtrl(panel, wxID_ANY, wxDefaultPosition, wxSize(185, -1), 
+@@ -281,7 +281,7 @@
  	PageShp page(new Page(panel, title, icon_idx));
  	page->SetScrollbars(1, 20, 1, 2);
  	page->Hide();
 -	m_hsizer->Add(page.get(), 1, wxEXPAND | wxLEFT, 5);
 +	m_hsizer->Add(page.get(), 6, wxEXPAND | wxLEFT, 5);
  
-     if (!is_extruder_pages)
+     if (!is_extruder_pages) 
  		m_pages.push_back(page);
+--- src/slic3r/GUI/Plater.cpp.orig	2019-01-25 19:23:02.457546786 +0100
++++ src/slic3r/GUI/Plater.cpp	2019-01-25 19:24:54.097553503 +0100
+@@ -1096,8 +1096,8 @@
+     panel_sizer = new wxBoxSizer(wxHORIZONTAL);
+     panel_sizer->Add(view3D, 1, wxEXPAND | wxALL, 0);
+     panel_sizer->Add(preview, 1, wxEXPAND | wxALL, 0);
+-    hsizer->Add(panel_sizer, 1, wxEXPAND | wxALL, 0);
+-    hsizer->Add(sidebar, 0, wxEXPAND | wxLEFT | wxRIGHT, 0);
++    hsizer->Add(panel_sizer, 3, wxEXPAND | wxALL, 0);
++    hsizer->Add(sidebar, 1, wxEXPAND | wxLEFT | wxRIGHT, 0);
+     q->SetSizer(hsizer);
+ 
+     init_object_menu();
