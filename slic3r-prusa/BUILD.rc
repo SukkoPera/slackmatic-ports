@@ -2,8 +2,8 @@
 
 BRIEF='G-code generator for 3D printers (Binary version)'
 PROJECT=https://www.prusa3d.com/slic3r-prusa-edition/
-TRELEASE=1.42.0-alpha3
-RELEASE=1.42.0alpha3
+TRELEASE=1.42.0-alpha5
+RELEASE=1.42.0alpha5
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDDIR=Slic3r-version_$TRELEASE
@@ -14,6 +14,12 @@ SOURCE=(
 
 PATCHES=(
 	spe_hidpi.patch
+	a35b1a185094ddd68e5762f3c4efde982d34a102.diff
+)
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS_CMAKE
+	-DSLIC3R_WX_STABLE'='1
 )
 
 fn inst {
