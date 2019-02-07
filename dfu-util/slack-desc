@@ -1,0 +1,11 @@
+dfu-util: dfu-util (Device Firmware Upgrade Utilities)
+dfu-util:
+dfu-util: This is a slackmatic port build of dfu-util:
+dfu-util: Device Firmware Upgrade Utilities 
+dfu-util:
+dfu-util: For more information about the package, see the project website at:
+dfu-util: http://dfu-util.sourceforge.net
+dfu-util:
+dfu-util:
+dfu-util: This slackmatic port was developed by:
+dfu-util: slackware@sukkology.net

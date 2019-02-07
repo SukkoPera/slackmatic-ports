@@ -1,0 +1,31 @@
+. ../sukkolib.rc
+
+BRIEF='Device Firmware Upgrade Utilities'
+PROJECT=http://dfu-util.sourceforge.net
+RELEASE=20190207
+COMMIT=afefb1a021f33cdeb4be17d3af34e121fa3afcd9
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=$NAME-$NAME-$COMMIT
+BUILDSYSTEM=autotools
+
+SOURCE=(
+	https://sourceforge.net/code-snapshots/git/d/df/dfu-util/dfu-util.git/$NAME-$NAME-$COMMIT.zip
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	DEVICES.txt
+)
+
+fn configure {
+	./autogen.sh
+	std_configure
+}
+
+fn inst {
+	std_inst
+
+	mkdir -p $PKG/lib/udev/rules.d
+	cp doc/40-dfuse.rules $PKG/lib/udev/rules.d
+}
