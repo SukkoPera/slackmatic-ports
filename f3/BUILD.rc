@@ -2,7 +2,7 @@
 
 BRIEF='Fight Flash Fraud - An alternative to h2testw'
 PROJECT=http://oss.digirati.com.br/f3/
-RELEASE=6.0
+RELEASE=7.1
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
@@ -15,8 +15,14 @@ DOCS=(
 	README.md
 )
 
+fn compile {
+	make -j $NUMJOBS
+	make -j $NUMJOBS extra
+}
+
 fn inst {
 	make install PREFIX'='$PKG/usr
+	make install-extra PREFIX'='$PKG/usr
 	mv $PKG/usr/share/man $PKG/usr
 	rmdir $PKG/usr/share
 }
