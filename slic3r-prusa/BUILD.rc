@@ -2,8 +2,8 @@
 
 BRIEF='G-code generator for 3D printers (Binary version)'
 PROJECT=https://www.prusa3d.com/slic3r-prusa-edition/
-TRELEASE=1.42.0-alpha5
-RELEASE=1.42.0alpha5
+TRELEASE=1.42.0-alpha7
+RELEASE=1.42.0alpha7
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDDIR=Slic3r-version_$TRELEASE
@@ -12,33 +12,17 @@ SOURCE=(
 	https://github.com/prusa3d/Slic3r/archive/version_$TRELEASE.tar.gz
 )
 
-PATCHES=(
-	spe_hidpi.patch
-	a35b1a185094ddd68e5762f3c4efde982d34a102.diff
-)
-
 CONFOPTS=(
 	$DEFAULT_CONFOPTS_CMAKE
 	-DSLIC3R_WX_STABLE'='1
+	-DSLIC3R_FHS'='1
 )
 
 fn inst {
-	instdir=$PKG/opt/slic3r-prusa-$RELEASE
-
-	cd $CMAKE_PKG_BUILD_DIR || exit 5
-
-	mkdir -p $instdir/bin
-	cp src/slic3r-gui $instdir/bin
-	cp -a ../resources $instdir
-
-	mkdir -p $PKG/usr/bin
-	sed s/@VERSION@/$RELEASE/ $CWD/slic3r-prusa > $PKG/usr/bin/slic3r-prusa
-	chmod 755 $PKG/usr/bin/slic3r-prusa	
+	std_inst
 
 	# Icon
 	sed s/@VERSION@/$RELEASE/ $CWD/slic3r-prusa-template.desktop > slic3r-prusa.desktop
-	ln -s ../resources/icons/Slic3r.png slic3r-prusa.png
+	ln -s resources/icons/Slic3r.png slic3r-prusa.png
 	insticon slic3r-prusa.desktop slic3r-prusa.png
-
-	cd ..
 }

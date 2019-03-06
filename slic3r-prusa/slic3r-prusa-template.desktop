@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Slic3r Prusa Edition
 Comment=G-code generator for 3D printers
-Exec=slic3r-prusa
+Exec=slic3r-gui
 Icon=slic3r-prusa
 Categories=Graphics;3DGraphics;Engineering;Development
 Version=@VERSION@
