@@ -1,0 +1,11 @@
+sigrok-cli: sigrok-cli (A command-line frontend for sigrok)
+sigrok-cli:
+sigrok-cli: This is a slackmatic port build of sigrok-cli:
+sigrok-cli: A command-line frontend for sigrok 
+sigrok-cli:
+sigrok-cli: For more information about the package, see the project website at:
+sigrok-cli: https://sigrok.org/wiki/Sigrok-cli
+sigrok-cli:
+sigrok-cli:
+sigrok-cli: This slackmatic port was developed by:
+sigrok-cli: slackware@sukkology.net

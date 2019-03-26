@@ -1,0 +1,11 @@
+sigrok-firmware-fx2lafw: sigrok-firmware-fx2lafw (An open-source firmware for Cypress FX2 chips which makes them usable as simple logic analyzer and/or oscilloscope hardware)
+sigrok-firmware-fx2lafw:
+sigrok-firmware-fx2lafw: This is a slackmatic port build of sigrok-firmware-fx2lafw:
+sigrok-firmware-fx2lafw: An open-source firmware for Cypress FX2 chips which makes them usable as simple logic analyzer and/or oscilloscope hardware 
+sigrok-firmware-fx2lafw:
+sigrok-firmware-fx2lafw: For more information about the package, see the project website at:
+sigrok-firmware-fx2lafw: https://sigrok.org/wiki/Fx2lafw
+sigrok-firmware-fx2lafw:
+sigrok-firmware-fx2lafw:
+sigrok-firmware-fx2lafw: This slackmatic port was developed by:
+sigrok-firmware-fx2lafw: slackware@sukkology.net

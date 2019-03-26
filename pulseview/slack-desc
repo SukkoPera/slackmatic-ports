@@ -1,0 +1,11 @@
+pulseview: pulseview (A logic analyzer, oscilloscope and MSO GUI for sigrok)
+pulseview:
+pulseview: This is a slackmatic port build of pulseview:
+pulseview: A logic analyzer, oscilloscope and MSO GUI for sigrok 
+pulseview:
+pulseview: For more information about the package, see the project website at:
+pulseview: https://sigrok.org/wiki/PulseView
+pulseview:
+pulseview:
+pulseview: This slackmatic port was developed by:
+pulseview: slackware@sukkology.net

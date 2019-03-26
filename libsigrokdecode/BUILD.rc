@@ -1,0 +1,11 @@
+. ../sukkolib.rc
+
+BRIEF='A shared library written in C, which provides (streaming) protocol decoding functionality.'
+PROJECT=https://sigrok.org/wiki/Libsigrokdecode
+RELEASE=0.5.2
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://sigrok.org/download/source/$NAME/$NAME-$RELEASE.tar.gz
+)

@@ -1,0 +1,21 @@
+. ../sukkolib.rc
+
+BRIEF='A logic analyzer, oscilloscope and MSO GUI for sigrok'
+PROJECT=https://sigrok.org/wiki/PulseView
+RELEASE=0.4.1
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://sigrok.org/download/source/pulseview/$NAME-$RELEASE.tar.gz
+)
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS_CMAKE
+	-DCMAKE_INSTALL_MANDIR'='/usr/man
+)
+
+fn docinst {
+	std_docinst
+	rm -rf $PKG/usr/share/doc
+}

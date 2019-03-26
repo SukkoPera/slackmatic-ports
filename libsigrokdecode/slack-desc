@@ -1,0 +1,11 @@
+libsigrokdecode: libsigrokdecode (A shared library written in C, which provides (streaming) protocol decoding functionality.)
+libsigrokdecode:
+libsigrokdecode: This is a slackmatic port build of libsigrokdecode:
+libsigrokdecode: A shared library written in C, which provides (streaming) protocol decoding functionality. 
+libsigrokdecode:
+libsigrokdecode: For more information about the package, see the project website at:
+libsigrokdecode: https://sigrok.org/wiki/Libsigrokdecode
+libsigrokdecode:
+libsigrokdecode:
+libsigrokdecode: This slackmatic port was developed by:
+libsigrokdecode: slackware@sukkology.net

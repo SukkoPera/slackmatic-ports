@@ -1,0 +1,14 @@
+. ../sukkolib.rc
+
+BRIEF='An open-source firmware for Cypress FX2 chips which makes them usable as simple logic analyzer and/or oscilloscope hardware'
+PROJECT=https://sigrok.org/wiki/Fx2lafw
+RELEASE=0.1.6
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+# sdcc must be installed here
+PATH=$PATH:/opt/sdcc/bin/
+
+SOURCE=(
+	http://sigrok.org/download/source/$NAME/$NAME-$RELEASE.tar.gz
+)

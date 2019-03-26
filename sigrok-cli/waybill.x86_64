@@ -1,0 +1,15 @@
+drwxr-xr-x|0755|root/root|usr|
+drwxr-xr-x|0755|root/root|usr/bin|
+-rwxr-xr-x|0755|root/root|usr/bin/sigrok-cli|
+drwxr-xr-x|0755|root/root|usr/doc|
+drwxr-xr-x|0755|root/root|usr/doc/sigrok-cli-0.7.0|
+-rw-r--r--|0644|root/root|usr/doc/sigrok-cli-0.7.0/AUTHORS|
+-rw-r--r--|0644|root/root|usr/doc/sigrok-cli-0.7.0/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/sigrok-cli-0.7.0/COPYING|
+-rw-r--r--|0644|root/root|usr/doc/sigrok-cli-0.7.0/ChangeLog|
+-rw-r--r--|0644|root/root|usr/doc/sigrok-cli-0.7.0/INSTALL|
+-rw-r--r--|0644|root/root|usr/doc/sigrok-cli-0.7.0/NEWS|
+-rw-r--r--|0644|root/root|usr/doc/sigrok-cli-0.7.0/README|
+drwxr-xr-x|0755|root/root|usr/man|
+drwxr-xr-x|0755|root/root|usr/man/man1|
+-rw-r--r--|0644|root/root|usr/man/man1/sigrok-cli.1.gz|
