@@ -2,9 +2,9 @@ drwxr-xr-x|0755|root/root|usr|
 drwxr-xr-x|0755|root/root|usr/bin|
 -rwxr-xr-x|0755|root/root|usr/bin/pv|
 drwxr-xr-x|0755|root/root|usr/doc|
-drwxr-xr-x|0755|root/root|usr/doc/pv-1.6.0|
--rw-r--r--|0644|root/root|usr/doc/pv-1.6.0/BUILD.rc|
--rw-r--r--|0644|root/root|usr/doc/pv-1.6.0/README|
+drwxr-xr-x|0755|root/root|usr/doc/pv-1.6.6|
+-rw-r--r--|0644|root/root|usr/doc/pv-1.6.6/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/pv-1.6.6/README|
 drwxr-xr-x|0755|root/root|usr/man|
 drwxr-xr-x|0755|root/root|usr/man/man1|
 -rw-r--r--|0644|root/root|usr/man/man1/pv.1.gz|
