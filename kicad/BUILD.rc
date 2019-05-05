@@ -2,13 +2,13 @@
 
 BRIEF='A Cross Platform and Open Source Electronics Design Automation Suite'
 PROJECT=http://kicad-pcb.org
-RELEASE=5.0.1
+RELEASE=5.1.2
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
-MAJORV=`{echo $RELEASE | sed 's:\.[0-9]$::'}
+#MAJORV=`{echo $RELEASE | sed 's:\.[0-9]$::'}
 SOURCE=(
-	https://launchpad.net/kicad/$MAJORV/$RELEASE/+download/$NAME-$RELEASE.tar.xz
+	https://launchpad.net/kicad/5.0/$RELEASE/+download/$NAME-$RELEASE.tar.xz
 )
 
 CONFOPTS=(
@@ -22,9 +22,3 @@ CONFOPTS=(
 	-DKICAD_SKIP_BOOST'='ON
 	-DKICAD_DOCS'='/usr/doc/$NAME-$RELEASE
 )
-
-fn patches {
-	std_patches
-
-	sed -i 's:boost/uuid/sha1.hpp:boost/uuid/detail/sha1.hpp:' 3d-viewer/3d_cache/3d_cache.cpp || exit $status
-}
