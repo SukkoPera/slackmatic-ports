@@ -2,7 +2,7 @@
 
 BRIEF='Component footprints for KiCad'
 PROJECT=https://github.com/KiCad/kicad-library
-RELEASE=5.0.1
+RELEASE=5.1.2
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 OPT_NOSTRIP=1

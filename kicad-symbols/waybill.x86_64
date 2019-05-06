@@ -1,7 +1,9 @@
 drwxr-xr-x|0755|root/root|usr|
 drwxr-xr-x|0755|root/root|usr/doc|
-drwxr-xr-x|0755|root/root|usr/doc/kicad-symbols-5.0.1|
--rw-r--r--|0644|root/root|usr/doc/kicad-symbols-5.0.1/BUILD.rc|
+drwxr-xr-x|0755|root/root|usr/doc/kicad-symbols-5.1.2|
+-rw-r--r--|0644|root/root|usr/doc/kicad-symbols-5.1.2/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/kicad-symbols-5.1.2/LICENSE.md|
+-rw-r--r--|0644|root/root|usr/doc/kicad-symbols-5.1.2/README.md|
 drwxr-xr-x|0755|root/root|usr/share|
 drwxr-xr-x|0755|root/root|usr/share/kicad|
 drwxr-xr-x|0755|root/root|usr/share/kicad/library|
@@ -49,6 +51,8 @@ drwxr-xr-x|0755|root/root|usr/share/kicad/library|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/CPU_NXP_68000.lib|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/CPU_NXP_6800.dcm|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/CPU_NXP_6800.lib|
+-rw-r--r--|0644|root/root|usr/share/kicad/library/CPU_NXP_IMX.dcm|
+-rw-r--r--|0644|root/root|usr/share/kicad/library/CPU_NXP_IMX.lib|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/CPU_PowerPC.dcm|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/CPU_PowerPC.lib|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/CPU.dcm|
@@ -93,6 +97,8 @@ drwxr-xr-x|0755|root/root|usr/share/kicad/library|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/Driver_Display.lib|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/Driver_FET.dcm|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/Driver_FET.lib|
+-rw-r--r--|0644|root/root|usr/share/kicad/library/Driver_Haptic.dcm|
+-rw-r--r--|0644|root/root|usr/share/kicad/library/Driver_Haptic.lib|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/Driver_LED.dcm|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/Driver_LED.lib|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/Driver_Motor.dcm|
@@ -117,6 +123,8 @@ drwxr-xr-x|0755|root/root|usr/share/kicad/library|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/FPGA_Xilinx_Virtex7.lib|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/FPGA_Xilinx.dcm|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/FPGA_Xilinx.lib|
+-rw-r--r--|0644|root/root|usr/share/kicad/library/Fiber_Optic.dcm|
+-rw-r--r--|0644|root/root|usr/share/kicad/library/Fiber_Optic.lib|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/Filter.dcm|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/Filter.lib|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/GPU.dcm|
@@ -131,6 +139,8 @@ drwxr-xr-x|0755|root/root|usr/share/kicad/library|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/Interface_Ethernet.lib|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/Interface_Expansion.dcm|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/Interface_Expansion.lib|
+-rw-r--r--|0644|root/root|usr/share/kicad/library/Interface_HDMI.dcm|
+-rw-r--r--|0644|root/root|usr/share/kicad/library/Interface_HDMI.lib|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/Interface_HID.dcm|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/Interface_HID.lib|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/Interface_LineDriver.dcm|
@@ -185,6 +195,8 @@ drwxr-xr-x|0755|root/root|usr/share/kicad/library|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/MCU_Microchip_PIC24.lib|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/MCU_Microchip_PIC32.dcm|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/MCU_Microchip_PIC32.lib|
+-rw-r--r--|0644|root/root|usr/share/kicad/library/MCU_Microchip_SAMD.dcm|
+-rw-r--r--|0644|root/root|usr/share/kicad/library/MCU_Microchip_SAMD.lib|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/MCU_Microchip_SAME.dcm|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/MCU_Microchip_SAME.lib|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/MCU_Microchip_SAML.dcm|
@@ -213,6 +225,8 @@ drwxr-xr-x|0755|root/root|usr/share/kicad/library|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/MCU_Nordic.lib|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/MCU_Parallax.dcm|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/MCU_Parallax.lib|
+-rw-r--r--|0644|root/root|usr/share/kicad/library/MCU_STC.dcm|
+-rw-r--r--|0644|root/root|usr/share/kicad/library/MCU_STC.lib|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/MCU_ST_STM32F0.dcm|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/MCU_ST_STM32F0.lib|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/MCU_ST_STM32F1.dcm|
@@ -281,8 +295,12 @@ drwxr-xr-x|0755|root/root|usr/share/kicad/library|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/RF_Amplifier.lib|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/RF_Bluetooth.dcm|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/RF_Bluetooth.lib|
+-rw-r--r--|0644|root/root|usr/share/kicad/library/RF_Filter.dcm|
+-rw-r--r--|0644|root/root|usr/share/kicad/library/RF_Filter.lib|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/RF_GPS.dcm|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/RF_GPS.lib|
+-rw-r--r--|0644|root/root|usr/share/kicad/library/RF_GSM.dcm|
+-rw-r--r--|0644|root/root|usr/share/kicad/library/RF_GSM.lib|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/RF_Mixer.dcm|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/RF_Mixer.lib|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/RF_Module.dcm|
@@ -315,6 +333,8 @@ drwxr-xr-x|0755|root/root|usr/share/kicad/library|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/Relay_SolidState.lib|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/Relay.dcm|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/Relay.lib|
+-rw-r--r--|0644|root/root|usr/share/kicad/library/Security.dcm|
+-rw-r--r--|0644|root/root|usr/share/kicad/library/Security.lib|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/Sensor_Audio.dcm|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/Sensor_Audio.lib|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/Sensor_Current.dcm|
@@ -341,6 +361,8 @@ drwxr-xr-x|0755|root/root|usr/share/kicad/library|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/Sensor_Voltage.lib|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/Sensor.dcm|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/Sensor.lib|
+-rw-r--r--|0644|root/root|usr/share/kicad/library/Simulation_SPICE.dcm|
+-rw-r--r--|0644|root/root|usr/share/kicad/library/Simulation_SPICE.lib|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/Switch.dcm|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/Switch.lib|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/Timer_PLL.dcm|
