@@ -1,0 +1,18 @@
+. ../sukkolib.rc
+
+BRIEF='A library to split mp3, ogg vorbis and FLAC files'
+PROJECT=http://mp3splt.sourceforge.net
+RELEASE=0.9.2
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://prdownloads.sourceforge.net/mp3splt/$NAME-$RELEASE.tar.gz
+)
+
+fn docinst {
+	std_docinst
+
+	mv $PKG/usr/share/doc/libmp3splt/doxygen $DOC
+	rm -rf $PKG/usr/share/doc
+}

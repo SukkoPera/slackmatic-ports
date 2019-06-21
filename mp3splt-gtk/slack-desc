@@ -1,0 +1,11 @@
+mp3splt-gtk: mp3splt-gtk (A GUI utility to split mp3, ogg vorbis and FLAC files)
+mp3splt-gtk:
+mp3splt-gtk: This is a slackmatic port build of mp3splt-gtk:
+mp3splt-gtk: A GUI utility to split mp3, ogg vorbis and FLAC files 
+mp3splt-gtk:
+mp3splt-gtk: For more information about the package, see the project website at:
+mp3splt-gtk: http://mp3splt.sourceforge.net
+mp3splt-gtk:
+mp3splt-gtk:
+mp3splt-gtk: This slackmatic port was developed by:
+mp3splt-gtk: slackware@sukkology.net

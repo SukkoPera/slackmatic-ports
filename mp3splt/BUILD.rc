@@ -1,0 +1,11 @@
+. ../sukkolib.rc
+
+BRIEF='A utility to split mp3, ogg vorbis and FLAC files'
+PROJECT=http://mp3splt.sourceforge.net
+RELEASE=2.6.2
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://prdownloads.sourceforge.net/mp3splt/$NAME-$RELEASE.tar.gz
+)

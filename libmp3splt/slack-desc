@@ -1,0 +1,11 @@
+libmp3splt: libmp3splt (A library to split mp3, ogg vorbis and FLAC files)
+libmp3splt:
+libmp3splt: This is a slackmatic port build of libmp3splt:
+libmp3splt: A library to split mp3, ogg vorbis and FLAC files 
+libmp3splt:
+libmp3splt: For more information about the package, see the project website at:
+libmp3splt: http://mp3splt.sourceforge.net
+libmp3splt:
+libmp3splt:
+libmp3splt: This slackmatic port was developed by:
+libmp3splt: slackware@sukkology.net
