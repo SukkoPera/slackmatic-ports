@@ -1,0 +1,28 @@
+. ../sukkolib.rc
+
+BRIEF='all-platform eMule P2P Client'
+PROJECT=http://amule.org
+RELEASE=2.3.2
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+TNAME=aMule
+BUILDDIR=$TNAME-$RELEASE
+
+SOURCE=(
+	https://sourceforge.net/projects/amule/files/aMule/2.3.2/$TNAME-$RELEASE.tar.xz
+)
+
+PATCHES=(
+	amule-2.3.2-cryptopp-6.patch
+	amule-2.3.2-fix-crash-closing-last-search-tab-1.patch
+	amule-2.3.2-fix-crash-closing-last-search-tab-2.patch
+	amule-2.3.2-fix-crash-shared-dir-utf8.patch
+	amule-2.3.2-fix-crash-when-shared-files-changed.patch
+)
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS
+	--with-wx-config'='/usr/bin/wx-config-3
+	--enable-amulecmd
+	--with-boost
+)
