@@ -2,12 +2,12 @@
 
 BRIEF='A free C++ class library of cryptographic schemes.'
 PROJECT=http:///www.cryptopp.com
-RELEASE=5.5.2
+RELEASE=8.2.0
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
 SOURCE=(
-	$SF/cryptopp/cryptopp552.zip
+	https://www.cryptopp.com/cryptopp820.zip
 )
 
 DOCS=(
@@ -18,12 +18,12 @@ DOCS=(
 
 fn build {
 	cd $SRC
-	unzip -a cryptopp552.zip -d $NAME-$RELEASE
+	unzip -a $CWD/cryptopp820.zip -d $NAME-$RELEASE
 	cd $NAME-$RELEASE
 
-	make -j3
+	make -j5
 
-	make install PREFIX'='$PKG/usr
+	make install DESTDIR'='$PKG PREFIX'='/usr
 
 	std_docinst
 }
