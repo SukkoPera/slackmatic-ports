@@ -1,0 +1,175 @@
+Description: make readline usage configurable
+ The amiga-fdisk-bf (boot-floppies) package can not use readline.
+ Instead of having two separate packages, this patch allows to turn on
+ and off readline usage at build-time with USE_READLINE=[yes|no].
+Author: Christian T. Steigies <cts@debian.org>
+Last-Update: 2011-10-27
+--- a/Makefile
++++ b/Makefile
+@@ -4,14 +4,22 @@
+ #
+ 
+ CC=             gcc
++ifeq ($(USE_READLINE),no)
++CFLAGS=         -O2 -fomit-frame-pointer -Wall -I./include -DDONT_USE_READLINE -DFIX_NO_READLINE
++#CFLAGS=         -g -fomit-frame-pointer -Wall -I./include -DDEBUG -DDONT_USE_READLINE
++LDFLAGS=        # -s -N
++else
+ CFLAGS=         -O2 -fomit-frame-pointer -Wall -I./include
+ #CFLAGS=         -g -fomit-frame-pointer -Wall -I./include -DDEBUG
+-LDFLAGS=        # -s -N
+ LIBS=		-lreadline
++LDFLAGS=        # -s -N
++endif
+ 
+ # Where to put binaries?
+ # See the "install" rule for the links. . .
+ 
++INSTALL=	install
++INSTALLDIR=	/sbin
+ SBIN= 		amiga-fdisk
+ 
+ # Where to put datebase files?
+@@ -22,8 +30,7 @@
+ 	$(CC) $(LDFLAGS) $^ $(LIBS) -o $@
+ 
+ install: all
+-	$(INSTALLDIR) $(SBINDIR)
+-	$(INSTALLBIN) $(SBIN) $(SBINDIR)
++	$(INSTALL) $(SBIN) $(DESTDIR)$(INSTALLDIR)
+ 
+ clean:
+ 	-rm -f *.o *~ core $(SBIN)
+--- a/fdisk.c
++++ b/fdisk.c
+@@ -25,11 +25,33 @@
+ #include <malloc.h>
+ #include <string.h>
+ #include <getopt.h>
++#include <ctype.h>
+ 
++#ifdef DONT_USE_READLINE
++char *readline (const char *prompt)
++{
++       char buffer[1024];
++       char *s;
++       int size;
++       printf ("%s",prompt);
++       fflush (stdout);
++       fgets (buffer, sizeof(buffer), stdin);
++       size = strlen (buffer);
++       s = malloc ((size+1)*sizeof(char));
++       s = strcpy (s, buffer);
++       fflush (stdin);
++       return s;
++}
++#else
+ #include <readline/readline.h>
+ #include <readline/history.h>     
++#endif
+ 
++#if 0
+ #include <asm/byteorder.h>
++#else
++#include <netinet/in.h>
++#endif
+ 
+ #include <amiga/types.h>
+ #include <amigastuff.h>
+@@ -48,6 +70,10 @@
+ 
+ int atonum(char *s)
+ {
++#ifdef FIX_NO_READLINE
++#warning FIX_NO_READLINE enabled in atonum
++        return atoi(s);
++#else
+ 	char *d=s;
+ 	int n;
+ 
+@@ -69,6 +95,7 @@
+ 		sscanf(s, "%d", &n);
+ 	}
+ 	return n;
++#endif
+ }
+ 
+ int partition(void)
+@@ -105,18 +132,18 @@
+ 
+ int listknown(void)
+ {
+-	printf("Known Partition Types\n---------------------\n
+- 1.  DOS\\0	Old Filesystem
+- 2.  DOS\\1	Original FastFileSystem (FFS)
+- 3.  DOS\\2	Old International Filesystem
+- 4.  DOS\\3	International FastFileSystem
+- 5.  DOS\\4	Old Filesystem with directory cache
+- 6.  DOS\\6	FastFileSystem with directory cache
+- 7.  UNI\\0	classic AT&T System-V filesystem
+- 8.  UNI\\1	UNIX boot \"filesystem\" (dummy entry for Amiga OS's boot menu)
+- 9.  UNI\\2	Berkeley filesystem for System V
+-10.  RESV	Reserved (e.g. swap space)
+-11.  LNX\\0	Linux native
++	printf("Known Partition Types\n---------------------\n\n\
++ 1.  DOS\\0	Old Filesystem\n\
++ 2.  DOS\\1	Original FastFileSystem (FFS)\n\
++ 3.  DOS\\2	Old International Filesystem\n\
++ 4.  DOS\\3	International FastFileSystem\n\
++ 5.  DOS\\4	Old Filesystem with directory cache\n\
++ 6.  DOS\\6	FastFileSystem with directory cache\n\
++ 7.  UNI\\0	classic AT&T System-V filesystem\n\
++ 8.  UNI\\1	UNIX boot \"filesystem\" (dummy entry for Amiga OS's boot menu)\n\
++ 9.  UNI\\2	Berkeley filesystem for System V\n\
++10.  RESV	Reserved (e.g. swap space)\n\
++11.  LNX\\0	Linux native\n\
+ 12.  SWP\\0	Linux swap\n\n");
+ 
+ 	return 0;
+@@ -124,19 +151,19 @@
+ 
+ int menu(void)
+ {
+-	printf ("Command action
+-   a   toggle bootable flag
+-   b   change number of bootblocks
+-   c   change boot priority
+-   d   delete a partition
+-   e   toggle nomount flag
+-   l   list known partition types
+-   m   print this menu
+-   n   add a new partition
+-   p   print the partition table
+-   q   quit without saving changes
+-   t   change a partition's DosType
+-   r   reorganize/move RDB
++	printf ("Command action\n\
++   a   toggle bootable flag\n\
++   b   change number of bootblocks\n\
++   c   change boot priority\n\
++   d   delete a partition\n\
++   e   toggle nomount flag\n\
++   l   list known partition types\n\
++   m   print this menu\n\
++   n   add a new partition\n\
++   p   print the partition table\n\
++   q   quit without saving changes\n\
++   t   change a partition's DosType\n\
++   r   reorganize/move RDB\n\
+    w   write table to disk and exit\n\n");
+ 	return 0;
+ }
+@@ -155,6 +182,13 @@
+ 	listknown();
+ 
+ 	printf ("\n  Choose a number of the upper list or\n  enter a DosType of the format 0x444f5302\n\n");
++#ifdef FIX_NO_READLINE
++#warning FIX_NO_READLINE enabled in gettype
++	printf(
++	"(NOTE: amiga-fdisk from the boot-floppies package accepts only numbers\n"\
++	" from the list above. Replace amiga-fdisk-bf by amiga-fdisk as soon as\n"\
++	" possible to get the full functionality of amiga-fdisk.)\n\n");
++#endif
+ 	dtype=readline("Enter DosType: ");
+ 	if (dtype==NULL) exit (0);
+ 	hexval=atonum(dtype);

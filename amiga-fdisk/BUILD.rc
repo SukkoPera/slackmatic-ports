@@ -1,0 +1,25 @@
+. ../sukkolib.rc
+
+BRIEF='Partition editor for Amiga partitions'
+PROJECT=https://packages.debian.org/en/source/stretch/amiga-fdisk
+RELEASE=0.04
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=$NAME-$RELEASE.orig
+
+SOURCE=(
+	http://deb.debian.org/debian/pool/main/a/amiga-fdisk/$NAME'_'$RELEASE.orig.tar.gz
+)
+
+PATCHES=(
+	readline.patch
+	amigastuff.patch
+)
+
+fn inst {
+	mkdir -p $PKG/sbin
+	std_inst
+
+	mkdir -p $PKG/usr/man/man8
+	cp $CWD/amiga-fdisk.8 $PKG/usr/man/man8 || exit $status
+}

@@ -1,0 +1,97 @@
+Description: fixes for large disks
+Author: Christian T. Steigies <cts@debian.org>
+--- a/amigastuff.c
++++ b/amigastuff.c
+@@ -30,8 +30,13 @@
+ #include <malloc.h>
+ #include <string.h>
+ 
++# if 0
++these include files are broken, see #252709
+ #include <asm/system.h>
+ #include <asm/byteorder.h>
++#else
++#include <netinet/in.h>
++#endif
+ 
+ #include <amiga/types.h>
+ #include <amiga/filehandler.h>
+@@ -57,7 +62,7 @@
+ struct PartitionBlock *pa[MAXPARTS];
+ int parts, firstblock, lastblock, maxblock, minblock;
+ char *initsectors, *listsector;
+-char type[32];	/* Needed by DosType() */
++char type[100];	/* Needed by DosType() */
+ 
+ int rigiddisk_new(int first);
+ 
+@@ -698,17 +703,26 @@
+ 
+ 			geo.heads=1;
+ 			geo.sectors=1;
+-			geo.cylinders=hdsize/SECTOR_SIZE;
++			// geo.cylinders=hdsize/SECTOR_SIZE;
++			hdsize/=SECTOR_SIZE;
+ 			geo.start=0;
+ 
+-			while ((((geo.cylinders/2)*2)==geo.cylinders) && (geo.cylinders>1024)) {
++			// while ((((geo.cylinders/2)*2)==geo.cylinders) && (geo.cylinders>1024)) {
++			while ((((hdsize/2)*2)==hdsize) && (hdsize>1024)) {
+ 				geo.sectors*=2;
+-				geo.cylinders/=2;
+-				if (((geo.cylinders/2)*2)==geo.cylinders && (geo.cylinders>1024) ) {
++				// geo.cylinders/=2;
++				hdsize/=2;
++				// if (((geo.cylinders/2)*2)==geo.cylinders && (geo.cylinders>1024) ) {
++				if (((hdsize/2)*2)==hdsize && (hdsize>1024) ) {
+ 					geo.heads*=2;
+-					geo.cylinders/=2;
++					// geo.cylinders/=2;
++					hdsize/=2;
+ 				}
+ 			}
++			geo.cylinders=hdsize;
++			if (hdsize != geo.cylinders) {
++			  printf("Warning: %lli cylinders can not be stored in 16-bit value!\n", hdsize);
++			}
+ 
+ 
+ 		} else {
+@@ -939,7 +953,7 @@
+ 	dt.dlong = htonl(dostype);
+ 
+ 	if (!list_only) {
+-		j = sprintf(type, "0x%04x = ",dostype);
++		j = sprintf(type, "0x%04x = ",(unsigned int) dostype);
+ 
+ 		for (i = 0; i < 4; i++)
+ 			if (isprint(dt.dchar[i]))
+@@ -970,10 +984,10 @@
+ int rigiddisk_show(void)
+ {
+ 	printf ("Disk %s: %ld heads, %ld sectors, %ld cylinders, RDB: %d\n", disk_device,
+-		 htonl(rdb->rdb_Heads),htonl(rdb->rdb_Sectors),htonl(rdb->rdb_Cylinders),firstblock);
++		 (long int) htonl(rdb->rdb_Heads), (long int) htonl(rdb->rdb_Sectors), (long int) htonl(rdb->rdb_Cylinders), firstblock);
+ 
+ 	printf ("Logical Cylinders from %ld to %ld, %ld  bytes/Cylinder \n\n", 
+-		 htonl(rdb->rdb_LoCylinder), htonl(rdb->rdb_HiCylinder), SECTOR_SIZE*htonl(rdb->rdb_Sectors)*htonl(rdb->rdb_Heads));
++		 (long int) htonl(rdb->rdb_LoCylinder), (long int) htonl(rdb->rdb_HiCylinder), (long int) SECTOR_SIZE*htonl(rdb->rdb_Sectors)*htonl(rdb->rdb_Heads));
+ 
+ 	return 0;
+ }
+@@ -996,11 +1010,11 @@
+ 		printf ("%s%-2d   ",disk_device,(i+1));
+ 		printf ("%s    ", htonl(curr->pb_Flags)&PBFF_BOOTABLE?"*":" ");
+ 		printf ("%s    ", htonl(curr->pb_Flags)&PBFF_NOMOUNT?" ":"*");
+-		printf ("%6ld   %6ld   ", htonl(de->de_LowCyl),htonl(de->de_HighCyl));
+-		printf ("%6ld   ", (htonl(de->de_HighCyl)-htonl(de->de_LowCyl)+1)*
++		printf ("%6ld   %6ld   ", (long int) htonl(de->de_LowCyl), (long int) htonl(de->de_HighCyl));
++		printf ("%6ld   ", (long int) (htonl(de->de_HighCyl)-htonl(de->de_LowCyl)+1)*
+ 				htonl(de->de_BlocksPerTrack)*htonl(de->de_Surfaces)/2);
+-		printf ("%3ld    ",htonl(de->de_BootPri));
+-		printf ("%3ld  ",htonl(de->de_BootBlocks));
++		printf ("%3ld    ",(long int) htonl(de->de_BootPri));
++		printf ("%3ld  ",(long int) htonl(de->de_BootBlocks));
+ 		printf ("%s\n",DosType(htonl(de->de_DosType)));
+ 	}
+ 

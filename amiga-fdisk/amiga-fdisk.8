@@ -1,0 +1,51 @@
+.TH AMIGA-FDISK 8
+.\" NAME should be all caps, SECTION should be 1-8, maybe w/ subsection
+.\" other parms are allowed: see man(7), man(1)
+.SH NAME
+amiga-fdisk \- Amiga disk partitioning program
+.SH SYNOPSIS
+.B amiga-fdisk
+[
+.B \-l
+]
+[
+.B \-v
+]
+.I device
+.SH DESCRIPTION
+.B amiga-fdisk
+is a program to partition harddisks under Linux/m68k. It uses command line
+parameters similar to those of the PC
+.B fdisk
+program, and operates on
+the disk associated with \fIdevice\fR.
+In interactive mode, it behaves similarly to the
+.B fdisk
+program.
+.SH OPTIONS
+.TP
+.B \-l
+List partition tables of all disks. If this flag is given, interactive
+mode isn't entered.
+.TP
+.B \-v
+Show version of the program.
+.SH BUGS
+Many of the command line options known from
+.B fdisk
+have not been implemented yet.
+.LP
+Using
+.B amiga-fdisk
+on large harddisks (like larger than 2 GB) consumes lots of memory, as
+the program currently tries to read in the entire RDB blocks \- which can
+be several MB if the (reported) geometry of the disk says so (the RDB
+occupies the first two cylinders of the disk).
+.LP
+The whole stuff about interactive usage of
+.B amiga-fdisk
+in this manpage still has to be written.
+.SH AUTHORS
+Stefan Reinauer <stepan@linux.de> (author)
+.LP
+Frank Neumann <Frank.Neumann@Informatik.Uni-Oldenburg.DE> (manpage)

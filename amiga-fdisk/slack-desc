@@ -1,0 +1,11 @@
+amiga-fdisk: amiga-fdisk (Partition editor for Amiga partitions)
+amiga-fdisk:
+amiga-fdisk: This is a slackmatic port build of amiga-fdisk:
+amiga-fdisk: Partition editor for Amiga partitions 
+amiga-fdisk:
+amiga-fdisk: For more information about the package, see the project website at:
+amiga-fdisk: https://packages.debian.org/en/source/stretch/amiga-fdisk
+amiga-fdisk:
+amiga-fdisk:
+amiga-fdisk: This slackmatic port was developed by:
+amiga-fdisk: slackware@sukkology.net

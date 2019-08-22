@@ -1,0 +1,12 @@
+drwxr-xr-x|0755|root/root|sbin|
+-rwxr-xr-x|0755|root/root|sbin/amiga-fdisk|
+drwxr-xr-x|0755|root/root|usr|
+drwxr-xr-x|0755|root/root|usr/doc|
+drwxr-xr-x|0755|root/root|usr/doc/amiga-fdisk-0.04|
+-rw-r--r--|0644|root/root|usr/doc/amiga-fdisk-0.04/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/amiga-fdisk-0.04/COPYING|
+-rw-r--r--|0644|root/root|usr/doc/amiga-fdisk-0.04/ChangeLog|
+-rw-r--r--|0644|root/root|usr/doc/amiga-fdisk-0.04/README|
+drwxr-xr-x|0755|root/root|usr/man|
+drwxr-xr-x|0755|root/root|usr/man/man8|
+-rw-r--r--|0644|root/root|usr/man/man8/amiga-fdisk.8.gz|
