@@ -1,0 +1,16 @@
+. ../sukkolib.rc
+
+BRIEF='Open source graph visualization software'
+PROJECT=https://graphviz.org/
+RELEASE=2.42.1
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	https://www2.graphviz.org/Packages/stable/portable_source/$NAME-$RELEASE.tar.gz
+)
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS
+	--disable-php
+)
