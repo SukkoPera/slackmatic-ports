@@ -1,12 +1,25 @@
 . ../sukkolib.rc
 
 BRIEF='A D-Bus service that provides location information'
-PROJECT=http://www.freedesktop.org/wiki/Software/GeoClue/
-RELEASE=0.12.99
+PROJECT=https://gitlab.freedesktop.org/geoclue/geoclue/wikis/home
+RELEASE=2.5.5
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
+BUILDSYSTEM=autotools
 
 MAJORV=`{echo $RELEASE | sed 's:\.[0-9]$::'}
 SOURCE=(
-	http://people.freedesktop.org/~hadess/$NAME-$RELEASE.tar.gz
+	https://gitlab.freedesktop.org/geoclue/geoclue/-/archive/$RELEASE/$NAME-$RELEASE.tar.bz2
 )
+
+fn configure {
+	meson --prefix'='/usr --libdir'='$LIBDIR --sysconfdir'='/etc --mandir'='/usr/man -Ddbus-srv-user'='geoclue build
+}
+
+fn compile {
+	ninja -C build
+}
+
+fn inst {
+	DESTDIR=$PKG ninja -C build install
+}
