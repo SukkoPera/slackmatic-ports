@@ -2,7 +2,7 @@
 
 BRIEF='MATE Desktop Environment'
 PROJECT=http://mate-desktop.org
-RELEASE=1.20.3
+RELEASE=1.22.2
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
@@ -11,11 +11,6 @@ SOURCE=(
 	http://pub.mate-desktop.org/releases/$MAJORV/$NAME-$RELEASE.tar.xz
 )
 
-PATCHES=(
-	mate-applets-1.16.0-cpupower-4.7.patch
-)
-
-# indicator-stickynotes requires Python 3
 CONFOPTS=(
 	$DEFAULT_CONFOPTS
 	--disable-schemas-compile

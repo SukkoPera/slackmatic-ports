@@ -2,13 +2,13 @@ drwxr-xr-x|0755|root/root|usr|
 drwxr-xr-x|0755|root/root|usr/bin|
 -rwxr-xr-x|0755|root/root|usr/bin/engrampa|
 drwxr-xr-x|0755|root/root|usr/doc|
-drwxr-xr-x|0755|root/root|usr/doc/mate-engrampa-1.20.2|
--rw-r--r--|0644|root/root|usr/doc/mate-engrampa-1.20.2/AUTHORS|
--rw-r--r--|0644|root/root|usr/doc/mate-engrampa-1.20.2/BUILD.rc|
--rw-r--r--|0644|root/root|usr/doc/mate-engrampa-1.20.2/COPYING|
--rw-r--r--|0644|root/root|usr/doc/mate-engrampa-1.20.2/ChangeLog|
--rw-r--r--|0644|root/root|usr/doc/mate-engrampa-1.20.2/NEWS|
--rw-r--r--|0644|root/root|usr/doc/mate-engrampa-1.20.2/README|
+drwxr-xr-x|0755|root/root|usr/doc/mate-engrampa-1.22.2|
+-rw-r--r--|0644|root/root|usr/doc/mate-engrampa-1.22.2/AUTHORS|
+-rw-r--r--|0644|root/root|usr/doc/mate-engrampa-1.22.2/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/mate-engrampa-1.22.2/COPYING|
+-rw-r--r--|0644|root/root|usr/doc/mate-engrampa-1.22.2/ChangeLog|
+-rw-r--r--|0644|root/root|usr/doc/mate-engrampa-1.22.2/NEWS|
+-rw-r--r--|0644|root/root|usr/doc/mate-engrampa-1.22.2/README|
 drwxr-xr-x|0755|root/root|usr/lib64|
 drwxr-xr-x|0755|root/root|usr/lib64/caja|
 drwxr-xr-x|0755|root/root|usr/lib64/caja/extensions-2.0|
@@ -23,8 +23,6 @@ drwxr-xr-x|0755|root/root|usr/man|
 drwxr-xr-x|0755|root/root|usr/man/man1|
 -rw-r--r--|0644|root/root|usr/man/man1/engrampa.1.gz|
 drwxr-xr-x|0755|root/root|usr/share|
-drwxr-xr-x|0755|root/root|usr/share/appdata|
--rw-r--r--|0644|root/root|usr/share/appdata/engrampa.appdata.xml|
 drwxr-xr-x|0755|root/root|usr/share/applications|
 -rw-r--r--|0644|root/root|usr/share/applications/engrampa.desktop|
 drwxr-xr-x|0755|root/root|usr/share/caja|
@@ -1185,6 +1183,9 @@ drwxr-xr-x|0755|root/root|usr/share/locale/fy/LC_MESSAGES|
 drwxr-xr-x|0755|root/root|usr/share/locale/ga|
 drwxr-xr-x|0755|root/root|usr/share/locale/ga/LC_MESSAGES|
 -rw-r--r--|0644|root/root|usr/share/locale/ga/LC_MESSAGES/engrampa.mo|
+drwxr-xr-x|0755|root/root|usr/share/locale/gd|
+drwxr-xr-x|0755|root/root|usr/share/locale/gd/LC_MESSAGES|
+-rw-r--r--|0644|root/root|usr/share/locale/gd/LC_MESSAGES/engrampa.mo|
 drwxr-xr-x|0755|root/root|usr/share/locale/gl|
 drwxr-xr-x|0755|root/root|usr/share/locale/gl/LC_MESSAGES|
 -rw-r--r--|0644|root/root|usr/share/locale/gl/LC_MESSAGES/engrampa.mo|
@@ -1215,6 +1216,9 @@ drwxr-xr-x|0755|root/root|usr/share/locale/ia/LC_MESSAGES|
 drwxr-xr-x|0755|root/root|usr/share/locale/id|
 drwxr-xr-x|0755|root/root|usr/share/locale/id/LC_MESSAGES|
 -rw-r--r--|0644|root/root|usr/share/locale/id/LC_MESSAGES/engrampa.mo|
+drwxr-xr-x|0755|root/root|usr/share/locale/ie|
+drwxr-xr-x|0755|root/root|usr/share/locale/ie/LC_MESSAGES|
+-rw-r--r--|0644|root/root|usr/share/locale/ie/LC_MESSAGES/engrampa.mo|
 drwxr-xr-x|0755|root/root|usr/share/locale/ig|
 drwxr-xr-x|0755|root/root|usr/share/locale/ig/LC_MESSAGES|
 -rw-r--r--|0644|root/root|usr/share/locale/ig/LC_MESSAGES/engrampa.mo|
@@ -1422,3 +1426,5 @@ drwxr-xr-x|0755|root/root|usr/share/locale/zh_TW/LC_MESSAGES|
 drwxr-xr-x|0755|root/root|usr/share/locale/zu|
 drwxr-xr-x|0755|root/root|usr/share/locale/zu/LC_MESSAGES|
 -rw-r--r--|0644|root/root|usr/share/locale/zu/LC_MESSAGES/engrampa.mo|
+drwxr-xr-x|0755|root/root|usr/share/metainfo|
+-rw-r--r--|0644|root/root|usr/share/metainfo/engrampa.appdata.xml|

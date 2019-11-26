@@ -1,12 +1,12 @@
 drwxr-xr-x|0755|root/root|usr|
 drwxr-xr-x|0755|root/root|usr/doc|
-drwxr-xr-x|0755|root/root|usr/doc/mate-libmatemixer-1.20.1|
--rw-r--r--|0644|root/root|usr/doc/mate-libmatemixer-1.20.1/AUTHORS|
--rw-r--r--|0644|root/root|usr/doc/mate-libmatemixer-1.20.1/BUILD.rc|
--rw-r--r--|0644|root/root|usr/doc/mate-libmatemixer-1.20.1/COPYING|
--rw-r--r--|0644|root/root|usr/doc/mate-libmatemixer-1.20.1/ChangeLog|
--rw-r--r--|0644|root/root|usr/doc/mate-libmatemixer-1.20.1/NEWS|
--rw-r--r--|0644|root/root|usr/doc/mate-libmatemixer-1.20.1/README|
+drwxr-xr-x|0755|root/root|usr/doc/mate-libmatemixer-1.22.0|
+-rw-r--r--|0644|root/root|usr/doc/mate-libmatemixer-1.22.0/AUTHORS|
+-rw-r--r--|0644|root/root|usr/doc/mate-libmatemixer-1.22.0/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/mate-libmatemixer-1.22.0/COPYING|
+-rw-r--r--|0644|root/root|usr/doc/mate-libmatemixer-1.22.0/ChangeLog|
+-rw-r--r--|0644|root/root|usr/doc/mate-libmatemixer-1.22.0/NEWS|
+-rw-r--r--|0644|root/root|usr/doc/mate-libmatemixer-1.22.0/README|
 drwxr-xr-x|0755|root/root|usr/include|
 drwxr-xr-x|0755|root/root|usr/include/mate-mixer|
 drwxr-xr-x|0755|root/root|usr/include/mate-mixer/libmatemixer|
@@ -396,3 +396,6 @@ drwxr-xr-x|0755|root/root|usr/share/locale/zh_HK/LC_MESSAGES|
 drwxr-xr-x|0755|root/root|usr/share/locale/zh_TW|
 drwxr-xr-x|0755|root/root|usr/share/locale/zh_TW/LC_MESSAGES|
 -rw-r--r--|0644|root/root|usr/share/locale/zh_TW/LC_MESSAGES/libmatemixer.mo|
+drwxr-xr-x|0755|root/root|usr/share/locale/zu|
+drwxr-xr-x|0755|root/root|usr/share/locale/zu/LC_MESSAGES|
+-rw-r--r--|0644|root/root|usr/share/locale/zu/LC_MESSAGES/libmatemixer.mo|
