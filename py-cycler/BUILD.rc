@@ -2,7 +2,7 @@
 
 BRIEF='Composable style cycles'
 PROJECT=https://pypi.python.org/pypi/Cycler
-RELEASE=0.9.0
+RELEASE=0.10.0
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDDIR=cycler-$RELEASE
