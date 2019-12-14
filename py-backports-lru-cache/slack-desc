@@ -1,0 +1,11 @@
+py-backports-lru-cache: py-backports-lru-cache (Backport of functools.lru_cache from Python 3.3 as published at ActiveState)
+py-backports-lru-cache:
+py-backports-lru-cache: This is a slackmatic port build of py-backports-lru-cache:
+py-backports-lru-cache: Backport of functools.lru_cache from Python 3.3 as published at ActiveState 
+py-backports-lru-cache:
+py-backports-lru-cache: For more information about the package, see the project website at:
+py-backports-lru-cache: https://github.com/jaraco/backports.functools_lru_cache
+py-backports-lru-cache:
+py-backports-lru-cache:
+py-backports-lru-cache: This slackmatic port was developed by:
+py-backports-lru-cache: slackware@sukkology.net
