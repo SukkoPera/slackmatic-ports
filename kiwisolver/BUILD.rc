@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+BRIEF='Efficient C++/Python implementation of the Cassowary constraint solving algorithm'
+PROJECT=https://github.com/cython/backports_abc
+RELEASE=1.1.0
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=kiwi-$RELEASE
+
+SOURCE=(
+	https://github.com/nucleic/kiwi/archive/$RELEASE.tar.gz
+)
