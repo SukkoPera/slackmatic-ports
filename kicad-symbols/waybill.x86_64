@@ -1,9 +1,9 @@
 drwxr-xr-x|0755|root/root|usr|
 drwxr-xr-x|0755|root/root|usr/doc|
-drwxr-xr-x|0755|root/root|usr/doc/kicad-symbols-5.1.2|
--rw-r--r--|0644|root/root|usr/doc/kicad-symbols-5.1.2/BUILD.rc|
--rw-r--r--|0644|root/root|usr/doc/kicad-symbols-5.1.2/LICENSE.md|
--rw-r--r--|0644|root/root|usr/doc/kicad-symbols-5.1.2/README.md|
+drwxr-xr-x|0755|root/root|usr/doc/kicad-symbols-5.1.5|
+-rw-r--r--|0644|root/root|usr/doc/kicad-symbols-5.1.5/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/kicad-symbols-5.1.5/LICENSE.md|
+-rw-r--r--|0644|root/root|usr/doc/kicad-symbols-5.1.5/README.md|
 drwxr-xr-x|0755|root/root|usr/share|
 drwxr-xr-x|0755|root/root|usr/share/kicad|
 drwxr-xr-x|0755|root/root|usr/share/kicad/library|
@@ -225,6 +225,8 @@ drwxr-xr-x|0755|root/root|usr/share/kicad/library|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/MCU_Nordic.lib|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/MCU_Parallax.dcm|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/MCU_Parallax.lib|
+-rw-r--r--|0644|root/root|usr/share/kicad/library/MCU_Renesas_Synergy_S1.dcm|
+-rw-r--r--|0644|root/root|usr/share/kicad/library/MCU_Renesas_Synergy_S1.lib|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/MCU_STC.dcm|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/MCU_STC.lib|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/MCU_ST_STM32F0.dcm|
@@ -257,6 +259,8 @@ drwxr-xr-x|0755|root/root|usr/share/kicad/library|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/MCU_SiliconLabs.lib|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/MCU_Texas_MSP430.dcm|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/MCU_Texas_MSP430.lib|
+-rw-r--r--|0644|root/root|usr/share/kicad/library/MCU_Texas_SimpleLink.dcm|
+-rw-r--r--|0644|root/root|usr/share/kicad/library/MCU_Texas_SimpleLink.lib|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/MCU_Texas.dcm|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/MCU_Texas.lib|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/Mechanical.dcm|
