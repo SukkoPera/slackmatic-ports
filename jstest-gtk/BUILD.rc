@@ -1,7 +1,7 @@
 . ../sukkolib.rc
 
 BRIEF='A Gtk+ based joystick test application'
-PROJECT=https://github.com/Grumbel/jstest-gtk/
+PROJECT=https://gitlab.com/jstest-gtk/jstest-gtk
 RELEASE=20191217
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
