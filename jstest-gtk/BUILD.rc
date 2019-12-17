@@ -2,14 +2,17 @@
 
 BRIEF='A Gtk+ based joystick test application'
 PROJECT=https://github.com/Grumbel/jstest-gtk/
-RELEASE=20150818
+RELEASE=20191217
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDDIR=jstest-gtk-master
 
-# Please download ZIP and rename manually from github
+fn myfetch () {
+	wget https://gitlab.com/jstest-gtk/jstest-gtk/-/archive/master/jstest-gtk-master.tar.bz2 -O $NAME-master-$RELEASE.tar.bz2
+}
+
 SOURCE=(
-	https://github.com/Grumbel/jstest-gtk/archive/master.zip
+	MYFETCH:$NAME-master-$RELEASE.tar.bz2
 )
 
 DOCS=(
@@ -17,13 +20,7 @@ DOCS=(
 	README.md
 )
 
-fn inst () {
-	mkdir -p $PKG/usr/bin
-	cp jstest-gtk $PKG/usr/bin
-
-	mkdir -p $PKG/usr/share/jstest-gtk
-	cp data/*.png $PKG/usr/share/jstest-gtk
-
-	mkdir -p $PKG/usr/man/man1
-	cp data/jstest-gtk.1 $PKG/usr/man/man1
+fn inst {
+	std_inst
+	mv $PKG/usr/share/man $PKG/usr || exit $status
 }
