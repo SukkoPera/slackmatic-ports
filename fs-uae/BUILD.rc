@@ -2,7 +2,7 @@
 
 BRIEF='Accurate Amiga Emulator'
 PROJECT=https://fs-uae.net/
-RELEASE=2.8.3
+RELEASE=3.0.2
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
