@@ -2,14 +2,12 @@
 
 BRIEF='Music Player for GTK+'
 PROJECT=http://www.exaile.org
-TRELEASE=4.0.0-rc3
-RELEASE=4.0.0_rc3
+RELEASE=4.0.0
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
-BUILDDIR=$NAME-$TRELEASE
 
 SOURCE=(
-	https://github.com/exaile/exaile/archive/$TRELEASE.tar.gz
+	https://github.com/exaile/exaile/archive/$RELEASE/$NAME-$RELEASE.tar.gz
 )
 
 fn compile {
