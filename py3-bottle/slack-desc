@@ -1,0 +1,11 @@
+py3-bottle: py3-bottle (A fast, simple and lightweight WSGI micro web-framework for Python)
+py3-bottle:
+py3-bottle: This is a slackmatic port build of py3-bottle:
+py3-bottle: A fast, simple and lightweight WSGI micro web-framework for Python 
+py3-bottle:
+py3-bottle: For more information about the package, see the project website at:
+py3-bottle: http://bottlepy.org
+py3-bottle:
+py3-bottle:
+py3-bottle: This slackmatic port was developed by:
+py3-bottle: slackware@sukkology.net

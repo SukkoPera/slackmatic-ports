@@ -1,0 +1,27 @@
+. ../sukkolib.rc
+
+BRIEF='A fast, simple and lightweight WSGI micro web-framework for Python'
+PROJECT=http://bottlepy.org
+RELEASE=0.12.18
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=bottle-$RELEASE
+
+SOURCE=(
+	https://github.com/bottlepy/bottle/archive/$RELEASE.tar.gz	
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	LICENSE
+	README.rst 
+)
+
+fn compile {
+        python3 setup.py build || exit 101
+}
+
+fn inst {
+        python3 setup.py install --root $PKG || exit 102
+}
+
