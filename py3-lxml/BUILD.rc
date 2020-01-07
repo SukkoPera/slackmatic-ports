@@ -1,0 +1,22 @@
+. ../sukkolib.rc
+
+BRIEF='The most feature-rich and easy-to-use library for processing XML and HTML in Python'
+PROJECT=https://lxml.de
+RELEASE=4.4.2
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+TNAME=lxml
+BUILDDIR=$TNAME-$RELEASE
+
+SOURCE=(
+	https://lxml.de/files/$TNAME-$RELEASE.tgz
+)
+
+fn compile {
+        python3 setup.py build || exit 101
+}
+
+fn inst {
+        python3 setup.py install --root $PKG || exit 102
+}
+
