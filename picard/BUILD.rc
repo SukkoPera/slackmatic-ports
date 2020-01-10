@@ -2,7 +2,7 @@
 
 BRIEF='A cross-platform music tagger'
 PROJECT=https://picard.musicbrainz.org
-RELEASE=1.4.2
+RELEASE=2.2.3
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDDIR=$NAME-release-$RELEASE
@@ -10,3 +10,12 @@ BUILDDIR=$NAME-release-$RELEASE
 SOURCE=(
 	http://ftp.musicbrainz.org/pub/musicbrainz/picard/$NAME-$RELEASE.tar.gz
 )
+
+fn compile {
+        python3 setup.py build || exit 101
+}
+
+fn inst {
+        python3 setup.py install --root $PKG || exit 102
+}
+
