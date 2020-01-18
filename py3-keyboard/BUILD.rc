@@ -1,0 +1,22 @@
+. ../sukkolib.rc
+
+BRIEF='Hook and simulate keyboard events on Windows and Linux'
+PROJECT=https://pypi.org/project/keyboard/
+RELEASE=0.13.4
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+TNAME=keyboard
+BUILDDIR=$TNAME-$RELEASE
+
+SOURCE=(
+	https://files.pythonhosted.org/packages/5d/32/6f782da2738d88ca3ba8bd7597af3fb3fa379f2c3e465adf1bec9d0396d1/$TNAME-$RELEASE.zip
+)
+
+fn compile {
+        python3 setup.py build || exit 101
+}
+
+fn inst {
+        python3 setup.py install --root $PKG || exit 102
+}
+

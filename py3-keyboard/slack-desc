@@ -1,0 +1,11 @@
+py3-keyboard: py3-keyboard (Hook and simulate keyboard events on Windows and Linux)
+py3-keyboard:
+py3-keyboard: This is a slackmatic port build of py3-keyboard:
+py3-keyboard: Hook and simulate keyboard events on Windows and Linux 
+py3-keyboard:
+py3-keyboard: For more information about the package, see the project website at:
+py3-keyboard: https://pypi.org/project/keyboard/
+py3-keyboard:
+py3-keyboard:
+py3-keyboard: This slackmatic port was developed by:
+py3-keyboard: slackware@sukkology.net
