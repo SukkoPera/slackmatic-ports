@@ -1,0 +1,11 @@
+libgit2: libgit2 (A portable, pure C implementation of the Git core methods)
+libgit2:
+libgit2: This is a slackmatic port build of libgit2:
+libgit2: A portable, pure C implementation of the Git core methods 
+libgit2:
+libgit2: For more information about the package, see the project website at:
+libgit2: https://libgit2.org
+libgit2:
+libgit2:
+libgit2: This slackmatic port was developed by:
+libgit2: slackware@sukkology.net

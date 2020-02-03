@@ -1,0 +1,16 @@
+. ../sukkolib.rc
+
+BRIEF='A portable, pure C implementation of the Git core methods'
+PROJECT=https://libgit2.org
+RELEASE=0.28.4
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	https://github.com/libgit2/libgit2/archive/v$RELEASE.tar.gz
+)
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS_CMAKE
+	-DLIB_INSTALL_DIR'='/usr/lib$LIB_SUFFIX
+)
