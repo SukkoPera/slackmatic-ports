@@ -2,13 +2,14 @@ drwxr-xr-x|0755|root/root|usr|
 drwxr-xr-x|0755|root/root|usr/bin|
 -rwxr-xr-x|0755|root/root|usr/bin/mate-notification-properties|
 drwxr-xr-x|0755|root/root|usr/doc|
-drwxr-xr-x|0755|root/root|usr/doc/mate-notification-daemon-1.22.1|
--rw-r--r--|0644|root/root|usr/doc/mate-notification-daemon-1.22.1/AUTHORS|
--rw-r--r--|0644|root/root|usr/doc/mate-notification-daemon-1.22.1/BUILD.rc|
--rw-r--r--|0644|root/root|usr/doc/mate-notification-daemon-1.22.1/COPYING|
--rw-r--r--|0644|root/root|usr/doc/mate-notification-daemon-1.22.1/ChangeLog|
--rw-r--r--|0644|root/root|usr/doc/mate-notification-daemon-1.22.1/NEWS|
--rw-r--r--|0644|root/root|usr/doc/mate-notification-daemon-1.22.1/README|
+drwxr-xr-x|0755|root/root|usr/doc/mate-notification-daemon-1.24.0|
+-rw-r--r--|0644|root/root|usr/doc/mate-notification-daemon-1.24.0/ABOUT-NLS|
+-rw-r--r--|0644|root/root|usr/doc/mate-notification-daemon-1.24.0/AUTHORS|
+-rw-r--r--|0644|root/root|usr/doc/mate-notification-daemon-1.24.0/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/mate-notification-daemon-1.24.0/COPYING|
+-rw-r--r--|0644|root/root|usr/doc/mate-notification-daemon-1.24.0/ChangeLog|
+-rw-r--r--|0644|root/root|usr/doc/mate-notification-daemon-1.24.0/NEWS|
+-rw-r--r--|0644|root/root|usr/doc/mate-notification-daemon-1.24.0/README|
 drwxr-xr-x|0755|root/root|usr/lib64|
 drwxr-xr-x|0755|root/root|usr/lib64/mate-notification-daemon|
 drwxr-xr-x|0755|root/root|usr/lib64/mate-notification-daemon/engines|
@@ -380,5 +381,3 @@ drwxr-xr-x|0755|root/root|usr/share/locale/zh_HK/LC_MESSAGES|
 drwxr-xr-x|0755|root/root|usr/share/locale/zh_TW|
 drwxr-xr-x|0755|root/root|usr/share/locale/zh_TW/LC_MESSAGES|
 -rw-r--r--|0644|root/root|usr/share/locale/zh_TW/LC_MESSAGES/mate-notification-daemon.mo|
-drwxr-xr-x|0755|root/root|usr/share/mate-notification-daemon|
--rw-r--r--|0644|root/root|usr/share/mate-notification-daemon/mate-notification-properties.ui|

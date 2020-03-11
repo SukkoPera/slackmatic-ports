@@ -3,13 +3,14 @@ drwxr-xr-x|0755|root/root|usr/bin|
 -rwxr-xr-x|0755|root/root|usr/bin/mate-about|
 -rwxr-xr-x|0755|root/root|usr/bin/mate-color-select|
 drwxr-xr-x|0755|root/root|usr/doc|
-drwxr-xr-x|0755|root/root|usr/doc/mate-desktop-1.22.2|
--rw-r--r--|0644|root/root|usr/doc/mate-desktop-1.22.2/AUTHORS|
--rw-r--r--|0644|root/root|usr/doc/mate-desktop-1.22.2/BUILD.rc|
--rw-r--r--|0644|root/root|usr/doc/mate-desktop-1.22.2/COPYING|
--rw-r--r--|0644|root/root|usr/doc/mate-desktop-1.22.2/ChangeLog|
--rw-r--r--|0644|root/root|usr/doc/mate-desktop-1.22.2/NEWS|
--rw-r--r--|0644|root/root|usr/doc/mate-desktop-1.22.2/README|
+drwxr-xr-x|0755|root/root|usr/doc/mate-desktop-1.24.0|
+-rw-r--r--|0644|root/root|usr/doc/mate-desktop-1.24.0/ABOUT-NLS|
+-rw-r--r--|0644|root/root|usr/doc/mate-desktop-1.24.0/AUTHORS|
+-rw-r--r--|0644|root/root|usr/doc/mate-desktop-1.24.0/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/mate-desktop-1.24.0/COPYING|
+-rw-r--r--|0644|root/root|usr/doc/mate-desktop-1.24.0/ChangeLog|
+-rw-r--r--|0644|root/root|usr/doc/mate-desktop-1.24.0/NEWS|
+-rw-r--r--|0644|root/root|usr/doc/mate-desktop-1.24.0/README|
 drwxr-xr-x|0755|root/root|usr/include|
 drwxr-xr-x|0755|root/root|usr/include/mate-desktop-2.0|
 drwxr-xr-x|0755|root/root|usr/include/mate-desktop-2.0/libmate-desktop|
@@ -24,6 +25,7 @@ drwxr-xr-x|0755|root/root|usr/include/mate-desktop-2.0/libmate-desktop|
 -rw-r--r--|0644|root/root|usr/include/mate-desktop-2.0/libmate-desktop/mate-desktop-thumbnail.h|
 -rw-r--r--|0644|root/root|usr/include/mate-desktop-2.0/libmate-desktop/mate-desktop-utils.h|
 -rw-r--r--|0644|root/root|usr/include/mate-desktop-2.0/libmate-desktop/mate-gsettings.h|
+-rw-r--r--|0644|root/root|usr/include/mate-desktop-2.0/libmate-desktop/mate-hsv.h|
 -rw-r--r--|0644|root/root|usr/include/mate-desktop-2.0/libmate-desktop/mate-languages.h|
 -rw-r--r--|0644|root/root|usr/include/mate-desktop-2.0/libmate-desktop/mate-rr-config.h|
 -rw-r--r--|0644|root/root|usr/include/mate-desktop-2.0/libmate-desktop/mate-rr.h|
@@ -55,6 +57,7 @@ drwxr-xr-x|0755|root/root|usr/share/glib-2.0/schemas|
 -rw-r--r--|0644|root/root|usr/share/glib-2.0/schemas/org.mate.applications-at-visual.gschema.xml|
 -rw-r--r--|0644|root/root|usr/share/glib-2.0/schemas/org.mate.applications-browser.gschema.xml|
 -rw-r--r--|0644|root/root|usr/share/glib-2.0/schemas/org.mate.applications-calculator.gschema.xml|
+-rw-r--r--|0644|root/root|usr/share/glib-2.0/schemas/org.mate.applications-messenger.gschema.xml|
 -rw-r--r--|0644|root/root|usr/share/glib-2.0/schemas/org.mate.applications-office.gschema.xml|
 -rw-r--r--|0644|root/root|usr/share/glib-2.0/schemas/org.mate.applications-terminal.gschema.xml|
 -rw-r--r--|0644|root/root|usr/share/glib-2.0/schemas/org.mate.background.gschema.xml|
@@ -62,8 +65,6 @@ drwxr-xr-x|0755|root/root|usr/share/glib-2.0/schemas|
 -rw-r--r--|0644|root/root|usr/share/glib-2.0/schemas/org.mate.file-views.gschema.xml|
 -rw-r--r--|0644|root/root|usr/share/glib-2.0/schemas/org.mate.interface.gschema.xml|
 -rw-r--r--|0644|root/root|usr/share/glib-2.0/schemas/org.mate.lockdown.gschema.xml|
--rw-r--r--|0644|root/root|usr/share/glib-2.0/schemas/org.mate.peripherals-keyboard.gschema.xml|
--rw-r--r--|0644|root/root|usr/share/glib-2.0/schemas/org.mate.peripherals-mouse.gschema.xml|
 -rw-r--r--|0644|root/root|usr/share/glib-2.0/schemas/org.mate.sound.gschema.xml|
 -rw-r--r--|0644|root/root|usr/share/glib-2.0/schemas/org.mate.thumbnail-cache.gschema.xml|
 -rw-r--r--|0644|root/root|usr/share/glib-2.0/schemas/org.mate.thumbnailers.gschema.xml|

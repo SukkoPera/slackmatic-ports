@@ -1,13 +1,14 @@
 drwxr-xr-x|0755|root/root|usr|
 drwxr-xr-x|0755|root/root|usr/doc|
-drwxr-xr-x|0755|root/root|usr/doc/mate-themes-3.22.20|
--rw-r--r--|0644|root/root|usr/doc/mate-themes-3.22.20/AUTHORS|
--rw-r--r--|0644|root/root|usr/doc/mate-themes-3.22.20/BUILD.rc|
--rw-r--r--|0644|root/root|usr/doc/mate-themes-3.22.20/COPYING|
--rw-r--r--|0644|root/root|usr/doc/mate-themes-3.22.20/ChangeLog|
--rw-r--r--|0644|root/root|usr/doc/mate-themes-3.22.20/INSTALL|
--rw-r--r--|0644|root/root|usr/doc/mate-themes-3.22.20/NEWS|
--rw-r--r--|0644|root/root|usr/doc/mate-themes-3.22.20/README|
+drwxr-xr-x|0755|root/root|usr/doc/mate-themes-3.22.21|
+-rw-r--r--|0644|root/root|usr/doc/mate-themes-3.22.21/ABOUT-NLS|
+-rw-r--r--|0644|root/root|usr/doc/mate-themes-3.22.21/AUTHORS|
+-rw-r--r--|0644|root/root|usr/doc/mate-themes-3.22.21/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/mate-themes-3.22.21/COPYING|
+-rw-r--r--|0644|root/root|usr/doc/mate-themes-3.22.21/ChangeLog|
+-rw-r--r--|0644|root/root|usr/doc/mate-themes-3.22.21/INSTALL|
+-rw-r--r--|0644|root/root|usr/doc/mate-themes-3.22.21/NEWS|
+-rw-r--r--|0644|root/root|usr/doc/mate-themes-3.22.21/README|
 drwxr-xr-x|0755|root/root|usr/share|
 drwxr-xr-x|0755|root/root|usr/share/icons|
 drwxr-xr-x|0755|root/root|usr/share/icons/ContrastHigh|
@@ -3941,7 +3942,6 @@ drwxr-xr-x|0755|root/root|usr/share/themes/BlackMATE|
 drwxr-xr-x|0755|root/root|usr/share/themes/BlackMATE/apps|
 -rw-r--r--|0644|root/root|usr/share/themes/BlackMATE/apps/yumex.css|
 drwxr-xr-x|0755|root/root|usr/share/themes/BlackMATE-border|
--rw-r--r--|0644|root/root|usr/share/themes/BlackMATE-border/index.theme|
 drwxr-xr-x|0755|root/root|usr/share/themes/BlackMATE-border/metacity-1|
 -rw-r--r--|0644|root/root|usr/share/themes/BlackMATE-border/metacity-1/bar.png|
 -rw-r--r--|0644|root/root|usr/share/themes/BlackMATE-border/metacity-1/bar_unfocused.png|
@@ -4154,7 +4154,6 @@ drwxr-xr-x|0755|root/root|usr/share/themes/BlueMenta|
 drwxr-xr-x|0755|root/root|usr/share/themes/BlueMenta-border|
 -rw-r--r--|0644|root/root|usr/share/themes/BlueMenta-border/COPYING|
 -rw-r--r--|0644|root/root|usr/share/themes/BlueMenta-border/README|
--rw-r--r--|0644|root/root|usr/share/themes/BlueMenta-border/index.theme|
 drwxr-xr-x|0755|root/root|usr/share/themes/BlueMenta-border/metacity-1|
 -rw-r--r--|0644|root/root|usr/share/themes/BlueMenta-border/metacity-1/close_focused_normal.svg|
 -rw-r--r--|0644|root/root|usr/share/themes/BlueMenta-border/metacity-1/close_focused_prelight.svg|
@@ -4500,7 +4499,6 @@ drwxr-xr-x|0755|root/root|usr/share/themes/BlueMenta/xfwm4|
 -rw-r--r--|0644|root/root|usr/share/themes/BlueMenta/xfwm4/top-right-inactive.xpm|
 drwxr-xr-x|0755|root/root|usr/share/themes/Blue-Submarine|
 drwxr-xr-x|0755|root/root|usr/share/themes/Blue-Submarine-border|
--rw-r--r--|0644|root/root|usr/share/themes/Blue-Submarine-border/index.theme|
 drwxr-xr-x|0755|root/root|usr/share/themes/Blue-Submarine-border/metacity-1|
 -rw-r--r--|0644|root/root|usr/share/themes/Blue-Submarine-border/metacity-1/icon_close.png|
 -rw-r--r--|0644|root/root|usr/share/themes/Blue-Submarine-border/metacity-1/icon_close_u.png|
@@ -4688,7 +4686,6 @@ drwxr-xr-x|0755|root/root|usr/share/themes/GreenLaguna|
 -rw-r--r--|0644|root/root|usr/share/themes/GreenLaguna/README|
 drwxr-xr-x|0755|root/root|usr/share/themes/GreenLaguna-border|
 -rw-r--r--|0644|root/root|usr/share/themes/GreenLaguna-border/COPYING|
--rw-r--r--|0644|root/root|usr/share/themes/GreenLaguna-border/index.theme|
 drwxr-xr-x|0755|root/root|usr/share/themes/GreenLaguna-border/metacity-1|
 -rw-r--r--|0644|root/root|usr/share/themes/GreenLaguna-border/metacity-1/button-close-focus.png|
 -rw-r--r--|0644|root/root|usr/share/themes/GreenLaguna-border/metacity-1/button-max-focus1.png|
@@ -4840,7 +4837,6 @@ drwxr-xr-x|0755|root/root|usr/share/themes/GreenLaguna/unity|
 -rw-r--r--|0644|root/root|usr/share/themes/GreenLaguna/unity/unmaximize_unfocused_pressed.png|
 drwxr-xr-x|0755|root/root|usr/share/themes/Green-Submarine|
 drwxr-xr-x|0755|root/root|usr/share/themes/Green-Submarine-border|
--rw-r--r--|0644|root/root|usr/share/themes/Green-Submarine-border/index.theme|
 drwxr-xr-x|0755|root/root|usr/share/themes/Green-Submarine-border/metacity-1|
 -rw-r--r--|0644|root/root|usr/share/themes/Green-Submarine-border/metacity-1/icon_close.png|
 -rw-r--r--|0644|root/root|usr/share/themes/Green-Submarine-border/metacity-1/icon_close_u.png|
@@ -5165,7 +5161,6 @@ drwxr-xr-x|0755|root/root|usr/share/themes/Menta|
 drwxr-xr-x|0755|root/root|usr/share/themes/Menta-border|
 -rw-r--r--|0644|root/root|usr/share/themes/Menta-border/COPYING|
 -rw-r--r--|0644|root/root|usr/share/themes/Menta-border/README|
--rw-r--r--|0644|root/root|usr/share/themes/Menta-border/index.theme|
 drwxr-xr-x|0755|root/root|usr/share/themes/Menta-border/metacity-1|
 -rw-r--r--|0644|root/root|usr/share/themes/Menta-border/metacity-1/close_focused_normal.svg|
 -rw-r--r--|0644|root/root|usr/share/themes/Menta-border/metacity-1/close_focused_prelight.svg|
