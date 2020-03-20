@@ -2,12 +2,16 @@
 
 BRIEF='A web feed reader/news aggregator'
 PROJECT=http://lzone.de/liferea/
-RELEASE=1.12.5
+RELEASE=1.12.6
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
-BUILDDIR=$NAME-$RELEASE'a'
+BUILDDIR=$NAME-$RELEASE'b'
 
 SOURCE=(
-	https://github.com/lwindolf/liferea/releases/download/v$RELEASE/$NAME-$RELEASE'a'.tar.bz2
+	https://github.com/lwindolf/liferea/releases/download/v$RELEASE/$NAME-$RELEASE'b'.tar.bz2
 )
 
+CONFOPTS=(
+	$DEFAULT_CONFOPTS
+	--disable-schemas-compile
+)
