@@ -1,0 +1,21 @@
+. ../sukkolib.rc
+
+BRIEF='Python bindings for the Qt cross platform application toolkit'
+PROJECT=https://www.riverbankcomputing.com/software/pyqt/
+RELEASE=5.14.0
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=PyQt5-$RELEASE
+BUILDSYSTEM=autotools
+
+SOURCE=(
+	https://files.pythonhosted.org/packages/7c/5b/e760ec4f868cb77cee45b4554bf15d3fe6972176e89c4e3faac941213694/PyQt5-$RELEASE.tar.gz
+)
+
+fn configure {
+	python configure.py --qmake'='/usr/bin/qmake-qt5 || exit 100
+}
+
+fn inst {
+	make install INSTALL_ROOT'='$PKG || exit 102
+}

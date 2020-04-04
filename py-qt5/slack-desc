@@ -1,0 +1,11 @@
+py-qt5: py-qt5 (Python bindings for the Qt cross platform application toolkit)
+py-qt5:
+py-qt5: This is a slackmatic port build of py-qt5:
+py-qt5: Python bindings for the Qt cross platform application toolkit 
+py-qt5:
+py-qt5: For more information about the package, see the project website at:
+py-qt5: https://www.riverbankcomputing.com/software/pyqt/
+py-qt5:
+py-qt5:
+py-qt5: This slackmatic port was developed by:
+py-qt5: slackware@sukkology.net
