@@ -1,0 +1,15 @@
+. ../sukkolib.rc
+
+BRIEF='Open-source 6502 cross assembler'
+PROJECT=https://www.floodgap.com/retrotech/xa/
+RELEASE=2.3.10
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	https://www.floodgap.com/retrotech/xa/dists/$NAME-$RELEASE.tar.gz
+)
+
+fn inst {
+	make install DESTDIR'='$PKG MANDIR'='$PKG/usr/man/man1 || exit 102
+}
