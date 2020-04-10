@@ -1,0 +1,35 @@
+. ../sukkolib.rc
+
+BRIEF='A cross-platform plugin-based N64 emulator'
+PROJECT=https://mupen64plus.org
+RELEASE=2.5.9
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	https://github.com/mupen64plus/mupen64plus-core/archive/$RELEASE.tar.gz
+)
+
+DOCS=(
+	CREDITS
+	INSTALL
+	LICENSES
+	README
+	README.md
+	RELEASE
+	doc/font-license
+	doc/gpl-license
+	doc/lgpl-license
+	doc/new_dynarec.mediawiki
+)
+
+fn build {
+	setup
+
+	# Do docs before we change directory
+	std_docinst
+
+	cd projects/unix
+	make -j $NUMJOBS all
+	make install PREFIX'='/usr DESTDIR'='$PKG
+}

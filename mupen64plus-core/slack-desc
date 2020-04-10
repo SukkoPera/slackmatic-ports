@@ -1,0 +1,11 @@
+mupen64plus-core: mupen64plus-core (A cross-platform plugin-based N64 emulator)
+mupen64plus-core:
+mupen64plus-core: This is a slackmatic port build of mupen64plus-core:
+mupen64plus-core: A cross-platform plugin-based N64 emulator 
+mupen64plus-core:
+mupen64plus-core: For more information about the package, see the project website at:
+mupen64plus-core: https://mupen64plus.org
+mupen64plus-core:
+mupen64plus-core:
+mupen64plus-core: This slackmatic port was developed by:
+mupen64plus-core: slackware@sukkology.net

@@ -1,0 +1,24 @@
+. ../sukkolib.rc
+
+BRIEF='A frontend for Mupen64Plus'
+PROJECT=http://m64py.sourceforge.net/
+RELEASE=0.2.5
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+fn myfetch () {
+	wget https://github.com/mupen64plus/$NAME/archive/$RELEASE.tar.gz -O $NAME-$RELEASE.tar.gz
+}
+
+SOURCE=(
+	MYFETCH:$NAME-$RELEASE.tar.gz
+)
+
+fn compile {
+        python3 setup.py build || exit 101
+}
+
+fn inst {
+        python3 setup.py install --root $PKG || exit 102
+}
+

@@ -1,0 +1,11 @@
+mupen64plus-rsp-hle: mupen64plus-rsp-hle (RSP processor for the Mupen64Plus v2.0 project, using SDL)
+mupen64plus-rsp-hle:
+mupen64plus-rsp-hle: This is a slackmatic port build of mupen64plus-rsp-hle:
+mupen64plus-rsp-hle: RSP processor for the Mupen64Plus v2.0 project, using SDL 
+mupen64plus-rsp-hle:
+mupen64plus-rsp-hle: For more information about the package, see the project website at:
+mupen64plus-rsp-hle: https://github.com/mupen64plus/mupen64plus-audio-sdl
+mupen64plus-rsp-hle:
+mupen64plus-rsp-hle:
+mupen64plus-rsp-hle: This slackmatic port was developed by:
+mupen64plus-rsp-hle: slackware@sukkology.net

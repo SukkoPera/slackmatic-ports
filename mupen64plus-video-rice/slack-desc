@@ -1,0 +1,11 @@
+mupen64plus-video-rice: mupen64plus-video-rice (Video plugin for the Mupen64Plus v2.0 project, using OpenGL)
+mupen64plus-video-rice:
+mupen64plus-video-rice: This is a slackmatic port build of mupen64plus-video-rice:
+mupen64plus-video-rice: Video plugin for the Mupen64Plus v2.0 project, using OpenGL 
+mupen64plus-video-rice:
+mupen64plus-video-rice: For more information about the package, see the project website at:
+mupen64plus-video-rice: https://github.com/mupen64plus/mupen64plus-video-rice
+mupen64plus-video-rice:
+mupen64plus-video-rice:
+mupen64plus-video-rice: This slackmatic port was developed by:
+mupen64plus-video-rice: slackware@sukkology.net

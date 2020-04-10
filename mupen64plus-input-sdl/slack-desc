@@ -1,0 +1,11 @@
+mupen64plus-input-sdl: mupen64plus-input-sdl (Audio plugin for the Mupen64Plus v2.0 project, using SDL)
+mupen64plus-input-sdl:
+mupen64plus-input-sdl: This is a slackmatic port build of mupen64plus-input-sdl:
+mupen64plus-input-sdl: Audio plugin for the Mupen64Plus v2.0 project, using SDL 
+mupen64plus-input-sdl:
+mupen64plus-input-sdl: For more information about the package, see the project website at:
+mupen64plus-input-sdl: https://github.com/mupen64plus/mupen64plus-audio-sdl
+mupen64plus-input-sdl:
+mupen64plus-input-sdl:
+mupen64plus-input-sdl: This slackmatic port was developed by:
+mupen64plus-input-sdl: slackware@sukkology.net

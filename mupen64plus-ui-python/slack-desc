@@ -1,0 +1,11 @@
+mupen64plus-ui-python: mupen64plus-ui-python (A frontend for Mupen64Plus)
+mupen64plus-ui-python:
+mupen64plus-ui-python: This is a slackmatic port build of mupen64plus-ui-python:
+mupen64plus-ui-python: A frontend for Mupen64Plus 
+mupen64plus-ui-python:
+mupen64plus-ui-python: For more information about the package, see the project website at:
+mupen64plus-ui-python: http://m64py.sourceforge.net/
+mupen64plus-ui-python:
+mupen64plus-ui-python:
+mupen64plus-ui-python: This slackmatic port was developed by:
+mupen64plus-ui-python: slackware@sukkology.net

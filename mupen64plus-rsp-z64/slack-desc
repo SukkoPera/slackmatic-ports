@@ -1,0 +1,11 @@
+mupen64plus-rsp-z64: mupen64plus-rsp-z64 (Low-level RSP processor plugin for the Mupen64Plus v2.0 project, using SDL)
+mupen64plus-rsp-z64:
+mupen64plus-rsp-z64: This is a slackmatic port build of mupen64plus-rsp-z64:
+mupen64plus-rsp-z64: Low-level RSP processor plugin for the Mupen64Plus v2.0 project, using SDL 
+mupen64plus-rsp-z64:
+mupen64plus-rsp-z64: For more information about the package, see the project website at:
+mupen64plus-rsp-z64: https://github.com/mupen64plus/mupen64plus-audio-sdl
+mupen64plus-rsp-z64:
+mupen64plus-rsp-z64:
+mupen64plus-rsp-z64: This slackmatic port was developed by:
+mupen64plus-rsp-z64: slackware@sukkology.net

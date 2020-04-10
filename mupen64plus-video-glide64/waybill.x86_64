@@ -1,0 +1,10 @@
+drwxr-xr-x|0755|root/root|usr|
+drwxr-xr-x|0755|root/root|usr/doc|
+drwxr-xr-x|0755|root/root|usr/doc/mupen64plus-video-glide64-2.5.9|
+-rw-r--r--|0644|root/root|usr/doc/mupen64plus-video-glide64-2.5.9/BUILD.rc|
+drwxr-xr-x|0755|root/root|usr/lib64|
+drwxr-xr-x|0755|root/root|usr/lib64/mupen64plus|
+-rw-r--r--|0644|root/root|usr/lib64/mupen64plus/mupen64plus-video-glide64.so|
+drwxr-xr-x|0755|root/root|usr/share|
+drwxr-xr-x|0755|root/root|usr/share/mupen64plus|
+-rw-r--r--|0644|root/root|usr/share/mupen64plus/Glide64.ini|
