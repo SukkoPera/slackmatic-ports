@@ -1,0 +1,11 @@
+minizip: minizip (A zip manipulation library written in C)
+minizip:
+minizip: This is a slackmatic port build of minizip:
+minizip: A zip manipulation library written in C 
+minizip:
+minizip: For more information about the package, see the project website at:
+minizip: https://github.com/nmoinvaz/minizip
+minizip:
+minizip:
+minizip: This slackmatic port was developed by:
+minizip: slackware@sukkology.net

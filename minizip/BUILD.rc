@@ -1,0 +1,17 @@
+. ../sukkolib.rc
+
+BRIEF='A zip manipulation library written in C'
+PROJECT=https://github.com/nmoinvaz/minizip
+RELEASE=2.9.2
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	https://github.com/nmoinvaz/minizip/archive/$RELEASE.tar.gz
+)
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS_CMAKE
+	-DMZ_OPENSSL'='ON
+	-DMZ_SIGNING'='ON
+)
