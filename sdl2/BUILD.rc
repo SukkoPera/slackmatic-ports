@@ -1,0 +1,13 @@
+. ../sukkolib.rc
+
+BRIEF='A cross-platform development library'
+PROJECT=https://www.libsdl.org/
+RELEASE=2.0.12
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+TNAME=SDL2
+BUILDDIR=$TNAME-$RELEASE
+
+SOURCE=(
+	https://www.libsdl.org/release/$TNAME-$RELEASE.tar.gz
+)

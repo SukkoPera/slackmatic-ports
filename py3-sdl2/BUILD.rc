@@ -1,0 +1,22 @@
+. ../sukkolib.rc
+
+BRIEF='ctypes-based wrapper around SDL2'
+PROJECT=https://bitbucket.org/marcusva/py-sdl2/src/default/
+RELEASE=0.9.5
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+TNAME=PySDL2
+BUILDDIR=$TNAME-$RELEASE
+
+SOURCE=(
+	https://bitbucket.org/marcusva/py-sdl2/downloads/$TNAME-$RELEASE.tar.gz
+)
+
+fn compile {
+        python3 setup.py build || exit 101
+}
+
+fn inst {
+        python3 setup.py install --root $PKG || exit 102
+#	mv $PKG/usr/share/man $PKG/usr && rm -rf $PKG/usr/share
+}

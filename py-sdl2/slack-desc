@@ -1,0 +1,11 @@
+py-sdl2: py-sdl2 (ctypes-based wrapper around SDL2)
+py-sdl2:
+py-sdl2: This is a slackmatic port build of py-sdl2:
+py-sdl2: ctypes-based wrapper around SDL2 
+py-sdl2:
+py-sdl2: For more information about the package, see the project website at:
+py-sdl2: https://bitbucket.org/marcusva/py-sdl2/src/default/
+py-sdl2:
+py-sdl2:
+py-sdl2: This slackmatic port was developed by:
+py-sdl2: slackware@sukkology.net
