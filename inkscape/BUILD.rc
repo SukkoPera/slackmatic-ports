@@ -2,24 +2,22 @@
 
 BRIEF='A professional vector graphics editor'
 PROJECT=https://inkscape.org
-RELEASE=0.92.4
+RELEASE=0.92.5
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
-BUILDSYSTEM=autotools
+#BUILDSYSTEM=autotools
 
 SOURCE=(
-	https://inkscape.org/gallery/item/13330/inkscape-0.92.4_A6N0YOn.tar.bz2
+	https://inkscape.org/gallery/item/18051/$NAME-$RELEASE.tar.bz2
 )
-
-# Why do we have to set this manually???
-CXXFLAGS='-Wall -O2 -std=c++11'
 
 CONFOPTS=(
-	$DEFAULT_CONFOPTS
-	--enable-dbusapi
+	$DEFAULT_CONFOPTS_CMAKE
+	-DWITH_DBUS'='ON
+	-DWITH_IMAGE_MAGICK'='OFF		# Slack-curr has 7, inkscape wants 6
 )
 
-fn configure {
-	./autogen.sh
-	std_configure
+fn inst {
+	std_inst
+	mv $PKG/usr/share/man $PKG/usr
 }
