@@ -1,0 +1,26 @@
+. ../sukkolib.rc
+
+BRIEF='Python serial port access library'
+PROJECT=https://github.com/pyserial/pyserial
+RELEASE=3.4
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+TNAME=pyserial
+BUILDDIR=$TNAME-$RELEASE
+
+fn myfetch () {
+        wget https://github.com/$TNAME/$TNAME/archive/v$RELEASE.tar.gz -O $TNAME-$RELEASE.tar.gz
+}
+
+SOURCE=(
+        MYFETCH:$TNAME-$RELEASE.tar.gz
+)
+
+fn compile {
+        python3 setup.py build || exit 101
+}
+
+fn inst {
+        python3 setup.py install --root $PKG || exit 102
+	mv $PKG/usr/share/man $PKG/usr && rm -rf $PKG/usr/share
+}

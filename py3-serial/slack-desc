@@ -1,0 +1,11 @@
+py3-serial: py3-serial (Python serial port access library)
+py3-serial:
+py3-serial: This is a slackmatic port build of py3-serial:
+py3-serial: Python serial port access library 
+py3-serial:
+py3-serial: For more information about the package, see the project website at:
+py3-serial: https://github.com/pyserial/pyserial
+py3-serial:
+py3-serial:
+py3-serial: This slackmatic port was developed by:
+py3-serial: slackware@sukkology.net
