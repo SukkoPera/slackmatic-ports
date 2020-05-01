@@ -1,0 +1,15 @@
+drwxr-xr-x|0755|root/root|usr|
+drwxr-xr-x|0755|root/root|usr/doc|
+drwxr-xr-x|0755|root/root|usr/doc/py-parsing-2.0.6|
+-rw-r--r--|0644|root/root|usr/doc/py-parsing-2.0.6/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/py-parsing-2.0.6/README|
+drwxr-xr-x|0755|root/root|usr/lib|
+drwxr-xr-x|0755|root/root|usr/lib/python2.7|
+drwxr-xr-x|0755|root/root|usr/lib/python2.7/site-packages|
+drwxr-xr-x|0755|root/root|usr/lib/python2.7/site-packages/pyparsing-2.0.6-py2.7.egg-info|
+-rw-rw-rw-|0666|root/root|usr/lib/python2.7/site-packages/pyparsing-2.0.6-py2.7.egg-info/PKG-INFO|
+-rw-rw-rw-|0666|root/root|usr/lib/python2.7/site-packages/pyparsing-2.0.6-py2.7.egg-info/SOURCES.txt|
+-rw-rw-rw-|0666|root/root|usr/lib/python2.7/site-packages/pyparsing-2.0.6-py2.7.egg-info/dependency_links.txt|
+-rw-rw-rw-|0666|root/root|usr/lib/python2.7/site-packages/pyparsing-2.0.6-py2.7.egg-info/top_level.txt|
+-rw-r--r--|0644|root/root|usr/lib/python2.7/site-packages/pyparsing.py|
+-rw-r--r--|0644|root/root|usr/lib/python2.7/site-packages/pyparsing.pyc|

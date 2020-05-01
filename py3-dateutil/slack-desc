@@ -1,0 +1,11 @@
+py3-dateutil: py3-dateutil (Extensions to the standard Python datetime module)
+py3-dateutil:
+py3-dateutil: This is a slackmatic port build of py3-dateutil:
+py3-dateutil: Extensions to the standard Python datetime module 
+py3-dateutil:
+py3-dateutil: For more information about the package, see the project website at:
+py3-dateutil: https://pypi.python.org/pypi/python-dateutil/
+py3-dateutil:
+py3-dateutil:
+py3-dateutil: This slackmatic port was developed by:
+py3-dateutil: slackware@sukkology.net

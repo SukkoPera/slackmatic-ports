@@ -1,0 +1,11 @@
+py3-kiwisolver: py3-kiwisolver (Efficient C++/Python implementation of the Cassowary constraint solving algorithm)
+py3-kiwisolver:
+py3-kiwisolver: This is a slackmatic port build of py3-kiwisolver:
+py3-kiwisolver: Efficient C++/Python implementation of the Cassowary constraint solving algorithm 
+py3-kiwisolver:
+py3-kiwisolver: For more information about the package, see the project website at:
+py3-kiwisolver: https://github.com/nucleic/kiwi
+py3-kiwisolver:
+py3-kiwisolver:
+py3-kiwisolver: This slackmatic port was developed by:
+py3-kiwisolver: slackware@sukkology.net

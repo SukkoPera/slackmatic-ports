@@ -1,0 +1,11 @@
+py3-matplotlib: py3-matplotlib (Python plotting package)
+py3-matplotlib:
+py3-matplotlib: This is a slackmatic port build of py3-matplotlib:
+py3-matplotlib: Python plotting package 
+py3-matplotlib:
+py3-matplotlib: For more information about the package, see the project website at:
+py3-matplotlib: http://matplotlib.org/
+py3-matplotlib:
+py3-matplotlib:
+py3-matplotlib: This slackmatic port was developed by:
+py3-matplotlib: slackware@sukkology.net

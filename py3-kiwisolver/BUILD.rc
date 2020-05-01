@@ -1,0 +1,26 @@
+. ../sukkolib.rc
+
+BRIEF='Efficient C++/Python implementation of the Cassowary constraint solving algorithm'
+PROJECT=https://github.com/nucleic/kiwi
+RELEASE=1.1.0
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+TNAME=kiwisolver
+BUILDDIR=kiwi-$RELEASE
+
+fn myfetch () {
+        wget https://github.com/nucleic/kiwi/archive/$RELEASE.tar.gz -O $NAME-$RELEASE.tar.gz
+}
+
+SOURCE=(
+        MYFETCH:$NAME-$RELEASE.tar.gz
+)
+
+fn compile {
+        python3 setup.py build || exit 101
+}
+
+fn inst {
+        python3 setup.py install --root $PKG || exit 102
+}
+

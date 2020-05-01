@@ -1,0 +1,11 @@
+py3-parsing: py3-parsing (Python parsing module)
+py3-parsing:
+py3-parsing: This is a slackmatic port build of py3-parsing:
+py3-parsing: Python parsing module 
+py3-parsing:
+py3-parsing: For more information about the package, see the project website at:
+py3-parsing: https://pypi.python.org/pypi/pyparsing/
+py3-parsing:
+py3-parsing:
+py3-parsing: This slackmatic port was developed by:
+py3-parsing: slackware@sukkology.net
