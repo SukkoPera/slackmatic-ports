@@ -1,0 +1,26 @@
+. ../sukkolib.rc
+
+BRIEF='hidapi bindings in ctypes '
+PROJECT=https://github.com/apmorton/pyhidapi
+RELEASE=1.0.4
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+TNAME=pyhidapi
+BUILDDIR=$TNAME-$RELEASE
+
+fn myfetch () {
+        wget https://github.com/apmorton/$TNAME/archive/$RELEASE.tar.gz -O $TNAME-$RELEASE.tar.gz
+}
+
+SOURCE=(
+        MYFETCH:$TNAME-$RELEASE.tar.gz
+)
+
+fn compile {
+        python3 setup.py build || exit 101
+}
+
+fn inst {
+        python3 setup.py install --root $PKG || exit 102
+	mv $PKG/usr/share/man $PKG/usr && rm -rf $PKG/usr/share
+}

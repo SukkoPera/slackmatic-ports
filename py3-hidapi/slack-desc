@@ -1,0 +1,11 @@
+py3-hidapi: py3-hidapi (hidapi bindings in ctypes )
+py3-hidapi:
+py3-hidapi: This is a slackmatic port build of py3-hidapi:
+py3-hidapi: hidapi bindings in ctypes  
+py3-hidapi:
+py3-hidapi: For more information about the package, see the project website at:
+py3-hidapi: https://github.com/apmorton/pyhidapi
+py3-hidapi:
+py3-hidapi:
+py3-hidapi: This slackmatic port was developed by:
+py3-hidapi: slackware@sukkology.net
