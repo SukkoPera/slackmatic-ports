@@ -1,0 +1,11 @@
+hidapi: hidapi (A Simple library for communicating with USB and Bluetooth HID devices)
+hidapi:
+hidapi: This is a slackmatic port build of hidapi:
+hidapi: A Simple library for communicating with USB and Bluetooth HID devices 
+hidapi:
+hidapi: For more information about the package, see the project website at:
+hidapi: https://github.com/libusb/hidapi
+hidapi:
+hidapi:
+hidapi: This slackmatic port was developed by:
+hidapi: slackware@sukkology.net

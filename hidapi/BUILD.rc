@@ -1,0 +1,29 @@
+. ../sukkolib.rc
+
+BRIEF='A Simple library for communicating with USB and Bluetooth HID devices'
+PROJECT=https://github.com/libusb/hidapi
+RELEASE=0.9.0
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=$NAME-$NAME-$RELEASE
+BUILDSYSTEM=autotools
+
+SOURCE=(
+	https://github.com/libusb/hidapi/archive/$NAME-$RELEASE.tar.gz
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	HACKING.txt
+)
+
+fn configure {
+	./bootstrap
+	std_configure
+}
+
+fn docinst {
+	std_docinst
+	mv $PKG/usr/share/doc/$NAME/* $DOC
+	rm -rf $PKG/usr/share
+}
