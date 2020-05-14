@@ -1,0 +1,24 @@
+. ../sukkolib.rc
+
+BRIEF='An advanced IRC bouncer'
+PROJECT=https://wiki.znc.in/ZNC
+RELEASE=1.8.0
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	# Note that sources from github DO NOT WORK!
+	https://znc.in/releases/$NAME-$RELEASE.tar.gz
+)
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS_CMAKE
+	-DCMAKE_INSTALL_MANDIR'='/usr/man
+	-DWANT_PYTHON'='YES
+	-DWANT_TCL'='YES
+)
+
+fn xxxinst () {
+	std_inst
+	mv $PKG/usr/share/man $PKG/usr
+}
