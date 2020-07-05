@@ -12,11 +12,12 @@ SOURCE=(
 )
 
 CONFOPTS=(
+	--disable-dependency-tracking
         --prefix'='/usr
         --sysconfdir'='/etc/nut
         --localstatedir'='/var
         --mandir'='/usr/man
-	--with-drvpath'='/lib/nut
+	--with-drvpath'='$LIBDIR/nut
 	--with-logfacility'='LOG_DAEMON
 	--with-statepath'='/var/lib/nut
 	--datarootdir'='/usr/share/nut
@@ -25,12 +26,12 @@ CONFOPTS=(
 	--with-cgi
 	--with-cgipath'='/usr/share/nut/cgi-bin
 	--with-htmlpath'='/usr/share/nut/html
-        --disable-dependency-tracking
-
+	--without-powerman
+	--with-avahi
+	--disable-static
 )
-
-#--with-user=nut
-#--with-group=nut
+#	--with-user'='nut
+#	--with-group'='nut
 
 DOCS=(
 	$DEFAULT_DOCS
@@ -69,7 +70,7 @@ fn inst {
 
 	mkdir -p $PKG/usr/sbin
 	# This needs to exist for the scripts
-	ln -s /lib/nut/upsdrvctl $PKG/usr/sbin/upsdrvctl
+	ln -s $LIBDIR/nut/upsdrvctl $PKG/usr/sbin/upsdrvctl
 
 	# NUT is very picky on permissions
 	mkdir -p $PKG/var/lib/nut 
