@@ -13,10 +13,11 @@ SOURCE=(
 
 CONFOPTS=(
 	--disable-dependency-tracking
-        --prefix'='/usr
-        --sysconfdir'='/etc/nut
-        --localstatedir'='/var
-        --mandir'='/usr/man
+	--prefix'='/usr
+	--libdir'='$LIBDIR
+	--sysconfdir'='/etc/nut
+	--localstatedir'='/var
+	--mandir'='/usr/man
 	--with-drvpath'='$LIBDIR/nut
 	--with-logfacility'='LOG_DAEMON
 	--with-statepath'='/var/lib/nut
