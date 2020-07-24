@@ -2,13 +2,17 @@
 
 BRIEF='A Cross Platform and Open Source Electronics Design Automation Suite'
 PROJECT=http://kicad-pcb.org
-RELEASE=5.1.5
-BUILD=2suk_$SLCKVER
+RELEASE=5.1.6
+BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
+BUILDDIR=kicad-source-mirror-$RELEASE
 
-#MAJORV=`{echo $RELEASE | sed 's:\.[0-9]$::'}
+fn myfetch () {
+	wget https://github.com/KiCad/kicad-source-mirror/archive/$RELEASE.tar.gz -O $NAME-$RELEASE.tar.gz
+}
+
 SOURCE=(
-	https://launchpad.net/kicad/5.0/$RELEASE/+download/$NAME-$RELEASE.tar.xz
+	MYFETCH:$NAME-$RELEASE.tar.gz
 )
 
 CONFOPTS=(
@@ -23,6 +27,6 @@ CONFOPTS=(
 	-DKICAD_DOCS'='/usr/doc/$NAME-$RELEASE
 )
 
-PATCHES=(
-	45deg.patch
-)
+fn patches () {
+	sed -i '25 i #include <algorithm>' common/lib_tree_model.cpp || exit $status
+}
