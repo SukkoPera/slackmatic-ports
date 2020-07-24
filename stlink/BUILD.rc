@@ -1,0 +1,15 @@
+. ../sukkolib.rc
+
+BRIEF='Open source STM32 MCU programming toolset'
+PROJECT=https://github.com/stlink-org/stlink
+RELEASE=1.6.1
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+fn myfetch () {
+        wget https://github.com/stlink-org/$NAME/archive/v$RELEASE.tar.gz -O $NAME-$RELEASE.tar.gz
+}
+
+SOURCE=(
+	MYFETCH:$NAME-$RELEASE.tar.gz
+)

@@ -1,0 +1,11 @@
+stlink: stlink (Open source STM32 MCU programming toolset)
+stlink:
+stlink: This is a slackmatic port build of stlink:
+stlink: Open source STM32 MCU programming toolset 
+stlink:
+stlink: For more information about the package, see the project website at:
+stlink: https://github.com/stlink-org/stlink
+stlink:
+stlink:
+stlink: This slackmatic port was developed by:
+stlink: slackware@sukkology.net
