@@ -6,12 +6,14 @@ RELEASE=1.36
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
+# geanypy requires Python2
 CONFOPTS=(
         $DEFAULT_CONFOPTS
         --docdir'='/usr/doc/$NAME-$RELEASE
 	--enable-geanygdb
 	--enable-gitchangebar
 	--enable-workbench
+	--disable-geanypy
 )
 
 SOURCE=(
