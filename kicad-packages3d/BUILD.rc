@@ -2,11 +2,16 @@
 
 BRIEF='KiCad 3D model libraries for rendering and MCAD integration'
 PROJECT=https://github.com/KiCad/kicad-packages3D
-RELEASE=5.1.5
+RELEASE=5.1.7
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDDIR=kicad-packages3D-$RELEASE
 
+fn myfetch () {
+        wget https://github.com/KiCad/$NAME/archive/$RELEASE.tar.gz -O $NAME-$RELEASE.tar.gz
+}
+
 SOURCE=(
-	https://github.com/KiCad/$NAME/archive/$RELEASE.tar.gz
+	MYFETCH:$NAME-$RELEASE.tar.gz
 )
+

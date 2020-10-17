@@ -1,9 +1,9 @@
 drwxr-xr-x|0755|root/root|usr|
 drwxr-xr-x|0755|root/root|usr/doc|
-drwxr-xr-x|0755|root/root|usr/doc/kicad-symbols-5.1.5|
--rw-r--r--|0644|root/root|usr/doc/kicad-symbols-5.1.5/BUILD.rc|
--rw-r--r--|0644|root/root|usr/doc/kicad-symbols-5.1.5/LICENSE.md|
--rw-r--r--|0644|root/root|usr/doc/kicad-symbols-5.1.5/README.md|
+drwxr-xr-x|0755|root/root|usr/doc/kicad-symbols-5.1.7|
+-rw-r--r--|0644|root/root|usr/doc/kicad-symbols-5.1.7/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/kicad-symbols-5.1.7/LICENSE.md|
+-rw-r--r--|0644|root/root|usr/doc/kicad-symbols-5.1.7/README.md|
 drwxr-xr-x|0755|root/root|usr/share|
 drwxr-xr-x|0755|root/root|usr/share/kicad|
 drwxr-xr-x|0755|root/root|usr/share/kicad/library|
@@ -43,8 +43,12 @@ drwxr-xr-x|0755|root/root|usr/share/kicad/library|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/Audio.lib|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/Battery_Management.dcm|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/Battery_Management.lib|
+-rw-r--r--|0644|root/root|usr/share/kicad/library/Buffer.dcm|
+-rw-r--r--|0644|root/root|usr/share/kicad/library/Buffer.lib|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/CPLD_Altera.dcm|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/CPLD_Altera.lib|
+-rw-r--r--|0644|root/root|usr/share/kicad/library/CPLD_Microchip.dcm|
+-rw-r--r--|0644|root/root|usr/share/kicad/library/CPLD_Microchip.lib|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/CPLD_Xilinx.dcm|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/CPLD_Xilinx.lib|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/CPU_NXP_68000.dcm|
@@ -105,6 +109,8 @@ drwxr-xr-x|0755|root/root|usr/share/kicad/library|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/Driver_Motor.lib|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/Driver_Relay.dcm|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/Driver_Relay.lib|
+-rw-r--r--|0644|root/root|usr/share/kicad/library/Driver_TEC.dcm|
+-rw-r--r--|0644|root/root|usr/share/kicad/library/Driver_TEC.lib|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/FPGA_Lattice.dcm|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/FPGA_Lattice.lib|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/FPGA_Microsemi.dcm|
@@ -195,6 +201,8 @@ drwxr-xr-x|0755|root/root|usr/share/kicad/library|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/MCU_Microchip_PIC24.lib|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/MCU_Microchip_PIC32.dcm|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/MCU_Microchip_PIC32.lib|
+-rw-r--r--|0644|root/root|usr/share/kicad/library/MCU_Microchip_SAMA.dcm|
+-rw-r--r--|0644|root/root|usr/share/kicad/library/MCU_Microchip_SAMA.lib|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/MCU_Microchip_SAMD.dcm|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/MCU_Microchip_SAMD.lib|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/MCU_Microchip_SAME.dcm|
@@ -219,6 +227,8 @@ drwxr-xr-x|0755|root/root|usr/share/kicad/library|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/MCU_NXP_MAC7100.lib|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/MCU_NXP_MCore.dcm|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/MCU_NXP_MCore.lib|
+-rw-r--r--|0644|root/root|usr/share/kicad/library/MCU_NXP_NTAG.dcm|
+-rw-r--r--|0644|root/root|usr/share/kicad/library/MCU_NXP_NTAG.lib|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/MCU_NXP_S08.dcm|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/MCU_NXP_S08.lib|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/MCU_Nordic.dcm|
@@ -343,6 +353,8 @@ drwxr-xr-x|0755|root/root|usr/share/kicad/library|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/Sensor_Audio.lib|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/Sensor_Current.dcm|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/Sensor_Current.lib|
+-rw-r--r--|0644|root/root|usr/share/kicad/library/Sensor_Distance.dcm|
+-rw-r--r--|0644|root/root|usr/share/kicad/library/Sensor_Distance.lib|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/Sensor_Gas.dcm|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/Sensor_Gas.lib|
 -rw-r--r--|0644|root/root|usr/share/kicad/library/Sensor_Humidity.dcm|
