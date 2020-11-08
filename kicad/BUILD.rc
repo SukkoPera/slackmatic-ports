@@ -2,7 +2,7 @@
 
 BRIEF='A Cross Platform and Open Source Electronics Design Automation Suite'
 PROJECT=http://kicad-pcb.org
-RELEASE=5.1.6
+RELEASE=5.1.7
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDDIR=kicad-source-mirror-$RELEASE
