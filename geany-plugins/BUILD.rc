@@ -2,7 +2,7 @@
 
 BRIEF='A lot of plugin stuff for Geany editor'
 PROJECT=http://plugins.geany.org
-RELEASE=1.36
+RELEASE=1.37
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
