@@ -1,0 +1,36 @@
+. ../sukkolib.rc
+
+BRIEF='A GameCube / Wii emulator'
+PROJECT=https://dolphin-emu.org
+RELEASE=20201110
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=$NAME-master
+
+DOCS=(
+	$DEFAULT_DOCS
+	Contributing.md
+	Readme.md
+	license.txt
+)
+
+
+fn myfetch () {
+	wget https://github.com/dolphin-emu/dolphin/archive/master.tar.gz -O $NAME-$RELEASE.tar.gz
+}
+
+SOURCE=(
+	MYFETCH:$NAME-$RELEASE.tar.gz
+)
+
+fn inst {
+	std_inst
+
+	mv $PKG/usr/share/man $PKG/usr
+}
+
+fn docinst {
+	std_docinst
+
+	cp -a docs/* $DOC
+}
