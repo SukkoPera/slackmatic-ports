@@ -1,0 +1,16 @@
+. ../sukkolib.rc
+
+BRIEF='A front-end (GUI) for mednafen emulator '
+PROJECT=https://github.com/AmatCoder/mednaffe
+RELEASE=20201114
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=$NAME-master
+
+fn myfetch () {
+	wget https://github.com/AmatCoder/mednaffe/archive/master.tar.gz -O $NAME-$RELEASE.tar.gz
+}
+
+SOURCE=(
+	MYFETCH:$NAME-$RELEASE.tar.gz
+)
