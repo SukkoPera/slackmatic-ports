@@ -1,0 +1,12 @@
+. ../sukkolib.rc
+
+BRIEF='A portable multi-system emulator'
+PROJECT=https://mednafen.github.io
+RELEASE=1.26.1
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=$NAME
+
+SOURCE=(
+	https://mednafen.github.io/releases/files/$NAME-$RELEASE.tar.xz
+)
