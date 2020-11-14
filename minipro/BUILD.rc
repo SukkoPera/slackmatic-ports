@@ -7,11 +7,21 @@ BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDDIR=minipro-master
 
+fn myfetch () {
+	wget https://gitlab.com/DavidGriffith/minipro/-/archive/master/$NAME-master.tar.bz2 -O $NAME-$RELEASE.tar.bz2
+}
+
 SOURCE=(
-	https://github.com/vdudouyt/minipro/archive/master.zip
+	MYFETCH:$NAME-$RELEASE.tar.bz2
 )
+
+fn compile {
+	make SHARE_INSTDIR'='/usr/share/minipro
+}
 
 fn inst {
         make install PREFIX'='/usr DESTDIR'='$PKG || exit 102
+
+	mv $PKG/usr/share/man $PKG/usr
 }
 
