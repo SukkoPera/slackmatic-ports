@@ -2,10 +2,10 @@
 
 BRIEF='A GameCube / Wii emulator'
 PROJECT=https://dolphin-emu.org
-RELEASE=20201110
+RELEASE=`{date +%Y%m%d}
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
-BUILDDIR=$NAME-master
+BUILDDIR=dolphin-master
 
 DOCS=(
 	$DEFAULT_DOCS
