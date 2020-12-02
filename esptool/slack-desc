@@ -1,0 +1,11 @@
+esptool: esptool (Espressif SoC serial bootloader utility)
+esptool:
+esptool: This is a slackmatic port build of esptool:
+esptool: Espressif SoC serial bootloader utility 
+esptool:
+esptool: For more information about the package, see the project website at:
+esptool: https://github.com/espressif/esptool
+esptool:
+esptool:
+esptool: This slackmatic port was developed by:
+esptool: slackware@sukkology.net

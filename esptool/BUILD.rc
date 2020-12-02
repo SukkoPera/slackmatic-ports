@@ -1,0 +1,22 @@
+. ../sukkolib.rc
+
+BRIEF='Espressif SoC serial bootloader utility'
+PROJECT=https://github.com/espressif/esptool
+RELEASE=3.0
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+DOCS=(
+	$DEFAULT_DOCS
+	Contributing.md
+	Readme.md
+	license.txt
+)
+
+fn myfetch () {
+	wget https://github.com/espressif/esptool/archive/v$RELEASE.tar.gz -O $NAME-$RELEASE.tar.gz
+}
+
+SOURCE=(
+	MYFETCH:$NAME-$RELEASE.tar.gz
+)
