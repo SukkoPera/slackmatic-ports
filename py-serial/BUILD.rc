@@ -8,7 +8,10 @@ PACKAGER=slackware@sukkology.net
 TNAME=pyserial
 BUILDDIR=$TNAME-$RELEASE
 
-SOURCE=(
-	https://github.com/pyserial/pyserial/archive/v$RELEASE.tar.gz
-)
+fn myfetch () {
+	wget https://github.com/$TNAME/$TNAME/archive/v$RELEASE.tar.gz -O $NAME-$RELEASE.tar.gz
+}
 
+SOURCE=(
+	MYFETCH:$NAME-$RELEASE.tar.gz
+)
