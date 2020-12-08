@@ -18,6 +18,7 @@ PATCHES=(
 	amule-2.3.2-fix-crash-closing-last-search-tab-2.patch
 	amule-2.3.2-fix-crash-shared-dir-utf8.patch
 	amule-2.3.2-fix-crash-when-shared-files-changed.patch
+	amule-2.3.2-Fixed-compilation-with-newer-bfd.patch
 )
 
 CONFOPTS=(
