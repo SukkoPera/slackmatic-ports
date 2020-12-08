@@ -4,8 +4,8 @@ lrwxrwxrwx|0777|root/root|usr/bin/wx-config-3|->|/usr/lib64/wx/config/gtk2-unico
 lrwxrwxrwx|0777|root/root|usr/bin/wxrc|->|wxrc-3.0|
 -rwxr-xr-x|0755|root/root|usr/bin/wxrc-3.0|
 drwxr-xr-x|0755|root/root|usr/doc|
-drwxr-xr-x|0755|root/root|usr/doc/wxwidgets-3.0.4|
--rw-r--r--|0644|root/root|usr/doc/wxwidgets-3.0.4/BUILD.rc|
+drwxr-xr-x|0755|root/root|usr/doc/wxwidgets-3.0.5|
+-rw-r--r--|0644|root/root|usr/doc/wxwidgets-3.0.5/BUILD.rc|
 drwxr-xr-x|0755|root/root|usr/include|
 drwxr-xr-x|0755|root/root|usr/include/wx-3.0|
 drwxr-xr-x|0755|root/root|usr/include/wx-3.0/wx|

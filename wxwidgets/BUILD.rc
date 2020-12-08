@@ -2,7 +2,7 @@
 
 BRIEF='Cross-platform GUI library'
 PROJECT=http://www.wxwidgets.org
-RELEASE=3.0.4
+RELEASE=3.0.5
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDDIR=wxWidgets-$RELEASE
