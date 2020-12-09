@@ -2,7 +2,7 @@
 
 BRIEF='Python parsing module'
 PROJECT=https://pypi.python.org/pypi/pyparsing/
-RELEASE=2.0.6
+RELEASE=2.4.7
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDDIR=pyparsing-$RELEASE
