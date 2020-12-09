@@ -1,8 +1,8 @@
 . ../sukkolib.rc
 
 BRIEF='The fundamental package needed for scientific computing with Python'
-PROJECT=http://numpy.scipy.org
-RELEASE=1.11.2
+PROJECT=https://numpy.org
+RELEASE=1.19.4
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDDIR=numpy-$RELEASE
@@ -17,5 +17,5 @@ DOCS=(
 )
 
 SOURCE=(
-	$SF/numpy/numpy-$RELEASE.tar.gz
+	https://github.com/numpy/numpy/releases/download/v1.19.4/numpy-$RELEASE.tar.gz
 )
