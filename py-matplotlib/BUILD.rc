@@ -2,7 +2,7 @@
 
 BRIEF='Python plotting package'
 PROJECT=http://matplotlib.org/
-RELEASE=2.2.4
+RELEASE=3.3.3
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDDIR=matplotlib-$RELEASE
