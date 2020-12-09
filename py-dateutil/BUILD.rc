@@ -2,7 +2,7 @@
 
 BRIEF='Extensions to the standard Python datetime module'
 PROJECT=https://pypi.python.org/pypi/python-dateutil/
-RELEASE=2.6.1
+RELEASE=2.8.1
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDDIR=python-dateutil-$RELEASE
