@@ -2,7 +2,7 @@
 
 BRIEF='A Cross Platform and Open Source Electronics Design Automation Suite'
 PROJECT=http://kicad-pcb.org
-RELEASE=5.1.7
+RELEASE=5.1.8
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDDIR=kicad-source-mirror-$RELEASE
@@ -21,6 +21,8 @@ CONFOPTS=(
 	-DKICAD_SCRIPTING'='ON
 	-DKICAD_SCRIPTING_MODULES'='ON
 	-DKICAD_SCRIPTING_WXPYTHON'='ON
+	-DKICAD_SCRIPTING_WXPYTHON_PHOENIX'='ON
+	-DKICAD_SCRIPTING_PYTHON3'='ON
 	-DKICAD_SCRIPTING_ACTION_MENU'='ON
 	-DwxWidgets_CONFIG_EXECUTABLE'='/usr/bin/wx-config-3
 	-DKICAD_SKIP_BOOST'='ON
