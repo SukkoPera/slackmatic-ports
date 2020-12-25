@@ -2,14 +2,16 @@
 
 BRIEF='The schematic and 3D libraries supported by KiCad team'
 PROJECT=https://kicad.github.io/symbols/
-RELEASE=5.1.7
+RELEASE=5.1.9
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
+BUILDDIR=$NAME-$RELEASE-6dec5004b6a2679c19d4857bda2f90c5ab3a5726
 
 fn myfetch () {
-        wget https://github.com/KiCad/$NAME/archive/$RELEASE.tar.gz -O $NAME-$RELEASE.tar.gz
+#        wget https://github.com/KiCad/$NAME/archive/$RELEASE.tar.gz -O $NAME-$RELEASE.tar.gz
+        wget https://gitlab.com/kicad/libraries/kicad-symbols/-/archive/$RELEASE/$RELEASE.tar.bz2 -O $NAME-$RELEASE.tar.bz2
 }
 
 SOURCE=(
-	MYFETCH:$NAME-$RELEASE.tar.gz
+	MYFETCH:$NAME-$RELEASE.tar.bz2
 )

@@ -1,11 +1,11 @@
 drwxr-xr-x|0755|root/root|usr|
 drwxr-xr-x|0755|root/root|usr/doc|
-drwxr-xr-x|0755|root/root|usr/doc/kicad-footprints-5.1.7|
--rw-r--r--|0644|root/root|usr/doc/kicad-footprints-5.1.7/BUILD.rc|
--rw-r--r--|0644|root/root|usr/doc/kicad-footprints-5.1.7/CONTRIBUTING.md|
--rw-r--r--|0644|root/root|usr/doc/kicad-footprints-5.1.7/LICENSE.md|
--rw-r--r--|0644|root/root|usr/doc/kicad-footprints-5.1.7/README.md|
--rw-r--r--|0644|root/root|usr/doc/kicad-footprints-5.1.7/TODO.md|
+drwxr-xr-x|0755|root/root|usr/doc/kicad-footprints-5.1.9|
+-rw-r--r--|0644|root/root|usr/doc/kicad-footprints-5.1.9/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/kicad-footprints-5.1.9/CONTRIBUTING.md|
+-rw-r--r--|0644|root/root|usr/doc/kicad-footprints-5.1.9/LICENSE.md|
+-rw-r--r--|0644|root/root|usr/doc/kicad-footprints-5.1.9/README.md|
+-rw-r--r--|0644|root/root|usr/doc/kicad-footprints-5.1.9/TODO.md|
 drwxr-xr-x|0755|root/root|usr/share|
 drwxr-xr-x|0755|root/root|usr/share/kicad|
 drwxr-xr-x|0755|root/root|usr/share/kicad/modules|

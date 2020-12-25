@@ -2,17 +2,19 @@
 
 BRIEF='Component footprints for KiCad'
 PROJECT=https://github.com/KiCad/kicad-library
-RELEASE=5.1.7
+RELEASE=5.1.9
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 OPT_NOSTRIP=1
+BUILDDIR=$NAME-$RELEASE-302ac78bac21825532f970fb92714fa5973ad79b
 
 fn myfetch () {
-        wget https://github.com/KiCad/$NAME/archive/$RELEASE.tar.gz -O $NAME-$RELEASE.tar.gz
+#        wget https://github.com/KiCad/$NAME/archive/$RELEASE.tar.gz -O $NAME-$RELEASE.tar.gz
+        wget https://gitlab.com/kicad/libraries/kicad-footprints/-/archive/$RELEASE/$RELEASE.tar.bz2 -O $NAME-$RELEASE.tar.bz2
 }
 
 SOURCE=(
-	MYFETCH:$NAME-$RELEASE.tar.gz
+	MYFETCH:$NAME-$RELEASE.tar.bz2
 )
 
 DOCS=(
