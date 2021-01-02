@@ -2,7 +2,7 @@
 
 BRIEF='A command-line programmer for Atmel USB microcontrollers'
 PROJECT=https://dfu-programmer.github.io/
-RELEASE=0.7.0
+RELEASE=0.7.2
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
