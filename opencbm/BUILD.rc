@@ -25,4 +25,8 @@ fn inst {
 
 	# Well, this should not really end up in the package!
 	rm $PKG/etc/ld.so.conf
+
+	# Copy firmware for all supported devices somewhere
+	mkdir $DOC/firmware
+	find $SRC -name *.hex -exec cp '{}' $DOC/firmware ';'
 }

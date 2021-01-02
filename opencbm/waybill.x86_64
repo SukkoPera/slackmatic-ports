@@ -39,6 +39,15 @@ drwxr-xr-x|0755|root/root|usr/doc|
 drwxr-xr-x|0755|root/root|usr/doc/opencbm-0_4_99_103|
 -rw-r--r--|0644|root/root|usr/doc/opencbm-0_4_99_103/BUILD.rc|
 -rw-r--r--|0644|root/root|usr/doc/opencbm-0_4_99_103/README.md|
+drwxr-xr-x|0755|root/root|usr/doc/opencbm-0_4_99_103/firmware|
+-rw-r--r--|0644|root/root|usr/doc/opencbm-0_4_99_103/firmware/bootldr-avrusb.hex|
+-rw-r--r--|0644|root/root|usr/doc/opencbm-0_4_99_103/firmware/bootldr-usbtiny.hex|
+-rw-r--r--|0644|root/root|usr/doc/opencbm-0_4_99_103/firmware/firmware.hex|
+-rw-r--r--|0644|root/root|usr/doc/opencbm-0_4_99_103/firmware/flash-firmware.hex|
+-rw-r--r--|0644|root/root|usr/doc/opencbm-0_4_99_103/firmware/xum1541-BUMBLEB-v08.hex|
+-rw-r--r--|0644|root/root|usr/doc/opencbm-0_4_99_103/firmware/xum1541-OLIMEX-v08.hex|
+-rw-r--r--|0644|root/root|usr/doc/opencbm-0_4_99_103/firmware/xum1541-USBKEY-v08.hex|
+-rw-r--r--|0644|root/root|usr/doc/opencbm-0_4_99_103/firmware/xum1541-ZOOMFLOPPY-v08.hex|
 drwxr-xr-x|0755|root/root|usr/include|
 -rw-r--r--|0644|root/root|usr/include/cbm4linux.h|
 -rw-r--r--|0644|root/root|usr/include/cbmcopy.h|
