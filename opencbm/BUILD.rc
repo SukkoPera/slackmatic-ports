@@ -1,0 +1,28 @@
+. ../sukkolib.rc
+
+BRIEF='Driver and library to control serial CBM devices'
+PROJECT=https://github.com/OpenCBM/OpenCBM
+RELEASE=0_4_99_103
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=OpenCBM-$RELEASE
+BUILDSYSTEM=makeonly
+
+fn myfetch () {
+	wget https://github.com/OpenCBM/OpenCBM/archive/v$RELEASE.tar.gz -O $NAME-$RELEASE.tar.gz
+}
+
+SOURCE=(
+	MYFETCH:$NAME-$RELEASE.tar.gz
+)
+
+fn compile {
+	make -f LINUX/Makefile PREFIX'='/usr || exit 101
+}
+
+fn inst {
+	make -f LINUX/Makefile install-all PREFIX'='/usr DESTDIR'='$PKG || exit 102
+
+	# Well, this should not really end up in the package!
+	rm $PKG/etc/ld.so.conf
+}

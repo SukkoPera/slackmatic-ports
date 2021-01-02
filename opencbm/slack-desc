@@ -1,0 +1,11 @@
+opencbm: opencbm (Driver and library to control serial CBM devices)
+opencbm:
+opencbm: This is a slackmatic port build of opencbm:
+opencbm: Driver and library to control serial CBM devices 
+opencbm:
+opencbm: For more information about the package, see the project website at:
+opencbm: https://github.com/OpenCBM/OpenCBM
+opencbm:
+opencbm:
+opencbm: This slackmatic port was developed by:
+opencbm: slackware@sukkology.net
