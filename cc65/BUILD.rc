@@ -1,0 +1,19 @@
+. ../sukkolib.rc
+
+BRIEF='A freeware C compiler for 6502-based systems'
+PROJECT=https://cc65.github.io/
+RELEASE=2.19
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+fn myfetch () {
+	wget https://github.com/$NAME/$NAME/archive/V$RELEASE.tar.gz -O $NAME-$RELEASE.tar.gz
+}
+
+SOURCE=(
+	MYFETCH:$NAME-$RELEASE.tar.gz
+)
+
+fn inst {
+        make install PREFIX'='/usr DESTDIR'='$PKG || exit 102
+}
