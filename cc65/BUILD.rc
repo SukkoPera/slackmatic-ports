@@ -5,6 +5,7 @@ PROJECT=https://cc65.github.io/
 RELEASE=2.19
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
+MAKEJOBS=1
 
 fn myfetch () {
 	wget https://github.com/$NAME/$NAME/archive/V$RELEASE.tar.gz -O $NAME-$RELEASE.tar.gz
@@ -13,6 +14,10 @@ fn myfetch () {
 SOURCE=(
 	MYFETCH:$NAME-$RELEASE.tar.gz
 )
+
+fn compile {
+	make -j $MAKEJOBS PREFIX'='/usr || exit 101
+}
 
 fn inst {
         make install PREFIX'='/usr DESTDIR'='$PKG || exit 102
