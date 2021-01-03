@@ -1,0 +1,12 @@
+drwxr-xr-x|0755|root/root|usr|
+drwxr-xr-x|0755|root/root|usr/bin|
+-rwxr-xr-x|0755|root/root|usr/bin/nibconv|
+-rwxr-xr-x|0755|root/root|usr/bin/nibread|
+-rwxr-xr-x|0755|root/root|usr/bin/nibrepair|
+-rwxr-xr-x|0755|root/root|usr/bin/nibscan|
+-rwxr-xr-x|0755|root/root|usr/bin/nibsrqtest|
+-rwxr-xr-x|0755|root/root|usr/bin/nibwrite|
+drwxr-xr-x|0755|root/root|usr/doc|
+drwxr-xr-x|0755|root/root|usr/doc/nibtools-687|
+-rw-r--r--|0644|root/root|usr/doc/nibtools-687/BUILD.rc|
+-rwxr--r--|0744|root/root|usr/doc/nibtools-687/readme.txt|
