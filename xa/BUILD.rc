@@ -2,7 +2,7 @@
 
 BRIEF='Open-source 6502 cross assembler'
 PROJECT=https://www.floodgap.com/retrotech/xa/
-RELEASE=2.3.10
+RELEASE=2.3.11
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
