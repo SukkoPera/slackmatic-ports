@@ -1,0 +1,20 @@
+. ../sukkolib.rc
+
+BRIEF='Efficient binary-decimal and decimal-binary conversion routines for IEEE doubles'
+PROJECT=https://github.com/google/double-conversion
+RELEASE=3.1.5
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+fn myfetch () {
+        wget https://github.com/google/double-conversion/archive/refs/tags/v3.1.5.tar.gz -O $NAME-$RELEASE.tar.gz
+}
+
+SOURCE=(
+	MYFETCH:$NAME-$RELEASE.tar.gz
+)
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS_CMAKE
+	-DBUILD_SHARED_LIBS'='ON
+)
