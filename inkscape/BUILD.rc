@@ -2,19 +2,20 @@
 
 BRIEF='A professional vector graphics editor'
 PROJECT=https://inkscape.org
-RELEASE=0.92.5
+RELEASE=1.0.2
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 #BUILDSYSTEM=autotools
+BUILDDIR=$NAME-$RELEASE'_2021-01-15_e86c870879'
 
 SOURCE=(
-	https://inkscape.org/gallery/item/18051/$NAME-$RELEASE.tar.bz2
+	https://inkscape.org/gallery/item/23820/$NAME-$RELEASE.tar.xz
 )
 
 CONFOPTS=(
 	$DEFAULT_CONFOPTS_CMAKE
 	-DWITH_DBUS'='ON
-	-DWITH_IMAGE_MAGICK'='OFF		# Slack-curr has 7, inkscape wants 6
+#	-DWITH_IMAGE_MAGICK'='OFF		# Slack-curr has 7, inkscape wants 6
 )
 
 fn inst {
