@@ -1,0 +1,16 @@
+. ../sukkolib.rc
+
+BRIEF='Efficient arrays of booleans for Python'
+PROJECT=https://github.com/ilanschnell/bitarray
+RELEASE=2.0.1
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=bitarray-$RELEASE
+
+SOURCE=(
+	MYFETCH:$NAME-$RELEASE.tar.gz
+)
+
+fn myfetch () {
+	wget https://github.com/ilanschnell/bitarray/archive/refs/tags/$RELEASE.tar.gz -O $NAME-$RELEASE.tar.gz
+}
