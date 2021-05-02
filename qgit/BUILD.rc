@@ -1,0 +1,21 @@
+. ../sukkolib.rc
+
+BRIEF='A git GUI viewer'
+PROJECT=https://github.com/tibirna/qgit
+RELEASE=2.9
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=$NAME-$NAME-$RELEASE
+
+SOURCE=(
+	https://github.com/tibirna/qgit/archive/refs/tags/$NAME-$RELEASE.tar.gz
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	COPYING.rtf
+	README.adoc
+	README_WIN.txt
+	TODO.txt
+	exception_manager.txt
+)
