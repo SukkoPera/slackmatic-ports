@@ -1,0 +1,17 @@
+. ../sukkolib.rc
+
+BRIEF='A module with the CRC8 algorithm for Python 2 and 3'
+PROJECT=https://github.com/niccokunzmann/crc8
+RELEASE=0.0.5
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+TNAME=crc8
+BUILDDIR=$TNAME-$RELEASE
+
+SOURCE=(
+	MYFETCH:$NAME-$RELEASE.tar.gz
+)
+
+fn myfetch () {
+	wget https://github.com/niccokunzmann/crc8/archive/refs/tags/v$RELEASE.tar.gz -O $NAME-$RELEASE.tar.gz
+}

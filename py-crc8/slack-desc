@@ -1,0 +1,11 @@
+py-crc8: py-crc8 (A module with the CRC8 algorithm for Python 2 and 3)
+py-crc8:
+py-crc8: This is a slackmatic port build of py-crc8:
+py-crc8: A module with the CRC8 algorithm for Python 2 and 3 
+py-crc8:
+py-crc8: For more information about the package, see the project website at:
+py-crc8: https://github.com/niccokunzmann/crc8
+py-crc8:
+py-crc8:
+py-crc8: This slackmatic port was developed by:
+py-crc8: slackware@sukkology.net

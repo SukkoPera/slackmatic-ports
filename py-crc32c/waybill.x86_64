@@ -1,0 +1,15 @@
+drwxr-xr-x|0755|sukko/sukko|usr|
+drwxr-xr-x|0755|sukko/sukko|usr/doc|
+drwxr-xr-x|0755|sukko/sukko|usr/doc/py-crc32c-2.2|
+-rw-r--r--|0644|sukko/sukko|usr/doc/py-crc32c-2.2/BUILD.rc|
+-rw-r--r--|0644|sukko/sukko|usr/doc/py-crc32c-2.2/LICENSE|
+-rw-r--r--|0644|sukko/sukko|usr/doc/py-crc32c-2.2/README.rst|
+drwxr-xr-x|0755|sukko/sukko|usr/lib64|
+drwxr-xr-x|0755|sukko/sukko|usr/lib64/python3.9|
+drwxr-xr-x|0755|sukko/sukko|usr/lib64/python3.9/site-packages|
+drwxr-xr-x|0755|sukko/sukko|usr/lib64/python3.9/site-packages/crc32c-2.2-py3.9.egg-info|
+-rw-r--r--|0644|sukko/sukko|usr/lib64/python3.9/site-packages/crc32c-2.2-py3.9.egg-info/PKG-INFO|
+-rw-r--r--|0644|sukko/sukko|usr/lib64/python3.9/site-packages/crc32c-2.2-py3.9.egg-info/SOURCES.txt|
+-rw-r--r--|0644|sukko/sukko|usr/lib64/python3.9/site-packages/crc32c-2.2-py3.9.egg-info/dependency_links.txt|
+-rw-r--r--|0644|sukko/sukko|usr/lib64/python3.9/site-packages/crc32c-2.2-py3.9.egg-info/top_level.txt|
+-rwxr-xr-x|0755|sukko/sukko|usr/lib64/python3.9/site-packages/crc32c.cpython-39-x86_64-linux-gnu.so|
