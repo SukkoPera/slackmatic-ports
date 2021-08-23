@@ -2,7 +2,7 @@
 
 BRIEF='MATE Desktop Environment'
 PROJECT=http://mate-desktop.org
-RELEASE=1.24.1
+RELEASE=1.26.0
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
@@ -21,4 +21,9 @@ fn compile {
 	# This currently triggers a segmentation fault in itstool
 	rm -rf accessx-status/docs/hy || exit 999
 	std_compile
+}
+
+fn patches {
+	# This won't build
+	rm -r mateweather/docs/sr || exit $status
 }
