@@ -1,0 +1,42 @@
+. ../sukkolib.rc
+
+BRIEF='Free Open-Source Disk Encryption Software'
+PROJECT=https://www.veracrypt.fr
+RELEASE=1.24_Update7
+TRELEASE=`{echo $RELEASE | tr _ -}
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+TNAME=VeraCrypt
+BUILDSYSTEM=makeonly
+
+TVER=`{echo $TRELEASE | tr A-Z a-z}
+SOURCE=(
+	https://launchpad.net/veracrypt/trunk/$TVER/+download/$TNAME'_'$TRELEASE'_Source.tar.bz2'
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	License.txt
+	License.html
+)
+
+fn build {
+	cd $SRC || exit $status
+#	mkdir $NAME-$RELEASE
+	mv src $NAME-$RELEASE
+	cp License.* README.* $NAME-$RELEASE
+
+	std_build
+}
+
+fn inst {
+	mkdir $PKG/usr/bin
+	cp Main/veracrypt $PKG/usr/bin
+
+	ln -s Resources/Icons/VeraCrypt-48x48.xpm veracrypt.xpm
+	insticon $CWD/veracrypt.desktop veracrypt.xpm
+
+	mkdir -p $PKG/etc/rc.d
+	cp $CWD/rc.veracrypt $PKG/etc/rc.d
+}
+
