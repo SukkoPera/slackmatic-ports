@@ -19,6 +19,7 @@ PATCHES=(
 	amule-2.3.2-fix-crash-shared-dir-utf8.patch
 	amule-2.3.2-fix-crash-when-shared-files-changed.patch
 	amule-2.3.2-Fixed-compilation-with-newer-bfd.patch
+	amule-2.3.2-fix-ambiguous-byte.patch
 )
 
 CONFOPTS=(
