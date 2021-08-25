@@ -1,13 +1,14 @@
 . ../sukkolib.rc
 
 BRIEF='A free C++ class library of cryptographic schemes.'
-PROJECT=http:///www.cryptopp.com
+PROJECT=http://www.cryptopp.com
 RELEASE=8.2.0
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
+TREL=`{echo $RELEASE | tr -d .}
 SOURCE=(
-	https://www.cryptopp.com/cryptopp820.zip
+	https://www.cryptopp.com/cryptopp$TREL.zip
 )
 
 DOCS=(
@@ -17,11 +18,13 @@ DOCS=(
 )
 
 fn build {
+	# The zip has no root directory, sigh
 	cd $SRC
-	unzip -a $CWD/cryptopp820.zip -d $NAME-$RELEASE
+	mkdir $NAME-$RELEASE
+	mv * $NAME-$RELEASE
 	cd $NAME-$RELEASE
 
-	make -j5
+	make -j $NUMJOBS
 
 	make install DESTDIR'='$PKG PREFIX'='/usr
 
