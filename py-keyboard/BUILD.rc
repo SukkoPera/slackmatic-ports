@@ -2,14 +2,18 @@
 
 BRIEF='Hook and simulate keyboard events on Windows and Linux'
 PROJECT=https://pypi.org/project/keyboard/
-RELEASE=0.13.4
+RELEASE=0.13.5
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 TNAME=keyboard
 BUILDDIR=$TNAME-$RELEASE
 
+fn myfetch () {
+	wget https://github.com/boppreh/keyboard/archive/refs/tags/v$RELEASE.tar.gz -O $NAME-$RELEASE.tar.gz
+}
+
 SOURCE=(
-	https://files.pythonhosted.org/packages/5d/32/6f782da2738d88ca3ba8bd7597af3fb3fa379f2c3e465adf1bec9d0396d1/$TNAME-$RELEASE.zip
+	MYFETCH:$NAME-$RELEASE.tar.gz
 )
 
 fn compile {
