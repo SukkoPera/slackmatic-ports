@@ -2,7 +2,7 @@
 
 BRIEF='A command-line frontend for sigrok'
 PROJECT=https://sigrok.org/wiki/Sigrok-cli
-RELEASE=0.7.0
+RELEASE=0.7.2
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 

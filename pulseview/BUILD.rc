@@ -2,12 +2,18 @@
 
 BRIEF='A logic analyzer, oscilloscope and MSO GUI for sigrok'
 PROJECT=https://sigrok.org/wiki/PulseView
-RELEASE=0.4.1
+RELEASE=0.4.2
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
 SOURCE=(
 	http://sigrok.org/download/source/pulseview/$NAME-$RELEASE.tar.gz
+)
+
+# ... And thanks Gentoo, again!
+PATCHES=(
+	pulseview-0.4.2-qt-5.15.patch
+	pulseview-0.4.2-glib-2.68.patch
 )
 
 CONFOPTS=(
