@@ -1,11 +1,11 @@
 drwxr-xr-x|0755|sukko/sukko|usr|
 drwxr-xr-x|0755|sukko/sukko|usr/doc|
-drwxr-xr-x|0755|sukko/sukko|usr/doc/kicad-footprints-5.1.10|
--rw-r--r--|0644|sukko/sukko|usr/doc/kicad-footprints-5.1.10/BUILD.rc|
--rw-r--r--|0644|sukko/sukko|usr/doc/kicad-footprints-5.1.10/CONTRIBUTING.md|
--rw-r--r--|0644|sukko/sukko|usr/doc/kicad-footprints-5.1.10/LICENSE.md|
--rw-r--r--|0644|sukko/sukko|usr/doc/kicad-footprints-5.1.10/README.md|
--rw-r--r--|0644|sukko/sukko|usr/doc/kicad-footprints-5.1.10/TODO.md|
+drwxr-xr-x|0755|sukko/sukko|usr/doc/kicad-footprints-5.1.12|
+-rw-r--r--|0644|sukko/sukko|usr/doc/kicad-footprints-5.1.12/BUILD.rc|
+-rw-r--r--|0644|sukko/sukko|usr/doc/kicad-footprints-5.1.12/CONTRIBUTING.md|
+-rw-r--r--|0644|sukko/sukko|usr/doc/kicad-footprints-5.1.12/LICENSE.md|
+-rw-r--r--|0644|sukko/sukko|usr/doc/kicad-footprints-5.1.12/README.md|
+-rw-r--r--|0644|sukko/sukko|usr/doc/kicad-footprints-5.1.12/TODO.md|
 drwxr-xr-x|0755|sukko/sukko|usr/share|
 drwxr-xr-x|0755|sukko/sukko|usr/share/kicad|
 drwxr-xr-x|0755|sukko/sukko|usr/share/kicad/modules|

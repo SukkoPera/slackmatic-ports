@@ -2,10 +2,10 @@
 
 BRIEF='A Cross Platform and Open Source Electronics Design Automation Suite'
 PROJECT=http://kicad-pcb.org
-RELEASE=5.1.10
+RELEASE=5.1.12
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
-BUILDDIR=kicad-$RELEASE-9a01cf1b35b9ba36c3713d71f50c7de797773dec
+BUILDDIR=kicad-$RELEASE-e4df76d986c70b7c06bc734644245984b7bb78ba
 
 fn myfetch () {
 #	wget https://github.com/KiCad/kicad-source-mirror/archive/$RELEASE.tar.gz -O $NAME-$RELEASE.tar.gz
@@ -25,6 +25,9 @@ CONFOPTS=(
 	-DKICAD_SCRIPTING_WXPYTHON_PHOENIX'='ON
 	-DKICAD_SCRIPTING_PYTHON3'='ON
 	-DKICAD_SCRIPTING_ACTION_MENU'='ON
+	-DKICAD_USE_OCC'='OFF
+	-DKICAD_USE_OCE'='ON
+	-DKICAD_SPICE'='ON
 	-DwxWidgets_CONFIG_EXECUTABLE'='/usr/bin/wx-config-3
 	-DKICAD_SKIP_BOOST'='ON
 	-DKICAD_DOCS'='/usr/doc/$NAME-$RELEASE
