@@ -1,0 +1,11 @@
+picotool: picotool (A tool for inspecting RP2040 binaries, and interacting with RP2040 devices)
+picotool:
+picotool: This is a slackmatic port build of picotool:
+picotool: A tool for inspecting RP2040 binaries, and interacting with RP2040 devices 
+picotool:
+picotool: For more information about the package, see the project website at:
+picotool: https://github.com/raspberrypi/picotool
+picotool:
+picotool:
+picotool: This slackmatic port was developed by:
+picotool: slackware@sukkology.net
