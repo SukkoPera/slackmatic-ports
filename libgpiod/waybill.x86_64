@@ -1,0 +1,17 @@
+drwxr-xr-x|0755|sukko/sukko|usr|
+drwxr-xr-x|0755|sukko/sukko|usr/doc|
+drwxr-xr-x|0755|sukko/sukko|usr/doc/libgpiod-1.6.3|
+-rw-r--r--|0644|sukko/sukko|usr/doc/libgpiod-1.6.3/BUILD.rc|
+-rw-r--r--|0644|sukko/sukko|usr/doc/libgpiod-1.6.3/COPYING|
+-rw-r--r--|0644|sukko/sukko|usr/doc/libgpiod-1.6.3/NEWS|
+-rw-r--r--|0644|sukko/sukko|usr/doc/libgpiod-1.6.3/README|
+-rw-r--r--|0644|sukko/sukko|usr/doc/libgpiod-1.6.3/TODO|
+drwxr-xr-x|0755|sukko/sukko|usr/include|
+-rw-r--r--|0644|sukko/sukko|usr/include/gpiod.h|
+drwxr-xr-x|0755|sukko/sukko|usr/lib64|
+-rw-r--r--|0644|sukko/sukko|usr/lib64/libgpiod.a|
+lrwxrwxrwx|0777|sukko/sukko|usr/lib64/libgpiod.so|->|libgpiod.so.2.2.2|
+lrwxrwxrwx|0777|sukko/sukko|usr/lib64/libgpiod.so.2|->|libgpiod.so.2.2.2|
+-rwxr-xr-x|0755|sukko/sukko|usr/lib64/libgpiod.so.2.2.2|
+drwxr-xr-x|0755|sukko/sukko|usr/lib64/pkgconfig|
+-rw-r--r--|0644|sukko/sukko|usr/lib64/pkgconfig/libgpiod.pc|

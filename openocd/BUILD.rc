@@ -1,0 +1,22 @@
+. ../sukkolib.rc
+
+BRIEF='Open On-Chip Debugger'
+PROJECT=https://openocd.org
+RELEASE=0.11.0
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	https://downloads.sourceforge.net/project/openocd/openocd/$RELEASE/$NAME-$RELEASE.tar.bz2
+)
+
+# Mmmmh, the code quality leaves something to be desired...
+CFLAGS='-Wno-error=stringop-overflow -Wno-error=misleading-indentation'
+
+fn inst {
+        std_inst
+
+        # udev rules
+        mkdir -p $PKG/lib/udev/rules.d
+        cp contrib/*.rules $PKG/lib/udev/rules.d
+}
