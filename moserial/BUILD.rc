@@ -2,7 +2,7 @@
 
 BRIEF='A clean, friendly gtk-based serial terminal'
 PROJECT=https://wiki.gnome.org/moserial
-RELEASE=3.0.9
+RELEASE=3.0.21
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
