@@ -2,7 +2,7 @@
 
 BRIEF='More than just another hex editor'
 PROJECT=http://www.dettus.net/dhex/
-RELEASE=0.68
+RELEASE=0.69
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDDIR=$NAME'_'$RELEASE

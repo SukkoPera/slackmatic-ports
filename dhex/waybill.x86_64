@@ -2,9 +2,9 @@ drwxr-xr-x|0755|root/root|usr|
 drwxr-xr-x|0755|root/root|usr/bin|
 -rwxr-xr-x|0755|root/root|usr/bin/dhex|
 drwxr-xr-x|0755|root/root|usr/doc|
-drwxr-xr-x|0755|root/root|usr/doc/dhex-0.68|
--rw-r--r--|0644|root/root|usr/doc/dhex-0.68/BUILD.rc|
--rw-r--r--|0644|root/root|usr/doc/dhex-0.68/README.txt|
+drwxr-xr-x|0755|root/root|usr/doc/dhex-0.69|
+-rw-r--r--|0644|root/root|usr/doc/dhex-0.69/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/dhex-0.69/README.txt|
 drwxr-xr-x|0755|root/root|usr/man|
 drwxr-xr-x|0755|root/root|usr/man/man1|
 -rw-r--r--|0644|root/root|usr/man/man1/dhex.1.gz|
