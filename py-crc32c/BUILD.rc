@@ -1,0 +1,17 @@
+. ../sukkolib.rc
+
+BRIEF='crc32c checksum algorithm for Python'
+PROJECT=https://github.com/ICRAR/crc32c
+RELEASE=2.2
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+TNAME=crc32c
+BUILDDIR=$TNAME-$RELEASE
+
+SOURCE=(
+	MYFETCH:$NAME-$RELEASE.tar.gz
+)
+
+fn myfetch () {
+	wget https://github.com/ICRAR/crc32c/archive/refs/tags/v$RELEASE.tar.gz -O $NAME-$RELEASE.tar.gz
+}

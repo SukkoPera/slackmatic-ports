@@ -1,0 +1,11 @@
+py-crc32c: py-crc32c (crc32c checksum algorithm for Python)
+py-crc32c:
+py-crc32c: This is a slackmatic port build of py-crc32c:
+py-crc32c: crc32c checksum algorithm for Python 
+py-crc32c:
+py-crc32c: For more information about the package, see the project website at:
+py-crc32c: https://github.com/ICRAR/crc32c
+py-crc32c:
+py-crc32c:
+py-crc32c: This slackmatic port was developed by:
+py-crc32c: slackware@sukkology.net

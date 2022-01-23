@@ -1,0 +1,11 @@
+py-bitarray: py-bitarray (Efficient arrays of booleans for Python)
+py-bitarray:
+py-bitarray: This is a slackmatic port build of py-bitarray:
+py-bitarray: Efficient arrays of booleans for Python 
+py-bitarray:
+py-bitarray: For more information about the package, see the project website at:
+py-bitarray: https://github.com/ilanschnell/bitarray
+py-bitarray:
+py-bitarray:
+py-bitarray: This slackmatic port was developed by:
+py-bitarray: slackware@sukkology.net

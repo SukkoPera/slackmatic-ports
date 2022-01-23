@@ -2,7 +2,7 @@
 
 BRIEF='A cross-platform music tagger'
 PROJECT=https://picard.musicbrainz.org
-RELEASE=2.2.3
+RELEASE=2.5.6
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDDIR=$NAME-release-$RELEASE

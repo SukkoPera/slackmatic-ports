@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=VeraCrypt
+Comment=Disk encryption software
+Exec=veracrypt
+Icon=/usr/share/pixmaps/veracrypt.xpm
+Terminal=false
+Type=Application
+Categories=System;

@@ -2,7 +2,7 @@
 
 BRIEF='An open-source firmware for Cypress FX2 chips which makes them usable as simple logic analyzer and/or oscilloscope hardware'
 PROJECT=https://sigrok.org/wiki/Fx2lafw
-RELEASE=0.1.6
+RELEASE=0.1.7
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 

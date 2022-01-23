@@ -1,0 +1,11 @@
+. ../sukkolib.rc
+
+BRIEF='Translations for KiCad source code'
+PROJECT=https://gitlab.com/kicad/code/kicad-i18n
+RELEASE=5.1.5
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	https://gitlab.com/kicad/code/kicad-i18n/-/archive/$RELEASE/$NAME-$RELEASE.tar.bz2
+)

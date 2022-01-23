@@ -2,10 +2,17 @@
 
 BRIEF='A shared library which provides the basic hardware access drivers for logic analyzers'
 PROJECT=https://sigrok.org/wiki/Libsigrok
-RELEASE=0.5.1
+RELEASE=0.5.2
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
 SOURCE=(
 	http://sigrok.org/download/source/$NAME/$NAME-$RELEASE.tar.gz
+)
+
+# Ruby and Java support seems broken
+CONFOPTS=(
+	$DEFAULT_CONFOPTS
+	--disable-ruby
+	--disable-java
 )

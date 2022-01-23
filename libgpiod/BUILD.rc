@@ -1,0 +1,17 @@
+. ../sukkolib.rc
+
+BRIEF='C library and tools for interacting with the linux GPIO character device'
+PROJECT=https://git.kernel.org/pub/scm/libs/libgpiod/libgpiod.git/
+RELEASE=1.6.3
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDSYSTEM=autotools
+
+SOURCE=(
+	https://git.kernel.org/pub/scm/libs/libgpiod/libgpiod.git/snapshot/$NAME-$RELEASE.tar.gz
+)
+
+fn configure {
+	./autogen.sh
+	std_configure
+}

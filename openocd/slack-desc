@@ -1,0 +1,11 @@
+openocd: openocd (Open On-Chip Debugger)
+openocd:
+openocd: This is a slackmatic port build of openocd:
+openocd: Open On-Chip Debugger 
+openocd:
+openocd: For more information about the package, see the project website at:
+openocd: https://openocd.org
+openocd:
+openocd:
+openocd: This slackmatic port was developed by:
+openocd: slackware@sukkology.net

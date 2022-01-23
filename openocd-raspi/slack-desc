@@ -1,0 +1,11 @@
+openocd-raspi: openocd-raspi (Open On-Chip Debugger)
+openocd-raspi:
+openocd-raspi: This is a slackmatic port build of openocd-raspi:
+openocd-raspi: Open On-Chip Debugger 
+openocd-raspi:
+openocd-raspi: For more information about the package, see the project website at:
+openocd-raspi: https://openocd.org
+openocd-raspi:
+openocd-raspi:
+openocd-raspi: This slackmatic port was developed by:
+openocd-raspi: slackware@sukkology.net

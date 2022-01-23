@@ -2,10 +2,18 @@
 
 BRIEF='A shared library written in C, which provides (streaming) protocol decoding functionality.'
 PROJECT=https://sigrok.org/wiki/Libsigrokdecode
-RELEASE=0.5.2
+RELEASE=0.5.3
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
 SOURCE=(
 	http://sigrok.org/download/source/$NAME/$NAME-$RELEASE.tar.gz
 )
+
+fn configure {
+	# Thanks Gentoo
+	sed -i -e 's/\[SRD_PKGLIBS\],$/& [python3-embed], [python3],/' configure.ac || exit $status
+
+	autoreconf -sfi
+	std_configure
+}

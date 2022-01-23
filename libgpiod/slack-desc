@@ -1,0 +1,11 @@
+libgpiod: libgpiod (C library and tools for interacting with the linux GPIO character device)
+libgpiod:
+libgpiod: This is a slackmatic port build of libgpiod:
+libgpiod: C library and tools for interacting with the linux GPIO character device 
+libgpiod:
+libgpiod: For more information about the package, see the project website at:
+libgpiod: https://git.kernel.org/pub/scm/libs/libgpiod/libgpiod.git/
+libgpiod:
+libgpiod:
+libgpiod: This slackmatic port was developed by:
+libgpiod: slackware@sukkology.net

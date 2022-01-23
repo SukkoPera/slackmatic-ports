@@ -1,0 +1,41 @@
+. ../sukkolib.rc
+
+BRIEF='Open On-Chip Debugger'
+PROJECT=https://openocd.org
+RELEASE=20211213
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDSYSTEM=autotools
+
+fn myfetch () {
+	# This fails because of missing submodules
+#        wget https://github.com/raspberrypi/openocd/archive/refs/heads/rp2040.zip -O $NAME-$RELEASE.zip
+
+	git clone https://github.com/raspberrypi/openocd.git --branch rp2040 --depth 1 --no-single-branch $NAME-$RELEASE
+	tar Jcvf $NAME-$RELEASE.tar.xz $NAME-$RELEASE
+}
+
+SOURCE=(
+        MYFETCH:$NAME-$RELEASE.tar.xz
+)
+
+# Mmmmh, the code quality leaves something to be desired...
+CFLAGS='-Wno-error=stringop-overflow -Wno-error=misleading-indentation'
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS
+	--enable-picoprobe
+)
+
+fn configure {
+	./bootstrap
+	std_configure
+}
+
+fn inst {
+        std_inst
+
+        # udev rules
+        mkdir -p $PKG/lib/udev/rules.d
+        cp contrib/*.rules $PKG/lib/udev/rules.d
+}

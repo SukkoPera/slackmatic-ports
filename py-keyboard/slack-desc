@@ -1,0 +1,11 @@
+py-keyboard: py-keyboard (Hook and simulate keyboard events on Windows and Linux)
+py-keyboard:
+py-keyboard: This is a slackmatic port build of py-keyboard:
+py-keyboard: Hook and simulate keyboard events on Windows and Linux 
+py-keyboard:
+py-keyboard: For more information about the package, see the project website at:
+py-keyboard: https://pypi.org/project/keyboard/
+py-keyboard:
+py-keyboard:
+py-keyboard: This slackmatic port was developed by:
+py-keyboard: slackware@sukkology.net

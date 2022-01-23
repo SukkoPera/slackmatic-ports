@@ -2,7 +2,7 @@
 
 BRIEF='MATE Desktop Environment'
 PROJECT=http://mate-desktop.org
-RELEASE=1.24.0
+RELEASE=1.26.0
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
@@ -10,3 +10,9 @@ MAJORV=`{echo $RELEASE | sed -r 's:\.[0-9]+$::'}
 SOURCE=(
 	http://pub.mate-desktop.org/releases/$MAJORV/$NAME-$RELEASE.tar.xz
 )
+
+fn patches {
+	# These won't build
+	rm -r mate-user-guide/ja || exit $status
+	rm -r mate-user-guide/sr || exit $status
+}
