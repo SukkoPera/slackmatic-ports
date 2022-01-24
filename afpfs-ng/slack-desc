@@ -1,0 +1,11 @@
+afpfs-ng: afpfs-ng (An Apple Filing Protocol client that will allow access to files exported from a Mac OS system)
+afpfs-ng:
+afpfs-ng: This is a slackmatic port build of afpfs-ng:
+afpfs-ng: An Apple Filing Protocol client that will allow access to files exported from a Mac OS system 
+afpfs-ng:
+afpfs-ng: For more information about the package, see the project website at:
+afpfs-ng: https://sourceforge.net/projects/afpfs-ng/
+afpfs-ng:
+afpfs-ng:
+afpfs-ng: This slackmatic port was developed by:
+afpfs-ng: slackware@sukkology.net

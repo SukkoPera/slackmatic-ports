@@ -1,0 +1,18 @@
+. ../sukkolib.rc
+
+BRIEF='An Apple Filing Protocol client that will allow access to files exported from a Mac OS system'
+PROJECT=https://sourceforge.net/projects/afpfs-ng/
+RELEASE=0.8.2
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+# Note that our working build was made from a manually-created archive of the github master tree at commit f6e24eb73c9283732c3b5d9cb101a1e2e4fade3e
+SOURCE=(
+#	https://downloads.sourceforge.net/project/afpfs-ng/afpfs-ng/0.8.1/$NAME-$RELEASE.tar.xz
+	https://github.com/simonvetter/afpfs-ng/blob/master/afpfs-ng-0.8.2.tar.gz?raw=true
+)
+
+fn patches {
+	# Work around "multiple definition" error
+	sed -i '4 i extern' cmdline/cmdline_afp.h || exit $status
+}
