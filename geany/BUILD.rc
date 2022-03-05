@@ -2,9 +2,11 @@
 
 BRIEF='A text editor using the GTK2 toolkit'
 PROJECT=http://www.geany.org
-RELEASE=1.37.1
+RELEASE=1.38.0
+TRELEASE=1.38
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
+BUILDDIR=$NAME-$TRELEASE
 
 CONFOPTS=(
 	$DEFAULT_CONFOPTS
@@ -12,5 +14,5 @@ CONFOPTS=(
 )
 
 SOURCE=(
-	http://download.geany.org/$NAME-$RELEASE.tar.bz2
+	http://download.geany.org/$NAME-$TRELEASE.tar.bz2
 )
