@@ -2,12 +2,12 @@
 
 BRIEF='Open source graph visualization software'
 PROJECT=https://graphviz.org/
-RELEASE=2.42.1
+RELEASE=2.50.0
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
 SOURCE=(
-	https://www2.graphviz.org/Packages/stable/portable_source/$NAME-$RELEASE.tar.gz
+	https://gitlab.com/api/v4/projects/4207231/packages/generic/graphviz-releases/$RELEASE/$NAME-$RELEASE.tar.xz
 )
 
 CONFOPTS=(
