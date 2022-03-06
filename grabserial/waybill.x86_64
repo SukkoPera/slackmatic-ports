@@ -1,0 +1,17 @@
+drwxr-xr-x|0755|sukko/sukko|usr|
+drwxr-xr-x|0755|sukko/sukko|usr/bin|
+-rwxr-xr-x|0755|sukko/sukko|usr/bin/grabserial|
+drwxr-xr-x|0755|sukko/sukko|usr/doc|
+drwxr-xr-x|0755|sukko/sukko|usr/doc/grabserial-2.0.2|
+-rw-r--r--|0644|sukko/sukko|usr/doc/grabserial-2.0.2/BUILD.rc|
+-rw-r--r--|0644|sukko/sukko|usr/doc/grabserial-2.0.2/LICENSE|
+-rw-r--r--|0644|sukko/sukko|usr/doc/grabserial-2.0.2/README.md|
+drwxr-xr-x|0755|sukko/sukko|usr/lib64|
+drwxr-xr-x|0755|sukko/sukko|usr/lib64/python3.9|
+drwxr-xr-x|0755|sukko/sukko|usr/lib64/python3.9/site-packages|
+drwxr-xr-x|0755|sukko/sukko|usr/lib64/python3.9/site-packages/grabserial-1.9.8-py3.9.egg-info|
+-rw-r--r--|0644|sukko/sukko|usr/lib64/python3.9/site-packages/grabserial-1.9.8-py3.9.egg-info/PKG-INFO|
+-rw-r--r--|0644|sukko/sukko|usr/lib64/python3.9/site-packages/grabserial-1.9.8-py3.9.egg-info/SOURCES.txt|
+-rw-r--r--|0644|sukko/sukko|usr/lib64/python3.9/site-packages/grabserial-1.9.8-py3.9.egg-info/dependency_links.txt|
+-rw-r--r--|0644|sukko/sukko|usr/lib64/python3.9/site-packages/grabserial-1.9.8-py3.9.egg-info/requires.txt|
+-rw-r--r--|0644|sukko/sukko|usr/lib64/python3.9/site-packages/grabserial-1.9.8-py3.9.egg-info/top_level.txt|

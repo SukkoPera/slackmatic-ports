@@ -1,0 +1,15 @@
+. ../sukkolib.rc
+
+BRIEF='Serial dump and timing program'
+PROJECT=https://github.com/tbird20d/grabserial
+RELEASE=2.0.2
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+fn myfetch () {
+        wget https://github.com/tbird20d/$NAME/archive/refs/tags/v$RELEASE.tar.gz -O $NAME-$RELEASE.tar.gz
+}
+
+SOURCE=(
+	MYFETCH:$NAME-$RELEASE.tar.gz
+)
