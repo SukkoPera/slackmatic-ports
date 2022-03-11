@@ -10,15 +10,18 @@ SOURCE=(
 	$SF/$NAME/Sources/$RELEASE/$NAME-$RELEASE.tar.xz
 )
 
+PATCHES=(
+	codeblocks-gcc11.patch
+)
 
 CONFOPTS=(
 	$DEFAULT_CONFOPTS
-	--with-contrib-plugins'='AutoVersioning,BrowseTracker,byogames,Cccc,CppCheck,cbkoders,codesnippets,codestat,copystrings,Cscope,DoxyBlocks,dragscroll,EditorConfig,EditorTweaks,envvars,FileManager,headerfixup,help,hexeditor,incsearch,keybinder,libfinder,MouseSap,NassiShneiderman,ProjectOptionsManipulator,profiler,regex,ReopenEditor,exporter,smartindent,spellchecker,symtab,ThreadSearch,ToolsPlus,Valgrind,wxcontrib,wxsmith,wxsmithcontrib,wxsmithaui
+	--with-contrib-plugins'='all
 	--with-wx-config'='/usr/bin/wx-config-3
+	--disable-static
 )
 
 fn configure {
+	./bootstrap
 	std_configure
-	sed -i s/aclocal-1.13/aclocal/ Makefile
-	sed -i s/automake-1.13/automake/ Makefile
 }
