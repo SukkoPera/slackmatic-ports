@@ -2,7 +2,7 @@
 
 BRIEF='A front-end (GUI) for mednafen emulator '
 PROJECT=https://github.com/AmatCoder/mednaffe
-RELEASE=20201114
+RELEASE=20220328
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDDIR=$NAME-master
