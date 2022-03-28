@@ -2,7 +2,7 @@
 
 BRIEF='A portable multi-system emulator'
 PROJECT=https://mednafen.github.io
-RELEASE=1.26.1
+RELEASE=1.29.0
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDDIR=$NAME
