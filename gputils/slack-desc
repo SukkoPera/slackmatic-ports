@@ -1,0 +1,11 @@
+gputils: gputils (GNU PIC Utilities)
+gputils:
+gputils: This is a slackmatic port build of gputils:
+gputils: GNU PIC Utilities 
+gputils:
+gputils: For more information about the package, see the project website at:
+gputils: https://gputils.sourceforge.io/
+gputils:
+gputils:
+gputils: This slackmatic port was developed by:
+gputils: slackware@sukkology.net
