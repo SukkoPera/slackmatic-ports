@@ -2,7 +2,7 @@
 
 BRIEF='File data recovery software'
 PROJECT=http://www.cgsecurity.org/wiki/PhotoRec
-RELEASE=7.0
+RELEASE=7.1
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
@@ -15,14 +15,6 @@ CONFOPTS=(
 	--docdir'='/usr/doc/$NAME-$RELEASE
 	--enable-sudo
 )
-
-fn configure {
-        # Probably not the proper patch, but it seems to work, thanks
-	# http://www.murga-linux.com/puppy/viewtopic.php?search_id=776855001&t=77288
-	sed -i '405 i #define NTFS_MBSTOUCS_HAVE_TWO_ARGUMENTS 1' src/ntfs_dir.c || die "sed makefile"
-
-        std_configure
-}
 
 fn docinst {
 	rmdir $PKG/usr/share/doc/$NAME-$RELEASE/html
