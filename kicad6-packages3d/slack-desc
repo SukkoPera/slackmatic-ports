@@ -1,0 +1,11 @@
+kicad6-packages3d: kicad6-packages3d (KiCad 3D model libraries for rendering and MCAD integration)
+kicad6-packages3d:
+kicad6-packages3d: This is a slackmatic port build of kicad6-packages3d:
+kicad6-packages3d: KiCad 3D model libraries for rendering and MCAD integration 
+kicad6-packages3d:
+kicad6-packages3d: For more information about the package, see the project website at:
+kicad6-packages3d: https://github.com/KiCad/kicad-packages3D
+kicad6-packages3d:
+kicad6-packages3d:
+kicad6-packages3d: This slackmatic port was developed by:
+kicad6-packages3d: slackware@sukkology.net

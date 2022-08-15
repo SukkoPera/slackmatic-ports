@@ -1,0 +1,32 @@
+. ../sukkolib.rc
+
+BRIEF='A Cross Platform and Open Source Electronics Design Automation Suite'
+PROJECT=http://kicad-pcb.org
+RELEASE=6.0.7
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=kicad-$RELEASE-f9a2dced07acac97c62eef0931269fea6bcfb828
+
+fn myfetch () {
+#	wget https://github.com/KiCad/kicad-source-mirror/archive/$RELEASE.tar.gz -O $NAME-$RELEASE.tar.gz
+	wget https://gitlab.com/kicad/code/kicad/-/archive/$RELEASE/$RELEASE.tar.bz2 -O $NAME-$RELEASE.tar.bz2
+}
+
+SOURCE=(
+	MYFETCH:$NAME-$RELEASE.tar.bz2
+)
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS_CMAKE
+	-DCMAKE_BUILD_TYPE'='Release
+	-DKICAD_SCRIPTING_WXPYTHON'='ON
+	-DKICAD_USE_EGL'='ON
+	-DKICAD_USE_OCC'='OFF
+	-DKICAD_SPICE'='ON
+	-DwxWidgets_CONFIG_EXECUTABLE'='/usr/bin/wx-config-3
+	-DKICAD_DOCS'='/usr/doc/$NAME-$RELEASE
+)
+
+fn patches () {
+	sed -i '25 i #include <algorithm>' common/lib_tree_model.cpp || exit $status
+}

@@ -1,0 +1,11 @@
+kicad6-templates: kicad6-templates (The schematic and 3D libraries supported by KiCad team)
+kicad6-templates:
+kicad6-templates: This is a slackmatic port build of kicad6-templates:
+kicad6-templates: The schematic and 3D libraries supported by KiCad team 
+kicad6-templates:
+kicad6-templates: For more information about the package, see the project website at:
+kicad6-templates: https://kicad.github.io/symbols/
+kicad6-templates:
+kicad6-templates:
+kicad6-templates: This slackmatic port was developed by:
+kicad6-templates: slackware@sukkology.net

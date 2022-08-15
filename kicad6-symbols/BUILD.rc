@@ -1,0 +1,16 @@
+. ../sukkolib.rc
+
+BRIEF='The schematic and 3D libraries supported by KiCad team'
+PROJECT=https://kicad.github.io/symbols/
+RELEASE=6.0.7
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=kicad-symbols-$RELEASE-df1ddda40d0a9f859da6b5185298c73557373e80
+
+fn myfetch () {
+        wget https://gitlab.com/kicad/libraries/kicad-symbols/-/archive/$RELEASE/$RELEASE.tar.bz2 -O $NAME-$RELEASE.tar.bz2
+}
+
+SOURCE=(
+	MYFETCH:$NAME-$RELEASE.tar.bz2
+)

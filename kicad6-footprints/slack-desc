@@ -1,0 +1,11 @@
+kicad6-footprints: kicad6-footprints (Component footprints for KiCad)
+kicad6-footprints:
+kicad6-footprints: This is a slackmatic port build of kicad6-footprints:
+kicad6-footprints: Component footprints for KiCad 
+kicad6-footprints:
+kicad6-footprints: For more information about the package, see the project website at:
+kicad6-footprints: https://github.com/KiCad/kicad-library
+kicad6-footprints:
+kicad6-footprints:
+kicad6-footprints: This slackmatic port was developed by:
+kicad6-footprints: slackware@sukkology.net
