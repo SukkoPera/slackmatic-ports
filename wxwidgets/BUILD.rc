@@ -2,10 +2,11 @@
 
 BRIEF='Cross-platform GUI library'
 PROJECT=http://www.wxwidgets.org
-RELEASE=3.0.5
+RELEASE=3.1.5
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDDIR=wxWidgets-$RELEASE
+BUILDSYSTEM=autotools
 
 SOURCE=(
 	https://github.com/wxWidgets/wxWidgets/releases/download/v$RELEASE/wxWidgets-$RELEASE.tar.bz2
@@ -13,8 +14,9 @@ SOURCE=(
 
 CONFOPTS=(
 	$DEFAULT_CONFOPTS
-	--enable-no_deps
-	--enable-compat26
+	--enable-compat28
+	--enable-compat30
+#	--with-gtk'='2
 	--with-sdl 
 	--with-opengl
 #	--enable-stl
@@ -32,4 +34,5 @@ fn inst {
 
 	# Don't clash with wxwidgets 2
 	mv $PKG/usr/bin/wx-config $PKG/usr/bin/wx-config-3
+	ln -s /usr/bin/wx-config-3 $PKG/usr/bin/wx-config
 }
