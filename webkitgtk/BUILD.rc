@@ -2,35 +2,21 @@
 
 BRIEF='GNOME platform port of the WebKit rendering engine'
 PROJECT=http://webkitgtk.org
-RELEASE=2.24.4
+RELEASE=2.36.6
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
-MAKEJOBS=1
 
 SOURCE=(
 	http://webkitgtk.org/releases/$NAME-$RELEASE.tar.xz
 )
 
-# The cmake converter to makefiles has a bug, thus we must use the
-# ninja backend. See
-# https://www.mail-archive.com/debian-bugs-dist@lists.debian.org/msg1667149.html
 CONFOPTS=(
 	$DEFAULT_CONFOPTS_CMAKE
 	-DCMAKE_BUILD_TYPE'='Release
 	-DPORT'='GTK
-	-G Ninja
+	-DUSE_WPE_RENDERER'='OFF
+	-DENABLE_GAMEPAD'='OFF
+	-DENABLE_JOURNALD_LOG'='OFF
+	-DENABLE_BUBBLEWRAP_SANDBOX'='OFF
+	-DENABLE_MINIBROWSER'='ON
 )
-
-PATCHES=(
-	webkit-gtk-2.24.4-icu-65.patch
-)
-
-fn compile {
-	# Building with more than 1 job saturates RAM and swap space... grrrr
-	ninja -C BUILD.$pid -j $MAKEJOBS
-}
-
-fn inst {
-	DESTDIR=$PKG ninja -C BUILD.$pid install
-}
-
