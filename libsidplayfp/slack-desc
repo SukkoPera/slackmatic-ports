@@ -1,0 +1,11 @@
+libsidplayfp: libsidplayfp (A library to play Commodore 64 music)
+libsidplayfp:
+libsidplayfp: This is a slackmatic port build of libsidplayfp:
+libsidplayfp: A library to play Commodore 64 music 
+libsidplayfp:
+libsidplayfp: For more information about the package, see the project website at:
+libsidplayfp: https://sourceforge.net/projects/sidplay-residfp/
+libsidplayfp:
+libsidplayfp:
+libsidplayfp: This slackmatic port was developed by:
+libsidplayfp: slackware@sukkology.net
