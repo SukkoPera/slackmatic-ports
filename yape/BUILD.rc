@@ -1,0 +1,23 @@
+. ../sukkolib.rc
+
+BRIEF='A decent no-nonsense Plus/4 emulator'
+PROJECT=http://yape.homeserver.hu
+RELEASE=0.70.2
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=yapesdl-$RELEASE
+
+SOURCE=(
+	https://github.com/calmopyrin/yapesdl/archive/refs/tags/v$RELEASE.tar.gz
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	README.SDL
+	Changes
+)
+
+fn inst {
+	mkdir -p $PKG/usr/bin
+	cp yapesdl $PKG/usr/bin
+}

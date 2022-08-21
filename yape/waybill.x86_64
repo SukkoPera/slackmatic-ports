@@ -1,0 +1,9 @@
+drwxr-xr-x|0755|sukko/sukko|usr|
+drwxr-xr-x|0755|sukko/sukko|usr/bin|
+-rwxr-xr-x|0755|sukko/sukko|usr/bin/yapesdl|
+drwxr-xr-x|0755|sukko/sukko|usr/doc|
+drwxr-xr-x|0755|sukko/sukko|usr/doc/yape-0.70.2|
+-rw-r--r--|0644|sukko/sukko|usr/doc/yape-0.70.2/BUILD.rc|
+-rw-r--r--|0644|sukko/sukko|usr/doc/yape-0.70.2/COPYING|
+-rw-r--r--|0644|sukko/sukko|usr/doc/yape-0.70.2/Changes|
+-rw-r--r--|0644|sukko/sukko|usr/doc/yape-0.70.2/README.SDL|
