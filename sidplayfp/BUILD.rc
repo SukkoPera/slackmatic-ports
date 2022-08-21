@@ -1,0 +1,11 @@
+. ../sukkolib.rc
+
+BRIEF='Console SID/MUS player'
+PROJECT=https://github.com/libsidplayfp/sidplayfp
+RELEASE=2.2.3
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	https://github.com/libsidplayfp/sidplayfp/releases/download/v$RELEASE/$NAME-$RELEASE.tar.gz
+)
