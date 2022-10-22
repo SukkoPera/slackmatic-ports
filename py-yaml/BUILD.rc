@@ -2,11 +2,16 @@
 
 BRIEF='YAML parser and emitter for Python'
 PROJECT=https://pypi.org/project/PyYAML/
-RELEASE=3.10
+RELEASE=6.0
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
+TNAME=PyYAML
 BUILDDIR=PyYAML-$RELEASE
 
 SOURCE=(
-	https://files.pythonhosted.org/packages/00/17/3b822893a1789a025d3f676a381338516a8f65e686d915b0834ecc9b4979/PyYAML-$RELEASE.tar.gz
+	MYFETCH:$NAME-$RELEASE.tar.gz
 )
+
+fn myfetch () {
+	wget https://files.pythonhosted.org/packages/36/2b/61d51a2c4f25ef062ae3f74576b01638bebad5e045f747ff12643df63844/$TNAME-$RELEASE.tar.gz -O $NAME-$RELEASE.tar.gz
+}
