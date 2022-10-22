@@ -1,0 +1,11 @@
+py-fasteners: py-fasteners (A python package that provides useful locks)
+py-fasteners:
+py-fasteners: This is a slackmatic port build of py-fasteners:
+py-fasteners: A python package that provides useful locks 
+py-fasteners:
+py-fasteners: For more information about the package, see the project website at:
+py-fasteners: https://github.com/harlowja/fasteners
+py-fasteners:
+py-fasteners:
+py-fasteners: This slackmatic port was developed by:
+py-fasteners: slackware@sukkology.net

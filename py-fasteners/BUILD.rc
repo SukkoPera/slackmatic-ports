@@ -1,0 +1,23 @@
+. ../sukkolib.rc
+
+BRIEF='A python package that provides useful locks'
+PROJECT=https://github.com/harlowja/fasteners
+RELEASE=0.18
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+TNAME=fasteners
+BUILDDIR=$TNAME-$RELEASE
+BUILDSYSTEM=python
+
+SOURCE=(
+	MYFETCH:$NAME-$RELEASE.tar.gz
+)
+
+fn myfetch () {
+	wget https://github.com/harlowja/fasteners/archive/refs/tags/$RELEASE.tar.gz -O $NAME-$RELEASE.tar.gz
+}
+
+fn configure () {
+	# I hate distutils2
+	cp $CWD/setup.py .
+}
