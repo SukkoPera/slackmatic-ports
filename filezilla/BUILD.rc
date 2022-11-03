@@ -2,11 +2,11 @@
 
 BRIEF='The free FTP solution'
 PROJECT=http://filezilla-project.org
-RELEASE=3.57.0
+RELEASE=3.62.0
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
-H=Woi5ved_lAHWOUWsMYg_8A
-X=1640896835
+H=sNlZ5kTrGtqruYH0QIZy4g
+X=1667518441
 
 SOURCE=(
         MYFETCH:$NAME-$RELEASE.tar.bz2
