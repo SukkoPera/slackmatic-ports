@@ -1,0 +1,30 @@
+. ../sukkolib.rc
+
+BRIEF='Portable GAL Assembler'
+PROJECT=https://github.com/daveho/GALasm
+RELEASE=`{date +%Y%m%d}
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=GALasm-master
+
+fn myfetch () {
+	wget https://github.com/daveho/GALasm/archive/refs/heads/master.zip -O $NAME-$RELEASE.zip
+}
+
+SOURCE=(
+	MYFETCH:$NAME-$RELEASE.zip
+)
+
+fn build {
+        setup
+
+        cd src
+        make -j $NUMJOBS
+
+
+        mkdir -p $PKG/usr/bin
+        cp galasm $PKG/usr/bin || exit 102
+
+	cd ..
+	cp ChangeLog README README2 $DOC || exit 103
+}

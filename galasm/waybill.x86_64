@@ -1,0 +1,9 @@
+drwxr-xr-x|0755|sukko/sukko|usr|
+drwxr-xr-x|0755|sukko/sukko|usr/bin|
+-rwxr-xr-x|0755|sukko/sukko|usr/bin/galasm|
+drwxr-xr-x|0755|sukko/sukko|usr/doc|
+drwxr-xr-x|0755|sukko/sukko|usr/doc/galasm-20221108|
+-rw-r--r--|0644|sukko/sukko|usr/doc/galasm-20221108/BUILD.rc|
+-rw-r--r--|0644|sukko/sukko|usr/doc/galasm-20221108/ChangeLog|
+-rw-r--r--|0644|sukko/sukko|usr/doc/galasm-20221108/README|
+-rw-r--r--|0644|sukko/sukko|usr/doc/galasm-20221108/README2|
