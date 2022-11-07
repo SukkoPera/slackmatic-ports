@@ -1,0 +1,15 @@
+. ../sukkolib.rc
+
+BRIEF='Open source, decentralized and multi-platform package manager'
+PROJECT=https://conan.io
+RELEASE=1.54.0
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+fn myfetch () {
+	wget https://github.com/conan-io/conan/archive/refs/tags/$RELEASE.tar.gz -O $NAME-$RELEASE.tar.gz
+}
+
+SOURCE=(
+	MYFETCH:$NAME-$RELEASE.tar.gz
+)
