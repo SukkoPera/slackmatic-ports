@@ -1,0 +1,15 @@
+. ../sukkolib.rc
+
+BRIEF='A fast, easy to use tool for analyzing, reverse engineering, and extracting firmware images'
+PROJECT=https://github.com/ReFirmLabs/binwalk
+RELEASE=2.3.3
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+fn myfetch () {
+	wget https://github.com/ReFirmLabs/binwalk/archive/refs/tags/v$RELEASE.tar.gz -O $NAME-$RELEASE.tar.gz
+}
+
+SOURCE=(
+	MYFETCH:$NAME-$RELEASE.tar.gz
+)

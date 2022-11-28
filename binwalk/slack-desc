@@ -1,0 +1,11 @@
+binwalk: binwalk (A fast, easy to use tool for analyzing, reverse engineering, and extracting firmware images)
+binwalk:
+binwalk: This is a slackmatic port build of binwalk:
+binwalk: A fast, easy to use tool for analyzing, reverse engineering, and extracting firmware images 
+binwalk:
+binwalk: For more information about the package, see the project website at:
+binwalk: https://github.com/ReFirmLabs/binwalk
+binwalk:
+binwalk:
+binwalk: This slackmatic port was developed by:
+binwalk: slackware@sukkology.net
