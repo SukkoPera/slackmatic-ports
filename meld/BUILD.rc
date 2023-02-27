@@ -2,7 +2,7 @@
 
 BRIEF='A visual diff and merge tool'
 PROJECT=http://meldmerge.org
-RELEASE=3.21.0
+RELEASE=3.22.0
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
@@ -16,11 +16,14 @@ DOCS=(
 	MAINTAINERS
 )
 
+fn configure {
+	meson setup --prefix'='/usr --libdir'='$LIBDIR --sysconfdir'='/etc --mandir'='/usr/man build
+}
+
 fn compile {
-        python3 setup.py build || exit 101
+	ninja -C build
 }
 
 fn inst {
-        python3 setup.py install --root $PKG || exit 102
-	mv $PKG/usr/share/man $PKG/usr
+	DESTDIR=$PKG ninja -C build install
 }
