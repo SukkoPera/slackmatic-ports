@@ -2,13 +2,13 @@
 
 BRIEF='A Free, Fast, and Small Automatic Formatter'
 PROJECT=http://astyle.sourceforge.net/
-RELEASE=2.05.1
+RELEASE=3.1
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDDIR=$NAME
 
 SOURCE=(
-	$SF/$NAME/$NAME/astyle%202.05/$NAME'_'$RELEASE'_linux.tar.gz'
+	$SF/$NAME/$NAME/astyle%20$RELEASE/$NAME'_'$RELEASE'_linux.tar.gz'
 )
 
 fn build {
@@ -23,6 +23,5 @@ fn build {
 
 
 	mkdir -p $PKG/$LIBDIR
-	cp bin/libastyle-*.so $PKG/$LIBDIR/libastyle-2.05.so || exit 102
-	ln -sf libastyle-2.05.so $PKG/$LIBDIR/libastyle.so || exit 103
+	cp bin/libastyle*.so.* $PKG/$LIBDIR || exit 102
 }
