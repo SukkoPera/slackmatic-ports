@@ -2,7 +2,7 @@
 
 BRIEF='The Versatile Commodore Emulator'
 PROJECT=http://vice-emu.sourceforge.net/
-RELEASE=3.4
+RELEASE=3.7.1
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
@@ -14,6 +14,11 @@ CONFOPTS=(
 	$DEFAULT_CONFOPTS
 	--without-oss
 	--with-sdlsound
-	--enable-external-ffmpeg
-	--enable-native-gtk3ui 
+	--with-libcurl
+	--enable-ethernet
+	--enable-cpuhistory
+	--enable-lame
+	--enable-midi
+#	--enable-ffmpeg
+	--enable-gtk3ui
 )
