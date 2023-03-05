@@ -1,0 +1,11 @@
+midicomp: midicomp (A MIDI Compiler - convert SMF MIDI files to and from plain text)
+midicomp:
+midicomp: This is a slackmatic port build of midicomp:
+midicomp: A MIDI Compiler - convert SMF MIDI files to and from plain text 
+midicomp:
+midicomp: For more information about the package, see the project website at:
+midicomp: https://github.com/markc/midicomp
+midicomp:
+midicomp:
+midicomp: This slackmatic port was developed by:
+midicomp: slackware@sukkology.net

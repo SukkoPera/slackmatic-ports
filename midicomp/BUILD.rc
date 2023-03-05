@@ -1,0 +1,16 @@
+. ../sukkolib.rc
+
+BRIEF='A MIDI Compiler - convert SMF MIDI files to and from plain text'
+PROJECT=https://github.com/markc/midicomp
+RELEASE=`{date +%Y%m%d}
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=$NAME-master
+
+fn myfetch () {
+	wget https://github.com/markc/midicomp/archive/refs/heads/master.tar.gz -O $NAME-$RELEASE.tar.gz
+}
+
+SOURCE=(
+	MYFETCH:$NAME-$RELEASE.tar.gz
+)
