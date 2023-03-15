@@ -1,0 +1,11 @@
+libebur128: libebur128 (A library implementing the EBU R128 loudness standard)
+libebur128:
+libebur128: This is a slackmatic port build of libebur128:
+libebur128: A library implementing the EBU R128 loudness standard 
+libebur128:
+libebur128: For more information about the package, see the project website at:
+libebur128: https://github.com/jiixyj/libebur128
+libebur128:
+libebur128:
+libebur128: This slackmatic port was developed by:
+libebur128: slackware@sukkology.net

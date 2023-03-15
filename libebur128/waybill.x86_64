@@ -1,0 +1,14 @@
+drwxr-xr-x|0755|root/root|usr|
+drwxr-xr-x|0755|root/root|usr/doc|
+drwxr-xr-x|0755|root/root|usr/doc/libebur128-1.2.6|
+-rw-r--r--|0644|root/root|usr/doc/libebur128-1.2.6/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/libebur128-1.2.6/COPYING|
+-rw-r--r--|0644|root/root|usr/doc/libebur128-1.2.6/README.md|
+drwxr-xr-x|0755|root/root|usr/include|
+-rw-r--r--|0644|root/root|usr/include/ebur128.h|
+drwxr-xr-x|0755|root/root|usr/lib64|
+lrwxrwxrwx|0777|root/root|usr/lib64/libebur128.so|->|libebur128.so.1|
+lrwxrwxrwx|0777|root/root|usr/lib64/libebur128.so.1|->|libebur128.so.1.2.6|
+-rwxr-xr-x|0755|root/root|usr/lib64/libebur128.so.1.2.6|
+drwxr-xr-x|0755|root/root|usr/lib64/pkgconfig|
+-rw-r--r--|0644|root/root|usr/lib64/pkgconfig/libebur128.pc|

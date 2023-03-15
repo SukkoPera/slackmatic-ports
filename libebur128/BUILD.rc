@@ -1,0 +1,15 @@
+. ../sukkolib.rc
+
+BRIEF='A library implementing the EBU R128 loudness standard'
+PROJECT=https://github.com/jiixyj/libebur128
+RELEASE=1.2.6
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+fn myfetch () {
+	wget https://github.com/jiixyj/libebur128/archive/refs/tags/v$RELEASE.tar.gz -O $NAME-$RELEASE.tar.gz
+}
+
+SOURCE=(
+	MYFETCH:$NAME-$RELEASE.tar.gz
+)
