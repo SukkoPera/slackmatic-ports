@@ -1,0 +1,16 @@
+. ../sukkolib.rc
+
+BRIEF='JSON for Modern C++'
+PROJECT=https://github.com/nlohmann/json
+RELEASE=3.11.2
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=json-$RELEASE
+
+fn myfetch () {
+	wget https://github.com/nlohmann/json/archive/refs/tags/v$RELEASE.tar.gz -O $NAME-$RELEASE.tar.gz
+}
+
+SOURCE=(
+	MYFETCH:$NAME-$RELEASE.tar.gz
+)

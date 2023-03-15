@@ -1,0 +1,11 @@
+nlohmann-json: nlohmann-json (JSON for Modern C++)
+nlohmann-json:
+nlohmann-json: This is a slackmatic port build of nlohmann-json:
+nlohmann-json: JSON for Modern C++ 
+nlohmann-json:
+nlohmann-json: For more information about the package, see the project website at:
+nlohmann-json: https://github.com/nlohmann/json
+nlohmann-json:
+nlohmann-json:
+nlohmann-json: This slackmatic port was developed by:
+nlohmann-json: slackware@sukkology.net
