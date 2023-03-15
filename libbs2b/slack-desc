@@ -1,0 +1,11 @@
+libbs2b: libbs2b (Bauer stereophonic-to-binaural DSP)
+libbs2b:
+libbs2b: This is a slackmatic port build of libbs2b:
+libbs2b: Bauer stereophonic-to-binaural DSP 
+libbs2b:
+libbs2b: For more information about the package, see the project website at:
+libbs2b: https://bs2b.sourceforge.net/
+libbs2b:
+libbs2b:
+libbs2b: This slackmatic port was developed by:
+libbs2b: slackware@sukkology.net
