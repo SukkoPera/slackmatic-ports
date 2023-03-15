@@ -7,12 +7,11 @@ drwxr-xr-x|0755|root/root|lib/udev/rules.d|
 drwxr-xr-x|0755|root/root|usr|
 drwxr-xr-x|0755|root/root|usr/bin|
 -rwxr-xr-x|0755|root/root|usr/bin/minipro|
--rwxr-xr-x|0755|root/root|usr/bin/miniprohex|
 drwxr-xr-x|0755|root/root|usr/doc|
-drwxr-xr-x|0755|root/root|usr/doc/minipro-20201114|
--rw-r--r--|0644|root/root|usr/doc/minipro-20201114/BUILD.rc|
--rw-r--r--|0644|root/root|usr/doc/minipro-20201114/LICENSE|
--rw-r--r--|0644|root/root|usr/doc/minipro-20201114/README.md|
+drwxr-xr-x|0755|root/root|usr/doc/minipro-20230315|
+-rw-r--r--|0644|root/root|usr/doc/minipro-20230315/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/minipro-20230315/LICENSE|
+-rw-r--r--|0644|root/root|usr/doc/minipro-20230315/README.md|
 drwxr-xr-x|0755|root/root|usr/man|
 drwxr-xr-x|0755|root/root|usr/man/man1|
 -rw-r--r--|0644|root/root|usr/man/man1/minipro.1.gz|
@@ -22,3 +21,4 @@ drwxr-xr-x|0755|root/root|usr/share/bash-completion/completions|
 -rw-r--r--|0644|root/root|usr/share/bash-completion/completions/minipro|
 drwxr-xr-x|0755|root/root|usr/share/minipro|
 -rw-r--r--|0644|root/root|usr/share/minipro/infoic.xml|
+-rw-r--r--|0644|root/root|usr/share/minipro/logicic.xml|

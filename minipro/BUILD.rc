@@ -1,14 +1,14 @@
 . ../sukkolib.rc
 
 BRIEF='Open source program for controlling the MiniPRO TL866xx series of chip programmers'
-PROJECT=https://github.com/vdudouyt/minipro
+PROJECT=https://gitlab.com/DavidGriffith/minipro/
 RELEASE=`{date +%Y%m%d}
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDDIR=minipro-master
 
 fn myfetch () {
-	wget https://gitlab.com/DavidGriffith/minipro/-/archive/master/$NAME-master.tar.bz2 -O $NAME-$RELEASE.tar.bz2
+	wget https://gitlab.com/DavidGriffith/minipro/-/archive/master/minipro-master.tar.bz2 -O $NAME-$RELEASE.tar.bz2
 }
 
 SOURCE=(
