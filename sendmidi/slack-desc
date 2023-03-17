@@ -1,0 +1,11 @@
+sendmidi: sendmidi (Sommand-line tool to send out MIDI messages)
+sendmidi:
+sendmidi: This is a slackmatic port build of sendmidi:
+sendmidi: Sommand-line tool to send out MIDI messages 
+sendmidi:
+sendmidi: For more information about the package, see the project website at:
+sendmidi: https://github.com/gbevin/SendMIDI
+sendmidi:
+sendmidi:
+sendmidi: This slackmatic port was developed by:
+sendmidi: slackware@sukkology.net

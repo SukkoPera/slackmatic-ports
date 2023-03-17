@@ -1,0 +1,29 @@
+. ../sukkolib.rc
+
+BRIEF='Command-line tool to monitor and receive MIDI messages'
+PROJECT=https://github.com/gbevin/SendMIDI
+RELEASE=1.3.0
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=ReceiveMIDI-$RELEASE
+
+fn myfetch () {
+	wget https://github.com/gbevin/ReceiveMIDI/archive/refs/tags/$RELEASE.tar.gz -O $NAME-$RELEASE.tar.gz
+}
+
+SOURCE=(
+	MYFETCH:$NAME-$RELEASE.tar.gz
+)
+
+fn build {
+	setup
+
+	cd Builds/LinuxMakefile
+	make -j $NUMJOBS
+
+	mkdir -p $PKG/usr/bin
+	cp build/receivemidi $PKG/usr/bin || exit 101
+
+	cd ../..
+	std_docinst
+}

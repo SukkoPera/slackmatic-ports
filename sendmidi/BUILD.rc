@@ -1,0 +1,29 @@
+. ../sukkolib.rc
+
+BRIEF='Sommand-line tool to send out MIDI messages'
+PROJECT=https://github.com/gbevin/SendMIDI
+RELEASE=1.2.0
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=SendMIDI-$RELEASE
+
+fn myfetch () {
+	wget https://github.com/gbevin/SendMIDI/archive/refs/tags/$RELEASE.tar.gz -O $NAME-$RELEASE.tar.gz
+}
+
+SOURCE=(
+	MYFETCH:$NAME-$RELEASE.tar.gz
+)
+
+fn build {
+	setup
+
+	cd Builds/LinuxMakefile
+	make -j $NUMJOBS
+
+	mkdir -p $PKG/usr/bin
+	cp build/sendmidi $PKG/usr/bin || exit 101
+
+	cd ../..
+	std_docinst
+}

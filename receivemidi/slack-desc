@@ -1,0 +1,11 @@
+receivemidi: receivemidi (Command-line tool to monitor and receive MIDI messages)
+receivemidi:
+receivemidi: This is a slackmatic port build of receivemidi:
+receivemidi: Command-line tool to monitor and receive MIDI messages 
+receivemidi:
+receivemidi: For more information about the package, see the project website at:
+receivemidi: https://github.com/gbevin/SendMIDI
+receivemidi:
+receivemidi:
+receivemidi: This slackmatic port was developed by:
+receivemidi: slackware@sukkology.net

@@ -1,0 +1,8 @@
+drwxr-xr-x|0755|root/root|usr|
+drwxr-xr-x|0755|root/root|usr/bin|
+-rwxr-xr-x|0755|root/root|usr/bin/sendmidi|
+drwxr-xr-x|0755|root/root|usr/doc|
+drwxr-xr-x|0755|root/root|usr/doc/sendmidi-1.2.0|
+-rw-r--r--|0644|root/root|usr/doc/sendmidi-1.2.0/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/sendmidi-1.2.0/COPYING.md|
+-rw-r--r--|0644|root/root|usr/doc/sendmidi-1.2.0/README.md|
