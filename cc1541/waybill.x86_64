@@ -1,0 +1,9 @@
+drwxr-xr-x|0755|root/root|usr|
+drwxr-xr-x|0755|root/root|usr/doc|
+drwxr-xr-x|0755|root/root|usr/doc/cc1541-4.1|
+-rw-r--r--|0644|root/root|usr/doc/cc1541-4.1/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/cc1541-4.1/LICENSE.txt|
+-rw-r--r--|0644|root/root|usr/doc/cc1541-4.1/README.md|
+drwxr-xr-x|0755|root/root|usr/local|
+drwxr-xr-x|0755|root/root|usr/local/bin|
+-rwxr-xr-x|0755|root/root|usr/local/bin/cc1541|
