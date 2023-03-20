@@ -1,14 +1,13 @@
 . ../sukkolib.rc
 
 BRIEF='A file archiver with highest compression ratio'
-PROJECT=http://p7zip.sourceforge.net
-RELEASE=16.02
+PROJECT=https://github.com/p7zip-project/p7zip
+RELEASE=17.05
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
-BUILDDIR=$NAME'_'$RELEASE
 
 SOURCE=(
-	$SF'/'$NAME'/'$NAME'_'$RELEASE'_src_all.tar.bz2'
+	https://github.com/p7zip-project/p7zip/archive/refs/tags/v$RELEASE.tar.gz
 )
 
 fn configure {

@@ -2,11 +2,12 @@ drwxr-xr-x|0755|root/root|usr|
 drwxr-xr-x|0755|root/root|usr/bin|
 -rwxr-xr-x|0755|root/root|usr/bin/7za|
 drwxr-xr-x|0755|root/root|usr/doc|
-drwxr-xr-x|0755|root/root|usr/doc/p7zip-16.02|
--rw-r--r--|0644|root/root|usr/doc/p7zip-16.02/BUILD.rc|
--rw-r--r--|0644|root/root|usr/doc/p7zip-16.02/ChangeLog|
--rw-r--r--|0644|root/root|usr/doc/p7zip-16.02/README|
--rw-r--r--|0644|root/root|usr/doc/p7zip-16.02/TODO|
+drwxr-xr-x|0755|root/root|usr/doc/p7zip-17.05|
+-rw-r--r--|0644|root/root|usr/doc/p7zip-17.05/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/p7zip-17.05/ChangeLog|
+-rw-r--r--|0644|root/root|usr/doc/p7zip-17.05/README|
+-rw-r--r--|0644|root/root|usr/doc/p7zip-17.05/README.md|
+-rw-r--r--|0644|root/root|usr/doc/p7zip-17.05/TODO|
 drwxr-xr-x|0755|root/root|usr/man|
 drwxr-xr-x|0755|root/root|usr/man/man1|
 -rw-r--r--|0644|root/root|usr/man/man1/7z.1.gz|
