@@ -2,7 +2,7 @@
 
 BRIEF='MATE Desktop Environment'
 PROJECT=http://mate-desktop.org
-RELEASE=3.22.22
+RELEASE=3.22.24
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
