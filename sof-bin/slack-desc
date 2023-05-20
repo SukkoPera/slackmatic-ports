@@ -1,0 +1,11 @@
+sof-bin: sof-bin (Sound Open Firmware)
+sof-bin:
+sof-bin: This is a slackmatic port build of sof-bin:
+sof-bin: Sound Open Firmware 
+sof-bin:
+sof-bin: For more information about the package, see the project website at:
+sof-bin: https://github.com/thesofproject/sof
+sof-bin:
+sof-bin:
+sof-bin: This slackmatic port was developed by:
+sof-bin: slackware@sukkology.net

@@ -1,0 +1,23 @@
+. ../sukkolib.rc
+
+BRIEF='Sound Open Firmware'
+PROJECT=https://github.com/thesofproject/sof
+RELEASE=2.2.5
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=$NAME-v$RELEASE
+
+SOURCE=(
+	https://github.com/thesofproject/sof-bin/releases/download/v$RELEASE/$NAME-v$RELEASE.tar.gz	
+)
+
+fn build {
+	setup
+
+	mkdir -p $PKG/lib/firmware/intel
+	mkdir -p $PKG/usr/bin
+
+	FW_DEST=$PKG/lib/firmware/intel TOOLS_DEST=$PKG/usr/bin ./install.sh v$RELEASE || exit $status
+
+	std_docinst
+}
