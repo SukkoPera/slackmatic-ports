@@ -1,0 +1,11 @@
+. ../sukkolib.rc
+
+BRIEF='File and directory monitoring system'
+PROJECT=https://packages.debian.org/sid/gamin
+RELEASE=0.1.10
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://deb.debian.org/debian/pool/main/g/gamin/$NAME'_'$RELEASE'.orig'.tar.gz
+)
