@@ -2,7 +2,7 @@
 
 BRIEF='Sound Open Firmware'
 PROJECT=https://github.com/thesofproject/sof
-RELEASE=2.2.5
+RELEASE=2.2.6
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDDIR=$NAME-v$RELEASE
