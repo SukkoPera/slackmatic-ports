@@ -1,7 +1,7 @@
-drwxr-xr-x|0755|sukko/sukko|usr|
-drwxr-xr-x|0755|sukko/sukko|usr/bin|
--rwxr-xr-x|0755|sukko/sukko|usr/bin/picotool|
-drwxr-xr-x|0755|sukko/sukko|usr/doc|
-drwxr-xr-x|0755|sukko/sukko|usr/doc/picotool-1.1.0|
--rw-r--r--|0644|sukko/sukko|usr/doc/picotool-1.1.0/BUILD.rc|
--rw-r--r--|0644|sukko/sukko|usr/doc/picotool-1.1.0/README.md|
+drwxr-xr-x|0755|root/root|usr|
+drwxr-xr-x|0755|root/root|usr/bin|
+-rwxr-xr-x|0755|root/root|usr/bin/picotool|
+drwxr-xr-x|0755|root/root|usr/doc|
+drwxr-xr-x|0755|root/root|usr/doc/picotool-1.1.2|
+-rw-r--r--|0644|root/root|usr/doc/picotool-1.1.2/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/picotool-1.1.2/README.md|
