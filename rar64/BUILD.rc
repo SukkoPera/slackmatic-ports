@@ -2,13 +2,14 @@
 
 BRIEF='RAR archiver (64-bit version)'
 PROJECT=http://www.rarlab.com
-RELEASE=5.6.1
+RELEASE=6.23
+TRELEASE=623
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDDIR=rar
 
 SOURCE=(
-	'http://www.rarlab.com/rar/rarlinux'-x64-$RELEASE.tar.gz
+	'http://www.rarlab.com/rar/rarlinux'-x64-$TRELEASE.tar.gz
 )
 
 DOCS=(
