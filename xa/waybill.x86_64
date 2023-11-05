@@ -7,11 +7,11 @@ drwxr-xr-x|0755|root/root|bin|
 -rwxr-xr-x|0755|root/root|bin/xa|
 drwxr-xr-x|0755|root/root|usr|
 drwxr-xr-x|0755|root/root|usr/doc|
-drwxr-xr-x|0755|root/root|usr/doc/xa-2.3.11|
--rw-r--r--|0644|root/root|usr/doc/xa-2.3.11/BUILD.rc|
--rw-r--r--|0644|root/root|usr/doc/xa-2.3.11/COPYING|
--rw-r--r--|0644|root/root|usr/doc/xa-2.3.11/ChangeLog|
--rw-r--r--|0644|root/root|usr/doc/xa-2.3.11/TODO|
+drwxr-xr-x|0755|root/root|usr/doc/xa-2.3.14|
+-rw-r--r--|0644|root/root|usr/doc/xa-2.3.14/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/xa-2.3.14/COPYING|
+-rw-r--r--|0644|root/root|usr/doc/xa-2.3.14/ChangeLog|
+-rw-r--r--|0644|root/root|usr/doc/xa-2.3.14/TODO|
 drwxr-xr-x|0755|root/root|usr/man|
 drwxr-xr-x|0755|root/root|usr/man/man1|
 -rwxr-xr-x|0755|root/root|usr/man/man1/file65.1.gz|
