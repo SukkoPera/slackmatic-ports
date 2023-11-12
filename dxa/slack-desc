@@ -1,0 +1,11 @@
+dxa: dxa (A rudely hacked version of Marko Makela's d65 6502s disassembler)
+dxa:
+dxa: This is a slackmatic port build of dxa:
+dxa: A rudely hacked version of Marko Makela's d65 6502s disassembler 
+dxa:
+dxa: For more information about the package, see the project website at:
+dxa: https://www.floodgap.com/retrotech/xa/
+dxa:
+dxa:
+dxa: This slackmatic port was developed by:
+dxa: slackware@sukkology.net

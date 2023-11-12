@@ -1,0 +1,24 @@
+. ../sukkolib.rc
+
+BRIEF='A rudely hacked version of Marko Makela''s d65 6502s disassembler'
+PROJECT=https://www.floodgap.com/retrotech/xa/
+RELEASE=0.1.5
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	https://www.floodgap.com/retrotech/xa/dists/$NAME-$RELEASE.tar.gz
+)
+
+fn compile {
+	sed -i 's/CFLAGS\s=\s\(.*\)/CFLAGS=\1 -DLONG_OPTIONS/' Makefile || exit $status
+	std_compile
+}
+
+fn inst {
+	mkdir -p $PKG/usr/bin
+	cp dxa $PKG/usr/bin
+
+	mkdir -p $PKG/usr/man/man1
+	cp dxa.1 $PKG/usr/man/man1
+}
