@@ -1,0 +1,11 @@
+dasm: dasm (A versatile macro assembler with support for several 8-bit microprocessors)
+dasm:
+dasm: This is a slackmatic port build of dasm:
+dasm: A versatile macro assembler with support for several 8-bit microprocessors 
+dasm:
+dasm: For more information about the package, see the project website at:
+dasm: https://dasm-assembler.github.io/
+dasm:
+dasm:
+dasm: This slackmatic port was developed by:
+dasm: slackware@sukkology.net

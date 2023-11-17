@@ -1,0 +1,22 @@
+. ../sukkolib.rc
+
+BRIEF='A versatile macro assembler with support for several 8-bit microprocessors'
+PROJECT=https://dasm-assembler.github.io/
+RELEASE=2.20.14.1
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+fn myfetch () {
+	wget https://github.com/dasm-assembler/dasm/archive/refs/tags/2.20.14.1.tar.gz -O $NAME-$RELEASE.tar.gz
+}
+
+SOURCE=(
+	MYFETCH:$NAME-$RELEASE.tar.gz
+)
+
+fn inst {
+	mkdir -p $PKG/usr/bin
+
+	cp src/dasm $PKG/usr/bin/dasm
+	cp src/ftohex $PKG/usr/bin/ftohex
+}

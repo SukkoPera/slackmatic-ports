@@ -1,0 +1,11 @@
+drwxr-xr-x|0755|root/root|usr|
+drwxr-xr-x|0755|root/root|usr/bin|
+-rwxr-xr-x|0755|root/root|usr/bin/dasm|
+-rwxr-xr-x|0755|root/root|usr/bin/ftohex|
+drwxr-xr-x|0755|root/root|usr/doc|
+drwxr-xr-x|0755|root/root|usr/doc/dasm-2.20.14.1|
+-rw-r--r--|0644|root/root|usr/doc/dasm-2.20.14.1/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/dasm-2.20.14.1/ChangeLog|
+-rw-r--r--|0644|root/root|usr/doc/dasm-2.20.14.1/LICENSE|
+-rw-r--r--|0644|root/root|usr/doc/dasm-2.20.14.1/NEWS|
+-rw-r--r--|0644|root/root|usr/doc/dasm-2.20.14.1/README|
