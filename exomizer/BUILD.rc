@@ -1,0 +1,36 @@
+. ../sukkolib.rc
+
+BRIEF='A file compressor aimed at 6502-based 8-bit computers'
+PROJECT=https://bitbucket.org/magli143/exomizer/wiki/Home
+RELEASE=3.1.1
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	https://bitbucket.org/magli143/exomizer/wiki/downloads/$NAME-$RELEASE.zip
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	changelog.txt
+	exo20info.txt
+	exo31info.txt
+	exobasic10b2.txt
+)
+
+fn build {
+	# ZIP file unpacks in current dir, sigh
+	mkdir $SRC/$NAME-$RELEASE
+	mv $SRC/* $SRC/$NAME-$RELEASE
+        setup
+
+	cd src
+        compile
+
+	mkdir -p $PKG/usr/bin
+        install -o root -g root exomizer exobasic $PKG/usr/bin
+
+	cd ..
+        docinst
+}
+

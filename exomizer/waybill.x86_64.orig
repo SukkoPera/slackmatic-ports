@@ -1,0 +1,7 @@
+drwxr-xr-x|0755|root/root|usr|
+drwxr-xr-x|0755|root/root|usr/bin|
+-rwxr-xr-x|0755|root/root|usr/bin/exobasic|
+-rwxr-xr-x|0755|root/root|usr/bin/exomizer|
+drwxr-xr-x|0755|root/root|usr/doc|
+drwxr-xr-x|0755|root/root|usr/doc/exomizer-3.1.1|
+-rw-r--r--|0644|root/root|usr/doc/exomizer-3.1.1/BUILD.rc|
