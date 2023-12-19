@@ -1,0 +1,11 @@
+dsview: dsview (A GUI program for supporting logic analyzers, oscilloscopes, etc from DreamSourceLab)
+dsview:
+dsview: This is a slackmatic port build of dsview:
+dsview: A GUI program for supporting logic analyzers, oscilloscopes, etc from DreamSourceLab 
+dsview:
+dsview: For more information about the package, see the project website at:
+dsview: https://github.com/DreamSourceLab/DSView/
+dsview:
+dsview:
+dsview: This slackmatic port was developed by:
+dsview: slackware@sukkology.net

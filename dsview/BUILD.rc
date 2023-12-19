@@ -1,0 +1,16 @@
+. ../sukkolib.rc
+
+BRIEF='A GUI program for supporting logic analyzers, oscilloscopes, etc from DreamSourceLab'
+PROJECT=https://github.com/DreamSourceLab/DSView/
+RELEASE=1.3.1
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=DSView-$RELEASE
+
+fn myfetch () {
+	wget https://github.com/DreamSourceLab/DSView/archive/v$RELEASE.tar.gz -O $NAME-$RELEASE.tar.gz
+}
+
+SOURCE=(
+	MYFETCH:$NAME-$RELEASE.tar.gz
+)
