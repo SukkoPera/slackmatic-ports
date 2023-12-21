@@ -1,0 +1,21 @@
+. ../sukkolib.rc
+
+BRIEF='Tweak tool for the MATE Desktop '
+PROJECT=https://github.com/ubuntu-mate/mate-tweak
+RELEASE=22.10.0
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+fn myfetch () {
+	wget https://github.com/ubuntu-mate/mate-tweak/archive/refs/tags/$RELEASE.tar.gz -O $NAME-$RELEASE.tar.gz
+}
+
+SOURCE=(
+	MYFETCH:$NAME-$RELEASE.tar.gz
+)
+
+fn inst {
+	std_inst
+
+	mv $PKG/usr/share/man $PKG/usr
+}
