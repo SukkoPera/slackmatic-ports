@@ -2,11 +2,15 @@
 
 BRIEF='A tool to display GTK dialog boxes in shell scripts'
 PROJECT=https://wiki.gnome.org/Projects/Zenity
-RELEASE=3.16.3
+RELEASE=3.18.1
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
 MAJORV=`{echo $RELEASE | sed 's:\.[0-9]$::'}
 SOURCE=(
 	http://ftp.gnome.org/pub/gnome/sources/zenity/$MAJORV/$NAME-$RELEASE.tar.xz
+)
+
+PATCHES=(
+	no_webkitgtk.patch
 )
