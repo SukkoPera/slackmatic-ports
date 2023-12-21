@@ -2,8 +2,8 @@
 
 BRIEF='MATE Desktop Environment'
 PROJECT=http://mate-desktop.org
-RELEASE=1.26.0
-BUILD=2suk_$SLCKVER
+RELEASE=1.26.1
+BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
 MAJORV=`{echo $RELEASE | sed 's:\.[0-9]$::'}
