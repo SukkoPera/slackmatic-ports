@@ -2,29 +2,37 @@
 
 BRIEF='all-platform eMule P2P Client'
 PROJECT=http://amule.org
-RELEASE=2.3.2
+RELEASE=2.3.3
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 TNAME=aMule
 BUILDDIR=$TNAME-$RELEASE
 
 SOURCE=(
-	https://sourceforge.net/projects/amule/files/aMule/2.3.2/$TNAME-$RELEASE.tar.xz
-)
-
-PATCHES=(
-	amule-2.3.2-cryptopp-6.patch
-	amule-2.3.2-fix-crash-closing-last-search-tab-1.patch
-	amule-2.3.2-fix-crash-closing-last-search-tab-2.patch
-	amule-2.3.2-fix-crash-shared-dir-utf8.patch
-	amule-2.3.2-fix-crash-when-shared-files-changed.patch
-	amule-2.3.2-Fixed-compilation-with-newer-bfd.patch
-	amule-2.3.2-fix-ambiguous-byte.patch
+	https://sourceforge.net/projects/amule/files/aMule/$RELEASE/$TNAME-$RELEASE.tar.xz
 )
 
 CONFOPTS=(
-	$DEFAULT_CONFOPTS
-	--with-wx-config'='/usr/bin/wx-config-3
-	--enable-amulecmd
-	--with-boost
+	$DEFAULT_CONFOPTS_CMAKE
+	-DBUILD_AMULECMD'='ON
+	-DBUILD_DAEMON'='ON
+	-DBUILD_REMOTEGUI'='ON
+	-DBUILD_WEBSERVER'='ON
+	-DBUILD_TESTING'='OFF
+	-DENABLE_MMAP'='ON
+	-DCMAKE_INSTALL_MANDIR'='/usr/man
+
+	# Does not seem to work
+#	-DCMAKE_INSTALL_DOCDIR'='$DOC
 )
+
+PATCHES=(
+	amule-fix-exception.patch
+)
+
+fn docinst {
+	std_docinst
+
+	mv $PKG/usr/share/doc/* $DOC
+	rm -rf $PKG/usr/share/doc
+}

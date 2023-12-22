@@ -3,7 +3,7 @@
 BRIEF='Cross-platform GUI library'
 PROJECT=http://www.wxwidgets.org
 RELEASE=2.8.12
-BUILD=1suk_$SLCKVER
+BUILD=4suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDDIR=wxGTK-$RELEASE
 
@@ -25,3 +25,12 @@ DOCS=(
 	$DEFAULT_DOCS
 	*.txt
 )
+
+fn configure {
+	# Workaround for newer versions of GCC
+	for (xbm in `{find src/gtk -name *.xbm}) {
+		sed -i 's/0x\([0-9a-fA-F][0-9a-fA-F]\)/(char) 0x\1/g' $xbm || exit $status
+	}
+
+	std_configure
+}
