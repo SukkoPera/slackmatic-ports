@@ -15,5 +15,8 @@ fn std_inst_python {
 
 	# Dirty hack
 	sed -i '2 i \\nimport sys\n\nsys.path.insert(0, "/usr/share/fs-uae-launcher/")' $PKG/usr/bin/fs-uae-launcher || exit 103
+
+	# Desktop entry
+	insticon share/applications/fs-uae-launcher.desktop share/icons/hicolor/128x128/apps/fs-uae-launcher.png
 }
 

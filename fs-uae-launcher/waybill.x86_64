@@ -9,6 +9,8 @@ drwxr-xr-x|0755|root/root|usr/doc/fs-uae-launcher-3.1.68|
 -rw-r--r--|0644|root/root|usr/doc/fs-uae-launcher-3.1.68/INSTALL|
 -rw-r--r--|0644|root/root|usr/doc/fs-uae-launcher-3.1.68/README|
 drwxr-xr-x|0755|root/root|usr/share|
+drwxr-xr-x|0755|root/root|usr/share/applications|
+-rw-r--r--|0644|root/root|usr/share/applications/fs-uae-launcher.desktop|
 drwxr-xr-x|0755|root/root|usr/share/fs-uae-launcher|
 drwxr-xr-x|0755|root/root|usr/share/fs-uae-launcher/amitools|
 drwxr-xr-x|0755|root/root|usr/share/fs-uae-launcher/amitools/data|
@@ -3494,3 +3496,5 @@ drwxr-xr-x|0755|root/root|usr/share/fs-uae-launcher/workspace/util/__pycache__|
 -rw-r--r--|0644|root/root|usr/share/fs-uae-launcher/workspace/util/__pycache__/browse_button.cpython-39.pyc|
 -rw-r--r--|0644|root/root|usr/share/fs-uae-launcher/workspace/util/__pycache__/help_button.cpython-39.pyc|
 -rw-r--r--|0644|root/root|usr/share/fs-uae-launcher/workspace/util/__pycache__/__init__.cpython-39.pyc|
+drwxr-xr-x|0755|root/root|usr/share/pixmaps|
+-rw-r--r--|0644|root/root|usr/share/pixmaps/fs-uae-launcher.png|
