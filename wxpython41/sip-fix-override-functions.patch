@@ -1,0 +1,15 @@
+diff --git a/sip/cpp/sip_gridwxGridEvent.cpp b/sip/cpp/sip_gridwxGridEvent.cpp
+index 0830b677..314aec94 100644
+--- a/sip/cpp/sip_gridwxGridEvent.cpp
++++ b/sip/cpp/sip_gridwxGridEvent.cpp
+@@ -32,8 +32,8 @@ public:
+      * this class.
+      */
+ protected:
+-    int GetRow() SIP_OVERRIDE;
+-    int GetCol() SIP_OVERRIDE;
++    int GetRow() ;
++    int GetCol() ;
+      ::wxEvent* Clone() const SIP_OVERRIDE;
+      ::wxEventCategory GetEventCategory() const SIP_OVERRIDE;
+ 

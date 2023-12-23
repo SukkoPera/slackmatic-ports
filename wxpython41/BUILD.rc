@@ -1,0 +1,25 @@
+. ../sukkolib.rc
+
+BRIEF='A blending of the wxWidgets C++ class library with the Python programming language'
+PROJECT=https://wxpython.org/
+RELEASE=4.1.1
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+TNAME=wxPython
+BUILDDIR=$TNAME-$RELEASE
+
+SOURCE=(
+	https://files.pythonhosted.org/packages/b0/4d/80d65c37ee60a479d338d27a2895fb15bbba27a3e6bb5b6d72bb28246e99/$TNAME-$RELEASE.tar.gz
+)
+
+PATCHES=(
+	sip-fix-override-functions.patch
+)
+
+fn compile {
+	python3 build.py build_py --python /usr/bin/python3.9 --gtk3 --use_syswx --no_magic --release --jobs $DEFAULT_MAKEJOBS || exit 101
+}
+
+fn inst {
+	python3 setup.py install --skip-build --root $PKG || exit 102
+}
