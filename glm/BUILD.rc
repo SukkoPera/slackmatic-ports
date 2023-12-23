@@ -2,10 +2,41 @@
 
 BRIEF='A C++ mathematics library for graphics programming'
 PROJECT=http://glm.g-truc.net
-RELEASE=0.9.8.3
+RELEASE=0.9.9.8
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
+
+# Thanks to the Gentoo folks!
 
 SOURCE=(
 	https://github.com/g-truc/glm/archive/$RELEASE.tar.gz
 )
+
+DOCS=(
+	$DEFAULT_DOCS
+	manual.md
+	readme.md
+)
+
+fn configure {
+	# make would only build tests, so don't bother
+}
+
+fn compile {
+	# Ditto
+}
+
+fn inst {
+	mkdir -p $PKG/usr/include
+	cp -a glm $PKG/usr/include
+
+	mkdir -p $PKG/usr/lib64/pkgconfig
+	cat $CWD/glm.pc.in | sed \
+		-e s:@CMAKE_INSTALL_PREFIX@:/usr: \
+		-e s:@GLM_VERSION@:$RELEASE: \
+		> $PKG/usr/lib64/pkgconfig/glm.pc
+
+	mkdir -p $PKG/usr/lib64/cmake
+	cp -a cmake/glm $PKG/usr/lib64/cmake
+}
+
