@@ -14,7 +14,7 @@ SOURCE=(
 
 CONFOPTS=(
 	$DEFAULT_CONFOPTS
-	--enable-compat28
+#	--enable-compat28		# Kicad5 does not like this
 	--enable-compat30
 #	--with-gtk'='2
 	--with-sdl 
