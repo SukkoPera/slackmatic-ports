@@ -1,0 +1,27 @@
+. ../sukkolib.rc
+
+BRIEF='A Cross Platform and Open Source Electronics Design Automation Suite'
+PROJECT=http://kicad-pcb.org
+RELEASE=7.0.9
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=kicad-$RELEASE-59f308850ed87dbe850669813dd9c23507d2b3c9
+
+fn myfetch () {
+	wget https://gitlab.com/kicad/code/kicad/-/archive/$RELEASE/$RELEASE.tar.bz2 -O $NAME-$RELEASE.tar.bz2
+}
+
+SOURCE=(
+	MYFETCH:$NAME-$RELEASE.tar.bz2
+)
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS_CMAKE
+	-DCMAKE_BUILD_TYPE'='Release
+	-DKICAD_SCRIPTING_WXPYTHON'='ON
+	-DKICAD_USE_EGL'='ON
+	-DKICAD_USE_OCC'='OFF
+	-DKICAD_SPICE'='ON
+	-DwxWidgets_CONFIG_EXECUTABLE'='/usr/bin/wx-config-3
+	-DKICAD_DOCS'='/usr/doc/$NAME-$RELEASE
+)

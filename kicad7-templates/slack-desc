@@ -1,0 +1,11 @@
+kicad7-templates: kicad7-templates (The schematic and 3D libraries supported by KiCad team)
+kicad7-templates:
+kicad7-templates: This is a slackmatic port build of kicad7-templates:
+kicad7-templates: The schematic and 3D libraries supported by KiCad team 
+kicad7-templates:
+kicad7-templates: For more information about the package, see the project website at:
+kicad7-templates: https://kicad.github.io/symbols/
+kicad7-templates:
+kicad7-templates:
+kicad7-templates: This slackmatic port was developed by:
+kicad7-templates: slackware@sukkology.net

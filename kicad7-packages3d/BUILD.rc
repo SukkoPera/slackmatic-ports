@@ -1,0 +1,17 @@
+. ../sukkolib.rc
+
+BRIEF='KiCad 3D model libraries for rendering and MCAD integration'
+PROJECT=https://github.com/KiCad/kicad-packages3D
+RELEASE=7.0.9
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=kicad-packages3D-$RELEASE
+
+fn myfetch () {
+	wget https://gitlab.com/kicad/libraries/kicad-packages3D/-/archive/$RELEASE/kicad-packages3D-$RELEASE.tar.bz2 -O $NAME-$RELEASE.tar.bz2
+}
+
+SOURCE=(
+	MYFETCH:$NAME-$RELEASE.tar.bz2
+)
+
