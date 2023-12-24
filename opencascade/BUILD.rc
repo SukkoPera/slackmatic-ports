@@ -1,0 +1,15 @@
+. ../sukkolib.rc
+
+BRIEF='Open-source full-scale 3D geometry library'
+PROJECT=https://dev.opencascade.org/
+RELEASE=7.7.0
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	https://dev.opencascade.org/system/files/occt/OCC_7.7.0_release/$NAME-$RELEASE.tgz
+)
+
+PATCHES=(
+	opencascade-7.7.0-add-missing-include-limits.patch
+)
