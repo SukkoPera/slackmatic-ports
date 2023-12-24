@@ -1,0 +1,20 @@
+-- ./src/object/uri.h
++++ ./src/object/uri.h
+@@ -13,6 +13,7 @@
+ #define INKSCAPE_URI_H
+ 
+ #include <libxml/uri.h>
++#include <libxml/xmlmemory.h>
+ #include <memory>
+ #include <string>
+ 
+--- ./src/colorspace.h
++++ ./src/colorspace.h
+@@ -20,6 +20,7 @@
+ #endif
+ 
+ #include <vector>
++#include <cstdint>
+ #include <string>
+
+

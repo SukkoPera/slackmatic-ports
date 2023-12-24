@@ -2,14 +2,18 @@
 
 BRIEF='A professional vector graphics editor'
 PROJECT=https://inkscape.org
-RELEASE=1.3
+RELEASE=1.3.2
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 #BUILDSYSTEM=autotools
-BUILDDIR=$NAME-$RELEASE'_2023-07-21_0e150ed6c4'
+BUILDDIR=$NAME-$RELEASE'_2023-11-25_091e20ef0f'
 
 SOURCE=(
-	https://inkscape.org/gallery/item/42328/$NAME-$RELEASE.tar.xz
+	https://inkscape.org/gallery/item/44615/$NAME-$RELEASE.tar.xz
+)
+
+PATCHES=(
+	fix_missing_includes.patch
 )
 
 CONFOPTS=(
@@ -22,3 +26,4 @@ fn inst {
 	std_inst
 	mv $PKG/usr/share/man $PKG/usr
 }
+
