@@ -2,7 +2,7 @@
 
 BRIEF='The Versatile Commodore Emulator'
 PROJECT=http://vice-emu.sourceforge.net/
-RELEASE=3.7.1
+RELEASE=3.8
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
