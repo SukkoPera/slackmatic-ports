@@ -11,6 +11,10 @@ SOURCE=(
 )
 
 fn configure {
+	# Fix issues with newer GCCs (I guess)
+	sed -i 's/^INLINE USHORT decode_c/USHORT decode_c/' src/u_heavy.c || exit $status
+	sed -i 's/^INLINE USHORT decode_p/USHORT decode_p/' src/u_heavy.c || exit $status
+
 	./configure --prefix'='/usr --package-prefix'='$PKG
 	sed -i s:/usr/share:/usr:g Makefile || exit $status
 }
