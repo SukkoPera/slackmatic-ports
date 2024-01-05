@@ -1,0 +1,26 @@
+. ../sukkolib.rc
+
+BRIEF='Tools for using AmigaOS programs on other platforms'
+PROJECT=https://github.com/cnvogelg/amitools
+RELEASE=`{date +%Y%m%d}
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+# "A git checkout without the .git folder) don't contain the necessary metadata and will not work."
+fn myfetch () {
+#        git clone https://github.com/cnvogelg/amitools.git $NAME-$RELEASE
+#        tar Jcvf $NAME-$RELEASE.tar.xz $NAME-$RELEASE
+}
+
+SOURCE=(
+	MYFETCH:$NAME-$RELEASE.tar.xz
+)
+
+fn compile {
+        python3 setup.py build || exit 101
+}
+
+fn inst {
+        python3 setup.py install --root $PKG || exit 102
+#	mv $PKG/usr/share/man $PKG/usr && rm -rf $PKG/usr/share
+}
