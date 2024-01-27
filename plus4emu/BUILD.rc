@@ -22,7 +22,7 @@ fn configure {
 
 fn inst {
 	mkdir $PKG/usr/bin
-	cp p4* $PKG/usr/bin
+	cp p4* plus4emu $PKG/usr/bin
 }
 
 fn docinst {

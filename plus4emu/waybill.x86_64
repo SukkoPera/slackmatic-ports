@@ -5,6 +5,7 @@ drwxr-xr-x|0755|root/root|usr/bin|
 -rwxr-xr-x|0755|root/root|usr/bin/p4makecfg|
 -rwxr-xr-x|0755|root/root|usr/bin/p4sconv|
 -rwxr-xr-x|0755|root/root|usr/bin/p4tapconv|
+-rwxr-xr-x|0755|root/root|usr/bin/plus4emu|
 drwxr-xr-x|0755|root/root|usr/doc|
 drwxr-xr-x|0755|root/root|usr/doc/plus4emu-20240127|
 -rw-r--r--|0644|root/root|usr/doc/plus4emu-20240127/1526_07c.rom|
