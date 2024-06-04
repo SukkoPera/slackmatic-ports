@@ -1,0 +1,11 @@
+acme: acme (Multi-platform cross assembler for 6502/6510/65816 CPUs)
+acme:
+acme: This is a slackmatic port build of acme:
+acme: Multi-platform cross assembler for 6502/6510/65816 CPUs 
+acme:
+acme: For more information about the package, see the project website at:
+acme: https://sourceforge.net/p/acme-crossass/code-0/HEAD/tree/
+acme:
+acme:
+acme: This slackmatic port was developed by:
+acme: slackware@sukkology.net

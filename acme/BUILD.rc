@@ -1,0 +1,33 @@
+. ../sukkolib.rc
+
+BRIEF='Multi-platform cross assembler for 6502/6510/65816 CPUs'
+PROJECT='https://sourceforge.net/p/acme-crossass/code-0/HEAD/tree/'
+RELEASE=`{date +%Y%m%d}
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+# Create the source package manually after checking out the SVN repository
+# Please clean up the checkout directory manually
+fn myfetch () {
+	svn checkout https://svn.code.sf.net/p/acme-crossass/code-0/trunk $NAME-$RELEASE || exit 101
+	tar Jcv --exclude .svn -f $NAME-$RELEASE.tar.xz $NAME-$RELEASE || exit 100
+}
+
+SOURCE=(
+	MYFETCH:$NAME-$RELEASE.tar.xz
+)
+
+fn build {
+        setup
+
+	cd src
+	make -j $NUMJOBS
+
+	mkdir $PKG/usr/bin
+	cp acme $PKG/usr/bin || exit 102
+	cd ..
+	
+	cp docs/*.txt $DOC
+	cp -r examples $DOC
+	rm $DOC/examples/*/*.bin $DOC/examples/*.exp $DOC/examples/*.exp2 $DOC/examples/Makefile
+}
