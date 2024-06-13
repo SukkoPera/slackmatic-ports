@@ -1,18 +1,35 @@
 . ../sukkolib.rc
 
 BRIEF='A simple GTK+ terminal used to communicate with a serial port'
-PROJECT=https://fedorahosted.org/gtkterm/
-RELEASE=0.99.7_rc1
+PROJECT=https://github.com/Jeija/gtkterm
+RELEASE=1.3.1
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
-TRELEASE=`{echo $RELEASE | sed s/_/-/g}
-BUILDDIR=$NAME-$TRELEASE
+BUILDSYSTEM=autotools
+
+fn myfetch () {
+	wget https://github.com/Jeija/gtkterm/archive/refs/tags/$RELEASE.tar.gz -O $NAME-$RELEASE.tar.gz
+}
 
 SOURCE=(
-	https://fedorahosted.org/released/$NAME/$NAME-$TRELEASE.tar.gz
+	MYFETCH:$NAME-$RELEASE.tar.gz
 )
 
-fn inst () {
-	std_inst
-	insticon $CWD/gtkterm.desktop
+fn configure {
+	meson \
+		--prefix /usr \
+		--libdir $LIBDIR \
+		--sysconfdir /etc \
+		--localstatedir /var \
+		--mandir /usr/man \
+		--infodir'='/usr/info \
+		build
+}
+
+fn compile {
+	ninja -C build
+}
+
+fn inst {
+	DESTDIR=$PKG ninja -C build install
 }
