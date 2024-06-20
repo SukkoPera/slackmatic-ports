@@ -1,0 +1,38 @@
+. ../sukkolib.rc
+
+BRIEF='The Versatile Commodore Emulator'
+PROJECT=http://vice-emu.sourceforge.net/
+RELEASE=`{date +%Y%m%d}
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDSYSTEM=autotools
+
+# Create the source package manually after checking out the SVN repository
+# Please clean up the checkout directory manually
+fn myfetch () {
+	svn checkout https://svn.code.sf.net/p/vice-emu/code/trunk $NAME-$RELEASE || exit 101
+	tar Jcv --exclude .svn -f $NAME-$RELEASE.tar.xz $NAME-$RELEASE || exit 100
+}
+
+SOURCE=(
+	MYFETCH:$NAME-$RELEASE.tar.xz
+)
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS
+	--without-oss
+	--with-sdlsound
+	--with-libcurl
+	--enable-ethernet
+	--enable-cpuhistory
+	--enable-lame
+	--enable-midi
+#	--enable-ffmpeg
+	--enable-gtk3ui
+)
+
+fn configure {
+	cd vice
+	./autogen.sh
+	std_configure
+}
