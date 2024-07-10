@@ -1,0 +1,11 @@
+libbinio: libbinio (The binary I/O stream class library presents a platform-independent way to access binary data streams in C++)
+libbinio:
+libbinio: This is a slackmatic port build of libbinio:
+libbinio: The binary I/O stream class library presents a platform-independent way to access binary data streams in C++ 
+libbinio:
+libbinio: For more information about the package, see the project website at:
+libbinio: https://adplug.github.io/libbinio/
+libbinio:
+libbinio:
+libbinio: This slackmatic port was developed by:
+libbinio: slackware@sukkology.net
