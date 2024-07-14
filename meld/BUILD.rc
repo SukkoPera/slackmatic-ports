@@ -2,7 +2,7 @@
 
 BRIEF='A visual diff and merge tool'
 PROJECT=http://meldmerge.org
-RELEASE=3.22.0
+RELEASE=3.22.2
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
