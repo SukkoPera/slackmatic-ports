@@ -2,7 +2,7 @@
 
 BRIEF='A Python library to read, write, and manipulate data from Intel HEX file format'
 PROJECT=https://github.com/python-intelhex/intelhex
-RELEASE=2.2.1
+RELEASE=2.3.0
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 TNAME=intelhex
