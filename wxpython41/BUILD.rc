@@ -14,10 +14,12 @@ SOURCE=(
 
 PATCHES=(
 	sip-fix-override-functions.patch
+	0002-siplib-fix-build-with-python-3.11.patch
+	wxpython-4.2.0-cython-3.patch
 )
 
 fn compile {
-	python3 build.py build_py --python /usr/bin/python3.9 --gtk3 --use_syswx --no_magic --release --jobs $DEFAULT_MAKEJOBS || exit 101
+	python3 build.py build_py --python /usr/bin/python3.11 --gtk2 --use_syswx --no_magic --release --jobs $DEFAULT_MAKEJOBS || exit 101
 }
 
 fn inst {
