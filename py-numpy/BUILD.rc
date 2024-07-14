@@ -2,7 +2,7 @@
 
 BRIEF='The fundamental package needed for scientific computing with Python'
 PROJECT=https://numpy.org
-RELEASE=1.21.4
+RELEASE=1.26.4
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDDIR=numpy-$RELEASE
