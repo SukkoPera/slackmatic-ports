@@ -11,6 +11,12 @@ fn myfetch () {
 	wget https://github.com/DreamSourceLab/DSView/archive/v$RELEASE.tar.gz -O $NAME-$RELEASE.tar.gz
 }
 
+fn patches () {
+	sed -i '1 i #define _BSD_SOURCE' libsigrok4DSL/lib_main.c || exit $status
+	sed -i '1 i #include <strings.h>' libsigrok4DSL/strutil.c || exit $status
+	sed -i '1 i #include <strings.h>' libsigrok4DSL/input/in_wav.c || exit $status
+}
+
 SOURCE=(
 	MYFETCH:$NAME-$RELEASE.tar.gz
 )
