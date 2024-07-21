@@ -3,18 +3,32 @@
 BRIEF='A Cross Platform and Open Source Electronics Design Automation Suite'
 PROJECT=http://kicad-pcb.org
 RELEASE=5.1.12
-BUILD=1suk_$SLCKVER
+BUILD=6suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDDIR=kicad-$RELEASE-e4df76d986c70b7c06bc734644245984b7bb78ba
 
 fn myfetch () {
-#	wget https://github.com/KiCad/kicad-source-mirror/archive/$RELEASE.tar.gz -O $NAME-$RELEASE.tar.gz
 	wget https://gitlab.com/kicad/code/kicad/-/archive/$RELEASE/$RELEASE.tar.bz2 -O $NAME-$RELEASE.tar.bz2
 }
 
 SOURCE=(
 	MYFETCH:$NAME-$RELEASE.tar.bz2
 )
+
+PATCHES=(
+	1060.diff
+)
+
+fn patches () {
+	std_patches
+
+	# Work around an error which appeared after upgrading swig to 4.1.2 or whatever
+	# Looks like this is no longer needed? It seems to work fine by just ignoring the error!
+	sed -i 's/exit(2)/exit(0)/' scripting/build_tools/fix_swig_imports.py || exit $status
+
+	# Another ugly hack for another ugly error
+	sed -i '34 i #include <widgets/progress_reporter.h>' include/macros.h || exit $status
+}
 
 CONFOPTS=(
 	$DEFAULT_CONFOPTS_CMAKE
@@ -29,10 +43,10 @@ CONFOPTS=(
 	-DKICAD_USE_OCE'='ON
 	-DKICAD_SPICE'='ON
 	-DwxWidgets_CONFIG_EXECUTABLE'='/usr/bin/wx-config-3
-	-DKICAD_SKIP_BOOST'='ON
 	-DKICAD_DOCS'='/usr/doc/$NAME-$RELEASE
+	-DKICAD_BUILD_QA_TESTS'='ON
+	-DBUILD_GITHUB_PLUGIN'='ON
+	-DUSE_WX_GRAPHICS_CONTEXT'='ON
+	-DUSE_WX_OVERLAY'='ON
 )
 
-fn patches () {
-	sed -i '25 i #include <algorithm>' common/lib_tree_model.cpp || exit $status
-}

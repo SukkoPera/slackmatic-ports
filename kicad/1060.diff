@@ -1,0 +1,26 @@
+diff --git a/CMakeModules/FindPythonInterp.cmake b/CMakeModules/FindPythonInterp.cmake
+index 885dc8356cb17f2ca7b8449199c2a26e71710bb7..2b287f28c815e10972dd488ed4fedfbf985e67f5 100644
+--- a/CMakeModules/FindPythonInterp.cmake
++++ b/CMakeModules/FindPythonInterp.cmake
+@@ -37,7 +37,7 @@ unset(_Python_NAMES)
+ 
+ set(_PYTHON1_VERSIONS 1.6 1.5)
+ set(_PYTHON2_VERSIONS 2.7 2.6 2.5 2.4 2.3 2.2 2.1 2.0)
+-set(_PYTHON3_VERSIONS 3.10 3.9 3.8 3.7 3.6 3.5 3.4 3.3 3.2 3.1 3.0)
++set(_PYTHON3_VERSIONS 3.11 3.10 3.9 3.8 3.7 3.6 3.5 3.4 3.3 3.2 3.1 3.0)
+ 
+ # Disabling the "search every possible place" code for now
+ # see https://gitlab.com/kicad/code/kicad/-/issues/8553
+diff --git a/CMakeModules/FindPythonLibs.cmake b/CMakeModules/FindPythonLibs.cmake
+index 87e0dc5ad6db18d16d5df97c37db6b082d79946a..ba25d6aca5fc567adfa0e2b0c16db2a1807c21ab 100644
+--- a/CMakeModules/FindPythonLibs.cmake
++++ b/CMakeModules/FindPythonLibs.cmake
+@@ -44,7 +44,7 @@ cmake_find_frameworks(Python)
+ 
+ set(_PYTHON1_VERSIONS 1.6 1.5)
+ set(_PYTHON2_VERSIONS 2.7 2.6 2.5 2.4 2.3 2.2 2.1 2.0)
+-set(_PYTHON3_VERSIONS 3.10 3.9 3.8 3.7 3.6 3.5 3.4 3.3 3.2 3.1 3.0)
++set(_PYTHON3_VERSIONS 3.11 3.10 3.9 3.8 3.7 3.6 3.5 3.4 3.3 3.2 3.1 3.0)
+ 
+ if(PythonLibs_FIND_VERSION)
+     if(PythonLibs_FIND_VERSION MATCHES "^[0-9]+\\.[0-9]+(\\.[0-9]+.*)?$")
