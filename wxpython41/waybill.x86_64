@@ -907,6 +907,7 @@ drwxr-xr-x|0755|root/root|usr/lib64/python3.11/site-packages/wx/py/tests/__pycac
 -rw-r--r--|0644|root/root|usr/lib64/python3.11/site-packages/wx/richtext.py|
 -rw-r--r--|0644|root/root|usr/lib64/python3.11/site-packages/wx/richtext.pyi|
 -rwxr-xr-x|0755|root/root|usr/lib64/python3.11/site-packages/wx/siplib|
+lrwxrwxrwx|0777|root/root|usr/lib64/python3.11/site-packages/wx/siplib.cpython-311-x86_64-linux-gnu.so|->|siplib|
 -rwxr-xr-x|0755|root/root|usr/lib64/python3.11/site-packages/wx/_stc|
 -rw-r--r--|0644|root/root|usr/lib64/python3.11/site-packages/wx/stc.py|
 -rw-r--r--|0644|root/root|usr/lib64/python3.11/site-packages/wx/stc.pyi|

@@ -24,4 +24,11 @@ fn compile {
 
 fn inst {
 	python3 setup.py install --skip-build --root $PKG || exit 102
+
+	# Why is the installer missing these files on recent Slackware versions?
+	_dir=`{pwd}
+	cd $PKG/usr/lib64/python3.11/site-packages/wx || exit $status
+	find  . -regex '.*/_[a-zA-Z0-9]+$' -exec ln -s '{}' '{}.cpython-311-x86_64-linux-gnu.so' ';'
+	ln -s siplib siplib.cpython-311-x86_64-linux-gnu.so
+	cd $_dir
 }
