@@ -12,8 +12,13 @@ SOURCE=(
 	https://files.pythonhosted.org/packages/aa/64/d749e767a8ce7bdc3d533334e03bb1106fc4e4803d16f931fada9007ee13/$TNAME-$RELEASE.tar.gz
 )
 
+PATCHES=(
+	afc99fa84d0d.patch
+	aeb557d01e7cd37176ebbf0f1ae6d0b53c115378.patch
+)
+
 fn compile {
-	python3 build.py build_py --python /usr/bin/python3.9 --gtk3 --use_syswx --no_magic --release --jobs $DEFAULT_MAKEJOBS || exit 101
+	python3 build.py build_py --python /usr/bin/python3.11 --gtk3 --use_syswx --no_magic --release --jobs $DEFAULT_MAKEJOBS || exit 101
 }
 
 fn inst {
