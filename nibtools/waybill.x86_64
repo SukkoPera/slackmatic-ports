@@ -7,6 +7,6 @@ drwxr-xr-x|0755|root/root|usr/bin|
 -rwxr-xr-x|0755|root/root|usr/bin/nibsrqtest|
 -rwxr-xr-x|0755|root/root|usr/bin/nibwrite|
 drwxr-xr-x|0755|root/root|usr/doc|
-drwxr-xr-x|0755|root/root|usr/doc/nibtools-687|
--rw-r--r--|0644|root/root|usr/doc/nibtools-687/BUILD.rc|
--rwxr--r--|0744|root/root|usr/doc/nibtools-687/readme.txt|
+drwxr-xr-x|0755|root/root|usr/doc/nibtools-20241025|
+-rw-r--r--|0644|root/root|usr/doc/nibtools-20241025/BUILD.rc|
+-rwxr--r--|0744|root/root|usr/doc/nibtools-20241025/readme.txt|

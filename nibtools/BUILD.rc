@@ -2,14 +2,15 @@
 
 BRIEF='Commodore 1541/1571 disk image nibbler'
 PROJECT='https://c64preservation.com/dp.php?pg=nibtools'
-RELEASE=687
+RELEASE=`{date +%Y%m%d}
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
 # NOTE: The source package has to be created manually after checking out the SVN repository
 # Please clean up the checkout directory manually
 fn myfetch () {
-	svn co https://c64preservation.com/svn/nibtools/trunk $NAME-$RELEASE || exit 101
+#	svn co https://c64preservation.com/svn/nibtools/trunk $NAME-$RELEASE || exit 101
+	git clone https://github.com/OpenCBM/nibtools.git $NAME-$RELEASE || exit 101
 	rev=`{svn st -v $NAME-$RELEASE/readme.txt | awk '{print $1}'}
 	if (test $rev '!=' $RELEASE) {
 		echo 'Release does not match:' $rev vs. $RELEASE
@@ -21,6 +22,10 @@ fn myfetch () {
 
 SOURCE=(
 	MYFETCH:$NAME-$RELEASE.tar.bz2
+)
+
+PATCHES=(
+	usleep.patch
 )
 
 fn build {
