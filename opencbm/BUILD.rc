@@ -2,7 +2,7 @@
 
 BRIEF='Driver and library to control serial CBM devices'
 PROJECT=https://github.com/OpenCBM/OpenCBM
-RELEASE=0_4_99_103
+RELEASE=0_4_99_104
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDDIR=OpenCBM-$RELEASE
