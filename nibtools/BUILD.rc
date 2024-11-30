@@ -10,7 +10,8 @@ PACKAGER=slackware@sukkology.net
 # Please clean up the checkout directory manually
 fn myfetch () {
 #	svn co https://c64preservation.com/svn/nibtools/trunk $NAME-$RELEASE || exit 101
-	git clone https://github.com/OpenCBM/nibtools.git $NAME-$RELEASE || exit 101
+#	git clone https://github.com/OpenCBM/nibtools.git $NAME-$RELEASE || exit 101
+	git clone https://github.com/rittwage/nibtools.git $NAME-$RELEASE || exit 101
 	rev=`{svn st -v $NAME-$RELEASE/readme.txt | awk '{print $1}'}
 	if (test $rev '!=' $RELEASE) {
 		echo 'Release does not match:' $rev vs. $RELEASE
