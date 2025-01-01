@@ -5,7 +5,7 @@ drwxr-xr-x|0755|root/root|usr/bin|
 -rwxr-xr-x|0755|root/root|usr/bin/petcat|
 -rwxr-xr-x|0755|root/root|usr/bin/vsid|
 -rwxr-xr-x|0755|root/root|usr/bin/x128|
-lrwxrwxrwx|0777|root/root|usr/bin/x64|->|x64sc|
+lrwxr-xr-x|0755|root/root|usr/bin/x64|->|x64sc|
 -rwxr-xr-x|0755|root/root|usr/bin/x64dtv|
 -rwxr-xr-x|0755|root/root|usr/bin/x64sc|
 -rwxr-xr-x|0755|root/root|usr/bin/xcbm2|
@@ -15,11 +15,11 @@ lrwxrwxrwx|0777|root/root|usr/bin/x64|->|x64sc|
 -rwxr-xr-x|0755|root/root|usr/bin/xscpu64|
 -rwxr-xr-x|0755|root/root|usr/bin/xvic|
 drwxr-xr-x|0755|root/root|usr/doc|
-drwxr-xr-x|0755|root/root|usr/doc/vice-3.8|
--rw-r--r--|0644|root/root|usr/doc/vice-3.8/BUILD.rc|
--rw-r--r--|0644|root/root|usr/doc/vice-3.8/COPYING|
--rw-r--r--|0644|root/root|usr/doc/vice-3.8/NEWS|
--rw-r--r--|0644|root/root|usr/doc/vice-3.8/README|
+drwxr-xr-x|0755|root/root|usr/doc/vice-3.9|
+-rw-r--r--|0644|root/root|usr/doc/vice-3.9/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/vice-3.9/COPYING|
+-rw-r--r--|0644|root/root|usr/doc/vice-3.9/NEWS|
+-rw-r--r--|0644|root/root|usr/doc/vice-3.9/README|
 drwxr-xr-x|0755|root/root|usr/share|
 drwxr-xr-x|0755|root/root|usr/share/vice|
 drwxr-xr-x|0755|root/root|usr/share/vice/C128|
@@ -63,6 +63,7 @@ drwxr-xr-x|0755|root/root|usr/share/vice/C128|
 -rw-r--r--|0644|root/root|usr/share/vice/C128/kernalfr|
 -rw-r--r--|0644|root/root|usr/share/vice/C128/kernalit|
 -rw-r--r--|0644|root/root|usr/share/vice/C128/kernalno|
+-rw-r--r--|0644|root/root|usr/share/vice/C128/lemon64.vpl|
 -rw-r--r--|0644|root/root|usr/share/vice/C128/palette_6569R1_v1r.vpl|
 -rw-r--r--|0644|root/root|usr/share/vice/C128/palette_6569R5_v1r.vpl|
 -rw-r--r--|0644|root/root|usr/share/vice/C128/palette_8565R2_v1r.vpl|
@@ -155,6 +156,7 @@ drwxr-xr-x|0755|root/root|usr/share/vice/C64DTV|
 -rw-r--r--|0644|root/root|usr/share/vice/C64/kernal-901227-03.bin|
 -rw-r--r--|0644|root/root|usr/share/vice/C64/kernal-901246-01.bin|
 -rw-r--r--|0644|root/root|usr/share/vice/C64/kernal-906145-02.bin|
+-rw-r--r--|0644|root/root|usr/share/vice/C64/lemon64.vpl|
 -rw-r--r--|0644|root/root|usr/share/vice/C64/palette_6569R1_v1r.vpl|
 -rw-r--r--|0644|root/root|usr/share/vice/C64/palette_6569R5_v1r.vpl|
 -rw-r--r--|0644|root/root|usr/share/vice/C64/palette_8565R2_v1r.vpl|
@@ -368,6 +370,7 @@ drwxr-xr-x|0755|root/root|usr/share/vice/SCPU64|
 -rw-r--r--|0644|root/root|usr/share/vice/SCPU64/gtk3_sym_uk.vkm|
 -rw-r--r--|0644|root/root|usr/share/vice/SCPU64/gtk3_sym.vkm|
 -rw-r--r--|0644|root/root|usr/share/vice/SCPU64/gtk3_the64_de.vkm|
+-rw-r--r--|0644|root/root|usr/share/vice/SCPU64/lemon64.vpl|
 -rw-r--r--|0644|root/root|usr/share/vice/SCPU64/palette_6569R1_v1r.vpl|
 -rw-r--r--|0644|root/root|usr/share/vice/SCPU64/palette_6569R5_v1r.vpl|
 -rw-r--r--|0644|root/root|usr/share/vice/SCPU64/palette_8565R2_v1r.vpl|
@@ -447,6 +450,13 @@ drwxr-xr-x|0755|root/root|usr/share/vice/common|
 -rw-r--r--|0644|root/root|usr/share/vice/common/PET_32.png|
 -rw-r--r--|0644|root/root|usr/share/vice/common/PET_48.png|
 -rw-r--r--|0644|root/root|usr/share/vice/common/PET_64.png|
+-rw-r--r--|0644|root/root|usr/share/vice/common/PetMe1282Y.ttf|
+-rw-r--r--|0644|root/root|usr/share/vice/common/PetMe128.ttf|
+-rw-r--r--|0644|root/root|usr/share/vice/common/PetMe2X.ttf|
+-rw-r--r--|0644|root/root|usr/share/vice/common/PetMe2Y.ttf|
+-rw-r--r--|0644|root/root|usr/share/vice/common/PetMe642Y.ttf|
+-rw-r--r--|0644|root/root|usr/share/vice/common/PetMe64.ttf|
+-rw-r--r--|0644|root/root|usr/share/vice/common/PetMe.ttf|
 -rw-r--r--|0644|root/root|usr/share/vice/common/Plus4_1024.svg|
 -rw-r--r--|0644|root/root|usr/share/vice/common/Plus4_16.png|
 -rw-r--r--|0644|root/root|usr/share/vice/common/Plus4_24.png|
