@@ -1,0 +1,15 @@
+--- SConstruct.orig	2025-01-03 17:57:18.267437691 +0100
++++ SConstruct	2025-01-03 17:56:16.148435795 +0100
+@@ -49,10 +49,10 @@
+ 
+ # create PNG projectlogo for project homepage
+ env.Command('projectlogo.png', 'projectlogo.svg',
+-            'inkscape -z -f $SOURCE -e $TARGET --export-height=100')
++            'inkscape --export-type="png" --export-filename=$TARGET --export-height=100 $SOURCE')
+ 
+ hires_logo = env.Command('build/icons/projectlogo-hires.png', 'projectlogo.svg',
+-                         'inkscape -z -f $SOURCE -e $TARGET')
++                         'inkscape --export-type="png" --export-filename=$TARGET $SOURCE')
+ 
+ icon_parts = [
+     env.Command('build/icons/project-${WIDTH}x${HEIGHT}.pnm', hires_logo,

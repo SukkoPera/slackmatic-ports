@@ -1,0 +1,17 @@
+. ../sukkolib.rc
+
+BRIEF='Scale and tile PDF images/pages to print on multiple pages'
+PROJECT=https://gitlab.com/pdftools/pdfposter
+RELEASE=0.8.1
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=$NAME-v$RELEASE-0e4ed1618571d1d267b4ac18a3762176b58c4375
+BUILDSYSTEM=python
+
+SOURCE=(
+	https://gitlab.com/pdftools/pdfposter/-/archive/v$RELEASE/$NAME-$RELEASE.tar.bz2
+)
+
+PATCHES=(
+	inkscape-1.x.patch
+)
