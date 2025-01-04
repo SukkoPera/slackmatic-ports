@@ -1,0 +1,11 @@
+miniupnpc: miniupnpc (Software which supports the UPnP Internet Gateway Device (IGD) specifications)
+miniupnpc:
+miniupnpc: This is a slackmatic port build of miniupnpc:
+miniupnpc: Software which supports the UPnP Internet Gateway Device (IGD) specifications 
+miniupnpc:
+miniupnpc: For more information about the package, see the project website at:
+miniupnpc: http://miniupnp.free.fr/
+miniupnpc:
+miniupnpc:
+miniupnpc: This slackmatic port was developed by:
+miniupnpc: slackware@sukkology.net
