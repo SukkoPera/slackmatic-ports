@@ -2,23 +2,28 @@
 
 BRIEF='A Fast, Easy, and Free BitTorrent Client'
 PROJECT=http://www.transmissionbt.com
-RELEASE=2.94
+RELEASE=4.0.6
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
-BUILDSYSTEM=autotools
 
 SOURCE=(
-	https://github.com/transmission/transmission-releases/raw/master/$NAME-$RELEASE.tar.xz
+	https://github.com/transmission/transmission/releases/download/$RELEASE/$NAME-$RELEASE.tar.xz
+)
+
+PATCHES=(
+	miniupnpc-2.2.8.patch
 )
 
 CONFOPTS=(
-	$DEFAULT_CONFOPTS
-	--enable-gtk
-	--enable-libnotify
-	--enable-libappindicator
-	--enable-libcanberra
-	--enable-gconf2
-	--enable-nls 
-	--enable-cli
-	--enable-daemon
+	$DEFAULT_CONFOPTS_CMAKE
+	-DENABLE_GTK'='ON
+	-DENABLE_QT'='ON
+	-DENABLE_CLI'='ON
+	-DUSE_SYSTEM_MINIUPNPC'='ON
 )
+
+fn inst {
+	std_inst
+
+	mv $PKG/usr/share/man $PKG/usr || exit $status
+}
