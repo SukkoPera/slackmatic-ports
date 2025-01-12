@@ -4,7 +4,7 @@
 
 BRIEF='A tool for inspecting RP2040 binaries, and interacting with RP2040 devices'
 PROJECT=https://github.com/raspberrypi/picotool
-RELEASE=1.1.2
+RELEASE=2.1.0
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
