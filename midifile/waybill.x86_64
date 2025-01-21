@@ -1,0 +1,16 @@
+drwxr-xr-x|0755|root/root|usr|
+drwxr-xr-x|0755|root/root|usr/doc|
+drwxr-xr-x|0755|root/root|usr/doc/midifile-20250121|
+-rw-r--r--|0644|root/root|usr/doc/midifile-20250121/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/midifile-20250121/LICENSE.txt|
+-rw-r--r--|0644|root/root|usr/doc/midifile-20250121/README.md|
+drwxr-xr-x|0755|root/root|usr/include|
+drwxr-xr-x|0755|root/root|usr/include/midifile|
+-rw-r--r--|0644|root/root|usr/include/midifile/Binasc.h|
+-rw-r--r--|0644|root/root|usr/include/midifile/MidiEventList.h|
+-rw-r--r--|0644|root/root|usr/include/midifile/MidiEvent.h|
+-rw-r--r--|0644|root/root|usr/include/midifile/MidiFile.h|
+-rw-r--r--|0644|root/root|usr/include/midifile/MidiMessage.h|
+-rw-r--r--|0644|root/root|usr/include/midifile/Options.h|
+drwxr-xr-x|0755|root/root|usr/lib64|
+-rw-r--r--|0644|root/root|usr/lib64/libmidifile.a|

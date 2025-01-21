@@ -1,0 +1,16 @@
+. ../sukkolib.rc
+
+BRIEF='C++ classes for reading/writing Standard MIDI Files'
+PROJECT=http://midifile.sapp.org/
+RELEASE=`{date +%Y%m%d}
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+fn myfetch () {
+        git clone https://github.com/craigsapp/midifile.git $NAME-$RELEASE
+        tar Jcvf $NAME-$RELEASE.tar.xz $NAME-$RELEASE
+}
+
+SOURCE=(
+	MYFETCH:$NAME-$RELEASE.tar.xz
+)

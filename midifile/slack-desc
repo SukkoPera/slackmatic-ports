@@ -1,0 +1,11 @@
+midifile: midifile (C++ classes for reading/writing Standard MIDI Files)
+midifile:
+midifile: This is a slackmatic port build of midifile:
+midifile: C++ classes for reading/writing Standard MIDI Files 
+midifile:
+midifile: For more information about the package, see the project website at:
+midifile: http://midifile.sapp.org/
+midifile:
+midifile:
+midifile: This slackmatic port was developed by:
+midifile: slackware@sukkology.net
