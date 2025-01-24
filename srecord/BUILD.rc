@@ -2,16 +2,13 @@
 
 BRIEF='A collection of powerful tools for manipulating EPROM load files'
 PROJECT=http://srecord.sourceforge.net/
-RELEASE=1.64
+RELEASE=1.65
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
+BUILDDIR=$NAME-$RELEASE.0-Source
 
 SOURCE=(
-	$SF/$NAME/$RELEASE/$NAME-$RELEASE.tar.gz
-)
-
-PATCHES=(
-	srecord-1.57-libtool.patch
+	https://sourceforge.net/projects/srecord/files/$NAME/$RELEASE/$NAME-$RELEASE.0-Source.tar.gz
 )
 
 fn configure {
@@ -21,6 +18,13 @@ fn configure {
 	autoreconf -sfi
 
 	std_configure
+}
+
+fn inst {
+	std_inst
+
+	mv $PKG/usr/share/man $PKG/usr
+	rm -rf $PKG/usr/share
 }
 
 fn docinst {
