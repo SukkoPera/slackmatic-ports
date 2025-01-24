@@ -2,7 +2,7 @@
 
 BRIEF='Open source graph visualization software'
 PROJECT=https://graphviz.org/
-RELEASE=2.50.0
+RELEASE=12.2.1
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
