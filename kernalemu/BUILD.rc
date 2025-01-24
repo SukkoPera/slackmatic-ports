@@ -1,0 +1,25 @@
+. ../sukkolib.rc
+
+BRIEF='Commodore KERNAL emulator'
+PROJECT=https://github.com/mist64/kernalemu
+RELEASE=`{date +%Y%m%d}
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=kernalemu-main
+
+fn myfetch () {
+	wget https://github.com/mist64/kernalemu/archive/refs/heads/main.zip -O $NAME-$RELEASE.zip
+}
+
+SOURCE=(
+	MYFETCH:$NAME-$RELEASE.zip
+)
+
+fn patches {
+	sed -i '9 s/13/16/' src/printer.c || exit $status
+}
+
+fn inst {
+	mkdir -p $PKG/usr/bin
+	cp build/kernalemu $PKG/usr/bin
+}
