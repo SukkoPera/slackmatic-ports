@@ -1,0 +1,11 @@
+cbm6502asm: cbm6502asm (Original 6502/65C02/65CE02 Assembler used by Commodore)
+cbm6502asm:
+cbm6502asm: This is a slackmatic port build of cbm6502asm:
+cbm6502asm: Original 6502/65C02/65CE02 Assembler used by Commodore 
+cbm6502asm:
+cbm6502asm: For more information about the package, see the project website at:
+cbm6502asm: https://github.com/mist64/cbm6502asm
+cbm6502asm:
+cbm6502asm:
+cbm6502asm: This slackmatic port was developed by:
+cbm6502asm: slackware@sukkology.net
