@@ -15,3 +15,10 @@ fn myfetch () {
 SOURCE=(
         MYFETCH:$NAME-$RELEASE.tar.gz
 )
+
+fn inst {
+	std_inst
+
+	mkdir -p $PKG/etc/udev/rules.d
+	cp udev/99-picotool.rules $PKG/etc/udev/rules.d || exit $status
+}

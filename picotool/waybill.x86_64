@@ -1,3 +1,7 @@
+drwxr-xr-x|0755|root/root|etc|
+drwxr-xr-x|0755|root/root|etc/udev|
+drwxr-xr-x|0755|root/root|etc/udev/rules.d|
+-rw-r--r--|0644|root/root|etc/udev/rules.d/99-picotool.rules|
 drwxr-xr-x|0755|root/root|usr|
 drwxr-xr-x|0755|root/root|usr/bin|
 -rwxr-xr-x|0755|root/root|usr/bin/picotool|
