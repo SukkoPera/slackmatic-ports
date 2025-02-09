@@ -2,7 +2,7 @@
 
 BRIEF='A C utility that sorts FAT12, FAT16 and FAT32 partitions'
 PROJECT=https://fatsort.sourceforge.io
-RELEASE=1.5.0.456
+RELEASE=1.6.5.640
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
