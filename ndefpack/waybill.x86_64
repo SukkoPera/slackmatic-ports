@@ -1,0 +1,16 @@
+drwxr-xr-x|0755|root/root|usr|
+drwxr-xr-x|0755|root/root|usr/bin|
+-rwxr-xr-x|0755|root/root|usr/bin/ndefgui|
+-rwxr-xr-x|0755|root/root|usr/bin/ndeft|
+drwxr-xr-x|0755|root/root|usr/doc|
+drwxr-xr-x|0755|root/root|usr/doc/ndefpack-1.0.1|
+-rw-r--r--|0644|root/root|usr/doc/ndefpack-1.0.1/AUTHORS|
+-rw-r--r--|0644|root/root|usr/doc/ndefpack-1.0.1/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/ndefpack-1.0.1/COPYING|
+-rw-r--r--|0644|root/root|usr/doc/ndefpack-1.0.1/ChangeLog|
+-rw-r--r--|0644|root/root|usr/doc/ndefpack-1.0.1/INSTALL|
+-rw-r--r--|0644|root/root|usr/doc/ndefpack-1.0.1/NEWS|
+-rw-r--r--|0644|root/root|usr/doc/ndefpack-1.0.1/README|
+-rw-r--r--|0644|root/root|usr/doc/ndefpack-1.0.1/README_gui|
+-rw-r--r--|0644|root/root|usr/doc/ndefpack-1.0.1/README_tool|
+-rw-r--r--|0644|root/root|usr/doc/ndefpack-1.0.1/coding_guidelines.txt|

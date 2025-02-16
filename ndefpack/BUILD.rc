@@ -1,0 +1,18 @@
+. ../sukkolib.rc
+
+BRIEF='A pack of tools for creating EasyFlash cartridge images'
+PROJECT=https://ndefpack.sourceforge.net
+RELEASE=1.0.1
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://sourceforge.net/projects/ndefpack/files/$NAME-$RELEASE.tar.gz
+)
+
+fn inst {
+	std_inst
+
+	mv $PKG/usr/share/doc/$NAME/* $DOC/
+	rm -rf $PKG/usr/share
+}

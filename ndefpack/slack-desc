@@ -1,0 +1,11 @@
+ndefpack: ndefpack (A pack of tools for creating EasyFlash cartridge images)
+ndefpack:
+ndefpack: This is a slackmatic port build of ndefpack:
+ndefpack: A pack of tools for creating EasyFlash cartridge images 
+ndefpack:
+ndefpack: For more information about the package, see the project website at:
+ndefpack: https://ndefpack.sourceforge.net
+ndefpack:
+ndefpack:
+ndefpack: This slackmatic port was developed by:
+ndefpack: slackware@sukkology.net
