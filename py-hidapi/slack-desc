@@ -1,0 +1,11 @@
+py-hidapi: py-hidapi (hidapi bindings in ctypes )
+py-hidapi:
+py-hidapi: This is a slackmatic port build of py-hidapi:
+py-hidapi: hidapi bindings in ctypes  
+py-hidapi:
+py-hidapi: For more information about the package, see the project website at:
+py-hidapi: https://github.com/apmorton/pyhidapi
+py-hidapi:
+py-hidapi:
+py-hidapi: This slackmatic port was developed by:
+py-hidapi: slackware@sukkology.net

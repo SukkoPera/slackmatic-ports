@@ -1,8 +1,8 @@
 . ../sukkolib.rc
 
-BRIEF='hidapi bindings in ctypes '
+BRIEF='hidapi bindings in ctypes'
 PROJECT=https://github.com/apmorton/pyhidapi
-RELEASE=1.0.4
+RELEASE=1.0.7
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 TNAME=pyhidapi
