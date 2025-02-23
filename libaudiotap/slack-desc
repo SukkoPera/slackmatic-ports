@@ -1,0 +1,11 @@
+libaudiotap: libaudiotap (A program for conversion between .TAP files and Commodore tapes)
+libaudiotap:
+libaudiotap: This is a slackmatic port build of libaudiotap:
+libaudiotap: A program for conversion between .TAP files and Commodore tapes 
+libaudiotap:
+libaudiotap: For more information about the package, see the project website at:
+libaudiotap: https://wav-prg.sourceforge.io
+libaudiotap:
+libaudiotap:
+libaudiotap: This slackmatic port was developed by:
+libaudiotap: slackware@sukkology.net

@@ -1,0 +1,9 @@
+drwxr-xr-x|0755|root/root|usr|
+drwxr-xr-x|0755|root/root|usr/doc|
+drwxr-xr-x|0755|root/root|usr/doc/libaudiotap-2.2|
+-rw-r--r--|0644|root/root|usr/doc/libaudiotap-2.2/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/libaudiotap-2.2/README|
+drwxr-xr-x|0755|root/root|usr/include|
+-rw-r--r--|0644|root/root|usr/include/audiotap.h|
+drwxr-xr-x|0755|root/root|usr/lib64|
+-rwxr-xr-x|0755|root/root|usr/lib64/libaudiotap.so|

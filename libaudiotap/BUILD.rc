@@ -1,0 +1,30 @@
+. ../sukkolib.rc
+
+BRIEF='A program for conversion between .TAP files and Commodore tapes'
+PROJECT=https://wav-prg.sourceforge.io
+RELEASE=2.2
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=$NAME-$NAME-$RELEASE
+
+SOURCE=(
+	https://github.com/fabzzap/libaudiotap/archive/$NAME-$RELEASE.zip
+)
+
+fn patches {
+	std_patches
+
+	sed -i '/tapenc_exit/ s/^/EXTERN /' tapencoder.h
+}
+
+fn compile {
+	make LINUX64BIT'='1 -j $NUMJOBS libaudiotap.so
+}
+
+fn inst {
+	mkdir -p $PKG/usr/lib64
+	cp libaudiotap.so $PKG/usr/lib64
+
+	mkdir -p $PKG/usr/include
+	cp audiotap.h $PKG/usr/include
+}

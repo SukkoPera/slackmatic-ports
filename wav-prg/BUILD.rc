@@ -1,0 +1,34 @@
+. ../sukkolib.rc
+
+BRIEF='Manipulate .TAP files for Commodore computers'
+PROJECT=https://wav-prg.sourceforge.io
+RELEASE=4.2.1
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+fn myfetch () {
+	wget https://github.com/fabzzap/wav-prg/archive/$RELEASE.zip -O $NAME-$RELEASE.zip
+}
+
+SOURCE=(
+	MYFETCH:$NAME-$RELEASE.zip
+)
+
+fn patches {
+	std_patches
+
+	sed -i '/\bcmdline_display_interface\b/ s/^/extern /' cmdline/progressmeter.h || exit $status
+}
+
+fn compile {
+	make -j $NUMJOBS cmdline/prg2wav cmdline/wav2prg || exit $status
+}
+
+fn inst {
+	mkdir -p $PKG/usr/bin
+	cp cmdline/prg2wav cmdline/wav2prg $PKG/usr/bin || exit $status
+}
+
+fn docinst {
+	cp docs/*.htm docs/*.png $DOC
+}
