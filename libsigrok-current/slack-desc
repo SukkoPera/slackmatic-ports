@@ -1,0 +1,11 @@
+libsigrok-current: libsigrok-current (A shared library which provides the basic hardware access drivers for logic analyzers)
+libsigrok-current:
+libsigrok-current: This is a slackmatic port build of libsigrok-current:
+libsigrok-current: A shared library which provides the basic hardware access drivers for logic analyzers 
+libsigrok-current:
+libsigrok-current: For more information about the package, see the project website at:
+libsigrok-current: https://sigrok.org/wiki/Libsigrok
+libsigrok-current:
+libsigrok-current:
+libsigrok-current: This slackmatic port was developed by:
+libsigrok-current: slackware@sukkology.net

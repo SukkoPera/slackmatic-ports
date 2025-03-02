@@ -1,0 +1,26 @@
+. ../sukkolib.rc
+
+BRIEF='A logic analyzer, oscilloscope and MSO GUI for sigrok'
+PROJECT=https://sigrok.org/wiki/PulseView
+RELEASE=`{date +%Y%m%d}
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=pulseview-master
+
+fn myfetch () {
+	wget https://github.com/sigrokproject/pulseview/archive/refs/heads/master.zip -O $NAME-$RELEASE.zip
+}
+
+SOURCE=(
+	MYFETCH:$NAME-$RELEASE.zip
+)
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS_CMAKE
+	-DCMAKE_INSTALL_MANDIR'='/usr/man
+)
+
+fn docinst {
+	std_docinst
+	rm -rf $PKG/usr/share/doc
+}

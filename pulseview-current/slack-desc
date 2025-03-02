@@ -1,0 +1,11 @@
+pulseview-current: pulseview-current (A logic analyzer, oscilloscope and MSO GUI for sigrok)
+pulseview-current:
+pulseview-current: This is a slackmatic port build of pulseview-current:
+pulseview-current: A logic analyzer, oscilloscope and MSO GUI for sigrok 
+pulseview-current:
+pulseview-current: For more information about the package, see the project website at:
+pulseview-current: https://sigrok.org/wiki/PulseView
+pulseview-current:
+pulseview-current:
+pulseview-current: This slackmatic port was developed by:
+pulseview-current: slackware@sukkology.net

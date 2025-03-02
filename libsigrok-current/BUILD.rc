@@ -1,0 +1,34 @@
+. ../sukkolib.rc
+
+BRIEF='A shared library which provides the basic hardware access drivers for logic analyzers'
+PROJECT=https://sigrok.org/wiki/Libsigrok
+RELEASE=`{date +%Y%m%d}
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=libsigrok-master
+BUILDSYSTEM=autotools
+
+fn myfetch () {
+	wget https://github.com/sigrokproject/libsigrok/archive/refs/heads/master.zip -O $NAME-$RELEASE.zip
+}
+
+SOURCE=(
+	MYFETCH:$NAME-$RELEASE.zip
+)
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS
+	--disable-java
+)
+
+fn configure {
+	./autogen.sh
+	std_configure
+}
+
+fn inst {
+	std_inst
+
+	mkdir -p $PKG/etc/udev/rules.d/ || exit $status
+	cp $CWD/*.rules $PKG/etc/udev/rules.d/
+}

@@ -1,0 +1,22 @@
+. ../sukkolib.rc
+
+BRIEF='A shared library written in C, which provides (streaming) protocol decoding functionality.'
+PROJECT=https://sigrok.org/wiki/Libsigrokdecode
+RELEASE=`{date +%Y%m%d}
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=libsigrokdecode-master
+BUILDSYSTEM=autotools
+
+fn myfetch () {
+	wget https://github.com/sigrokproject/libsigrokdecode/archive/refs/heads/master.zip -O $NAME-$RELEASE.zip
+}
+
+SOURCE=(
+	MYFETCH:$NAME-$RELEASE.zip
+)
+
+fn configure {
+	./autogen.sh
+	std_configure
+}

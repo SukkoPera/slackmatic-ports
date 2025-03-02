@@ -1,0 +1,11 @@
+libsigrokdecode-current: libsigrokdecode-current (A shared library written in C, which provides (streaming) protocol decoding functionality.)
+libsigrokdecode-current:
+libsigrokdecode-current: This is a slackmatic port build of libsigrokdecode-current:
+libsigrokdecode-current: A shared library written in C, which provides (streaming) protocol decoding functionality. 
+libsigrokdecode-current:
+libsigrokdecode-current: For more information about the package, see the project website at:
+libsigrokdecode-current: https://sigrok.org/wiki/Libsigrokdecode
+libsigrokdecode-current:
+libsigrokdecode-current:
+libsigrokdecode-current: This slackmatic port was developed by:
+libsigrokdecode-current: slackware@sukkology.net
