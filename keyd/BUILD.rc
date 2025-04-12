@@ -1,0 +1,21 @@
+. ../sukkolib.rc
+
+BRIEF='A key remapping daemon for linux'
+PROJECT=https://github.com/rvaiya/keyd
+RELEASE=2.5.0
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+fn myfetch () {
+        wget https://github.com/rvaiya/keyd/archive/refs/tags/v$RELEASE.tar.gz -O $NAME-$RELEASE.tar.gz
+}
+
+SOURCE=(
+        MYFETCH:$NAME-$RELEASE.tar.gz
+)
+
+fn inst {
+	make install PREFIX'='/usr DESTDIR'='$PKG
+
+	mv $PKG/usr/share/man $PKG/usr
+}
