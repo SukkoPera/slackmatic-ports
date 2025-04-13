@@ -6,9 +6,9 @@ drwxr-xr-x|0755|root/root|usr|
 drwxr-xr-x|0755|root/root|usr/bin|
 -rwxr-xr-x|0755|root/root|usr/bin/picotool|
 drwxr-xr-x|0755|root/root|usr/doc|
-drwxr-xr-x|0755|root/root|usr/doc/picotool-2.1.0|
--rw-r--r--|0644|root/root|usr/doc/picotool-2.1.0/BUILD.rc|
--rw-r--r--|0644|root/root|usr/doc/picotool-2.1.0/README.md|
+drwxr-xr-x|0755|root/root|usr/doc/picotool-2.1.1|
+-rw-r--r--|0644|root/root|usr/doc/picotool-2.1.1/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/picotool-2.1.1/README.md|
 drwxr-xr-x|0755|root/root|usr/lib|
 drwxr-xr-x|0755|root/root|usr/lib/cmake|
 drwxr-xr-x|0755|root/root|usr/lib/cmake/picotool|
