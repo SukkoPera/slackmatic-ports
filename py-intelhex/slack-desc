@@ -1,11 +1,11 @@
-py3-intelhex: py3-intelhex (A Python library to read, write, and manipulate data from Intel HEX file format)
-py3-intelhex:
-py3-intelhex: This is a slackmatic port build of py3-intelhex:
-py3-intelhex: A Python library to read, write, and manipulate data from Intel HEX file format 
-py3-intelhex:
-py3-intelhex: For more information about the package, see the project website at:
-py3-intelhex: https://github.com/python-intelhex/intelhex
-py3-intelhex:
-py3-intelhex:
-py3-intelhex: This slackmatic port was developed by:
-py3-intelhex: slackware@sukkology.net
+py-intelhex: py-intelhex (A Python library to read, write, and manipulate data from Intel HEX file format)
+py-intelhex:
+py-intelhex: This is a slackmatic port build of py-intelhex:
+py-intelhex: A Python library to read, write, and manipulate data from Intel HEX file format 
+py-intelhex:
+py-intelhex: For more information about the package, see the project website at:
+py-intelhex: https://github.com/python-intelhex/intelhex
+py-intelhex:
+py-intelhex:
+py-intelhex: This slackmatic port was developed by:
+py-intelhex: slackware@sukkology.net
