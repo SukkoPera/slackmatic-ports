@@ -1,0 +1,4 @@
+KERNEL=="vhba_ctl", SUBSYSTEM=="misc", TAG+="uaccess"
+
+# Old, deprecated way
+#KERNEL=="vhba_ctl", MODE="0660", OWNER="root", GROUP="cdrom"

@@ -1,0 +1,11 @@
+gcdemu: gcdemu (A GTK application for controlling the CDEmu daemon)
+gcdemu:
+gcdemu: This is a slackmatic port build of gcdemu:
+gcdemu: A GTK application for controlling the CDEmu daemon 
+gcdemu:
+gcdemu: For more information about the package, see the project website at:
+gcdemu: https://cdemu.sourceforge.io/about/gcdemu/
+gcdemu:
+gcdemu:
+gcdemu: This slackmatic port was developed by:
+gcdemu: slackware@sukkology.net

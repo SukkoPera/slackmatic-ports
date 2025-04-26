@@ -1,0 +1,11 @@
+cdemu-daemon: cdemu-daemon (The userspace daemon part of the cdemu suite)
+cdemu-daemon:
+cdemu-daemon: This is a slackmatic port build of cdemu-daemon:
+cdemu-daemon: The userspace daemon part of the cdemu suite 
+cdemu-daemon:
+cdemu-daemon: For more information about the package, see the project website at:
+cdemu-daemon: https://cdemu.sourceforge.io/about/daemon/
+cdemu-daemon:
+cdemu-daemon:
+cdemu-daemon: This slackmatic port was developed by:
+cdemu-daemon: slackware@sukkology.net

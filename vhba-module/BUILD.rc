@@ -1,0 +1,23 @@
+. ../sukkolib.rc
+
+BRIEF='A Virtual (SCSI) Host-Based Adapter for the CDEmu project'
+PROJECT=https://cdemu.sourceforge.io/about/vhba/
+RELEASE=20240917
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://downloads.sourceforge.net/cdemu/$NAME-$RELEASE.tar.xz
+)
+
+fn patches {
+	# Patch an unfortunate overlap with slackmatic's variables
+	sed -i 's/PWD/PWD_/g' Makefile
+}
+
+fn inst {
+        make install INSTALL_MOD_PATH'='$PKG || exit 102
+
+	mkdir -p $PKG/etc/udev/rules.d
+	cp $CWD/vhba.rules $PKG/etc/udev/rules.d/61-cdemu-vhba.rules || exit $status
+}

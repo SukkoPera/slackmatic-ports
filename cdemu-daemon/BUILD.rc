@@ -1,0 +1,16 @@
+. ../sukkolib.rc
+
+BRIEF='The userspace daemon part of the cdemu suite'
+PROJECT=https://cdemu.sourceforge.io/about/daemon/
+RELEASE=3.2.7
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+SOURCE=(
+	http://downloads.sourceforge.net/cdemu/$NAME-$RELEASE.tar.xz
+)
+
+fn inst {
+	std_inst
+	mv $PKG/usr/share/man $PKG/usr || exit $status
+}

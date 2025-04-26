@@ -1,0 +1,11 @@
+libmirage: libmirage (A CD-ROM image access library whose aim is to provide uniform access to the data stored in various image formats)
+libmirage:
+libmirage: This is a slackmatic port build of libmirage:
+libmirage: A CD-ROM image access library whose aim is to provide uniform access to the data stored in various image formats 
+libmirage:
+libmirage: For more information about the package, see the project website at:
+libmirage: https://cdemu.sourceforge.io/about/libmirage/
+libmirage:
+libmirage:
+libmirage: This slackmatic port was developed by:
+libmirage: slackware@sukkology.net

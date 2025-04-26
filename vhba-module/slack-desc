@@ -1,0 +1,11 @@
+vhba-module: vhba-module (A Virtual (SCSI) Host-Based Adapter for the CDEmu project)
+vhba-module:
+vhba-module: This is a slackmatic port build of vhba-module:
+vhba-module: A Virtual (SCSI) Host-Based Adapter for the CDEmu project 
+vhba-module:
+vhba-module: For more information about the package, see the project website at:
+vhba-module: https://cdemu.sourceforge.io/about/vhba/
+vhba-module:
+vhba-module:
+vhba-module: This slackmatic port was developed by:
+vhba-module: slackware@sukkology.net
