@@ -1,0 +1,11 @@
+libtap: libtap (A library for detection of zero-crossings of an audio signal and a generator of variable-length waves)
+libtap:
+libtap: This is a slackmatic port build of libtap:
+libtap: A library for detection of zero-crossings of an audio signal and a generator of variable-length waves 
+libtap:
+libtap: For more information about the package, see the project website at:
+libtap: https://github.com/fabzzap/libtap/
+libtap:
+libtap:
+libtap: This slackmatic port was developed by:
+libtap: slackware@sukkology.net

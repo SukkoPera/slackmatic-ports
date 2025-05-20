@@ -1,0 +1,26 @@
+. ../sukkolib.rc
+
+BRIEF='A library for detection of zero-crossings of an audio signal and a generator of variable-length waves'
+PROJECT=https://github.com/fabzzap/libtap/
+RELEASE=2.2
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+BUILDDIR=$NAME-$NAME-$RELEASE
+
+SOURCE=(
+	https://github.com/fabzzap/libtap/archive/refs/tags/$NAME-$RELEASE.tar.gz
+)
+
+DOCS=(
+	$DEFAULT_DOCS
+	lesser-license.txt
+)
+
+fn compile {
+	CFLAGS=-fPIC make -j $NUMJOBS WITH_SINE'='1 libtapdecoder.so libtapencoder.so || exit $status
+}
+
+fn inst {
+	mkdir -p $PKG/usr/lib64
+	cp *.so $PKG/usr/lib64
+}
