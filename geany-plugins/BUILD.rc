@@ -2,7 +2,7 @@
 
 BRIEF='A lot of plugin stuff for Geany editor'
 PROJECT=http://plugins.geany.org
-RELEASE=2.0
+RELEASE=2.1
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
@@ -13,7 +13,7 @@ CONFOPTS=(
 	--enable-geanygdb
 	--enable-gitchangebar
 	--enable-workbench
-	--disable-geanypy
+#	--disable-geanypy
 )
 
 SOURCE=(

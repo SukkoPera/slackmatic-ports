@@ -2,8 +2,8 @@
 
 BRIEF='A text editor using the GTK2 toolkit'
 PROJECT=http://www.geany.org
-RELEASE=2.0.0
-TRELEASE=2.0
+RELEASE=2.1.0
+TRELEASE=2.1
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 BUILDDIR=$NAME-$TRELEASE
