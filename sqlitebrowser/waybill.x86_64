@@ -2,11 +2,11 @@ drwxr-xr-x|0755|root/root|usr|
 drwxr-xr-x|0755|root/root|usr/bin|
 -rwxr-xr-x|0755|root/root|usr/bin/sqlitebrowser|
 drwxr-xr-x|0755|root/root|usr/doc|
-drwxr-xr-x|0755|root/root|usr/doc/sqlitebrowser-3.12.1|
--rw-r--r--|0644|root/root|usr/doc/sqlitebrowser-3.12.1/BUILD.rc|
--rw-r--r--|0644|root/root|usr/doc/sqlitebrowser-3.12.1/LICENSE|
--rw-r--r--|0644|root/root|usr/doc/sqlitebrowser-3.12.1/LICENSE-PLUGINS|
--rw-r--r--|0644|root/root|usr/doc/sqlitebrowser-3.12.1/README.md|
+drwxr-xr-x|0755|root/root|usr/doc/sqlitebrowser-3.13.1|
+-rw-r--r--|0644|root/root|usr/doc/sqlitebrowser-3.13.1/BUILD.rc|
+-rw-r--r--|0644|root/root|usr/doc/sqlitebrowser-3.13.1/LICENSE|
+-rw-r--r--|0644|root/root|usr/doc/sqlitebrowser-3.13.1/LICENSE-PLUGINS|
+-rw-r--r--|0644|root/root|usr/doc/sqlitebrowser-3.13.1/README.md|
 drwxr-xr-x|0755|root/root|usr/share|
 drwxr-xr-x|0755|root/root|usr/share/applications|
 -rw-r--r--|0644|root/root|usr/share/applications/sqlitebrowser.desktop|
@@ -15,5 +15,8 @@ drwxr-xr-x|0755|root/root|usr/share/icons/hicolor|
 drwxr-xr-x|0755|root/root|usr/share/icons/hicolor/256x256|
 drwxr-xr-x|0755|root/root|usr/share/icons/hicolor/256x256/apps|
 -rw-r--r--|0644|root/root|usr/share/icons/hicolor/256x256/apps/sqlitebrowser.png|
+drwxr-xr-x|0755|root/root|usr/share/icons/hicolor/scalable|
+drwxr-xr-x|0755|root/root|usr/share/icons/hicolor/scalable/apps|
+-rw-r--r--|0644|root/root|usr/share/icons/hicolor/scalable/apps/sqlitebrowser.svg|
 drwxr-xr-x|0755|root/root|usr/share/metainfo|
 -rw-r--r--|0644|root/root|usr/share/metainfo/sqlitebrowser.desktop.appdata.xml|

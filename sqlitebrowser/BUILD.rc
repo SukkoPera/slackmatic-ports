@@ -2,7 +2,7 @@
 
 BRIEF='A light GUI editor for SQLite databases'
 PROJECT=https://sqlitebrowser.org
-RELEASE=3.12.1
+RELEASE=3.13.1
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
 
