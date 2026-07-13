@@ -1,0 +1,11 @@
+pcsc-lite: pcsc-lite (Middleware to access a smart card using SCard API (PC/SC))
+pcsc-lite:
+pcsc-lite: This is a slackmatic port build of pcsc-lite:
+pcsc-lite: Middleware to access a smart card using SCard API (PC/SC) 
+pcsc-lite:
+pcsc-lite: For more information about the package, see the project website at:
+pcsc-lite: https://pcsclite.apdu.fr/
+pcsc-lite:
+pcsc-lite:
+pcsc-lite: This slackmatic port was developed by:
+pcsc-lite: slackware@sukkology.net

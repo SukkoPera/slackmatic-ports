@@ -1,0 +1,16 @@
+. ../sukkolib.rc
+
+BRIEF='Middleware to access a smart card using SCard API (PC/SC)'
+PROJECT=https://pcsclite.apdu.fr/
+RELEASE=2.5.1
+BUILD=1suk_$SLCKVER
+PACKAGER=slackware@sukkology.net
+
+CONFOPTS=(
+	$DEFAULT_CONFOPTS_MESON
+	-Dlibsystemd'='false
+)
+
+SOURCE=(
+	https://pcsclite.apdu.fr/files/$NAME-$RELEASE.tar.xz
+)
