@@ -2,7 +2,7 @@
 
 BRIEF='Free Open-Source Disk Encryption Software'
 PROJECT=https://www.veracrypt.fr
-RELEASE=1.24_Update7
+RELEASE=1.26.29
 TRELEASE=`{echo $RELEASE | tr _ -}
 BUILD=1suk_$SLCKVER
 PACKAGER=slackware@sukkology.net
@@ -12,6 +12,10 @@ BUILDSYSTEM=makeonly
 TVER=`{echo $TRELEASE | tr A-Z a-z}
 SOURCE=(
 	https://launchpad.net/veracrypt/trunk/$TVER/+download/$TNAME'_'$TRELEASE'_Source.tar.bz2'
+)
+
+PATCHES=(
+	fix_source_date_epoch.patch
 )
 
 DOCS=(
@@ -33,7 +37,7 @@ fn inst {
 	mkdir $PKG/usr/bin
 	cp Main/veracrypt $PKG/usr/bin
 
-	ln -s Resources/Icons/VeraCrypt-48x48.xpm veracrypt.xpm
+	ln -s Resources/Icons/VeraCrypt-256x256.xpm veracrypt.xpm
 	insticon $CWD/veracrypt.desktop veracrypt.xpm
 
 	mkdir -p $PKG/etc/rc.d
